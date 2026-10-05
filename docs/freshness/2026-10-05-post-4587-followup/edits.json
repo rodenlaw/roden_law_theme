@@ -1,0 +1,38 @@
+[
+ {
+  "id": "4587",
+  "surface": "content",
+  "before": "<p>If you were hurt in a <a href=\"/practice-areas/car-accident-lawyers/\">car accident</a> in Georgia or South Carolina, the total loss process has direct implications for your overall claim. Both states have specific rules governing how insurers must handle total loss declarations, and understanding those rules puts you in a stronger position to fight back against a lowball settlement offer. According to the <a href=\"https://www.iii.org/fact-statistic/facts-statistics-auto-insurance\" target=\"_blank\" rel=\"noopener\">Insurance Information Institute</a>, the average collision claim payout has climbed steadily in recent years as vehicle values have risen &mdash; which means the stakes of getting the total loss valuation right have never been higher.</p>",
+  "after": "<p>If you were hurt in a <a href=\"/practice-areas/car-accident-lawyers/\">car accident</a> in Georgia or South Carolina, the total loss process has direct implications for your overall claim. Both states have specific rules governing how insurers must handle total loss declarations, and understanding those rules puts you in a stronger position to fight back against a lowball settlement offer. According to the <a href=\"https://www.iii.org/fact-statistic/facts-statistics-auto-insurance\" target=\"_blank\" rel=\"noopener\">Insurance Information Institute</a>, the average collision claim rose from $3,377 in 2015 to $5,521 in 2023 before dipping slightly to $5,489 in 2024 &mdash; which means the stakes of getting the total loss valuation right are high.</p>"
+ },
+ {
+  "id": "4587",
+  "surface": "content",
+  "before": "<p>Once an insurer pays a total loss claim in Georgia, the vehicle needs a salvage title from the Department of Revenue unless the damage is only cosmetic and not from fire or flood (O.C.G.A. &sect;&sect; 40-3-2, 40-3-36). If it is rebuilt, the Department inspects the VIN, the bills of sale for major parts and the required safety equipment before issuing a title marked \"rebuilt\" (&sect; 40-3-37), and a rebuilt title typically reduces resale value by 20% to 40%.</p>",
+  "after": "<p>Once an insurer pays a total loss claim in Georgia, the vehicle needs a salvage title from the Department of Revenue unless the damage is only cosmetic and not from fire or flood (O.C.G.A. &sect;&sect; 40-3-2, 40-3-36). If it is rebuilt, the Department inspects the VIN, the bills of sale for major parts and the required safety equipment before issuing a title marked \"rebuilt\" (&sect; 40-3-37), and a salvage or rebuilt title typically lowers a car's value by 20% to 40% (Kelley Blue Book).</p>"
+ },
+ {
+  "id": "4587",
+  "surface": "content",
+  "before": "<p>Check Kelley Blue Book, Edmunds, NADA Guides, and local dealer listings for vehicles matching yours. If comparable vehicles are selling for more than the insurer's figure, you have concrete evidence to challenge the offer.</p>",
+  "after": "<p>Check Kelley Blue Book, Edmunds, J.D. Power (formerly NADA Guides), and local dealer listings for vehicles matching yours. If comparable vehicles are selling for more than the insurer's figure, you have concrete evidence to challenge the offer.</p>"
+ },
+ {
+  "id": "4587",
+  "surface": "content",
+  "before": "<p>If the adjuster refuses to move, escalate to a supervisor. If that fails and the claim is under your own policy, you can invoke its appraisal clause; in Georgia you may also ask the Insurance Commissioner for arbitration. Each side hires an independent appraiser, and if the two cannot agree, they select an impartial umpire whose decision is binding. The appraisal process typically costs a few hundred dollars but can recover thousands more than the original offer. You can also file a complaint with your state's Department of Insurance &mdash; both the <a href=\"https://oci.georgia.gov/\" target=\"_blank\" rel=\"noopener\">Georgia Office of Insurance</a> and the <a href=\"https://doi.sc.gov/\" target=\"_blank\" rel=\"noopener\">South Carolina Department of Insurance</a> investigate bad faith valuation practices.</p>",
+  "after": "<p>If the adjuster refuses to move, escalate to a supervisor. If that fails and the claim is under your own policy, you can invoke its appraisal clause; in Georgia you may also ask the Insurance Commissioner for arbitration. Under a typical personal auto policy's appraisal clause, you and the insurer each hire an appraiser, the two appraisers choose an umpire, and a decision agreed to by any two of the three is binding. Each side pays its own appraiser, and the umpire's cost is split equally. You can also file a complaint with your state's insurance regulator &mdash; both the <a href=\"https://oci.georgia.gov/\" target=\"_blank\" rel=\"noopener\">Georgia Office of Commissioner of Insurance and Safety Fire</a> and the <a href=\"https://doi.sc.gov/\" target=\"_blank\" rel=\"noopener\">South Carolina Department of Insurance</a> review consumer complaints about how insurers handle claims.</p>"
+ },
+ {
+  "id": "4587",
+  "surface": "content",
+  "before": "<p>Gap coverage eliminates this shortfall. It is available through most auto insurers as a policy add-on (typically $20 to $40 per year) and is also sold by dealerships, though dealer gap coverage tends to cost more. Note that gap insurance only covers the loan-to-value difference &mdash; not your deductible, past-due payments, or personal injury damages. Those are handled separately through liability claims.</p>",
+  "after": "<p>Gap coverage eliminates this shortfall. It is available through most auto insurers as a policy add-on (about $20 a year on many policies that already carry collision and comprehensive coverage, according to the Insurance Information Institute) and is also sold by dealerships, though insurers typically charge less than dealers. Note that gap insurance only covers the loan-to-value difference &mdash; not your deductible, past-due payments, or personal injury damages. Those are handled separately through liability claims.</p>"
+ },
+ {
+  "id": "4587",
+  "surface": "content",
+  "before": "<p>A totaled vehicle is powerful evidence in a personal injury case. If the insurer's own engineers concluded that the vehicle was damaged beyond repair, that supports the argument that occupants experienced significant forces during the collision. This is particularly relevant in cases involving <a href=\"/practice-areas/brain-injury-lawyers/\">traumatic brain injuries</a> or spinal cord damage, where the defense tries to downplay impact severity. Preserve photographs of the totaled vehicle and the repair estimate &mdash; once the car is sent to salvage, the physical evidence is gone.</p>",
+  "after": "<p>A totaled vehicle is powerful evidence in a personal injury case. If the insurer's own appraiser concluded that the vehicle was damaged beyond repair, that supports the argument that occupants experienced significant forces during the collision. This is particularly relevant in cases involving <a href=\"/practice-areas/brain-injury-lawyers/\">traumatic brain injuries</a> or spinal cord damage, where the defense tries to downplay impact severity. Preserve photographs of the totaled vehicle and the repair estimate &mdash; once the car is sent to salvage, the physical evidence is gone.</p>"
+ }
+]

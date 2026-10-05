@@ -1,0 +1,24 @@
+--- edit 1 · content ---
+  replace: 'payout has climbed steadily' -> 'rose from $3,377'
+  replace: 'recent years as vehicle values have risen' -> '2015 to $5,521 in 2023 before dipping slightly to $5,489 in 2024'
+  replace: 'have never been higher.' -> 'are high.'
+--- edit 2 · content ---
+  insert: '' -> 'salvage or'
+  replace: 'reduces resale' -> 'lowers a car's'
+  replace: '40%.' -> '40% (Kelley Blue Book).'
+--- edit 3 · content ---
+  insert: '' -> 'J.D. Power (formerly'
+  replace: 'Guides,' -> 'Guides),'
+--- edit 4 · content ---
+  insert: '' -> 'Under a typical personal auto policy's appraisal clause, you and the insurer each hire an appraiser, the two appraisers choose an umpire, and a decision agreed to by any two of the three is binding.'
+  replace: 'hires an independent' -> 'pays its own'
+  delete: 'if' -> ''
+  replace: 'two cannot agree, they select an impartial umpire whose decision' -> 'umpire's cost'
+  replace: 'binding. The appraisal process typically costs a few hundred dollars but can recover thousands more than the original of' -> 'split equally.'
+--- edit 5 · content ---
+  replace: '(typically' -> '(about'
+  insert: '' -> 'a year on many policies that already carry collision and comprehensive coverage, according'
+  replace: '$40 per year)' -> 'the Insurance Information Institute)'
+  replace: 'dealer gap coverage tends to cost more.' -> 'insurers typically charge less than dealers.'
+--- edit 6 · content ---
+  replace: 'engineers' -> 'appraiser'
