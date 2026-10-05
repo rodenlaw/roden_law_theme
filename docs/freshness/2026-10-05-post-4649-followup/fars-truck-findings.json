@@ -1,0 +1,10 @@
+{"postId":4649,"researchedAt":"2026-10-05","findings":[
+{"claim":"Georgia's total truck-related fatalities rose from 142 in 2013 to 257 in 2023 — an 81% increase (body bullet and Key Takeaways)",
+ "verdict":"update",
+ "currentValue":"NHTSA, Traffic Safety Facts: Large Trucks, 2024 Data (DOT HS 813 816), Table 7: Georgia, 197 people killed in traffic crashes involving large trucks in 2024 — 24 large-truck occupants, 142 occupants of other vehicles, 31 nonoccupants (173 'other people'). Table 6: 189 large trucks in Georgia fatal crashes, 9.5% of all vehicles in fatal crashes.",
+ "quote":"Georgia  19  5  24  142  31  173  197",
+ "sourceName":"NHTSA, Traffic Safety Facts 2024 Data: Large Trucks (DOT HS 813 816)",
+ "sourceUrl":"https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813816.pdf",
+ "verified_how":"curl 200, pdftotext, Tables 6 and 7 read 2026-10-05.",
+ "note":"142/257/81% not reproducible. Local FARS tally (STATE 13, crashes with a vehicle BODY_TYP in 60-64,66,67,71,72,78,79): 2013 143 crashes/164 deaths; 2014 155 deaths; 2020 234; 2021 246; 2022 271; 2023 176 crashes/193 deaths; 2024 201 deaths (NHTSA's published 197 uses its own definition). Neither endpoint matches; 2023 was a fall from 2022, not a peak. Replace with the NHTSA 2024 state figure."}
+]}

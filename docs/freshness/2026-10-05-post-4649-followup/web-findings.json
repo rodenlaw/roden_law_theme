@@ -1,0 +1,312 @@
+{
+ "postId": 4649,
+ "researchedAt": "2026-10-05",
+ "findings": [
+  {
+   "n": 1,
+   "claim": "The Port of Savannah processed 5.9 million TEUs (twenty-foot equivalent units) in 2023",
+   "verdict": "update",
+   "correctedValue": "Calendar 2025: nearly 5.7 million TEUs, the port's second-busiest year; the record is calendar 2022 at about 5.9 million TEUs. Fiscal 2026 (July 1, 2025-June 30, 2026): 5.67 million TEUs, just below FY2025's 5.7 million (third-busiest fiscal year). Calendar 2023 was roughly 5.0 million (2024's ~5.6 million was +618,000 over 2023). Suggested: 'The Port of Savannah handled nearly 5.7 million TEUs in 2025, its second-busiest year after 2022's record of about 5.9 million (Georgia Ports Authority).'",
+   "quote": "The Georgia Ports Authority handled nearly 5.7 million twenty-foot equivalent container units (TEUs), marking its second-busiest year on record. The only year that topped it was 2022, when around 5.9 million TEUs moved through the Port of Savannah's docks.",
+   "sourceName": "WTOC, 'Port of Savannah achieves second busiest year ever in 2025' (Jan. 27, 2026), reporting GPA board release",
+   "sourceUrl": "https://www.wtoc.com/2026/01/27/port-savannah-achieves-second-busiest-year-ever-2025/",
+   "additionalSources": [
+    {
+     "name": "Container News, 'Port of Savannah reports 18% growth in June volumes' (GPA FY2026 release)",
+     "url": "https://container-news.com/port-of-savannah-reports-18-growth-in-june-volumes/",
+     "quote": "For the full fiscal year (1 July 2025 – 30 June 2026), Savannah handled 5.67 million TEUs, slightly below the 5.7 million TEUs recorded a year earlier.",
+     "verified": "curl 200 + text found"
+    },
+    {
+     "name": "AJC, 2026-07-28",
+     "url": "https://www.ajc.com/news/2026/07/the-hottest-spot-in-georgia-this-summer-savannahs-cargo-container-docks/",
+     "quote": "the port recorded its third-busiest fiscal year on record",
+     "verified": "curl 200 + text found"
+    },
+    {
+     "name": "AJOT reprint of GPA 2025 State of the Port release (Feb. 25, 2025)",
+     "url": "https://www.ajot.com/news/savannah-fastest-growing-port-on-u.s-east-coast",
+     "quote": "GPA handled nearly 5.6 million twenty-foot equivalent container units (TEUs) last year – an increase of approximately 618,000 TEUs compared to 2023.",
+     "verified": "curl 200 + text found"
+    }
+   ],
+   "verification": "curl 200 on WTOC, Container News, AJC, AJOT; quoted text found in page text. gaports.com returns 403 to curl, so GPA releases cited via secondary reports. 5.9M is calendar 2022 per WTOC (calendar-year framing).",
+   "retrievedAt": "2026-10-05"
+  },
+  {
+   "n": 2,
+   "claim": "continues to grow under a $1.9 billion expansion plan that will increase truck lanes from 53 to 100 by 2030",
+   "verdict": "update",
+   "correctedValue": "$1.9 billion is GPA's 2019-2023-era figure for infrastructure projects then under way; it is stale. GPA now describes a self-financed ~$5 billion, 10-year capacity plan (five new container berths in Savannah, one RoRo berth in Brunswick); its 2026 Savannah fact sheet says $4.5 billion. The 53-to-100 truck-lane figure is GPA's (Feb. 2025 State of the Port) and covers Garden City Terminal, Ocean Terminal and the planned Savannah Container Terminal on Hutchinson Island. Suggested: 'Georgia Ports plans to invest about $5 billion in capacity over the next 10 years, and expects truck lanes at the Port of Savannah to grow from 53 to 100 by 2030.'",
+   "quote": "Over the next 10 years, Georgia Ports plans to invest $5 billion in capacity enhancements to support future supply chain requirements, adding five container berths in Savannah and one RoRo berth in Brunswick.",
+   "sourceName": "Container News, 'Savannah's Ocean Terminal renovation passes 60% completion' (Sept. 30, 2026), reporting GPA's Sept. 29, 2026 release; FreightWaves 2026-10-02 same",
+   "sourceUrl": "https://container-news.com/savannahs-ocean-terminal-renovation-passes-60-completion/",
+   "additionalSources": [
+    {
+     "name": "FreightWaves, 'Savannah port project passes 60% complete mark' (Oct. 2, 2026)",
+     "url": "https://www.freightwaves.com/news/savannah-port-project-passes-60-complete-mark",
+     "quote": "The Ocean Terminal redevelopment is included in GPA's 10-year port master plan, which calls for approximately $5 billion in capacity investments.",
+     "verified": "curl 200 + text found"
+    },
+    {
+     "name": "GPA press release 'Savannah fastest growing port on U.S. East Coast' (Feb. 25, 2025) — gaports.com 403 to curl; text seen in search snippet only",
+     "url": "https://gaports.com/press-releases/savannah-fastest-growing-port-on-u-s-east-coast/",
+     "quote": "Counting improvements at Garden City Terminal and Ocean Terminal, as well as the planned development of the Savannah Container Terminal on Hutchinson Island, truck lanes at the Port of Savannah will grow from 53 lanes today to 100 lanes by 2030.",
+     "verified": "search-index snippet only (gaports.com blocked); corroborated by Fresh Fruit Portal 2025-05-02 'Truck lanes 2025: 53 / 2030+: 100 lanes' and GPA port police TAPA 2025 presentation '53 truck lanes (2030 @100 lanes)' — search snippets, not curl-verified"
+    },
+    {
+     "name": "AP via IEN (Oct. 2023) on the $1.9B figure",
+     "url": "https://www.ien.com/supply-chain/news/22876093/georgia-wants-to-study-deepening-savannahs-harbor-again",
+     "quote": "the $1.9 billion his agency is investing to grow Savannah's cargo handling capacity",
+     "verified": "search snippet only"
+    }
+   ],
+   "verification": "Container News and FreightWaves curl 200 + $5B text found. 53->100 lanes: primary GPA page blocked (403); relying on search-index text of the GPA release plus two secondary corroborations. Treat the lane figures as GPA's Feb. 2025 projection.",
+   "retrievedAt": "2026-10-05"
+  },
+  {
+   "n": 3,
+   "claim": "the fastest-growing container port on the U.S. East Coast",
+   "verdict": "drop",
+   "correctedValue": "Only sourced for calendar 2024: GPA said Savannah was the fastest-growing container gateway on the U.S. East and Gulf coasts in 2024 (+~618,000 TEUs). It does not hold for the latest periods: FY2026 volume (5.67M) was slightly below FY2025 (5.7M). Drop the present-tense superlative, or date it: 'In 2024, GPA reported Savannah was the fastest-growing container gateway on the U.S. East and Gulf coasts.'",
+   "quote": "That made Savannah the fastest growing container gateway on the U.S. East and Gulf coasts.",
+   "sourceName": "AJOT reprint of GPA 2025 State of the Port release (Feb. 25, 2025)",
+   "sourceUrl": "https://www.ajot.com/news/savannah-fastest-growing-port-on-u.s-east-coast",
+   "verification": "curl 200 + text found (refers to calendar 2024 vs 2023). FY2026 decline verified via Container News (claim 1).",
+   "retrievedAt": "2026-10-05"
+  },
+  {
+   "n": 4,
+   "claim": "Every container that leaves the port by road travels I-16 westbound toward distribution centers in Macon, Atlanta",
+   "verdict": "drop",
+   "correctedValue": "False as stated. GPA: about 80% of Savannah's cargo moves inland by truck and 20% by rail (a record 545,214 rail containers in 2025; 42 double-stack trains a week from the Mason Mega Rail Terminal to Atlanta, Memphis, Nashville, Charlotte, Orlando). Road access: Garden City Terminal trucks use the Jimmy DeLoach Parkway (a $129M limited-access truck route linking the terminal with I-16 (exit 152) and I-95; about 5,000 trucks a day to I-95), SR 307/Dean Forest Road to I-16 exit 160, the Brampton Road Connector (opened July 15, 2026) toward I-516, and Ocean Terminal's $29M overpass to U.S. 17/I-16. Suggested: 'About 80% of the port's containers leave by truck, and many of those reach I-16 at Dean Forest Road, the Jimmy DeLoach Parkway or I-516 before heading west toward Macon and Atlanta; others take the Jimmy DeLoach Parkway to I-95.'",
+   "quote": "Jimmy Deloach Parkway, a $129 million, limited-access truck route linking Garden City Terminal with Interstates 16 and 95.",
+   "sourceName": "WTOC, 'Nearby businesses excited for Brampton Road Connector' (July 8, 2026), quoting GDOT/GPA",
+   "sourceUrl": "https://www.wtoc.com/2026/07/08/nearby-businesses-excited-brampton-road-connector-construction-end/",
+   "additionalSources": [
+    {
+     "name": "WTOC 2026-01-27 (GPA CY2025 release)",
+     "url": "https://www.wtoc.com/2026/01/27/port-savannah-achieves-second-busiest-year-ever-2025/",
+     "quote": "In 2025, the Port of Savannah handled a record 545,214 containers by rail ... the port is also managing 14,000 to 16,000 truck moves daily, Monday through Friday.",
+     "verified": "curl 200 + text found"
+    },
+    {
+     "name": "FreightWaves 2026-10-02 (Ocean Terminal overpass)",
+     "url": "https://www.freightwaves.com/news/savannah-port-project-passes-60-complete-mark",
+     "quote": "GPA also funded a $29 million overpass that sends departing trucks directly to U.S. 17 and Interstate 16, avoiding neighborhood streets.",
+     "verified": "curl 200 + text found"
+    },
+    {
+     "name": "facts-4715 (2026-09-25): GPA 80/20 truck/rail split, GPA Road page (5,000 trucks/day to I-95), Brampton Road Connector",
+     "url": "https://gaports.com/press-releases/supply-chain-predictability-and-cost-saving-strategies-highlight-georgia-ports-trade-conference/",
+     "quote": "80 percent of Savannah's cargo moves inland by truck and 20 percent by rail",
+     "verified": "reused from docs/freshness/2026-09-25-post-4715/facts-4715.json; not re-fetched (gaports.com 403)"
+    },
+    {
+     "name": "Wikipedia I-16 exit list (exit 152 = SR 17 Connector / Jimmy DeLoach Pkwy)",
+     "url": "https://en.wikipedia.org/wiki/Interstate_16",
+     "verified": "curl raw wikitext 200"
+    }
+   ],
+   "verification": "WTOC pages curl 200 + text found; 80/20 split reused from facts-4715.",
+   "retrievedAt": "2026-10-05"
+  },
+  {
+   "n": 5,
+   "claim": "Active GDOT construction between Milepost 156 and MP 164 / GDOT is reconstructing the I-16/I-95 interchange and widening I-16 through Chatham County (exits Pooler Parkway, I-95, Dean Forest Road, Chatham Parkway, I-516); speed differentials between construction-zone traffic (45 mph)",
+   "verdict": "update",
+   "correctedValue": "GDOT GeoPI (checked 2026-10-05): P.I. 0012758 (I-16/I-95 interchange reconstruction) status 'Complete'; P.I. 0012757 'I-16 FROM I-95 TO I-516' (one added lane each direction, Chatham Parkway bridge jacking, I-516 bridge widening) still 'Under Construction'. Limits are I-95 (exit 157) to I-516 (exit 164) — Pooler Parkway (exit 155) is outside them. The third lane is open between I-95 and Chatham Parkway (GDOT fact sheet, Sept. 2025). Separately, GDOT awarded a $468.35M design-build contract (July 2026) to widen I-16 from two to three lanes from the I-95 interchange west to mile marker 139.65 in Bryan County (17.77 mi); construction expected to begin 2027. No source found for a posted 45 mph work-zone limit: GDOT's 16@95 FAQ only tells drivers to 'reduce their speed while traveling through work zones'; the only posted 45 mph on I-16 is the permanent downtown segment from SR 204 to Gwinnett St (City of Savannah Code Sec. 207, per facts-4715). Drop '45 mph'. Suggested: 'GDOT has rebuilt the I-16/I-95 interchange and is finishing a third lane in each direction between I-95 and I-516; a second widening, from I-95 west into Bryan County, is set to start in 2027.'",
+   "quote": "I-16 FROM I-95 TO I-516 ... Project Status: Under Construction ... The I-16 improvements will include the addition of one general-purpose lane along both I-16 eastbound and I-16 westbound between I-95 and I-516.",
+   "sourceName": "GDOT GeoPI, P.I. 0012757 (and 0012758: 'Project Status: Complete')",
+   "sourceUrl": "https://www.dot.ga.gov/applications/geopi/Pages/Dashboard.aspx?ProjectId=0012757",
+   "additionalSources": [
+    {
+     "name": "GDOT GeoPI P.I. 0012758",
+     "url": "https://www.dot.ga.gov/applications/geopi/Pages/Dashboard.aspx?ProjectId=0012758",
+     "quote": "Project Status: Complete ... The I-16 @ I-95 interchange improvements will",
+     "verified": "curl 200 + text found"
+    },
+    {
+     "name": "WTOC, 'Georgia awards record $468 million contract for I-16 widening project' (July 2, 2026)",
+     "url": "https://www.wtoc.com/2026/07/02/georgia-awards-record-468-million-contract-i-16-widening-project/",
+     "quote": "the winning proposal will widen approximately 17.77 miles of I-16 from the I-16/I-95 interchange to mile marker 139.65 in Bryan County. The project is part of a 32-mile corridor improvement that will expand I-16 from two to three lanes in each direction",
+     "verified": "curl 200 + text found"
+    },
+    {
+     "name": "GDOT 16@95 Improvement Projects FAQ",
+     "url": "https://www.dot.ga.gov/systems/ProjectDocuments/1695Improvements/16@95%20Improvement%20Projects-FAQ.pdf",
+     "quote": "Motorists are advised to expect delays, exercise caution, reduce their speed while traveling through work zones",
+     "verified": "search-index text; not separately curl-checked"
+    }
+   ],
+   "verification": "GeoPI pages curl 200 + status text found for both P.I.s; WTOC curl 200. 45 mph work-zone limit: unverified — no source found; verdict drop for that phrase.",
+   "retrievedAt": "2026-10-05"
+  },
+  {
+   "n": 6,
+   "claim": "A January 2026 crash involving several semitrailers on the I-16 corridor killed 1 person and left 3 in critical condition in Twiggs County",
+   "verdict": "update",
+   "correctedValue": "Friday, Jan. 23, 2026, just before 9 a.m., I-16 eastbound in Bleckley County near the Twiggs County line: a Kenworth tractor-trailer following too closely struck one of two Freightliner box trucks stopped behind a pickup towing a trailer (three commercial vehicles + one pickup). One person died at the scene, two were seriously injured and two had minor injuries (GSP); eastbound lanes closed about five hours. Only one vehicle was a tractor-trailer; not '3 critical'; county is Bleckley, not Twiggs. Suggested: 'In January 2026, a tractor-trailer following too closely set off a chain-reaction crash with two box trucks and a pickup on I-16 east near the Twiggs-Bleckley county line, killing one person and seriously injuring two (Georgia State Patrol, via WGXA).'",
+   "quote": "One person died at the scene, while two others were seriously injured and two more complained of minor injuries, according to GSP.",
+   "sourceName": "WGXA, 'One dead, multiple injured following four-vehicle crash with semi-trucks on I-16 East' (Jan. 23, 2026)",
+   "sourceUrl": "https://wgxa.tv/news/local/one-dead-two-injured-following-multi-car-crash-with-semi-trucks-on-i-16-loca-news-traffic-fatal-accidents-sheriff-daniel-cape-middle-georgia-interstate16",
+   "additionalQuotes": [
+    "the eastbound lanes of I-16 near the Twiggs and Bleckley County line",
+    "a Kenworth tractor-trailer was following too closely and struck the Freightliner, pushing it into the other Frieghtliner then into the Chevrolet truck",
+    "BLECKLEY COUNTY, Ga."
+   ],
+   "verification": "curl 200 + text found. Milepost not stated in report; the Twiggs/Bleckley line falls between exit 27 (MP 26.8, Twiggs) and exit 32 (MP 31.6, Bleckley).",
+   "retrievedAt": "2026-10-05"
+  },
+  {
+   "n": 7,
+   "claim": "Twiggs County (Milepost 40-60); rural, two-lane stretch where fatigue-related crashes peak; minimal lighting ... sparse rest facilities",
+   "verdict": "update",
+   "correctedValue": "I-16 in Twiggs County runs from just past exit 6 (Bibb) to before exit 32 (Bleckley), roughly MP 7-30, with exits 12 (Sgoda Rd), 18 (Bullard Rd), 24 (SR 96, Jeffersonville) and 27 (SR 358, Danville). MP 40-60 is Laurens County (Dudley/Dublin, exits 42-58). No source found that fatigue-related crashes 'peak' in Twiggs County — drop (GOHS says drowsy driving is reported in about 1% of Georgia crashes statewide). 'Minimal lighting' unsourced — drop. Rest facilities: GDOT lists only two I-16 rest areas, both in Laurens County (#87 eastbound MP 44.0, #88 westbound MP 46.0); there are none in Twiggs. 'Two-lane' should be 'two lanes in each direction'. Suggested: 'Through rural Twiggs County (roughly mileposts 7-30), I-16 is two lanes each way, and the corridor's only rest areas are in Laurens County at mileposts 44 (eastbound) and 46 (westbound).'",
+   "quote": "I-16 Rest Areas ... #87 Laurens I-16 East / MP 44.0 Restrooms open 24 hours ... #88 Laurens I-16 West / MP 46.0 Restrooms open 24 hours",
+   "sourceName": "GDOT, Georgia Rest Areas & Welcome Center Locations",
+   "sourceUrl": "https://www.dot.ga.gov/GDOT/Pages/restareaswelcomecenters.aspx",
+   "additionalSources": [
+    {
+     "name": "Wikipedia, Interstate 16 exit list (county / mile columns)",
+     "url": "https://en.wikipedia.org/wiki/Interstate_16",
+     "quote": "Twiggs 11.3 exit 12 Sgoda Road ... 26.8 exit 27 SR 358 – Danville; Bleckley 31.6 exit 32 SR 112; Laurens 38.4 exit 39 ... 57.4 exit 58",
+     "verified": "curl raw wikitext 200; tertiary source — no GDOT county milepost table fetched"
+    },
+    {
+     "name": "GOHS 2022 Risky Driving GTSF (via DLG)",
+     "url": "https://dlg.usg.edu/record/dlg_ggpd_1571472832-2024-08",
+     "quote": "In 2022, drowsy driving was reported to be involved in approximately one percent of all traffic crashes, serious injury crashes, and fatal crashes.",
+     "verified": "search snippet only"
+    }
+   ],
+   "verification": "GDOT rest-area page curl 200 + text found. County mileposts from Wikipedia exit list (approximate; exact county-line mileposts unverified). Fatigue-peak and lighting claims: no source found -> unverified, drop.",
+   "retrievedAt": "2026-10-05"
+  },
+  {
+   "n": 8,
+   "claim": "Bibb County (the Macon end of I-16) alone recorded 6,103 vehicular crashes and 154 suspected serious injuries in 2024",
+   "verdict": "update",
+   "correctedValue": "6,103 is verified: GOHS lists 6,103 total motor vehicle traffic crashes in Bibb County in 2024. '154 suspected serious injuries' could not be found in any GOHS 2024 fact sheet (all ten checked); the Macon Telegraph, using GDOT data, reports 116 serious-injury crashes and 35 fatal crashes in Bibb in 2024 (6,009 crashes on its count). These are countywide figures, not I-16. Suggested: 'Bibb County, at I-16's Macon end, recorded 6,103 traffic crashes in 2024 (Georgia Governor's Office of Highway Safety)' — drop 154 or replace with the Telegraph's '116 serious-injury crashes and 35 fatal crashes (GDOT data)'.",
+   "quote": "Bibb 113,610 198 <10 49% (86) 6,103 [columns: Licensed Drivers, Distracted Driving Convictions, Distracted Driving Citations Issued After a Crash, Percent Distraction-Related, Rank, Total Crashes — 'MV Traffic Crashes ... by County, 2024']",
+   "sourceName": "GOHS, 2024 Distracted Driving Georgia Traffic Safety Facts (county appendix table)",
+   "sourceUrl": "https://www.gahighwaysafety.org/wp-content/uploads/2026/05/2024-Distracted-Driving-Georgia-Traffic-Safety-Facts.pdf",
+   "additionalSources": [
+    {
+     "name": "Macon Telegraph via Yahoo News, 'These 4 Macon roads commonly see serious car crashes' (Oct. 9, 2025)",
+     "url": "https://www.yahoo.com/news/articles/4-macon-roads-commonly-see-090000246.html",
+     "quote": "In 2024, there were 6,009 car crashes in all of Bibb County. Over 150 of them resulted in serious or fatal injuries, according to the data. While 116 of them resulted in serious injuries, 35 car crashes have caused deaths.",
+     "verified": "curl 200 + text found"
+    }
+   ],
+   "verification": "GOHS PDF curl 200, pdftotext, Bibb row found under 'Total Crashes' column. 154: searched all ten 2024 GTSF PDFs for a Bibb row with 154 — not found -> unverified.",
+   "retrievedAt": "2026-10-05"
+  },
+  {
+   "n": 9,
+   "claim": "I-16 & Chatham Parkway: Tied for the most dangerous interchange in the Savannah area",
+   "verdict": "drop",
+   "correctedValue": "No agency ranking found (consistent with facts-4538). The most that is sourced: Bike Walk Savannah's analysis of 2023 GDOT data (reported by Savannah Morning News, Jan. 2025) placed the I-16 interchanges at Dean Forest Road, Chatham Parkway and I-516 among Savannah's 10 highest-crash intersections (428 of 7,975 crashes) — unranked. That underlying article was not fetched here (savannahnow.com paywall/402); Roden's own /blog/dangerous-savannah-intersections/ already uses it. FARS: 2 fatal crashes at or near the interchange 2020-2024 (facts-4538). Suggested: 'The I-16/Chatham Parkway interchange was among Savannah's highest-crash locations in 2023.'",
+   "quote": "No source for 25,000 or for a collision ranking.",
+   "sourceName": "facts-4538 (2026-10-02), reusing AARoads/GDOT/FARS",
+   "sourceUrl": "https://www.aaroads.com/guides/i-016-west-savannah-ga",
+   "verification": "Reused facts-4538; fresh searches found only law-firm pages asserting rankings. 'Tied for most dangerous' unverified -> drop.",
+   "retrievedAt": "2026-10-05"
+  },
+  {
+   "n": 10,
+   "claim": "Outside of the Savannah metropolitan area, I-16 narrows to two lanes in each direction for most of its length",
+   "verdict": "update",
+   "correctedValue": "Essentially correct but the framing is off: I-16 is two lanes each way for most of its 166 miles, including inside metro Savannah west of I-95 (Pooler/Bloomingdale). It is three lanes each way only between I-95 and I-516 (16@95 project); GDOT plans to widen the 32 miles from I-95 to SR 67 from two to three lanes, starting with I-95 to MM 139.65 in 2027. Suggested: 'For most of its length, including west of I-95 in Pooler, I-16 has two lanes in each direction; only the stretch between I-95 and I-516 has three.'",
+   "quote": "The project is part of a 32-mile corridor improvement that will expand I-16 from two to three lanes in each direction",
+   "sourceName": "WTOC (July 2, 2026), citing GDOT",
+   "sourceUrl": "https://www.wtoc.com/2026/07/02/georgia-awards-record-468-million-contract-i-16-widening-project/",
+   "additionalSources": [
+    {
+     "name": "GDOT 16@95 FAQ",
+     "url": "https://www.dot.ga.gov/systems/ProjectDocuments/1695Improvements/16@95%20Improvement%20Projects-FAQ.pdf",
+     "quote": "two 12-foot general purpose lanes west of I-95/I-16 Interchange, three 12-foot general purpose lanes between I-95/I-16 Interchange and SR 307/Dean Forest Road",
+     "verified": "search-index text"
+    }
+   ],
+   "verification": "WTOC curl 200 + text found. No single GDOT statement of lane counts for the full 166 miles was fetched; the Macon end near I-75 has additional lanes from the I-16/I-75 interchange project (not verified in detail).",
+   "retrievedAt": "2026-10-05"
+  },
+  {
+   "n": 11,
+   "claim": "Memorial Health in Savannah is the region's Level I trauma center",
+   "verdict": "keep",
+   "correctedValue": "Memorial Health University Medical Center (4700 Waters Ave.) is a state-designated, ACS-verified Level I trauma center and the only Level I in Southeast Georgia.",
+   "quote": "(reused) Memorial Health University Medical Center, 4700 Waters Avenue, Savannah, is a state-designated, ACS-verified Level I trauma center and the only Level I in Southeast Georgia (verified 2026-09-23/24).",
+   "sourceName": "Georgia DPH — Designated Trauma & Specialty Care Centers (via facts-4715)",
+   "sourceUrl": "https://dph.georgia.gov/EMS/specialty-care-centers-cardiac-trauma-stroke-pediatric",
+   "verification": "Reused from docs/freshness/2026-09-25-post-4715/facts-4715.json (retrieved 2026-09-25); not re-fetched.",
+   "retrievedAt": "2026-10-05"
+  },
+  {
+   "n": 12,
+   "claim": "Secondary crashes are a leading cause of death on I-16, especially in construction zones",
+   "verdict": "drop",
+   "correctedValue": "No source found tying secondary crashes to I-16 deaths or calling them a 'leading cause'. Sourced general statement available: FHWA says about 20 percent of all traffic incidents are secondary incidents (which include stalls, overheating and running out of fuel, not only crashes). Suggested if wanted: 'Nationally, about one in five traffic incidents is a secondary incident triggered by an earlier one (FHWA), which is why clearing a crash scene quickly matters.'",
+   "quote": "Secondary incidents are not just crashes but also include engine stalls, overheating, and running out of fuel. Approximately 20 percent of all incidents are secondary incidents.",
+   "sourceName": "FHWA Office of Operations, Traffic Incident Management one-pager",
+   "sourceUrl": "https://ops.fhwa.dot.gov/aboutus/one_pagers/tim.htm",
+   "verification": "curl 200 + text found. I-16-specific claim unverified -> drop.",
+   "retrievedAt": "2026-10-05"
+  },
+  {
+   "n": 13,
+   "claim": "FMCSA violations: Federal regulation violations constitute negligence per se in Georgia courts",
+   "verdict": "update",
+   "correctedValue": "Overstated. Accurate: 'Georgia has adopted the Federal Motor Carrier Safety Regulations as state rules, including for intrastate trucking (O.C.G.A. § 40-1-8; Ga. Comp. R. & Regs. 515-16-4-.01; Ga. DPS Transportation Rulebook ch. 1), so a violation can support a negligence per se claim under O.C.G.A. § 51-1-6 — but the injured person must still show the violation caused the crash (Parris v. Gooch, Ga. Ct. App. June 24, 2026; Parker v. R & L Carriers, Ga. Ct. App. 2002).' Note O.C.G.A. § 40-1-8(h) itself requires motor carriers to comply with 49 C.F.R. Parts 391, 392 and 395.",
+   "quote": "At the time of the collision, Georgia had adopted the Federal Motor Carrier Safety Regulations ('FMCSR') as its own safety regulations applicable to intrastate commerce. ... The complaint asserted claims for negligence and negligence per se against Parris, with the negligence per se claims premised in part on alleged violations of the FMCSR.",
+   "sourceName": "Parris v. Gooch, Nos. A26A0423-0425 (Ga. Ct. App. June 24, 2026), citing Ga. Comp. R. & Regs. 515-16-4-.01 (2021)",
+   "sourceUrl": "https://caselaw.findlaw.com/court/ga-court-of-appeals/161800.html",
+   "additionalSources": [
+    {
+     "name": "LII, Ga. Comp. R. & Regs. R. 515-16-4-.01 (Adoption of Federal Motor Carrier Safety Rules)",
+     "url": "https://law.cornell.edu/regulations/georgia/Ga-Comp-R-Regs-R-515-16-4-.01",
+     "quote": "The Motor Carrier Safety Regulations issued by the United States Department of Transportation, Federal Motor Carrier Safety Administration ... contained in Title 49 of the Code of Federal Regulations, Parts 350, 382, 383, and 390 through 397, as now in force and as hereafter amended ... are by this Rule made Transportation Rules of this Commission",
+     "verified": "curl 200 + text found"
+    },
+    {
+     "name": "Georgia DPS Transportation Rulebook, Ch. 1 (Motor Carrier Safety Regulations), adopted Dec. 2014",
+     "url": "https://dps.georgia.gov/document/publication/chapter-1-dps-transportation-rules-2015pdf/download",
+     "quote": "All references to 'interstate' commerce shall be interpreted to include 'intrastate' commerce.",
+     "verified": "curl 200 (PDF) + text found"
+    },
+    {
+     "name": "O.C.G.A. § 40-1-8 (Justia)",
+     "url": "https://law.justia.com/codes/georgia/title-40/chapter-1/article-1/section-40-1-8/",
+     "quote": "(h) Unless otherwise provided by law, a motor carrier or operator of a commercial motor vehicle shall comply with present regulations as follows: (1) Motor carrier safety standards found in 49 C.F.R. Part 391; (2) ... Part 392 ...; and (3) Hours of service and record of duty status requirements of 49 C.F.R. Part 395.",
+     "verified": "search-index text only (Justia/FindLaw return 403 to curl; not bypassed)"
+    },
+    {
+     "name": "Parker v. R & L Carriers, 254 Ga. App. 113 (2002) (Justia)",
+     "url": "https://law.justia.com/cases/georgia/court-of-appeals/2002/a01a1703-0.html",
+     "quote": "Setting aside the question of whether the violation of the federal regulation at issue constitutes negligence per se, we hold that Parker's argument ignores proximate cause.",
+     "verified": "search-index text only"
+    },
+    {
+     "name": "O.C.G.A. § 51-1-6",
+     "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-6/",
+     "quote": "",
+     "verified": "unverified — Justia 403; statute text not retrieved this session. Commonly cited as the negligence per se statute; confirm wording before quoting."
+    }
+   ],
+   "verification": "Parris: FindLaw 403 to curl, retrieved via WebFetch (no challenge solved) — quote from search-index text and WebFetch summary; confirm exact wording before quoting. LII and DPS rule curl 200 + text found. Statute texts for 40-1-8 and 51-1-6 not directly fetched.",
+   "retrievedAt": "2026-10-05"
+  },
+  {
+   "n": 14,
+   "claim": "Georgia State Patrol responds to I-16 crashes",
+   "verdict": "keep",
+   "correctedValue": "GSP investigates crashes on I-16 (e.g., it investigated the Jan. 23, 2026 Bleckley County crash).",
+   "quote": "According to the Georgia State Patrol, three commercial vehicles and one pickup truck collided just before 9 a.m.",
+   "sourceName": "WGXA (Jan. 23, 2026)",
+   "sourceUrl": "https://wgxa.tv/news/local/one-dead-two-injured-following-multi-car-crash-with-semi-trucks-on-i-16-loca-news-traffic-fatal-accidents-sheriff-daniel-cape-middle-georgia-interstate16",
+   "verification": "curl 200 + text found. Low priority; local sheriffs and city police also work I-16 crashes (e.g., Bleckley County Sheriff on scene).",
+   "retrievedAt": "2026-10-05"
+  }
+ ]
+}

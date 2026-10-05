@@ -1,0 +1,62 @@
+--- edit 1 · content ---
+  replace: 'fastest-growing' -> 'fourth-busiest'
+  replace: 'on' -> 'in'
+  replace: 'U.S. East Coast,' -> 'United States,'
+  insert: '' -> 'one of'
+  replace: 'most likely place to be involved in a catastrophic' -> 'region's main'
+--- edit 2 · content ---
+  insert: '' -> 'chain-reaction'
+  replace: 'several semitrailers' -> 'a tractor-trailer, two box trucks and a pickup'
+  insert: '' -> 'eastbound I-16 in Bleckley County, near'
+  replace: 'I-16 corridor' -> 'Twiggs County line,'
+  replace: 'left 3 in critical condition in Twiggs County Active' -> 'seriously injured 2 (Georgia State Patrol)'
+--- edit 3 · content ---
+  replace: 'processed 5.9' -> 'handled nearly 5.7'
+  replace: '2023' -> '2025, its second-busiest year after the 2022 record of about 5.9 million (Georgia Ports Authority). Most of its containers leave by truck'
+  replace: 'continues to grow under a $1.9 billion expansion plan that will increase truck lanes from 53 to 100' -> 'the rest'
+  replace: '2030. Every container that leaves' -> 'rail. Trucks reach I-16 at Dean Forest Road (exit 160) and by the Jimmy DeLoach Parkway (exit 152), which also connects'
+  replace: 'by road travels I-16 westbound toward' -> 'to I-95, on the way to'
+--- edit 4 · content ---
+  replace: 'is reconstructing' -> 'has finished rebuilding'
+  insert: '' -> 'is'
+  replace: 'through' -> 'between I-95 and I-516 in'
+  replace: 'construction' -> 'work'
+  delete: 'between Milepost 156 and MP 164' -> ''
+--- edit 5 · content ---
+  replace: 'Outside of the Savannah metropolitan area, I-16 narrows to two lanes in each direction for' -> 'For'
+  replace: 'length.' -> 'length, including west of I-95 in Pooler, I-16 has two lanes in each direction; only the stretch between I-95 and I-516 has three.'
+  replace: 'Most Dangerous' -> 'High-Risk'
+--- edit 6 · content ---
+  delete: 'Tied for the most dangerous interchange in the Savannah area.' -> ''
+--- edit 7 · content ---
+  replace: 'The' -> 'A'
+  delete: 'all' -> ''
+  delete: 'Under active' -> ''
+  replace: 'reconstruction, this interchange is a construction zone' -> 'has finished rebuilding the interchange, but widening work continues just east of it toward I-516,'
+  replace: 'shifts, temporary signals,' -> 'shifts'
+--- edit 8 · content ---
+  replace: 'Twiggs County (Milepost 40-60) Rural, two-lane' -> 'Rural Middle Georgia (Twiggs to Laurens Counties) A long rural'
+  replace: 'where fatigue-related crashes peak.' -> 'with two lanes in each direction.'
+  delete: 'multi-semitrailer' -> ''
+  insert: '' -> 'chain-reaction'
+  replace: 'occurred' -> 'happened here,'
+--- edit 9 · content ---
+  insert: '' -> 'Georgia has adopted the'
+  replace: 'regulation violations constitute' -> 'Motor Carrier Safety Regulations as state rules, so a violation can support a'
+  replace: 'in Georgia courts' -> 'claim (O.C.G.A. § 51-1-6), as long as it caused the crash'
+--- edit 10 · content ---
+  replace: 'leading cause of death' -> 'serious risk'
+--- edit 11 · meta:_roden_key_takeaways ---
+  replace: 'Georgia's truck fatalities rose 81% from 2013 to 2023 (142 to 257).' -> 'In 2024, 197 people died in Georgia crashes involving large trucks (NHTSA).'
+--- edit 12 · faq:1:answer ---
+  replace: 'processed 5.9' -> 'handled nearly 5.7'
+  replace: '2023,' -> '2025, its second-busiest year (Georgia Ports Authority). Most containers leave by truck,'
+  replace: 'every container leaving' -> 'many reach I-16 at Dean Forest Road or'
+  replace: 'road travels I-16 westbound. This creates enormous' -> 'the Jimmy DeLoach Parkway, which also feeds I-95. That means heavy'
+  delete: 'The port's $1.9 billion expansion will increase truck lanes from 53 to 100 by 2030, further increasing freight volume on' -> ''
+--- edit 13 · faq:2:answer ---
+  delete: 'actively reconstructing the I-16/I-95 interchange and' -> ''
+  replace: 'through' -> 'between I-95 and I-516 in'
+  replace: 'County.' -> 'County, next to the rebuilt I-16/I-95 interchange.'
+--- edit 14 · faq:3:answer ---
+  insert: '' -> 'A claim against GDOT is a claim against the State, which requires written ante litem notice within 12 months (O.C.G.A. § 50-21-26).'
