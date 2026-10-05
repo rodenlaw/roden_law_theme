@@ -1,0 +1,502 @@
+{
+ "postId": 4646,
+ "slug": "south-carolina-statute-of-limitations-personal-injury",
+ "liveUrl": "https://rodenlaw.com/blog/south-carolina-statute-of-limitations-personal-injury/",
+ "jurisdiction": "SC",
+ "researchedAt": "2026-10-05",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "After a car accident, truck crash, or any personal injury in South Carolina, you have a legal deadline to file your lawsuit. Miss it, and your claim is permanently barred — no matter how serious your injuries or how clear the other driver's fault.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code Title 15, Chapter 3 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Consistent with § 15-3-20(A) (actions 'may only be commenced within the periods prescribed') and § 15-3-530. Tolling rules below are the exceptions; 'barred' is the statutory consequence."
+  },
+  {
+   "surface": "body",
+   "claim": "Under S.C. Code § 15-3-530, you have 3 years from the date of your injury to file a personal injury lawsuit in South Carolina.",
+   "verdict": "keep",
+   "currentValue": "§ 15-3-530(5): 'Within three years: ... an action for assault, battery, or any injury to the person or rights of another, not arising on contract and not enumerated by law, and those provided for in Section 15-3-545'. § 15-3-535: (5) actions 'must be commenced within three years after the person knew or by the exercise of reasonable diligence should have known that he had a cause of action.'",
+   "sourceName": "S.C. Code Title 15, Chapter 3 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Verified verbatim 2026-10-05 (same as facts-1840, facts-1720). Optional pin cite: '§ 15-3-530(5)'. For a crash the knew-or-should-have-known date is normally the crash date, so 'from the date of your injury' is the usual case; no edit needed."
+  },
+  {
+   "surface": "body",
+   "claim": "Medical malpractice (with specific rules)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code Title 15, Chapter 3 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "§ 15-3-530(5) expressly includes 'those provided for in Section 15-3-545' — three years, measured as § 15-3-545 provides."
+  },
+  {
+   "surface": "body",
+   "claim": "Dog bites",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code Title 15, Chapter 3 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "A dog-bite injury claim (including strict liability under § 47-3-110) is an injury-to-the-person action; three years under § 15-3-530. No edit."
+  },
+  {
+   "surface": "body",
+   "claim": "Some claims have deadlines shorter than 3 years:",
+   "verdict": "update",
+   "currentValue": "Of the five table rows, only three are shorter (Tort Claims Act 2 years, workers' comp 2 years, Longshore 1 year). Wrongful death is the same 3 years (§ 15-3-530(6)) and medical malpractice is 3 years with a different trigger and a 6-year cap (§ 15-3-545(A)).",
+   "sourceName": "S.C. Code Title 15, Chapter 3 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Lead-in contradicts its own table. Replace with 'Some claims have shorter deadlines or different starting points:' (and optionally retitle the H2 'Exceptions: Different Deadlines')."
+  },
+  {
+   "surface": "body",
+   "claim": "Government entity (Tort Claims Act) | Notice required; 2-year filing | S.C. Code § 15-78-80",
+   "verdict": "update",
+   "currentValue": "§ 15-78-110: an action 'is forever barred unless an action is commenced within two years after the date the loss was or should have been discovered; provided, that if the claimant first filed a claim pursuant to this chapter ... within three years'. § 15-78-80(a): a verified claim 'may be filed'; (d) 'If filed, the claim must be received within one year after the loss was or should have been discovered.' No notice is required.",
+   "sourceName": "S.C. Code §§ 15-78-80, 15-78-110 (scstatehouse.gov); sibling packs facts-4368, facts-1840",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-05",
+   "note": "MOST IMPORTANT CORRECTION. 'Notice required' is the Georgia ante-litem concept imported into South Carolina, and it contradicts this post's own FAQ ('There is no pre-suit notice a claimant must serve'), which is right. Row should read: 'Government entity (Tort Claims Act) | 2 years from when the loss was or should have been discovered; 3 if an optional verified claim is filed within 1 year | S.C. Code §§ 15-78-110, 15-78-80'. Same error class corrected in packs 4368 and 2647."
+  },
+  {
+   "surface": "body",
+   "claim": "Workers' compensation | 2 years from injury | S.C. Code § 42-15-40",
+   "verdict": "keep",
+   "currentValue": "§ 42-15-40: 'barred unless a claim is filed with the commission within two years after an accident, or if death resulted from the accident, within two years of the date of death'; repetitive trauma: two years after the employee knew or should have known the injury is compensable, no more than seven years after last exposure; occupational disease runs from definitive diagnosis.",
+   "sourceName": "S.C. Code § 42-15-40 (scstatehouse.gov); facts-1684, facts-1840",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Verified verbatim 2026-10-05. Optional precision: '2 years from the accident'. Notice to the employer within 90 days is § 42-15-20 — not needed in a short table."
+  },
+  {
+   "surface": "body",
+   "claim": "Longshore Act (federal) | 1 year from injury | 33 U.S.C. § 913",
+   "verdict": "update",
+   "currentValue": "33 U.S.C. § 913(a): claim barred 'unless a claim therefore is filed within one year after the injury or death'; if compensation was paid without an award, 'within one year after the date of the last payment'; and the time 'shall not begin to run until the employee or beneficiary is aware, or by the exercise of reasonable diligence should have been aware, of the relationship between the injury or death and the employment.' Occupational disease: two years (§ 913(b)(2)).",
+   "sourceName": "33 U.S.C. § 913 (Cornell LII)",
+   "sourceUrl": "https://www.law.cornell.edu/uscode/text/33/913",
+   "retrievedAt": "2026-10-05",
+   "note": "One year is correct as the baseline; the cell omits the last-payment extension. Minimal fix: '1 year from injury (or from the last voluntary payment)'."
+  },
+  {
+   "surface": "body",
+   "claim": "Wrongful death | 3 years from death | S.C. Code § 15-3-530",
+   "verdict": "keep",
+   "currentValue": "§ 15-3-530(6): 'an action under Sections 15-51-10 to 15-51-60 for death by wrongful act, the period to begin to run upon the death of the person'.",
+   "sourceName": "S.C. Code Title 15, Chapter 3 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Verified verbatim. Optional pin cite '§ 15-3-530(6)'."
+  },
+  {
+   "surface": "body",
+   "claim": "Medical malpractice | 3 years, but discovery rule applies | S.C. Code § 15-3-545",
+   "verdict": "update",
+   "currentValue": "§ 15-3-545(A): 'within three years from the date of the treatment, omission, or operation giving rise to the cause of action or three years from date of discovery or when it reasonably ought to have been discovered, not to exceed six years from date of occurrence'. (B) foreign objects: two years from discovery, never less than three years after placement.",
+   "sourceName": "S.C. Code Title 15, Chapter 3 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "The six-year outer limit is the point a reader most needs and it is missing. Cell: '3 years from treatment or discovery; 6-year outer limit'. Same correction as facts-4349 / facts-1840."
+  },
+  {
+   "surface": "body",
+   "claim": "Surveillance footage is overwritten (24-72 hours for many businesses)",
+   "verdict": "update",
+   "currentValue": "No statute or published survey supports a 24–72 hour figure; retention is set by each business and varies.",
+   "sourceName": "No authoritative source found",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Unsupported number. Replace with 'Surveillance footage is overwritten, often within days'."
+  },
+  {
+   "surface": "body",
+   "claim": "Traffic camera data is purged (days to weeks)",
+   "verdict": "update",
+   "currentValue": "No verified retention schedule for SC traffic cameras; many SCDOT traffic cameras are live-view only and are not recorded at all.",
+   "sourceName": "No authoritative source found",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Soften: 'Traffic camera footage, where it is recorded at all, is not kept long'. Do not state a window."
+  },
+  {
+   "surface": "body",
+   "claim": "Truck ELD data is overwritten (days without a preservation letter)",
+   "verdict": "update",
+   "currentValue": "49 C.F.R. § 395.8(k)(1): a motor carrier 'shall retain records of duty status and supporting documents ... for a period of not less than 6 months from the date of receipt.' Dashcam video, dispatch messages and ECM data have no federal retention rule.",
+   "sourceName": "49 CFR § 395.8(k) (Cornell LII); facts-4715, run-4709",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/395.8",
+   "retrievedAt": "2026-10-05",
+   "note": "Factually backwards: ELD hours-of-service records carry a six-month federal retention floor. Replace with 'Truck dashcam and engine data can be overwritten at any time, and ELD logs need only be kept six months'."
+  },
+  {
+   "surface": "body",
+   "claim": "Vehicle damage is repaired or the car is scrapped",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General practice",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Practical, no figure."
+  },
+  {
+   "surface": "body",
+   "claim": "Road conditions change (potholes fixed, signs added, construction completed)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General practice",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Practical, no figure."
+  },
+  {
+   "surface": "body",
+   "claim": "Memories fade within weeks — details become unreliable after months",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "No authoritative source verified",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Specific time claims unsupported. Soften: 'Memories fade, and details become less reliable over time'."
+  },
+  {
+   "surface": "body",
+   "claim": "Witnesses move, change phone numbers, or become unreachable",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General practice",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "Police officers who responded may transfer or retire",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General practice",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "A delay in hiring an attorney signals to insurers that you're not serious",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "No authoritative source verified",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Mind-reading claim about insurers. Soften: 'Insurers may read a long delay as a sign the claim is minor'."
+  },
+  {
+   "surface": "body",
+   "claim": "Gaps between the accident and medical treatment suggest injuries aren't severe",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General claims practice",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Standard defense argument; phrased as what a gap 'suggests'. Keep."
+  },
+  {
+   "surface": "body",
+   "claim": "Insurers lowball victims who haven't retained counsel, knowing they're less likely to sue",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "No authoritative source verified",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Asserts insurer intent. Soften: 'Insurers know an unrepresented claimant is less likely to sue, and their offers can reflect it'."
+  },
+  {
+   "surface": "body",
+   "claim": "In rare cases, the statute of limitations may be extended if the injured person did not know (and could not reasonably have known) about the injury at the time it occurred.",
+   "verdict": "update",
+   "currentValue": "§ 15-3-535 makes the discovery rule the statutory rule for every § 15-3-530(5) injury claim: three years 'after the person knew or by the exercise of reasonable diligence should have known that he had a cause of action.' Dean v. Ruscon Corp., 321 S.C. 360, 468 S.E.2d 645 (1996): the statute 'runs from the date the injured party either knows or should have known by the exercise of reasonable diligence that a cause of action arises from the wrongful conduct'; reasonable diligence means acting 'with some promptness' once facts put a reasonable person on notice; not comprehending 'the full extent of the damage is immaterial.'",
+   "sourceName": "S.C. Code § 15-3-535 (scstatehouse.gov); Dean v. Ruscon Corp. (S.C. 1996, CourtListener)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Not 'rare' and not an 'extension': it is the accrual rule written into § 15-3-535. Replace with: 'Under S.C. Code § 15-3-535, the three years run from when the injured person knew or reasonably should have known they had a claim. This \"discovery rule\" matters most for:' Dean v. Ruscon (CourtListener URL resolves in a browser; curl gets a 202 bot response) supports the 'some promptness' gloss if wanted."
+  },
+  {
+   "surface": "body",
+   "claim": "For car accidents and most injury cases, the discovery rule does NOT apply — you know you're injured on the day of the crash.",
+   "verdict": "update",
+   "currentValue": "§ 15-3-535 applies to all § 15-3-530(5) actions, crashes included; in a crash case it ordinarily yields the crash date because the injury and its cause are known that day. Dean v. Ruscon: not comprehending 'the full extent of the damage is immaterial' — a worsening injury does not restart the clock. A separate, latent harm can accrue later (Benton v. Roger C. Peace Hosp., discussed in Dean).",
+   "sourceName": "S.C. Code § 15-3-535; Dean v. Ruscon Corp. (S.C. 1996)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1297674/dean-v-ruscon-corp/",
+   "retrievedAt": "2026-10-05",
+   "note": "Legally overstated ('does NOT apply'). Replace with: 'In a car accident the rule usually changes nothing: you know you were hurt, and by whom, on the day of the crash — and an injury that later turns out worse does not restart the clock.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Minor plaintiff: If the injured person is under 18, the clock doesn't start until they turn 18",
+   "verdict": "update",
+   "currentValue": "§ 15-3-40: for a person 'within the age of eighteen years' when the action accrued, 'the time of the disability is not a part of the time limited', 'except that the period ... cannot be extended ... (b) in any case longer than one year after the disability ceases.' Result: a child's claim generally expires on the 19th birthday, or three years after the injury if that is later. Medical malpractice: tolled at most seven years and one year after majority (§ 15-3-545(D)).",
+   "sourceName": "S.C. Code Title 15, Chapter 3 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "SECOND MOST IMPORTANT CORRECTION. As written a reader would assume three years from the 18th birthday (age 21); the real deadline is generally the 19th birthday. Replace with: 'Minor plaintiff: If the injured person is under 18, the deadline is generally extended to one year after their 18th birthday, or three years from the injury if that is later (S.C. Code § 15-3-40)'. Same error corrected in facts-1840 and facts-1704."
+  },
+  {
+   "surface": "body",
+   "claim": "Defendant absent from state: If the at-fault party leaves South Carolina, time may toll during their absence",
+   "verdict": "update",
+   "currentValue": "§ 15-3-30: if the defendant is out of state when the claim accrues, the action may be commenced within the period after the defendant returns; if after accrual the defendant 'shall depart from and reside out of this State or remain continuously absent therefrom for the space of one year or more, the time of his absence shall not be deemed or taken as any part of the time limited'.",
+   "sourceName": "S.C. Code Title 15, Chapter 3 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Direction right, trigger missing: a short trip does not toll. Minimal fix: 'If the at-fault party moves out of South Carolina, or stays away for a year or more, that time may not count (S.C. Code § 15-3-30)'. Keep 'may' — do not promise tolling against an out-of-state driver who can still be served."
+  },
+  {
+   "surface": "body",
+   "claim": "Mental incapacity: If the injury rendered the plaintiff mentally incapacitated",
+   "verdict": "update",
+   "currentValue": "§ 15-3-40(2) tolls for a person 'insane' when the cause of action accrued, but the extension cannot exceed five years for any disability except infancy, nor run longer than one year after the disability ceases. § 15-3-50: 'No person shall avail himself of a disability unless it existed when his right of action accrued.'",
+   "sourceName": "S.C. Code Title 15, Chapter 3 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Missing the caps. Replace with: 'Mental incapacity: If the injured person is legally incompetent when the claim arises, the clock pauses — but for no more than five years, and no more than one year after the incapacity ends (S.C. Code § 15-3-40)'."
+  },
+  {
+   "surface": "body",
+   "claim": "The statute requires that your lawsuit be filed with the court — not that settlement negotiations be ongoing, not that you've hired an attorney, not that you've sent a demand letter.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code Title 15, Chapter 3 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Consistent with § 15-3-20(B). Negotiation, a demand letter or an insurance claim does not commence an action or toll the period."
+  },
+  {
+   "surface": "body",
+   "claim": "The Summons and Complaint must be filed with the Clerk of Court before the 3-year anniversary of your injury.",
+   "verdict": "update",
+   "currentValue": "§ 15-3-20(B): 'A civil action is commenced when the summons and complaint are filed with the clerk of court if actual service is accomplished within one hundred twenty days after filing.'",
+   "sourceName": "S.C. Code Title 15, Chapter 3 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Filing alone is not enough: service must follow within 120 days or the action is not commenced on the filing date. Append: '— and the defendant must actually be served within 120 days after filing (S.C. Code § 15-3-20(B)).' Also 'before the 3-year anniversary' assumes the injury date is the accrual date; acceptable for a crash."
+  },
+  {
+   "surface": "body",
+   "claim": "Early consultation costs nothing (Roden Law offers free case evaluations)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "client.json / firm standard offer",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "A free-consultation line, not a fee line. The post has no contingency-fee sentence, so nothing differs from the confirmed wording ('Fees and costs apply only upon successful recovery. No fees or costs with no recovery.'). Do not add one (body-growth limit) unless the owner wants it."
+  },
+  {
+   "surface": "body",
+   "claim": "Send evidence preservation letters immediately",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General practice",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "Call Roden Law's North Charleston office at (843) 612-6561.",
+   "verdict": "keep",
+   "currentValue": "client.json North Charleston office: 2703 Spruill Ave, North Charleston, SC 29405, phone (843) 612-6561; href tel:+18436126561 matches. /locations/south-carolina/north-charleston/ is in docs/site-architecture/architecture.json.",
+   "sourceName": "client.json",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Phone and link verified against repo records (rodenlaw.com not fetched — Cloudflare)."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "South Carolina gives personal injury victims 3 years from the date of injury to file a lawsuit (S.C. Code § 15-3-530).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code Title 15, Chapter 3 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Verified verbatim."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Exceptions include: 2-year deadline for claims against government entities under the SC Tort Claims Act, tolling for minors (deadline paused until age 18), and the discovery rule (clock starts when the injury is or should have been discovered).",
+   "verdict": "update",
+   "currentValue": "Tort Claims Act: 2 years, 3 with a verified claim filed within 1 year (§ 15-78-110). Minors: extended to one year after turning 18, i.e. generally the 19th birthday (§ 15-3-40). Discovery rule: three years from when the person knew or should have known of the claim (§ 15-3-535).",
+   "sourceName": "S.C. Code Title 15, Chapter 3 (scstatehouse.gov); § 15-78-110",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Renders above the article. Replace '(deadline paused until age 18)' with '(generally until one year after the child turns 18)'. Optional: '(S.C. Code § 15-3-535)' after the discovery clause."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Waiting to file weakens cases — evidence degrades, witnesses forget, and defendants destroy records.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "49 CFR § 395.8(k) (Cornell LII) for the trucking example",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "'Defendants destroy records' implies wrongdoing. Soften: 'and records can be lawfully discarded or overwritten'."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Three years from the date of your injury under S.C. Code § 15-3-530. It applies to car accidents, truck and motorcycle crashes, pedestrian and bicycle claims, slip and falls, dog bites and other negligence-based claims.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code Title 15, Chapter 3 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Verified. FAQPage structured data."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Your claim is permanently barred, no matter how serious your injuries or how clear the other driver's fault was. A court does not weigh the merits of a claim filed out of time, so the deadline is effectively absolute.",
+   "verdict": "update",
+   "currentValue": "The statute of limitations is a defense the defendant raises; the tolling rules in §§ 15-3-30, 15-3-40 and the discovery rule in § 15-3-535 can move the deadline, and the post itself lists them.",
+   "sourceName": "S.C. Code Title 15, Chapter 3 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "'Effectively absolute' contradicts the post's own tolling section. Replace the second sentence with: 'Unless a tolling rule applies, a court will dismiss a claim filed out of time without weighing its merits.' FAQPage structured data."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Yes. Under the South Carolina Tort Claims Act the action is barred unless it is commenced within two years of the date the loss was or should have been discovered (S.C. Code § 15-78-110), rather than the usual three.",
+   "verdict": "keep",
+   "currentValue": "§ 15-78-110 verbatim 'forever barred unless an action is commenced within two years after the date the loss was or should have been discovered'.",
+   "sourceName": "S.C. Code § 15-78-110 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Verified."
+  },
+  {
+   "surface": "faqs",
+   "claim": "No. There is no pre-suit notice a claimant must serve under the Tort Claims Act. Filing a verified claim with the entity is optional (S.C. Code § 15-78-80), and doing so within one year extends the deadline to three years.",
+   "verdict": "keep",
+   "currentValue": "§ 15-78-80(a) 'may be filed'; (d) 'If filed, the claim must be received within one year after the loss was or should have been discovered'; § 15-78-110 three years if the claimant first filed a claim.",
+   "sourceName": "S.C. Code §§ 15-78-80, 15-78-110 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Verified. The body table must be brought into line with this answer (see the table row)."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Because the proof degrades. Physical evidence disappears, witnesses forget details, and insurers notice a delayed claim and treat it as weaker. The strength of a case is usually set long before the filing deadline arrives.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General practice",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Qualitative, no numbers."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "How long you have to file a personal injury lawsuit in South Carolina, and the exceptions that shorten or extend that window.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Accurate summary; published as Article description."
+  }
+ ],
+ "recommendedEdits": [
+  "Table, government row: 'Notice required; 2-year filing' -> '2 years; 3 if an optional verified claim is filed within 1 year'; authority 'S.C. Code §§ 15-78-110, 15-78-80'. (Body currently contradicts FAQ 4, which is correct.)",
+  "Tolling, minor bullet: replace with 'If the injured person is under 18, the deadline is generally extended to one year after their 18th birthday, or three years from the injury if that is later (S.C. Code § 15-3-40)'. Key Takeaways: '(deadline paused until age 18)' -> '(generally until one year after the child turns 18)'.",
+  "Discovery Rule section: 'In rare cases, the statute of limitations may be extended if ...' -> 'Under S.C. Code § 15-3-535, the three years run from when the injured person knew or reasonably should have known they had a claim. This \"discovery rule\" matters most for:'; and the closing line -> 'In a car accident the rule usually changes nothing: you know you were hurt, and by whom, on the day of the crash — and an injury that later turns out worse does not restart the clock.'",
+  "What 'Filing' Means: append to the Summons and Complaint sentence '— and the defendant must actually be served within 120 days after filing (S.C. Code § 15-3-20(B))'.",
+  "Evidence list: ELD bullet -> 'Truck dashcam and engine data can be overwritten at any time, and ELD logs need only be kept six months'; surveillance bullet -> 'Surveillance footage is overwritten, often within days'; traffic camera bullet -> 'Traffic camera footage, where it is recorded at all, is not kept long'; memories bullet -> 'Memories fade, and details become less reliable over time'.",
+  "Tolling, mental incapacity bullet -> 'If the injured person is legally incompetent when the claim arises, the clock pauses — but for no more than five years, and no more than one year after the incapacity ends (S.C. Code § 15-3-40)'. Defendant-absent bullet -> 'If the at-fault party moves out of South Carolina, or stays away for a year or more, that time may not count (S.C. Code § 15-3-30)'.",
+  "Table: med-mal cell -> '3 years from treatment or discovery; 6-year outer limit'; Longshore cell -> '1 year from injury (or from the last voluntary payment)'; lead-in -> 'Some claims have shorter deadlines or different starting points:'.",
+  "Insurance bullets: 'A delay in hiring an attorney signals to insurers that you're not serious' -> 'Insurers may read a long delay as a sign the claim is minor'; 'Insurers lowball victims who haven't retained counsel, knowing they're less likely to sue' -> 'Insurers know an unrepresented claimant is less likely to sue, and their offers can reflect it'.",
+  "FAQ 2 second sentence -> 'Unless a tolling rule applies, a court will dismiss a claim filed out of time without weighing its merits.' Key Takeaways: 'and defendants destroy records' -> 'and records can be lawfully discarded or overwritten'.",
+  "No fee line exists in the post; the free-consultation line is fine. Do not add sections. Net growth from the edits above is small (most are like-for-like replacements; the § 15-3-20(B) clause and statute cites add roughly 40–60 words, under 10%)."
+ ],
+ "statuteCitations": [
+  {
+   "section": "S.C. Code § 15-3-20",
+   "name": "Commencement of action — summons and complaint filed, if actual service within 120 days",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-30",
+   "name": "Defendant out of state — absence (residing out of state or 1+ year continuous) not counted",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-40",
+   "name": "Minority and insanity tolling — capped at 5 years (except infancy) and 1 year after disability ceases",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-50",
+   "name": "Disability must exist when the right of action accrued",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-530(5), (6)",
+   "name": "Three years — injury to the person; wrongful death from date of death",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-535",
+   "name": "Discovery rule for § 15-3-530(5) actions — knew or should have known",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-545",
+   "name": "Medical malpractice — 3 years from treatment or discovery, 6-year cap; foreign objects; minors max 7 years",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-80",
+   "name": "Tort Claims Act — optional verified claim, received within 1 year",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-110",
+   "name": "Tort Claims Act — 2 years from discovery of loss, 3 if a claim was first filed",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 42-15-40",
+   "name": "Workers' compensation — claim within 2 years after accident or death; repetitive trauma rule",
+   "url": "https://www.scstatehouse.gov/code/t42c015.php"
+  },
+  {
+   "section": "33 U.S.C. § 913",
+   "name": "Longshore Act — claim within 1 year of injury or last payment; awareness rule",
+   "url": "https://www.law.cornell.edu/uscode/text/33/913"
+  },
+  {
+   "section": "49 C.F.R. § 395.8(k)",
+   "name": "Motor carriers retain records of duty status (ELD) at least 6 months",
+   "url": "https://www.law.cornell.edu/cfr/text/49/395.8"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "Dean v. Ruscon Corp., 321 S.C. 360, 468 S.E.2d 645 (1996) — discovery rule: knew or should have known; reasonable diligence means acting with some promptness; full extent of damage immaterial (CourtListener; resolves in a browser, curl gets a 202 bot response)",
+   "url": "https://www.courtlistener.com/opinion/1297674/dean-v-ruscon-corp/"
+  },
+  {
+   "name": "South Carolina Code Title 15 Chapter 3 — Limitations of Civil Actions",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "name": "South Carolina Code Title 15 Chapter 78 — Tort Claims Act",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "name": "South Carolina Code Title 42 Chapter 15 — Workers' compensation notice and claim",
+   "url": "https://www.scstatehouse.gov/code/t42c015.php"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text (tags stripped). The <strong> spans in the § 15-3-530 sentence, tolling bullet labels, the 'What Filing Means' sentence and the Key Takeaways match once tags are stripped; table rows are quoted as 'cell | cell | cell'. Sibling packs reused: facts-1840 (2026-09-25 SC/GA statute of limitations post), facts-4368, facts-4349, facts-1684, facts-1720, facts-4715."
+}

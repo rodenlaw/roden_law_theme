@@ -1,0 +1,698 @@
+{
+  "postId": 4562,
+  "slug": "medical-malpractice-limits-south-carolina",
+  "liveUrl": "https://rodenlaw.com/blog/medical-malpractice-limits-south-carolina/",
+  "jurisdiction": "SC",
+  "researchedAt": "2026-10-05",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "For background on how medical negligence works generally, the Cornell Law Institute's medical malpractice overview provides helpful context.",
+      "verdict": "update",
+      "currentValue": "The linked URL https://www.law.cornell.edu/wex/medical_malpractice returns HTTP 404 (rechecked 2026-10-05). The live entry is Wex 'malpractice' at https://www.law.cornell.edu/wex/malpractice (HTTP 200), published by the Legal Information Institute (LII) at Cornell Law School. There is no 'Cornell Law Institute'.",
+      "sourceName": "Cornell LII Wex — malpractice",
+      "sourceUrl": "https://www.law.cornell.edu/wex/malpractice",
+      "retrievedAt": "2026-10-05",
+      "note": "Dead outbound link. Repoint href to /wex/malpractice and change anchor to 'Cornell Law School's Legal Information Institute's malpractice overview' (same fix as posts 1676/1696)."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina's medical malpractice laws are governed primarily by statutes that set rules for damage caps (S.C. Code § 15-32-220), pre-suit filing and mandatory mediation (S.C. Code § 15-79-125), and expert affidavits (S.C. Code § 15-36-100).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code §§ 15-32-220, 15-79-125, 15-36-100",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Verified 2026-10-05 against scstatehouse.gov chapters 32, 36, 79."
+    },
+    {
+      "surface": "body",
+      "claim": "Yes. South Carolina imposes a cap on non-economic damages in medical malpractice cases under S.C. Code § 15-32-220. The current caps are:",
+      "verdict": "update",
+      "currentValue": "§ 15-32-220(E): the noneconomic limits 'do not apply if the jury or court determines that the defendant was grossly negligent, wilful, wanton, or reckless, and such conduct was the proximate cause of the claimant's noneconomic damages, or if the defendant has engaged in fraud or misrepresentation related to the claim, or if the defendant altered or destroyed medical records with the purpose of avoiding a claim or liability to the claimant.' Intoxication is NOT a § 15-32-220 exception (it lifts the punitive cap under § 15-32-530(C)(3)).",
+      "sourceName": "S.C. Code § 15-32-220(E)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-10-05",
+      "note": "The post never states the (E) exceptions — the most important cap fact on a 'damage caps' post. Add after the table (or after 'The current caps are:' paragraph): 'The caps do not apply if the provider was grossly negligent, wilful, wanton or reckless, committed fraud or misrepresentation related to the claim, or altered or destroyed medical records to avoid liability (S.C. Code § 15-32-220(E)).' Also note the caps are 'for each claimant' and apply 'when final judgment is rendered' (A)-(C)."
+    },
+    {
+      "surface": "body",
+      "claim": "Single healthcare provider $596,001 in 2026 (base $350,000, adjusted yearly) S.C. Code § 15-32-220",
+      "verdict": "keep",
+      "currentValue": "RFA memo 'Non-Economic (Medical Malpractice) Damages Limitation – Inflation Component', 2026-02-03 (read from the PDF 2026-10-05): CPI-U up 70.3% from 190.3 (Dec 2004) to 324.054 (Dec 2025); 'the limit against a single health care provider and a health care institution for each claimant ... when final judgment is rendered increases to $596,001. Also, the limit against all health care providers and all health care institutions for each claimant ... increases to $1,788,002.' Effective on publication in the State Register (§ 15-32-220(F)). Base: 'three hundred fifty thousand dollars for each claimant' (§ 15-32-220(A)).",
+      "sourceName": "RFA memo 2026-02-03; S.C. Code § 15-32-220(A),(F)",
+      "sourceUrl": "https://rfa.sc.gov/media/11477",
+      "retrievedAt": "2026-10-05",
+      "note": "Table row; both figures verified. Base figure is labelled as indexed — not stale."
+    },
+    {
+      "surface": "body",
+      "claim": "Single institution (hospital, clinic) $596,001 in 2026 (base $350,000, adjusted yearly) S.C. Code § 15-32-220",
+      "verdict": "keep",
+      "currentValue": "RFA memo 'Non-Economic (Medical Malpractice) Damages Limitation – Inflation Component', 2026-02-03 (read from the PDF 2026-10-05): CPI-U up 70.3% from 190.3 (Dec 2004) to 324.054 (Dec 2025); 'the limit against a single health care provider and a health care institution for each claimant ... when final judgment is rendered increases to $596,001. Also, the limit against all health care providers and all health care institutions for each claimant ... increases to $1,788,002.' Effective on publication in the State Register (§ 15-32-220(F)). § 15-32-220(B) applies to a single 'health care institution', defined in § 15-32-210(4) as 'an ambulatory surgical facility, a hospital, an institutional general infirmary, a nursing home, and a renal dialysis facility'.",
+      "sourceName": "RFA memo 2026-02-03; S.C. Code §§ 15-32-210(4), 15-32-220(B)",
+      "sourceUrl": "https://rfa.sc.gov/media/11477",
+      "retrievedAt": "2026-10-05",
+      "note": "Figures verified. 'clinic' is loose: a physician practice is a 'health care provider' under § 15-32-210(5) ('including a health care practice'); same $596,001 either way. Optional: '(hospital, surgery center, nursing home)'."
+    },
+    {
+      "surface": "body",
+      "claim": "Total cap (all defendants combined) $1,788,002 in 2026 (base $1,050,000, adjusted yearly) S.C. Code § 15-32-220",
+      "verdict": "keep",
+      "currentValue": "RFA memo 'Non-Economic (Medical Malpractice) Damages Limitation – Inflation Component', 2026-02-03 (read from the PDF 2026-10-05): CPI-U up 70.3% from 190.3 (Dec 2004) to 324.054 (Dec 2025); 'the limit against a single health care provider and a health care institution for each claimant ... when final judgment is rendered increases to $596,001. Also, the limit against all health care providers and all health care institutions for each claimant ... increases to $1,788,002.' Effective on publication in the State Register (§ 15-32-220(F)). § 15-32-220(C): where judgment is against more than one provider/institution, each is limited to $350,000 (indexed) and all together to 'one million fifty thousand dollars for each claimant'.",
+      "sourceName": "RFA memo 2026-02-03; S.C. Code § 15-32-220(C)",
+      "sourceUrl": "https://rfa.sc.gov/media/11477",
+      "retrievedAt": "2026-10-05",
+      "note": "Verified. Optional: 'all health care defendants combined, per claimant' (a non-provider defendant such as a device maker is outside § 15-32-220)."
+    },
+    {
+      "surface": "body",
+      "claim": "These caps apply only to non-economic damages — pain and suffering, emotional distress, loss of enjoyment of life, and similar quality-of-life losses. There is no cap on economic damages such as medical bills, lost wages, and lost earning capacity.",
+      "verdict": "keep",
+      "currentValue": "§ 15-32-220(D)(1): 'The provisions of this section do not limit the amount of compensation for economic damages suffered by each claimant in a medical malpractice claim.' (D)(2): nor punitive damages.",
+      "sourceName": "S.C. Code § 15-32-220(D)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-10-05",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "If your malpractice injury required $2 million in corrective surgery and ongoing care, you can recover the full amount of those economic losses.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-32-220(D)(1)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Illustrative hypothetical, consistent with (D)(1). Optional: 'if proven'."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina also caps punitive damages at three times the compensatory damages or $739,245, the 2026 inflation-indexed figure, whichever is greater (S.C. Code § 15-32-530).",
+      "verdict": "update",
+      "currentValue": "RFA memo 'Punitive Damage Award Limitation – Inflation Component', 2026-02-03 (read from PDF): CPI-U up 47.8% from 219.179 (Dec 2010) to 324.054 (Dec 2025); 'the limit increases to $739,245.' § 15-32-530(A): greater of three times compensatory 'or the sum of five hundred thousand dollars' (indexed under (D)). Exceptions: (B) greater of four times or $2,000,000 where conduct was motivated primarily by unreasonable financial gain known/approved by management, or could subject the defendant to a felony conviction; (C) no cap where the defendant intended harm, pled guilty to/was convicted of a felony from the same conduct, or acted while substantially impaired by alcohol or drugs. § 15-32-220(D)(2): the med-mal noneconomic cap does not limit punitive damages.",
+      "sourceName": "RFA punitive memo 2026-02-03; S.C. Code § 15-32-530",
+      "sourceUrl": "https://rfa.sc.gov/media/11478",
+      "retrievedAt": "2026-10-05",
+      "note": "$739,245 verified. Unqualified 'caps' omits the (B)/(C) tiers. Minimal edit: append ', with higher limits or no cap for certain egregious conduct, such as intent to harm, felony conduct, or acting while impaired by alcohol or drugs'. Same in faq:0."
+    },
+    {
+      "surface": "body",
+      "claim": "Punitive damages are only available when the healthcare provider's conduct was willful, wanton, or reckless.",
+      "verdict": "update",
+      "currentValue": "§ 15-32-520(D): 'Punitive damages may be awarded only if the plaintiff proves by clear and convincing evidence that his harm was the result of the defendant's wilful, wanton, or reckless conduct.' § 15-33-135: the plaintiff 'has the burden of proving such damages by clear and convincing evidence.'",
+      "sourceName": "S.C. Code §§ 15-32-520(D), 15-33-135",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c033.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Substance right; add the burden: '...was wilful, wanton, or reckless, proven by clear and convincing evidence (S.C. Code §§ 15-32-520, 15-33-135).' § 15-32-520 is at https://www.scstatehouse.gov/code/t15c032.php."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina imposes a three-year statute of limitations for medical malpractice claims under S.C. Code § 15-3-545. The clock generally starts on the date the treatment or negligent act occurred.",
+      "verdict": "update",
+      "currentValue": "§ 15-3-545(A): 'within three years from the date of the treatment, omission, or operation giving rise to the cause of action or three years from date of discovery or when it reasonably ought to have been discovered, not to exceed six years from date of occurrence'. Public hospitals (MUSC is run by the Medical University Hospital Authority, 'an agency of the State of South Carolina', S.C. Code § 59-123-60(E); Tatum v. MUSC, 346 S.C. 194 (2001)) are sued under the S.C. Tort Claims Act, not § 15-32-220: sue the agency, not its employed doctors (§ 15-78-70); 'forever barred unless an action is commenced within two years after the date the loss was or should have been discovered' (three if a verified claim was first filed) (§ 15-78-110); $300,000 per person / $600,000 per occurrence, or $1,200,000 where the loss was 'caused by the tort of any licensed physician or dentist, employed by a governmental entity' (§ 15-78-120(a)(1)-(4)); no punitive damages or prejudgment interest (§ 15-78-120(b)).",
+      "sourceName": "S.C. Code §§ 15-3-545(A), 15-78-110",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Three years and trigger verified. Add: 'Claims against MUSC or another public hospital fall under the S.C. Tort Claims Act, which generally allows two years (S.C. Code § 15-78-110).' The post names MUSC as a defendant without mentioning this."
+    },
+    {
+      "surface": "body",
+      "claim": "Standard deadline 3 years from the negligent act or omission S.C. Code § 15-3-545(A)",
+      "verdict": "keep",
+      "currentValue": "§ 15-3-545(A): 'three years from the date of the treatment, omission, or operation'.",
+      "sourceName": "S.C. Code § 15-3-545(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Optional: 'from the treatment, omission, or operation'."
+    },
+    {
+      "surface": "body",
+      "claim": "Discovery rule extension 3 years from discovery (or when it should have been discovered) S.C. Code § 15-3-545(A)",
+      "verdict": "keep",
+      "currentValue": "'three years from date of discovery or when it reasonably ought to have been discovered' (§ 15-3-545(A)).",
+      "sourceName": "S.C. Code § 15-3-545(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Optional: 'reasonably should have been'."
+    },
+    {
+      "surface": "body",
+      "claim": "Outer limit (statute of repose) Generally 6 years from the negligent act S.C. Code § 15-3-545",
+      "verdict": "keep",
+      "currentValue": "'not to exceed six years from date of occurrence' (§ 15-3-545(A)); (B) foreign-object actions are outside it.",
+      "sourceName": "S.C. Code § 15-3-545(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Optional cite '(A)'."
+    },
+    {
+      "surface": "body",
+      "claim": "Foreign object left in the body 2 years from discovery, but never less than 3 years after it was left; the 6-year limit does not apply S.C. Code § 15-3-545(B)",
+      "verdict": "keep",
+      "currentValue": "§ 15-3-545(B): 'within two years from date of discovery or when it reasonably ought to have been discovered; provided, that, in no event shall there be a limitation on the commencement of the action less than three years after the placement or leaving of the appliance or apparatus.' (B) also covers 'the negligent placement of any appliance or apparatus'; subsection (A) applies to 'actions other than actions controlled by subsection (B)'.",
+      "sourceName": "S.C. Code § 15-3-545(B)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Verified verbatim 2026-10-05."
+    },
+    {
+      "surface": "body",
+      "claim": "Minors Extended during minority, but by no more than seven years, and no more than one year after the minor turns 18 S.C. Code § 15-3-545(D)",
+      "verdict": "keep",
+      "currentValue": "§ 15-3-545(D): periods 'are not tolled for a period of more than seven years on account of minority, and in any case more than one year after the disability ceases'; also tolled during fraud or collusion between parent/guardian and the defendant's insurer or provider.",
+      "sourceName": "S.C. Code § 15-3-545(D)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Verified verbatim; matches the Gillin-signed wording (MM-G1, 2026-09-28/30)."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina's three-year deadline gives patients more time than Georgia's two-year limit, but the pre-filing requirements (discussed below) mean that preparation must begin well before the deadline approaches.",
+      "verdict": "update",
+      "currentValue": "Georgia: two years 'after the date on which an injury or death arising from a negligent or wrongful act or omission occurred' (O.C.G.A. § 9-3-71(a)) — accurate, but uncited and off-topic on an SC-only post.",
+      "sourceName": "O.C.G.A. § 9-3-71 (Justia, recorded in facts-1696/4349)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+      "retrievedAt": "2026-10-05",
+      "note": "GA mention 1 of 3. Recommend removing the Georgia comparison: 'South Carolina's three-year deadline may seem generous, but the pre-filing requirements (discussed below) mean that preparation must begin well before the deadline approaches.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Generally, no claim can be brought more than six years after the date of the negligent act or omission, regardless of when the injury was discovered.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-3-545(A),(B)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-05",
+      "note": "'Generally' covers the (B) foreign-object exception."
+    },
+    {
+      "surface": "body",
+      "claim": "The six-year repose period is more generous than Georgia's five-year limit, but it still creates a hard deadline that can bar legitimate claims",
+      "verdict": "update",
+      "currentValue": "Georgia five-year repose (O.C.G.A. § 9-3-71(b)) is correct but has exceptions (foreign objects § 9-3-72; children under five until the tenth birthday § 9-3-73) the sentence omits.",
+      "sourceName": "O.C.G.A. § 9-3-71(b) (Justia, recorded in facts-1696)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+      "retrievedAt": "2026-10-05",
+      "note": "GA mention 2 of 3. Remove the Georgia comparison: 'The six-year repose period still creates a hard deadline that can bar legitimate claims — ...'."
+    },
+    {
+      "surface": "body",
+      "claim": "The three-year statute of limitations begins running on the date the patient discovered or should have discovered through reasonable diligence that they were injured by medical negligence.",
+      "verdict": "update",
+      "currentValue": "§ 15-3-545(A) gives three years from the treatment OR three years 'from date of discovery or when it reasonably ought to have been discovered' — the discovery date is an alternative, not the universal start, and both are bounded by the six-year repose.",
+      "sourceName": "S.C. Code § 15-3-545(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-05",
+      "note": "As written it says the clock always starts at discovery, contradicting the preceding section ('The clock generally starts on the date the treatment...'). Minimal edit: 'When the injury is not immediately apparent, the three-year period can instead run from the date the patient discovered, or reasonably should have discovered, the injury caused by medical negligence.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Retained surgical instruments — a sponge or tool left inside the body that was not discovered until symptoms developed",
+      "verdict": "update",
+      "currentValue": "Foreign-object cases are governed by § 15-3-545(B) (two years from discovery, never less than three years after placement, no six-year repose) — not the (A) three-year discovery rule; (A) applies to 'actions, other than actions controlled by subsection (B)'.",
+      "sourceName": "S.C. Code § 15-3-545(B)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Listed under the (A) discovery rule, and followed by 'Even under the discovery rule, the six-year statute of repose generally remains the outer limit' — wrong for this item. Minimal edit: append ' (these follow their own rule: two years from discovery, with no six-year cutoff — S.C. Code § 15-3-545(B))'."
+    },
+    {
+      "surface": "body",
+      "claim": "Even under the discovery rule, the six-year statute of repose generally remains the outer limit.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-3-545(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Accurate for (A) claims; fine once the retained-instrument bullet is qualified."
+    },
+    {
+      "surface": "body",
+      "claim": "Before filing a medical malpractice lawsuit in South Carolina, the plaintiff must file a Notice of Intent to File Suit together with a qualified expert's affidavit, and serve it on each defendant (S.C. Code §§ 15-79-125, 15-36-100).",
+      "verdict": "keep",
+      "currentValue": "§ 15-79-125(A): 'shall contemporaneously file a Notice of Intent to File Suit and an affidavit of an expert witness, subject to the affidavit requirements established in Section 15-36-100, in a county in which venue would be proper'; notice 'must name all adverse parties as defendants' and 'must be served upon all named defendants in accordance with the service rules for a summons and complaint'.",
+      "sourceName": "S.C. Code § 15-79-125(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Verified verbatim 2026-10-05."
+    },
+    {
+      "surface": "body",
+      "claim": "The expert's affidavit must specify at least one negligent act or omission.",
+      "verdict": "update",
+      "currentValue": "§ 15-36-100(B): the affidavit 'must specify at least one negligent act or omission claimed to exist and the factual basis for each claim based on the available evidence at the time of the filing of the affidavit'. A defective affidavit can be cured 'by amendment within thirty days of service of the motion' alleging the defect (§ 15-36-100(E)); missing affidavit → 'subject to dismissal for failure to state a claim' ((C)(1)); not required where negligence is 'within the ambit of common knowledge and experience' ((C)(2)).",
+      "sourceName": "S.C. Code § 15-36-100(B),(C),(E)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Add 'and the factual basis for each claim'. SC's 30-day cure is in (E) (SC's own rule, not imported from Georgia). Optional add: 'A defective affidavit can be cured by amendment within 30 days of a motion challenging it (S.C. Code § 15-36-100(E)).'"
+    },
+    {
+      "surface": "body",
+      "claim": "Filing the notice tolls (pauses) the statute of limitations, so it does not consume your time to sue. The parties must then mediate, generally within 90 to 120 days of service, and the lawsuit can be filed only if mediation fails.",
+      "verdict": "keep",
+      "currentValue": "'Filing the Notice of Intent to File Suit tolls all applicable statutes of limitations' (§ 15-79-125(A)). 'Within ninety days and no later than one hundred twenty days from the service of the Notice of Intent to File Suit, the parties shall participate in a mediation conference unless an extension for no more than sixty days is granted by the court based upon a finding of good cause' ((C)). If mediation fails, suit must be filed 'within sixty days after the mediator determines that the mediation is not viable, that an impasse exists, or that the mediation should end; or prior to expiration of the statute of limitations, whichever is later' ((E)).",
+      "sourceName": "S.C. Code § 15-79-125(A),(C),(E)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-05",
+      "note": "'Generally' covers the 60-day extension. Recommended add (the post never gives the post-mediation deadline): 'If mediation fails, the lawsuit must be filed within 60 days after the mediator declares an impasse, or before the limitation period would otherwise expire, whichever is later (S.C. Code § 15-79-125(E)).'"
+    },
+    {
+      "surface": "body",
+      "claim": "Your attorney needs time to obtain medical records and to find a qualified expert who will sign the affidavit before the notice can be filed.",
+      "verdict": "keep",
+      "currentValue": "Note § 15-79-125(B): after the notice is filed and served, the parties 'may subpoena medical records' and, with leave of court, take depositions.",
+      "sourceName": "S.C. Code § 15-79-125(B)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-05",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "After the Notice of Intent is served, the parties must go through a mediation process, generally within 90 to 120 days, where a neutral third party attempts to facilitate a settlement between them.",
+      "verdict": "keep",
+      "currentValue": "§ 15-79-125(C); governed by the Circuit Court ADR Rules.",
+      "sourceName": "S.C. Code § 15-79-125(C)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-05",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "If mediation is unsuccessful, the lawsuit can then be filed.",
+      "verdict": "update",
+      "currentValue": "§ 15-79-125(E)(1)-(2): within 60 days after impasse or before the limitation period expires, whichever is later.",
+      "sourceName": "S.C. Code § 15-79-125(E)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Add the deadline: '...can then be filed — within 60 days of the impasse or before the limitations period runs, whichever is later (S.C. Code § 15-79-125(E)).'"
+    },
+    {
+      "surface": "body",
+      "claim": "Non-Economic Damages (Capped at $596,001 per provider / $1,788,002 total in 2026)",
+      "verdict": "keep",
+      "currentValue": "RFA memo 'Non-Economic (Medical Malpractice) Damages Limitation – Inflation Component', 2026-02-03 (read from the PDF 2026-10-05): CPI-U up 70.3% from 190.3 (Dec 2004) to 324.054 (Dec 2025); 'the limit against a single health care provider and a health care institution for each claimant ... when final judgment is rendered increases to $596,001. Also, the limit against all health care providers and all health care institutions for each claimant ... increases to $1,788,002.' Effective on publication in the State Register (§ 15-32-220(F)).",
+      "sourceName": "RFA memo 2026-02-03",
+      "sourceUrl": "https://rfa.sc.gov/media/11477",
+      "retrievedAt": "2026-10-05",
+      "note": "H3 heading; figures verified. Exceptions under (E) should appear in the cap section (see above)."
+    },
+    {
+      "surface": "body",
+      "claim": "Loss of consortium — impact on the patient's marriage and family relationships",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-05",
+      "note": "Loss of consortium is the spouse's own claim in SC (S.C. Code § 15-75-20); listed as a noneconomic category, fine. Not separately verified this run."
+    },
+    {
+      "surface": "body",
+      "claim": "That claim is subject to the medical-malpractice limitations provisions, including S.C. Code § 15-3-545: the deadline can depend on when the treatment occurred and when the claim was or reasonably should have been discovered, a six-year repose period generally applies, and the wrongful death period does not revive a malpractice claim that was already barred before the death.",
+      "verdict": "keep",
+      "currentValue": "Attorney-approved wording: Graeham C. Gillin, 2026-09-30 (WD-G1 / item 2(b)): 'The medical-malpractice limitations provisions govern, including § 15-3-545 ... The wrongful death period does not revive a malpractice claim that was already barred before the death.' Applied to 4562 in the 2026-09-30 approvals batch (class D).",
+      "sourceName": "data/facts/attorney-approvals-2026-09-30.md (Gillin item 2(b)); S.C. Code § 15-3-545",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Keep verbatim — signed wording."
+    },
+    {
+      "surface": "body",
+      "claim": "Hospitals and medical centers — including MUSC, Roper St. Francis, Prisma Health, and other South Carolina hospital systems",
+      "verdict": "update",
+      "currentValue": "Public hospitals (MUSC is run by the Medical University Hospital Authority, 'an agency of the State of South Carolina', S.C. Code § 59-123-60(E); Tatum v. MUSC, 346 S.C. 194 (2001)) are sued under the S.C. Tort Claims Act, not § 15-32-220: sue the agency, not its employed doctors (§ 15-78-70); 'forever barred unless an action is commenced within two years after the date the loss was or should have been discovered' (three if a verified claim was first filed) (§ 15-78-110); $300,000 per person / $600,000 per occurrence, or $1,200,000 where the loss was 'caused by the tort of any licensed physician or dentist, employed by a governmental entity' (§ 15-78-120(a)(1)-(4)); no punitive damages or prejudgment interest (§ 15-78-120(b)).",
+      "sourceName": "S.C. Code §§ 15-78-70, 15-78-110, 15-78-120, 59-123-60(E); Tatum v. MUSC (S.C. 2001)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Naming MUSC without the Tort Claims Act is a material omission on a 'damage caps and filing limits' post: different deadline (2 years), different caps ($300,000/$600,000, $1.2M for employed physicians/dentists), no punitive damages, and employed doctors cannot be named. Add after the list: 'Claims against MUSC or another public hospital follow the South Carolina Tort Claims Act instead: you sue the hospital rather than its employed doctors, suit generally must be filed within two years (S.C. Code § 15-78-110), damages are capped at $300,000 per person ($1.2 million where a government-employed physician or dentist was negligent), and punitive damages are not available (S.C. Code § 15-78-120).' Tatum: https://www.courtlistener.com/opinion/1285904/tatum-v-medical-university-of-south-carolina/ ; § 59-123-60: https://www.scstatehouse.gov/code/t59c123.php"
+    },
+    {
+      "surface": "body",
+      "claim": "Nursing homes and assisted living facilities",
+      "verdict": "keep",
+      "currentValue": "§ 15-32-210(10): 'nursing home' is a 'health care institution' (capped), but the term 'does not include assisted living, independent living, or community residential care facilities that do not provide skilled nursing services'.",
+      "sourceName": "S.C. Code § 15-32-210(4),(10)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Fine as a list of who can be sued; note assisted living facilities fall outside the § 15-32-220 institution definition — see the next entry."
+    },
+    {
+      "surface": "body",
+      "claim": "Each provider or institution is subject to its own non-economic damage cap ($596,001 in 2026), up to $1,788,002 for all defendants combined (S.C. Code § 15-32-220), which is why identifying all liable parties is critical to maximizing recovery.",
+      "verdict": "update",
+      "currentValue": "RFA memo 'Non-Economic (Medical Malpractice) Damages Limitation – Inflation Component', 2026-02-03 (read from the PDF 2026-10-05): CPI-U up 70.3% from 190.3 (Dec 2004) to 324.054 (Dec 2025); 'the limit against a single health care provider and a health care institution for each claimant ... when final judgment is rendered increases to $596,001. Also, the limit against all health care providers and all health care institutions for each claimant ... increases to $1,788,002.' Effective on publication in the State Register (§ 15-32-220(F)). § 15-32-220(C) per-defendant and aggregate per claimant. § 15-32-210(4)-(5): caps reach only 'health care providers' and 'health care institutions' — device manufacturers and non-skilled assisted living facilities are not covered. Public hospitals: Tort Claims Act caps instead (§ 15-78-120).",
+      "sourceName": "RFA memo 2026-02-03; S.C. Code §§ 15-32-210, 15-32-220(C), 15-78-120",
+      "sourceUrl": "https://rfa.sc.gov/media/11477",
+      "retrievedAt": "2026-10-05",
+      "note": "Figures and per-defendant/aggregate mechanics correct. 'all defendants combined' should be 'all health care providers and institutions combined' (the list just above includes device manufacturers, outside § 15-32-220), and add 'unless an exception applies'. Same in faq:5."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina medical malpractice claims require the plaintiff to prove four elements by a preponderance of the evidence:",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-32-210(8) (definition of medical malpractice)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Standard civil burden; four-element framework accepted in sibling packs."
+    },
+    {
+      "surface": "body",
+      "claim": "Expert testimony is required to establish both the standard of care and the breach. The expert must be a licensed healthcare professional in the same or similar specialty as the defendant.",
+      "verdict": "update",
+      "currentValue": "§ 15-36-100(A): expert must be licensed 'to practice his or her profession in the location in which the expert practices or teaches' and EITHER (2)(a) board certified in the area of practice about which the opinion is offered OR (2)(b) actively practicing/teaching in it 'for at least three of the last five years immediately preceding the opinion'; OR (A)(3) a person with 'scientific, technical, or other specialized knowledge'. No expert is needed for negligence 'within the ambit of common knowledge and experience' ((C)(2)).",
+      "sourceName": "S.C. Code § 15-36-100(A),(C)(2)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-10-05",
+      "note": "'same or similar specialty' is Georgia-style phrasing, not SC's test. Minimal edit: 'Expert testimony is generally required to establish the standard of care and the breach. The expert must be licensed in his or her profession and either board certified in the relevant area or have practiced or taught in it for at least three of the last five years (S.C. Code § 15-36-100).'"
+    },
+    {
+      "surface": "body",
+      "claim": "Without qualified expert testimony, a medical malpractice case cannot survive summary judgment in South Carolina.",
+      "verdict": "update",
+      "currentValue": "Common-knowledge exception: § 15-36-100(C)(2) (no affidavit needed where negligence 'lies within the ambit of common knowledge and experience, so that no special learning is needed').",
+      "sourceName": "S.C. Code § 15-36-100(C)(2)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Absolute as written. Minimal edit: 'Without qualified expert testimony, most medical malpractice cases cannot survive summary judgment in South Carolina.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Non-economic damage caps — limiting pain and suffering recovery regardless of injury severity",
+      "verdict": "update",
+      "currentValue": "§ 15-32-220(E): the noneconomic limits 'do not apply if the jury or court determines that the defendant was grossly negligent, wilful, wanton, or reckless, and such conduct was the proximate cause of the claimant's noneconomic damages, or if the defendant has engaged in fraud or misrepresentation related to the claim, or if the defendant altered or destroyed medical records with the purpose of avoiding a claim or liability to the claimant.' Intoxication is NOT a § 15-32-220 exception (it lifts the punitive cap under § 15-32-530(C)(3)).",
+      "sourceName": "S.C. Code § 15-32-220(E)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-10-05",
+      "note": "'regardless of injury severity' is right, but the caps are not absolute. Minimal edit: '...regardless of injury severity, unless the provider was grossly negligent or reckless or another exception applies'."
+    },
+    {
+      "surface": "body",
+      "claim": "Expert witness requirements — you need a qualified specialist willing to testify against a colleague",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-36-100(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-10-05",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "The three-year statute of limitations may seem like plenty of time, but the pre-suit notice, expert affidavit and mediation requirements mean that preparation must begin months before the deadline.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code §§ 15-3-545, 15-79-125",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Optional: '(two years for MUSC or another public hospital)'."
+    },
+    {
+      "surface": "body",
+      "claim": "At Roden Law, our attorneys handle medical malpractice cases from offices in Charleston, Columbia, and Myrtle Beach, serving patients across the state.",
+      "verdict": "keep",
+      "currentValue": "client.json SC locations: Charleston (127 King Street), North Charleston (2703 Spruill Ave), Columbia, Myrtle Beach.",
+      "sourceName": "client.json",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-05",
+      "note": "Not false; omits the North Charleston office. Optional: 'Charleston, North Charleston, Columbia, and Myrtle Beach'."
+    },
+    {
+      "surface": "body",
+      "claim": "We work on a contingency fee basis — you pay nothing unless we recover compensation for you.",
+      "verdict": "update",
+      "currentValue": "Firm's confirmed fee wording (2026-10-02): 'Fees and costs apply only upon successful recovery. No fees or costs with no recovery.'",
+      "sourceName": "Firm-confirmed fee wording 2026-10-02 (docs/freshness/2026-10-02-fee-wording-4368-1657)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-05",
+      "note": "Fee line differs from confirmed wording. Replace with: 'We work on a contingency fee basis. Fees and costs apply only upon successful recovery. No fees or costs with no recovery.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Call Roden Law at 1-844-RESULTS or contact us online for a free consultation.",
+      "verdict": "keep",
+      "currentValue": "tel:+18447378587 = 1-844-737-8587 = 1-844-RESULTS.",
+      "sourceName": "profiles/writer-profile.md (toll-free 1-844-RESULTS)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-05",
+      "note": "Matches."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "What limits apply to a South Carolina medical malpractice claim, how damages are treated, and the deadlines that govern filing.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-05",
+      "note": "No factual claim. Published as Article description."
+    },
+    {
+      "surface": "metaDescription",
+      "claim": "",
+      "verdict": "update",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-05",
+      "note": "metaDescription is empty; SEO falls back to the excerpt. Optional: 'South Carolina medical malpractice caps for 2026 ($596,001 per provider, $1,788,002 total), the 3-year deadline and 6-year repose, Notice of Intent and mediation rules.'"
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "South Carolina caps non-economic damages in medical malpractice cases at $596,001 per provider or institution and $1,788,002 in total for 2026, figures adjusted each year for inflation (S.C. Code § 15-32-220).",
+      "verdict": "update",
+      "currentValue": "RFA memo 'Non-Economic (Medical Malpractice) Damages Limitation – Inflation Component', 2026-02-03 (read from the PDF 2026-10-05): CPI-U up 70.3% from 190.3 (Dec 2004) to 324.054 (Dec 2025); 'the limit against a single health care provider and a health care institution for each claimant ... when final judgment is rendered increases to $596,001. Also, the limit against all health care providers and all health care institutions for each claimant ... increases to $1,788,002.' Effective on publication in the State Register (§ 15-32-220(F)). § 15-32-220(E): the noneconomic limits 'do not apply if the jury or court determines that the defendant was grossly negligent, wilful, wanton, or reckless, and such conduct was the proximate cause of the claimant's noneconomic damages, or if the defendant has engaged in fraud or misrepresentation related to the claim, or if the defendant altered or destroyed medical records with the purpose of avoiding a claim or liability to the claimant.' Intoxication is NOT a § 15-32-220 exception (it lifts the punitive cap under § 15-32-530(C)(3)).",
+      "sourceName": "RFA memo 2026-02-03; S.C. Code § 15-32-220",
+      "sourceUrl": "https://rfa.sc.gov/media/11477",
+      "retrievedAt": "2026-10-05",
+      "note": "Figures verified. The box renders above the article — add the exception: '...(S.C. Code § 15-32-220); the caps do not apply where the provider was grossly negligent, reckless, or altered records.'"
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "The statute of limitations is three years (S.C. Code § 15-3-545) with a six-year statute of repose.",
+      "verdict": "update",
+      "currentValue": "§ 15-3-545(A) verified; public hospitals (MUSC): two years under § 15-78-110.",
+      "sourceName": "S.C. Code §§ 15-3-545(A), 15-78-110",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Add: '(two years under the Tort Claims Act for MUSC or another public hospital, S.C. Code § 15-78-110)'."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Before filing suit, plaintiffs must file a Notice of Intent together with an expert affidavit, serve it on each defendant, and mediate; only if mediation fails can the lawsuit be filed (S.C. Code § 15-79-125).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-79-125(A),(C),(E)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Verified."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Economic damages (medical bills, lost wages) are uncapped.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-32-220(D)(1)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-10-05",
+      "note": ""
+    },
+    {
+      "surface": "faq:0",
+      "claim": "South Carolina caps non-economic damages at a base of $350,000 per provider or institution and $1,050,000 in total per claimant, adjusted each year for inflation: for 2026, $596,001 and $1,788,002 (S.C. Code § 15-32-220).",
+      "verdict": "update",
+      "currentValue": "RFA memo 'Non-Economic (Medical Malpractice) Damages Limitation – Inflation Component', 2026-02-03 (read from the PDF 2026-10-05): CPI-U up 70.3% from 190.3 (Dec 2004) to 324.054 (Dec 2025); 'the limit against a single health care provider and a health care institution for each claimant ... when final judgment is rendered increases to $596,001. Also, the limit against all health care providers and all health care institutions for each claimant ... increases to $1,788,002.' Effective on publication in the State Register (§ 15-32-220(F)). § 15-32-220(E): the noneconomic limits 'do not apply if the jury or court determines that the defendant was grossly negligent, wilful, wanton, or reckless, and such conduct was the proximate cause of the claimant's noneconomic damages, or if the defendant has engaged in fraud or misrepresentation related to the claim, or if the defendant altered or destroyed medical records with the purpose of avoiding a claim or liability to the claimant.' Intoxication is NOT a § 15-32-220 exception (it lifts the punitive cap under § 15-32-530(C)(3)).",
+      "sourceName": "RFA memo 2026-02-03; S.C. Code § 15-32-220(A)-(F)",
+      "sourceUrl": "https://rfa.sc.gov/media/11477",
+      "retrievedAt": "2026-10-05",
+      "note": "All four figures correct and base figures are labelled as indexed. FAQPage structured data — add: 'The cap does not apply if the provider was grossly negligent, wilful, wanton or reckless, committed fraud, or altered or destroyed records to avoid liability.' Public hospitals: Tort Claims Act caps instead."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "There is no cap on economic damages like medical bills and lost wages.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-32-220(D)(1)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-10-05",
+      "note": ""
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Punitive damages are capped at three times compensatory damages or $739,245, the 2026 inflation-indexed figure, whichever is greater (S.C. Code § 15-32-530).",
+      "verdict": "update",
+      "currentValue": "RFA punitive memo 2026-02-03: 'the limit increases to $739,245'. § 15-32-530(B): 4x / $2,000,000 tier; (C): no cap for intent to harm, felony plea/conviction, substantial impairment.",
+      "sourceName": "RFA punitive memo 2026-02-03; S.C. Code § 15-32-530",
+      "sourceUrl": "https://rfa.sc.gov/media/11478",
+      "retrievedAt": "2026-10-05",
+      "note": "Figure verified. Append ', with higher limits or no cap for certain egregious conduct'. Structured data."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "South Carolina imposes a three-year statute of limitations (S.C. Code § 15-3-545) from the date of the negligent act or from when the injury was or should have been discovered.",
+      "verdict": "update",
+      "currentValue": "§ 15-3-545(A) verified ('when it reasonably ought to have been discovered'). Public hospitals: two years (§ 15-78-110).",
+      "sourceName": "S.C. Code §§ 15-3-545(A), 15-78-110",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Add '— two years if the claim is against MUSC or another public hospital (S.C. Code § 15-78-110)'. Optional: 'reasonably should have been'. Structured data."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "A six-year statute of repose generally applies — in most cases no claim can be filed more than six years after the negligence occurred.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-3-545(A),(B)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-05",
+      "note": "'Generally' covers foreign objects."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "before filing a malpractice lawsuit you must file a Notice of Intent to File Suit together with a qualified expert's affidavit (S.C. Code § 15-36-100), and serve it on each defendant. Filing the notice tolls the statute of limitations. The parties must then mediate, generally within 90 to 120 days of service, before the lawsuit can be filed.",
+      "verdict": "keep",
+      "currentValue": "§ 15-79-125(A),(C) verbatim (see body).",
+      "sourceName": "S.C. Code §§ 15-79-125, 15-36-100",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Verified. Optional: the 60-day post-impasse filing window ((E))."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Yes. South Carolina requires mandatory mediation in medical malpractice cases before the lawsuit is filed (S.C. Code § 15-79-125). A neutral mediator attempts to facilitate a settlement. If mediation is unsuccessful, the lawsuit can then be filed.",
+      "verdict": "update",
+      "currentValue": "§ 15-79-125(C): mediation within 90–120 days of service of the notice (60-day good-cause extension); (E): file within 60 days after impasse or before the limitation period expires, whichever is later.",
+      "sourceName": "S.C. Code § 15-79-125(C),(E)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Accurate but lacks timing. Append: 'Mediation generally takes place 90 to 120 days after the notice is served; if it fails, suit must be filed within 60 days of the impasse or before the limitations period runs, whichever is later.' Structured data."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "South Carolina's six-year statute of repose (S.C. Code § 15-3-545) generally bars a medical malpractice lawsuit filed more than six years after the negligent act, even if the injury was not discovered until later.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-3-545(A),(B)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Optional: '(objects left in the body are an exception, § 15-3-545(B))'."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "This is more generous than Georgia's five-year repose period but still bars some legitimate claims.",
+      "verdict": "update",
+      "currentValue": "O.C.G.A. § 9-3-71(b) five years is correct, but Georgia's repose has exceptions (§§ 9-3-72, 9-3-73) and the comparison is unsourced on an SC post.",
+      "sourceName": "O.C.G.A. § 9-3-71(b) (Justia, recorded in facts-1696)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+      "retrievedAt": "2026-10-05",
+      "note": "GA mention 3 of 3, in FAQPage structured data. Drop the Georgia clause: 'It still bars some legitimate claims, so do not wait to have your records reviewed.'"
+    },
+    {
+      "surface": "faq:5",
+      "claim": "Hospitals, medical centers, individual physicians, nurses, specialists, pharmacies, and nursing homes can all be sued for medical malpractice in South Carolina.",
+      "verdict": "update",
+      "currentValue": "Public hospitals (MUSC is run by the Medical University Hospital Authority, 'an agency of the State of South Carolina', S.C. Code § 59-123-60(E); Tatum v. MUSC, 346 S.C. 194 (2001)) are sued under the S.C. Tort Claims Act, not § 15-32-220: sue the agency, not its employed doctors (§ 15-78-70); 'forever barred unless an action is commenced within two years after the date the loss was or should have been discovered' (three if a verified claim was first filed) (§ 15-78-110); $300,000 per person / $600,000 per occurrence, or $1,200,000 where the loss was 'caused by the tort of any licensed physician or dentist, employed by a governmental entity' (§ 15-78-120(a)(1)-(4)); no punitive damages or prejudgment interest (§ 15-78-120(b)). Pharmacists are 'health care providers' and nursing homes 'health care institutions' under § 15-32-210(4)-(5).",
+      "sourceName": "S.C. Code §§ 15-32-210, 15-78-70, 15-78-110, 15-78-120",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+      "retrievedAt": "2026-10-05",
+      "note": "Add the public-hospital rule: 'If the hospital is MUSC or another public hospital, the claim runs under the South Carolina Tort Claims Act: you sue the hospital rather than its employed doctors, within two years, with damages capped at $300,000 per person ($1.2 million for a government-employed physician or dentist) and no punitive damages (S.C. Code §§ 15-78-70, 15-78-110, 15-78-120).' Structured data."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "Each provider or institution is subject to its own non-economic damage cap ($596,001 for 2026), up to $1,788,002 in total for all defendants combined (S.C. Code § 15-32-220), which is why identifying all liable parties is critical to maximizing your total recovery.",
+      "verdict": "keep",
+      "currentValue": "RFA memo 'Non-Economic (Medical Malpractice) Damages Limitation – Inflation Component', 2026-02-03 (read from the PDF 2026-10-05): CPI-U up 70.3% from 190.3 (Dec 2004) to 324.054 (Dec 2025); 'the limit against a single health care provider and a health care institution for each claimant ... when final judgment is rendered increases to $596,001. Also, the limit against all health care providers and all health care institutions for each claimant ... increases to $1,788,002.' Effective on publication in the State Register (§ 15-32-220(F)).",
+      "sourceName": "RFA memo 2026-02-03; S.C. Code § 15-32-220(C)",
+      "sourceUrl": "https://rfa.sc.gov/media/11477",
+      "retrievedAt": "2026-10-05",
+      "note": "Figures and mechanics verified (per claimant). Optional: 'all health care defendants combined' and 'unless an exception applies'."
+    }
+  ],
+  "recommendedEdits": [
+    "Cap exceptions (most important omission): add after the cap table and mirror in Key Takeaways sentence 1, faq:0 and the 'Non-economic damage caps' bullet — 'The caps do not apply if the provider was grossly negligent, wilful, wanton or reckless, committed fraud or misrepresentation related to the claim, or altered or destroyed medical records to avoid liability (S.C. Code § 15-32-220(E)).' Do NOT list intoxication (that is the punitive § 15-32-530(C)(3) exception).",
+    "Public hospitals / Tort Claims Act: the post names MUSC as a defendant but never mentions the Act. Add after the 'Who can be sued' list, and mirror in faq:5, faq:1 and the Key Takeaways SOL sentence: two years (§ 15-78-110); $300,000 per person / $600,000 per occurrence, $1.2 million for a government-employed physician or dentist (§ 15-78-120(a)); no punitive damages (§ 15-78-120(b)); sue the hospital, not its employed doctors (§ 15-78-70).",
+    "Punitive cap (body + faq:0): append 'with higher limits or no cap for certain egregious conduct, such as intent to harm, felony conduct, or acting while impaired by alcohol or drugs (S.C. Code § 15-32-530(B)-(C))'; body 'only available when...' sentence: add 'proven by clear and convincing evidence (S.C. Code §§ 15-32-520, 15-33-135)'.",
+    "Discovery-rule section: reword the 'begins running on the date the patient discovered' sentence so discovery is an alternative trigger, not the universal start; qualify the retained-surgical-instruments bullet as governed by § 15-3-545(B) (two years from discovery, no six-year repose).",
+    "Expert rules (Burden of Proof section): replace 'licensed healthcare professional in the same or similar specialty' with SC's § 15-36-100(A) test (licensed in own profession; board certified OR practiced/taught 3 of the last 5 years); 'cannot survive' → 'most ... cannot survive' (common-knowledge exception, (C)(2)); NOI paragraph: add 'and the factual basis for each claim' to the affidavit sentence; optional 30-day cure (§ 15-36-100(E)).",
+    "Mediation: add the post-impasse filing window to the mediation section and faq:3 — within 60 days of impasse or before the limitations period expires, whichever is later (§ 15-79-125(E)).",
+    "Remove all three Georgia comparisons (body SOL paragraph, body repose paragraph, faq:4) — off-topic on an SC post and the repose comparison omits Georgia's exceptions.",
+    "Fee line: replace 'you pay nothing unless we recover compensation for you' with the confirmed wording 'Fees and costs apply only upon successful recovery. No fees or costs with no recovery.'",
+    "Intro: repoint the dead Cornell link (wex/medical_malpractice, 404) to https://www.law.cornell.edu/wex/malpractice and rename the anchor to Cornell Law School's Legal Information Institute.",
+    "'Each provider or institution...' (body + faq:5): 'all defendants combined' → 'all health care providers and institutions combined' (device makers and non-skilled assisted living are outside § 15-32-220).",
+    "Optional: add a metaDescription; add North Charleston to the office list."
+  ],
+  "statuteCitations": [
+    {
+      "section": "S.C. Code § 15-3-545",
+      "name": "Med-mal limitations: 3 years from treatment or (constructive) discovery, 6-year repose (A); foreign object/appliance 2 years from discovery, never less than 3 years after placement (B); minors' tolling capped at 7 years / 1 year after majority (D)",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "S.C. Code § 15-32-210",
+      "name": "Definitions: health care institution (incl. nursing home, not assisted living without skilled nursing); health care provider (incl. pharmacist, practice entity)",
+      "url": "https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "section": "S.C. Code § 15-32-220",
+      "name": "Noneconomic cap $350,000 / $1,050,000 per claimant base (A)-(C); economic and punitive uncapped (D); exceptions for gross negligence, wilful/wanton/reckless, fraud, altered/destroyed records (E); CPI indexing (F) — $596,001 / $1,788,002 for 2026",
+      "url": "https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "section": "S.C. Code § 15-32-520",
+      "name": "Punitive damages — clear and convincing proof of wilful, wanton or reckless conduct (D)",
+      "url": "https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "section": "S.C. Code § 15-32-530",
+      "name": "Punitive cap greater of 3x or $500,000 (A), indexed $739,245 for 2026 (D); 4x/$2,000,000 tier (B); no cap (C)",
+      "url": "https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "section": "S.C. Code § 15-33-135",
+      "name": "Punitive damages — clear and convincing evidence",
+      "url": "https://www.scstatehouse.gov/code/t15c033.php"
+    },
+    {
+      "section": "S.C. Code § 15-36-100",
+      "name": "Expert qualifications (A); affidavit: at least one negligent act or omission and factual basis (B); dismissal / 45-day window (C)(1); common-knowledge exception (C)(2); 30-day cure (E)",
+      "url": "https://www.scstatehouse.gov/code/t15c036.php"
+    },
+    {
+      "section": "S.C. Code §§ 15-78-70, -110, -120",
+      "name": "Tort Claims Act — sue the agency; 2 years from discovery (3 with verified claim); $300,000/$600,000, $1,200,000 for government-employed physician/dentist; no punitive",
+      "url": "https://www.scstatehouse.gov/code/t15c078.php"
+    },
+    {
+      "section": "S.C. Code § 15-79-125",
+      "name": "NOI filed with expert affidavit, tolls limitations (A); subpoenas (B); mediation 90–120 days after service, 60-day extension (C); suit within 60 days of impasse or before SOL, whichever later (E)",
+      "url": "https://www.scstatehouse.gov/code/t15c079.php"
+    },
+    {
+      "section": "S.C. Code § 59-123-60(E)",
+      "name": "Medical University Hospital Authority — agency of the State",
+      "url": "https://www.scstatehouse.gov/code/t59c123.php"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-71",
+      "name": "Georgia med-mal 2 years (a), 5-year repose (b) — only for the GA mentions recommended for removal",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/"
+    }
+  ],
+  "authoritativeLinks": [
+    {
+      "name": "S.C. RFA Office memo 2026-02-03 — § 15-32-220 noneconomic limits $596,001 / $1,788,002",
+      "url": "https://rfa.sc.gov/media/11477"
+    },
+    {
+      "name": "S.C. RFA Office memo 2026-02-03 — § 15-32-530 punitive limit $739,245",
+      "url": "https://rfa.sc.gov/media/11478"
+    },
+    {
+      "name": "Tatum v. Medical University of South Carolina, 346 S.C. 194 (2001) — MUSC subject to the Tort Claims Act",
+      "url": "https://www.courtlistener.com/opinion/1285904/tatum-v-medical-university-of-south-carolina/"
+    },
+    {
+      "name": "Cornell LII Wex — malpractice (replacement for dead wex/medical_malpractice link)",
+      "url": "https://www.law.cornell.edu/wex/malpractice"
+    }
+  ],
+  "quoteNote": "Body claims are quoted from tag-stripped, whitespace-collapsed text of body.html; table rows are quoted as the concatenated cell text of one row (e.g. 'Single healthcare provider $596,001 in 2026 (base $350,000, adjusted yearly) S.C. Code § 15-32-220'). FAQ claims are quoted from tag-stripped meta.json answers (faq:1/faq:2 contain <strong> around 'three-year statute of limitations', 'six-year statute of repose', 'Notice of Intent to File Suit'; faq:0 around 'non-economic damages'; faq:3 around 'mandatory mediation'). Statute text read 2026-10-05 from scstatehouse.gov chapters 15-3, 15-32, 15-33, 15-36, 15-78, 15-79 (all HTTP 200). RFA memos rfa.sc.gov/media/11477 and /11478 are image PDFs; figures read from the rendered pages 2026-10-05. Justia (GA) and CourtListener URLs reused from verified sibling packs (facts-1696, facts-4349); not fetched (bot protection). Dollar figures: body 12 ($596,001 x4, $350,000 x2, $1,788,002 x3, $1,050,000, $2 million hypothetical, $739,245) — all verified/keep; meta adds $596,001 x3, $1,788,002 x3, $350,000, $1,050,000, $739,245 — all verified. No statistics (Johns Hopkins/NPDB) appear on this post."
+}

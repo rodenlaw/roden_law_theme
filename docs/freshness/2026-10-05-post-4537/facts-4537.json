@@ -1,0 +1,907 @@
+{
+ "postId": 4537,
+ "slug": "myrtle-beach-dangerous-roads-intersections",
+ "liveUrl": "https://rodenlaw.com/blog/myrtle-beach-dangerous-roads-intersections/",
+ "jurisdiction": "SC",
+ "researchedAt": "2026-10-05",
+ "verifiedClaims": [
+  {
+   "surface": "title",
+   "claim": "The Most Dangerous Roads and Intersections in Myrtle Beach, South Carolina",
+   "verdict": "update",
+   "currentValue": "By crash COUNT the superlatives partly hold: SCDPS ranks US-17 Horry County's No. 1 roadway every year 2020-2024 (1,821 collisions, 9 fatal in 2024) and US-501 No. 2 (1,462); Horry was 4th of 46 counties in total collisions and 3rd in fatal collisions in 2024. By RATE they do not: Horry's 2024 mileage death rate was 1.516 per 100 million VMT, below the statewide 1.68 (2023: 1.704 vs 1.72). Of the post's seven numbered intersections, only two appear in any Horry County Top-5 table 2020-2024 (SC-9 at Hwy 57; US-501 at Carolina Forest Blvd), one is Georgetown County's No. 1 (US-17 at SC-707, Murrells Inlet), and four (US-501/SC-31, the Back Gate, Oak Forest/Pine Island, US-17 Bypass/Wood Thrush) never appear.",
+   "sourceName": "SCDPS South Carolina Traffic Collision Fact Book, 2024 Edition (Horry County, Part VI pp. 137-138; PDF pp. 145-146)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "NOT a patcher-editable surface (title is not in body.html) — for the owner. 'Most Dangerous' is defensible only as 'highest-crash by count', and only if the numbered list is re-ordered to the SCDPS tables (SC-9 at Hwy 57 first) and the four untraceable intersections are dropped or re-framed. Suggested title: \"Myrtle Beach's Highest-Crash Roads and Intersections: What the State Data Shows\". If the title stays, the body must define 'dangerous' as SCDPS collision counts and FARS fatal-crash counts."
+  },
+  {
+   "surface": "body",
+   "claim": "The Myrtle Beach area and the Grand Strand attract more than 20 million visitors annually, and that massive influx of tourist traffic transforms the region's roads into some of the most dangerous in South Carolina.",
+   "verdict": "update",
+   "currentValue": "Myrtle Beach Area CVB 'Fast Facts': 18.2 million annual visitors (2024 estimate per D.K. Shifflet). The Chamber reported 2025 tourism down 3% and projected a further ~3% dip in 2026 (WPDE, 2026-03-09). Horry County: 4th of 46 SC counties in total collisions (11,103) and 3rd in fatal collisions (58) in 2024, but its mileage death rate (1.516) was below the state's 1.68.",
+   "sourceName": "Myrtle Beach Area CVB — Industry Research (Fast Facts); WPDE 2026-03-09; SCDPS Fact Book 2024",
+   "sourceUrl": "https://www.myrtlebeachareacvb.com/industry-research",
+   "retrievedAt": "2026-10-05",
+   "note": "'More than 20 million' is not supported by the destination's own figure. Suggested: 'The Grand Strand draws about 18 million visitors a year (18.2 million in 2024, per the Myrtle Beach Area CVB), and Horry County ranks among South Carolina's highest-crash counties — 4th of 46 for total collisions and 3rd for fatal collisions in 2024.' Avoid 'some of the most dangerous' unless framed by count. WPDE: https://wpde.com/news/local/grand-strand-tourism-down-three-percent-surfside-myrtlebeach"
+  },
+  {
+   "surface": "body",
+   "claim": "Horry County, which encompasses Myrtle Beach, Conway, and Murrells Inlet, consistently ranks among the top counties in the state for total traffic collisions, injuries, and fatalities.",
+   "verdict": "update",
+   "currentValue": "Ranking verified: Horry was 4th in total collisions every year 2019-2024; fatal-collision rank 1st (2019), 4th (2020), 3rd (2021), 2nd (2022), 4th (2023), 3rd (2024); serious-injury collisions 3rd in 2020-2024. But Murrells Inlet is not in Horry County: the U.S. Census geocoder places the Murrells Inlet CDP (and the firm's 631 Bellamy Ave office) in Georgetown County.",
+   "sourceName": "SCDPS Traffic Collision Fact Books, 2020-2024 editions (Horry County Top 5 Roadways/Intersections page in each); U.S. Census Bureau Geocoder",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Replace 'Murrells Inlet' with an Horry community: '...which encompasses Myrtle Beach, North Myrtle Beach, Conway and Surfside Beach...'. Rankings clause keeps. Census geocoder: https://geocoding.geo.census.gov/geocoder/geographies/address?street=631+Bellamy+Ave&city=Murrells+Inlet&state=SC&zip=29576&benchmark=Public_AR_Current&vintage=Current_Current&format=json (the same county discrepancy in client.json was escalated in facts-4738)."
+  },
+  {
+   "surface": "body",
+   "claim": "Certain roads and intersections along the Grand Strand produce a disproportionate share of those crashes",
+   "verdict": "keep",
+   "currentValue": "US-17 alone carried 1,821 of Horry County's 11,103 collisions in 2024 (16.4%) and US-501 another 1,462 (13.2%).",
+   "sourceName": "SCDPS South Carolina Traffic Collision Fact Book, 2024 Edition (Horry County, Part VI pp. 137-138; PDF pp. 145-146)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Supported by the Top 5 Roadways table."
+  },
+  {
+   "surface": "body",
+   "claim": "The Grand Strand's population effectively triples during peak summer months.",
+   "verdict": "drop",
+   "currentValue": "No CVB, Chamber, Census or SCDOT source gives a seasonal population multiplier for the Grand Strand. The CVB publishes annual visitors (18.2 million, 2024) only.",
+   "sourceName": "Myrtle Beach Area CVB — Industry Research",
+   "sourceUrl": "https://www.myrtlebeachareacvb.com/industry-research",
+   "retrievedAt": "2026-10-05",
+   "note": "Unsourced multiplier (facts-4738 dropped the same class of claim). Delete the sentence; the next sentence ('Millions of visitors unfamiliar with local roads...') stands on its own."
+  },
+  {
+   "surface": "body",
+   "claim": "Many of the Myrtle Beach area's busiest roads — particularly U.S. 17 (Kings Highway) and U.S. 501 — were not designed to handle their current traffic volumes.",
+   "verdict": "update",
+   "currentValue": "SCDOT 2025 AADT: US 17 between SC 707 (Socastee Blvd) and US 501 — 82,200 vehicles/day; US 501 between SC 31 and the US 17 Bypass — 65,900; US 501 SC 544-SC 31 — 54,900. Horry County's RIDE III program funds 'U.S. Hwy. 501 Corridor improvements — SC Hwy. 31 to SC 544' (six-lane widening and signalized-intersection improvements), and a US 501 widening from Gardner Lacy Rd to SC 544 is in the GSATS program.",
+   "sourceName": "SCDOT Average Daily Traffic, Horry County, 2025; GSATS Policy Committee packet 2025-08-01",
+   "sourceUrl": "https://www.scdot.org/content/dam/scdot-legacy/travel/pdf/trafficcounts/2025/HORRY.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "'Not designed to handle' is an engineering conclusion no source states. Suggested: 'Many of the busiest roads carry very heavy volumes — about 82,000 vehicles a day on U.S. 17 near Socastee Boulevard and 66,000 on U.S. 501 east of S.C. 31 (SCDOT, 2025) — and U.S. 501 is in line for widening under the county's RIDE III program.' GSATS: https://cms3.revize.com/revize/waccamawgsats/Documents/Boards%20And%20Commissions/South%20Carolina/Policy%20Committee/Packets/Policy%20Meeting%20Packet%208.01.2025.pdf"
+  },
+  {
+   "surface": "body",
+   "claim": "Pedestrian fatalities along the Grand Strand are a persistent and tragic problem.",
+   "verdict": "keep",
+   "currentValue": "SCDPS 2024: Horry County crashes injured or killed 110 pedestrians, 12 fatally. FARS 2020-2024: 94 of Horry County's 328 fatal crashes (28.7%) involved a person outside a vehicle (pedestrian, cyclist or other non-occupant).",
+   "sourceName": "SCDPS South Carolina Traffic Collision Fact Book, 2024 Edition (Horry County, Part VI pp. 137-138; PDF pp. 145-146); NHTSA Fatality Analysis Reporting System (FARS) 2020-2024 accident files, STATE 45 / COUNTY 51 (Horry)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Supported. Optional figure: 'Horry County crashes killed 12 pedestrians in 2024 (SCDPS).' The firm's own Grand Strand Fatal Crash Report states 28.4% vs 20.2% statewide using its own definition; either figure is defensible, keep them consistent if added."
+  },
+  {
+   "surface": "body",
+   "claim": "The stretch of U.S. 17 through the entertainment districts sees a significant number of DUI-related crashes during late-night hours.",
+   "verdict": "update",
+   "currentValue": "No SCDPS or FARS source reports DUI crashes by road segment or district. County-level: Horry logged 480 non-fatal DUI collisions in 2024 (2,534 in 2020-2024), and SCDPS estimates 25 Horry fatalities in 2024 involved an alcohol-impaired driver (18, 32, 38, 28, 25 in 2020-2024). In 2024, 6 p.m.-midnight carried 21 of the county's 58 fatal collisions.",
+   "sourceName": "SCDPS Fact Book 2024 — Part IV DUI tables (county rows) and Horry County page",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Road-specific claim is unsourced. Suggested: 'Horry County logged 480 DUI-related injury and property-damage crashes in 2024, and an alcohol-impaired driver was involved in an estimated 25 of the county's traffic deaths that year (SCDPS).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Based on crash data from the South Carolina Highway Patrol and local police departments, these intersections consistently produce the highest numbers of collisions in the Grand Strand region.",
+   "verdict": "update",
+   "currentValue": "Horry County Top 5 Intersections by year (SCDPS Fact Books): 2020 — US-501 at S-1224 (Gardner Lacy Rd) 74, SC-9 at S-57 69, US-501 at Carolina Forest Blvd 65, US-17 at SC-544 64, US-501 at S-1315 (Grissom Pkwy) 51; 2021 — US-501 at Carolina Forest Blvd 84, US-501 at SC-544 77, US-501 at S-1224 76, US-17 at SC-544 75, SC-9 at S-57 71; 2022 — SC-9 at S-57 86, US-501 at Carolina Forest Blvd 75, US-501 at SC-544 73, US-17 at SC-544 65, US-501 at Cty-2848 59; 2023 — SC-9 at S-57 91, US-501 at S-1224 71, US-501 at Carolina Forest Blvd 68, US-501 at SC-544 59, US-17 at SC-544 58; 2024 — SC-9 at S-57 116 (0 fatal, 1 serious-injury), US-17 at SC-544 78, US-501 at SC-544 72, US-501 at S-1224 60, US-378 at US-501 59. No fatal collision at any listed intersection in any year. Georgetown County's No. 1 intersection every year 2020-2024 was US-17 at SC-707 (30, 56, 36, 37, 48).",
+   "sourceName": "SCDPS Traffic Collision Fact Books, 2020-2024 editions (Horry County Top 5 Roadways/Intersections page in each)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Only #1 (Carolina Forest Blvd) and #6 (SC 9/Hwy 57) appear in Horry's Top-5 tables, and #7 (US 17 Bypass/SC 707, Murrells Inlet) in Georgetown's. #2, #3, #4 and #5 never appear. Suggested lead: 'South Carolina's annual Traffic Collision Fact Book lists the five highest-crash intersections in each county. These are the Grand Strand intersections that keep appearing on those lists, and others where serious crashes have drawn attention.' Then re-order: SC 9/Hwy 57 first."
+  },
+  {
+   "surface": "body",
+   "claim": "1. U.S. 501 and Carolina Forest Boulevard",
+   "verdict": "update",
+   "currentValue": "Not the region's No. 1 by current data: Horry's top intersection in 2022, 2023 and 2024 was SC 9 at Highway 57 (86, 91, 116 collisions). US-501 at Carolina Forest Blvd ranked 3rd (2020, 65), 1st (2021, 84), 2nd (2022, 75), 3rd (2023, 68) and fell out of the Top 5 in 2024 (fewer than 59).",
+   "sourceName": "SCDPS Traffic Collision Fact Books, 2020-2024 editions (Horry County Top 5 Roadways/Intersections page in each)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Re-number so SC 9 and Highway 57 is #1, or remove the numbers. Note: the Fact Book codes the neighbouring US-501 at S-1224 (Gardner Lacy Rd, 60-76 a year) separately; do not merge them."
+  },
+  {
+   "surface": "body",
+   "claim": "This intersection has been identified as one of the single most dangerous in the entire Myrtle Beach metropolitan area, producing 65% more car accidents than the second-most hazardous intersection in the region.",
+   "verdict": "update",
+   "currentValue": "No public source for '65% more'. In its best year (2021) it led Horry County by 7 collisions (84 vs 77, about 9%); in 2024 it was not in the Top 5. A Sun News analysis of SCDPS data for 2020-mid-Aug 2024 ranked it tied 9th-10th in Horry County. FARS 2020-2024: no fatal crash coded at US-501/Carolina Forest Blvd.",
+   "sourceName": "SCDPS Traffic Collision Fact Books, 2020-2024 editions (Horry County Top 5 Roadways/Intersections page in each); Myrtle Beach Sun News (via Yahoo News), 2024-08-24",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Drop the '65% more' clause (traces only to marketing pages that cite no data). Suggested: 'It was among Horry County's five highest-crash intersections every year from 2020 to 2023 and the county's highest in 2021, with 84 collisions (SCDPS).' Sun News: https://www.yahoo.com/news/10-most-dangerous-intersections-crashes-100000172.html"
+  },
+  {
+   "surface": "body",
+   "claim": "The explosive residential growth of the Carolina Forest community has pushed commuter traffic volumes at this intersection far beyond its design capacity.",
+   "verdict": "update",
+   "currentValue": "No capacity study for this intersection was found. Horry County's RIDE III list includes U.S. 501 corridor improvements (SC 31 to SC 544) and Carolina Forest Boulevard widening, both aimed at congestion in this area.",
+   "sourceName": "GSATS Policy Committee packet 2025-08-01 (US 501 Corridor Improvements, RIDE III)",
+   "sourceUrl": "https://cms3.revize.com/revize/waccamawgsats/Documents/Boards%20And%20Commissions/South%20Carolina/Policy%20Committee/Packets/Policy%20Meeting%20Packet%208.01.2025.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Soften 'far beyond its design capacity' to 'has pushed commuter traffic here to heavy levels, and U.S. 501 through Carolina Forest is slated for widening under the county's RIDE III program.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Rush-hour gridlock, aggressive driving, and red-light running create a near-constant stream of rear-end collisions, T-bone crashes, and sideswipe accidents.",
+   "verdict": "update",
+   "currentValue": "The Fact Book's intersection table gives counts and severity only (2023: 68 collisions, 1 serious injury, 16 other-injury); no public source gives crash types here.",
+   "sourceName": "SCDPS Traffic Collision Fact Books, 2020-2024 editions (Horry County Top 5 Roadways/Intersections page in each)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2023%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "'Near-constant stream' is untraceable. Suggested: 'Congestion and turning conflicts make rear-end and angle crashes common here.'"
+  },
+  {
+   "surface": "body",
+   "claim": "2. U.S. 501 and S.C. Highway 31 (Carolina Bays Parkway)",
+   "verdict": "update",
+   "currentValue": "Not in any Horry County Top-5 intersection table 2020-2024; FARS 2020-2024 codes no fatal crash at US-501/SC-31. It is a grade-separated interchange. SCDOT 2025 AADT: US 501 SC 31-US 17 Bypass 65,900; SC 31 north of US 501 40,300.",
+   "sourceName": "SCDPS Traffic Collision Fact Books, 2020-2024 editions (Horry County Top 5 Roadways/Intersections page in each); NHTSA Fatality Analysis Reporting System (FARS) 2020-2024 accident files, STATE 45 / COUNTY 51 (Horry); SCDOT AADT 2025",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "No ranking source. Either drop the item or reframe it as a high-volume interchange without a ranking. If kept, the nearby Top-5 locations on US 501 are SC 544 (72 in 2024) and Gardner Lacy Rd/S-1224 (60)."
+  },
+  {
+   "surface": "body",
+   "claim": "The convergence of U.S. 501 and the S.C. 31 connector creates one of the Grand Strand's most complex and hazardous interchange areas.",
+   "verdict": "update",
+   "currentValue": "No crash ranking supports 'most ... hazardous'. SC 31 is the Carolina Bays Parkway (a full freeway route, not a 'connector').",
+   "sourceName": "SCDPS Traffic Collision Fact Books, 2020-2024 editions (Horry County Top 5 Roadways/Intersections page in each)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Suggested: 'U.S. 501's interchange with S.C. 31 (Carolina Bays Parkway) is one of the area's busiest, carrying about 66,000 vehicles a day on U.S. 501 just east of it (SCDOT, 2025).'"
+  },
+  {
+   "surface": "body",
+   "claim": "The mixing of highway-speed traffic exiting S.C. 31 with congested surface-street traffic on U.S. 501 produces dangerous speed differentials that lead to high numbers of rear-end collisions and angle crashes.",
+   "verdict": "update",
+   "currentValue": "No source gives crash counts or types at this interchange.",
+   "sourceName": "SCDPS Traffic Collision Fact Books, 2020-2024 editions (Horry County Top 5 Roadways/Intersections page in each)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Drop 'that lead to high numbers of ...'; keep as explanation: 'Traffic exiting S.C. 31 at highway speed meets congested surface traffic on U.S. 501, a common setting for rear-end crashes.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Known locally as \"The Back Gate,\" this intersection near Market Common has been the site of numerous serious and fatal crashes.",
+   "verdict": "update",
+   "currentValue": "The Back Gate has been a grade-separated single-point urban interchange since October 2014 ($121.7 million, Riding on a Penny). Not in any Horry Top-5 intersection table 2020-2024. FARS 2020-2024: one fatal crash coded at the interchange frontage (US-17 Bypass at Coventry Blvd, Jan. 2023) and none coded at US-17 Bypass/Farrow Pkwy (a Sept. 2021 'US-17 at Farrow Pkwy' fatal crash is at the Kings Highway end, ~3 km east).",
+   "sourceName": "Farrow Parkway (Wikipedia, citing The Sun News); NHTSA Fatality Analysis Reporting System (FARS) 2020-2024 accident files, STATE 45 / COUNTY 51 (Horry)",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Farrow_Parkway",
+   "retrievedAt": "2026-10-05",
+   "note": "The description is of the pre-2014 at-grade intersection. 'Numerous serious and fatal crashes' is unsupported for 2020-2024. Suggested: 'Known locally as \"the Back Gate,\" the U.S. 17 Bypass junction with Farrow Parkway and S.C. 707 near Market Common was rebuilt as an interchange in 2014 after years of crashes, and it still carries heavy airport, Market Common and bypass traffic.' Or drop the item."
+  },
+  {
+   "surface": "body",
+   "claim": "The intersection handles heavy traffic from the Market Common mixed-use development, the Myrtle Beach International Airport area, and the Highway 17 Bypass, creating constant conflict between through traffic and vehicles making turning movements.",
+   "verdict": "update",
+   "currentValue": "Since 2014 through traffic on US 17 Bypass passes over the junction on a bridge; turning movements are handled by a single-point interchange and frontage roads (Coventry Blvd).",
+   "sourceName": "Farrow Parkway (Wikipedia)",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Farrow_Parkway",
+   "retrievedAt": "2026-10-05",
+   "note": "Delete 'creating constant conflict between through traffic and vehicles making turning movements' (no longer the geometry)."
+  },
+  {
+   "surface": "body",
+   "claim": "Several fatal crashes at this location have drawn community attention and calls for safety improvements.",
+   "verdict": "update",
+   "currentValue": "The safety improvement was built: interchange opened Oct. 2014. FARS 2020-2024 shows one fatal crash at the interchange (Coventry Blvd frontage, 2023).",
+   "sourceName": "Farrow Parkway (Wikipedia); NHTSA Fatality Analysis Reporting System (FARS) 2020-2024 accident files, STATE 45 / COUNTY 51 (Horry)",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Farrow_Parkway",
+   "retrievedAt": "2026-10-05",
+   "note": "Replace with: 'The 2014 interchange was the county's response to that crash history.' Or delete."
+  },
+  {
+   "surface": "body",
+   "claim": "According to City of Myrtle Beach police records, this intersection held the record for the highest number of crashes in the city, with 70 crashes in a three-year period.",
+   "verdict": "drop",
+   "currentValue": "The '70 crashes in three years' figure circulates from an October 2013 web article and predates a traffic signal later installed at Pine Island Rd/Oak Forest Ln near Coastal Grand Mall. No current City of Myrtle Beach or SCDPS figure was found; the intersection is not in any Horry Top-5 table 2020-2024, and FARS 2020-2024 codes no fatal crash there.",
+   "sourceName": "SCDPS Traffic Collision Fact Books, 2020-2024 editions (Horry County Top 5 Roadways/Intersections page in each); NHTSA Fatality Analysis Reporting System (FARS) 2020-2024 accident files, STATE 45 / COUNTY 51 (Horry)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Undated, a decade-plus stale, and traceable only to law-firm marketing pages (not cited here). Drop the sentence; drop item #4 entirely unless the owner wants it kept as unranked local knowledge. FAQ 1 also names it."
+  },
+  {
+   "surface": "body",
+   "claim": "The residential neighborhood setting can give drivers a false sense of safety, but the intersection's geometry and sight-line limitations create dangerous conditions, particularly for drivers making left turns.",
+   "verdict": "drop",
+   "currentValue": "No source; the intersection has been signalized since the figure above was published.",
+   "sourceName": "—",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Drop with item #4."
+  },
+  {
+   "surface": "body",
+   "claim": "This Murrells Inlet intersection has been the site of multiple fatal crashes in recent years.",
+   "verdict": "update",
+   "currentValue": "FARS 2020-2024 records one fatal crash at US-17 at Wood Thrush Drive (May 2024, four-way intersection, one death). The location (33.6076, -79.0146) is in Horry County outside the Murrells Inlet CDP (Census geocoder: Myrtle Beach CCD), in the Burgess/Socastee area with Murrells Inlet mailing addresses.",
+   "sourceName": "NHTSA Fatality Analysis Reporting System (FARS) 2020-2024 accident files, STATE 45 / COUNTY 51 (Horry)",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-05",
+   "note": "'Multiple' is not supported in FARS 2020-2024 (a 2025 crash would not yet be in FARS). Suggested: 'This U.S. 17 Bypass intersection south of Myrtle Beach was the scene of a fatal crash in May 2024 (NHTSA FARS).'"
+  },
+  {
+   "surface": "body",
+   "claim": "An 83-year-old driver was killed in a two-car crash at this intersection, and months later another person was killed in a hit-and-run at the same location.",
+   "verdict": "update",
+   "currentValue": "A WMBF headline '83-year-old dies after 2-car crash in Murrells Inlet, coroner says' exists, but its date and location could not be confirmed; no hit-and-run fatal crash at this intersection appears in FARS 2020-2024.",
+   "sourceName": "WMBF traffic video gallery (headline only); NHTSA Fatality Analysis Reporting System (FARS) 2020-2024 accident files, STATE 45 / COUNTY 51 (Horry)",
+   "sourceUrl": "https://www.wmbfnews.com/video-gallery/traffic/",
+   "retrievedAt": "2026-10-05",
+   "note": "Untraced as written. Drop the sentence unless the owner can link the two news reports; if they are 2025 events they are outside FARS. Keep only the FARS-backed fact above."
+  },
+  {
+   "surface": "body",
+   "claim": "This intersection near Little River recorded the most collisions in the northern Grand Strand area over a recent five-year period, with 49 crashes documented.",
+   "verdict": "update",
+   "currentValue": "SC-9 at S-57 (Highway 57) was Horry County's No. 1 intersection — not just the northern Grand Strand's — in 2022 (86), 2023 (91) and 2024 (116 collisions: 0 fatal, 1 serious-injury, 23 other-injury; 33 people hurt); 2nd in 2020 (69), 5th in 2021 (71). The '49 crashes' figure comes from a Sun News analysis of a partial SCDPS dataset for 2020-mid-Aug 2024, which also ranked it first.",
+   "sourceName": "SCDPS Traffic Collision Fact Books, 2020-2024 editions (Horry County Top 5 Roadways/Intersections page in each); Myrtle Beach Sun News (via Yahoo News), 2024-08-24",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Biggest single correction in the list. Suggested: 'This intersection near Little River had more collisions than any other in Horry County in 2022, 2023 and 2024 — 116 in 2024 alone, with 33 people injured (SCDPS Traffic Collision Fact Book).' Move it to #1."
+  },
+  {
+   "surface": "body",
+   "claim": "The rural feel of this intersection belies its danger — the convergence of two state highways with high speed limits and limited traffic controls produces serious angle collisions.",
+   "verdict": "update",
+   "currentValue": "2024: 116 collisions, none fatal, 1 serious-injury. FARS 2020-2024 codes no fatal crash here. Highway 57 is secondary route S-57 (SCDOT: 'S- 57 (S HWY 57)'), not an SC primary.",
+   "sourceName": "SCDPS South Carolina Traffic Collision Fact Book, 2024 Edition (Horry County, Part VI pp. 137-138; PDF pp. 145-146); SCDOT AADT 2025",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "'Produces serious angle collisions' overstates severity; 'limited traffic controls' is unsourced. Suggested: 'The meeting of S.C. 9 and Highway 57 carries heavy Little River and North Myrtle Beach traffic, and it produces more crashes than any other Horry County intersection — though most are property-damage-only.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Heavy traffic at this Murrells Inlet intersection leaves motorcycle riders particularly vulnerable.",
+   "verdict": "update",
+   "currentValue": "US-17 at SC-707 (Murrells Inlet) was GEORGETOWN County's highest-crash intersection every year 2020-2024: 30, 56, 36, 37 and 48 collisions (2024: 0 fatal, 0 serious-injury, 10 other-injury). No intersection-level motorcycle data exists. Horry County 2024: 336 motorcyclists injured or killed, 11 fatally.",
+   "sourceName": "SCDPS Traffic Collision Fact Books, 2020-2024 editions (Horry County Top 5 Roadways/Intersections page in each) (Georgetown County page)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Keep the item but anchor it in data and the correct county: 'The U.S. 17 Bypass junction with S.C. 707 in Murrells Inlet has been Georgetown County's highest-crash intersection every year since 2020 — 48 collisions in 2024 (SCDPS).' A crash here is filed in Georgetown County, not Horry."
+  },
+  {
+   "surface": "body",
+   "claim": "U.S. 17 carries more fatal crashes than any other route in Horry County — 39 between 2020 and 2024, against 23 on U.S. 501, according to federal crash records.",
+   "verdict": "update",
+   "currentValue": "FARS 2020-2024, Horry County, counting every officer-recorded variant of each route (US-17, US-17 Business, US-17 Bypass, Kings Hwy): US 17 — 67 fatal crashes, 71 deaths; US 501 — 36 fatal crashes (37 deaths) as the primary trafficway, 37 including crashes where it is the second road. Next: US 701 and SC 9, 19 each; SC 31, 16. '39' and '23' count only crashes whose road was typed exactly 'US-17' / 'US-501'. SCDPS also ranks US-17 the county's No. 1 roadway every year 2020-2024 (2024: 1,821 collisions, 9 fatal).",
+   "sourceName": "NHTSA Fatality Analysis Reporting System (FARS) 2020-2024 accident files, STATE 45 / COUNTY 51 (Horry); SCDPS South Carolina Traffic Collision Fact Book, 2024 Edition (Horry County, Part VI pp. 137-138; PDF pp. 145-146)",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-05",
+   "note": "The superlative holds; the numbers are undercounts. Suggested: '...— 67 between 2020 and 2024, against 36 on U.S. 501, according to federal crash records (NHTSA FARS).' Owner note: the linked Grand Strand Fatal Crash Report (/resources/myrtle-beach-fatal-crashes/) states US-17 (45) and US-501 (31) using a third normalisation; pick one method and align the report, this post, the Key Takeaways and FAQ 0. Recompute: bin/myrtle-beach-report-analysis.py norm_road() keeps 'US-17 S KINGS HWY' etc. as separate labels."
+  },
+  {
+   "surface": "body",
+   "claim": "The Business 17 section through the tourist-heavy core of Myrtle Beach is particularly hazardous, with failure-to-yield crashes, rear-end collisions, and pedestrian strikes occurring at alarming rates during peak season.",
+   "verdict": "update",
+   "currentValue": "No source splits US-17 Business from the Bypass in crash counts (SCDPS reports 'US-17' combined; FARS route labels are inconsistent). County-wide, 'failed to yield right of way' was the No. 2 contributing factor in 2024 (2,672 listings, 11 in fatal collisions). The 'peak season' clause conflicts with the post's own FARS finding that fatal crashes do not peak in summer.",
+   "sourceName": "SCDPS South Carolina Traffic Collision Fact Book, 2024 Edition (Horry County, Part VI pp. 137-138; PDF pp. 145-146)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Suggested: 'Kings Highway (Business 17) through the tourist core sees frequent failure-to-yield and rear-end crashes and pedestrian strikes — failure to yield was the second most-cited crash factor in Horry County in 2024 (SCDPS).' Drop 'at alarming rates during peak season'."
+  },
+  {
+   "surface": "body",
+   "claim": "U.S. 501 serves as the primary inland access route to Myrtle Beach, and its intersections — particularly at Carolina Forest Boulevard and S.C. 31 — are among the most crash-prone in the region.",
+   "verdict": "update",
+   "currentValue": "US-501 was Horry County's No. 2 roadway every year 2020-2024 (2024: 1,462 collisions, 6 fatal). Its 2024 Top-5 intersections were SC 544 (72), Gardner Lacy Rd/S-1224 (60) and US 378 in Conway (59). Carolina Forest Blvd made the Top 5 in 2020-2023; SC 31 never did.",
+   "sourceName": "SCDPS Traffic Collision Fact Books, 2020-2024 editions (Horry County Top 5 Roadways/Intersections page in each)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Change to '...its intersections — particularly at S.C. 544, Gardner Lacy Road and Carolina Forest Boulevard — are among Horry County's highest-crash locations (SCDPS).'"
+  },
+  {
+   "surface": "body",
+   "claim": "The highway carries an enormous volume of tourist traffic on weekends and during season transitions, and the long, straight stretches between intersections encourage excessive speed that makes intersection crashes more violent when they occur.",
+   "verdict": "keep",
+   "currentValue": "SCDOT 2025 AADT on US 501: 54,300-65,900 between Conway and the US 17 Bypass. 'Driving too fast for conditions' was the No. 1 contributing factor in Horry County collisions in 2024 (2,971 listings, 9 in fatal collisions).",
+   "sourceName": "SCDOT AADT 2025; SCDPS South Carolina Traffic Collision Fact Book, 2024 Edition (Horry County, Part VI pp. 137-138; PDF pp. 145-146)",
+   "sourceUrl": "https://www.scdot.org/content/dam/scdot-legacy/travel/pdf/trafficcounts/2025/HORRY.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Explanatory; optional AADT figure."
+  },
+  {
+   "surface": "body",
+   "claim": "Fatal crashes along the bypass are not uncommon.",
+   "verdict": "keep",
+   "currentValue": "FARS 2020-2024 records fatal crashes coded to the US 17 Bypass in Horry County (e.g., at Coventry Blvd 2023, Wood Thrush Dr 2024); most US-17 fatal crashes are recorded without a Business/Bypass label, so no bypass-only total is possible.",
+   "sourceName": "NHTSA Fatality Analysis Reporting System (FARS) 2020-2024 accident files, STATE 45 / COUNTY 51 (Horry)",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-05",
+   "note": "Qualitative; do not add a number."
+  },
+  {
+   "surface": "body",
+   "claim": "Between 2020 and 2024, 22.6% of Horry County's fatal crashes happened in June, July and August — below the 25% an even spread across the year would produce, and below South Carolina's own summer share of 26.1%.",
+   "verdict": "keep",
+   "currentValue": "Recomputed: 74 of 328 Horry fatal crashes (22.6%) in June-August; South Carolina 26.1% of 5,019. By month: Oct 40, May 36, Dec 34, Mar 28, Apr 28, Jul 27, Nov 27, Aug 24, Jun 23, Sep 22, Jan 20, Feb 19.",
+   "sourceName": "NHTSA Fatality Analysis Reporting System (FARS) 2020-2024 accident files, STATE 45 / COUNTY 51 (Horry)",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-05",
+   "note": "Verified exactly."
+  },
+  {
+   "surface": "body",
+   "claim": "The worst months were October, May and December.",
+   "verdict": "keep",
+   "currentValue": "October 40, May 36, December 34.",
+   "sourceName": "NHTSA Fatality Analysis Reporting System (FARS) 2020-2024 accident files, STATE 45 / COUNTY 51 (Horry)",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-05",
+   "note": "Verified."
+  },
+  {
+   "surface": "body",
+   "claim": "Peak season brings far more vehicles, unfamiliar drivers, pedestrians and motorcycles, and it produces more crashes overall.",
+   "verdict": "update",
+   "currentValue": "SCDPS publishes collisions by month statewide only; no county-by-month total for Horry exists in the Fact Book, and no other public source was found.",
+   "sourceName": "SCDPS South Carolina Traffic Collision Fact Book, 2024 Edition (Horry County, Part VI pp. 137-138; PDF pp. 145-146)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Keep the first half; soften 'and it produces more crashes overall' to 'and likely more crashes overall' or drop it — it is the one unsourced half of an otherwise data-led paragraph."
+  },
+  {
+   "surface": "body",
+   "claim": "major events like Bike Week draw tens of thousands of additional visitors to roads already operating at or above capacity",
+   "verdict": "keep",
+   "currentValue": "Atlantic Beach Bikefest (Memorial Day weekend) has drawn 'tens of thousands of motorcyclists' annually since 1980 and between 300,000 and 400,000 people over the weekend; 2026 dates: Myrtle Beach Spring Bike Rally May 8-17, Atlantic Beach Bikefest May 22-25. No source apportions Horry fatal crashes to rally weeks.",
+   "sourceName": "WPDE — Bike Fest kicks off in Atlantic Beach as thousands of riders pack holiday weekend (May 2026); The Sun News bike-fest coverage (2026-05-27/28); facts-4729",
+   "sourceUrl": "https://wpde.com/news/local/bike-fest-kicks-off-in-atlantic-beach-as-thousands-of-riders-pack-holiday-weekend-events-vendors-travel-memorial-day-holiday",
+   "retrievedAt": "2026-10-05",
+   "note": "'Tens of thousands' is conservative and fine. 'At or above capacity' is loose but explanatory. Do not add a rally fatality claim. The 300,000-400,000 attendance figure is The Sun News's (https://www.myrtlebeachonline.com/news/local/article315892887.html), which timed out to curl this run, so it is not the sourceUrl; WPDE (resolves) confirms 'thousands of motorcycle riders'."
+  },
+  {
+   "surface": "body",
+   "claim": "Even winter months see elevated crash rates compared to similarly sized non-tourist communities because of the area's retirement population and year-round hospitality industry traffic.",
+   "verdict": "drop",
+   "currentValue": "No source compares Horry winter crash rates with non-tourist communities, and none attributes them to retirees. Horry's 2024 mileage death rate (1.516) was below the state average.",
+   "sourceName": "SCDPS South Carolina Traffic Collision Fact Book, 2024 Edition (Horry County, Part VI pp. 137-138; PDF pp. 145-146)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Unsourced comparison and causal claim — delete."
+  },
+  {
+   "surface": "body",
+   "claim": "Chronic congestion along U.S. 17 and U.S. 501 breeds frustration, and drivers pushing through yellow and red lights is a leading cause of T-bone crashes.",
+   "verdict": "update",
+   "currentValue": "Horry County's 2024 top five contributing factors: driving too fast for conditions (2,971), failed to yield (2,672), improper lane usage/change (1,162), followed too closely (806), other improper action (678). Disregarding a signal is not in the top five.",
+   "sourceName": "SCDPS South Carolina Traffic Collision Fact Book, 2024 Edition (Horry County, Part VI pp. 137-138; PDF pp. 145-146)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Change 'a leading cause' to 'a common cause'."
+  },
+  {
+   "surface": "body",
+   "claim": "Speed limits along the Highway 17 Bypass and U.S. 501 encourage higher travel speeds that reduce reaction time at intersections.",
+   "verdict": "update",
+   "currentValue": "'Driving too fast for conditions' was Horry County's No. 1 contributing factor in 2024 — 2,971 listings, 9 of them in fatal collisions.",
+   "sourceName": "SCDPS South Carolina Traffic Collision Fact Book, 2024 Edition (Horry County, Part VI pp. 137-138; PDF pp. 145-146)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Optional strengthening: add '— driving too fast for conditions was the most-cited factor in Horry County crashes in 2024 (SCDPS).'"
+  },
+  {
+   "surface": "body",
+   "claim": "The Grand Strand's entertainment economy contributes to elevated rates of DUI crashes, particularly during summer evenings and weekends.",
+   "verdict": "update",
+   "currentValue": "Horry 2024: estimated 25 of 59 traffic deaths (42%) involved an alcohol-impaired driver vs 417 of 1,038 (40%) statewide — about the state rate, not clearly elevated. 480 non-fatal DUI collisions in 2024. No summer-specific DUI data; FARS shows fatal crashes do not peak in summer.",
+   "sourceName": "SCDPS Fact Book 2024 — Part IV DUI tables; facts-4729",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Drop 'elevated' and 'summer': 'Impaired driving: Horry County logged 480 DUI-related injury and property-damage crashes in 2024, many of them on evenings and weekends.' (The weekend/evening part is supported nationally — NHTSA; keep it general.)"
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina and Georgia Laws That Protect Accident Victims",
+   "verdict": "update",
+   "currentValue": "SC-only hyperlocal post. Precedent facts-4539/-4538: cross-state law is removed.",
+   "sourceName": "—",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "H2 and the matching table-of-contents link text (#laws-protect-you). Change both to 'South Carolina Laws That Protect Accident Victims'; keep the id."
+  },
+  {
+   "surface": "body",
+   "claim": "Under S.C. Code § 15-3-530, accident victims in South Carolina have three years from the date of injury to file a personal injury lawsuit.",
+   "verdict": "keep",
+   "currentValue": "§ 15-3-530(5): three years for 'any injury to the person'. Wrongful death runs from the date of death (§ 15-3-530(6)). Minors: § 15-3-40 tolls during minority, but not more than one year after age 18 (also applies to Tort Claims Act suits). Claims against a government entity: two years under § 15-78-110 (three if a verified claim was first filed).",
+   "sourceName": "S.C. Code Title 15, Ch. 3 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Verified. Optional add (the post names 'government entities responsible for road maintenance' later): 'Claims against SCDOT, Horry County or a city must be filed within two years (S.C. Code § 15-78-110).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia's deadline is shorter — just two years under O.C.G.A. § 9-3-33.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "—",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Georgia law on an SC-only post — delete (precedent facts-4539)."
+  },
+  {
+   "surface": "body",
+   "claim": "Tourists injured in Myrtle Beach who reside in Georgia should be aware of both states' deadlines.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "—",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Cross-jurisdiction framing — delete. A South Carolina crash sued in South Carolina is governed by § 15-3-530 regardless of the plaintiff's home state."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina allows you to recover compensation if you are less than 51% at fault for the accident.",
+   "verdict": "keep",
+   "currentValue": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991): plaintiff recovers if his negligence is not greater than the defendants'; award reduced by his share.",
+   "sourceName": "Nelson v. Concrete Supply Co. (CourtListener)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/",
+   "retrievedAt": "2026-10-05",
+   "note": "Verified. Do not cite § 15-38-15 for the plaintiff's bar."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia's threshold is slightly stricter at less than 50% at fault under O.C.G.A. § 51-12-33.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "—",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Georgia law — delete."
+  },
+  {
+   "surface": "body",
+   "claim": "In both states, your recovery is reduced by your percentage of responsibility.",
+   "verdict": "update",
+   "currentValue": "True for South Carolina (Nelson).",
+   "sourceName": "Nelson v. Concrete Supply Co.",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/",
+   "retrievedAt": "2026-10-05",
+   "note": "Change 'In both states, your' to 'Your'."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina requires drivers to carry uninsured motorist coverage under S.C. Code § 38-77-150.",
+   "verdict": "keep",
+   "currentValue": "§ 38-77-150(A): no auto policy may be issued without the uninsured motorist provision, at least the § 38-77-140 minimums ($25,000/$50,000/$25,000).",
+   "sourceName": "S.C. Code Title 38, Ch. 77 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Verified."
+  },
+  {
+   "surface": "body",
+   "claim": "This protection is especially critical in the Myrtle Beach area, where out-of-state tourists from states with lower insurance requirements may be underinsured.",
+   "verdict": "update",
+   "currentValue": "Mandatory UM (§ 38-77-150) covers an UNINSURED or hit-and-run driver (§ 38-77-170 conditions). Protection against an UNDERINSURED driver is UIM, which insurers must offer but drivers may decline (§ 38-77-160).",
+   "sourceName": "S.C. Code §§ 38-77-150, -160, -170",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Conflates UM and UIM (same fix as facts-3553). Suggested: '...where an at-fault visitor may carry low limits. Underinsured motorist coverage, which protects you when the other driver's limits are too low, is optional in South Carolina (S.C. Code § 38-77-160) — check whether your policy has it.'"
+  },
+  {
+   "surface": "body",
+   "claim": "If you are a Georgia resident injured in a Myrtle Beach car accident, you generally file your claim in South Carolina where the accident occurred.",
+   "verdict": "update",
+   "currentValue": "South Carolina courts hear claims from South Carolina crashes regardless of the injured person's residence; Horry County civil cases go to the Court of Common Pleas in Conway (Georgetown County crashes, e.g., US 17/SC 707 in Murrells Inlet, to Georgetown).",
+   "sourceName": "SC Judicial Branch — Horry County courthouse; facts-4729/-4738",
+   "sourceUrl": "https://www.sccourts.org/courts/courthouse-search/horry/",
+   "retrievedAt": "2026-10-05",
+   "note": "Georgia framing on an SC-only post. Change 'a Georgia resident' to 'visiting from another state'."
+  },
+  {
+   "surface": "body",
+   "claim": "However, your Georgia uninsured/underinsured motorist coverage may provide additional protection depending on your policy.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "—",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Change 'your Georgia uninsured/underinsured motorist coverage' to 'your own auto policy's uninsured/underinsured motorist coverage' (FAQ 4 already says 'your home state's')."
+  },
+  {
+   "surface": "body",
+   "claim": "An attorney experienced in both jurisdictions can evaluate all available coverage.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "—",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Change 'experienced in both jurisdictions' to 'familiar with cross-state insurance claims'. Do not imply Georgia representation on this post."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina law requires reporting accidents that cause injury, death, or significant property damage.",
+   "verdict": "keep",
+   "currentValue": "§ 56-5-1260: immediate notice to police of any injury or death crash. § 56-5-1270: written report to SCDMV within 15 days for injury/death or $1,000+ apparent damage not investigated by an officer. Reports are not evidence of negligence at trial (§ 56-5-1290) and a traffic conviction is inadmissible in the civil case (§ 56-5-6160).",
+   "sourceName": "S.C. Code Title 56, Ch. 5 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Verified. Optional precision: 'property damage of $1,000 or more'."
+  },
+  {
+   "surface": "body",
+   "claim": "Crashes on the Grand Strand's most dangerous roads frequently involve complex liability questions — tourist drivers from other states, commercial vehicle operators, government entities responsible for road maintenance, and aggressive insurance companies all complicate the claims process.",
+   "verdict": "keep",
+   "currentValue": "Tort Claims Act: agencies are not liable for the design of highways (§ 15-78-60(15)); sign/signal/defect liability arises only after notice and failure to correct; two-year limit (§ 15-78-110); caps $300,000 per person / $600,000 per occurrence (§ 15-78-120).",
+   "sourceName": "S.C. Code Title 15, Ch. 78 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Accurate as written. If the patcher adds anything about road-design claims, it must carry the design-immunity caveat."
+  },
+  {
+   "surface": "body",
+   "claim": "Take your case to trial in Horry County Circuit Court if a fair settlement cannot be reached",
+   "verdict": "keep",
+   "currentValue": "Horry County civil cases are heard in the Court of Common Pleas (15th Judicial Circuit), Horry County Courthouse, 1301 Second Avenue, Conway.",
+   "sourceName": "SC Judicial Branch — Horry County courthouse",
+   "sourceUrl": "https://www.sccourts.org/courts/courthouse-search/horry/",
+   "retrievedAt": "2026-10-05",
+   "note": "Acceptable shorthand. A Georgetown County crash (US 17/SC 707, Pawleys Island) is filed in Georgetown."
+  },
+  {
+   "surface": "body",
+   "claim": "contingency fee basis — you pay nothing unless we win",
+   "verdict": "update",
+   "currentValue": "Firm's confirmed wording (2026-10-02): 'Fees and costs apply only upon successful recovery. No fees or costs with no recovery.'",
+   "sourceName": "Owner instruction 2026-10-02",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Fee line differs from the confirmed wording — flag. Suggested: 'on a contingency fee basis. Fees and costs apply only upon successful recovery. No fees or costs with no recovery.'"
+  },
+  {
+   "surface": "body",
+   "claim": "$300 million recovered",
+   "verdict": "keep",
+   "currentValue": "Firm registry: '$300M+ recovered'.",
+   "sourceName": "profiles/writer-profile.md (firm trust signals)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Matches the firm record. The only dollar figure in the post."
+  },
+  {
+   "surface": "body",
+   "claim": "4.9-star average client rating",
+   "verdict": "keep",
+   "currentValue": "Firm registry: '4.9-star average'.",
+   "sourceName": "profiles/writer-profile.md",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Matches."
+  },
+  {
+   "surface": "body",
+   "claim": "Call (843) 612-1980 or 1-844-RESULTS.",
+   "verdict": "keep",
+   "currentValue": "tel:+18436121980 = Myrtle Beach office (client.json); tel:+18447378587 = 1-844-RESULTS (7-3-7-8-5-8-7).",
+   "sourceName": "client.json; profiles/writer-profile.md",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Both hrefs correct."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "The roads behind the Grand Strand's worst crashes, what federal crash data actually shows about seasonal risk, and your rights after a wreck.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "—",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Accurate; published as the Article description."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "The Myrtle Beach area's 20+ million annual visitors transform the Grand Strand into one of South Carolina's most dangerous driving environments.",
+   "verdict": "update",
+   "currentValue": "18.2 million visitors (2024, Myrtle Beach Area CVB). Horry: 4th in total collisions, 3rd in fatal collisions (2024); mileage death rate below state average.",
+   "sourceName": "Myrtle Beach Area CVB; SCDPS South Carolina Traffic Collision Fact Book, 2024 Edition (Horry County, Part VI pp. 137-138; PDF pp. 145-146)",
+   "sourceUrl": "https://www.myrtlebeachareacvb.com/industry-research",
+   "retrievedAt": "2026-10-05",
+   "note": "Suggested: 'The Grand Strand's roughly 18 million annual visitors help make Horry County one of South Carolina's highest-crash counties — 4th of 46 for total collisions and 3rd for fatal collisions in 2024.'"
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "U.S. 17 carries more fatal crashes than any other Horry County route (39 between 2020 and 2024, per federal data)",
+   "verdict": "update",
+   "currentValue": "67 fatal crashes (71 deaths) on all US 17 variants, 2020-2024; US 501 36.",
+   "sourceName": "NHTSA Fatality Analysis Reporting System (FARS) 2020-2024 accident files, STATE 45 / COUNTY 51 (Horry)",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-05",
+   "note": "Change 39 to 67 (same method as body/FAQ 0)."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "summer is not the deadliest season — 22.6% of fatal crashes fall in June through August, below an even spread.",
+   "verdict": "keep",
+   "currentValue": "74 of 328.",
+   "sourceName": "NHTSA Fatality Analysis Reporting System (FARS) 2020-2024 accident files, STATE 45 / COUNTY 51 (Horry)",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-05",
+   "note": "Verified."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "The U.S. 501/Carolina Forest Boulevard intersection leads the region in crashes.",
+   "verdict": "update",
+   "currentValue": "SC 9 at Highway 57 near Little River led Horry County in 2022-2024 (116 in 2024). Carolina Forest Blvd led only in 2021 and was out of the Top 5 in 2024.",
+   "sourceName": "SCDPS Traffic Collision Fact Books, 2020-2024 editions (Horry County Top 5 Roadways/Intersections page in each)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Suggested: 'S.C. 9 at Highway 57 near Little River has had more crashes than any other Horry County intersection three years running (116 in 2024, per SCDPS).'"
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "South Carolina's three-year statute of limitations (S.C. Code § 15-3-530) and comparative fault rule (less than 51% at fault) protect victims, including out-of-state tourists injured on Grand Strand roads.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-3-530; Nelson v. Concrete Supply Co.",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Verified."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "U.S. 17 (Kings Highway) carries more fatal crashes than any other route in Horry County — 39 between 2020 and 2024, against 23 on U.S. 501, according to NHTSA federal crash data.",
+   "verdict": "update",
+   "currentValue": "67 vs 36 (all route variants). SCDPS: US-17 also Horry's No. 1 roadway for all collisions every year 2020-2024.",
+   "sourceName": "NHTSA Fatality Analysis Reporting System (FARS) 2020-2024 accident files, STATE 45 / COUNTY 51 (Horry)",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-05",
+   "note": "FAQPage structured data. Change to '— 67 between 2020 and 2024, against 36 on U.S. 501, according to NHTSA federal crash data — and it is also the county's highest-crash road overall (1,821 collisions in 2024, SCDPS).'"
+  },
+  {
+   "surface": "faq:1",
+   "claim": "The intersection of U.S. 501 and Carolina Forest Boulevard is one of the most dangerous in the entire Myrtle Beach metro area, producing 65% more car accidents than the second-most hazardous intersection.",
+   "verdict": "update",
+   "currentValue": "Horry County Top 5 Intersections by year (SCDPS Fact Books): 2020 — US-501 at S-1224 (Gardner Lacy Rd) 74, SC-9 at S-57 69, US-501 at Carolina Forest Blvd 65, US-17 at SC-544 64, US-501 at S-1315 (Grissom Pkwy) 51; 2021 — US-501 at Carolina Forest Blvd 84, US-501 at SC-544 77, US-501 at S-1224 76, US-17 at SC-544 75, SC-9 at S-57 71; 2022 — SC-9 at S-57 86, US-501 at Carolina Forest Blvd 75, US-501 at SC-544 73, US-17 at SC-544 65, US-501 at Cty-2848 59; 2023 — SC-9 at S-57 91, US-501 at S-1224 71, US-501 at Carolina Forest Blvd 68, US-501 at SC-544 59, US-17 at SC-544 58; 2024 — SC-9 at S-57 116 (0 fatal, 1 serious-injury), US-17 at SC-544 78, US-501 at SC-544 72, US-501 at S-1224 60, US-378 at US-501 59. No fatal collision at any listed intersection in any year.",
+   "sourceName": "SCDPS Traffic Collision Fact Books, 2020-2024 editions (Horry County Top 5 Roadways/Intersections page in each)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "FAQPage structured data. Replace the answer: 'By state crash counts, it is S.C. 9 at Highway 57 near Little River — Horry County's highest-crash intersection in 2022, 2023 and 2024, with 116 collisions in 2024 (SCDPS Traffic Collision Fact Book). U.S. 17 at S.C. 544 (78) and U.S. 501 at S.C. 544 (72) followed. U.S. 501 at Carolina Forest Boulevard was in the county's top five every year from 2020 to 2023. Most of these crashes are property-damage-only; none of the top intersections recorded a fatal collision in 2024.' Note the question says 'in Myrtle Beach' — SC 9/Hwy 57 is near Little River; the answer should say so."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Other high-risk locations include U.S. 501 at S.C. Highway 31, Highway 17 Bypass at Farrow Parkway, and Oak Forest Lane at Pine Island Road.",
+   "verdict": "update",
+   "currentValue": "None of the three appears in a Horry Top-5 table 2020-2024; the Farrow Pkwy junction has been an interchange since 2014; the Oak Forest/Pine Island figure is circa 2013.",
+   "sourceName": "SCDPS Traffic Collision Fact Books, 2020-2024 editions (Horry County Top 5 Roadways/Intersections page in each)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Replaced by the answer above; delete."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "Under S.C. Code § 15-3-530, you have three years from the date of your accident to file a personal injury lawsuit in South Carolina.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-3-530",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-05",
+   "note": "Verified (government defendants: two years, § 15-78-110 — optional add)."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "If you are a Georgia resident injured in Myrtle Beach, be aware that Georgia's deadline is only two years under O.C.G.A. § 9-3-33.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "—",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Georgia law on an SC-only post — delete (FAQPage structured data)."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Not for fatal crashes. Federal data for 2020–2024 shows 22.6% of Horry County's fatal crashes fell in June through August — below the 25% an even spread across the year would give, and below South Carolina's 26.1%.",
+   "verdict": "keep",
+   "currentValue": "74/328; SC 26.1%.",
+   "sourceName": "NHTSA Fatality Analysis Reporting System (FARS) 2020-2024 accident files, STATE 45 / COUNTY 51 (Horry)",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-05",
+   "note": "Verified."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Summer brings far more traffic, unfamiliar drivers and pedestrian activity and produces more crashes overall, but the fatal ones are spread across the calendar, with October, May and December the worst months.",
+   "verdict": "update",
+   "currentValue": "Month order verified; 'produces more crashes overall' has no county-level source.",
+   "sourceName": "SCDPS South Carolina Traffic Collision Fact Book, 2024 Edition (Horry County, Part VI pp. 137-138; PDF pp. 145-146)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-05",
+   "note": "Change 'and produces more crashes overall, but' to ', but' (or 'and likely more crashes overall')."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "Your home state's uninsured/underinsured motorist coverage may also provide additional protection.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "—",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Accurate and state-neutral."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "South Carolina follows a modified comparative fault rule that allows recovery as long as you are less than 51% at fault.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co.",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/",
+   "retrievedAt": "2026-10-05",
+   "note": "Verified."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "Georgia applies a similar rule with a slightly stricter threshold of less than 50% at fault under O.C.G.A. § 51-12-33.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "—",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-05",
+   "note": "Georgia law on an SC-only post — delete (FAQPage structured data)."
+  }
+ ],
+ "recommendedEdits": [
+  "Title (owner): retitle to 'Myrtle Beach's Highest-Crash Roads and Intersections: What the State Data Shows', or keep and define 'dangerous' as SCDPS/FARS counts.",
+  "Intro: '20 million visitors' → 'about 18 million (18.2 million in 2024, Myrtle Beach Area CVB)'; swap 'Murrells Inlet' (Georgetown County) for 'North Myrtle Beach'/'Surfside Beach' in the Horry County sentence; delete 'population effectively triples'.",
+  "Intersections lead: say the list is drawn from SCDPS Fact Book county Top-5 tables; re-order with S.C. 9 at Highway 57 as #1 (116 collisions in 2024; Horry's highest 2022-2024).",
+  "#1 Carolina Forest Blvd: delete '65% more ... second-most hazardous'; replace with 'in Horry County's top five every year 2020-2023 and No. 1 in 2021 (84 collisions)'. Soften 'far beyond its design capacity' and 'near-constant stream'.",
+  "#2 US 501/SC 31: no ranking — drop or reframe as a high-volume interchange (65,900 AADT on US 501 just east).",
+  "#3 Back Gate: rebuilt as an interchange in 2014; delete 'numerous serious and fatal crashes', the turning-conflict clause and 'calls for safety improvements', or drop the item.",
+  "#4 Oak Forest/Pine Island: drop the item (circa-2013 figure, since signalized, never in Top 5).",
+  "#5 Wood Thrush: replace 'multiple fatal crashes' and the 83-year-old/hit-and-run anecdote with 'a fatal crash in May 2024 (NHTSA FARS)', unless the owner can source both events.",
+  "#6 SC 9/Hwy 57: replace '49 crashes ... northern Grand Strand' with 'Horry County's highest-crash intersection in 2022, 2023 and 2024 — 116 collisions in 2024, 33 people hurt'; drop 'produces serious angle collisions'.",
+  "#7 US 17 Bypass/SC 707: add 'Georgetown County's highest-crash intersection every year since 2020 (48 collisions in 2024)'.",
+  "US 17 fatal-crash count: 39 → 67 and US 501 23 → 36 in body, Key Takeaways and FAQ 0; align the linked Grand Strand Fatal Crash Report (currently 45/31).",
+  "US 501 paragraph: name S.C. 544, Gardner Lacy Road and Carolina Forest Boulevard instead of S.C. 31.",
+  "Business 17: drop 'at alarming rates during peak season'; optionally cite failure-to-yield as the No. 2 factor.",
+  "Seasonal: delete the winter/retirement sentence; soften 'produces more crashes overall' in body and FAQ 3.",
+  "Causes: 'a leading cause of T-bone crashes' → 'a common cause'; DUI bullet drop 'elevated' and 'summer'; DUI sentence in 'Why' section → county DUI figures.",
+  "Law section: H2 + TOC → 'South Carolina Laws That Protect Accident Victims'; delete the three Georgia sentences (SOL, 50% bar, 'both states' deadlines'); 'In both states, your' → 'Your'; fix UM/UIM conflation (§ 38-77-160 optional UIM); Georgia-resident paragraph → out-of-state visitor, 'your own auto policy's' UM/UIM, drop 'both jurisdictions'.",
+  "FAQ 1: replace answer per the facts (SC 9/Hwy 57 first, Carolina Forest 2020-2023, no Farrow/Oak Forest/SC 31). FAQ 2 and FAQ 5: delete the Georgia sentences.",
+  "Fee line: 'you pay nothing unless we win' → 'Fees and costs apply only upon successful recovery. No fees or costs with no recovery.'"
+ ],
+ "statuteCitations": [
+  {
+   "section": "S.C. Code § 15-3-530",
+   "name": "Three-year limitation: (5) personal injury; (6) wrongful death from date of death",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-40",
+   "name": "Minors — tolling during minority, no more than one year after age 18 (applies to Ch. 78 actions too; not on page)",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+   "name": "Modified comparative fault — recover if less than 51% at fault",
+   "url": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/"
+  },
+  {
+   "section": "S.C. Code § 38-77-150",
+   "name": "Mandatory uninsured motorist coverage",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "section": "S.C. Code § 38-77-160",
+   "name": "Underinsured motorist coverage — must be offered, optional",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "section": "S.C. Code § 38-77-170",
+   "name": "Unknown-driver (hit-and-run) UM claims — conditions",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-60(15)",
+   "name": "Tort Claims Act — sign/signal/defect liability only after notice; no liability for the design of highways (not on page; reference)",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-110",
+   "name": "Tort Claims Act limitation — two years, three if a claim was first filed",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-120",
+   "name": "Tort Claims Act damages caps — $300,000 per person / $600,000 per occurrence",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-1260",
+   "name": "Immediate notice to police of injury/death crashes",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-1270",
+   "name": "Written report within 15 days for injury/death or $1,000+ damage not investigated by an officer",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-1290",
+   "name": "Crash reports are not evidence of negligence at trial",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-6160",
+   "name": "Evidence of a traffic conviction is inadmissible in a civil action",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "SCDPS — South Carolina Traffic Collision Fact Book 2024 Edition (Horry County pp. 137-138 printed / PDF 145-146; Georgetown p. 129; county rankings)",
+   "url": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf"
+  },
+  {
+   "name": "SCDPS — Traffic Collision Fact Book 2023 Edition (Horry County Top 5)",
+   "url": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2023%20Fact%20Book.pdf"
+  },
+  {
+   "name": "SCDPS — Traffic Collision Fact Book 2022 Edition",
+   "url": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2022%20Fact%20Book%20Final.pdf"
+  },
+  {
+   "name": "SCDPS — Traffic Collision Fact Book 2021 Edition",
+   "url": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2021%20Fact%20Book%20Final.pdf"
+  },
+  {
+   "name": "SCDPS — Traffic Collision Fact Book 2020 Edition",
+   "url": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2020%20Factbook%20Final.pdf"
+  },
+  {
+   "name": "SCDPS — Fact Books index",
+   "url": "https://scdps.sc.gov/ohsjp/stat_services/factbooks"
+  },
+  {
+   "name": "NHTSA FARS 2024 national CSV (2020-2023 at the same path pattern); Horry = STATE 45, COUNTY 51",
+   "url": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip"
+  },
+  {
+   "name": "SCDOT — Average Daily Traffic, Horry County, 2025",
+   "url": "https://www.scdot.org/content/dam/scdot-legacy/travel/pdf/trafficcounts/2025/HORRY.pdf"
+  },
+  {
+   "name": "Myrtle Beach Area CVB — Industry Research (18.2 million visitors, 2024)",
+   "url": "https://www.myrtlebeachareacvb.com/industry-research"
+  },
+  {
+   "name": "WPDE — Grand Strand tourism fell 3% in 2025, chamber projects another 3% dip in 2026 (2026-03-09)",
+   "url": "https://wpde.com/news/local/grand-strand-tourism-down-three-percent-surfside-myrtlebeach"
+  },
+  {
+   "name": "Myrtle Beach Sun News (via Yahoo News) — 10 most dangerous intersections for crashes in the Myrtle Beach area (2024-08-24)",
+   "url": "https://www.yahoo.com/news/10-most-dangerous-intersections-crashes-100000172.html"
+  },
+  {
+   "name": "GSATS Policy Committee packet 2025-08-01 (US 501 Corridor Improvements, RIDE III; S-1224 = Gardner Lacy Road)",
+   "url": "https://cms3.revize.com/revize/waccamawgsats/Documents/Boards%20And%20Commissions/South%20Carolina/Policy%20Committee/Packets/Policy%20Meeting%20Packet%208.01.2025.pdf"
+  },
+  {
+   "name": "Farrow Parkway — Back Gate interchange history (opened Oct. 2014, $121.7M)",
+   "url": "https://en.wikipedia.org/wiki/Farrow_Parkway"
+  },
+  {
+   "name": "U.S. Census Bureau Geocoder — 631 Bellamy Ave (Murrells Inlet CDP) resolves to Georgetown County",
+   "url": "https://geocoding.geo.census.gov/geocoder/geographies/address?street=631+Bellamy+Ave&city=Murrells+Inlet&state=SC&zip=29576&benchmark=Public_AR_Current&vintage=Current_Current&format=json"
+  },
+  {
+   "name": "SC Judicial Branch — Horry County courthouse (Conway, 15th Circuit)",
+   "url": "https://www.sccourts.org/courts/courthouse-search/horry/"
+  },
+  {
+   "name": "WIS — I-73 project after Trump pledge (2026-08-26; SCDOT still awaiting funding; context only, not on page)",
+   "url": "https://www.wistv.com/2026/08/26/i-73-project-gains-renewed-attention-after-trump-pledge/"
+  },
+  {
+   "name": "S.C. Code Title 15 Ch. 3; Ch. 78; Title 38 Ch. 77; Title 56 Ch. 5 (scstatehouse.gov)",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  }
+ ],
+ "quoteNote": "Body claims are quoted from the rendered text (tags stripped, entities decoded); several span <strong> runs (the US 17 fatal-crash count, the 22.6% seasonal sentence, '$300 million recovered', the fee line) and match exactly once tags are stripped. The H2 claim also appears as the TOC link text. Rankings use SCDPS Fact Book county Top-5 tables, 2020-2024 editions (2024 edition is the latest); FARS counts recomputed from run-3553/fars acc2020-2024.csv, grouping every officer-recorded variant of a route number. metaDescription is empty. The post names no I-73, SC 31 extension or other project, so none were recorded (I-73 status in links for context only). myrtlebeachonline.com timed out to curl and stvinc.com / visitmyrtlebeach.com returned 403; those are not used as sourceUrls except the Sun News bike-fest URL carried from facts-4729. No law-firm source is cited."
+}

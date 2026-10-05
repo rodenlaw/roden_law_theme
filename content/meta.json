@@ -4027,7 +4027,7 @@
                 "_roden_faqs": [
                     {
                         "question": "Is South Carolina a strict liability state for dog bites?",
-                        "answer": "Yes. Under S.C. Code section 47-3-110, a dog owner is strictly liable for injuries caused by their dog if the victim was in a public place or lawfully on private property. The owner is liable even if the dog has never bitten before."
+                        "answer": "Yes. Under S.C. Code section 47-3-110, a dog owner is strictly liable for injuries caused by their dog if the victim was in a public place or lawfully on private property and did not provoke the dog. The owner is liable even if the dog has never bitten before."
                     },
                     {
                         "question": "What damages can I recover for a dog bite?",
@@ -4035,11 +4035,11 @@
                     },
                     {
                         "question": "Can a landlord be liable for a tenant dog bite?",
-                        "answer": "Potentially, if the landlord knew the tenant had a dangerous dog and failed to act, or if the lease prohibited dogs and the landlord failed to enforce it."
+                        "answer": "Usually not. A South Carolina landlord can be liable only in narrow cases: if the attack happened in a common area the landlord controls and the landlord knew the dog was dangerous and did nothing, or if the landlord took on the care or keeping of the dog."
                     },
                     {
                         "question": "What if the dog was provoked?",
-                        "answer": "Provocation is a defense. If you provoked the dog, your recovery may be reduced or barred under comparative fault. SC allows recovery if your fault is less than 51 percent."
+                        "answer": "Provocation is a defense. If you provoked or harassed the dog and that caused the attack, the South Carolina statute does not apply. In a negligence claim, your recovery is reduced by your share of fault and barred at 51 percent or more."
                     },
                     {
                         "question": "How long do I have to file a dog bite claim?",
@@ -4047,10 +4047,12 @@
                     },
                     {
                         "question": "What should I do after a dog bite?",
-                        "answer": "Seek medical attention immediately for wound care and infection prevention. Report the bite to animal control. Document the dog, owner, and location. Photograph your injuries. Get witness information."
+                        "answer": "Seek medical attention immediately for wound care and infection prevention. Report the bite to animal control and the S.C. Department of Public Health. Document the dog, owner, and location. Photograph your injuries. Get witness information."
                     }
                 ],
-                "_roden_key_takeaways": "South Carolina imposes strict liability on dog owners under S.C. Code § 47-3-110, meaning victims need not prove the owner knew the dog was dangerous. Landlords may also be liable if they knew of a tenant's dangerous dog. Georgia requires proof of the owner's knowledge of vicious propensity (O.C.G.A. § 51-2-7). Provocation is a defense in both states. South Carolina's filing deadline is three years (S.C. Code § 15-3-530); Georgia allows two years (O.C.G.A. § 9-3-33)."
+                "_roden_key_takeaways": "South Carolina imposes strict liability on dog owners under S.C. Code § 47-3-110, meaning victims need not prove the owner knew the dog was dangerous. Landlords are generally not liable for a tenant's dog, but may be if the attack happened in a common area they control and they knew the dog was dangerous (Clea v. Odom, 2011). Georgia requires proof that the dog was dangerous — usually the owner's knowledge of prior aggression, or a leash-law violation (O.C.G.A. § 51-2-7). Provocation is a defense in both states. South Carolina's filing deadline is three years (S.C. Code § 15-3-530); Georgia allows two years (O.C.G.A. § 9-3-33).",
+                "_roden_last_reviewed": "2026-10-05",
+                "_roden_meta_description": "South Carolina holds dog owners strictly liable under S.C. Code § 47-3-110. What it means for a Charleston bite claim, landlord rules, and deadlines."
             }
         },
         "/blog/dog-bite-prevention-tips/": {
@@ -7571,11 +7573,11 @@
                 "_roden_faqs": [
                     {
                         "question": "Does South Carolina cap damages in medical malpractice cases?",
-                        "answer": "Yes. South Carolina caps <strong>non-economic damages</strong> at a base of $350,000 per provider or institution and $1,050,000 in total per claimant, adjusted each year for inflation: for 2026, $596,001 and $1,788,002 (S.C. Code § 15-32-220). There is no cap on economic damages like medical bills and lost wages. Punitive damages are capped at three times compensatory damages or $739,245, the 2026 inflation-indexed figure, whichever is greater (S.C. Code § 15-32-530)."
+                        "answer": "Yes. South Carolina caps <strong>non-economic damages</strong> at a base of $350,000 per provider or institution and $1,050,000 in total per claimant, adjusted each year for inflation: for 2026, $596,001 and $1,788,002 (S.C. Code § 15-32-220). The cap does not apply if the provider was grossly negligent, wilful, wanton or reckless, committed fraud or misrepresentation, or altered or destroyed medical records to avoid liability (S.C. Code § 15-32-220(E)). There is no cap on economic damages like medical bills and lost wages. Punitive damages are capped at three times compensatory damages or $739,245, the 2026 inflation-indexed figure, whichever is greater (S.C. Code § 15-32-530), with higher limits or no cap for certain egregious conduct. Claims against MUSC or another public hospital follow the Tort Claims Act's separate caps instead."
                     },
                     {
                         "question": "How long do I have to file a medical malpractice lawsuit in South Carolina?",
-                        "answer": "South Carolina imposes a <strong>three-year statute of limitations</strong> (S.C. Code § 15-3-545) from the date of the negligent act or from when the injury was or should have been discovered. A <strong>six-year statute of repose</strong> generally applies — in most cases no claim can be filed more than six years after the negligence occurred."
+                        "answer": "South Carolina imposes a <strong>three-year statute of limitations</strong> (S.C. Code § 15-3-545) from the date of the negligent act or from when the injury was or reasonably should have been discovered — two years if the claim is against MUSC or another public hospital (S.C. Code § 15-78-110). A <strong>six-year statute of repose</strong> generally applies — in most cases no claim can be filed more than six years after the negligence occurred."
                     },
                     {
                         "question": "What is the Notice of Intent to File Suit requirement in South Carolina?",
@@ -7583,18 +7585,20 @@
                     },
                     {
                         "question": "Is mediation required in South Carolina medical malpractice cases?",
-                        "answer": "Yes. South Carolina requires <strong>mandatory mediation</strong> in medical malpractice cases before the lawsuit is filed (S.C. Code § 15-79-125). A neutral mediator attempts to facilitate a settlement. If mediation is unsuccessful, the lawsuit can then be filed."
+                        "answer": "Yes. South Carolina requires <strong>mandatory mediation</strong> in medical malpractice cases before the lawsuit is filed (S.C. Code § 15-79-125). A neutral mediator attempts to facilitate a settlement. Mediation generally takes place 90 to 120 days after the notice is served; if it fails, suit must be filed within 60 days of the impasse or before the limitations period runs, whichever is later (S.C. Code § 15-79-125(E))."
                     },
                     {
                         "question": "What is the statute of repose for medical malpractice in South Carolina?",
-                        "answer": "South Carolina's six-year statute of repose (S.C. Code § 15-3-545) generally bars a medical malpractice lawsuit filed more than six years after the negligent act, even if the injury was not discovered until later. This is more generous than Georgia's five-year repose period but still bars some legitimate claims."
+                        "answer": "South Carolina's six-year statute of repose (S.C. Code § 15-3-545) generally bars a medical malpractice lawsuit filed more than six years after the negligent act, even if the injury was not discovered until later (objects left in the body are an exception, S.C. Code § 15-3-545(B)). It still bars some legitimate claims, so do not wait to have your records reviewed."
                     },
                     {
                         "question": "Can I sue a hospital for medical malpractice in South Carolina?",
-                        "answer": "Yes. Hospitals, medical centers, individual physicians, nurses, specialists, pharmacies, and nursing homes can all be sued for medical malpractice in South Carolina. Each provider or institution is subject to its own non-economic damage cap ($596,001 for 2026), up to $1,788,002 in total for all defendants combined (S.C. Code § 15-32-220), which is why identifying all liable parties is critical to maximizing your total recovery."
+                        "answer": "Yes. Hospitals, medical centers, individual physicians, nurses, specialists, pharmacies, and nursing homes can all be sued for medical malpractice in South Carolina. Each provider or institution is subject to its own non-economic damage cap ($596,001 for 2026), up to $1,788,002 in total for all health care providers and institutions combined (S.C. Code § 15-32-220), unless an exception applies, which is why identifying all liable parties is critical to maximizing your total recovery. If the hospital is MUSC or another public hospital, the claim runs under the South Carolina Tort Claims Act: you generally sue the hospital rather than its employed doctors, within two years, with damages capped at $300,000 per person ($1.2 million for a government-employed physician or dentist) and no punitive damages (S.C. Code §§ 15-78-70, 15-78-110, 15-78-120)."
                     }
                 ],
-                "_roden_key_takeaways": "South Carolina caps non-economic damages in medical malpractice cases at $596,001 per provider or institution and $1,788,002 in total for 2026, figures adjusted each year for inflation (S.C. Code § 15-32-220). The statute of limitations is three years (S.C. Code § 15-3-545) with a six-year statute of repose. Before filing suit, plaintiffs must file a Notice of Intent together with an expert affidavit, serve it on each defendant, and mediate; only if mediation fails can the lawsuit be filed (S.C. Code § 15-79-125). Economic damages (medical bills, lost wages) are uncapped. These procedural requirements make early legal involvement essential."
+                "_roden_key_takeaways": "South Carolina caps non-economic damages in medical malpractice cases at $596,001 per provider or institution and $1,788,002 in total for 2026, figures adjusted each year for inflation (S.C. Code § 15-32-220); the caps do not apply where the provider was grossly negligent, wilful, wanton or reckless, committed fraud or misrepresentation, or altered or destroyed medical records to avoid liability. The statute of limitations is three years (S.C. Code § 15-3-545) with a six-year statute of repose; claims against MUSC or another public hospital fall under the Tort Claims Act, which generally allows two years (S.C. Code § 15-78-110). Before filing suit, plaintiffs must file a Notice of Intent together with an expert affidavit, serve it on each defendant, and mediate; only if mediation fails can the lawsuit be filed (S.C. Code § 15-79-125). Economic damages (medical bills, lost wages) are uncapped. These procedural requirements make early legal involvement essential.",
+                "_roden_last_reviewed": "2026-10-05",
+                "_roden_meta_description": "South Carolina medical malpractice caps for 2026 ($596,001 per provider, $1,788,002 total), the 3-year deadline, 6-year repose, and pre-suit rules."
             }
         },
         "/blog/medical-treatment-after-accident/": {
@@ -7772,19 +7776,19 @@
                 "_roden_faqs": [
                     {
                         "question": "What is the most dangerous road in the Myrtle Beach area?",
-                        "answer": "U.S. 17 (Kings Highway) carries more fatal crashes than any other route in Horry County — 39 between 2020 and 2024, against 23 on U.S. 501, according to NHTSA federal crash data. Running through the heart of Myrtle Beach and the entire Grand Strand, it combines heavy tourist traffic, hundreds of commercial intersections, and frequent pedestrian crossings."
+                        "answer": "U.S. 17 (Kings Highway) carries more fatal crashes than any other route in Horry County — 67 between 2020 and 2024, against 36 on U.S. 501, according to NHTSA federal crash data counting every way officers recorded each route. It is also the county's highest-crash road overall (1,821 collisions in 2024, SCDPS). Running through the heart of Myrtle Beach and the entire Grand Strand, it combines heavy tourist traffic, hundreds of commercial intersections, and frequent pedestrian crossings."
                     },
                     {
                         "question": "What is the most dangerous intersection in Myrtle Beach?",
-                        "answer": "The intersection of U.S. 501 and Carolina Forest Boulevard is one of the most dangerous in the entire Myrtle Beach metro area, producing 65% more car accidents than the second-most hazardous intersection. Other high-risk locations include U.S. 501 at S.C. Highway 31, Highway 17 Bypass at Farrow Parkway, and Oak Forest Lane at Pine Island Road."
+                        "answer": "By state crash counts, it is S.C. 9 at Highway 57 near Little River — Horry County's highest-crash intersection in 2022, 2023 and 2024, with 116 collisions in 2024 (SCDPS Traffic Collision Fact Book). U.S. 17 at S.C. 544 (78) and U.S. 501 at S.C. 544 (72) followed. U.S. 501 at Carolina Forest Boulevard was in the county's top five every year from 2020 to 2023. Most of these crashes are property-damage-only; none of the top intersections recorded a fatal collision in 2024."
                     },
                     {
                         "question": "How long do I have to file a car accident lawsuit in South Carolina?",
-                        "answer": "Under S.C. Code § 15-3-530, you have three years from the date of your accident to file a personal injury lawsuit in South Carolina. If you are a Georgia resident injured in Myrtle Beach, be aware that Georgia's deadline is only two years under O.C.G.A. § 9-3-33."
+                        "answer": "Under S.C. Code § 15-3-530, you have three years from the date of your accident to file a personal injury lawsuit in South Carolina."
                     },
                     {
                         "question": "Are Myrtle Beach roads more dangerous in summer?",
-                        "answer": "Not for fatal crashes. Federal data for 2020–2024 shows 22.6% of Horry County's fatal crashes fell in June through August — below the 25% an even spread across the year would give, and below South Carolina's 26.1%. Summer brings far more traffic, unfamiliar drivers and pedestrian activity and produces more crashes overall, but the fatal ones are spread across the calendar, with October, May and December the worst months."
+                        "answer": "Not for fatal crashes. Federal data for 2020–2024 shows 22.6% of Horry County's fatal crashes fell in June through August — below the 25% an even spread across the year would give, and below South Carolina's 26.1%. Summer brings far more traffic, unfamiliar drivers and pedestrian activity, but fatal crashes are spread across the calendar, with October, May and December the worst months."
                     },
                     {
                         "question": "Can I file a claim if I was a tourist injured in a Myrtle Beach car accident?",
@@ -7792,11 +7796,12 @@
                     },
                     {
                         "question": "Can I still recover compensation if I was partially at fault for the crash?",
-                        "answer": "Yes. South Carolina follows a modified comparative fault rule that allows recovery as long as you are less than 51% at fault. Your compensation is reduced by your percentage of responsibility. Georgia applies a similar rule with a slightly stricter threshold of less than 50% at fault under O.C.G.A. § 51-12-33."
+                        "answer": "Yes. South Carolina follows a modified comparative fault rule that allows recovery as long as you are less than 51% at fault. Your compensation is reduced by your percentage of responsibility."
                     }
                 ],
-                "_roden_key_takeaways": "The Myrtle Beach area's 20+ million annual visitors transform the Grand Strand into one of South Carolina's most dangerous driving environments. U.S. 17 carries more fatal crashes than any other Horry County route (39 between 2020 and 2024, per federal data), and summer is not the deadliest season — 22.6% of fatal crashes fall in June through August, below an even spread. The U.S. 501/Carolina Forest Boulevard intersection leads the region in crashes. South Carolina's three-year statute of limitations (S.C. Code § 15-3-530) and comparative fault rule (less than 51% at fault) protect victims, including out-of-state tourists injured on Grand Strand roads.",
-                "_roden_last_reviewed": "2026-09-01"
+                "_roden_key_takeaways": "The Grand Strand's roughly 18 million annual visitors help make Horry County one of South Carolina's highest-crash counties — 4th of 46 for total collisions and 3rd for fatal collisions in 2024. U.S. 17 carries more fatal crashes than any other Horry County route (67 between 2020 and 2024, per federal data counting every way officers recorded the route), and summer is not the deadliest season — 22.6% of fatal crashes fall in June through August, below an even spread. S.C. 9 at Highway 57 near Little River has had more crashes than any other Horry County intersection three years running (116 in 2024, per SCDPS). South Carolina's three-year statute of limitations (S.C. Code § 15-3-530) and comparative fault rule (less than 51% at fault) protect victims, including out-of-state tourists injured on Grand Strand roads.",
+                "_roden_last_reviewed": "2026-10-05",
+                "_roden_meta_description": "Myrtle Beach's highest-crash roads and intersections by state and federal data, why summer isn't the deadliest season, and your rights under SC law."
             }
         },
         "/blog/negligence-and-18-wheeler-accidents/": {
@@ -9864,7 +9869,7 @@
                     },
                     {
                         "question": "What happens if I miss the deadline?",
-                        "answer": "Your claim is permanently barred, no matter how serious your injuries or how clear the other driver's fault was. A court does not weigh the merits of a claim filed out of time, so the deadline is effectively absolute."
+                        "answer": "Your claim is permanently barred, no matter how serious your injuries or how clear the other driver's fault was. Unless a tolling rule applies, a court will dismiss a claim filed out of time without weighing its merits."
                     },
                     {
                         "question": "Is the deadline shorter for a claim against a government entity?",
@@ -9876,11 +9881,13 @@
                     },
                     {
                         "question": "Why does waiting hurt my case even inside the deadline?",
-                        "answer": "Because the proof degrades. Physical evidence disappears, witnesses forget details, and insurers notice a delayed claim and treat it as weaker. The strength of a case is usually set long before the filing deadline arrives."
+                        "answer": "Because the proof degrades. Physical evidence disappears, witnesses forget details, and insurers may treat a delayed claim as weaker. The strength of a case is usually set long before the filing deadline arrives."
                     }
                 ],
                 "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "South Carolina gives personal injury victims <strong>3 years</strong> from the date of injury to file a lawsuit (<strong>S.C. Code § 15-3-530</strong>). Exceptions include: <strong>2-year deadline</strong> for claims against government entities under the SC Tort Claims Act, <strong>tolling for minors</strong> (deadline paused until age 18), and the <strong>discovery rule</strong> (clock starts when the injury is or should have been discovered). Waiting to file weakens cases — evidence degrades, witnesses forget, and defendants destroy records."
+                "_roden_key_takeaways": "South Carolina gives personal injury victims <strong>3 years</strong> from the date of injury to file a lawsuit (<strong>S.C. Code § 15-3-530</strong>). Exceptions include: <strong>2-year deadline</strong> for claims against government entities under the SC Tort Claims Act (no notice required; 3 years with an optional verified claim filed within 1 year), <strong>tolling for minors</strong> (generally until one year after the child turns 18), and the <strong>discovery rule</strong> (the clock runs from when you knew or should have known you had a claim, S.C. Code § 15-3-535; in a crash, usually the crash date). Waiting to file weakens cases — evidence degrades, witnesses forget, and records can be lawfully discarded or overwritten.",
+                "_roden_last_reviewed": "2026-10-05",
+                "_roden_meta_description": "South Carolina gives injury victims 3 years to sue (S.C. Code § 15-3-530). Learn the exceptions: government claims, minors, discovery and tolling."
             }
         },
         "/blog/steps-after-dog-bite/": {
