@@ -1,0 +1,31 @@
+{
+ "excerpt": "How a medical malpractice claim begins in Georgia and South Carolina, the expert requirements, and what the first steps look like.",
+ "keyTakeaways": "Medical malpractice occurs when a healthcare provider deviates from the accepted standard of care and causes patient harm. Georgia allows two years to file (O.C.G.A. § 9-3-71) and requires an expert affidavit (O.C.G.A. § 9-11-9.1); South Carolina allows three years (S.C. Code § 15-3-545) and requires a Notice of Intent to File Suit, filed together with a qualified expert's affidavit, before suit (S.C. Code § 15-79-125). Georgia has no compensatory damage cap; South Carolina caps non-economic damages at $596,001 per provider or institution and $1,788,002 in total for 2026 (S.C. Code § 15-32-220). Expert testimony is mandatory in both states.",
+ "faqs": [
+  {
+   "question": "What qualifies as medical malpractice in Georgia and South Carolina?",
+   "answer": "Medical malpractice occurs when a healthcare provider <strong>deviates from the accepted standard of care</strong> in their specialty, and that deviation causes harm to the patient. Three conditions must be present: the provider fell below the standard of care, the deviation directly caused the injury, and the patient suffered measurable damages. A bad outcome alone is not malpractice — the provider must have done something a competent provider would not have done."
+  },
+  {
+   "question": "What is the statute of limitations for medical malpractice in Georgia vs. South Carolina?",
+   "answer": "Georgia imposes a <strong>two-year</strong> statute of limitations with a five-year statute of repose (O.C.G.A. § 9-3-71). South Carolina allows <strong>three years</strong> with a six-year statute of repose (S.C. Code § 15-3-545). Both states have discovery rules that can extend the deadline if the injury was not immediately apparent, but the statute of repose sets an outer limit."
+  },
+  {
+   "question": "Does Georgia or South Carolina cap medical malpractice damages?",
+   "answer": "Georgia does <strong>not cap</strong> compensatory damages — the state Supreme Court struck down a $350,000 cap as unconstitutional in 2010. South Carolina <strong>does cap</strong> non-economic damages at a base of $350,000 per provider or institution and $1,050,000 in total per claimant, adjusted each year for inflation: for 2026, $596,001 and $1,788,002 (S.C. Code § 15-32-220). Neither state caps economic damages like medical bills and lost wages. Both states cap punitive damages separately."
+  },
+  {
+   "question": "Do I need an expert witness to file a medical malpractice case?",
+   "answer": "Yes. In Georgia, you must file a <strong>sworn expert affidavit</strong> simultaneously with your complaint (O.C.G.A. § 9-11-9.1). In South Carolina, a qualified expert's affidavit must be filed with the pre-suit Notice of Intent to File Suit (S.C. Code §§ 15-79-125, 15-36-100), and expert testimony is required at trial. Without a qualified medical expert, a malpractice case cannot proceed in either state."
+  },
+  {
+   "question": "Who can be sued for medical malpractice besides the doctor?",
+   "answer": "Multiple parties can be liable: individual physicians and surgeons, hospitals and medical facilities (for institutional negligence like inadequate staffing), nurses and other staff, pharmacies (for dispensing errors), nursing homes, and medical device or pharmaceutical manufacturers. Identifying all liable parties is especially important in South Carolina, where the non-economic damage cap applies per provider or institution, up to a total per claimant (S.C. Code § 15-32-220)."
+  },
+  {
+   "question": "What types of compensation can I recover in a medical malpractice case?",
+   "answer": "Victims can recover <strong>economic damages</strong> (medical expenses, lost wages, lost earning capacity — uncapped in both states), <strong>non-economic damages</strong> (pain and suffering, emotional distress — uncapped in Georgia, capped in South Carolina), and in rare cases of egregious conduct, <strong>punitive damages</strong> (capped at $250,000 in Georgia under O.C.G.A. § 51-12-5.1, and at 3x compensatory or $739,245, the 2026 inflation-indexed figure, in South Carolina)."
+  }
+ ],
+ "metaDescription": ""
+}

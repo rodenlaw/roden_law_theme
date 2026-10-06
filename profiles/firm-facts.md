@@ -59,7 +59,7 @@ An attorney may only be attributed on content whose jurisdiction is within their
 - Map-pack competitors (never name them in copy; context only): Jeffcoat Injury and Car Accident Lawyers; The Stanley Law Group; Cavanaugh & Thickens; Marc Brown Law Firm; Stewart Law Offices; Goings Law Firm; McGowan, Hood, Felder & Phillips; Joye Law Firm; Morgan & Morgan
 
 ### Myrtle Beach, SC (office · content pipeline · Radar market)
-- Address: 631 Bellamy Ave. Suite C-B, Murrells Inlet, SC 29576 (Horry County)
+- Address: 631 Bellamy Ave. Suite C-B, Murrells Inlet, SC 29576 (Georgetown County)
 - Phone (use this exact string): (843) 612-1980
 - Service counties: Horry, Georgetown
 - Major corridors: US-17, SC-31, US-501
