@@ -1,0 +1,20 @@
+[
+ {
+  "id": "1697",
+  "surface": "content",
+  "before": "<nav class=\"toc-box\">\n<strong>Table of Contents</strong>\n<ul>\n<li><a href=\"#short-answer\">Will Resigning End Your Workers' Comp Benefits?</a></li>\n<li><a href=\"#medical-benefits\">How Resignation Affects Medical Benefits</a></li>\n<li><a href=\"#wage-benefits\">How Resignation Affects Wage Replacement Benefits</a></li>\n<li><a href=\"#ga-rules\">Georgia Rules: Resignation and Workers' Comp</a></li>\n<li><a href=\"#sc-rules\">South Carolina Rules: Resignation and Workers' Comp</a></li>\n<li><a href=\"#voluntary-vs-constructive\">Voluntary Resignation vs. Constructive Discharge</a></li>\n<li><a href=\"#light-duty\">What If Your Employer Offered Light Duty Before You Resigned?</a></li>\n<li><a href=\"#new-job\">Taking a New Job While on Workers' Compensation</a></li>\n<li><a href=\"#retaliation\">Can Your Employer Pressure You to Resign?</a></li>\n<li><a href=\"#before-you-resign\">Steps to Take Before Resigning</a></li>\n<li><a href=\"#contact-attorney\">Talk to a Workers' Compensation Lawyer First</a></li>\n</ul>\n</nav>",
+  "after": "<nav class=\"toc-box\">\n<strong>Table of Contents</strong>\n<ul>\n<li><a href=\"#short-answer\">Will Resigning End Your Workers' Comp Benefits?</a></li>\n<li><a href=\"#medical-benefits\">How Resignation Affects Medical Benefits</a></li>\n<li><a href=\"#wage-benefits\">How Resignation Affects Wage Replacement Benefits</a></li>\n<li><a href=\"#ga-rules\">Georgia Rules: Resignation and Workers' Comp</a></li>\n<li><a href=\"#sc-rules\">South Carolina Rules: Resignation and Workers' Comp</a></li>\n<li><a href=\"#voluntary-vs-constructive\">Why You Left Matters: Voluntary vs. Injury-Related Resignation</a></li>\n<li><a href=\"#light-duty\">What If Your Employer Offered Light Duty Before You Resigned?</a></li>\n<li><a href=\"#new-job\">Taking a New Job While on Workers' Compensation</a></li>\n<li><a href=\"#retaliation\">Can Your Employer Pressure You to Resign?</a></li>\n<li><a href=\"#before-you-resign\">Steps to Take Before Resigning</a></li>\n<li><a href=\"#contact-attorney\">Talk to a Workers' Compensation Lawyer First</a></li>\n</ul>\n</nav>"
+ },
+ {
+  "id": "1697",
+  "surface": "content",
+  "before": "<h2 id=\"voluntary-vs-constructive\">Voluntary Resignation vs. Constructive Discharge</h2>",
+  "after": "<h2 id=\"voluntary-vs-constructive\">Why You Left Matters: Voluntary vs. Injury-Related Resignation</h2>"
+ },
+ {
+  "id": "1697",
+  "surface": "content",
+  "before": "<h3>Constructive Discharge</h3>",
+  "after": "<h3>When Your Employer Pushes You Out</h3>"
+ }
+]
