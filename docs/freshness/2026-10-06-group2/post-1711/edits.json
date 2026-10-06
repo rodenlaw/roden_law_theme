@@ -1,0 +1,14 @@
+[
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>Under the <strong>Medicare Secondary Payer Act (<a href=\"https://www.law.cornell.edu/uscode/text/42/1395y\">42 U.S.C. &sect; 1395y(b)</a>)</strong>, Medicare must be repaid from any liability settlement, judgment or award, whether or not it mentions medical expenses. This federal right overrides state lien and made-whole rules and can be reduced, waived or compromised only through Medicare's own procedures; CMS does not pursue physical-trauma liability settlements of $750 or less.</p>",
+  "after": "<p>Under the <strong>Medicare Secondary Payer Act (<a href=\"https://www.law.cornell.edu/uscode/text/42/1395y\">42 U.S.C. &sect; 1395y(b)</a>)</strong>, Medicare must be repaid from any liability settlement, judgment or award, whether or not it mentions medical expenses. This federal right overrides state lien and made-whole rules and can be reduced, waived or compromised only through Medicare's own procedures; CMS does not pursue physical-trauma liability settlements of $750 or less. Medicare Advantage plans assert the same secondary-payer recovery rights (42 C.F.R. &sect; 422.108).</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>However, in <em>Arkansas Dept. of Health &amp; Human Services v. Ahlborn</em> (2006), the U.S. Supreme Court ruled that Medicaid can only assert a lien against the portion of a settlement representing medical expenses — not the entire recovery. This ruling provides a basis for reducing Medicaid liens, especially when non-medical damages like pain and suffering make up the bulk of the settlement.</p>",
+  "after": "<p>However, in <em>Arkansas Dept. of Health &amp; Human Services v. Ahlborn</em> (2006), the U.S. Supreme Court ruled that Medicaid can only assert a lien against the portion of a settlement representing medical expenses — not the entire recovery. This ruling provides a basis for reducing Medicaid liens, especially when non-medical damages like pain and suffering make up the bulk of the settlement. Later decisions refined the rule: a state cannot simply presume that a fixed share of the recovery is medical (<em>Wos v. E.M.A.</em>, 2013), but it may recover from the portion allocated to future as well as past medical care (<em>Gallardo v. Marstiller</em>, 2022).</p>"
+ }
+]

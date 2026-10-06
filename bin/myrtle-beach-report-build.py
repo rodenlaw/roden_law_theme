@@ -29,9 +29,8 @@ def build(st):
     leader = counties[0]
     not_int = st["intersection"].get("Not an Intersection", 0)
     not_int_pct = round(100 * not_int / h["crashes"], 1)
-    roads = st["roads"]
-    us17 = sum(r["crashes"] for r in roads if r["road"].startswith("US-17"))
-    us501 = sum(r["crashes"] for r in roads if r["road"].startswith("US-501"))
+    us17, us501 = st["route_totals"]["US-17"], st["route_totals"]["US-501"]
+    two_pct = round(100 * (us17 + us501) / h["crashes"])
     hour = {int(k): v for k, v in st["hour"].items()}
     peak_h = max(hour, key=lambda k: hour[k])
     ped_ratio = round(pd_["horry_pct"] / pd_["sc_pct"], 2) if pd_["sc_pct"] else 0
@@ -75,7 +74,7 @@ def build(st):
 <p>Horry County's totals rose to {max(v['horry_crashes'] for v in yrs.values())} in {max(yrs, key=lambda y: yrs[y]['horry_crashes'])} and fell back since. Five annual points are not a trend, and the most recent year is the least settled.</p>
 
 <h2>Where on the road</h2>
-<p>Two federal routes carry most of the crashes where a route was recorded: <strong>US-17 ({us17}) and US-501 ({us501})</strong>. US-17 is the Grand Strand's spine — the Kings Highway and bypass corridor that every beach community sits on.</p>
+<p>Two federal routes carry the largest share: <strong>US-17 ({us17} fatal crashes) and US-501 ({us501})</strong>, about {two_pct}% of the county's total between them. Those counts take in every way officers recorded each route, including US-17 Business, US-17 Bypass and Kings Highway. US-17 is the Grand Strand's spine — the Kings Highway and bypass corridor that every beach community sits on.</p>
 <p>Most fatal crashes are not at junctions at all. <strong>{not_int} of {h['crashes']} ({not_int_pct}%) happened away from any intersection</strong>, which is worth stating plainly because "most dangerous intersections" lists are the usual way this subject is covered. Fatal crashes on the Grand Strand are predominantly a mid-block and open-road problem. The split between urban and rural settings is {st['land_use'].get('Urban', 0)} urban to {st['land_use'].get('Rural', 0)} rural.</p>
 <p>For context, neighbouring Georgetown County — Pawleys Island and Murrells Inlet — recorded {gt['crashes']} fatal crashes and {gt['deaths']} deaths over the same five years.</p>
 

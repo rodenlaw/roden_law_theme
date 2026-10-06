@@ -1,0 +1,14 @@
+[
+ {
+  "id": "4539",
+  "surface": "content",
+  "before": "<p>Commercial truck crashes on I-95 through McIntosh and Glynn counties are among the most severe crashes in the region. Fatigue is a major factor — many truck drivers have been on the road for extended hours by the time they reach this corridor, and federal hours-of-service rules (<a href=\"https://www.law.cornell.edu/cfr/text/49/395.3\" target=\"_blank\" rel=\"noopener\">49 C.F.R. § 395.3</a>) cap how long they may drive. When a fatigued truck driver causes a crash at highway speed, the injuries to occupants of passenger vehicles are frequently catastrophic, including <a href=\"/practice-areas/brain-injury-lawyers/\">traumatic brain injuries</a>, <a href=\"/practice-areas/spinal-cord-injury-lawyers/\">spinal cord injuries</a>, and fatalities.</p>",
+  "after": "<p>Commercial truck crashes on I-95 through McIntosh and Glynn counties can be especially severe. Fatigue is a major factor — many truck drivers have been on the road for extended hours by the time they reach this corridor, and federal hours-of-service rules (<a href=\"https://www.law.cornell.edu/cfr/text/49/395.3\" target=\"_blank\" rel=\"noopener\">49 C.F.R. § 395.3</a>) cap how long they may drive. When a fatigued truck driver causes a crash at highway speed, the injuries to occupants of passenger vehicles are frequently catastrophic, including <a href=\"/practice-areas/brain-injury-lawyers/\">traumatic brain injuries</a>, <a href=\"/practice-areas/spinal-cord-injury-lawyers/\">spinal cord injuries</a>, and fatalities.</p>"
+ },
+ {
+  "id": "4539",
+  "surface": "faq:0:question",
+  "before": "What are the most dangerous roads near Darien, Georgia?",
+  "after": "What are the highest-risk roads near Darien, Georgia?"
+ }
+]

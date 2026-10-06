@@ -200,6 +200,13 @@ def analyse(fars_dir):
     # Where: roads, and urban/rural split
     road_counts = Counter(norm_road(r.get("TWAY_ID")) for r in horry)
     stats["roads"] = [{"road": k, "crashes": v} for k, v in road_counts.most_common(12)]
+    # Route totals over EVERY row, not the top-12 labels above: officers code one
+    # route a dozen ways ("US-17", "US-17 S KINGS HWY", "US-17 HWY 17 BUSINESS",
+    # "US- 17 S HWY 17"...). The report first summed the top-12 list and published
+    # US-17 45 / US-501 31; the full count is 67 / 36 (corrected 2026-10-06).
+    route = lambda r, n: bool(re.match(r"US-\s?%s\b" % n, norm_road(r.get("TWAY_ID"))))
+    stats["route_totals"] = {"US-17": sum(route(r, 17) for r in horry),
+                             "US-501": sum(route(r, 501) for r in horry)}
     stats["land_use"] = dict(Counter((r.get("RUR_URBNAME") or "?").strip() for r in horry))
     stats["intersection"] = dict(Counter((r.get("TYP_INTNAME") or "?").strip() for r in horry).most_common(6))
     stats["hour"] = {str(h): sum(1 for r in horry if (r.get("HOUR") or "").strip() == str(h)) for h in range(24)}

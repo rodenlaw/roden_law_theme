@@ -142,6 +142,10 @@
    "crashes": 5
   }
  ],
+ "route_totals": {
+  "US-17": 67,
+  "US-501": 36
+ },
  "land_use": {
   "Urban": 187,
   "Rural": 141

@@ -1,0 +1,14 @@
+[
+ {
+  "id": "4537",
+  "surface": "faq:0:question",
+  "before": "What is the most dangerous road in the Myrtle Beach area?",
+  "after": "Which road has the most fatal crashes in the Myrtle Beach area?"
+ },
+ {
+  "id": "4537",
+  "surface": "faq:1:question",
+  "before": "What is the most dangerous intersection in Myrtle Beach?",
+  "after": "Which Myrtle Beach-area intersection has the most crashes?"
+ }
+]

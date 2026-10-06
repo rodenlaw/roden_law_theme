@@ -1,0 +1,14 @@
+[
+ {
+  "id": "1720",
+  "surface": "content",
+  "before": "<nav class=\"toc-box\">\n<strong>Table of Contents</strong>\n<ul>\n<li><a href=\"#common-reasons-denied\">Common Reasons Insurance Companies Deny Claims</a></li>\n<li><a href=\"#review-denial-letter\">Step 1 — Request and Review the Denial Letter</a></li>\n<li><a href=\"#gather-evidence\">Step 2 — Gather Additional Evidence</a></li>\n<li><a href=\"#file-appeal\">Step 3 — Ask for Reconsideration in Writing</a></li>\n<li><a href=\"#bad-faith-complaint\">Step 4 — File a Bad Faith Insurance Complaint</a></li>\n<li><a href=\"#file-lawsuit\">Step 5 — File a Personal Injury Lawsuit</a></li>\n<li><a href=\"#bad-faith-georgia\">Bad Faith Denial Laws in Georgia</a></li>\n<li><a href=\"#bad-faith-south-carolina\">Bad Faith Denial Laws in South Carolina</a></li>\n<li><a href=\"#ga-sc-comparison\">GA vs. SC Comparison Table</a></li>\n<li><a href=\"#statute-of-limitations\">Statute of Limitations — Don't Wait Too Long</a></li>\n<li><a href=\"#contact-roden-law\">Contact Roden Law</a></li>\n</ul>\n</nav>",
+  "after": "<nav class=\"toc-box\">\n<strong>Table of Contents</strong>\n<ul>\n<li><a href=\"#common-reasons-denied\">Common Reasons Insurance Companies Deny Claims</a></li>\n<li><a href=\"#review-denial-letter\">Step 1 — Request and Review the Denial Letter</a></li>\n<li><a href=\"#gather-evidence\">Step 2 — Gather Additional Evidence</a></li>\n<li><a href=\"#file-appeal\">Step 3 — Ask for Reconsideration in Writing</a></li>\n<li><a href=\"#bad-faith-complaint\">Step 4 — File a Complaint With Your State Insurance Regulator</a></li>\n<li><a href=\"#file-lawsuit\">Step 5 — File a Personal Injury Lawsuit</a></li>\n<li><a href=\"#bad-faith-georgia\">Bad Faith Denial Laws in Georgia</a></li>\n<li><a href=\"#bad-faith-south-carolina\">Bad Faith Denial Laws in South Carolina</a></li>\n<li><a href=\"#ga-sc-comparison\">GA vs. SC Comparison Table</a></li>\n<li><a href=\"#statute-of-limitations\">Statute of Limitations — Don't Wait Too Long</a></li>\n<li><a href=\"#contact-roden-law\">Contact Roden Law</a></li>\n</ul>\n</nav>"
+ },
+ {
+  "id": "1720",
+  "surface": "content",
+  "before": "<h2 id=\"bad-faith-complaint\">Step 4 — File a Bad Faith Insurance Complaint</h2>",
+  "after": "<h2 id=\"bad-faith-complaint\">Step 4 — File a Complaint With Your State Insurance Regulator</h2>"
+ }
+]

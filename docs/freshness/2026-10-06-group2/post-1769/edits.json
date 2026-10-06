@@ -1,0 +1,20 @@
+[
+ {
+  "id": "1769",
+  "surface": "content",
+  "before": "<nav class=\"toc-box\"><strong>Table of Contents</strong>\r\n<ul>\r\n \t<li><a href=\"#general-rule\">The General Rule: Personal Injury Settlements Are Usually Tax-Free</a></li>\r\n \t<li><a href=\"#non-taxable\">What Parts of a Settlement Are Not Taxable?</a></li>\r\n \t<li><a href=\"#taxable\">What Parts of a Settlement May Be Taxable?</a></li>\r\n \t<li><a href=\"#georgia-rules\">Tax Considerations Specific to Georgia</a></li>\r\n \t<li><a href=\"#south-carolina-rules\">Tax Considerations Specific to South Carolina</a></li>\r\n \t<li><a href=\"#structuring\">How Settlement Structuring Can Reduce Your Tax Burden</a></li>\r\n \t<li><a href=\"#case-types\">Common Case Types Where Tax Issues Arise</a></li>\r\n \t<li><a href=\"#protect-recovery\">Steps to Protect Your Financial Recovery</a></li>\r\n \t<li><a href=\"#attorney-help\">How an Attorney Can Help Maximize Your After-Tax Recovery</a></li>\r\n</ul>\r\n</nav>",
+  "after": "<nav class=\"toc-box\"><strong>Table of Contents</strong>\r\n<ul>\r\n \t<li><a href=\"#general-rule\">The General Rule: Personal Injury Settlements Are Usually Tax-Free</a></li>\r\n \t<li><a href=\"#non-taxable\">What Parts of a Settlement Are Not Taxable?</a></li>\r\n \t<li><a href=\"#taxable\">What Parts of a Settlement May Be Taxable?</a></li>\r\n \t<li><a href=\"#georgia-rules\">Tax Considerations Specific to Georgia</a></li>\r\n \t<li><a href=\"#south-carolina-rules\">Tax Considerations Specific to South Carolina</a></li>\r\n \t<li><a href=\"#structuring\">How Settlement Wording Affects Taxes</a></li>\r\n \t<li><a href=\"#case-types\">Common Case Types Where Tax Issues Arise</a></li>\r\n \t<li><a href=\"#protect-recovery\">Steps to Protect Your Financial Recovery</a></li>\r\n \t<li><a href=\"#attorney-help\">How an Attorney Can Help With Settlement Taxes</a></li>\r\n</ul>\r\n</nav>"
+ },
+ {
+  "id": "1769",
+  "surface": "content",
+  "before": "<h2 id=\"structuring\">How Settlement Structuring Can Reduce Your Tax Burden</h2>",
+  "after": "<h2 id=\"structuring\">How Settlement Wording Affects Taxes</h2>"
+ },
+ {
+  "id": "1769",
+  "surface": "content",
+  "before": "<h2 id=\"attorney-help\">How an Attorney Can Help Maximize Your After-Tax Recovery</h2>",
+  "after": "<h2 id=\"attorney-help\">How an Attorney Can Help With Settlement Taxes</h2>"
+ }
+]

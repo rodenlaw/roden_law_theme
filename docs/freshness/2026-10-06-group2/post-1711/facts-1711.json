@@ -1,0 +1,1028 @@
+{
+  "postId": 1711,
+  "slug": "liens-and-your-personal-injury-claims",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "For background on lien law generally, see the <a href=\"https://www.law.cornell.edu/wex/lien\" target=\"_blank\" rel=\"noopener noreferrer\">Cornell Law Institute's overview of liens</a>.",
+      "verdict": "update",
+      "currentValue": "The site is the Legal Information Institute at Cornell Law School (LII); the URL resolves (HTTP 200, 2026-09-24).",
+      "sourceName": "Legal Information Institute, Cornell Law School — Wex: lien",
+      "sourceUrl": "https://www.law.cornell.edu/wex/lien",
+      "retrievedAt": "2026-09-24",
+      "note": "Rename the anchor text to 'Legal Information Institute's overview of liens' (or 'Cornell Law School's Legal Information Institute'). Keep the link."
+    },
+    {
+      "surface": "body",
+      "claim": "In both Georgia and South Carolina, lien holders can block the distribution of settlement funds until their claims are resolved.",
+      "verdict": "update",
+      "currentValue": "A perfected Georgia provider lien survives any release or settlement made without the lienholder's consent, and the lienholder may sue the liable party or its insurer within one year after liability is finally determined (O.C.G.A. § 44-14-473(a)-(b)). The lien is against the cause of action, not the patient (§ 44-14-470(b)). Separately, the attorney must hold disputed funds in trust under Rule 1.15. Lienholders do not literally 'block' distribution; the risk is that funds paid out remain subject to the claim.",
+      "sourceName": "O.C.G.A. § 44-14-473; O.C.G.A. § 44-14-470(b); Georgia RPC 1.15(I) and South Carolina RPC 1.15 (reused from facts-1708)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-473/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reword: 'In both states a valid lien or reimbursement claim follows the settlement money, and your attorney must hold disputed funds in trust until the claim is resolved.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Statutory liens carry the force of law and are harder to negotiate. Contractual liens, while enforceable, sometimes offer more room for reduction.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "General framing; the statutes themselves build in reductions (O.C.G.A. § 33-24-56.1(b)(2) pro rata fees; S.C. Code § 43-7-440(A)(6) 25 percent; 42 C.F.R. § 411.37 procurement costs)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-24/article-1/section-33-24-56-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Acceptable as general framing. Optionally note that several statutory liens carry built-in reductions for attorney's fees and costs."
+    },
+    {
+      "surface": "body",
+      "claim": "Under <strong>O.C.G.A. &sect; 44-14-470</strong> (Georgia's Hospital Lien Act), any hospital that treats an injured person has a lien on the proceeds of any claim or settlement arising from that injury.",
+      "verdict": "update",
+      "currentValue": "O.C.G.A. § 44-14-470(b) gives 'any person, firm, hospital authority, or corporation operating a hospital, nursing home, physician practice, or chiropractic practice, or providing traumatic burn care medical practice' a lien 'for the reasonable charges for ... care and treatment of an injured person,' which 'shall be upon any and all causes of action accruing to the person to whom the care was furnished.' The Code heads the part 'Hospitals and Nursing Homes'; there is no enacted short title 'Hospital Lien Act'. Chiropractic practices were added effective July 1, 2023.",
+      "sourceName": "O.C.G.A. § 44-14-470 (2025 Code of Georgia, via Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-470/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'Under O.C.G.A. § 44-14-470, Georgia's hospital and medical-provider lien statute, a hospital, nursing home, physician practice, chiropractic practice or traumatic-burn-care practice that treats an injured person has a lien on the injured person's causes of action — and therefore on any settlement or judgment — for the reasonable charges for that care.' Drop the 'Hospital Lien Act' label."
+    },
+    {
+      "surface": "body",
+      "claim": "The lien attaches to the net recovery (after attorney fees) and covers reasonable charges for treatment, care, and maintenance.",
+      "verdict": "update",
+      "currentValue": "The statute makes the lien 'subject, however, to any attorney's lien' and limits it to 'the reasonable charges for ... care and treatment' of the injuries that gave rise to the cause of action; 'maintenance' does not appear. Georgia courts confirm the attorney's lien has priority (Ramsey v. Sumner, 211 Ga. App. 202 (1993); Holland v. State Farm, 236 Ga. App. 832). The lien 'shall not be a lien against such injured person ... or any other property or assets of such persons.'",
+      "sourceName": "O.C.G.A. § 44-14-470(b) and Justia annotations (Ramsey v. Sumner; Holland v. State Farm Mut. Auto. Ins. Co.)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-470/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'The lien is subordinate to your attorney's lien, covers only the reasonable charges for treating the injuries that gave rise to the claim, and is a lien on the claim itself — not on you or your other property.'"
+    },
+    {
+      "surface": "body",
+      "claim": "To perfect the lien, the hospital must file a verified statement with the superior court clerk in the county where the hospital is located within <strong>75 days</strong> of patient discharge.",
+      "verdict": "update",
+      "currentValue": "O.C.G.A. § 44-14-471(a): (1) not less than 15 days before filing, the provider must send written notice by first-class and certified mail (or statutory overnight delivery) to the patient and, to the best of its knowledge, to the liable parties and their insurers; (2) it must then file a verified statement with the superior court clerk in the county where the provider is located AND in the county where the patient resides (if a Georgia resident) — within 75 days after discharge for hospitals, nursing homes and traumatic-burn-care providers, or within 90 days after the patient first sought treatment for physician and chiropractic practices. (c) Since July 1, 2023, no lien is enforceable unless the provider first submitted the claim to each of the patient's health insurers and had it rejected.",
+      "sourceName": "O.C.G.A. § 44-14-471 (2025 Code of Georgia, via Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-471/",
+      "retrievedAt": "2026-09-24",
+      "note": "Keep 75 days for hospitals; add the 15-day prior notice, the second filing county, the 90-day rule for physician/chiropractic practices, and the 2023 health-insurer-first requirement (§ 44-14-471(c)) — the last is a strong lien-validity defense the post does not mention."
+    },
+    {
+      "surface": "body",
+      "claim": "The lien must include the patient's name, admission date, the liable party's identity, and the amount claimed.",
+      "verdict": "update",
+      "currentValue": "The verified statement must set forth the patient's name and address as they appear on the provider's records; the name and location of the provider and the name and address of its operator; the dates of admission and discharge (or, for physician and chiropractic practices, the dates of treatment); and the amount claimed (§ 44-14-471(a)(2)). The liable parties and insurers are identified in the pre-filing written notice under § 44-14-471(a)(1), 'to the best of the claimant's knowledge'; the requirement to list them in the clerk's lien book was deleted in 2002 (§ 44-14-472 amendment note).",
+      "sourceName": "O.C.G.A. § 44-14-471(a); § 44-14-472 (2025 Code of Georgia, via Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-471/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'The statement must give the patient's name and address, the provider's name and location, the admission and discharge dates (or dates of treatment), and the amount claimed; the liable parties and their insurers must receive written notice at least 15 days before it is filed.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia hospital liens <strong>do not apply to workers' compensation claims</strong> — only to third-party liability recoveries.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 44-14-474 ('This part shall not apply to any moneys becoming due under Chapter 9 of Title 34')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-474/",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct. Add the citation: O.C.G.A. § 44-14-474."
+    },
+    {
+      "surface": "body",
+      "claim": "The lien also cannot include charges for pre-existing conditions treated during the same hospital stay.",
+      "verdict": "update",
+      "currentValue": "The statute does not use those words. The lien is for care and treatment 'of an injured person ... on account of injuries giving rise to the causes of action and which necessitated the ... care' (§ 44-14-470(b)); the lien statute 'must be strictly construed' (MCG Health, Inc. v. Owners Ins. Co., 302 Ga. App. 812 (2010)).",
+      "sourceName": "O.C.G.A. § 44-14-470(b) and Justia annotation (MCG Health v. Owners Ins. Co.)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-470/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'The lien covers only charges for treating the injuries that gave rise to your claim — not unrelated conditions treated during the same stay.'"
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina's hospital lien statute, <strong>S.C. Code &sect; 44-63-10</strong> through &sect; 44-63-80, grants hospitals a lien on any third-party recovery for the reasonable and necessary charges of hospital care.",
+      "verdict": "drop",
+      "currentValue": "S.C. Code § 44-63-10 is titled 'Duties of Department of Health and Environmental Control' and opens Title 44, Chapter 63, 'Vital Statistics' (birth and death registration). No chapter of Title 44 (Health) creates a hospital lien, and South Carolina has no hospital-lien statute. A South Carolina hospital's claim rests on the patient's contractual obligation to pay (and any assignment of benefits or letter of protection the patient signs), not on a statutory lien against the recovery.",
+      "sourceName": "S.C. Code Title 44, Chapter 63 (scstatehouse.gov); Title 44 chapter index (no lien chapter)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t44c063.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Most consequential error in the post: the cited chapter is the vital-statistics law. Replace the whole 'South Carolina Hospital Liens' section with: 'South Carolina has no hospital-lien statute. A hospital or doctor in South Carolina cannot file a statutory lien against your claim; its right to be paid rests on your contract with the provider and on any assignment of benefits or letter of protection you signed, and it is enforced like any other bill. The claims that do reach a South Carolina settlement are health-insurer subrogation (S.C. Code § 38-71-190), Medicaid (§§ 43-7-430, 43-7-440), Medicare, and workers' compensation (§ 42-1-560).' The letter-of-protection sentence describes practice, not a statute — keep it generic."
+    },
+    {
+      "surface": "body",
+      "claim": "The hospital must file notice within <strong>90 days</strong> of discharge and notify the injured person's attorney and the liable party or insurer.",
+      "verdict": "drop",
+      "currentValue": "No such requirement exists; there is no South Carolina hospital-lien statute (see previous entry).",
+      "sourceName": "S.C. Code Title 44, Chapter 63 (scstatehouse.gov)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t44c063.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Delete, together with the '90 days after discharge' table cell."
+    },
+    {
+      "surface": "body",
+      "claim": "Both states also allow ambulance services and emergency medical providers to file similar liens.",
+      "verdict": "drop",
+      "currentValue": "Georgia's lien part covers hospitals, nursing homes, physician practices, chiropractic practices and traumatic-burn-care practices (§ 44-14-470(a)-(b)); ambulance services are not listed. South Carolina has no provider-lien statute.",
+      "sourceName": "O.C.G.A. § 44-14-470(a)-(b)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-470/",
+      "retrievedAt": "2026-09-24",
+      "note": "Delete the sentence."
+    },
+    {
+      "surface": "body",
+      "claim": "Individual physicians in both states can also assert liens, typically through contractual agreements where the doctor agrees to wait for payment until the case resolves. Because these are contractual rather than statutory liens, they tend to be more negotiable than hospital liens.",
+      "verdict": "update",
+      "currentValue": "In Georgia, physician practices have had a statutory lien since 2004 (chiropractic practices since 2023), perfected the same way as hospital liens but filed within 90 days after the patient first sought treatment (§ 44-14-471(a)(2)(B)); a chiropractic lien is also subordinate to any hospital lien (§ 44-14-470(b)). In South Carolina, physician claims are contractual only.",
+      "sourceName": "O.C.G.A. § 44-14-470(b); § 44-14-471(a)(2)(B)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-471/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'In Georgia, physician and chiropractic practices have the same statutory lien as hospitals, with a 90-day filing window that runs from the first treatment visit. In South Carolina, a doctor's claim is contractual — typically a letter of protection or assignment under which the doctor agrees to wait for payment until the case resolves — and contractual claims are generally more negotiable than statutory liens.'"
+    },
+    {
+      "surface": "body",
+      "claim": "If your health insurance company paid for treatment related to your injury, it almost certainly has a right to recover those payments from your settlement.",
+      "verdict": "update",
+      "currentValue": "Not 'almost certainly'. Georgia: a benefit provider may require reimbursement only if the recovery exceeds the sum of all economic and noneconomic losses, and only after a pro rata reduction for attorney's fees and expenses (O.C.G.A. § 33-24-56.1(b)); subrogation against the at-fault party is prohibited (§ 33-24-56.1(e)). South Carolina: an accident-and-health policy 'may include' a subrogation provision capped at benefits paid (S.C. Code § 38-71-190), and a health insurer whose policy has no subrogation clause 'is not entitled to subrogation' (Shumpert v. Time Ins. Co., 329 S.C. 605, 496 S.E.2d 653 (Ct. App. 1998)).",
+      "sourceName": "O.C.G.A. § 33-24-56.1; S.C. Code § 38-71-190; Shumpert v. Time Ins. Co. (S.C. Ct. App. 1998)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/1998/2782-3.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'If your health insurer paid for injury-related treatment, it may have a right to be reimbursed from your settlement — but in both states that right is limited by statute, and in South Carolina it exists only if your policy contains a subrogation clause.'"
+    },
+    {
+      "surface": "body",
+      "claim": "This right is called <strong>subrogation</strong>, and it functions much like a lien.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 38-71-190 ('subrogation by the insurer to the insured's right of recovery'); O.C.G.A. § 33-24-56.1 (Georgia frames it as reimbursement and prohibits subrogation against the tortfeasor)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c071.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Acceptable. Georgia technically calls it a reimbursement claim (§ 33-24-56.1(b)) and bars insurer subrogation against the at-fault party (§ 33-24-56.1(e)); a parenthetical 'in Georgia, a statutory reimbursement claim' would be precise."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia follows the <strong>\"made whole\" doctrine</strong>: a health insurer cannot exercise subrogation rights unless the injured person has been fully compensated for all losses.",
+      "verdict": "update",
+      "currentValue": "Correct in substance, and codified: O.C.G.A. § 33-24-56.1(b) allows a benefit provider to require reimbursement only if '(1) The amount of the recovery exceeds the sum of all economic and noneconomic losses incurred as a result of the injury' and '(2) The amount of the reimbursement claim is reduced by the pro rata amount of the attorney's fees and expenses of litigation'; under subsection (c) a court that finds the settlement 'does not fully and completely compensate the injured party' leaves the provider 'no right of reimbursement'. Georgia courts call it the 'complete compensation rule' (Davis v. Kaiser Found. Health Plan of Ga., 271 Ga. 508 (1999)).",
+      "sourceName": "O.C.G.A. § 33-24-56.1(b)-(c) and Justia annotations (Davis v. Kaiser Foundation Health Plan of Georgia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-24/article-1/section-33-24-56-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Add the citation and the pro rata fee reduction: 'Georgia codifies the made-whole (\"complete compensation\") rule in O.C.G.A. § 33-24-56.1: a health or disability benefit provider may be reimbursed only if your recovery exceeds all of your economic and noneconomic losses, and even then its claim is reduced by a pro rata share of your attorney's fees and expenses.'"
+    },
+    {
+      "surface": "body",
+      "claim": "However, many health insurance policies include explicit language that overrides the made whole doctrine.",
+      "verdict": "update",
+      "currentValue": "Wrong for Georgia-regulated plans: 'no policy or contract provisions for subrogation or reimbursement in conflict with this Code section may be enforced' (O.C.G.A. § 33-24-56.1(j)), and the Georgia Supreme Court held a policy provision requiring reimbursement regardless of complete compensation unenforceable as against public policy (Davis v. Kaiser, 271 Ga. 508). Policy language overrides the rule only for plans the statute cannot reach — self-funded ERISA plans (Summerlin v. Georgia-Pacific, M.D. Ga. 2005, applying the ERISA deemer clause), federal-employee FEHBA plans (Blue Cross Blue Shield of Ga. v. Gunter, 11th Cir. 2008; Thurman v. State Farm, 278 Ga. 162 (2004)), Medicare, Medicaid and TRICARE.",
+      "sourceName": "O.C.G.A. § 33-24-56.1(j) and Justia annotations (Davis v. Kaiser; Summerlin v. Georgia-Pacific; Gunter; Thurman v. State Farm)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-24/article-1/section-33-24-56-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'A Georgia-regulated policy cannot contract around this rule — conflicting policy language is unenforceable (§ 33-24-56.1(j)). The exceptions are plans that state law cannot reach: self-funded employer (ERISA) plans, federal-employee health plans, Medicare, Medicaid and TRICARE.'"
+    },
+    {
+      "surface": "body",
+      "claim": "ERISA-governed employer health plans can also preempt it under federal law, giving the insurer first-priority reimbursement regardless of whether you have been fully compensated.",
+      "verdict": "update",
+      "currentValue": "Only self-funded ERISA plans escape state law: ERISA's saving clause preserves state laws 'regulating insurance', but the deemer clause (29 U.S.C. § 1144(b)(2)(B)) provides that a covered plan shall not 'be deemed to be an insurance company' for such laws, so 'self-funded ERISA plans' are exempt from state anti-subrogation rules (FMC Corp. v. Holliday, 498 U.S. 52 (1990)). An insured ERISA plan remains subject to Georgia's complete-compensation statute. A self-funded plan's reimbursement claim is enforceable as 'appropriate equitable relief' only against specifically identifiable settlement funds (Sereboff v. Mid Atlantic Medical Services, 547 U.S. 356 (2006)); once the participant has spent the settlement on nontraceable items, the plan cannot reach the participant's general assets (Montanile v. Board of Trustees, 577 U.S. 136 (2016)).",
+      "sourceName": "29 U.S.C. § 1144(b)(2)(A)-(B); FMC Corp. v. Holliday (1990); Sereboff (2006); Montanile (2016) — Cornell LII",
+      "sourceUrl": "https://www.law.cornell.edu/supremecourt/text/14-723",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'Self-funded employer plans governed by ERISA are the main exception: federal law preempts state anti-subrogation rules for those plans (FMC Corp. v. Holliday, 1990), so the plan document controls and may demand first-dollar reimbursement whether or not you have been made whole. Even then, the plan's remedy is limited to the settlement fund itself (Sereboff, 2006; Montanile, 2016). Insured employer plans remain subject to state law.'"
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina also recognizes the made whole doctrine, with the same limitation: contractual language and ERISA preemption can override it.",
+      "verdict": "update",
+      "currentValue": "No published South Carolina decision adopts the made-whole doctrine for health-insurer subrogation; the rule is statutory. S.C. Code § 38-71-190 permits an accident-and-health policy to include subrogation 'for not more than the amount of insurance benefits that the insurer has paid'; 'If the director or his designee, upon being petitioned by the insured, determines that the exercise of subrogation by an insurer is inequitable and commits an injustice to the insured, subrogation is not allowed'; and 'Attorneys' fees and costs must be paid by the insurer from the amounts recovered.' A health insurer whose policy lacks a subrogation clause has no subrogation right at all (Shumpert v. Time Ins. Co., 329 S.C. 605 (Ct. App. 1998)). Self-funded ERISA plans are outside the statute (FMC Corp. v. Holliday).",
+      "sourceName": "S.C. Code § 38-71-190 (scstatehouse.gov); Shumpert v. Time Ins. Co. (S.C. Ct. App. 1998)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c071.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'South Carolina has no made-whole case law; its protection is statutory. Under S.C. Code § 38-71-190 a health insurer can subrogate only if the policy says so and only up to what it paid, it must pay its share of attorney's fees and costs out of the recovery, and you can petition the Director of Insurance to disallow subrogation that would be inequitable. Self-funded ERISA plans are outside the statute.'"
+    },
+    {
+      "surface": "body",
+      "claim": "The type of health insurance you carry — private, employer-sponsored, ERISA, or government — plays a major role in determining how much of your settlement a health insurer can claim.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "29 U.S.C. § 1144(b)(2); FMC Corp. v. Holliday; O.C.G.A. § 33-24-56.1(l)",
+      "sourceUrl": "https://www.law.cornell.edu/uscode/text/29/1144",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct. Suggest 'self-funded employer (ERISA)' for precision."
+    },
+    {
+      "surface": "body",
+      "claim": "Government liens are the most powerful and least negotiable category of liens in personal injury cases. Federal law gives Medicare, Medicaid, and the Veterans Administration priority reimbursement rights that override most state protections.",
+      "verdict": "update",
+      "currentValue": "The agency has been the Department of Veterans Affairs (VA) since 1989; 38 U.S.C. § 1729 vests the recovery right in 'the United States'. Federal law gives Medicare a right of recovery that preempts state law (42 U.S.C. § 1395y(b)(2)(B)), but federal law also LIMITS Medicaid's reach to the medical-expense portion of a recovery (Ahlborn; 42 U.S.C. § 1396p(a)(1)), and Medicare has formal waiver and compromise processes (§ 1395y(b)(2)(B)(v); 42 C.F.R. § 411.28). 'Least negotiable' is fair only in the sense that the amounts are set by federal procedure rather than bargaining.",
+      "sourceName": "38 U.S.C. § 1729; 42 U.S.C. § 1395y(b)(2)(B); 42 U.S.C. § 1396p(a)(1); Arkansas DHS v. Ahlborn (2006)",
+      "sourceUrl": "https://www.law.cornell.edu/uscode/text/38/1729",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace 'Veterans Administration' with 'Department of Veterans Affairs (VA)'. Rewrite the second sentence: 'Federal law gives Medicare, Medicaid and the VA recovery rights that state law cannot cut off — although, as explained below, federal law also caps what Medicaid can take and gives Medicare formal reduction, waiver and compromise procedures.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Under the <strong>Medicare Secondary Payer Act (42 U.S.C. &sect; 1395y(b))</strong>, Medicare is entitled to reimbursement from any settlement that includes compensation for medical expenses Medicare paid.",
+      "verdict": "update",
+      "currentValue": "Medicare's recovery right does not depend on the settlement allocating money to medical expenses: a primary plan's responsibility 'may be demonstrated by a judgment, a payment conditioned upon the recipient's compromise, waiver, or release (whether or not there is a determination or admission of liability) ..., or by other means' (42 U.S.C. § 1395y(b)(2)(B)(ii)). Two limits: CMS does not pursue recovery on physical-trauma liability settlements of $750 or less (threshold maintained for 2026), and the demand is reduced for procurement costs (42 C.F.R. § 411.37).",
+      "sourceName": "42 U.S.C. § 1395y(b)(2)(B)(ii) (Cornell LII); CMS NGHP User Guide v8.3, Chapter III (January 2026) — $750 threshold",
+      "sourceUrl": "https://www.law.cornell.edu/uscode/text/42/1395y",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'Under the Medicare Secondary Payer Act (42 U.S.C. § 1395y(b)), Medicare must be repaid its conditional payments out of any liability settlement, judgment or award — whether or not the settlement says anything about medical expenses or admits liability. (CMS does not pursue recovery on physical-trauma liability settlements of $750 or less.)'"
+    },
+    {
+      "surface": "body",
+      "claim": "This is a federal statutory lien that takes priority over state lien laws and cannot be waived.",
+      "verdict": "update",
+      "currentValue": "It can be waived or compromised. 42 U.S.C. § 1395y(b)(2)(B)(v): 'The Secretary may waive (in whole or in part) the provisions of this subparagraph in the case of an individual claim if the Secretary determines that the waiver is in the best interests of the program.' 42 C.F.R. § 411.28: CMS 'may waive recovery, in whole or in part, if the probability of recovery, or the amount involved, does not warrant pursuit of the claim,' and compromise follows 42 C.F.R. part 401 subpart F and § 405.376. CMS's demand letter includes 'information on applicable waiver and administrative appeal rights.' The priority-over-state-law point is correct (the right is federal and preempts state law); it is a statutory right of recovery rather than a recorded lien.",
+      "sourceName": "42 U.S.C. § 1395y(b)(2)(B)(v); 42 C.F.R. § 411.28; CMS, Medicare's Recovery Process (step 6)",
+      "sourceUrl": "https://www.law.cornell.edu/cfr/text/42/411.28",
+      "retrievedAt": "2026-09-24",
+      "note": "Delete 'and cannot be waived' — it contradicts the post's own 'Request a Compromise' section. Rewrite: 'This is a federal right of recovery that overrides state lien and made-whole rules; it can be reduced, waived or compromised only through Medicare's own procedures.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Medicare's lien applies to <strong>conditional payments</strong> — bills Medicare paid on the assumption that no other party was liable.",
+      "verdict": "update",
+      "currentValue": "A conditional payment is one Medicare makes when a primary plan 'has not made or cannot reasonably be expected to make payment ... promptly' (42 U.S.C. § 1395y(b)(2)(B)(i)); CMS: 'Medicare makes this conditional payment so you will not have to use your own money to pay the bill. The payment is \"conditional\" because it must be repaid to Medicare when a settlement, judgment, award, or other payment is made.'",
+      "sourceName": "42 U.S.C. § 1395y(b)(2)(B)(i); CMS, Medicare's Recovery Process",
+      "sourceUrl": "https://www.cms.gov/medicare/coordination-benefits-recovery/beneficiary-services/recovery-process",
+      "retrievedAt": "2026-09-24",
+      "note": "Minor rewrite: 'conditional payments — bills Medicare paid up front, on the condition that it be repaid if a liable party or insurer later pays.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Once a settlement is reached, Medicare calculates its total conditional payments and demands reimbursement.",
+      "verdict": "update",
+      "currentValue": "The case must be reported to the Benefits Coordination & Recovery Center (BCRC); the BCRC sends a Rights and Responsibilities letter, then within 65 days a Conditional Payment Letter listing the claims (which can be disputed as unrelated; allow 45 days for review). After settlement details are submitted (date, amount, attorney's fees and costs), the BCRC issues a formal demand letter. Reimbursement is due within 60 days (42 C.F.R. § 411.24(h)); interest accrues from the demand date if not paid or resolved in time; an Intent to Refer letter goes out at day 90 and the debt is referred to the Treasury Offset Program at about 150 days.",
+      "sourceName": "CMS, Medicare's Recovery Process (steps 1-7); 42 C.F.R. § 411.24(h); 42 U.S.C. § 1395y(b)(2)(B)(ii)",
+      "sourceUrl": "https://www.cms.gov/medicare/coordination-benefits-recovery/beneficiary-services/recovery-process",
+      "retrievedAt": "2026-09-24",
+      "note": "Add: 'The case is reported to Medicare's Benefits Coordination & Recovery Center (BCRC), which lists the conditional payments it believes are related, lets you dispute unrelated charges, and after settlement issues a formal demand. Repayment is due within 60 days; interest runs from the demand date, and unpaid debts are referred to the Treasury for offset.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Failing to satisfy the lien can expose both the injury victim and the attorney to double damages.",
+      "verdict": "update",
+      "currentValue": "CMS has a direct right to recover its conditional payments 'from any entity, including a beneficiary, provider, supplier, physician, attorney, State agency or private insurer that has received a primary payment' (42 C.F.R. § 411.24(g)), with interest, and may refer the debt to Treasury or the Department of Justice. The statutory double-damages remedy runs against entities 'required or responsible ... to make payment ... under a primary plan' when the United States must sue (42 U.S.C. § 1395y(b)(2)(B)(iii); 42 C.F.R. § 411.24(c)(2)); CMS's own guidance states that 'The law authorizes the Federal government to collect double damages from any party that is responsible for resolving the matter but which fails to do so.'",
+      "sourceName": "42 U.S.C. § 1395y(b)(2)(B)(iii); 42 C.F.R. § 411.24(c)(2), (g); CMS, Medicare's Recovery Process (step 7)",
+      "sourceUrl": "https://www.law.cornell.edu/cfr/text/42/411.24",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite for precision: 'Medicare can recover its payments, with interest, directly from you or from your attorney if settlement funds are paid out without repaying it, and federal law authorizes double damages when the government has to sue to collect.'"
+    },
+    {
+      "surface": "body",
+      "claim": "The amounts are often inflated or inaccurate, and experienced attorneys routinely challenge them to achieve significant reductions.",
+      "verdict": "update",
+      "currentValue": "'Often inflated' is unsourced. The verifiable reductions are procedural: (1) the Conditional Payment Letter 'explains how to dispute any unrelated claims' and the BCRC removes claims it agrees are unrelated; (2) the demand is automatically reduced by Medicare's proportionate share of procurement costs — the ratio of attorney's fees and costs to the total settlement, applied to the Medicare payment (42 C.F.R. § 411.37(c)); (3) waiver and appeal rights accompany the demand; (4) for physical-trauma liability settlements CMS offers a Fixed Percentage Option (settlements of $10,000 or less, effective October 2, 2023) and a Self-Calculated Conditional Payment Amount (settlements up to $25,000).",
+      "sourceName": "CMS, Medicare's Recovery Process; CMS, Demand Calculation Options; 42 C.F.R. § 411.37",
+      "sourceUrl": "https://www.cms.gov/medicare/coordination-benefits-recovery/beneficiary-services/demand-calculation-options",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'The initial conditional-payment list frequently includes charges unrelated to the accident. Your attorney can dispute those, and the final demand is reduced by Medicare's share of your attorney's fees and costs (42 C.F.R. § 411.37).'"
+    },
+    {
+      "surface": "body",
+      "claim": "Both Georgia and South Carolina Medicaid programs have statutory rights to recover payments from personal injury settlements. Georgia's Medicaid lien authority comes from <strong>O.C.G.A. &sect; 49-4-149</strong>, while South Carolina's derives from <strong>S.C. Code &sect; 43-7-430</strong>.",
+      "verdict": "update",
+      "currentValue": "Georgia: O.C.G.A. § 49-4-149(a) gives the Department of Community Health 'a lien for the charges for medical care and treatment provided a medical assistance recipient upon any moneys or other property accruing to the recipient ... due to the liability of a third party'; (b) it is perfected under the hospital-lien procedure but with one year from the last item of care to file, and 'shall not affect the priority of any attorney's lien'; (d) recipients are deemed to have assigned third-party payment rights up to the amount Medicaid paid. South Carolina: § 43-7-420 (assignment of rights to the Department of Health and Human Services), § 43-7-430 (automatic subrogation 'only to the extent of the amount of medical assistance paid by Medicaid'), and § 43-7-440 (enforcement; the Department may intervene, sue, 'settle and compromise', reduce its claim by 25 percent for attorney's fees plus a share of costs; its right 'is superior to any right of reimbursement, subrogation, or indemnity of a third party or recipient').",
+      "sourceName": "O.C.G.A. § 49-4-149 (Justia); S.C. Code §§ 43-7-420, 43-7-430, 43-7-440 (scstatehouse.gov)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t43c007.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Cite South Carolina as 'S.C. Code §§ 43-7-430 and 43-7-440' (430 is subrogation; 440 is enforcement, compromise and the 25 percent fee reduction). Optionally add that Georgia's lien is filed within one year of the last treatment and is subordinate to the attorney's lien."
+    },
+    {
+      "surface": "body",
+      "claim": "Like Medicare, Medicaid liens are backed by federal law (42 U.S.C. &sect; 1396a(a)(25)) and cannot simply be ignored.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "42 U.S.C. § 1396a(a)(25)(A)-(B) (states must ascertain third-party liability and 'seek reimbursement'); 42 U.S.C. § 1396k(a)(1)(A) (mandatory assignment of rights 'to payment for medical care from any third party')",
+      "sourceUrl": "https://www.law.cornell.edu/uscode/text/42/1396a",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct. Optionally add § 1396k(a)(1)(A), the assignment provision Ahlborn and Gallardo turn on."
+    },
+    {
+      "surface": "body",
+      "claim": "However, in <em>Arkansas Dept. of Health &amp; Human Services v. Ahlborn</em> (2006), the U.S. Supreme Court ruled that Medicaid can only assert a lien against the portion of a settlement representing medical expenses — not the entire recovery.",
+      "verdict": "keep",
+      "currentValue": "Ahlborn, 547 U.S. 268 (2006): federal law 'does not authorize [the State] to assert a lien on Ahlborn's settlement in an amount exceeding' the medical-expense portion, 'and the federal anti-lien provision affirmatively prohibits it from doing so.' Wos v. E.M.A., 568 U.S. 627 (2013) struck down a state's irrebuttable presumption that one-third of any recovery is medical. Gallardo v. Marstiller, 596 U.S. 420 (2022) held the state may recover from settlement amounts allocated to future as well as past medical care; 'the relevant distinction is thus between medical and nonmedical expenses.'",
+      "sourceName": "Arkansas Dept. of Health & Human Servs. v. Ahlborn (2006); Wos v. E.M.A. (2013); Gallardo v. Marstiller (2022) — Cornell LII",
+      "sourceUrl": "https://www.law.cornell.edu/supremecourt/text/04-1506",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct. Add one sentence: 'Later decisions refined the rule: a state cannot simply presume that a fixed fraction of the recovery is medical (Wos v. E.M.A., 2013), but it may recover from the portion allocated to future as well as past medical care (Gallardo v. Marstiller, 2022).' Note for the writer: Georgia's Richards v. Dept. of Community Health (Ga. 2004), which applied the lien to the whole recovery, predates Ahlborn and is superseded on that point."
+    },
+    {
+      "surface": "body",
+      "claim": "This ruling provides a basis for reducing Medicaid liens, especially when non-medical damages like pain and suffering make up the bulk of the settlement.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Ahlborn (2006); Wos v. E.M.A. (2013); S.C. Code § 43-7-440(A)(5)-(6)",
+      "sourceUrl": "https://www.law.cornell.edu/supremecourt/text/12-98",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct. Optionally add the South Carolina statutory reductions: the Department may compromise, and must reduce its claim by 25 percent for attorney's fees plus a proportional share of costs when the recipient hired a lawyer (§ 43-7-440(A)(5)-(6))."
+    },
+    {
+      "surface": "body",
+      "claim": "Veterans treated through the VA for injuries caused by a third party may face a lien under <strong>38 U.S.C. &sect; 1729</strong>. The VA has a right of recovery against any third-party settlement for the reasonable cost of care it provided, with enforcement authority similar to Medicare.",
+      "verdict": "update",
+      "currentValue": "Two federal statutes apply. The Federal Medical Care Recovery Act, 42 U.S.C. § 2651(a), gives the United States 'a right to recover (independent of the rights of the injured or diseased person) from said third person, or that person's insurer, the reasonable value of the care and treatment so furnished' whenever it furnishes or pays for care 'under circumstances creating a tort liability upon some third person', subrogates the United States to the injured person's claim, and lets the agency require an assignment — this covers VA, military and TRICARE care. 38 U.S.C. § 1729(a) separately lets the United States 'recover or collect from a third party the reasonable charges of care or services' furnished for a non-service-connected disability incurred, among other situations, in a motor-vehicle accident in a state with compulsory auto insurance, a workers' compensation injury, or where the veteran has a health-plan contract; the United States is subrogated, may intervene, and may sue if the veteran has not sued within 180 days after care began (§ 1729(b)). Neither statute carries Medicare's interest, double-damages or Treasury-referral machinery.",
+      "sourceName": "42 U.S.C. § 2651; 38 U.S.C. § 1729 (Cornell LII)",
+      "sourceUrl": "https://www.law.cornell.edu/uscode/text/42/2651",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'Veterans treated by the VA — and service members and families covered by TRICARE — may face a federal recovery claim under the Federal Medical Care Recovery Act (42 U.S.C. § 2651) and, for VA care of non-service-connected injuries, 38 U.S.C. § 1729. The United States can recover the reasonable value of the care from the at-fault party or its insurer and steps into your shoes to do so.' Delete 'with enforcement authority similar to Medicare'."
+    },
+    {
+      "surface": "body",
+      "claim": "The workers' compensation carrier then has a lien on your third-party recovery.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-11.1(b) ('subrogation lien, not to exceed the actual amount of compensation paid'); S.C. Code § 42-1-560(b) ('the carrier shall have a lien on the proceeds of any recovery from the third party')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct in both states (reused from facts-1650 / facts-1702, re-read 2026-09-24)."
+    },
+    {
+      "surface": "body",
+      "claim": "Under <strong>O.C.G.A. &sect; 34-9-11.1</strong>, a Georgia <a href=\"/practice-areas/workers-compensation-lawyers/\">workers' compensation</a> insurer that has paid benefits to an injured worker is entitled to a lien on any recovery the worker obtains from a negligent third party. The lien covers all compensation paid, including medical expenses, temporary total disability benefits, and permanent partial disability benefits.",
+      "verdict": "update",
+      "currentValue": "§ 34-9-11.1(b): the employer or insurer 'shall have a subrogation lien, not to exceed the actual amount of compensation paid', limited to 'disability benefits, death benefits, and medical expenses paid', and it 'shall only be recoverable if the injured employee has been fully and completely compensated, taking into consideration both the benefits received under this chapter and the amount of the recovery in the third-party claim, for all economic and noneconomic losses incurred as a result of the injury.' The employer bears that burden; a lump-sum settlement that does not separate economic from noneconomic losses makes it 'exceedingly difficult' to meet (Donegal Mut. Ins. Group v. Jarrett, 364 Ga. App. 506 (2022); McLeod v. BITCO Ins. Cos., 377 Ga. App. 333 (2025)).",
+      "sourceName": "O.C.G.A. § 34-9-11.1(b) and Justia annotations (City of Warner Robins v. Baker; Donegal v. Jarrett; McLeod v. BITCO)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Add the condition that makes Georgia unusual: 'The lien covers the disability, death and medical benefits actually paid — but it is enforceable only if the carrier proves you have been fully and completely compensated for all of your economic and noneconomic losses, counting both the comp benefits and the third-party recovery. Carriers frequently cannot meet that burden, especially against a lump-sum settlement.'"
+    },
+    {
+      "surface": "body",
+      "claim": "The carrier must receive notice of the third-party claim and an opportunity to participate.",
+      "verdict": "update",
+      "currentValue": "§ 34-9-11.1(b): 'The employer or insurer may intervene in any action to protect and enforce such lien.' § 34-9-11.1(c): if the employee sues more than one year after the injury, the employee 'shall immediately notify the employer or its insurer', which 'shall have a right to intervene'; if the employee has not sued within one year, the employer or insurer may assert the claim itself and must notify the employee. A settlement that excludes the carrier does not bind it (SunTrust Bank v. Travelers, 321 Ga. App. 538 (2013)).",
+      "sourceName": "O.C.G.A. § 34-9-11.1(b)-(c) and Justia annotations",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'The carrier has the right to intervene in the lawsuit to protect its lien, and a settlement reached behind its back does not bind it.'"
+    },
+    {
+      "surface": "body",
+      "claim": "The lien is typically reduced by a proportionate share of the attorney fees and litigation costs — a concept known as the <strong>\"one-third reduction\"</strong> under Georgia case law.",
+      "verdict": "drop",
+      "currentValue": "There is no 'one-third reduction' doctrine in Georgia workers' compensation subrogation. § 34-9-11.1(d) entitles the employee's attorney to 'a reasonable fee for services' and, if the employer or insurer hired its own attorney, lets a court 'apportion the reasonable fee between the attorney for the injured employee and the attorney for the employer or insurer in proportion to services rendered'; that apportionment is available only when the employer actually recovers on its lien after full compensation (Simpson v. Southwire Co., 249 Ga. App. 406 (2001)). Georgia's real limiter is the full-and-complete-compensation rule in subsection (b).",
+      "sourceName": "O.C.G.A. § 34-9-11.1(b), (d) and Justia annotation (Simpson v. Southwire Co.)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace with: 'If the carrier does recover on its lien, the statute allows the court to apportion a reasonable attorney's fee between your lawyer and the carrier's lawyer in proportion to the work each did (§ 34-9-11.1(d)).' Delete the 'one-third reduction' label here and in the table."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>S.C. Code &sect; 42-1-560</strong> governs workers' compensation liens in South Carolina. Like Georgia, the carrier has a lien on any third-party recovery and must be notified of the claim.",
+      "verdict": "update",
+      "currentValue": "§ 42-1-560(b): the carrier 'shall have a lien on the proceeds of any recovery from the third party whether by judgment, settlement or otherwise, to the extent of the total amount of compensation, including medical and other expenses, paid, or to be paid by such carrier, less the reasonable and necessary expenses, including attorney fees, incurred in effecting the recovery'; 'Notice of the commencement of the action shall be given within thirty days thereafter to the Workers' Compensation Commission, the employer and carrier' on a Commission form. The third-party action 'must be commenced not later than one year after the carrier accepts liability for the payment of compensation or makes payment pursuant to an award'; otherwise the claim passes to the carrier by assignment after 20 days' written notice (§ 42-1-560(c)). A settlement made without the carrier's written consent for less than the compensation owed is invalid as against the carrier (§ 42-1-560(f)).",
+      "sourceName": "S.C. Code § 42-1-560(b), (c), (f) (scstatehouse.gov)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Add the one-year clock and the 30-day notice: 'The carrier's lien is on the recovery net of the fees and expenses of obtaining it. Notice of the lawsuit must go to the Workers' Compensation Commission, the employer and the carrier within 30 days of filing, and the suit must be started within one year after the carrier accepts liability or pays under an award — otherwise the claim can pass to the carrier.'"
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina courts also apply a proportionate reduction for attorney fees and costs, which can meaningfully lower the lien amount and increase the worker's net recovery.",
+      "verdict": "update",
+      "currentValue": "The reduction is statutory, not judge-made. § 42-1-560(b): the lien is net of 'the reasonable and necessary expenses, including attorney fees, incurred in effecting the recovery'; 'Attorney fees owed and payable by the carrier to the attorneys effecting the recovery shall be set by the commission but shall not exceed one third of the total claim amount paid by the carrier.' § 42-1-560(f): where the settlement or judgment is less than the employee's total damages, 'the commission may reduce the amount of the carrier's lien on the proceeds of such settlement in the proportion that such settlement or judgment bears to the commission's evaluation of the employee's total cognizable damages at law' if equitable (applied in Breeden v. TCW, Inc., 355 S.C. 112 (2003)).",
+      "sourceName": "S.C. Code § 42-1-560(b), (f); Breeden v. TCW, Inc. (S.C. 2003)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'By statute the carrier's lien is reduced by the attorney's fees and expenses of obtaining the recovery (the carrier's fee share is set by the Commission and capped at one-third of what it paid), and when a settlement is less than your total damages the Commission can cut the lien proportionally (§ 42-1-560(b), (f)).'"
+    },
+    {
+      "surface": "body",
+      "claim": "Workers' compensation liens are particularly relevant in <a href=\"/practice-areas/slip-and-fall-lawyers/\">slip and fall cases</a> that occur on a job site, construction injuries involving third-party contractors, and motor vehicle accidents that happen during the course of employment.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-11.1(a); S.C. Code § 42-1-550 (reused from facts-1650)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Illustrative and consistent with the statutes. Georgia bars suits against a co-employee (§ 34-9-11(a)), so 'third-party' must mean someone other than the employer or a co-worker in Georgia."
+    },
+    {
+      "surface": "body",
+      "claim": "Your own attorney also holds a lien right — the <strong>attorney's lien</strong> — securing payment of legal fees and costs from the proceeds of your case.",
+      "verdict": "update",
+      "currentValue": "True for Georgia: O.C.G.A. § 15-19-14(b) gives attorneys, 'Upon actions, judgments, and decrees for money, ... a lien superior to all liens except tax liens.' In South Carolina the common-law charging lien 'protects only costs and disbursements; it does not cover an attorney's fee' — a lien for the fee exists only by express agreement (Eleazer v. Hardaway Concrete Co., 281 S.C. 344, 315 S.E.2d 174 (Ct. App. 1984)).",
+      "sourceName": "O.C.G.A. § 15-19-14; Eleazer v. Hardaway Concrete Co. (S.C. Ct. App. 1984) — reused from facts-1708",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/281-s-c-344-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'Your own attorney also has a claim on the proceeds for fees and costs — in Georgia a statutory lien, in South Carolina a common-law lien for costs plus whatever lien your written fee agreement creates.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia recognizes both <strong>charging liens</strong> and <strong>retaining liens</strong> under <strong>O.C.G.A. &sect; 15-19-14</strong>. A charging lien gives the attorney a claim against the settlement proceeds obtained through the attorney's efforts. In personal injury cases, it secures the contingency fee (typically one-third of the gross recovery) plus any case costs advanced by the attorney.",
+      "verdict": "update",
+      "currentValue": "§ 15-19-14(a): retaining lien 'on all papers and money of their clients in their possession for services rendered'; (b): lien 'upon actions, judgments, and decrees for money ... superior to all liens except tax liens'; Georgia courts treat it as attaching to the fruits of the attorney's labor, including settlements (Wooten v. Denmark; Howe & Assocs. v. Daniels). 'Typically one-third' is unsourced; Georgia RPC 1.5(c)(1) requires the contingent fee to be set in a written agreement.",
+      "sourceName": "O.C.G.A. § 15-19-14(a)-(b) and Justia annotations; Georgia RPC 1.5(c) — reused from facts-1708",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-15/chapter-19/article-1/section-15-19-14/",
+      "retrievedAt": "2026-09-24",
+      "note": "Keep the first two sentences; change the third to: 'In personal injury cases it secures the contingency fee set in your written fee agreement plus any case costs the attorney advanced.' Drop 'typically one-third of the gross recovery'."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina recognizes attorney liens under common law and the <strong>South Carolina Rules of Professional Conduct</strong>. The charging lien attaches to the case proceeds and generally has priority over other contractual liens because the attorney's efforts created the fund from which all lien holders seek payment.",
+      "verdict": "update",
+      "currentValue": "South Carolina has no attorney's-lien statute. Its courts recognize a common-law retaining lien on papers and a common-law lien on a judgment for costs and disbursements only — 'it does not cover an attorney's fee' (Eleazer, 1984); a fee lien exists only by express agreement. The Rules of Professional Conduct (Rule 407, SCACR) do not create a lien: Rule 1.15 governs safekeeping of disputed funds and Rule 1.16(d) allows retaining papers only 'to the extent permitted by other law', and the retaining lien cannot be used to a client's prejudice (Matter of Tillman, 319 S.C. 461 (1995)). No South Carolina authority was found for a general priority of the attorney's lien over other contractual liens.",
+      "sourceName": "Eleazer v. Hardaway Concrete Co. (S.C. Ct. App. 1984); Matter of Tillman (S.C. 1995); South Carolina RPC 1.15, 1.16 — reused from facts-1708",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/281-s-c-344-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'South Carolina has no attorney's-lien statute. Its courts recognize a common-law lien for the costs the attorney advanced; a lien for the fee itself exists only if your written fee agreement creates one (Eleazer v. Hardaway Concrete Co., S.C. Ct. App. 1984). In practice the fee and costs are paid from the recovery under that agreement, and disputed funds are held in trust under Rule 1.15.' Delete the priority sentence."
+    },
+    {
+      "surface": "body",
+      "claim": "In both states, the attorney's fee and costs come off the top before other liens are satisfied — reflecting the principle that without the attorney's work, there would be no settlement fund for anyone to claim.",
+      "verdict": "update",
+      "currentValue": "Georgia: yes for state-law liens — the attorney's lien is 'superior to all liens except tax liens' (§ 15-19-14(b)); provider liens are 'subject ... to any attorney's lien' (§ 44-14-470(b)); the Medicaid lien 'shall not affect the priority of any attorney's lien' (§ 49-4-149(b)); benefit-provider reimbursement is reduced pro rata for fees and expenses (§ 33-24-56.1(b)(2)). Federal claims are not subordinated: Medicare instead reduces its demand by its proportionate share of procurement costs (42 C.F.R. § 411.37). South Carolina: the workers' compensation lien is net of fees and expenses (§ 42-1-560(b)); a health insurer must pay attorney's fees and costs from the amounts recovered (§ 38-71-190); Medicaid reduces its claim by 25 percent plus a share of costs (§ 43-7-440(A)(6)) — but there is no general 'off the top' priority rule.",
+      "sourceName": "O.C.G.A. §§ 15-19-14(b), 44-14-470(b), 49-4-149(b), 33-24-56.1(b)(2); 42 C.F.R. § 411.37; S.C. Code §§ 42-1-560(b), 38-71-190, 43-7-440(A)(6)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-15/chapter-19/article-1/section-15-19-14/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'In Georgia the attorney's lien outranks every lien except tax liens, and hospital and Medicaid liens are expressly subordinate to it. Federal claims like Medicare are not subordinate, but they are reduced by Medicare's share of the fees and costs of obtaining the recovery. South Carolina reaches a similar result claim by claim: the workers' compensation lien is net of fees and expenses, a health insurer must bear its share of fees and costs, and Medicaid reduces its claim by 25 percent when you hired a lawyer.'"
+    },
+    {
+      "surface": "body",
+      "claim": "<td><strong>Hospital Lien Statute</strong></td>\n<td>O.C.G.A. &sect; 44-14-470</td>\n<td>S.C. Code &sect; 44-63-10</td>",
+      "verdict": "update",
+      "currentValue": "Georgia: O.C.G.A. §§ 44-14-470 to 44-14-477. South Carolina: none — § 44-63-10 is a vital-statistics section.",
+      "sourceName": "O.C.G.A. § 44-14-470; S.C. Code Title 44, Chapter 63",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t44c063.php",
+      "retrievedAt": "2026-09-24",
+      "note": "South Carolina cell: 'None — no hospital-lien statute; providers rely on contract.' Georgia cell: 'O.C.G.A. §§ 44-14-470 to 44-14-477 (hospitals, nursing homes, physician and chiropractic practices, burn care)'."
+    },
+    {
+      "surface": "body",
+      "claim": "<td><strong>Hospital Lien Filing Deadline</strong></td>\n<td>75 days after discharge</td>\n<td>90 days after discharge</td>",
+      "verdict": "update",
+      "currentValue": "Georgia: 75 days after discharge (hospitals, nursing homes, burn care) or 90 days after first treatment (physician and chiropractic practices), with 15 days' prior written notice (§ 44-14-471(a)). South Carolina: not applicable.",
+      "sourceName": "O.C.G.A. § 44-14-471(a)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-471/",
+      "retrievedAt": "2026-09-24",
+      "note": "Georgia cell: '75 days after discharge (hospitals); 90 days after first treatment (physician/chiropractic practices); 15 days' prior notice'. South Carolina cell: 'Not applicable'."
+    },
+    {
+      "surface": "body",
+      "claim": "<td><strong>Made Whole Doctrine</strong></td>\n<td>Recognized; can be waived by contract</td>\n<td>Recognized; can be waived by contract</td>",
+      "verdict": "update",
+      "currentValue": "Georgia: codified as the complete-compensation rule (O.C.G.A. § 33-24-56.1); conflicting policy terms are void (§ 33-24-56.1(j)); self-funded ERISA and federal plans are exempt. South Carolina: no published made-whole decision; S.C. Code § 38-71-190 caps subrogation at benefits paid, makes the insurer pay fees and costs, and lets the Director of Insurance disallow inequitable subrogation.",
+      "sourceName": "O.C.G.A. § 33-24-56.1; S.C. Code § 38-71-190",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-24/article-1/section-33-24-56-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Georgia cell: 'Codified — O.C.G.A. § 33-24-56.1; policy language cannot override it; self-funded ERISA and federal plans exempt'. South Carolina cell: 'No case law; S.C. Code § 38-71-190 — subrogation only by policy clause, insurer bears fees and costs, Director of Insurance may disallow inequitable subrogation'."
+    },
+    {
+      "surface": "body",
+      "claim": "<td><strong>Workers' Comp Lien Statute</strong></td>\n<td>O.C.G.A. &sect; 34-9-11.1</td>\n<td>S.C. Code &sect; 42-1-560</td>",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-11.1; S.C. Code § 42-1-560",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct."
+    },
+    {
+      "surface": "body",
+      "claim": "<td><strong>Workers' Comp Fee Reduction</strong></td>\n<td>One-third reduction for attorney fees/costs</td>\n<td>Proportionate reduction for fees/costs</td>",
+      "verdict": "update",
+      "currentValue": "Georgia: lien enforceable only if the worker is fully and completely compensated (§ 34-9-11.1(b)); court apportions the fee between the attorneys if the carrier recovers (§ 34-9-11.1(d)). South Carolina: lien net of fees and expenses, carrier's fee share capped at one-third of benefits paid, Commission may reduce the lien proportionally when the recovery is less than total damages (§ 42-1-560(b), (f)).",
+      "sourceName": "O.C.G.A. § 34-9-11.1(b), (d); S.C. Code § 42-1-560(b), (f)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Georgia cell: 'Lien enforceable only if worker fully and completely compensated; fee apportioned by court if carrier recovers'. South Carolina cell: 'Lien net of fees and costs; Commission may reduce lien proportionally (§ 42-1-560(f))'."
+    },
+    {
+      "surface": "body",
+      "claim": "<td><strong>Attorney Lien Statute</strong></td>\n<td>O.C.G.A. &sect; 15-19-14</td>\n<td>Common law + Rules of Professional Conduct</td>",
+      "verdict": "update",
+      "currentValue": "Georgia: O.C.G.A. § 15-19-14. South Carolina: no statute; common-law lien for costs only — fee lien only by agreement (Eleazer).",
+      "sourceName": "O.C.G.A. § 15-19-14; Eleazer v. Hardaway Concrete Co. (S.C. Ct. App. 1984) — reused from facts-1708",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-15/chapter-19/article-1/section-15-19-14/",
+      "retrievedAt": "2026-09-24",
+      "note": "South Carolina cell: 'No statute; common-law lien for costs; fee lien only by written agreement'."
+    },
+    {
+      "surface": "body",
+      "claim": "<td><strong>Medicaid Lien Authority</strong></td>\n<td>O.C.G.A. &sect; 49-4-149</td>\n<td>S.C. Code &sect; 43-7-430</td>",
+      "verdict": "update",
+      "currentValue": "South Carolina: S.C. Code §§ 43-7-430 (subrogation) and 43-7-440 (enforcement, compromise, 25 percent fee reduction, priority).",
+      "sourceName": "S.C. Code §§ 43-7-430, 43-7-440",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t43c007.php",
+      "retrievedAt": "2026-09-24",
+      "note": "South Carolina cell: 'S.C. Code §§ 43-7-430, 43-7-440'."
+    },
+    {
+      "surface": "body",
+      "claim": "<td><strong>Statute of Limitations (PI)</strong></td>\n<td>2 years (O.C.G.A. &sect; 9-3-33)</td>\n<td>3 years (S.C. Code &sect; 15-3-530)</td>",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5) (re-read 2026-09-24); writer-profile jurisdiction table",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct and matches the jurisdiction table."
+    },
+    {
+      "surface": "body",
+      "claim": "<td><strong>Comparative Fault Standard</strong></td>\n<td>Modified — barred if 50% or more at fault (O.C.G.A. &sect; 51-12-33)</td>\n<td>Modified — barred if 51% or more at fault</td>",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co., 303 S.C. 243 (1991) (plaintiff recovers if negligence 'not greater than' the defendant's) — reused from facts-1708/1702; writer-profile jurisdiction table",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Matches the jurisdiction table ('less than 51%'). Optionally add '(Nelson v. Concrete Supply Co.)' to the South Carolina cell; never cite § 15-38-15 for the plaintiff's bar."
+    },
+    {
+      "surface": "body",
+      "claim": "A hospital lien filed one day past the deadline may be unenforceable, and comparative fault findings reduce your total settlement — which also reduces what lien holders can collect.",
+      "verdict": "update",
+      "currentValue": "§ 44-14-471(b): failure to timely comply with the notice and filing requirements 'shall invalidate such lien, except as to any person, firm, or corporation liable for the damages, which receives prior to the date of any release ... or settlement, actual notice' of the notice and statement by hand delivery, certified mail or statutory overnight delivery. Georgia courts have enforced a late-filed lien against parties who had actual notice and were not prejudiced (Thomas v. McClure, 236 Ga. App. 622).",
+      "sourceName": "O.C.G.A. § 44-14-471(b) and Justia annotation (Thomas v. McClure)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-471/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'A Georgia lien that misses the notice or filing requirements is invalid — except against a liable party or insurer that received actual notice of it before settling — and comparative-fault findings reduce your total settlement, which also reduces what lien holders can collect.'"
+    },
+    {
+      "surface": "body",
+      "claim": "In Georgia, you are barred from recovery if you are 50% or more at fault under <strong>O.C.G.A. &sect; 51-12-33</strong>. In South Carolina, the threshold is slightly more favorable — you can recover as long as your fault stays below 51%.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co. (S.C. 1991) — reused from facts-1708; writer-profile jurisdiction table",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct and matches the jurisdiction table."
+    },
+    {
+      "surface": "body",
+      "claim": "Liens are negotiable. An experienced attorney can often negotiate them down to a fraction of the original claim.",
+      "verdict": "update",
+      "currentValue": "'To a fraction of the original claim' is unsourced. The statutory and procedural reductions documented in this pack (procurement-cost reduction, complete-compensation rule, Ahlborn allocation, S.C. 25 percent Medicaid reduction, Commission lien reduction) are verifiable; a blanket magnitude is not.",
+      "sourceName": "42 C.F.R. § 411.37; O.C.G.A. § 33-24-56.1; S.C. Code § 43-7-440(A)(6); S.C. Code § 42-1-560(f)",
+      "sourceUrl": "https://www.law.cornell.edu/cfr/text/42/411.37",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'Most liens can be reduced. Some reductions are written into the statutes; others come from challenging the lien's validity or amount.'"
+    },
+    {
+      "surface": "body",
+      "claim": "If a hospital missed the filing deadline, included charges for unrelated treatment, or failed to serve the correct parties, the lien may be invalid.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 44-14-471(a)-(c) (notice, filing, health-insurer-first requirement); § 44-14-470(b) (charges for the injuries giving rise to the claim); Kight v. MCG Health, 296 Ga. 687 (2015) (reasonableness of amount may be contested)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-471/",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct for Georgia. Add the 2023 ground: 'or, since July 1, 2023, never submitted the bill to your health insurer first (§ 44-14-471(c))'. Frame as Georgia-only since South Carolina has no hospital lien."
+    },
+    {
+      "surface": "body",
+      "claim": "In both Georgia and South Carolina, the made whole doctrine can reduce or eliminate health insurance subrogation claims if your settlement does not fully compensate you for all of your losses.",
+      "verdict": "update",
+      "currentValue": "Georgia: yes — a court finding that the settlement 'does not fully and completely compensate the injured party' leaves the benefit provider 'no right of reimbursement' (O.C.G.A. § 33-24-56.1(c)). South Carolina: the mechanism is a petition to the Director of Insurance to disallow subrogation that 'is inequitable and commits an injustice to the insured' (S.C. Code § 38-71-190), not a made-whole doctrine.",
+      "sourceName": "O.C.G.A. § 33-24-56.1(c); S.C. Code § 38-71-190",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c071.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'In Georgia, the complete-compensation rule can eliminate a health insurer's reimbursement claim if your settlement does not fully compensate you (§ 33-24-56.1(c)). In South Carolina, you can petition the Director of Insurance to disallow subrogation that would be inequitable (§ 38-71-190).'"
+    },
+    {
+      "surface": "body",
+      "claim": "Medicare, Medicaid, and the VA all have formal processes for requesting lien reductions. Medicare allows compromise requests when the settlement is less than the total claim value, though these require detailed documentation of the case value and the reasons a full recovery was not possible.",
+      "verdict": "update",
+      "currentValue": "Medicare: the demand is reduced for procurement costs automatically once fees and costs are reported (42 C.F.R. § 411.37); the demand letter states waiver and appeal rights; waiver may be granted 'in whole or in part' (42 U.S.C. § 1395y(b)(2)(B)(v); 42 C.F.R. § 411.28(a)); compromise follows the Federal Claims Collection rules referenced in § 411.28(b); the Fixed Percentage Option and Self-Calculated Conditional Payment Amount apply to small physical-trauma liability settlements. South Carolina Medicaid: the Department may 'settle and compromise' and must apply the 25 percent attorney-fee reduction (§ 43-7-440(A)(5)-(6)). Georgia Medicaid: the Ahlborn allocation limit. VA/FMCRA: statutory recovery rights exist (42 U.S.C. § 2651; 38 U.S.C. § 1729); the agencies' compromise and waiver regulations were not verified against a primary source in this pass.",
+      "sourceName": "42 U.S.C. § 1395y(b)(2)(B)(v); 42 C.F.R. §§ 411.28, 411.37; CMS, Demand Calculation Options; S.C. Code § 43-7-440(A)",
+      "sourceUrl": "https://www.law.cornell.edu/cfr/text/42/411.28",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'Medicare and Medicaid both have formal reduction processes. Medicare reduces its demand for your attorney's fees and costs, and you can request a waiver or compromise — with documentation of the case value and why a full recovery was not possible — or appeal the amount. South Carolina Medicaid must reduce its claim by 25 percent when you hired a lawyer and may compromise the balance; Georgia Medicaid is limited to the medical-expense share of the recovery.' Keep the VA reference generic ('the VA can also compromise its claim') or drop it."
+    },
+    {
+      "surface": "body",
+      "claim": "Workers' compensation carriers frequently agree to reduce their liens in exchange for faster resolution. Many will accept an additional reduction beyond the statutory fee offset rather than risk losing their recovery entirely at trial.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Practice statement; leverage is statutory — Georgia carrier bears the burden of proving full compensation (O.C.G.A. § 34-9-11.1(b)); South Carolina permits an agreed distribution approved by the Commission (§ 42-1-560(e)) and Commission reduction (§ 42-1-560(f))",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Firm-experience statement, not a statistic; acceptable. Optionally add why: in Georgia the carrier must prove you were fully compensated or it recovers nothing; in South Carolina the Commission can cut the lien."
+    },
+    {
+      "surface": "body",
+      "claim": "This doctrine holds that a lien holder who benefits from the attorney's efforts should bear a proportionate share of fees and costs. In both states, it effectively reduces the lien by one-third (the typical contingency fee percentage) plus a share of litigation costs.",
+      "verdict": "update",
+      "currentValue": "The share is proportional to the actual fee and costs, and for the main lien types it is fixed by statute or regulation rather than a common-fund doctrine: Georgia benefit providers — 'reduced by the pro rata amount of the attorney's fees and expenses' (§ 33-24-56.1(b)(2)); Medicare — ratio of procurement costs to the total settlement applied to the Medicare payment (42 C.F.R. § 411.37(c)); South Carolina workers' compensation — net of fees and expenses, carrier's fee share capped at one-third of benefits paid (§ 42-1-560(b)); South Carolina health insurers — fees and costs 'must be paid by the insurer from the amounts recovered' (§ 38-71-190); South Carolina Medicaid — 25 percent plus a share of costs (§ 43-7-440(A)(6)). Georgia hospital and Medicaid liens are subordinate to the attorney's lien rather than reduced, and Georgia Medicaid need not share fees where the recovery covers both (Padgett v. Toal, 261 Ga. App. 154 (2003)).",
+      "sourceName": "O.C.G.A. § 33-24-56.1(b)(2); 42 C.F.R. § 411.37(c); S.C. Code §§ 42-1-560(b), 38-71-190, 43-7-440(A)(6); Padgett v. Toal (Ga. App. 2003)",
+      "sourceUrl": "https://www.law.cornell.edu/cfr/text/42/411.37",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'Under this principle a lien holder that benefits from your attorney's work bears a proportionate share of the fees and costs. For most liens in both states the share is written into the statute — Georgia health and disability insurers, Medicare, South Carolina workers' compensation carriers, health insurers and Medicaid all take their recovery net of a share of fees and costs — and the size of the reduction tracks your actual fee agreement, not a fixed one-third.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Settlement funds are held in trust and distributed according to lien priority. Failing to properly satisfy liens can expose both you and your attorney to legal liability.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia RPC 1.15(I) and South Carolina RPC 1.15 (reused from facts-1708); 42 C.F.R. § 411.24(g) (CMS may recover from an attorney who received settlement funds); S.C. Code § 43-7-440(A)(5) (attorney liable to Medicaid after written notice); O.C.G.A. § 44-14-473(a) (lienholder's action against the liable party or insurer)",
+      "sourceUrl": "https://www.law.cornell.edu/cfr/text/42/411.24",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia's two-year statute of limitations (<strong>O.C.G.A. &sect; 9-3-33</strong>) and South Carolina's three-year deadline (<strong>S.C. Code &sect; 15-3-530</strong>) mean that delays from unresolved liens can put your entire case at risk.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5); writer-profile jurisdiction table",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct. A shorter clock applies to South Carolina workers' compensation third-party suits — one year after the carrier accepts liability or pays under an award (§ 42-1-560(b)) — worth a parenthetical."
+    },
+    {
+      "surface": "body",
+      "claim": "With offices in <strong>Savannah</strong>, <strong>Darien</strong>, <strong>Charleston</strong>, <strong>Columbia</strong>, and <strong>Myrtle Beach</strong>, we serve injury victims throughout both states. Call <strong><a href=\"tel:18447378587\">1-844-RESULTS</a></strong> or contact us online for a free consultation.",
+      "verdict": "update",
+      "currentValue": "client.json lists six offices: Savannah, Darien, Charleston, North Charleston, Columbia and Myrtle Beach. The tel: href should carry the plus sign: tel:+18447378587.",
+      "sourceName": "client.json (firm identity record); RFC 3966 tel URI form used site-wide",
+      "sourceUrl": "https://rodenlaw.com/blog/liens-and-your-personal-injury-claims/",
+      "retrievedAt": "2026-09-24",
+      "note": "Change href to tel:+18447378587. Optionally add North Charleston to the office list."
+    },
+    {
+      "surface": "body",
+      "claim": "We work on a <strong>contingency fee basis</strong> — you pay nothing unless we recover money for you. No upfront fees, no hourly charges, no out-of-pocket costs.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Firm policy statement (not a legal claim); contingent fee agreements must be in writing in both states (Georgia RPC 1.5(c); South Carolina RPC 1.5(c) — reused from facts-1708)",
+      "sourceUrl": "https://www.gabar.org/handbook/rule55",
+      "retrievedAt": "2026-09-24",
+      "note": "Firm statement; unchanged."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "Hospitals, health insurers, Medicare and attorneys can all claim part of your settlement. Which liens apply, and how they are negotiated.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 44-14-470; O.C.G.A. § 33-24-56.1; 42 U.S.C. § 1395y(b)(2)(B); O.C.G.A. § 15-19-14",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-470/",
+      "retrievedAt": "2026-09-24",
+      "note": "Acceptable as a two-state summary (hospitals hold statutory liens in Georgia; contractual claims in South Carolina). Published as the Article description."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia's hospital lien statute (O.C.G.A. § 44-14-470) and South Carolina's lien law (S.C. Code § 44-63-10) allow medical providers to claim settlement proceeds.",
+      "verdict": "update",
+      "currentValue": "Georgia's statute (O.C.G.A. §§ 44-14-470 to 44-14-477) gives hospitals, nursing homes, physician and chiropractic practices and burn-care providers a lien on the injured person's claim. South Carolina has no hospital-lien statute; § 44-63-10 is a vital-statistics section.",
+      "sourceName": "O.C.G.A. § 44-14-470; S.C. Code Title 44, Chapter 63",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t44c063.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'Georgia's provider lien statute (O.C.G.A. § 44-14-470) lets hospitals and medical practices place a lien on your claim; South Carolina has no hospital-lien statute, so providers there rely on contract.' The takeaways box renders above the article."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Federal liens from Medicare (42 U.S.C. § 1395y) take priority over state law.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "42 U.S.C. § 1395y(b)(2)(B); 42 C.F.R. § 422.108(f) (Medicare Advantage: MSP rules 'supersede any State laws')",
+      "sourceUrl": "https://www.law.cornell.edu/uscode/text/42/1395y",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct. Precise pin cite is § 1395y(b)(2)(B)."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Workers' comp liens are governed by O.C.G.A. § 34-9-11.1 in Georgia and S.C. Code § 42-1-560 in South Carolina.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-11.1; S.C. Code § 42-1-560",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "An experienced attorney can negotiate liens down by 30-50% or more to maximize your take-home recovery.",
+      "verdict": "drop",
+      "currentValue": "No primary source supports a 30-50 percent figure; the statutory reductions are case-specific (pro rata fees, procurement costs, 25 percent South Carolina Medicaid reduction, Commission reduction).",
+      "sourceName": "None (unverifiable statistic)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace with: 'An experienced attorney audits every lien, challenges invalid or unrelated charges, and applies the statutory reductions each lien holder must accept.' The takeaways box renders above the article."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "A lien is a legal claim against your settlement or judgment by a third party who paid for expenses related to your injury. Common lien holders include hospitals, health insurers, Medicare, Medicaid, workers' compensation carriers, and attorneys. Valid liens must be satisfied before you receive your share of the settlement proceeds.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "LII Wex: lien; O.C.G.A. § 44-14-470; 42 U.S.C. § 1395y(b)(2)(B); Georgia RPC 1.15(I)",
+      "sourceUrl": "https://www.law.cornell.edu/wex/lien",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct as a general definition. Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "Yes. Georgia's hospital lien statute (O.C.G.A. § 44-14-470) allows hospitals to place liens on personal injury settlements for the reasonable cost of treatment. The lien attaches to any recovery from a third-party claim. However, these liens are often negotiable, and your attorney can work to reduce the amount owed.",
+      "verdict": "keep",
+      "currentValue": "Statute says 'reasonable charges' and the lien is on the cause of action, subject to the attorney's lien; the lien does not apply to workers' compensation money (§ 44-14-474).",
+      "sourceName": "O.C.G.A. §§ 44-14-470(b), 44-14-471, 44-14-474; Kight v. MCG Health (Ga. 2015)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-470/",
+      "retrievedAt": "2026-09-24",
+      "note": "Substantively correct. Optional precision: 'reasonable charges for treating the injuries' and 'and physician practices'. Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "South Carolina's hospital lien law (S.C. Code § 44-63-10) gives hospitals the right to assert liens against personal injury recoveries. The lien must be filed with the county clerk and served on the liable party. Like Georgia, these liens can often be negotiated down, especially when the settlement does not fully compensate the victim.",
+      "verdict": "drop",
+      "currentValue": "South Carolina has no hospital-lien statute; § 44-63-10 is the opening section of the Vital Statistics chapter. There is no filing-with-the-clerk or service requirement because there is no lien.",
+      "sourceName": "S.C. Code Title 44, Chapter 63 (scstatehouse.gov); S.C. Code § 38-71-190; Shumpert v. Time Ins. Co. (S.C. Ct. App. 1998)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t44c063.php",
+      "retrievedAt": "2026-09-24",
+      "note": "This answer is republished as FAQPage structured data, so the false citation is published twice. Replacement answer: 'South Carolina has no hospital-lien statute, so a hospital or doctor cannot file a lien against your claim. A provider's right to be paid rests on your contract with it — including any assignment of benefits or letter of protection you signed — and it is negotiated like any other bill. The claims that do reach a South Carolina settlement are health-insurer subrogation (allowed only if your policy contains a subrogation clause, S.C. Code § 38-71-190), Medicaid (§§ 43-7-430, 43-7-440), Medicare, and workers' compensation (§ 42-1-560).'"
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Yes. Under federal law (42 U.S.C. § 1395y), Medicare has an automatic right of recovery against any personal injury settlement that includes compensation for medical expenses Medicare paid. This federal lien takes priority over state law and cannot be discharged in bankruptcy. Your attorney must resolve the Medicare lien before distributing settlement funds.",
+      "verdict": "update",
+      "currentValue": "Medicare's recovery right attaches to any liability settlement, judgment or award, whether or not it allocates money to medical expenses or admits liability (42 U.S.C. § 1395y(b)(2)(B)(ii)); CMS does not pursue physical-trauma liability settlements of $750 or less. Repayment is due within 60 days of the demand (42 C.F.R. § 411.24(h)) and CMS may recover from the beneficiary or the attorney who received the funds (§ 411.24(g)). No primary source was found for 'cannot be discharged in bankruptcy'.",
+      "sourceName": "42 U.S.C. § 1395y(b)(2)(B); 42 C.F.R. § 411.24(g)-(h); CMS NGHP User Guide v8.3 Ch. III (Jan. 2026)",
+      "sourceUrl": "https://www.law.cornell.edu/cfr/text/42/411.24",
+      "retrievedAt": "2026-09-24",
+      "note": "Delete 'and cannot be discharged in bankruptcy' (unverified). Rewrite: 'Yes. Under the Medicare Secondary Payer Act (42 U.S.C. § 1395y(b)), Medicare must be repaid the conditional payments it made out of any liability settlement, judgment or award, and its right overrides state law. Repayment is due within 60 days of Medicare's demand, with interest after that, and Medicare can collect from you or your attorney if the money is paid out first — so the Medicare claim must be resolved before funds are distributed.' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Absolutely. Experienced personal injury attorneys routinely negotiate liens down, sometimes by 30-50% or more. Common strategies include invoking the made-whole doctrine, demonstrating that reducing the lien is in everyone's interest, and leveraging federal anti-lien protections where applicable.",
+      "verdict": "update",
+      "currentValue": "The 30-50 percent figure is unverifiable. Verified strategies: Georgia's complete-compensation rule (O.C.G.A. § 33-24-56.1) and South Carolina's § 38-71-190 petition; the Medicaid anti-lien limit to the medical-expense share (42 U.S.C. § 1396p(a)(1); Ahlborn; Wos; Gallardo); Medicare procurement-cost reduction, dispute of unrelated charges, waiver and compromise (42 C.F.R. §§ 411.37, 411.28); statutory fee-sharing (S.C. Code §§ 42-1-560(b), 43-7-440(A)(6)); lien-validity defenses (O.C.G.A. § 44-14-471).",
+      "sourceName": "O.C.G.A. § 33-24-56.1; 42 U.S.C. § 1396p(a)(1); Ahlborn (2006); 42 C.F.R. §§ 411.28, 411.37; S.C. Code §§ 38-71-190, 42-1-560, 43-7-440",
+      "sourceUrl": "https://www.law.cornell.edu/supremecourt/text/04-1506",
+      "retrievedAt": "2026-09-24",
+      "note": "Delete 'sometimes by 30-50% or more'. Rewrite: 'Yes. Experienced personal injury attorneys routinely reduce liens by challenging invalid or unrelated charges, invoking Georgia's complete-compensation rule or South Carolina's statutory limits on health-insurer subrogation, applying the federal rule that limits Medicaid to the medical-expense share of a recovery, and using Medicare's fee-reduction, waiver and compromise procedures.' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "Ignoring a valid lien can have serious consequences. The lien holder can sue you to recover the full amount, and your attorney may face ethical obligations to hold settlement funds until liens are resolved. In some cases, ignoring Medicare or Medicaid liens can result in penalties and loss of future benefits.",
+      "verdict": "update",
+      "currentValue": "Georgia provider liens give 'no right of action against the patient' — the lienholder sues the liable party or its insurer (O.C.G.A. §§ 44-14-470(b), 44-14-473(a); Hospital Auth. v. Boyd). Health insurers, workers' compensation carriers and Medicaid can pursue the recipient or the attorney who disbursed with notice (S.C. Code § 43-7-440(A)(4)-(5); Provident Life v. Driver (S.C. Ct. App. 1994)). Medicare: interest from the demand date, referral to the Treasury Offset Program after about 150 days, possible Department of Justice action, and recovery from the attorney (42 C.F.R. § 411.24(g); CMS recovery process step 7) — not loss of Medicare benefits. South Carolina Medicaid: 'continued eligibility for medical assistance ... is contingent on his cooperation', which 'includes ... reimbursing the department from proceeds or payments received' (§ 43-7-430(B)) — so loss of eligibility is a real consequence for Medicaid there.",
+      "sourceName": "O.C.G.A. § 44-14-473(a); 42 C.F.R. § 411.24(g); CMS, Medicare's Recovery Process; S.C. Code §§ 43-7-430(B), 43-7-440(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t43c007.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'Ignoring a valid lien has serious consequences. Insurers, workers' compensation carriers and Medicaid can sue to recover what they are owed (in Georgia, a hospital enforces its lien against the at-fault party or its insurer), and your attorney must hold disputed funds in trust until the claims are resolved. Medicare charges interest on unpaid demands, refers unpaid debts to the U.S. Treasury for offset, and can collect from your attorney; in South Carolina, continued Medicaid eligibility depends on cooperating with the agency's reimbursement claim.' Publishes as FAQPage structured data."
+    }
+  ],
+  "recommendedEdits": [
+    "Replace the entire 'South Carolina Hospital Liens' section: South Carolina has no hospital-lien statute; S.C. Code § 44-63-10 is the Vital Statistics chapter. State that providers rely on contract (assignment of benefits / letter of protection) and that the claims reaching a South Carolina settlement are health-insurer subrogation (§ 38-71-190), Medicaid (§§ 43-7-430, 43-7-440), Medicare and workers' compensation (§ 42-1-560). Delete the '90 days of discharge' filing rule.",
+    "Rewrite faq:2 (South Carolina medical liens) with the replacement answer in the pack — the false citation currently publishes twice, in the answer and in the FAQPage JSON-LD.",
+    "Fix the comparison table: Hospital Lien Statute (SC: none), Hospital Lien Filing Deadline (GA: 75 days after discharge for hospitals / 90 days after first treatment for physician and chiropractic practices, 15 days' prior notice; SC: not applicable), Made Whole Doctrine (GA: codified at O.C.G.A. § 33-24-56.1, policy language cannot override; SC: no case law, § 38-71-190), Workers' Comp Fee Reduction (GA: enforceable only if fully and completely compensated; SC: net of fees, Commission may reduce), Attorney Lien Statute (SC: no statute; common-law lien for costs only), Medicaid Lien Authority (SC: §§ 43-7-430, 43-7-440).",
+    "Key takeaways: remove the S.C. Code § 44-63-10 citation and the '30-50% or more' statistic (the box renders above the article).",
+    "Georgia hospital liens: drop the 'Hospital Lien Act' label; say the lien is on the cause of action, subordinate to the attorney's lien, and limited to reasonable charges for treating the injuries; add the 15-day prior written notice, the second filing county (patient's residence), the 90-day window for physician and chiropractic practices, and the 2023 rule that the provider must first bill the patient's health insurer and be rejected (§ 44-14-471(c)). Cite § 44-14-474 for the workers' compensation exclusion. Correct the contents of the verified statement (patient's name and address, provider, admission/discharge or treatment dates, amount; liable parties go in the pre-filing notice).",
+    "Delete 'Both states also allow ambulance services and emergency medical providers to file similar liens.'",
+    "Physician liens: in Georgia physician and chiropractic practices hold the same statutory lien as hospitals (90 days from first treatment); only South Carolina physician claims are purely contractual.",
+    "Health-insurer section: cite O.C.G.A. § 33-24-56.1 for Georgia's complete-compensation rule, add the pro rata fee reduction, and correct the override claim — Georgia-regulated policies cannot contract around the statute (§ 33-24-56.1(j); Davis v. Kaiser); only self-funded ERISA plans (FMC Corp. v. Holliday), federal-employee plans and federal programs escape it. Add Sereboff/Montanile: a self-funded plan's remedy is limited to the identifiable settlement fund.",
+    "South Carolina subrogation: replace 'also recognizes the made whole doctrine' with the § 38-71-190 rules (subrogation only by policy clause and only up to benefits paid; insurer pays fees and costs from the recovery; Director of Insurance may disallow inequitable subrogation; Shumpert v. Time Ins. Co.). Apply the same correction in the 'Apply the Made Whole Doctrine' negotiation section.",
+    "Medicare: delete 'cannot be waived' (42 U.S.C. § 1395y(b)(2)(B)(v) and 42 C.F.R. § 411.28 authorize waiver and compromise, and the post's own compromise section contradicts it); drop 'that includes compensation for medical expenses'; add the BCRC process, the 60-day repayment period, interest, Treasury referral, the procurement-cost reduction (42 C.F.R. § 411.37) and the $750 no-recovery threshold for physical-trauma liability settlements (maintained for 2026). Reword the double-damages sentence per the pack. Replace 'often inflated' with the verifiable dispute-unrelated-charges process.",
+    "Add one sentence that Medicare Advantage plans assert the same secondary-payer recovery rights (42 C.F.R. § 422.108(d), (f)).",
+    "Medicaid: cite South Carolina as §§ 43-7-430 and 43-7-440; add the 25 percent attorney-fee reduction and compromise authority (§ 43-7-440(A)(5)-(6)); add Wos v. E.M.A. (2013) and Gallardo v. Marstiller (2022) after Ahlborn.",
+    "VA: rename 'Veterans Administration' to 'Department of Veterans Affairs (VA)'; cite the Federal Medical Care Recovery Act, 42 U.S.C. § 2651, alongside 38 U.S.C. § 1729 (and note it also covers TRICARE); delete 'with enforcement authority similar to Medicare'.",
+    "Georgia workers' compensation: add that the § 34-9-11.1(b) lien is limited to disability, death and medical benefits paid and is enforceable only if the carrier proves the worker was fully and completely compensated for all economic and noneconomic losses; delete the 'one-third reduction' label and describe § 34-9-11.1(d) fee apportionment instead; change 'must receive notice ... and an opportunity to participate' to the right to intervene.",
+    "South Carolina workers' compensation: add the 30-day notice of suit to the Commission, employer and carrier, the one-year deadline after the carrier accepts liability or pays under an award (after which the claim can pass to the carrier), and state that the fee/expense reduction and proportional lien reduction are statutory (§ 42-1-560(b), (f)).",
+    "Attorney liens: reuse the facts-1708 corrections — South Carolina has no statute, its common-law lien covers costs only and a fee lien exists only by written agreement (Eleazer); drop 'typically one-third of the gross recovery' and the unverified priority-over-contractual-liens sentence; rewrite the 'off the top' paragraph as in the pack (Georgia attorney's lien superior to all but tax liens; federal claims reduced, not subordinated; South Carolina claim-by-claim).",
+    "Common-fund section: replace 'effectively reduces the lien by one-third' with the statute-by-statute proportional shares listed in the pack.",
+    "Soften 'A hospital lien filed one day past the deadline may be unenforceable' to reflect the actual-notice exception in § 44-14-471(b); soften 'negotiate them down to a fraction of the original claim'.",
+    "faq:3: delete 'cannot be discharged in bankruptcy'; add the 60-day repayment rule. faq:4: delete '30-50% or more'. faq:5: correct 'can sue you' for Georgia hospital liens (they sue the liable party/insurer), replace 'loss of future benefits' for Medicare with interest and Treasury offset, and keep loss of eligibility only for South Carolina Medicaid (§ 43-7-430(B)).",
+    "Change the phone href from tel:18447378587 to tel:+18447378587; optionally add North Charleston to the office list (client.json lists six offices).",
+    "Rename 'Cornell Law Institute's overview of liens' to 'Legal Information Institute's overview of liens' (Cornell Law School); keep the URL."
+  ],
+  "statuteCitations": [
+    {
+      "section": "O.C.G.A. § 44-14-470",
+      "name": "Lien on causes of action accruing to injured person for costs of care and treatment — hospitals, nursing homes, physician practices, chiropractic practices (2023) and traumatic burn care practices; lien on the cause of action only, subject to any attorney's lien; not a lien against the patient",
+      "url": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-470/"
+    },
+    {
+      "section": "O.C.G.A. § 44-14-471",
+      "name": "Filing of verified statement; contents; notice — 15 days' prior written notice to patient and liable parties/insurers; verified statement filed in the provider's county and the patient's county within 75 days after discharge (hospitals, nursing homes, burn care) or 90 days after first treatment (physician and chiropractic practices); untimely lien invalid except against parties with actual notice; since July 1, 2023 unenforceable unless first submitted to the patient's health insurer and rejected",
+      "url": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-471/"
+    },
+    {
+      "section": "O.C.G.A. § 44-14-472",
+      "name": "Duties of clerk; lien book; fee",
+      "url": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-472/"
+    },
+    {
+      "section": "O.C.G.A. § 44-14-473",
+      "name": "Effect of covenant not to bring an action; action to enforce lien; one-year limitation; affidavit of payment — release ineffective against a perfected lien unless the lienholder joins; lienholder may sue the liable party or its insurer within one year after liability is finally determined",
+      "url": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-473/"
+    },
+    {
+      "section": "O.C.G.A. § 44-14-474",
+      "name": "Exemptions from part — 'This part shall not apply to any moneys becoming due under Chapter 9 of Title 34' (workers' compensation)",
+      "url": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-474/"
+    },
+    {
+      "section": "O.C.G.A. § 44-14-475",
+      "name": "Settlements or releases made before the patient entered the hospital or first sought treatment are not subject to the part",
+      "url": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-475/"
+    },
+    {
+      "section": "O.C.G.A. § 44-14-476",
+      "name": "No independent right of action for the provider to determine liability",
+      "url": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-476/"
+    },
+    {
+      "section": "O.C.G.A. § 44-14-477",
+      "name": "False swearing in affidavits under § 44-14-473",
+      "url": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-477/"
+    },
+    {
+      "section": "O.C.G.A. § 33-24-56.1",
+      "name": "Reimbursement of medical expense or disability benefit providers in personal injury cases; subrogation prohibited; notice — the 'complete compensation' rule: reimbursement only if the recovery exceeds all economic and noneconomic losses, reduced pro rata for attorney's fees and expenses; court may declare no right of reimbursement; conflicting policy provisions unenforceable (j); does not apply to Medicaid or § 34-9-11.1 (l)",
+      "url": "https://law.justia.com/codes/georgia/title-33/chapter-24/article-1/section-33-24-56-1/"
+    },
+    {
+      "section": "O.C.G.A. § 49-4-149",
+      "name": "Lien of Department of Community Health against third parties; subrogation; assignment — Medicaid lien perfected under the hospital-lien procedure with one year from the last item of care to file; does not affect the priority of any attorney's lien",
+      "url": "https://law.justia.com/codes/georgia/title-49/chapter-4/article-7/section-49-4-149/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-11.1",
+      "name": "Employee's right of action against person other than employer; subrogation lien of employer or insurer limited to disability, death and medical benefits paid and recoverable only if the employee has been fully and completely compensated for all economic and noneconomic losses; right to intervene; one-year rule; attorney fee apportionment (d) — reused from facts-1650/1702, re-read 2026-09-24",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/"
+    },
+    {
+      "section": "O.C.G.A. § 15-19-14",
+      "name": "Attorney's liens — (a) retaining lien on client papers and money; (b) lien on actions, judgments and decrees for money, superior to all liens except tax liens — reused from facts-1708",
+      "url": "https://law.justia.com/codes/georgia/title-15/chapter-19/article-1/section-15-19-14/"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-33",
+      "name": "Injuries to the person — two-year limitation (reused from facts-1708)",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-33",
+      "name": "Apportionment of damages; plaintiff 50 percent or more responsible recovers nothing (g) (reused from facts-1708)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+    },
+    {
+      "section": "S.C. Code § 38-71-190",
+      "name": "Subrogation of insurer to insured's rights against third party — accident and health policies 'may include' subrogation for not more than benefits paid; Director of Insurance may disallow subrogation found 'inequitable'; attorneys' fees and costs must be paid by the insurer from the amounts recovered",
+      "url": "https://www.scstatehouse.gov/code/t38c071.php"
+    },
+    {
+      "section": "S.C. Code § 43-7-420",
+      "name": "Assignment of Medicaid recipient's third-party recovery rights to the Department of Health and Human Services, to the extent of medical assistance paid",
+      "url": "https://www.scstatehouse.gov/code/t43c007.php"
+    },
+    {
+      "section": "S.C. Code § 43-7-430",
+      "name": "Subrogation of rights to department — automatic, 'only to the extent of the amount of medical assistance paid by Medicaid'; continued eligibility contingent on cooperation, including reimbursing the department from third-party proceeds",
+      "url": "https://www.scstatehouse.gov/code/t43c007.php"
+    },
+    {
+      "section": "S.C. Code § 43-7-440",
+      "name": "Enforcement and superiority of department's subrogation rights — may intervene, sue, settle and compromise; reduces amount due by 25 percent for attorney's fees plus a proportional share of costs; attorney not liable without written notice; department's right superior to any right of reimbursement, subrogation or indemnity of a third party or recipient",
+      "url": "https://www.scstatehouse.gov/code/t43c007.php"
+    },
+    {
+      "section": "S.C. Code § 42-1-550",
+      "name": "Rights against third persons prior to award (reused from facts-1650)",
+      "url": "https://www.scstatehouse.gov/code/t42c001.php"
+    },
+    {
+      "section": "S.C. Code § 42-1-560",
+      "name": "Third-party liability — carrier's lien on the recovery net of reasonable expenses including attorney fees; carrier's fee share set by the Commission, capped at one-third of the amount it paid; suit within one year after the carrier accepts liability or pays under an award, else assignment to the carrier after 20 days' notice; 30-day notice of suit; Commission may reduce the lien proportionally when the recovery is less than total damages (f) — reused from facts-1650/1702, re-read 2026-09-24",
+      "url": "https://www.scstatehouse.gov/code/t42c001.php"
+    },
+    {
+      "section": "S.C. Code § 15-3-530",
+      "name": "Three-year limitation, including (5) injury to the person (re-read 2026-09-24)",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "S.C. Code Title 44, Chapter 63",
+      "name": "Vital Statistics — § 44-63-10 'Duties of Department of Health and Environmental Control'; the chapter the post miscites as a hospital-lien statute. South Carolina has no hospital-lien statute — drop",
+      "url": "https://www.scstatehouse.gov/code/t44c063.php"
+    },
+    {
+      "section": "42 U.S.C. § 1395y(b)(2)(B)",
+      "name": "Medicare Secondary Payer Act — conditional payments (i); repayment required, 60-day period and interest (ii); action by the United States and double damages against responsible entities (iii); subrogation (iv); waiver (v); claims-filing period (vi); (b)(9) threshold exception",
+      "url": "https://www.law.cornell.edu/uscode/text/42/1395y"
+    },
+    {
+      "section": "42 C.F.R. § 411.24",
+      "name": "Recovery of conditional payments — (c)(2) double the amount when CMS must take legal action against the primary payer; (g) recovery from any entity that received a primary payment, including a beneficiary or attorney; (h) reimbursement within 60 days; (i)(3) procurement costs per § 411.37",
+      "url": "https://www.law.cornell.edu/cfr/text/42/411.24"
+    },
+    {
+      "section": "42 C.F.R. § 411.28",
+      "name": "Waiver of recovery and compromise of claims — CMS may waive in whole or in part; compromise under part 401 subpart F and § 405.376",
+      "url": "https://www.law.cornell.edu/cfr/text/42/411.28"
+    },
+    {
+      "section": "42 C.F.R. § 411.37",
+      "name": "Amount of Medicare recovery when a primary payment is made as a result of a judgment or settlement — procurement-cost reduction: ratio of procurement costs to total settlement applied to the Medicare payment; if Medicare payments equal or exceed the settlement, recovery is the settlement minus total procurement costs",
+      "url": "https://www.law.cornell.edu/cfr/text/42/411.37"
+    },
+    {
+      "section": "42 C.F.R. § 422.108",
+      "name": "Medicare Advantage secondary payer procedures — MA organization may bill liability insurers and the enrollee to the extent paid; MSP rules supersede state law",
+      "url": "https://www.law.cornell.edu/cfr/text/42/422.108"
+    },
+    {
+      "section": "42 U.S.C. § 1396a(a)(25)",
+      "name": "Medicaid third-party liability — state must ascertain third-party liability and seek reimbursement to the extent of that liability",
+      "url": "https://www.law.cornell.edu/uscode/text/42/1396a"
+    },
+    {
+      "section": "42 U.S.C. § 1396k(a)(1)(A)",
+      "name": "Assignment to the state of rights to payment for medical care from any third party as a condition of Medicaid eligibility",
+      "url": "https://www.law.cornell.edu/uscode/text/42/1396k"
+    },
+    {
+      "section": "42 U.S.C. § 1396p(a)(1)",
+      "name": "Medicaid anti-lien provision — no lien against a recipient's property on account of medical assistance paid, subject to stated exceptions",
+      "url": "https://www.law.cornell.edu/uscode/text/42/1396p"
+    },
+    {
+      "section": "42 U.S.C. § 2651",
+      "name": "Federal Medical Care Recovery Act — United States recovers the reasonable value of care it furnished or paid for from the tortfeasor or insurer; subrogation and assignment",
+      "url": "https://www.law.cornell.edu/uscode/text/42/2651"
+    },
+    {
+      "section": "38 U.S.C. § 1729",
+      "name": "Recovery by the United States of the cost of certain VA care for non-service-connected disabilities (workers' compensation, compulsory auto insurance states, crime-victim programs, health-plan contracts); subrogation; intervention; suit after 180 days",
+      "url": "https://www.law.cornell.edu/uscode/text/38/1729"
+    },
+    {
+      "section": "29 U.S.C. § 1144(b)(2)(A)-(B)",
+      "name": "ERISA saving clause (state laws regulating insurance preserved) and deemer clause (a plan shall not be deemed an insurer) — basis for the self-funded/insured plan distinction",
+      "url": "https://www.law.cornell.edu/uscode/text/29/1144"
+    }
+  ],
+  "authoritativeLinks": [
+    {
+      "name": "CMS — Medicare's Recovery Process (BCRC steps: reporting, Rights and Responsibilities letter, Conditional Payment Letter within 65 days, disputes, demand letter, interest, Intent to Refer at day 90, Treasury referral at 150 days, double damages)",
+      "url": "https://www.cms.gov/medicare/coordination-benefits-recovery/beneficiary-services/recovery-process"
+    },
+    {
+      "name": "CMS — Demand Calculation Options (Self-Calculated Conditional Payment Amount for physical-trauma settlements up to $25,000; Fixed Percentage Option for settlements of $10,000 or less effective October 2, 2023)",
+      "url": "https://www.cms.gov/medicare/coordination-benefits-recovery/beneficiary-services/demand-calculation-options"
+    },
+    {
+      "name": "CMS — MMSEA Section 111 NGHP User Guide, Chapter III: Policy Guidance, v8.3 (January 2026) — $750 threshold for physical-trauma liability settlements maintained as of January 1, 2026",
+      "url": "https://www.cms.gov/files/document/mmsea-111-january-5-2026-nghp-user-guide-version-8-3-chapter-iii-policy-guidance.pdf"
+    },
+    {
+      "name": "CMS — 2025 Recovery Thresholds for Certain Liability Insurance, No-Fault Insurance and Workers' Compensation Settlements ($750; not applicable to ingestion, implantation or exposure cases)",
+      "url": "https://www.cms.gov/files/document/2025-recovery-thresholds-certain-liability-insurance-no-fault-insurance-and-workers-compensation.pdf"
+    },
+    {
+      "name": "Arkansas Dept. of Health & Human Servs. v. Ahlborn, 547 U.S. 268 (2006) — Medicaid may recover only from the portion of a settlement representing medical expenses; anti-lien provision bars the remainder",
+      "url": "https://www.law.cornell.edu/supremecourt/text/04-1506"
+    },
+    {
+      "name": "Wos v. E.M.A., 568 U.S. 627 (2013) — federal anti-lien provision preempts a state's irrebuttable presumption that one-third of a recovery is medical",
+      "url": "https://www.law.cornell.edu/supremecourt/text/12-98"
+    },
+    {
+      "name": "Gallardo v. Marstiller, 596 U.S. 420 (2022) — Medicaid may recover from settlement amounts allocated to future as well as past medical care",
+      "url": "https://www.law.cornell.edu/supremecourt/text/20-1263"
+    },
+    {
+      "name": "Montanile v. Board of Trustees of the National Elevator Industry Health Benefit Plan, 577 U.S. 136 (2016) — ERISA plan cannot enforce its equitable lien against a participant's general assets once the settlement is dissipated on nontraceable items",
+      "url": "https://www.law.cornell.edu/supremecourt/text/14-723"
+    },
+    {
+      "name": "Sereboff v. Mid Atlantic Medical Services, Inc., 547 U.S. 356 (2006) — plan's reimbursement claim against identifiable settlement funds is 'appropriate equitable relief' under ERISA § 502(a)(3)",
+      "url": "https://www.law.cornell.edu/supct/html/05-260.ZS.html"
+    },
+    {
+      "name": "FMC Corp. v. Holliday, 498 U.S. 52 (1990) — ERISA's deemer clause exempts self-funded plans from state anti-subrogation laws",
+      "url": "https://www.law.cornell.edu/supct/html/89-1048.ZS.html"
+    },
+    {
+      "name": "Shumpert v. Time Ins. Co., 329 S.C. 605, 496 S.E.2d 653 (S.C. Ct. App. 1998) — a health insurer whose policy lacks a subrogation provision under § 38-71-190 is not entitled to subrogation",
+      "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/1998/2782-3.html"
+    },
+    {
+      "name": "Provident Life & Accident Ins. Co. v. Driver, 451 S.E.2d 924 (S.C. Ct. App. 1994) — health insurer's subrogation claim against the insured's settlement enforced; insurer ordinarily bears a proportionate share of the litigation expenses",
+      "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/1994/2268-3.html"
+    },
+    {
+      "name": "Breeden v. TCW, Inc., 355 S.C. 112 (S.C. 2003) — § 42-1-560 is a subrogation statute; Commission may reduce the carrier's lien in proportion to the settlement's share of total cognizable damages (§ 42-1-560(f))",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/2003/25652.html"
+    },
+    {
+      "name": "Eleazer v. Hardaway Concrete Co., 281 S.C. 344, 315 S.E.2d 174 (S.C. Ct. App. 1984) — South Carolina's common-law attorney's lien covers costs and disbursements only; a fee lien exists only by express agreement (reused from facts-1708)",
+      "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/281-s-c-344-2.html"
+    },
+    {
+      "name": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991) — modified comparative negligence; plaintiff recovers if fault is not greater than the defendant's (reused from facts-1708/1702)",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+    },
+    {
+      "name": "Justia annotations to O.C.G.A. § 33-24-56.1 — Davis v. Kaiser Found. Health Plan of Ga., 271 Ga. 508 (1999) (complete compensation is Georgia public policy; contrary policy provision unenforceable); Thurman v. State Farm, 278 Ga. 162 (2004) and Blue Cross Blue Shield of Ga. v. Gunter, 541 F.3d 1320 (11th Cir. 2008) (federal-employee plans not subject to the rule); Summerlin v. Georgia-Pacific (M.D. Ga. 2005) (self-funded ERISA plan exempt under the deemer clause)",
+      "url": "https://law.justia.com/codes/georgia/title-33/chapter-24/article-1/section-33-24-56-1/"
+    },
+    {
+      "name": "Justia annotations to O.C.G.A. § 44-14-470 — Ramsey v. Sumner (attorney's lien priority); Holland v. State Farm (hospital and Medicaid liens subject to attorney's lien); Thomas v. McClure (late-filed lien enforced against parties with actual notice); Kight v. MCG Health, 296 Ga. 687 (2015) and Bowden v. Medical Center, 309 Ga. 188 (2020) (chargemaster-rate liens; reasonableness may be contested); MCG Health v. Owners Ins. Co. (strict construction; TRICARE)",
+      "url": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-470/"
+    },
+    {
+      "name": "Justia annotations to O.C.G.A. § 34-9-11.1 — City of Warner Robins v. Baker (2002), Donegal Mut. Ins. Group v. Jarrett (2022) and McLeod v. BITCO Ins. Cos. (2025) (employer bears the burden of proving full and complete compensation; lump-sum settlements); Simpson v. Southwire Co. (2001) (fee apportionment only when the employer recovers on its lien); SunTrust Bank v. Travelers (2013) (carrier excluded from settlement not bound)",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/"
+    },
+    {
+      "name": "Justia annotations to O.C.G.A. § 49-4-149 — Padgett v. Toal, 261 Ga. App. 154 (2003) (complete-compensation rule does not apply to the Medicaid lien; no fee reduction where the recovery covers both); Richards v. Ga. Dept. of Community Health, 278 Ga. 757 (2004) (pre-Ahlborn; lien applied to whole recovery — superseded on that point)",
+      "url": "https://law.justia.com/codes/georgia/title-49/chapter-4/article-7/section-49-4-149/"
+    },
+    {
+      "name": "Legal Information Institute, Cornell Law School — Wex: lien (the overview the post links; anchor text should say 'Legal Information Institute')",
+      "url": "https://www.law.cornell.edu/wex/lien"
+    }
+  ]
+}

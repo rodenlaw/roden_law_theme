@@ -1,0 +1,14 @@
+[
+ {
+  "id": "4344",
+  "surface": "content",
+  "before": "<nav class=\"toc-box\" aria-label=\"Table of Contents\">\n<h2>Table of Contents</h2>\n<ul>\n<li><a href=\"#folly-road-overview\">Folly Road: James Island's Most Dangerous Corridor</a></li>\n<li><a href=\"#why-so-dangerous\">Why Folly Road Is One of Charleston's Most Crash-Prone Roads</a></li>\n<li><a href=\"#dangerous-sections\">Where Folly Road's Conflict Points Are</a></li>\n<li><a href=\"#common-accident-types\">Common Types of Car Accidents on Folly Road</a></li>\n<li><a href=\"#injuries\">Injuries From Folly Road Crashes</a></li>\n<li><a href=\"#who-is-liable\">Who Is Liable for an Accident on Folly Road?</a></li>\n<li><a href=\"#comparative-fault\">South Carolina's Comparative Fault Rule and Folly Road Crashes</a></li>\n<li><a href=\"#filing-deadlines\">Filing Deadlines for Charleston Area Car Accident Claims</a></li>\n<li><a href=\"#what-to-do\">What to Do After an Accident on Folly Road</a></li>\n<li><a href=\"#how-lawyer-helps\">How a James Island Car Accident Lawyer Can Help</a></li>\n<li><a href=\"#faqs\">Frequently Asked Questions</a></li>\n</ul>\n</nav>",
+  "after": "<nav class=\"toc-box\" aria-label=\"Table of Contents\">\n<h2>Table of Contents</h2>\n<ul>\n<li><a href=\"#folly-road-overview\">Folly Road: James Island's Main Corridor</a></li>\n<li><a href=\"#why-so-dangerous\">Why Folly Road Is One of Charleston's Most Crash-Prone Roads</a></li>\n<li><a href=\"#dangerous-sections\">Where Folly Road's Conflict Points Are</a></li>\n<li><a href=\"#common-accident-types\">Common Types of Car Accidents on Folly Road</a></li>\n<li><a href=\"#injuries\">Injuries From Folly Road Crashes</a></li>\n<li><a href=\"#who-is-liable\">Who Is Liable for an Accident on Folly Road?</a></li>\n<li><a href=\"#comparative-fault\">South Carolina's Comparative Fault Rule and Folly Road Crashes</a></li>\n<li><a href=\"#filing-deadlines\">Filing Deadlines for Charleston Area Car Accident Claims</a></li>\n<li><a href=\"#what-to-do\">What to Do After an Accident on Folly Road</a></li>\n<li><a href=\"#how-lawyer-helps\">How a James Island Car Accident Lawyer Can Help</a></li>\n<li><a href=\"#faqs\">Frequently Asked Questions</a></li>\n</ul>\n</nav>"
+ },
+ {
+  "id": "4344",
+  "surface": "content",
+  "before": "<h2 id=\"folly-road-overview\">Folly Road: James Island's Most Dangerous Corridor</h2>",
+  "after": "<h2 id=\"folly-road-overview\">Folly Road: James Island's Main Corridor</h2>"
+ }
+]
