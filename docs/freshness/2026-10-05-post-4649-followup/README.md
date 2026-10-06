@@ -32,9 +32,13 @@ line sits in a collapsed FAQ, confirmed in the DOM and JSON-LD), JSON-LD parses,
 2026-10-05T22:01:29. `bin/check-unslashed-post-writes.php` PASS (static and live). `content/meta.json` regenerated: only
 this page changed.
 
-**Title not changed** (owner said "apply", not "apply and retitle"). "Savannah's Deadliest Freight Corridor" is still
-contradicted by FARS (Chatham 2020–24: I-95 26 deaths, I-16 14). Suggested: "I-16 Truck Accidents in Savannah: Port Freight,
-Construction Zones and Your Rights".
+**Retitled 2026-10-06** (owner: "retitle 4649"). "I-16 Truck Accidents: Savannah's Deadliest Freight Corridor" →
+"I-16 Truck Accidents in Savannah: Port Freight, Construction Zones and Your Rights". The old title was contradicted by FARS
+(Chatham 2020–24: I-95 26 deaths, I-16 14). Slug unchanged. Written with `retitle.php` (wp_update_post( wp_slash() ));
+post_modified became 2026-10-06 12:31:27. The featured image (attachment 6405) carried the old title as its alt text, which
+also rendered as og:image:alt and twitter:image:alt; `featured-alt.php` set it to the new title. The attachment's own
+post_title still holds the old wording (not rendered on the page). Live in Chrome: <title>, H1, og:title, BlogPosting
+headline and image alts all carry the new title; "Deadliest" no longer appears anywhere in the page HTML.
 
 Not verified directly: the text of O.C.G.A. § 40-1-8 (Justia/FindLaw refused), so the page states the FMCSR adoption
 without that cite.
