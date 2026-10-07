@@ -33,6 +33,7 @@ require_once get_template_directory() . '/inc/intake-webhook.php';
 require_once get_template_directory() . '/inc/content-guardrails.php';
 require_once get_template_directory() . '/inc/link-guardrails.php';
 require_once get_template_directory() . '/inc/research-charts.php';
+require_once get_template_directory() . '/inc/security-headers.php';
 
 // Belt-and-suspenders: verify template-tags loaded (require retries if require_once cached a failure)
 if ( ! function_exists( 'roden_breadcrumb_html' ) ) {
