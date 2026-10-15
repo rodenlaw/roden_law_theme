@@ -38,10 +38,9 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
             <?php endif; ?>
             <span class="post-date"><?php echo esc_html( get_the_date() ); ?></span>
             <?php
-            $modified = get_the_modified_date( 'U' );
-            $published = get_the_date( 'U' );
-            if ( $modified && ( $modified - $published ) > 86400 ) : ?>
-                <span class="post-updated"><?php esc_html_e( 'Updated:', 'roden-law' ); ?> <?php echo esc_html( get_the_modified_date() ); ?></span>
+            $updated_ts = roden_updated_byline_ts(); // a recorded content change, never post_modified
+            if ( $updated_ts ) : ?>
+                <span class="post-updated"><?php esc_html_e( 'Updated:', 'roden-law' ); ?> <?php echo esc_html( roden_format_long_date( $updated_ts ) ); ?></span>
             <?php endif; ?>
             <span class="post-read-time"><?php printf( /* translators: %d: reading time in minutes. */ esc_html__( '%d min read', 'roden-law' ), (int) roden_reading_time() ); ?></span>
             <?php echo roden_last_reviewed_html(); // escaped in the helper; '' when unset ?>

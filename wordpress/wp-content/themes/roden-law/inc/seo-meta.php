@@ -889,7 +889,7 @@ function roden_output_open_graph() {
     // Article-specific.
     if ( is_singular( 'post' ) ) {
         $og['article:published_time'] = get_the_date( 'c' );
-        $og['article:modified_time']  = get_the_modified_date( 'c' );
+        $og['article:modified_time']  = roden_content_modified_iso();
         $og['article:author']         = get_the_author();
     }
 
