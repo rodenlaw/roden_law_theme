@@ -579,7 +579,7 @@ function roden_schema_legal_service( $firm ) {
         $schema['description'] = roden_schema_clean_description( get_the_ID() );
 
         // dateModified — critical AI freshness signal (+40% citation boost with recency)
-        $schema['dateModified'] = get_the_modified_date( 'c' );
+        $schema['dateModified'] = roden_content_modified_iso();
 
         $is_intersection = function_exists( 'roden_is_intersection_page' ) && roden_is_intersection_page();
 
@@ -677,7 +677,7 @@ function roden_schema_class_action( $firm, $type ) {
         'isPartOf'    => array( '@id' => $firm['url'] . '/#legalservice' ),
         'provider'    => array( '@id' => $firm['url'] . '/#organization' ),
         // dateModified — AI freshness signal, mirrors the PA LegalService.
-        'dateModified' => get_the_modified_date( 'c' ),
+        'dateModified' => roden_content_modified_iso(),
     );
 
     if ( 'hub' === $type ) {
@@ -1899,7 +1899,7 @@ function roden_schema_speakable_practice_area() {
         '@id'           => $url . '#webpage',
         'name'          => get_the_title(),
         'datePublished' => get_the_date( 'c' ),
-        'dateModified'  => get_the_modified_date( 'c' ),
+        'dateModified'  => roden_content_modified_iso(),
         'author'        => roden_schema_author_node( get_the_ID(), $firm ),
         'isPartOf'      => array( '@id' => $firm['url'] . '/#website' ),
         'about'         => array( '@id' => $firm['url'] . '/#organization' ),
@@ -1940,7 +1940,7 @@ function roden_schema_speakable_location() {
         '@type'        => 'WebPage',
         '@id'          => $url . '#webpage',
         'name'         => get_the_title(),
-        'dateModified' => get_the_modified_date( 'c' ),
+        'dateModified' => roden_content_modified_iso(),
         'author'       => roden_schema_author_node( get_the_ID(), $firm ),
         'isPartOf'     => array( '@id' => $firm['url'] . '/#website' ),
         'about'        => array( '@id' => $firm['url'] . '/#organization' ),
@@ -2000,7 +2000,7 @@ function roden_schema_article( $firm ) {
         'description'   => html_entity_decode( wp_strip_all_tags( $excerpt ?: wp_trim_words( $content, 30 ) ), ENT_QUOTES, 'UTF-8' ),
         'url'           => get_permalink( $post_id ),
         'datePublished' => get_the_date( 'c', $post_id ),
-        'dateModified'  => get_the_modified_date( 'c', $post_id ),
+        'dateModified'  => roden_content_modified_iso( $post_id ),
         'wordCount'     => str_word_count( wp_strip_all_tags( $content ) ),
         // Review fields belong HERE, not on the BlogPosting above: schema.org
         // scopes `lastReviewed` to WebPage, and this is the only WebPage node a
@@ -2113,7 +2113,7 @@ function roden_schema_article_subtype( $firm ) {
         'description'   => html_entity_decode( wp_strip_all_tags( $excerpt ?: wp_trim_words( $content, 30 ) ), ENT_QUOTES, 'UTF-8' ),
         'url'           => $canonical_url,
         'datePublished' => get_the_date( 'c', $post_id ),
-        'dateModified'  => get_the_modified_date( 'c', $post_id ),
+        'dateModified'  => roden_content_modified_iso( $post_id ),
         'wordCount'     => str_word_count( wp_strip_all_tags( $content ) ),
         'mainEntityOfPage' => array(
             '@type' => 'WebPage',
@@ -2611,7 +2611,7 @@ function roden_schema_state_landing( $firm ) {
         'telephone'       => $firm['phone_e164'],
         'priceRange'      => roden_schema_price_range(),
         'serviceType'     => 'Personal Injury Law',
-        'dateModified'    => get_the_modified_date( 'c' ),
+        'dateModified'    => roden_content_modified_iso(),
         'areaServed'      => array(
             '@type' => 'State',
             'name'  => $state_full,

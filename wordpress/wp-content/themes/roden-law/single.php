@@ -40,8 +40,9 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
             <?php endif; ?>
             <span class="post-date"><?php echo get_the_date(); ?></span>
             <span class="post-read-time"><?php echo roden_reading_time(); ?> min read</span>
-            <?php if ( get_the_modified_date( 'Y-m-d' ) !== get_the_date( 'Y-m-d' ) ) : ?>
-                <span class="post-updated"><time datetime="<?php echo esc_attr( get_the_modified_date( 'c' ) ); ?>">Updated <?php echo esc_html( get_the_modified_date( 'F j, Y' ) ); ?></time></span>
+            <?php $updated_ts = roden_updated_byline_ts(); // a recorded content change, never post_modified ?>
+            <?php if ( $updated_ts ) : ?>
+                <span class="post-updated"><time datetime="<?php echo esc_attr( gmdate( 'c', $updated_ts ) ); ?>">Updated <?php echo esc_html( roden_format_long_date( $updated_ts ) ); ?></time></span>
             <?php endif; ?>
             <?php echo roden_last_reviewed_html(); // escaped in the helper; '' when unset ?>
             <?php echo roden_last_refreshed_html(); // escaped in the helper; '' when unset ?>

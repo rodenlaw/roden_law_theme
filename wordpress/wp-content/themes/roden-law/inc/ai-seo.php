@@ -92,7 +92,7 @@ add_action( 'wp_head', 'roden_ai_meta_tags', 2 );
 function roden_ai_meta_tags() {
     // dateModified meta tag — helps AI systems identify content freshness
     if ( is_singular() ) {
-        $modified = get_the_modified_date( 'c' );
+        $modified = roden_content_modified_iso(); // never post_modified; see roden_content_modified_ts()
         if ( $modified ) {
             echo '<meta property="article:modified_time" content="' . esc_attr( $modified ) . '" />' . "\n";
         }

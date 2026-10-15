@@ -1264,6 +1264,123 @@ function roden_stats_bar() {
 }
 
 /* ==========================================================================
+   CONTENT-MODIFIED DATE (the one date every freshness signal reads)
+   ========================================================================== */
+
+/**
+ * When did this page's content last change in a way a reader would notice?
+ *
+ * `post_modified` cannot answer that. It moves on every database write: the
+ * href-only redirect and internal-link rewrites of 2026-09-08/09 re-saved 274
+ * published pages, and the "Updated" byline, every `dateModified` and
+ * `article:modified_time` then told readers and Google that 2016–2019 posts had
+ * been updated in September 2026. Nothing in them had changed.
+ *
+ * The answer is the latest of three recorded dates:
+ *   `_roden_last_reviewed`     an attorney checked the page (Y-m-d)
+ *   `_roden_last_refreshed`    the freshness loop refreshed it (Y-m-d)
+ *   `_roden_content_modified`  its title or visible text last changed (GMT
+ *                              datetime; set by roden_record_content_change()
+ *                              on editor saves, backfilled by
+ *                              bin/restore-content-modified.php)
+ * and, when none is set, the publish date. Never post_modified: a page with no
+ * recorded change claims no update rather than a false one.
+ *
+ * @param int|null $post_id Defaults to the current post.
+ * @return int Unix timestamp (0 if the post has no date at all).
+ */
+function roden_content_modified_ts( $post_id = null ) {
+    $post_id = $post_id ? (int) $post_id : get_the_ID();
+    $ts      = 0;
+    foreach ( array( '_roden_last_reviewed', '_roden_last_refreshed', '_roden_content_modified' ) as $meta_key ) {
+        $raw = trim( (string) get_post_meta( $post_id, $meta_key, true ) );
+        $t   = '' !== $raw ? strtotime( $raw ) : false;
+        if ( $t && $t > $ts ) {
+            $ts = $t;
+        }
+    }
+    if ( ! $ts ) {
+        $ts = (int) get_post_time( 'U', true, $post_id );
+    }
+    return $ts;
+}
+
+/**
+ * roden_content_modified_ts() as ISO 8601, for dateModified and modified_time.
+ *
+ * gmdate, not wp_date: the editorial dates are bare Y-m-d, which parse as UTC
+ * midnight, and the site's timezone would publish them as the previous evening.
+ *
+ * @param int|null $post_id Defaults to the current post.
+ * @return string ISO 8601 date, or '' if the post has no date.
+ */
+function roden_content_modified_iso( $post_id = null ) {
+    $ts = roden_content_modified_ts( $post_id );
+    return $ts ? gmdate( 'c', $ts ) : '';
+}
+
+/**
+ * Timestamp for the byline's "Updated" label, or 0 to omit it.
+ *
+ * Only a recorded content change earns it. The review and refresh dates have
+ * their own labels in the byline (roden_last_reviewed_html(),
+ * roden_last_refreshed_html()), so repeating either as "Updated" would print
+ * one event twice; and a change on the publish day is not an update.
+ *
+ * @param int|null $post_id Defaults to the current post.
+ * @return int Unix timestamp, or 0.
+ */
+function roden_updated_byline_ts( $post_id = null ) {
+    $post_id = $post_id ? (int) $post_id : get_the_ID();
+    $raw     = trim( (string) get_post_meta( $post_id, '_roden_content_modified', true ) );
+    $ts      = '' !== $raw ? (int) strtotime( $raw ) : 0;
+    if ( ! $ts || gmdate( 'Y-m-d', $ts ) <= get_post_time( 'Y-m-d', true, $post_id ) ) {
+        return 0;
+    }
+    foreach ( array( '_roden_last_reviewed', '_roden_last_refreshed' ) as $meta_key ) {
+        $t = strtotime( (string) get_post_meta( $post_id, $meta_key, true ) );
+        if ( $t && gmdate( 'Y-m-d', $t ) >= gmdate( 'Y-m-d', $ts ) ) {
+            return 0;
+        }
+    }
+    return $ts;
+}
+
+/**
+ * Record a content change when a person saves one in the editor.
+ *
+ * Only edits that change the title or the visible text count — the same test
+ * bin/restore-content-modified.php applies to the revision history — so a save
+ * that only rewrites hrefs, markup or the excerpt leaves the date alone.
+ *
+ * WP-CLI writes are skipped on purpose. Every bulk sweep in bin/ runs through
+ * `wp eval-file`, and those are the writes that stamped 274 pages. A bin/
+ * script that does change what a page says (a legal correction) should set
+ * `_roden_content_modified` itself, with wp_slash() like any meta write.
+ *
+ * @param int     $post_id     Post ID.
+ * @param WP_Post $post_after  Post after the update.
+ * @param WP_Post $post_before Post before the update.
+ */
+function roden_record_content_change( $post_id, $post_after, $post_before ) {
+    if ( ( defined( 'WP_CLI' ) && WP_CLI ) || wp_is_post_revision( $post_id ) || wp_is_post_autosave( $post_id ) ) {
+        return;
+    }
+    if ( 'publish' !== $post_after->post_status ) {
+        return;
+    }
+    $text = static function ( $p ) {
+        $plain = html_entity_decode( wp_strip_all_tags( $p->post_title . ' ' . $p->post_content ), ENT_QUOTES );
+        return trim( preg_replace( '/\s+/u', ' ', $plain ) );
+    };
+    if ( $text( $post_after ) === $text( $post_before ) ) {
+        return;
+    }
+    update_post_meta( $post_id, '_roden_content_modified', wp_slash( $post_after->post_modified_gmt ) );
+}
+add_action( 'post_updated', 'roden_record_content_change', 10, 3 );
+
+/* ==========================================================================
    LAST UPDATED DATE (AI Freshness Signal)
    ========================================================================== */
 
@@ -1286,18 +1403,12 @@ function roden_last_updated_date( $post_id = null ) {
      * roden_last_reviewed_html()), so the recorded editorial dates win: the
      * later of _roden_last_reviewed and _roden_last_refreshed when either is
      * set, post_modified only when neither is.
+     *
+     * Since 2026-10-15 that rule lives in roden_content_modified_ts(), which
+     * every other date signal reads too, and the post_modified fallback is gone
+     * (see there for why).
      */
-    $ts = 0;
-    foreach ( array( '_roden_last_reviewed', '_roden_last_refreshed' ) as $meta_key ) {
-        $raw = trim( (string) get_post_meta( $post_id, $meta_key, true ) );
-        $t   = '' !== $raw ? strtotime( $raw ) : false;
-        if ( $t && $t > $ts ) {
-            $ts = $t;
-        }
-    }
-    if ( ! $ts ) {
-        $ts = (int) get_post_modified_time( 'U', true, $post_id );
-    }
+    $ts = roden_content_modified_ts( $post_id );
     if ( ! $ts ) {
         return;
     }
