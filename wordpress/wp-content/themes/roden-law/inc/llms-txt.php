@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
  * dynamic /llms route but leaves the static files stale until the next
  * save_post.
  */
-define( 'RODEN_LLMS_TXT_VERSION', '2026-09-25.1' );
+define( 'RODEN_LLMS_TXT_VERSION', '2026-10-15.1' );
 
 /* ==========================================================================
    1. REWRITE RULES + QUERY VARS
@@ -95,7 +95,8 @@ function roden_generate_llms_txt( $full = false ) {
     // ── Header ──────────────────────────────────────────────────────────
     $output .= "# Roden Law\n\n";
     $output .= "> Personal injury law firm serving Georgia and South Carolina with {$firm['trust_stats']['offices']} offices\n";
-    $output .= "> and over {$firm['trust_stats']['recovered']} recovered. Contingency fee — no fees unless we win.\n";
+    // The stat already carries its own "+" ($300M+), so no "over" in front of it.
+    $output .= "> and {$firm['trust_stats']['recovered']} recovered. Contingency fee — no fees unless we win.\n";
     $output .= "> Call {$firm['vanity_phone']} for a free consultation.\n\n";
 
     $legal_suffix = ( ! empty( $firm['legal_entity'] ) && $firm['legal_entity'] !== $firm['name'] ) ? " ({$firm['legal_entity']})" : '';
@@ -478,22 +479,37 @@ function roden_llms_decode( $text ) {
 }
 
 /**
- * Get a short plain-text excerpt for a post (max ~160 chars).
+ * Get a short plain-text description for a post (max ~160 chars).
+ *
+ * `_roden_meta_description` first — the same field the page's own <meta
+ * description> and LegalService schema description read, so llms.txt says what
+ * the page says. Until 2026-10-15 this read only the excerpt, then the opening
+ * of post_content, and 18 of 24 practice-area pillars have neither excerpt nor
+ * distinct opening: every one printed "Roden Law's X Lawyers represent injury
+ * victims across Georgia and South Carolina. With over $300 million recovered…"
+ * — a list that told an AI system nothing about any practice area. Two of them
+ * (motorcycle, workers' comp) already had a written description this ignored.
+ *
+ * Length is counted in characters: the byte-based substr() this replaced could
+ * cut an em dash in half and print a broken UTF-8 sequence.
  *
  * @param WP_Post $post Post object.
  * @return string Plain-text excerpt or empty string.
  */
 function roden_llms_get_excerpt( $post ) {
-    $excerpt = $post->post_excerpt;
+    $excerpt = (string) get_post_meta( $post->ID, '_roden_meta_description', true );
+    if ( ! $excerpt ) {
+        $excerpt = $post->post_excerpt;
+    }
     if ( ! $excerpt ) {
         $excerpt = wp_strip_all_tags( $post->post_content );
     }
-    $excerpt = roden_llms_decode( $excerpt );
+    $excerpt = roden_llms_decode( wp_strip_all_tags( $excerpt ) );
     $excerpt = str_replace( array( "\r", "\n" ), ' ', $excerpt );
-    $excerpt = preg_replace( '/\s+/', ' ', trim( $excerpt ) );
+    $excerpt = preg_replace( '/\s+/u', ' ', trim( $excerpt ) );
 
-    if ( strlen( $excerpt ) > 160 ) {
-        $excerpt = substr( $excerpt, 0, 157 ) . '...';
+    if ( mb_strlen( $excerpt ) > 160 ) {
+        $excerpt = rtrim( mb_substr( $excerpt, 0, 157 ) ) . '...';
     }
 
     return $excerpt;
