@@ -4241,3 +4241,62 @@ function roden_statewide_law_callout( $state_key ) {
     </div>
     <?php
 }
+
+/* ------------------------------------------------------------------
+   Featured-image alt fallback (2026-10-21).
+
+   Every featured image on the site is printed by core's
+   get_the_post_thumbnail() — directly, or through the_post_thumbnail() —
+   from more than twenty call sites across single.php, single-resource.php,
+   the card parts, the attorney grids and the practice-area templates. Core
+   fills `alt` from the attachment's _wp_attachment_image_alt meta, and when
+   that is empty it prints alt="". On blog posts that is the normal case: the
+   site-health crawl of 2026-09-10 found 135 blog pages (100 /blog, 35
+   /es/blog) whose only empty-alt image was the .wp-post-image hero; the
+   re-crawl of 2026-10-21 (691 sitemap URLs) still found 44 empty alts on
+   34 pages — 32 post heroes plus the /blog/ and /es/blog/ archive cards —
+   every one of them a .wp-post-image.
+
+   A per-template fallback had already been written once, in
+   templates/parts/content-blog-card.php — a part nothing loads. Every
+   archive (home.php, archive.php, category.php, tag.php, search.php,
+   index.php) renders template-parts/content-card.php, which had none, so
+   /blog/ and /es/blog/ printed alt="" on every card. This fixes it once,
+   at the emitter: between core's begin_ and
+   end_fetch_post_thumbnail_html actions, an empty alt falls back to the
+   title of the post the image is featured on — the same rule the 81
+   resource images follow (alt = title, 2026-10-01). It only fills an EMPTY
+   alt. An alt passed explicitly by a caller (the attorney headshots) or set
+   on the attachment is left exactly as it is, and attachment images outside
+   a post-thumbnail fetch (post content, galleries) are untouched.
+
+   The post title is the post's own language, so /es/ twins get the Spanish
+   title. No translatable string is involved.
+   ------------------------------------------------------------------ */
+
+add_action( 'begin_fetch_post_thumbnail_html', 'roden_thumbnail_alt_context_begin', 10, 1 );
+add_action( 'end_fetch_post_thumbnail_html', 'roden_thumbnail_alt_context_end', 10, 0 );
+add_filter( 'wp_get_attachment_image_attributes', 'roden_thumbnail_alt_fallback', 10, 1 );
+
+function roden_thumbnail_alt_context_begin( $post_id ) {
+    $GLOBALS['roden_thumbnail_alt_post_id'] = (int) $post_id;
+}
+
+function roden_thumbnail_alt_context_end() {
+    $GLOBALS['roden_thumbnail_alt_post_id'] = 0;
+}
+
+function roden_thumbnail_alt_fallback( $attr ) {
+    $post_id = isset( $GLOBALS['roden_thumbnail_alt_post_id'] ) ? (int) $GLOBALS['roden_thumbnail_alt_post_id'] : 0;
+    if ( ! $post_id ) {
+        return $attr;
+    }
+    if ( isset( $attr['alt'] ) && '' !== trim( (string) $attr['alt'] ) ) {
+        return $attr;
+    }
+    $title = trim( wp_strip_all_tags( get_the_title( $post_id ) ) );
+    if ( '' !== $title ) {
+        $attr['alt'] = $title;
+    }
+    return $attr;
+}
