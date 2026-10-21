@@ -2975,7 +2975,11 @@ function roden_faq_section( $post_id = null ) {
  */
 function roden_sc_statewide_pillar_slug( $pillar_slug ) {
     $map = array(
-        'car-accident-lawyers'           => 'south-carolina-car-accident-lawyer',
+        // The plural page is the indexable SC car pillar. The singular
+        // south-carolina-car-accident-lawyer is the noindexed SC PPC landing
+        // page (functions.php exclude list), so linking it sent office-page
+        // equity to a noindex,nofollow page. site-health 2026-10-21.
+        'car-accident-lawyers'           => 'south-carolina-car-accident-lawyers',
         'truck-accident-lawyers'         => 'south-carolina-truck-accident-lawyers',
         'motorcycle-accident-lawyers'    => 'south-carolina-motorcycle-accident-lawyer',
         'wrongful-death-lawyers'         => 'south-carolina-wrongful-death-lawyer',
