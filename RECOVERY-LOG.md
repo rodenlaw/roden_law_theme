@@ -3233,3 +3233,27 @@ The redirects ship in `roden_floor_cull_urls()` and `roden_floor_cull_mid_urls()
 
 Doorway 165/691 = 23.88% → 124/650 = 19.08%. Evidence and the 54-row table:
 docs/floor-cull-2026-10-21.md.
+
+## 2026-10-21 — Granularity-floor cull — applied
+
+Merged as #223 (`9ba14b5`); the deploy and the post-deploy site-health job both succeeded. Then:
+- **Relink:** 56 links rewritten across 17 published posts (`bin/relink-floor-cull.php apply`). Backup:
+  `docs/backups/floor-cull-relink-2026-10-21.json`.
+- **Removal:** 41 of 41 drafted and marked `_roden_retired` (`bin/remove-floor-cull.php apply`). No link debt was
+  left after the relink. Backup: `docs/backups/floor-cull-posts-2026-10-21.json`.
+- **Status read from `wp_posts`:** 41 draft, 41 marked retired.
+- **Live check:** both caches flushed; 41/41 return one 301 to a 200, checked one at a time.
+- **Meta sweep:** 7 `_roden_see_also` entries on posts 4070, 4683, 4687 and 4689 still hold retired paths. The
+  rendered pages carry 0 links to them; they resolve through the redirect map.
+- **Template sweep** (with cache-busting): home, /blog/, /resources/, four office hubs, the truck pillar, the
+  sitemap index and llms.txt all show 0 references.
+- **Guards:** `bin/check-unslashed-post-writes.php` PASS, both static and live.
+- **Doorway:** `bin/doorway-ratio-now.mjs` gives 124/650 = **19.08%**, PASS; 13 pages remain below the floor.
+- **`content/meta.json`:** regenerated, now 639 entries. It also picked up two published resources the committed
+  copy had missed: `/resources/georgia-car-accident-settlement-value/` and `/resources/georgia-car-seat-laws/`.
+
+Follow-ups:
+- Carry the merged pages' facts into their targets at each target's ledger date: Folly Road 2027-01-04,
+  Ashley Phosphate 2026-12-31, Savannah highways 2027-01-01. The Ravenel cyclists guide's ledger status is unknown.
+- The floor check still fails on 13 pages kept or held on purpose. A keep-list is proposed in
+  docs/floor-cull-2026-10-21.md.

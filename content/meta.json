@@ -7,7 +7,7 @@
         "post",
         "page"
     ],
-    "_count": 680,
+    "_count": 639,
     "posts": {
         "/": {
             "type": "page",
@@ -647,37 +647,6 @@
                 ]
             }
         },
-        "/blog/a-guide-to-car-wrecks-on-aviation-avenue-near-charleston-airport/": {
-            "type": "post",
-            "status": "publish",
-            "title": "A Guide to Car Wrecks on Aviation Avenue Near Charleston Airport",
-            "excerpt": "Understand how to manage the aftermath of a crash near Charleston's airport, focusing on the unique challenges presented by rental and commercial vehicles.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is Aviation Avenue such a high-risk road?",
-                        "answer": "It is a convergence point for drivers in very different mindsets — tourists in rental cars watching a GPS, locals rushing to catch a flight, airport shuttles and taxis making sudden stops, and commercial delivery trucks servicing the airport."
-                    },
-                    {
-                        "question": "What should I do after a crash near Charleston airport?",
-                        "answer": "Secure the scene, call for medical help, and document everything before vehicles move. In an area with this much transient traffic, the other driver may be leaving the state within hours, which makes on-scene detail critical."
-                    },
-                    {
-                        "question": "What changes if the other driver is in a rental car?",
-                        "answer": "An extra layer is added. The rental company's coverage, the driver's own policy and any credit card coverage may all be involved, and identifying which applies takes longer than a standard exchange of insurance details."
-                    },
-                    {
-                        "question": "What if a commercial or airport shuttle vehicle was involved?",
-                        "answer": "Commercial vehicles bring their own insurance structure and, often, an employer with its own liability. That usually means more available coverage, but also a company that begins investigating on its own behalf immediately."
-                    },
-                    {
-                        "question": "How long do I have to file a claim after an Aviation Avenue crash?",
-                        "answer": "South Carolina generally allows three years from the date of injury to file a personal injury lawsuit (S.C. Code § 15-3-530). Tracing an out-of-state or rental driver gets harder with every week that passes."
-                    }
-                ]
-            }
-        },
         "/blog/a-pedestrians-guide-to-proving-negligence-in-charleston-parking-lots/": {
             "type": "post",
             "status": "publish",
@@ -705,37 +674,6 @@
                     {
                         "question": "What if I was partly at fault for the parking lot accident?",
                         "answer": "South Carolina applies a modified comparative negligence rule from Nelson v. Concrete Supply Co. You can still recover if you are 50% or less at fault, with your award reduced by your share of the responsibility."
-                    }
-                ]
-            }
-        },
-        "/blog/a-step-by-step-guide-for-folly-road-car-accidents/": {
-            "type": "post",
-            "status": "publish",
-            "title": "A Step by Step Guide for Folly Road Car Accidents",
-            "excerpt": "This guide provides clear, step-by-step instructions for handling the aftermath of a collision on the way to Folly Beach.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "What should I do first after a crash on Folly Road?",
-                        "answer": "Check on yourself, your passengers and the occupants of the other vehicle, and call 911 if anyone may be injured. Adrenaline easily masks pain, so let paramedics make the assessment rather than deciding at the roadside."
-                    },
-                    {
-                        "question": "Should I move an injured person after a collision?",
-                        "answer": "No. Do not attempt to move anyone who appears seriously injured unless leaving them creates a greater danger. Folly Road has heavy traffic and limited shoulder space, so securing the scene matters as much as reaching the person."
-                    },
-                    {
-                        "question": "What information should I exchange at the scene?",
-                        "answer": "Names, contact details, driver's licence and insurance information for every driver involved, plus vehicle makes, models and plates. Photograph the documents rather than only writing them down, so nothing is transcribed wrongly."
-                    },
-                    {
-                        "question": "Why does the police report matter so much?",
-                        "answer": "Because it is the neutral record of what happened, and insurers weight it heavily. On a road mixing tourist traffic with local drivers, accounts of who did what diverge quickly once people leave the scene."
-                    },
-                    {
-                        "question": "How long do I have to file a claim after a Folly Road accident?",
-                        "answer": "South Carolina generally allows three years from the date of injury to file a personal injury lawsuit (S.C. Code § 15-3-530). Tourist witnesses and visiting drivers become far harder to reach after the first few days."
                     }
                 ]
             }
@@ -1370,43 +1308,6 @@
                         "answer": "Additional training beyond the licensing minimum, protective gear worn every ride, high-visibility clothing, and building experience gradually rather than starting on high-traffic or high-speed roads."
                     }
                 ]
-            }
-        },
-        "/blog/ben-sawyer-boulevard-bridge-accidents-sullivans-island/": {
-            "type": "post",
-            "status": "publish",
-            "title": "Ben Sawyer Boulevard Bridge Accidents: Risks on the Road to Sullivan's Island",
-            "excerpt": "Ben Sawyer Boulevard is the only road to Sullivan's Island. Why its swing bridge and two lanes produce crashes, and who answers.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is Ben Sawyer Boulevard dangerous?",
-                        "answer": "It is the only road to Sullivan Island, creating a traffic bottleneck. The drawbridge opens regularly causing traffic backups. The road is narrow and two-lane with heavy beach traffic, cyclists, and pedestrians sharing limited space."
-                    },
-                    {
-                        "question": "What types of accidents are common on Ben Sawyer?",
-                        "answer": "Rear-end collisions from bridge backup traffic, head-on crashes on the narrow two-lane road, cyclist strikes due to narrow shoulders, and pedestrian accidents near beach access points."
-                    },
-                    {
-                        "question": "Who is liable for a Ben Sawyer accident?",
-                        "answer": "The at-fault driver, SCDOT for road design or bridge operation issues, and potentially the Town of Mount Pleasant or Sullivan Island for traffic management failures."
-                    },
-                    {
-                        "question": "How long do I have to file a claim?",
-                        "answer": "Three years in SC. Two years in Georgia."
-                    },
-                    {
-                        "question": "What if I was partially at fault?",
-                        "answer": "SC allows recovery if your fault is less than 51 percent."
-                    },
-                    {
-                        "question": "Are cyclist accidents common on Ben Sawyer?",
-                        "answer": "Yes. The narrow road with minimal shoulders forces cyclists into close proximity with vehicle traffic. The route to Sullivan Island is popular with recreational cyclists, creating frequent conflict."
-                    }
-                ],
-                "_roden_key_takeaways": "Ben Sawyer Boulevard is the sole road connecting Mount Pleasant to Sullivan's Island, creating dangerous bottlenecks on a two-lane swing bridge with no shoulder, limited visibility, and heavy tourist traffic. Cyclists and pedestrians face extreme risk due to narrow lanes and absent sidewalks. South Carolina's modified comparative fault rule bars recovery at 51% or more fault, and the filing deadline is three years under S.C. Code § 15-3-530.",
-                "_roden_last_reviewed": "2026-08-31"
             }
         },
         "/blog/benefit-of-a-personal-injury-pain-diary/": {
@@ -2097,106 +1998,6 @@
                     {
                         "question": "How long do I have to file a claim in Georgia?",
                         "answer": "Georgia generally allows two years from the date of injury to file a personal injury lawsuit (O.C.G.A. § 9-3-33). Evidence about a driver's schedule before a crash is easier to obtain early."
-                    }
-                ]
-            }
-        },
-        "/blog/car-accidents-ladson-i-26-exit-203-danger-zone/": {
-            "type": "post",
-            "status": "publish",
-            "title": "Car Accidents in Ladson and the I-26 Exit 203 Danger Zone",
-            "excerpt": "Why the I-26 Exit 203 interchange at Ladson produces so many crashes, and which county your claim belongs in.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why are there so many car accidents near I-26 Exit 203 in Ladson?",
-                        "answer": "The Exit 203 area combines interstate-speed traffic with congested surface streets, rapid commercial and residential development that has outpaced road infrastructure, heavy truck volume from nearby distribution centers, and complex interchange geometry. The speed differential between I-26 exit traffic and stopped surface-street traffic is a primary cause of rear-end collisions."
-                    },
-                    {
-                        "question": "Which county handles my accident claim in the Ladson area?",
-                        "answer": "The Ladson area straddles Berkeley, Dorchester, and Charleston counties. Your claim generally may be filed in the county where the crash happened, or in the county where a South Carolina defendant lives or a business has its principal place of business; against an out-of-state driver, it may also be filed in the county where you live (S.C. Code § 15-7-30). The exact location of the crash determines which law enforcement agency investigates, which court has jurisdiction, and which county government may be liable for road design issues. An attorney familiar with all three counties can ensure your case is filed in the most favorable jurisdiction."
-                    },
-                    {
-                        "question": "How long do I have to file a car accident claim in South Carolina?",
-                        "answer": "The statute of limitations for personal injury claims is three years from the date of the accident (S.C. Code section 15-3-530). For wrongful death claims, the deadline is three years from the date of death. Claims involving government liability for road defects must be filed within two years under the Tort Claims Act (S.C. Code § 15-78-110) — a year less than the usual deadline."
-                    },
-                    {
-                        "question": "Can I recover damages if I was partially at fault for the crash?",
-                        "answer": "Yes. South Carolina follows a modified comparative fault rule (Nelson v. Concrete Supply Co.) allowing recovery if your fault is less than 51 percent. In multi-vehicle crashes common in the Exit 203 area, fault is apportioned among all drivers. Your recovery is reduced by your own percentage of fault but you can recover from each at-fault party."
-                    },
-                    {
-                        "question": "Can I sue the government for poor road design in the Ladson area?",
-                        "answer": "Potentially. If inadequate road infrastructure, poor signal timing, missing turn lanes, or inadequate signage contributed to your crash, a claim against SCDOT, Berkeley County, Dorchester County, or the local municipality may be possible under the South Carolina Tort Claims Act (S.C. Code section 15-78-10 et seq.). These claims have special procedural requirements and damage caps."
-                    },
-                    {
-                        "question": "What should I do immediately after an accident near Exit 203?",
-                        "answer": "Move to safety since secondary crashes are common in this high-traffic zone. Call 911 for police and medical assistance. Seek medical attention within 24 hours. Photograph everything including vehicle damage, road conditions, and signal positions. Exchange information with other drivers and identify witnesses. Do not give recorded statements to insurance companies. Contact a car accident attorney promptly to preserve traffic camera footage and other evidence."
-                    }
-                ],
-                "_roden_key_takeaways": "The I-26 Exit 203 interchange in Ladson is a high-crash zone where merging highway traffic meets congested commercial corridors across Berkeley, Dorchester, and Charleston counties. Jurisdiction depends on the exact crash location, which affects which county handles the claim. Liable parties may include other drivers, trucking companies, or SCDOT. South Carolina's 3-year filing deadline applies (S.C. Code 15-3-530), and modified comparative fault bars recovery at 51% or more.",
-                "_roden_last_reviewed": "2026-09-28"
-            }
-        },
-        "/blog/car-accidents-on-coleman-boulevard-in-mount-pleasant/": {
-            "type": "post",
-            "status": "publish",
-            "title": "Car Accidents on Coleman Boulevard in Mount Pleasant",
-            "excerpt": "Follow essential steps to establish liability and secure fair compensation following a collision in Mount Pleasant.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "What makes Coleman Boulevard dangerous?",
-                        "answer": "It blends high-speed commuter traffic with the stop-and-go rhythm of a commercial district. Drivers move at 45 mph one moment and face a sudden unsignaled turn into a shopping centre the next."
-                    },
-                    {
-                        "question": "What crashes happen most often on Coleman Boulevard?",
-                        "answer": "Rear-end accidents from abrupt stops and sideswipes from last-second lane changes. Both follow directly from the mix of through traffic and vehicles turning into commercial entrances along the route."
-                    },
-                    {
-                        "question": "Why do unfamiliar drivers add to the risk?",
-                        "answer": "Tourists unfamiliar with the road's flow add unpredictability, and the wide straight lanes create a false sense of security. That encourages speeds that leave too little time to react when the car ahead stops or turns."
-                    },
-                    {
-                        "question": "How does comparative negligence affect a Mount Pleasant claim?",
-                        "answer": "Under the rule from Nelson v. Concrete Supply Co., you can recover when you are 50% or less at fault, with your award reduced by your share. Insurers often argue your share upward, which is why scene evidence matters."
-                    },
-                    {
-                        "question": "What evidence should I gather after a Coleman Boulevard crash?",
-                        "answer": "Photographs of vehicle positions, damage and the surrounding entrances or turn lanes, the police report, and witness details. Nearby businesses often have cameras covering the roadway, but that footage is overwritten quickly."
-                    }
-                ],
-                "_roden_last_reviewed": "2026-08-31"
-            }
-        },
-        "/blog/car-accidents-on-i-26-in-north-charleston/": {
-            "type": "post",
-            "status": "publish",
-            "title": "Car Accidents on I 26 in North Charleston",
-            "excerpt": "This guide provides clear, actionable steps for reporting, investigating, and building a compensation case after a collision on Interstate 26.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is I-26 in North Charleston such a crash hotspot?",
-                        "answer": "It channels a constant flow of daily commuters and commercial freight through the Lowcountry. Traffic density around challenging points like the I-526 interchange produces the sudden slowdowns and bottlenecks that regular drivers recognise immediately."
-                    },
-                    {
-                        "question": "What kinds of crashes happen most on this stretch?",
-                        "answer": "Rear-end collisions during morning and evening rush hours as drivers navigate stop-and-go conditions, and more severe incidents involving the large commercial trucks that share the highway."
-                    },
-                    {
-                        "question": "What makes a crash with a tractor-trailer more complicated?",
-                        "answer": "The size and weight differences between the vehicles produce far more serious injuries, and the claims involve more parties. These collisions bring more complex investigations and insurance issues than a car-to-car crash does."
-                    },
-                    {
-                        "question": "What should I document after an I-26 crash?",
-                        "answer": "Medical records tying your injuries to the collision, records of lost income and reduced earning capacity, and every accident-related expense. Photographs of vehicle positions taken before anything moves anchor the rest."
-                    },
-                    {
-                        "question": "How long do I have to file a claim after an I-26 crash?",
-                        "answer": "South Carolina generally allows three years from the date of injury to file a personal injury lawsuit (S.C. Code § 15-3-530). Where a commercial truck is involved, the carrier's records have a much shorter practical life."
                     }
                 ]
             }
@@ -3543,42 +3344,6 @@
                 ]
             }
         },
-        "/blog/daniel-island-accidents-event-traffic-golf-carts/": {
-            "type": "post",
-            "status": "publish",
-            "title": "Accidents on Daniel Island: Event Traffic, Golf Carts, and Single-Access Road Risks",
-            "excerpt": "",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "What makes Daniel Island accident-prone?",
-                        "answer": "Daniel Island has limited access via I-526, heavy event traffic at Credit One Stadium, a strong golf cart culture mixing with vehicle traffic, and cycling and pedestrian activity on roads without adequate separation."
-                    },
-                    {
-                        "question": "Are golf cart accidents common on Daniel Island?",
-                        "answer": "Yes. Daniel Island is one of the most golf-cart-friendly communities in Charleston. Golf carts sharing roads with vehicles, especially during event traffic, creates collision risk."
-                    },
-                    {
-                        "question": "Who is liable for a Daniel Island accident?",
-                        "answer": "The at-fault driver, golf cart operators, event venue operators for traffic management failures, and potentially the Daniel Island POA for road design issues."
-                    },
-                    {
-                        "question": "How long do I have to file a claim?",
-                        "answer": "Three years in SC. Two years in Georgia."
-                    },
-                    {
-                        "question": "What if I was partially at fault?",
-                        "answer": "SC allows recovery if your fault is less than 51 percent."
-                    },
-                    {
-                        "question": "What injuries are common?",
-                        "answer": "Golf cart ejection injuries, cyclist crashes, pedestrian strikes, and vehicle collisions during event traffic congestion."
-                    }
-                ],
-                "_roden_key_takeaways": "Daniel Island's single-access road via I-526 creates severe bottlenecks, especially during Credit One Stadium events. Golf cart collisions, cycling accidents, and pedestrian hazards are common in this planned community where residential and event traffic mix. Liability may fall on drivers, event organizers, or property managers depending on the circumstances. South Carolina's modified comparative fault bars recovery at 51% or more, with a three-year filing deadline (S.C. Code § 15-3-530)."
-            }
-        },
         "/blog/darien-brunswick-dangerous-roads-i95-us17/": {
             "type": "post",
             "status": "publish",
@@ -4290,44 +4055,6 @@
                 ]
             }
         },
-        "/blog/east-bay-street-savannah-pedestrian-accident-lawyer/": {
-            "type": "post",
-            "status": "publish",
-            "title": "East Bay Street Savannah Pedestrian Accident Lawyer: What to Do If You're Hit Walking Downtown",
-            "excerpt": "Hit walking on East Bay Street? An East Bay Street Savannah pedestrian accident lawyer explains Georgia crosswalk law, the 2-year deadline, and next steps.",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "How long do I have to file a pedestrian accident claim in Savannah?",
-                        "answer": "In Georgia, you generally have 2 years from the date of injury to file a pedestrian injury lawsuit (O.C.G.A. § 9-3-33). If a city vehicle or a dangerous street condition was involved, you must also give the City of Savannah written ante litem notice within just 6 months (O.C.G.A. § 36-33-5), so it is wise to speak with a lawyer quickly."
-                    },
-                    {
-                        "question": "The driver says I stepped off the curb — can I still recover?",
-                        "answer": "Yes, in most cases. Georgia uses modified comparative negligence, so you can recover as long as you are less than 50% at fault, with your award reduced by your share (O.C.G.A. § 51-12-33). Being partly to blame lowers a recovery but rarely eliminates it, especially when the driver was speeding or violated a crosswalk."
-                    },
-                    {
-                        "question": "What if the car that hit me on East Bay Street drove off?",
-                        "answer": "You may still recover through your own uninsured motorist coverage (O.C.G.A. § 33-7-11), which often applies even though you were walking. Leaving an injury crash is a crime under O.C.G.A. § 40-6-270, and camera footage or rideshare records frequently identify a fleeing driver. Do not assume the case is hopeless."
-                    },
-                    {
-                        "question": "Do drivers legally have to stop for me in a Historic District crosswalk?",
-                        "answer": "Yes. Georgia law requires drivers to stop and stay stopped for a pedestrian crossing in a marked crosswalk (O.C.G.A. § 40-6-91), and most intersections around the squares have marked crossings. A driver who fails to yield in a marked crosswalk has committed a violation that is strong evidence of negligence in your claim."
-                    },
-                    {
-                        "question": "How much does a pedestrian accident lawyer cost?",
-                        "answer": "Nothing upfront. Roden Law handles pedestrian injury cases on a contingency fee basis — you pay no fees unless we win your case. The free case review costs nothing, and you are never billed by the hour, so cost should never keep an injured pedestrian from getting legal advice."
-                    },
-                    {
-                        "question": "Which court would my Savannah pedestrian case be filed in?",
-                        "answer": "Most Savannah personal-injury suits are filed in the State Court of Chatham County in downtown Savannah. Claims of $15,000 or less may go to Chatham County Magistrate Court, and larger or more complex cases can be filed in the Superior Court of Chatham County within the Eastern Judicial Circuit. Our Savannah pedestrian accident lawyers handle filings in all three."
-                    }
-                ],
-                "_roden_jurisdiction": "georgia-only",
-                "_roden_last_reviewed": "2026-07-13",
-                "_roden_translation_es": "/es/blog/east-bay-street-savannah-pedestrian-accident-lawyer/"
-            }
-        },
         "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/": {
             "type": "post",
             "status": "publish",
@@ -4529,37 +4256,6 @@
                 ],
                 "_roden_key_takeaways": "Parents and legal guardians can file personal injury claims on behalf of injured children in both Georgia and South Carolina. Georgia's statute of limitations for minors is tolled until age 18 under O.C.G.A. § 9-3-90, giving children until their 20th birthday to file (medical malpractice claims run on a shorter clock, O.C.G.A. § 9-3-73). South Carolina's tolling provision (S.C. Code § 15-3-40) extends the deadline only to one year past the child's 18th birthday — age 19 — or three years from the injury if that is later. Both states require court approval for larger minor settlements — above $25,000 in Georgia and above $2,500 in South Carolina — with the money paid to a conservator, into a court-restricted account or into a structured settlement. Recoverable damages include medical costs, future earning capacity, pain and suffering, and emotional impact.",
                 "_roden_last_reviewed": "2026-09-24"
-            }
-        },
-        "/blog/filing-an-emotional-distress-claim-after-a-ravenel-bridge-accident/": {
-            "type": "post",
-            "status": "publish",
-            "title": "Filing an Emotional Distress Claim After a Ravenel Bridge Accident",
-            "excerpt": "This guide explains the steps for proving psychological trauma and seeking compensation following a vehicle collision in Charleston.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Is emotional distress a real claim under South Carolina law?",
-                        "answer": "Yes. Lingering trauma after a collision is recognised under South Carolina law as emotional distress, a genuine and compensable injury that is separate from bent metal and broken bones."
-                    },
-                    {
-                        "question": "What makes a Ravenel Bridge crash psychologically different?",
-                        "answer": "The setting carries its own weight. The jolt of impact, the sight of traffic stopped high above the Cooper River, and the feeling of being trapped can linger long after the physical damage has been assessed and repaired."
-                    },
-                    {
-                        "question": "Is feeling shaken after a crash enough for a claim?",
-                        "answer": "No. It is normal to feel shaken and upset after a frightening crash, but a legal claim for emotional distress requires more than ordinary upset. The distress has to be genuine, sustained and capable of being documented."
-                    },
-                    {
-                        "question": "How do I document emotional distress?",
-                        "answer": "Through consistent records of your mental state over time and through treatment. Notes on sleep, anxiety, avoidance of driving and changes to daily routine build the picture that a single statement cannot."
-                    },
-                    {
-                        "question": "What role do mental health professionals play in the claim?",
-                        "answer": "A central one. Assessment and treatment records from a qualified professional convert your experience into clinical evidence, which is what moves an emotional distress claim from an assertion to something an insurer must value."
-                    }
-                ]
             }
         },
         "/blog/filing-medication-error-lawsuit/": {
@@ -6121,43 +5817,6 @@
                 ]
             }
         },
-        "/blog/i-526-expansion-construction-zone-accidents-charleston/": {
-            "type": "post",
-            "status": "publish",
-            "title": "I-526 Expansion and Construction Zone Accidents: What Charleston Drivers Should Know",
-            "excerpt": "",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Are construction zone accidents more common on I-526?",
-                        "answer": "Yes. The I-526 expansion project creates lane shifts, narrow lanes, concrete barriers, reduced speed zones, and heavy equipment traffic that significantly increase crash risk compared to normal highway conditions."
-                    },
-                    {
-                        "question": "Are penalties higher for speeding in a SC work zone?",
-                        "answer": "Yes. South Carolina doubles fines for traffic violations committed in active work zones when workers are present."
-                    },
-                    {
-                        "question": "Who is liable for a construction zone crash on I-526?",
-                        "answer": "Potentially multiple parties: the at-fault driver, the construction company for inadequate signage or unsafe lane configurations, SCDOT for design decisions, and equipment manufacturers for defective vehicles."
-                    },
-                    {
-                        "question": "How long do I have to file a claim?",
-                        "answer": "Three years in SC (S.C. Code section 15-3-530). Government claims under the Tort Claims Act must be filed within two years, not three."
-                    },
-                    {
-                        "question": "What if I was partially at fault?",
-                        "answer": "SC allows recovery if your fault is less than 51 percent (Nelson v. Concrete Supply Co.). Georgia requires less than 50 percent."
-                    },
-                    {
-                        "question": "What injuries are common in work zone crashes?",
-                        "answer": "Rear-end collisions with concrete barriers, sideswipes from narrow lanes, and truck crashes in reduced-speed zones produce TBI, spinal cord injuries, crush injuries, and wrongful death."
-                    }
-                ],
-                "_roden_key_takeaways": "The I-526 expansion project in Charleston creates prolonged construction zone hazards including lane shifts, reduced shoulders, and confusing signage. Liability may rest with negligent drivers, the construction contractor, SCDOT, or subcontractors depending on the cause. South Carolina imposes enhanced penalties for work zone speeding. Injured parties have 3 years to file under S.C. Code 15-3-530, and comparative fault bars recovery at 51% or more. Georgia claims carry a 2-year deadline (O.C.G.A. 9-3-33).",
-                "_roden_last_reviewed": "2026-08-31"
-            }
-        },
         "/blog/impact-of-surgery-recommendation/": {
             "type": "post",
             "status": "publish",
@@ -6473,43 +6132,6 @@
                     }
                 ],
                 "_roden_key_takeaways": "Jet ski and personal watercraft accidents on Charleston Harbor, the Intracoastal Waterway, and surrounding creeks cause severe injuries including drowning, spinal trauma, and propeller lacerations. South Carolina requires PWC operators to follow specific age and safety regulations. Rental companies may be liable for inadequate safety instruction or defective equipment. The filing deadline is 3 years under S.C. Code 15-3-530, and SC comparative fault bars recovery at 51% or more.",
-                "_roden_last_reviewed": "2026-08-31"
-            }
-        },
-        "/blog/johns-island-accidents-no-hospital-emergency-room/": {
-            "type": "post",
-            "status": "publish",
-            "title": "Johns Island Accidents and the Problem of No Emergency Room",
-            "excerpt": "",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is the lack of a hospital on Johns Island a problem for accident victims?",
-                        "answer": "Johns Island has no hospital, no emergency room, and no trauma center despite rapid population growth. The nearest ERs are 20-30 or more minutes away in normal traffic, and during peak hours or flooding, transport times can exceed 45 minutes. For severe injuries like internal bleeding, traumatic brain injuries, and spinal cord compression, this delay can mean the difference between a recoverable injury and permanent disability or death."
-                    },
-                    {
-                        "question": "What is the golden hour and why does it matter on Johns Island?",
-                        "answer": "The golden hour is the first 60 minutes after a severe injury, during which rapid medical intervention most dramatically improves survival and outcomes. On Johns Island, the total time from crash to definitive surgical care often exceeds 60-90 minutes due to EMS response times, scene time, and long transport distances. This extended timeline can worsen outcomes for time-critical injuries."
-                    },
-                    {
-                        "question": "What are the most dangerous roads on Johns Island?",
-                        "answer": "Maybank Highway is the most dangerous due to high volume exceeding design capacity, bridge bottlenecks, and the transition from multi-lane to two-lane sections. Bohicket Road to Kiawah and Seabrook has blind curves and heavy tourist traffic. River Road has limited lighting, narrow shoulders, and drainage ditches. Main Road has seen increased traffic from new developments without matching infrastructure upgrades."
-                    },
-                    {
-                        "question": "What should I do after a car accident on Johns Island?",
-                        "answer": "Call 911 immediately and clearly communicate your location and injury severity so dispatchers can send appropriate resources, including helicopter transport for life-threatening injuries. Move to safety if possible. Document the scene with photos. Seek medical attention at an ER within 24 hours even for seemingly minor symptoms. Contact a car accident attorney promptly since evidence on rural roads changes quickly."
-                    },
-                    {
-                        "question": "Can delayed emergency care affect my accident claim?",
-                        "answer": "Yes. If your injuries were worsened because of the delay in reaching emergency care, your claim may include damages for the additional harm caused by that delay. Medical experts can testify about how your outcome would have differed with faster access to surgical intervention, potentially increasing the value of your claim."
-                    },
-                    {
-                        "question": "How long do I have to file a car accident claim in South Carolina?",
-                        "answer": "The statute of limitations for personal injury claims is three years from the date of the accident (S.C. Code section 15-3-530). For wrongful death claims, the deadline is three years from the date of death (S.C. Code section 15-51-20). In Georgia, the deadlines are shorter at two years. Evidence on Johns Island rural roads can change quickly, so prompt action is important."
-                    }
-                ],
-                "_roden_key_takeaways": "Johns Island has no hospital or emergency room despite rapid population growth, forcing accident victims to travel 20 to 30 minutes to reach MUSC or Roper Hospital in Charleston. This delay beyond the critical golden hour can worsen traumatic brain injuries, internal bleeding, and spinal cord damage. The absence of nearby emergency care is a factor in claim valuation. South Carolina's 3-year statute of limitations applies (S.C. Code 15-3-530), with comparative fault barring recovery at 51% or more.",
                 "_roden_last_reviewed": "2026-08-31"
             }
         },
@@ -7421,43 +7043,6 @@
                 "_roden_last_reviewed": "2026-09-24"
             }
         },
-        "/blog/maybank-highway-car-accidents-johns-island/": {
-            "type": "post",
-            "status": "publish",
-            "title": "Maybank Highway Bottleneck: Car Accidents on Johns Island's Only Way In and Out",
-            "excerpt": "Maybank Highway is Johns Island's only way in and out. Why that bottleneck produces crashes, and what to do after one.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is Maybank Highway so dangerous?",
-                        "answer": "Maybank Highway is the only major road on and off Johns Island. It carries traffic volumes far beyond its design capacity, with bottlenecks at the Stono River bridge, tourist traffic to Kiawah and Seabrook, and limited alternative routes."
-                    },
-                    {
-                        "question": "What types of accidents are most common on Maybank Highway?",
-                        "answer": "Rear-end collisions from bridge bottleneck backups are the most frequent. Head-on collisions on two-lane sections are the most lethal. T-bone crashes at intersections and bicycle and pedestrian accidents also occur regularly."
-                    },
-                    {
-                        "question": "Can I sue for poor road design on Maybank Highway?",
-                        "answer": "Potentially. Claims against SCDOT or Charleston County for inadequate infrastructure may be possible under the SC Tort Claims Act (S.C. Code section 15-78-10)."
-                    },
-                    {
-                        "question": "How long do I have to file a claim?",
-                        "answer": "Three years in SC (S.C. Code section 15-3-530). Two years in Georgia."
-                    },
-                    {
-                        "question": "What if I was partially at fault?",
-                        "answer": "SC allows recovery if your fault is less than 51 percent. Georgia requires less than 50 percent."
-                    },
-                    {
-                        "question": "What injuries are common in Maybank Highway crashes?",
-                        "answer": "TBI, spinal cord injuries, broken bones, internal organ damage, and wrongful death, particularly in head-on and high-speed rear-end collisions."
-                    }
-                ],
-                "_roden_key_takeaways": "Maybank Highway is the primary access road to Johns Island, creating a bottleneck that produces severe congestion, rear-end collisions, and head-on crashes. The two-lane corridor lacks adequate turn lanes and shoulders along critical stretches. Liable parties may include other drivers, Charleston County, or SCDOT for roadway design failures. South Carolina's 3-year filing deadline applies (S.C. Code 15-3-530), and comparative fault bars recovery at 51% or more.",
-                "_roden_last_reviewed": "2026-09-02"
-            }
-        },
         "/blog/mediation-for-a-personal-injury-claim/": {
             "type": "post",
             "status": "publish",
@@ -8306,39 +7891,6 @@
                 "_roden_key_takeaways": "Pedestrian accidents in Georgia and South Carolina carry high fatality rates due to lack of pedestrian protection. Drivers must yield at crosswalks under O.C.G.A. § 40-6-91 and S.C. Code § 56-5-3130. Georgia allows recovery if less than 50% at fault (O.C.G.A. § 51-12-33); South Carolina if less than 51% at fault. Filing deadlines are 2 years in GA and 3 years in SC. Visibility, distraction, and speed are leading causes."
             }
         },
-        "/blog/pedestrian-safety-park-circle-north-charleston/": {
-            "type": "post",
-            "status": "publish",
-            "title": "Pedestrian Safety in Park Circle: A Growing Concern",
-            "excerpt": "Why pedestrian crashes are rising in Park Circle as nightlife outpaces the road design, and what walkers should know.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why has Park Circle become more dangerous for pedestrians?",
-                        "answer": "Growth outpaced the street design. The district is pedestrian-friendly internally with sidewalks and tree-lined streets, but it is bordered by roads built for industrial traffic rather than for people on foot."
-                    },
-                    {
-                        "question": "Which Park Circle locations are most dangerous?",
-                        "answer": "Spruill Avenue carries heavy industrial and truck traffic from the former Navy Yard and port-adjacent facilities. The Virginia Avenue and Montague Avenue intersection is a documented high-collision spot where turning vehicles conflict with crosswalk traffic."
-                    },
-                    {
-                        "question": "Has pedestrian infrastructure kept up with the growth?",
-                        "answer": "No. East Montague Avenue's commercial growth has increased foot traffic, but crosswalks and pedestrian signals have not kept pace. The Park Circle roundabout adds conflicts between drivers unfamiliar with the yield pattern and people walking or cycling."
-                    },
-                    {
-                        "question": "What should I do after being struck by a vehicle in Park Circle?",
-                        "answer": "Get medical attention and make sure police document the collision. Photograph the crossing, signals and sightlines, and identify witnesses — in a busy district they disperse quickly and are very hard to find later."
-                    },
-                    {
-                        "question": "How long do I have to bring a pedestrian injury claim in South Carolina?",
-                        "answer": "South Carolina generally allows three years from the date of injury to file a personal injury lawsuit (S.C. Code § 15-3-530). Business surveillance footage covering a crossing is usually overwritten within weeks."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "Pedestrian crashes are rising in Park Circle as foot traffic from restaurants and nightlife outpaces road infrastructure. <strong>Spruill Avenue</strong> carries heavy industrial and truck traffic through the walkable district, and crosswalks on East Montague Avenue lack adequate signals. South Carolina law requires drivers to exercise <strong>due care to avoid striking pedestrians</strong> (<strong>S.C. Code § 56-5-3230</strong>). Victims can recover damages under the state's comparative fault rule if they are less than 51% at fault, with a <strong>3-year filing deadline</strong> (<strong>S.C. Code § 15-3-530</strong>)."
-            }
-        },
         "/blog/personal-injury-calculating-loss-of-earning-capacity/": {
             "type": "post",
             "status": "publish",
@@ -9152,43 +8704,6 @@
                 ]
             }
         },
-        "/blog/rivers-avenue-pedestrian-deaths-north-charleston/": {
-            "type": "post",
-            "status": "publish",
-            "title": "Pedestrian Deaths on Rivers Avenue: Why North Charleston's Main Corridor Is So Deadly for Walkers",
-            "excerpt": "Why Rivers Avenue is one of the Charleston area's most dangerous corridors for pedestrians, and what a claim involves after a fatal crash.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is Rivers Avenue so dangerous for pedestrians?",
-                        "answer": "Rivers Avenue (US-52) is a six-lane arterial road with speeds of 45+ mph, sparse crosswalks spaced half a mile or more apart, inadequate lighting, missing sidewalks in some sections, and no center median for pedestrian refuge. The communities on both sides of the road include a large transit-dependent population that must cross Rivers Avenue daily to reach bus stops, stores, and workplaces. This combination of high speed, wide crossing distances, and heavy pedestrian activity makes it one of the most dangerous pedestrian corridors in the Charleston area."
-                    },
-                    {
-                        "question": "Can I still recover damages if I was crossing outside a crosswalk?",
-                        "answer": "Yes. While South Carolina law (S.C. Code § 56-5-3150) requires pedestrians crossing outside a crosswalk to yield to vehicles, drivers have an independent duty to exercise due care to avoid hitting any pedestrian (S.C. Code § 56-5-3230). Under South Carolina's modified comparative fault rule (Nelson v. Concrete Supply Co.), you can recover damages as long as your fault is less than 51%. Even if you were crossing at a midblock location, a speeding or distracted driver can be found primarily at fault."
-                    },
-                    {
-                        "question": "What should I do if I am hit by a car on Rivers Avenue?",
-                        "answer": "Call 911 immediately. Seek medical attention even if your injuries seem minor — adrenaline can mask serious conditions like internal bleeding or traumatic brain injury. If possible, photograph the scene, the vehicle, and your injuries. Get the driver's information and any witness contact details. Do not give recorded statements to the driver's insurance company. Contact a pedestrian accident attorney as soon as possible to preserve surveillance footage from nearby businesses before it is overwritten."
-                    },
-                    {
-                        "question": "Can I sue the city or SCDOT for dangerous road design on Rivers Avenue?",
-                        "answer": "Potentially, yes. If the dangerous design of Rivers Avenue — missing crosswalks, inadequate lighting, absent sidewalks, no center median — contributed to the crash, a claim against SCDOT, North Charleston, or the county may be possible under the South Carolina Tort Claims Act (S.C. Code § 15-78-10 et seq.). These claims have special procedural requirements and damage caps, so consulting an attorney experienced in government liability claims is important."
-                    },
-                    {
-                        "question": "What compensation can a pedestrian accident victim recover in South Carolina?",
-                        "answer": "Pedestrian accident victims can recover medical expenses (past and future), lost wages and future lost earning capacity, pain and suffering, scarring and disfigurement, loss of enjoyment of life, and emotional distress. In wrongful death cases, surviving family members can recover funeral expenses, loss of financial support, loss of companionship, and mental anguish. Because pedestrian injuries tend to be catastrophic, lifetime care costs and future medical needs are often the largest component of the claim."
-                    },
-                    {
-                        "question": "How long do I have to file a pedestrian accident claim in South Carolina?",
-                        "answer": "The statute of limitations for personal injury claims in South Carolina is three years from the date of the accident (S.C. Code § 15-3-530). Wrongful death claims generally must also be filed within three years (S.C. Code § 15-3-530) and are brought by the personal representative of the estate (S.C. Code § 15-51-20). Claims against government entities run on a shorter clock — two years under the Tort Claims Act (S.C. Code § 15-78-110), or three if a verified claim is filed with the agency within one year. In Georgia, the deadline is only two years (O.C.G.A. § 9-3-33)."
-                    }
-                ],
-                "_roden_key_takeaways": "Rivers Avenue in North Charleston is one of the Charleston area's most dangerous corridors for pedestrians due to high speeds, inadequate crosswalks, poor lighting, and heavy commercial traffic on a road designed for cars rather than walkers. South Carolina law gives pedestrians rights in crosswalks but also requires them to yield outside marked crossings. Under South Carolina's modified comparative fault rule, injured pedestrians can recover damages if they are less than 51% at fault. The three-year statute of limitations (S.C. Code § 15-3-530) applies.",
-                "_roden_last_reviewed": "2026-09-28"
-            }
-        },
         "/blog/road-hazard-car-accident-liability/": {
             "type": "post",
             "status": "publish",
@@ -9448,43 +8963,6 @@
                 "_roden_key_takeaways": "Savannah's high-crash roads — I-95, I-16, Abercorn Street, DeRenne Avenue, and I-516 — carry heavy commuter traffic, Port of Savannah trucks, and nearly 13 million visitors a year. Georgia's two-year statute of limitations (O.C.G.A. § 9-3-33) and comparative fault rule (O.C.G.A. § 51-12-33, less than 50% at fault) govern how crash victims recover compensation, while federal trucking regulations provide additional grounds for claims against commercial carriers.",
                 "_roden_last_reviewed": "2026-10-02",
                 "_roden_meta_description": "Why I-95, I-16, Abercorn Street, DeRenne Avenue and I-516 see so many Savannah crashes, and your Georgia legal rights after a crash."
-            }
-        },
-        "/blog/savannah-highway-truck-accidents-west-ashley-us-17/": {
-            "type": "post",
-            "status": "publish",
-            "title": "Savannah Highway Truck Accidents in West Ashley: Why US-17 Is One of Charleston's Most Dangerous Roads",
-            "excerpt": "Why US-17 through West Ashley is one of Charleston's most dangerous truck corridors, and what to do after a collision.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why are truck accidents on Savannah Highway in West Ashley so common?",
-                        "answer": "Savannah Highway (US-17) through West Ashley combines high-volume commuter traffic with a steady stream of commercial trucks heading to and from the Port of Charleston. The road has frequent stoplights, numerous commercial driveways, no dedicated truck lanes, and was designed for far lower traffic volumes than it currently carries. These conditions create constant rear-end collision risk, especially when a loaded truck cannot stop in time."
-                    },
-                    {
-                        "question": "What makes a truck accident claim different from a regular car accident claim?",
-                        "answer": "Truck accident claims involve federal regulations (FMCSRs) governing driver hours, vehicle maintenance, cargo securement, and drug testing that do not apply to passenger vehicles. Multiple parties may be liable, including the driver, trucking company, cargo loader, maintenance provider, and vehicle manufacturer. Critical evidence like ELD data and dash-cam footage must be preserved immediately through spoliation letters, and the trucking company's insurer will deploy a defense team within hours of the crash."
-                    },
-                    {
-                        "question": "How long do I have to file a truck accident claim in South Carolina?",
-                        "answer": "The statute of limitations for personal injury claims in South Carolina is three years from the date of the accident (S.C. Code § 15-3-530). For wrongful death claims, it is three years from the date of death (S.C. Code § 15-51-20). However, critical truck accident evidence — ELD data, dash-cam footage, driver drug test results — can be lost within days, so contacting a lawyer immediately is essential."
-                    },
-                    {
-                        "question": "Can I recover damages if I was partially at fault for the truck accident?",
-                        "answer": "Yes. South Carolina follows a modified comparative fault rule (Nelson v. Concrete Supply Co.) that allows recovery as long as your fault is less than 51%. Your compensation is reduced by your percentage of fault. Trucking companies routinely argue that the car driver was partially at fault, so having an attorney who can counter these arguments with truck data and accident reconstruction evidence is critical."
-                    },
-                    {
-                        "question": "What evidence is most important in a Savannah Highway truck accident case?",
-                        "answer": "The most important evidence includes the truck's electronic logging device (ELD) data showing driver hours, the engine control module (ECM) or black box data showing speed and braking, dash-cam footage, the driver's drug and alcohol test results, the truck's maintenance and inspection records, and surveillance footage from nearby businesses. All of this evidence can be lost quickly, which is why sending a spoliation letter within days of the crash is critical."
-                    },
-                    {
-                        "question": "Who can be held liable for a truck accident on US-17 in West Ashley?",
-                        "answer": "Multiple parties may share liability: the truck driver (for negligence, fatigue, or impairment), the trucking company (for negligent hiring, training, or maintenance), the cargo loader (for improperly secured loads), the truck or parts manufacturer (for defective brakes, tires, or other components), the maintenance provider (for negligent repairs), and potentially government entities (for road design defects or signal malfunctions on Savannah Highway)."
-                    }
-                ],
-                "_roden_key_takeaways": "Savannah Highway (US-17) through West Ashley is a high-risk corridor for truck accidents due to narrow lanes, heavy commercial traffic, and limited-access intersections. Trucking companies and drivers must comply with federal regulations including hours-of-service limits, weight restrictions, and maintenance requirements — violations of which establish liability. Multiple parties may be at fault including the driver, trucking company, cargo loader, or vehicle manufacturer. South Carolina's modified comparative fault rule bars recovery at 51% or more fault, and the three-year filing deadline (S.C. Code § 15-3-530) applies.",
-                "_roden_last_reviewed": "2026-08-31"
             }
         },
         "/blog/second-opinion-for-charleston-car-crash-injuries/": {
@@ -11153,42 +10631,6 @@
                 "_roden_last_reviewed": "2026-09-25"
             }
         },
-        "/blog/west-ashley-vs-downtown-charleston-driving-risks/": {
-            "type": "post",
-            "status": "publish",
-            "title": "West Ashley vs. Downtown: Different Roads, Different Risks for Charleston Drivers",
-            "excerpt": "",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "How do accident risks differ between West Ashley and Downtown?",
-                        "answer": "West Ashley features high-speed suburban crashes on Savannah Highway with truck traffic and wide intersections. Downtown has lower-speed but more complex urban crashes involving pedestrians, cyclists, tourists, narrow streets, and parking-related incidents."
-                    },
-                    {
-                        "question": "Which area has more fatal accidents?",
-                        "answer": "West Ashley generally has more fatal crashes due to higher speeds on Savannah Highway and US-17. Downtown crashes are more frequent but typically lower severity due to lower speeds."
-                    },
-                    {
-                        "question": "How long do I have to file a claim?",
-                        "answer": "Three years in SC. Two years in Georgia."
-                    },
-                    {
-                        "question": "What if I was partially at fault?",
-                        "answer": "SC allows recovery if your fault is less than 51 percent."
-                    },
-                    {
-                        "question": "Who is liable for a downtown pedestrian accident?",
-                        "answer": "The driver, the City of Charleston for crosswalk and signal deficiencies, property owners for sidewalk hazards, and construction companies for work zones that force pedestrians into traffic."
-                    },
-                    {
-                        "question": "Are truck accidents more common in West Ashley?",
-                        "answer": "Yes. Savannah Highway carries heavy truck traffic to and from the Port of Charleston, making truck-car collisions a significant risk in West Ashley."
-                    }
-                ],
-                "_roden_key_takeaways": "West Ashley and downtown Charleston present distinct driving hazards: West Ashley features high-speed suburban corridors like Sam Rittenberg Boulevard prone to rear-end and T-bone collisions, while downtown's narrow historic streets create pedestrian strikes, cyclist crashes, and tourist-related accidents. Injury severity often differs by location and speed. South Carolina's modified comparative fault bars recovery at 51% or more fault, with a three-year filing deadline (S.C. Code § 15-3-530)."
-            }
-        },
         "/blog/what-happens-if-i-resign-while-on-workers-compensation/": {
             "type": "post",
             "status": "publish",
@@ -11329,68 +10771,6 @@
                     }
                 ],
                 "_roden_key_takeaways": "A personal injury lawyer investigates accidents, gathers evidence, negotiates with insurers, and litigates when necessary. Georgia allows two years to file (O.C.G.A. § 9-3-33) with a less-than-50% fault threshold (O.C.G.A. § 51-12-33), while South Carolina provides three years (S.C. Code § 15-3-530) with a less-than-51% fault threshold. Attorneys work on contingency, meaning no fees unless they recover compensation for you."
-            }
-        },
-        "/blog/what-to-do-after-a-bike-crash-on-charlestons-ravenel-bridge/": {
-            "type": "post",
-            "status": "publish",
-            "title": "What to Do After a Bike Crash on Charleston's Ravenel Bridge",
-            "excerpt": "This guide provides clear steps for cyclists to take immediately following a collision on the iconic Charleston bridge.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "What should I do immediately after a bike crash on the Ravenel Bridge?",
-                        "answer": "Move yourself and your bicycle out of the path of traffic if you can, since the bridge's bike lane is narrow and staying there risks another collision. If you are seriously injured, do not move and wait for help."
-                    },
-                    {
-                        "question": "Should I call the police after a bicycle accident?",
-                        "answer": "Yes. Call 911 immediately to report the accident and request paramedics. Adrenaline easily masks the severity of an injury, so an on-scene assessment protects you even when you feel able to carry on."
-                    },
-                    {
-                        "question": "What has to be proven in a bicycle accident claim?",
-                        "answer": "Negligence — that the other party owed you a duty of care, breached it, and caused your injuries and losses as a result. Being a cyclist does not change the standard, and it does not lower the duty drivers owe you."
-                    },
-                    {
-                        "question": "What if I was partly at fault for the bicycle crash?",
-                        "answer": "South Carolina applies a modified comparative fault rule from Nelson v. Concrete Supply Co., under which you can recover if you are 50% or less at fault, with your award reduced by your percentage of responsibility."
-                    },
-                    {
-                        "question": "Who besides a driver can be liable for a bike crash?",
-                        "answer": "Potentially a party responsible for the roadway or path surface, another cyclist, or a vehicle owner separate from the driver. Identifying every liable party matters because it determines how much insurance is available."
-                    }
-                ]
-            }
-        },
-        "/blog/what-to-do-after-a-car-crash-on-savannah-highway/": {
-            "type": "post",
-            "status": "publish",
-            "title": "What to Do After a Car Crash on Savannah Highway",
-            "excerpt": "Learn the essential actions to take after a collision on the busy US-17 route to protect your well-being and legal options.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "What makes Savannah Highway collisions different?",
-                        "answer": "US-17 is the primary artery connecting West Ashley to downtown Charleston and to Kiawah and Seabrook. That mixes daily commuters, heavy commercial delivery trucks and seasonal tourists unfamiliar with the road's flow and exits."
-                    },
-                    {
-                        "question": "What should I do in the first minutes after a crash here?",
-                        "answer": "Secure your safety first, call 911, and get medical assessment even if you feel able to continue. The high-speed, high-volume traffic rushing past is itself a hazard while you are stopped at the roadside."
-                    },
-                    {
-                        "question": "How do I preserve evidence after a Savannah Highway wreck?",
-                        "answer": "Photograph vehicle positions before they are moved, damage on all vehicles, skid marks, and the surrounding lanes and exits. Identify witnesses immediately, since tourist drivers who saw it may leave the state within days."
-                    },
-                    {
-                        "question": "How should I handle the other driver's insurance company?",
-                        "answer": "Report the crash to your own insurer promptly, but be careful with the other side's adjuster. Early recorded statements are taken while you are still shaken and are used later to narrow what you can recover."
-                    },
-                    {
-                        "question": "How long do I have to file a claim after a US-17 crash in West Ashley?",
-                        "answer": "South Carolina generally allows three years from the date of injury to file a personal injury lawsuit (S.C. Code § 15-3-530). Commercial vehicle records have a far shorter practical life than that."
-                    }
-                ]
             }
         },
         "/blog/what-to-do-after-a-hit-and-run-in-downtown-charleston/": {
@@ -22777,105 +22157,6 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
-        "/resources/abercorn-street-truck-accidents-savannah/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Abercorn Street Truck Accidents in Savannah: White Bluff to DeRenne",
-            "excerpt": "Abercorn Street is Savannah's most dangerous truck corridor, with the Abercorn and White Bluff intersection ranking #1 for crash severity. Learn about high-risk intersections, truck accident causes, and your legal rights under Georgia law.",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "What is the most dangerous intersection on Abercorn Street?",
-                        "answer": "Abercorn Street and White Bluff Road is widely regarded as the most hazardous intersection on the corridor. The intersection sees a confluence of heavy retail traffic, residential traffic from the White Bluff corridor, and commercial trucks, creating a persistently high-risk environment. We do not publish a serious-injury ratio for it, because the figure commonly quoted cannot be traced to a police or DOT publication."
-                    },
-                    {
-                        "question": "Why are there so many truck accidents on Abercorn Street?",
-                        "answer": "Abercorn Street is a 10-mile retail corridor with constant driveway conflicts from shopping centers, medical offices, and restaurants. Vehicles turning left across traffic into driveways create conflict points every few hundred feet. Port of Savannah trucks use Abercorn Extension to reach southern Savannah, adding fully loaded tractor-trailers to an already congested corridor."
-                    },
-                    {
-                        "question": "What should I do after a truck accident on Abercorn Street?",
-                        "answer": "Call 911 immediately and let Savannah-Chatham Metropolitan Police respond. Document the truck's company name, USDOT number, and trailer number. Check for surveillance cameras at nearby shopping centers and businesses. Get medical treatment at Memorial Health or St. Joseph's Hospital even if you feel fine. Contact a truck accident attorney within 24-48 hours to preserve ELD data and the truck's event data recorder."
-                    },
-                    {
-                        "question": "How long do I have to file a truck accident lawsuit in Georgia?",
-                        "answer": "Georgia's statute of limitations gives you 2 years from the date of injury to file a personal injury lawsuit (O.C.G.A. Section 9-3-33). However, critical evidence like ELD data, dash cam footage, and event data recorder information can be overwritten within days. Contact an attorney as soon as possible to preserve this evidence, even if you are not ready to file suit immediately."
-                    },
-                    {
-                        "question": "Can I still recover compensation if I was partially at fault for a truck accident on Abercorn?",
-                        "answer": "Yes, under Georgia's modified comparative fault rule (O.C.G.A. Section 51-12-33), you can recover compensation as long as you are less than 50% at fault for the accident. Your compensation is reduced by your percentage of fault. For example, if you are 20% at fault and your damages total $500,000, you can recover $400,000. Trucking companies often try to shift blame to passenger vehicle drivers, so having an attorney is critical."
-                    }
-                ],
-                "_roden_jurisdiction": "ga",
-                "_roden_key_takeaways": "Abercorn Street between White Bluff Road and DeRenne Avenue is one of Savannah's most hazardous retail corridors for truck crashes, with the <strong>Abercorn &amp; White Bluff</strong> intersection the corridor's worst point. Port trucks using Abercorn Extension add heavy commercial volume to a corridor already saturated with driveway conflicts and turning traffic. Georgia gives injury victims <strong>2 years to file a lawsuit</strong> (<strong>O.C.G.A. &sect; 9-3-33</strong>) and allows recovery if less than <strong>50% at fault</strong>. Contact Roden Law's Savannah office at <strong>(912) 303-5850</strong> within 24&ndash;48 hours to preserve critical evidence."
-            }
-        },
-        "/resources/ashley-phosphate-i-26-truck-accidents/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Ashley Phosphate Road &amp; I-26 Truck Accidents in North Charleston",
-            "excerpt": "Ashley Phosphate Road and I-26 is among the most crash-prone intersections in South Carolina, averaging a crash every three days in a Post and Courier analysis of 2011–2015 data. Learn about truck accident risks, common crash types, and your legal rights.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is Ashley Phosphate and I-26 so dangerous?",
-                        "answer": "It is among the most crash-prone intersections in South Carolina. A Post and Courier analysis of 2011&ndash;2015 collision data recorded 629 crashes there &mdash; roughly one every three days, and more than at any other intersection in Berkeley, Charleston or Dorchester counties, though it ranked second statewide behind I-20 at US-176 in Columbia. The combination of I-26 off-ramp traffic entering at highway speeds, complex multi-lane turn geometry, heavy commercial truck traffic, and widespread red-light running creates a consistently hazardous environment. Trucks are especially dangerous here due to their longer stopping distances and wider turning radii."
-                    },
-                    {
-                        "question": "What types of truck accidents are most common at this intersection?",
-                        "answer": "T-bone (broadside) collisions are the most common and most severe — typically caused by trucks running red lights or failing to yield on left turns. Rear-end collisions from trucks unable to stop on the I-26 off-ramp, left-turn crashes, and right-turn squeeze crashes involving truck trailers are also frequent patterns at this location."
-                    },
-                    {
-                        "question": "Can I sue SCDOT if the intersection design caused my accident?",
-                        "answer": "Potentially, yes. If the intersection design — such as inadequate signal timing, missing turn signals, or poor sight lines — contributed to the crash, SCDOT may share liability. However, claims against government entities in South Carolina are subject to the SC Tort Claims Act (S.C. Code Section 15-78-110), which shortens the filing deadline to two years and caps damages. An attorney must file these claims promptly."
-                    },
-                    {
-                        "question": "Are there traffic cameras at Ashley Phosphate and I-26?",
-                        "answer": "Yes. The intersection has traffic monitoring cameras, and numerous surrounding businesses have surveillance systems that may have captured the crash. Your attorney should send preservation letters to SCDOT and nearby businesses immediately — camera footage is typically overwritten within days or weeks if not specifically preserved."
-                    },
-                    {
-                        "question": "What compensation can I get for a truck accident at this intersection?",
-                        "answer": "Compensation may include medical expenses (current and future), lost wages, pain and suffering, permanent disability, and loss of enjoyment of life. In cases involving willful safety violations by the trucking company — such as falsified driving logs or known brake defects — punitive damages may also be awarded. South Carolina allows recovery if you are less than 51% at fault."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "A Post and Courier analysis of 2011&ndash;2015 collision data recorded <strong>629 crashes</strong> at <strong>Ashley Phosphate Road and I-26</strong> &mdash; roughly <strong>one every three days</strong>, more than at any other intersection in Berkeley, Charleston or Dorchester counties, and <strong>second in the state</strong> behind I-20 at US-176 in Columbia. High-speed I-26 off-ramp traffic, complex left turns, and heavy commercial truck volume are the primary factors. Common crash types include left-turn collisions, rear-end crashes from sudden stops, T-bone accidents from red-light runners, and pedestrian strikes. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>."
-            }
-        },
-        "/resources/aviation-avenue-i-26-truck-accidents/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Aviation Avenue &amp; I-26 Truck Accidents in North Charleston",
-            "excerpt": "Aviation Avenue and I-26 in North Charleston is a high-risk truck corridor near the I-26/I-526 interchange and Boeing SC. Learn about overheight strikes, fatal crashes, and your legal rights.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is Aviation Avenue and I-26 a high-risk area for truck accidents?",
-                        "answer": "Aviation Avenue sits adjacent to the I-26/I-526 interchange, the busiest freight interchange in the Lowcountry, and the area also serves Boeing South Carolina's manufacturing campus. The combination of high-speed interstate traffic, frequent congestion-related slowdowns, overheight loads striking overpasses, and merge conflicts at the interchange creates a sustained pattern of severe truck crashes."
-                    },
-                    {
-                        "question": "What happened in the overpass strike on I-26 near Aviation Avenue?",
-                        "answer": "In 2025, a tractor-trailer carrying an excavator struck the Eagle Drive overpass on I-26 near Aviation Avenue at approximately mile marker 207. The excavator arm exceeded the legal clearance height and hit the overpass structure, shutting down multiple lanes of I-26 during rush hour. Overheight strikes are a recurring problem on I-26, risking structural bridge damage and debris falls onto vehicles below."
-                    },
-                    {
-                        "question": "How does Boeing South Carolina affect truck accident risk near Aviation Avenue?",
-                        "answer": "Boeing's 787 Dreamliner fuselage assembly facility generates significant truck traffic including oversized loads carrying aircraft components, regular delivery trucks, and employee commuter traffic during shift changes. These additional vehicles converge on a corridor already saturated with port-related freight, creating turning and merging conflicts on Aviation Avenue and increased congestion on I-26."
-                    },
-                    {
-                        "question": "Who is liable when an overheight truck strikes an overpass?",
-                        "answer": "The truck driver and trucking company bear primary liability for failing to verify load height before dispatch and for operating a vehicle that exceeds legal height limits. The cargo loader or shipper may be liable for improperly loading equipment. SCDOT may share liability if overheight detection systems or warning signs were inadequate. An overheight strike is generally considered strong evidence of negligence."
-                    },
-                    {
-                        "question": "What should I do if I'm caught in a multi-vehicle pileup on I-26 near Aviation Avenue?",
-                        "answer": "Call 911 immediately and activate your hazard lights. Do not exit your vehicle on I-26 — high-speed traffic makes standing on the roadway extremely dangerous. Stay buckled until emergency responders arrive unless your vehicle is on fire. Document the trucks involved (company names, USDOT numbers), note whether traffic was flowing or stopped, and seek medical treatment at Trident Medical Center or MUSC Health. Contact a truck accident attorney to preserve ELD data and SCDOT camera footage."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "The <strong>Aviation Avenue and I-26 interchange</strong> in North Charleston is a high-risk truck accident zone adjacent to the <strong>I-26/I-526 interchange</strong> and <strong>Boeing South Carolina</strong>. A tractor-trailer carrying an <strong>excavator struck the Eagle Drive overpass</strong> near mile marker 207 in 2025, shutting down multiple lanes during rush hour. A crash near Aviation Avenue in February 2024 caused an <strong>11-mile backup</strong>. Overheight loads, speed-congestion cycles, and Boeing-related industrial truck traffic compound the danger. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>."
-            }
-        },
         "/resources/bay-street-truck-accidents-savannah-historic-district/": {
             "type": "resource",
             "status": "publish",
@@ -22975,39 +22256,6 @@
                 "_roden_key_takeaways": "Broad River Road is one of Columbia's most dangerous truck corridors, with <strong>35 accidents including 7 pedestrian deaths</strong> along the corridor. The Broad River Rd &amp; I-20 interchange ranks among <strong>Richland County's most dangerous intersections</strong>. An SUV went partially under a semi-truck trailer near the I-26 exit in Irmo, illustrating the severity of underride crashes on this road. Richland County recorded <strong>12,450 traffic collisions and 58 fatal collisions</strong> in 2023 (SCDPS). South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>."
             }
         },
-        "/resources/bush-river-road-i-26-truck-accidents-columbia/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Bush River Road &amp; I-26 Truck Accidents: Columbia's Malfunction Junction",
-            "excerpt": "Data-driven guide to truck accidents at Bush River Road and I-26 in Columbia, SC. Covers Malfunction Junction crash data, the SCDOT ramp closure, Carolina Crossroads construction hazards, and your legal rights under South Carolina law.",
-            "meta": {
-                "_roden_author_attorney": "Ivy S. Montano",
-                "_roden_faqs": [
-                    {
-                        "question": "Why did SCDOT close the I-26 off-ramp to Bush River Road?",
-                        "answer": "SCDOT permanently closed the westbound I-26 off-ramp to Bush River Road in November 2024 as part of the Carolina Crossroads improvement project. The closure was a direct acknowledgment that the interchange design was fundamentally unsafe. However, the closure creates new hazards as trucks must use alternative exits and navigate unfamiliar surface roads."
-                    },
-                    {
-                        "question": "What is Malfunction Junction and why is it dangerous?",
-                        "answer": "Malfunction Junction is the local name for the I-20/I-26 interchange in Columbia — where two major interstates converge near Bush River Road. Crash data shows 91 collisions at this interchange, including 2 fatal crashes and 22 people injured. Trucks must execute complex merging and weaving maneuvers at highway speed through confusing ramp configurations."
-                    },
-                    {
-                        "question": "How does the Carolina Crossroads construction affect truck accident risk?",
-                        "answer": "The Carolina Crossroads project involves ongoing construction that shifts traffic patterns, narrows lanes with barriers, creates uneven pavement, and places construction equipment adjacent to live traffic. Truck drivers unfamiliar with changing configurations make dangerous last-second maneuvers. Construction zone crashes tend to be more severe because concrete barriers eliminate escape routes."
-                    },
-                    {
-                        "question": "How long do I have to file a truck accident lawsuit in South Carolina?",
-                        "answer": "South Carolina has a 3-year statute of limitations for personal injury claims (S.C. Code 15-3-530). If your crash involved a government entity like SCDOT — for example, due to construction zone defects or interchange design — the SC Tort Claims Act shortens the filing deadline to two years. Contact an attorney immediately to preserve evidence and meet all deadlines."
-                    },
-                    {
-                        "question": "Who is liable for a truck crash in the Malfunction Junction construction zone?",
-                        "answer": "Multiple parties may share liability: the truck driver for unsafe lane changes or speeding, the trucking company for routing trucks through a known dangerous interchange, the construction contractor for defective work zone design or inadequate signage, SCDOT for interchange design defects or construction management failures, and cargo companies for overloading that affects stability during emergency maneuvers."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "I-26 at Bush River Road is <strong>Lexington County's most dangerous intersection</strong>, and SCDOT <strong>permanently closed the westbound I-26 off-ramp</strong> in November 2024 as part of the Carolina Crossroads project. The adjacent I-20/I-26 <strong>\"Malfunction Junction\"</strong> recorded <strong>91 collisions including 2 fatal crashes and 22 injuries</strong>. I-20 at US-176 saw <strong>199 collisions, 1 fatality, and 67 injuries</strong>. A pedestrian was killed behind a garbage truck on Wescott Road near Bush River Rd. Lexington County recorded <strong>8,162 collisions and 46 fatal crashes</strong> in 2023. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>."
-            }
-        },
         "/resources/carolina-crossroads-construction-zone-truck-accidents/": {
             "type": "resource",
             "status": "publish",
@@ -23041,39 +22289,6 @@
                 "_roden_key_takeaways": "The <strong>Carolina Crossroads project</strong> is a <strong>$2.69 billion SCDOT initiative</strong> reconfiguring <strong>14 miles</strong> of the I-20/I-26/I-126 corridor in Columbia, including the I-20/I-26 interchange known as <strong>&ldquo;Malfunction Junction&rdquo;</strong>, and carrying <strong>134,000+ vehicles daily</strong>. Construction began in 2021 with completion targeted for the <strong>mid-2030s</strong>. In <strong>May 2025</strong>, a driver was <strong>killed rear-ending a Mack truck on I-26</strong> near mile marker 122 at 3 a.m. Permanent ramp closures, including the <strong>I-26 off-ramp to Bush River Road</strong> (closed November 2024), create driver confusion and sudden braking hazards. South Carolina gives injury victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) and allows recovery if less than <strong>51% at fault</strong>. Contact Roden Law's Columbia office at <strong>(803) 219-2816</strong>."
             }
         },
-        "/resources/columbia-i-26-i-20-i-77-interchange-truck-accidents/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Truck Accidents at Columbia's I-20, I-26 and I-77 Interchanges",
-            "excerpt": "Truck accidents at the interchanges where I-20, I-26 and I-77 meet around Columbia, SC, including Malfunction Junction and the Carolina Crossroads work zones, and how South Carolina law applies.",
-            "meta": {
-                "_roden_author_attorney": "Ivy S. Montano",
-                "_roden_faqs": [
-                    {
-                        "question": "Where do I-26 and I-77 meet in Columbia?",
-                        "answer": "I-77 begins at I-26 Exit 116 in Cayce, south of downtown Columbia, and curves east around Columbia and then runs north toward Rock Hill and Charlotte. I-20 meets I-26 west of downtown, at the interchange known as Malfunction Junction, and meets I-77 northeast of downtown."
-                    },
-                    {
-                        "question": "What is \"Malfunction Junction\" in Columbia?",
-                        "answer": "It is the local name for the I-20 / I-26 interchange west of downtown Columbia. SCDOT's Carolina Crossroads project is reconfiguring the I-20/I-26/I-126 corridor around it, with construction expected to be substantially complete in the mid-2030s."
-                    },
-                    {
-                        "question": "Can SCDOT be held liable for a truck crash at an interchange?",
-                        "answer": "Potentially, where a road or work-zone defect contributed. Claims against SCDOT fall under the South Carolina Tort Claims Act: suit must be filed within two years, or three years if a verified claim is filed with the agency within one year (S.C. Code §§ 15-78-110, 15-78-80), and recovery is capped at $300,000 per person and $600,000 per occurrence (S.C. Code § 15-78-120)."
-                    },
-                    {
-                        "question": "What if more than one company is responsible?",
-                        "answer": "Each can be named. Under S.C. Code § 15-38-15, a defendant found less than 50% at fault generally pays only its own share of the damages, so identifying every responsible party, such as the driver, the carrier and a broker, can affect how much you recover."
-                    },
-                    {
-                        "question": "What evidence matters after an interchange truck crash?",
-                        "answer": "The truck's electronic logging and telematics data, dashcam and roadside video, the carrier's dispatch and driver records, maintenance records, and photos of the signs and lane markings. Some of it can be overwritten, so a written preservation request should go to the carrier as early as possible."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "Columbia's three interstates meet at three separate interchanges: <strong>I-26 and I-77</strong> in Cayce south of downtown, <strong>I-20 and I-26</strong> (Malfunction Junction) west of downtown, and <strong>I-20 and I-77</strong> northeast of downtown. SCDOT's Carolina Crossroads project is rebuilding the I-20/I-26/I-126 corridor into the mid-2030s. A truck crash claim in South Carolina must generally be filed within <strong>three years</strong> (<strong>S.C. Code &sect; 15-3-530</strong>), and you can recover if you are 50% or less at fault."
-            }
-        },
         "/resources/dangerous-roads-north-charleston/": {
             "type": "resource",
             "status": "publish",
@@ -23105,105 +22320,6 @@
                 ],
                 "_roden_jurisdiction": "sc",
                 "_roden_key_takeaways": "North Charleston's most dangerous roads include the <strong>Ashley Phosphate/I-26 interchange</strong> (one crash every 3 days), the <strong>I-26/I-526 interchange</strong>, <strong>Rivers Avenue from Remount to I-526</strong>, and <strong>Dorchester Road</strong>. Contributing factors include high-speed merges, commercial truck volume, and inadequate pedestrian infrastructure. South Carolina's <strong>3-year statute of limitations</strong> (<strong>S.C. Code § 15-3-530</strong>) applies to most injury claims on these roads; claims against government entities, which may share liability for known design deficiencies, generally must be filed within two years (<strong>S.C. Code § 15-78-110</strong>)."
-            }
-        },
-        "/resources/dean-forest-road-truck-accidents-pooler/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Dean Forest Road Truck Accidents: Pooler to I-16",
-            "excerpt": "Dean Forest Road connects Pooler's warehouse district to I-16 and the Port of Savannah, carrying heavy truck traffic through a rapidly growing residential area. Learn about crash patterns, rail crossing hazards, and your legal rights.",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is Dean Forest Road so dangerous for truck accidents?",
-                        "answer": "Dean Forest Road carries heavy truck traffic from Pooler's warehouse district (nearly 3 million square feet of distribution space) to I-16 and the Port of Savannah. The road was designed for rural traffic but now handles a combination of tractor-trailers, construction vehicles, and residential commuter traffic. Many intersections lack turn lanes and traffic signals, the I-16 interchange has short merge zones, and at-grade railroad crossings create additional hazards."
-                    },
-                    {
-                        "question": "What happened in the semi-truck vs. train crash on Dean Forest Road?",
-                        "answer": "A semi-truck collided with a train at the Dean Forest Road and Highway 21 at-grade rail crossing. At-grade crossings require trucks to stop, shift gears, and cross tracks at slow speed, creating a vulnerability window. Mechanical failures, misjudged train timing, and inadequate warning systems all contribute to these catastrophic collisions. The force of a train striking a loaded truck generates debris fields that endanger nearby vehicles and pedestrians."
-                    },
-                    {
-                        "question": "Can the warehouse operator be liable for a truck accident on Dean Forest Road?",
-                        "answer": "Yes. Warehouse operators may be liable if their driveway design creates inadequate sight lines for trucks entering Dean Forest Road, if they pressure trucking companies to meet delivery schedules that encourage unsafe driving, or if they fail to maintain safe loading and unloading practices. The trucking company, truck driver, and cargo shipper may also share liability depending on the circumstances of the crash."
-                    },
-                    {
-                        "question": "How long do I have to file a truck accident claim in Georgia?",
-                        "answer": "Georgia's statute of limitations gives you 2 years from the date of injury to file a personal injury lawsuit (O.C.G.A. Section 9-3-33). However, critical evidence including ELD data, warehouse loading records, and the truck's event data recorder can be overwritten within days. Contact an attorney within 24-48 hours to send preservation letters and secure this evidence before it is lost."
-                    },
-                    {
-                        "question": "What if the truck crash on Dean Forest Road happened at the I-16 interchange?",
-                        "answer": "Crashes at the I-16/Dean Forest Road interchange often involve merge-zone hazards where trucks must accelerate from surface-street speeds to interstate speeds in a short distance. These crashes may involve additional liable parties including GDOT for inadequate interchange design. Georgia State Patrol typically investigates interstate crashes. An overturned semi at this interchange in August 2024 shut I-16 down to one lane for hours."
-                    }
-                ],
-                "_roden_jurisdiction": "ga",
-                "_roden_key_takeaways": "Dean Forest Road is the <strong>primary truck corridor connecting Pooler's warehouse district to I-16</strong> and the Port of Savannah, carrying heavy tractor-trailer traffic through a rapidly growing residential area with <strong>infrastructure that has not kept pace with development</strong>. Recent crashes include a <strong>semi-truck vs. train collision</strong> at Highway 21 and an <strong>overturned semi at the I-16 interchange</strong> that shut down the interstate. At-grade rail crossings, uncontrolled intersections, and inadequate I-16 merge zones create persistent crash risks. Georgia gives injury victims <strong>2 years to file a lawsuit</strong> (<strong>O.C.G.A. &sect; 9-3-33</strong>) and allows recovery if less than <strong>50% at fault</strong>. Call Roden Law at <strong>(912) 303-5850</strong> within 24&ndash;48 hours to preserve critical evidence."
-            }
-        },
-        "/resources/dorchester-road-truck-accidents-north-charleston/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Dorchester Road Truck Accidents in North Charleston",
-            "excerpt": "Dorchester Road is one of Charleston County's five deadliest roads in SCDOT traffic data, four of which run through North Charleston. Learn about recent fatal truck crashes, why the corridor is so dangerous, and your legal options after a truck accident.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is Dorchester Road so dangerous for truck accidents?",
-                        "answer": "Dorchester Road is one of Charleston County's five deadliest roads in South Carolina Department of Transportation traffic data, four of which run through North Charleston. Its danger comes from its mix of residential, commercial, and industrial zones combined with limited road infrastructure. Many intersections lack dedicated turn lanes, shoulders are narrow or nonexistent, and heavy commuter traffic from Ladson and Summerville shares the road with commercial trucks making deliveries throughout the corridor."
-                    },
-                    {
-                        "question": "What recent truck crashes have occurred on Dorchester Road?",
-                        "answer": "Recent major incidents include a fatal motorcycle-versus-heavy-duty-truck collision at Dorchester Road and Forest Hills Drive in March 2026, a U-Haul box truck pursuit that began at Dorchester and Meeting Street in April 2025 (killing a motorcyclist and injuring seven), and a concrete mixer truck that drove off the I-26 overpass near Dorchester Road."
-                    },
-                    {
-                        "question": "Who can be held liable for a truck accident on Dorchester Road?",
-                        "answer": "Potentially liable parties include the truck driver (for speeding, distracted driving, or failure to yield), the trucking company (for negligent hiring or hours-of-service pressure), the vehicle manufacturer (for brake or visibility defects), government entities like SCDOT or North Charleston (for failure to install turn lanes or maintain roads), and commercial property owners (for poorly designed driveways creating sight-line obstructions)."
-                    },
-                    {
-                        "question": "How long do I have to file a truck accident claim on Dorchester Road?",
-                        "answer": "South Carolina law provides 3 years from the date of injury to file a personal injury claim (S.C. Code Section 15-3-530). However, if a government entity such as SCDOT or the City of North Charleston is involved due to road design defects, the SC Tort Claims Act shortens the filing deadline to two years. Contact an attorney as soon as possible to preserve your rights."
-                    },
-                    {
-                        "question": "What should I do after a truck accident on Dorchester Road?",
-                        "answer": "Call 911, stay in your vehicle if the shoulder is too narrow to safely exit, document the truck (company name, USDOT number, cargo type), photograph road conditions including missing turn lane markings or pavement defects, seek medical treatment at Trident Medical Center or MUSC Health, and contact a truck accident attorney immediately to preserve ELD data and surveillance footage."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "Dorchester Road is one of <strong>Charleston County's five deadliest roads</strong> in SCDOT traffic data &mdash; four of which run through North Charleston &mdash; carrying a dangerous mix of heavy commuter traffic from Ladson and Summerville, commercial trucks, and residential neighborhood traffic. Recent crashes include a <strong>fatal motorcycle-vs-truck collision at Forest Hills Drive</strong> (March 2026), a <strong>U-Haul pursuit from Dorchester &amp; Meeting Street</strong> that killed a motorcyclist and injured 7 (April 2025), and a <strong>concrete truck that drove off the I-26 overpass</strong>. Limited shoulders, no dedicated turn lanes, and aging road surfaces compound the danger. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>."
-            }
-        },
-        "/resources/georgetown-county-us-17-truck-accidents/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Georgetown County US-17 Truck Accidents: Charleston to Myrtle Beach",
-            "excerpt": "Georgetown County's US-17 corridor between Charleston and Myrtle Beach has a pattern of fatal truck crashes on two-lane stretches and ice-vulnerable bridges. Learn about documented crashes, rural hazards, and your legal rights under South Carolina law.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is US-17 through Georgetown County so dangerous for truck accidents?",
-                        "answer": "US-17 through Georgetown County narrows from a divided four-lane highway to two-lane stretches with limited passing opportunities. The corridor crosses multiple elevated bridges that freeze before the road surface during ice events. Rural isolation means emergency response times can exceed 20 to 30 minutes, and the nearest Level I trauma center is in Charleston, potentially 60 to 90 minutes away. Tourist traffic mixed with commercial trucks on these rural stretches creates a uniquely dangerous collision environment."
-                    },
-                    {
-                        "question": "What caused the December 2025 bridge crashes in Georgetown County?",
-                        "answer": "In December 2025, ice caused multiple crashes on Georgetown County bridges including the Highway 17 bridge and Maryville Bridge. Elevated bridge decks freeze before the road surface, creating sudden traction loss for vehicles traveling at highway speed. Drivers may have no warning because the approach road remains dry while the bridge deck is iced. Trucks are especially vulnerable because their weight and high center of gravity make them prone to jackknifing on ice."
-                    },
-                    {
-                        "question": "How long do I have to file a truck accident lawsuit in South Carolina?",
-                        "answer": "South Carolina's statute of limitations gives you 3 years from the date of injury to file a personal injury lawsuit under S.C. Code Section 15-3-530. However, critical truck evidence including ELD data, GPS tracking, dash cam footage, and weather condition records can be overwritten or lost quickly. Georgetown County's rural location often delays evidence preservation, so contacting an attorney within 24 to 48 hours is essential."
-                    },
-                    {
-                        "question": "Is Georgetown County underserved by personal injury law firms?",
-                        "answer": "Yes. Georgetown County has significantly fewer personal injury law firms compared to Charleston or Myrtle Beach. Many truck accident victims in Georgetown County are unaware of their rights or the complexity of multi-party truck accident liability. Roden Law's Myrtle Beach office serves Georgetown County and the surrounding Grand Strand region, providing truck accident representation to an underserved community."
-                    },
-                    {
-                        "question": "Who can be held liable for a truck crash on US-17 in Georgetown County?",
-                        "answer": "Multiple parties may be liable depending on the crash circumstances. The truck driver may be at fault for speeding, fatigue, or failure to adjust for weather. The trucking company may be liable for HOS violations or pressure to maintain delivery schedules. SCDOT may share liability for failure to treat bridge decks during ice events or failure to upgrade two-lane stretches. Logging companies may be liable for improperly secured loads. Vehicle manufacturers may be liable for brake or tire defects."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "Georgetown County's stretch of US-17 between Charleston and Myrtle Beach has produced <strong>multiple fatal crashes</strong>, including a <strong>March 2025 fatality under SCHP investigation</strong>, a <strong>June 2025 semi-truck vs. sedan crash on SC-51 that killed one person</strong>, and <strong>December 2025 ice-related crashes on the Highway 17 and Maryville bridges</strong>. The corridor's <strong>two-lane stretches with no passing</strong>, <strong>elevated bridges vulnerable to ice</strong>, and <strong>rural emergency response times of 20&ndash;30+ minutes</strong> make it one of coastal South Carolina's most dangerous truck corridors. Georgetown County is <strong>underserved by PI law firms</strong>. South Carolina gives injury victims <strong>3 years to file a lawsuit</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) and allows recovery if less than <strong>51% at fault</strong>. Contact Roden Law Myrtle Beach at <strong>(843) 612-1980</strong>."
             }
         },
         "/resources/georgia-car-accident-settlement-value/": {
@@ -23614,39 +22730,6 @@
                 "_roden_meta_title": "Georgia Wrongful Death Settlement Value | Roden Law"
             }
         },
-        "/resources/highway-22-truck-accidents-conway-bypass/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Highway 22 Truck Accidents: Conway Bypass",
-            "excerpt": "Data-driven guide to truck accidents on Highway 22 (Conway Bypass) in Horry County, SC. Covers the fatal Waccamaw River bridge dump truck crash, bridge section dangers, and your legal rights under South Carolina law.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "What happened in the Highway 22 bridge crash in August 2025?",
-                        "answer": "A dump truck rear-ended stopped traffic near the Waccamaw River bridge on Highway 22. The impact pushed a Jeep over the bridge railing and into the river below, killing Flora Beltran-Gomez, 35, and Earl Burnette, 49. A third person was hospitalized with serious injuries. The crash demonstrates the extreme danger of truck collisions on bridge sections where vehicles cannot escape the impact."
-                    },
-                    {
-                        "question": "Why are bridge sections on Highway 22 so dangerous?",
-                        "answer": "Bridge sections create confined corridors with concrete barriers on both sides. When a truck rear-ends traffic on a bridge, the struck vehicle has nowhere to go — it is pushed into the vehicle ahead, into the barrier, or over the railing. Bridge railings designed for passenger vehicles cannot contain the force of a truck pushing another vehicle against them."
-                    },
-                    {
-                        "question": "What types of trucks cause crashes on Highway 22?",
-                        "answer": "Highway 22 carries a dangerous mix of dump trucks serving Grand Strand construction, construction equipment haulers with oversized loads, tractor-trailers delivering goods to tourism businesses, and through-freight from I-95. Dump trucks are particularly dangerous because they are often overloaded, have poor rear visibility, and scatter debris that creates secondary hazards."
-                    },
-                    {
-                        "question": "How long do I have to file a truck accident lawsuit in South Carolina?",
-                        "answer": "South Carolina has a 3-year statute of limitations for personal injury claims (S.C. Code 15-3-530). For wrongful death claims, the statute also runs 3 years from the date of death. Contact an attorney within 24-48 hours to preserve critical evidence like ELD data, dash cam footage, and dump truck weight tickets."
-                    },
-                    {
-                        "question": "Can I sue if a dump truck caused the crash on Highway 22?",
-                        "answer": "Yes. Multiple parties may be liable: the dump truck driver for following too closely or distracted driving, the construction company that owns the truck for overloading or failing to maintain brakes, and potentially SCDOT for inadequate bridge railing design or insufficient warning signage for stopped traffic. South Carolina allows recovery if you are less than 51% at fault."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "Highway 22 (Conway Bypass) is a deadly truck corridor connecting I-95 to the Grand Strand. In <strong>August 2025, a dump truck rear-ended stopped traffic near the Waccamaw River bridge</strong>, pushing a Jeep over the railing into the river and <strong>killing Flora Beltran-Gomez, 35, and Earl Burnette, 49</strong>. A <strong>multi-vehicle fatal crash in February 2026 killed 1 more person</strong>. Bridge sections create confined kill zones where vehicles cannot escape truck impacts. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>."
-            }
-        },
         "/resources/how-much-does-south-carolina-workers-comp-pay/": {
             "type": "resource",
             "status": "publish",
@@ -23719,72 +22802,6 @@
                 "_roden_key_takeaways": "The <strong>16@95 Improvement Projects</strong> are a <strong>$511.8 million GDOT design-build project</strong> widening I-16 from 4 to 6 lanes and fully reconstructing the I-16/I-95 interchange in Chatham County. The construction zone funnels the Port of Savannah's <strong>14,000&ndash;16,000 daily truck moves</strong> through active lane shifts and narrowed lanes with no shoulders. In <strong>March 2026</strong>, a tractor-trailer veered across all lanes of I-95 southbound, struck a concrete wall, and <strong>killed the driver</strong> &mdash; shutting down all lanes of I-95 in both directions for hours. Georgia gives injury victims <strong>2 years to file a lawsuit</strong> (<strong>O.C.G.A. &sect; 9-3-33</strong>) and allows recovery if less than <strong>50% at fault</strong>. Contact Roden Law's Savannah office at <strong>(912) 303-5850</strong>."
             }
         },
-        "/resources/i-16-truck-accidents-savannah/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "I-16 Truck Accidents in Savannah: Port Freight, Construction Zones and Your Rights",
-            "excerpt": "Guide to truck accidents on I-16 in Savannah, Georgia, a main Port of Savannah freight route. Covers Port of Savannah freight traffic, construction zone hazards, crash statistics, and Georgia truck accident law (O.C.G.A. § 9-3-33).",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is I-16 dangerous for truck crashes?",
-                        "answer": "I-16 is a main truck route for Port of Savannah freight, and the port handles 14,000 to 16,000 truck moves a day, Monday through Friday (Georgia Ports Authority). Heavy tractor-trailer traffic, GDOT construction at the I-16/I-95 interchange, long rural stretches with two lanes in each direction and high speeds all add risk. Federal crash data recorded 61 fatal crashes and 66 deaths on I-16 across Georgia from 2020 through 2024 (NHTSA Fatality Analysis Reporting System)."
-                    },
-                    {
-                        "question": "How does Port of Savannah traffic affect I-16 truck accidents?",
-                        "answer": "The Port of Savannah handled nearly 5.7 million TEUs in 2025, its second-busiest year (Georgia Ports Authority). Most containers leave by truck, and many reach I-16 at Dean Forest Road or by the Jimmy DeLoach Parkway, which also feeds I-95. That means heavy truck volume on tight delivery schedules, with some drivers unfamiliar with local conditions."
-                    },
-                    {
-                        "question": "Are truck crashes more dangerous in construction zones on I-16?",
-                        "answer": "Yes. GDOT is widening I-16 between I-95 and I-516 in Chatham County, next to the rebuilt I-16/I-95 interchange. Construction zones eliminate escape routes with concrete barriers, narrow lanes to leave minimal clearance, and create speed differentials. A truck crash in a construction zone often produces more severe injuries because there is nowhere to go."
-                    },
-                    {
-                        "question": "Who is liable for an I-16 truck accident?",
-                        "answer": "Multiple parties may share liability: the truck driver (fatigue, distraction, impairment), the trucking company (negligent hiring, HOS pressure, poor maintenance), the cargo shipper (overweight or improperly loaded containers from the port), the truck or parts manufacturer (defective brakes, tires), and in construction zone crashes, potentially the construction contractor or GDOT. A claim against GDOT is a claim against the State, which requires written ante litem notice within 12 months (O.C.G.A. § 50-21-26)."
-                    },
-                    {
-                        "question": "What evidence should I collect at an I-16 truck accident scene?",
-                        "answer": "Photograph the truck's company name and USDOT number (displayed on the cab door), trailer number, cargo type, all vehicle damage, mile markers, road conditions, and construction zone signage. Note whether the truck appeared to be a port container truck, tanker, flatbed, or other type. This information helps identify all liable parties and applicable insurance policies."
-                    }
-                ],
-                "_roden_jurisdiction": "ga",
-                "_roden_key_takeaways": "I-16 is a main truck route for Port of Savannah freight, and the port handles <strong>14,000 to 16,000 truck moves a day</strong> (Georgia Ports Authority). Federal crash data recorded <strong>66 deaths on I-16</strong> statewide from 2020 through 2024. The corridor features active GDOT construction zones, two-lane rural stretches, and relentless tractor-trailer volume. In 2024, <strong>197 people died</strong> in Georgia crashes involving large trucks (NHTSA). You have <strong>2 years to file an injury claim</strong> (<strong>O.C.G.A. &sect; 9-3-33</strong>) and can recover damages if less than <strong>50% at fault</strong>."
-            }
-        },
-        "/resources/i-20-truck-accidents-columbia/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "I-20 Truck Accidents in the Columbia, SC Area",
-            "excerpt": "Comprehensive guide to truck accidents on I-20 in the Columbia, South Carolina area. Covers crash hotspots from Lexington County to the Kershaw County line, distribution center freight traffic, FMCSA regulations, and your legal rights under South Carolina law (S.C. Code § 15-3-530).",
-            "meta": {
-                "_roden_author_attorney": "Ivy S. Montano",
-                "_roden_faqs": [
-                    {
-                        "question": "How common are truck accidents on I-20 in the Columbia, SC area?",
-                        "answer": "Truck accidents on I-20 in the Columbia area are a persistent problem. I-20 carries through-freight between Atlanta and Florence, and the growth of distribution centres in Lexington County has significantly increased truck volume on the corridor. Richland County's crash burden reflects that mix of interstate freight, commuter traffic and interchange complexity rather than any single cause."
-                    },
-                    {
-                        "question": "What is the statute of limitations for a truck accident on I-20 in South Carolina?",
-                        "answer": "South Carolina has a 3-year statute of limitations for personal injury claims (S.C. Code § 15-3-530). However, you should contact a truck accident attorney within 24-48 hours because critical evidence — ELD data, dash cam footage, drug test results, and dispatch records — can be destroyed or overwritten within days of the crash."
-                    },
-                    {
-                        "question": "Who is liable in an I-20 truck accident near Columbia?",
-                        "answer": "Multiple parties may be liable. The truck driver, trucking company, cargo shipper, distribution center that loaded the freight, the vehicle manufacturer, and the maintenance provider can all share responsibility. An experienced truck accident attorney will investigate the full chain of liability, including potential FMCSA violations."
-                    },
-                    {
-                        "question": "Why are truck accidents increasing on I-20 in Lexington and Richland counties?",
-                        "answer": "The primary driver is explosive growth in distribution and logistics operations along the I-20 corridor, especially in Lexington County. New warehouse and distribution center development — including Southern Glazer's $80 million facility — generates hundreds of additional daily truck trips that mix with commuter traffic on I-20 and surrounding roads."
-                    },
-                    {
-                        "question": "Can I recover compensation if I was partially at fault in an I-20 truck crash?",
-                        "answer": "Yes. South Carolina follows a modified comparative fault rule — you can recover damages as long as you are less than 51% at fault. Your compensation is reduced by your percentage of responsibility. For example, if you are found 20% at fault and your damages total $500,000, you would recover $400,000."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "I-20 is the primary east-west freight artery through the South Carolina Midlands, carrying thousands of tractor-trailers daily through Lexington and Richland counties. Explosive growth in distribution and logistics along the I-20 corridor in <strong>Lexington County</strong> is driving more truck volume onto roads shared with commuters. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>."
-            }
-        },
         "/resources/i-26-i-95-corridor-report/": {
             "type": "resource",
             "status": "publish",
@@ -23794,171 +22811,6 @@
                 "_roden_author_attorney": "Eric Roden",
                 "_roden_jurisdiction": "both",
                 "_roden_last_reviewed": "2026-08-25"
-            }
-        },
-        "/resources/i-516-truck-accidents-port-savannah/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "I-516 Truck Accidents Near Port of Savannah",
-            "excerpt": "Guide to truck accidents on I-516 (W.F. Lynes Parkway) in Savannah, Georgia. The 6.5-mile auxiliary interstate connects southern Savannah to the Port of Savannah and carries heavy commercial truck traffic daily.",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "How many trucks use I-516 daily?",
-                        "answer": "I-516 is part of the arterial system carrying roughly 30,000 truck trips per day through Chatham County. As the direct connector between southern Savannah and I-16 — the primary Port of Savannah freight corridor — I-516 handles a significant share of container trucks, fuel tankers, construction vehicles, and delivery trucks."
-                    },
-                    {
-                        "question": "Why are I-516 truck accidents different from I-16 or I-95 crashes?",
-                        "answer": "I-516 is a shorter urban expressway with compact interchanges, shorter merge zones, and closer proximity to residential neighborhoods. Trucks have less room to maneuver, speed differentials at merges are more pronounced, and the mix of commuter and commercial traffic is denser than on longer rural interstates."
-                    },
-                    {
-                        "question": "What should I do if a truck drops cargo on I-516?",
-                        "answer": "Do not swerve into adjacent lanes — this often causes a worse crash. Brake as much as safely possible. After stopping, call 911 to report the debris hazard. Photograph any cargo on the roadway and the truck if visible. Cargo spills create liability for the trucking company and the cargo shipper or loader."
-                    },
-                    {
-                        "question": "Can I sue if a truck hit me merging onto I-516?",
-                        "answer": "Yes. While merging vehicles generally must yield to highway traffic, truck drivers have a duty to maintain safe following distances and adjust speed to allow merging. If a truck driver was following too closely, speeding, or distracted and rear-ended you during a merge, the truck driver and trucking company may be liable under Georgia negligence law."
-                    },
-                    {
-                        "question": "How long do I have to file a truck accident claim in Georgia?",
-                        "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). However, contact an attorney within 24-48 hours because ELD data, dash cam footage, and post-accident drug test results can be lost within days if a spoliation letter is not sent promptly."
-                    }
-                ],
-                "_roden_jurisdiction": "ga",
-                "_roden_key_takeaways": "I-516 (W.F. Lynes Parkway) is a <strong>6.49-mile auxiliary interstate</strong> connecting southern Savannah to the Port of Savannah and I-16. It carries a significant share of the <strong>30,000 daily truck trips</strong> through Chatham County on compact interchanges with short merge zones and close residential proximity. Merge collisions, rear-end crashes in commuter congestion, and cargo spills are common crash types. Georgia law provides <strong>2 years to file</strong> (<strong>O.C.G.A. &sect; 9-3-33</strong>) and recovery if less than <strong>50% at fault</strong>."
-            }
-        },
-        "/resources/i-526-construction-zone-truck-accidents-charleston/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "I-526 Lowcountry Corridor Construction Zone Truck Accidents",
-            "excerpt": "The I-526 Lowcountry Corridor project is a $1.5 billion widening of I-526 in North Charleston and West Ashley. A construction worker was killed in the work zone in November 2025. Learn about construction zone crash dangers and your rights under South Carolina law.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "What is the I-526 Lowcountry Corridor construction project?",
-                        "answer": "The I-526 Lowcountry Corridor project is widening I-526 from four to six lanes across approximately 7 miles from Rivers Avenue to Paul Cantrell Boulevard in North Charleston and West Ashley. The estimated budget is $1.5 billion, with some reports citing the total program cost approaching $7 billion. It is one of the largest highway construction projects in South Carolina history."
-                    },
-                    {
-                        "question": "Has anyone been killed in the I-526 construction zone?",
-                        "answer": "Yes. In November 2025, a pickup truck struck two construction workers in the I-526 East work zone at the Westmoreland Bridge. Kaleb Tilley, 23, of Mount Airy, North Carolina, was killed at MUSC. I-526 East was blocked until 1:45 a.m. Construction workers face daily exposure to high-speed traffic in the work zone separated by only temporary barriers."
-                    },
-                    {
-                        "question": "Can I sue SCDOT if the construction zone caused my accident?",
-                        "answer": "You may be able to file a claim against SCDOT, but claims against government entities in South Carolina are subject to the SC Tort Claims Act (S.C. Code Section 15-78-80). This law imposes damage caps and specific procedural requirements, and the filing deadlines for government claims may be shorter than the standard 3-year statute of limitations. An attorney experienced with government liability claims is essential."
-                    },
-                    {
-                        "question": "How long do I have to file a truck accident lawsuit in South Carolina?",
-                        "answer": "South Carolina gives you 3 years from the date of injury to file a personal injury lawsuit under S.C. Code Section 15-3-530. However, if your claim involves a government entity like SCDOT, shorter deadlines may apply. Critical evidence such as ELD data, construction zone traffic control plans, and dash cam footage must be preserved immediately, so contact an attorney within 24 to 48 hours."
-                    },
-                    {
-                        "question": "What made the February 2026 overheight truck strike on I-526 so dangerous?",
-                        "answer": "In February 2026, a tractor-trailer carrying a high load struck a sign on I-526 westbound before Rivers Avenue, then continued onto I-26 and struck the Eagle Drive overpass. Construction zones can alter overhead clearances and sign heights without updating all signage in real time. An overheight strike on a bridge or overpass can cause catastrophic structural damage and endanger every vehicle on and under the structure."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "The <strong>I-526 Lowcountry Corridor project</strong> is widening I-526 from 4 to 6 lanes across <strong>7 miles</strong> in North Charleston and West Ashley, with a budget estimated at <strong>$1.5 billion</strong> (total program approaching <strong>$7 billion</strong>). In <strong>November 2025</strong>, a pickup truck struck two construction workers in the I-526 East work zone at the Westmoreland Bridge &mdash; <strong>Kaleb Tilley, 23, was killed</strong>. In <strong>February 2026</strong>, a tractor-trailer with a high load struck an I-526 sign and then hit the <strong>Eagle Drive overpass</strong> on I-26. South Carolina gives injury victims <strong>3 years to file a lawsuit</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) and allows recovery if less than <strong>51% at fault</strong>. Claims against SCDOT require compliance with the <strong>SC Tort Claims Act</strong>. Contact Roden Law's Charleston office at <strong>(843) 790-8999</strong>."
-            }
-        },
-        "/resources/i-526-truck-accidents-charleston/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "I-526 Truck Accidents in Charleston, SC",
-            "excerpt": "Guide to truck accidents on I-526 (Mark Clark Expressway) in Charleston, SC. Covers port terminal traffic, construction zone hazards, common crash types, and your legal rights under South Carolina law.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "What makes I-526 particularly dangerous for truck accidents?",
-                        "answer": "I-526 connects the Port of Charleston's two major terminals — Wando Welch and Hugh Leatherman — creating concentrated truck traffic on a highway with narrow lanes, sharp interchange curves, and an ongoing widening project. Port trucks add complexity because multiple parties (driver, carrier, chassis lessor, terminal operator) may share liability."
-                    },
-                    {
-                        "question": "Who is liable for a truck accident on I-526?",
-                        "answer": "Multiple parties may be liable: the truck driver, the trucking company, the chassis leasing company, the port terminal operator, a parts manufacturer, or a maintenance provider. In port trucking, the driver, motor carrier, chassis owner, and cargo shipper are often separate entities. If the I-526 construction zone contributed, the construction contractor or SCDOT may also bear responsibility."
-                    },
-                    {
-                        "question": "How long do I have to file a truck accident claim in South Carolina?",
-                        "answer": "The statute of limitations for personal injury in South Carolina is 3 years from the date of injury under S.C. Code Section 15-3-530. However, you should contact an attorney within 24-48 hours because critical evidence — ELD driving logs, dash cam footage, and post-accident drug test results — can be overwritten or destroyed within days."
-                    },
-                    {
-                        "question": "What evidence is important in an I-526 truck accident case?",
-                        "answer": "Key evidence includes the truck's ELD (electronic logging device) data showing driving hours, dash cam footage, pre-trip inspection reports, maintenance records, the driver's CDL and drug test results, dispatch communications, cargo weight and securement records, and the USDOT number on the cab door. A spoliation letter must be sent immediately to prevent destruction of this evidence."
-                    },
-                    {
-                        "question": "Can the I-526 construction zone affect my truck accident claim?",
-                        "answer": "Yes. If unsafe construction zone conditions contributed to the crash — such as confusing lane shifts, inadequate signage, or hazardous barriers — the construction contractor or SCDOT may share liability. Claims against government entities are subject to the SC Tort Claims Act (S.C. Code Section 15-78-110), which shortens the filing deadline to two years and caps damages."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "I-526 (Mark Clark Expressway) connects the Port of Charleston's two major terminals and carries some of the heaviest commercial truck traffic in South Carolina. Port truck crashes involve multiple liable parties: driver, carrier, <strong>chassis leasing company</strong>, terminal operator, and cargo shipper. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>."
-            }
-        },
-        "/resources/i-77-truck-accidents-columbia-rock-hill/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "I-77 Truck Accidents: Columbia to Rock Hill Corridor",
-            "excerpt": "Guide to truck accidents on I-77 between Columbia and Rock Hill, South Carolina. Covers the Charlotte freight connection, Fort Jackson military traffic, crash hotspots, and your legal rights under South Carolina law (S.C. Code § 15-3-530).",
-            "meta": {
-                "_roden_author_attorney": "Ivy S. Montano",
-                "_roden_faqs": [
-                    {
-                        "question": "How dangerous is I-77 between Columbia and Rock Hill for truck accidents?",
-                        "answer": "I-77 between Columbia and Rock Hill is one of the state's more demanding truck corridors. It carries Charlotte-bound freight traffic, military vehicle movements near Fort Jackson, and through-freight connecting I-20 to North Carolina, alongside suburban commuter traffic and two-lane rural stretches. That mix — heavy trucks sharing road with commuters at differing speeds — is what drives the crash pattern."
-                    },
-                    {
-                        "question": "Does Fort Jackson military traffic make I-77 more dangerous?",
-                        "answer": "Yes. Fort Jackson processes approximately 50,000 soldiers annually and generates military convoys, supply trucks, and personnel transport that travel at controlled speeds below the posted limit on I-77. These speed differentials between slow-moving military vehicles and commercial trucks create dangerous conditions, particularly near the base exits between Exits 9 and 12."
-                    },
-                    {
-                        "question": "What should I do if I am hit by a truck on I-77 near Columbia?",
-                        "answer": "Move to safety, call 911, and document the truck — company name, USDOT number on the cab door, trailer number, and cargo type. Photograph everything including vehicle damage, road conditions, and mile markers. Seek medical attention at Prisma Health Richland. Contact a truck accident attorney within 24-48 hours because ELD data and dash cam footage can be destroyed within days."
-                    },
-                    {
-                        "question": "How long do I have to file a lawsuit after an I-77 truck accident in South Carolina?",
-                        "answer": "South Carolina has a 3-year statute of limitations for personal injury claims (S.C. Code § 15-3-530). However, the most important deadline is the first 24-48 hours after the crash, when electronic logging device data, dash cam footage, and post-accident drug test results are at greatest risk of being lost or destroyed."
-                    },
-                    {
-                        "question": "Can the trucking company destroy evidence after an I-77 crash?",
-                        "answer": "They are not permitted to, but it happens. ELD data can be overwritten within days, dash cameras record on 24-72 hour loops, and dispatch records can be deleted. A truck accident attorney sends a spoliation preservation letter within hours of engagement, legally requiring the trucking company to preserve all evidence. Destroying evidence after receiving this letter creates an adverse inference against the company in court."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "I-77 connects Columbia to Rock Hill and Charlotte, serving as a major <strong>freight pipeline between the Charlotte logistics hub and South Carolina</strong>. The corridor passes near Fort Jackson and through rapidly growing communities including Blythewood and Forest Acres. Richland County consistently reports one of the <strong>highest crash rates in South Carolina</strong>. Fatigue-related crashes peak on rural stretches through Fairfield County. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>."
-            }
-        },
-        "/resources/i-95-truck-accidents-savannah-brunswick/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "I-95 Truck Accidents: Savannah to Brunswick Corridor",
-            "excerpt": "Data-driven guide to truck accidents on I-95 between Savannah and Brunswick, Georgia. Covers crash hotspots, fatigue-related wrecks, I-95 widening construction hazards, and your legal rights under Georgia law (O.C.G.A. § 9-3-33).",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "How dangerous is I-95 between Savannah and Brunswick for truck accidents?",
-                        "answer": "Extremely dangerous. I-95 has been called the most dangerous highway in America, and the Southeast Georgia segment carries heavy Port of Savannah freight traffic through rural areas with longer emergency response times. Georgia recorded 257 truck fatalities statewide in 2023 — an 81% increase since 2013. Rural counties like McIntosh account for a disproportionate share of fatal truck crashes."
-                    },
-                    {
-                        "question": "What makes the I-95/I-16 interchange so dangerous for truck crashes?",
-                        "answer": "Every container leaving the Port of Savannah by road passes through this interchange. GDOT is actively reconstructing the junction, creating lane shifts, temporary routes, and narrowed lanes. The combination of 30,000+ daily truck trips and active construction produces dangerous speed differentials and reduced maneuvering room."
-                    },
-                    {
-                        "question": "How long do I have to file a truck accident lawsuit in Georgia?",
-                        "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). However, you should contact an attorney within 24-48 hours of a truck crash because critical evidence — ELD data, dash cam footage, drug test results — can be destroyed or overwritten within days."
-                    },
-                    {
-                        "question": "What if the truck crash happened in a construction zone on I-95?",
-                        "answer": "Construction zone crashes may create additional liable parties beyond the truck driver and trucking company. The construction contractor, GDOT, and traffic control subcontractors may share liability if the work zone design, signage, or lane shifts contributed to the crash. Georgia law allows claims against government entities under certain conditions."
-                    },
-                    {
-                        "question": "Can fatigue be proven in an I-95 truck accident case?",
-                        "answer": "Yes. Electronic Logging Devices (ELDs) record driving hours digitally. FMCSA regulations limit drivers to 11 hours of driving in a 14-hour window after 10 hours off-duty. If the trucker exceeded these limits, it is strong evidence of negligence. Additionally, dispatch records, text messages, and GPS data can show whether the trucking company pressured the driver to keep driving."
-                    }
-                ],
-                "_roden_jurisdiction": "ga",
-                "_roden_key_takeaways": "I-95 between Savannah and Brunswick is one of the <strong>most dangerous truck corridors in America</strong>, carrying heavy Port of Savannah freight through rural stretches with longer emergency response times. Georgia recorded <strong>257 truck fatalities in 2023</strong>, an 81% increase since 2013. Active GDOT construction at the I-16/I-95 interchange and I-95 widening in Glynn County add construction zone hazards. Georgia gives injury victims <strong>2 years to file a lawsuit</strong> (<strong>O.C.G.A. &sect; 9-3-33</strong>) and allows recovery if less than <strong>50% at fault</strong>. Contact an attorney within 24&ndash;48 hours to preserve critical ELD and dash cam evidence."
             }
         },
         "/resources/i-95-widening-construction-zone-ga-sc/": {
@@ -23992,39 +22844,6 @@
                 ],
                 "_roden_jurisdiction": "ga",
                 "_roden_key_takeaways": "<strong>Two massive I-95 widening projects</strong> totaling nearly <strong>$1 billion</strong> are converging on the Georgia-South Carolina border: GDOT's <strong>$101 million</strong> Glynn County widening (22 miles, 6 to 8 lanes, construction starting 2026) and SCDOT's <strong>$825 million</strong> Jasper County project (<strong>SCDOT's largest ever contract</strong>, awarded to Ferrovial, including a new Savannah River bridge, groundbreaking August 2025). <strong>42% of crashes</strong> on the Glynn County stretch are rear-end collisions. In <strong>February 2026</strong>, a fully loaded U-Haul overturned at Exit 36 &mdash; a <strong>South Carolina woman was killed</strong>. Which state's law applies depends on which side of the Savannah River the crash occurred: Georgia allows <strong>2 years to file</strong> (<strong>O.C.G.A. &sect; 9-3-33</strong>), South Carolina allows <strong>3 years</strong> (<strong>S.C. Code &sect; 15-3-530</strong>). Call <strong>(912) 303-5850</strong>."
-            }
-        },
-        "/resources/jimmy-deloach-connector-truck-accidents-savannah/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Jimmy DeLoach Connector Truck Accidents in Savannah",
-            "excerpt": "The Jimmy DeLoach Connector carries 5,000+ trucks per day to the Port of Savannah. Learn about documented crashes, intersection hazards, and your legal rights under Georgia law.",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "What is the Jimmy DeLoach Connector and why is it dangerous?",
-                        "answer": "The Jimmy DeLoach Connector is a 3.1-mile, four-lane highway that opened in May 2016 to connect SR 307 (Dean Forest Road) to Jimmy DeLoach Parkway, creating a direct route between the Port of Savannah and I-95/I-16. It carries more than 5,000 trucks per day and cuts 11 minutes from the port-to-interstate drive. The corridor is dangerous because nearly every vehicle is a commercial truck operating at or near the 80,000-pound weight limit, and intersections with local roads like Crossroads Parkway and Benton Boulevard create conflict points with commuter traffic."
-                    },
-                    {
-                        "question": "How many trucks use the Jimmy DeLoach Connector each day?",
-                        "answer": "The connector carries more than 5,000 trucks per day. The Port of Savannah generates an estimated 14,000 to 16,000 truck moves per weekday across all port access routes, and the Jimmy DeLoach Connector handles a significant share of that volume. The port handled nearly 5.7 million TEUs in 2025, and truck traffic on the connector continues to increase as port volume grows."
-                    },
-                    {
-                        "question": "What are the most common types of truck crashes on the Jimmy DeLoach Connector?",
-                        "answer": "The most common crash types include truck-vs-truck collisions at signalized intersections, truck-vs-passenger vehicle crashes where the size mismatch causes catastrophic injuries, rear-end crashes where loaded trucks cannot stop in time, and lane departure crashes caused by fatigued drivers. The September 2025 crash at Crossroads Parkway involved two semi-trucks and shut down the road for four hours."
-                    },
-                    {
-                        "question": "How long do I have to file a truck accident lawsuit in Georgia?",
-                        "answer": "Georgia's statute of limitations gives you 2 years from the date of injury to file a personal injury lawsuit under O.C.G.A. Section 9-3-33. However, critical evidence from port trucks, including ELD data, GPS tracking, container weight records, and port gate timestamps, can be overwritten within days. Contact an attorney within 24 to 48 hours to preserve this evidence."
-                    },
-                    {
-                        "question": "Who can be held liable for a truck crash on the Jimmy DeLoach Connector?",
-                        "answer": "Potentially liable parties include the truck driver for negligence such as speeding or fatigue, the trucking company or motor carrier for HOS violations or negligent hiring, the cargo shipper for overweight or improperly secured loads, and government entities like GDOT or Chatham County for intersection design defects or inadequate signal timing. In some cases, the Georgia Ports Authority may share liability if gate scheduling practices created dangerous truck surges on the corridor."
-                    }
-                ],
-                "_roden_jurisdiction": "ga",
-                "_roden_key_takeaways": "The Jimmy DeLoach Connector is a <strong>3.1-mile, four-lane highway</strong> carrying <strong>5,000+ trucks per day</strong> to and from the Port of Savannah, which handled nearly <strong>5.7 million TEUs in 2025</strong> and generates <strong>14,000&ndash;16,000 truck moves per weekday</strong>. In September 2025, two semi-trucks collided at Crossroads Parkway, <strong>shutting down the road for 4 hours</strong> and destroying a traffic light. Georgia gives injury victims <strong>2 years to file a lawsuit</strong> (<strong>O.C.G.A. &sect; 9-3-33</strong>) and allows recovery if less than <strong>50% at fault</strong>. Contact Roden Law Savannah at <strong>(912) 303-5850</strong> within 24&ndash;48 hours to preserve ELD data and port records."
             }
         },
         "/resources/logging-truck-accidents-us-17-mcintosh-glynn/": {
@@ -24203,39 +23022,6 @@
                 "_roden_key_takeaways": "Pooler sits at the <strong>I-95/I-16 intersection</strong> with nearly <strong>3 million square feet of warehouse space</strong>, generating enormous truck traffic on roads shared with a rapidly growing residential population. Dean Forest Road, Pooler Parkway, and the I-95/I-16 interchange are the most dangerous corridors. Warehouse operators, trucking companies, and cargo shippers may all share liability. Georgia law provides <strong>2 years to file an injury claim</strong> (<strong>O.C.G.A. &sect; 9-3-33</strong>) and recovery if less than <strong>50% at fault</strong>."
             }
         },
-        "/resources/port-access-road-truck-accidents-leatherman-terminal/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Port Access Road Truck Accidents Near Leatherman Terminal",
-            "excerpt": "Port Access Road funnels truck traffic from Charleston's largest container terminal to I-26. Learn about chassis defects, intermodal liability, and your legal rights after a crash on this corridor.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "What is Port Access Road and why is it dangerous?",
-                        "answer": "Port Access Road is the primary truck route connecting the Hugh Leatherman Terminal on North Charleston's former Navy Base to I-26 via the Bainbridge Avenue interchange. The road is dominated by commercial truck traffic, features narrow lanes with limited clearance, frequent merges at industrial driveways, and poor lighting during early morning terminal operations. When crashes occur here, they almost always involve at least one truck."
-                    },
-                    {
-                        "question": "What are chassis pool defects and how do they cause truck accidents?",
-                        "answer": "Intermodal chassis are wheeled frames that carry shipping containers. They circulate in pools operated by companies like DCLI, TRAC, and Flexi-Van, used by dozens of different drivers and carriers. Because no single operator maintains them consistently, common defects include worn brakes, bald tires, broken lights, cracked frames, and faulty coupling pins. When a chassis defect causes a crash, the chassis pool operator bears significant liability."
-                    },
-                    {
-                        "question": "Who is liable for a truck accident on Port Access Road?",
-                        "answer": "Port Access Road crashes often involve multiple liable parties: the truck driver (following too closely or skipping pre-trip inspections), the motor carrier (HOS violations or negligent hiring), the chassis pool operator (equipment defects), the shipping line (overweight containers), the SC Ports Authority (unsafe terminal procedures), and freight brokers (selecting unqualified carriers). An experienced attorney must investigate the full intermodal chain."
-                    },
-                    {
-                        "question": "How long do I have to file a claim after a Port Access Road truck accident?",
-                        "answer": "South Carolina law provides 3 years from the date of injury to file a personal injury claim (S.C. Code Section 15-3-530). However, critical evidence in port trucking cases — terminal gate records, chassis inspection logs, container weight certificates, and ELD data — can be overwritten or destroyed quickly. Contact an attorney immediately to preserve this evidence."
-                    },
-                    {
-                        "question": "What should I photograph at a Port Access Road crash scene?",
-                        "answer": "In addition to standard crash scene photos, document the chassis pool markings (company name on the chassis frame), visible chassis defects (bald tires, missing lights, leaking brake fluid, rust damage), the container number, the truck's USDOT number, and the terminal gate the truck exited. These details are essential for identifying all liable parties in the intermodal liability chain."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "The <strong>Hugh Leatherman Terminal</strong> on North Charleston's former Navy Base is the <strong>largest container terminal in the Port of Charleston</strong>, funneling virtually all truck traffic through <strong>Port Access Road</strong> to I-26 via the <strong>Bainbridge Avenue interchange</strong>. The corridor features <strong>narrow lanes, frequent merges, limited sight lines</strong> at industrial driveways, and <strong>poor lighting in early morning hours</strong>. <strong>Chassis pool defects</strong> — worn brakes, bald tires, cracked frames — are a major liability factor unique to intermodal port operations. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>."
-            }
-        },
         "/resources/port-of-savannah-truck-routes/": {
             "type": "resource",
             "status": "publish",
@@ -24267,39 +23053,6 @@
                 ],
                 "_roden_jurisdiction": "ga",
                 "_roden_key_takeaways": "The Port of Savannah generates <strong>14,000&ndash;16,000 truck moves per day</strong> on local roads including Bay Street (through the Historic District), DeRenne Avenue, Abercorn Street, and Dean Forest Road. Port truck crashes involve complex liability chains: <strong>truck driver, trucking company, chassis leasing company, cargo shipper, and terminal operator</strong> may all be responsible. The port's <strong>$1.9 billion expansion</strong> will increase truck volumes further. Georgia gives victims <strong>2 years to file</strong> (<strong>O.C.G.A. &sect; 9-3-33</strong>) with recovery if less than <strong>50% at fault</strong>."
-            }
-        },
-        "/resources/rivers-avenue-truck-accidents-north-charleston/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Rivers Avenue Truck Accidents in North Charleston",
-            "excerpt": "Guide to truck accidents on Rivers Avenue (US-52) in North Charleston, SC. Covers port and industrial traffic hazards, crash statistics, your legal rights, and how to file a claim after a truck crash.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is Rivers Avenue so dangerous for truck accidents?",
-                        "answer": "Rivers Avenue is one of Charleston County's five deadliest roads in South Carolina Department of Transportation traffic data &mdash; four of which run through North Charleston, alongside Ashley Phosphate Road, Dorchester Road and Remount Road. Its danger comes from the combination of heavy port and industrial truck traffic, a multi-lane high-speed design, frequent commercial driveways, and significant pedestrian activity. The Rivers Avenue and I-526 interchange is a particular concentration point, where interstate ramp traffic meets that commercial corridor. The road was not designed for the volume of commercial truck traffic it now carries."
-                    },
-                    {
-                        "question": "What should I do if a truck rear-ends me on Rivers Avenue?",
-                        "answer": "Call 911, move to safety off the roadway if possible, and document the truck's company name, USDOT number, and trailer number. Photograph all damage and get witness contact information. Seek medical attention at Trident Medical Center even if injuries seem minor — adrenaline masks pain. Contact a truck accident attorney within 24-48 hours to preserve ELD and dash cam evidence."
-                    },
-                    {
-                        "question": "Can I sue if a truck turning into a commercial driveway hit me on Rivers Avenue?",
-                        "answer": "Yes. Trucks entering or exiting commercial properties on Rivers Avenue must yield to through traffic. If a truck driver failed to yield, turned without adequate clearance, or blocked travel lanes, the driver and trucking company are liable. If the driveway design created inadequate sight lines, the property owner may also share liability."
-                    },
-                    {
-                        "question": "What if the truck that hit me was a cement mixer or construction vehicle?",
-                        "answer": "Cement mixers, dump trucks, and construction vehicles are commercial motor vehicles subject to FMCSA regulations. They must comply with hours-of-service limits, pre-trip inspections, and weight restrictions. The March 2025 cement truck rollover on Rivers Avenue demonstrates the danger these vehicles pose. The driver, their employer, and potentially the construction project they were serving may all be liable."
-                    },
-                    {
-                        "question": "Is Rivers Avenue truck accident data publicly available?",
-                        "answer": "Yes. The South Carolina Department of Public Safety publishes crash data, and the FMCSA maintains a Safety Measurement System database where you can look up any trucking company's safety record using their USDOT number. Your attorney can also obtain detailed crash reports from North Charleston Police Department and SCHP."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "Rivers Avenue (US-52) is one of <strong>Charleston County's five deadliest roads</strong> in SCDOT traffic data &mdash; four of which run through North Charleston &mdash; and is the city's primary commercial corridor. Heavy truck traffic from port and industrial facilities, Boeing South Carolina, and commercial development create constant hazards. Recent crashes include a <strong>cement truck rollover</strong> and a tractor-trailer striking the I-526 overhead sign. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>."
             }
         },
         "/resources/south-carolina-car-accident-settlement-value/": {
@@ -25322,72 +24075,6 @@
                 "_roden_meta_description": "South Carolina wrongful death cases carry no cap on compensatory damages and can include two claims — the wrongful-death claim and a survival action. Value depends on the loss and the facts."
             }
         },
-        "/resources/spruill-avenue-port-trucks-north-charleston/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Spruill Avenue &amp; North Rhett: Port Trucks Through North Charleston Neighborhoods",
-            "excerpt": "Port trucks travel through North Charleston's Park Circle and Chicora-Cherokee neighborhoods on Spruill Avenue and North Rhett at 50 mph. Learn about the safety risks, recent incidents, and your legal rights.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why are port trucks driving through North Charleston residential neighborhoods?",
-                        "answer": "Trucks leaving the North Charleston Terminal and port-adjacent warehouses travel north on Spruill Avenue, then use North Rhett Avenue — a residential street — to access I-526. This routing puts fully loaded container trucks on streets designed for neighborhood traffic. Trucks pass every 5 to 10 minutes during peak hours at speeds up to 50 mph."
-                    },
-                    {
-                        "question": "What is the city doing about truck traffic on Spruill Avenue?",
-                        "answer": "The City of North Charleston is working to obtain ownership of Spruill Avenue from SCDOT, with plans to reduce the road from four lanes to two, add bike lanes, and implement traffic calming measures. A 2019 community benefits agreement with Frontier Logistics already banned tractor-trailers from Reynolds Avenue, but truck traffic shifted to parallel routes. Until the Spruill Avenue changes are implemented, port trucks continue using the corridor."
-                    },
-                    {
-                        "question": "Who is liable when a port truck crashes in a residential neighborhood?",
-                        "answer": "Multiple parties may share liability: the truck driver (for speeding in a residential zone), the motor carrier (for routing drivers through neighborhoods), the port terminal operator (for failing to direct trucks to designated freight routes), the chassis leasing company (for equipment defects), and government entities (for failing to enforce truck restrictions or install safety improvements)."
-                    },
-                    {
-                        "question": "Can I sue if a port truck damaged my home or property from vibration or a crash?",
-                        "answer": "Yes. If a port truck caused a collision that damaged your property, or if ongoing heavy truck traffic has caused structural damage to your home through vibration, you may have claims against the trucking company, motor carrier, and potentially the port authority or government entity responsible for routing. South Carolina provides 3 years to file (S.C. Code Section 15-3-530)."
-                    },
-                    {
-                        "question": "What evidence should I collect after a truck crash on Spruill Avenue or North Rhett?",
-                        "answer": "Document the truck's company name, USDOT number, container number, and chassis pool markings. Note the truck's estimated speed and direction of travel. Check for doorbell cameras and home security footage from nearby residences — Park Circle and Chicora-Cherokee homes often have surveillance that captures truck traffic. Contact an attorney immediately to preserve terminal gate logs and ELD data."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "<strong>Spruill Avenue</strong> and <strong>North Rhett Avenue</strong> carry port trucks through North Charleston's Park Circle and Chicora-Cherokee residential neighborhoods. Trucks are clocked at <strong>50 mph through residential areas</strong>, passing <strong>every 5&ndash;10 minutes</strong>. A truck struck a <strong>railroad overpass on Buist Avenue near Park Circle</strong> in May 2024. A 2019 community benefits agreement with Frontier Logistics banned tractor-trailers from Reynolds Avenue, but traffic shifted to parallel routes. The city is working to reduce Spruill Avenue from <strong>4 lanes to 2</strong>. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>."
-            }
-        },
-        "/resources/summerville-truck-accidents-i-26-corridor/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Summerville Truck Accidents on the I-26 Corridor",
-            "excerpt": "Guide to truck accidents in Summerville, SC along the I-26 corridor. Covers dangerous roads, crash statistics, FMCSA regulations, and how to file a truck accident claim under South Carolina law.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why are there so many serious crashes in Summerville?",
-                        "answer": "Summerville sits on the I-26 freight corridor between the Port of Charleston and inland destinations, and residential growth has outpaced the road network connecting neighborhoods to the interstate. Five roads — US-17A, Berlin G. Myers Parkway, Old Trolley Road, Dorchester Road, and Central Avenue — account for approximately half of all serious-injury crashes in the area."
-                    },
-                    {
-                        "question": "What types of trucks cause accidents in Summerville?",
-                        "answer": "The Summerville corridor sees long-haul tractor-trailers on I-26 heading to and from the Port of Charleston, regional delivery trucks serving commercial developments, fuel tankers, construction vehicles supporting new development, and local box trucks. Each type presents different hazards — long-haul trucks involve fatigue risks while delivery trucks create frequent stop-and-go conflicts on commercial roads."
-                    },
-                    {
-                        "question": "How does driver fatigue contribute to I-26 truck accidents near Summerville?",
-                        "answer": "Trucks on I-26 are often hours into their driving shift by the time they reach Summerville — coming from Columbia, Charlotte, or further. FMCSA limits driving to 11 hours within a 14-hour window, but violations are common. Fatigued drivers have slower reaction times, impaired judgment, and may experience microsleep episodes. ELD data is the key evidence for proving fatigue violations."
-                    },
-                    {
-                        "question": "Can I file a claim if a truck accident happened in a Summerville construction zone?",
-                        "answer": "Yes. If the construction zone contributed to the crash through unsafe lane configurations, inadequate signage, or hazardous conditions, the construction contractor and potentially SCDOT may share liability alongside the truck driver and trucking company. Construction zone crashes are subject to enhanced penalties, and negligent zone design may support government liability claims under the SC Tort Claims Act."
-                    },
-                    {
-                        "question": "What is the deadline for filing a truck accident claim in Summerville?",
-                        "answer": "South Carolina's statute of limitations gives you 3 years from the date of injury to file a lawsuit (S.C. Code Section 15-3-530). However, if a government entity (SCDOT, Town of Summerville) is involved, a shorter, two-year filing deadline may apply under the SC Tort Claims Act. Contact an attorney promptly — and within 24-48 hours for evidence preservation purposes."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "The I-26 corridor through Summerville carries heavy commercial truck traffic between the Port of Charleston and Columbia, and five roads account for approximately half of serious-injury crashes in the area: US-17A, Berlin G. Myers Parkway, Old Trolley Road, Dorchester Road, and Central Avenue. Rapid population growth has outpaced road infrastructure. South Carolina gives victims 3 years to file (S.C. Code &sect; 15-3-530), and recovery is barred only once a plaintiff&#8217;s own negligence is greater than the combined negligence of the defendants."
-            }
-        },
         "/resources/truck-accident-settlement-process/": {
             "type": "resource",
             "status": "publish",
@@ -25435,72 +24122,6 @@
                 "_roden_meta_description": "Starting a truck accident settlement takes one free call. The seven phases, what your lawyer needs from you, and the Georgia and South Carolina deadlines.",
                 "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
                 "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
-            }
-        },
-        "/resources/two-notch-road-truck-accidents-columbia/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Two Notch Road Truck Accidents in Columbia, SC",
-            "excerpt": "Data-driven guide to truck accidents on Two Notch Road in Columbia, SC. Covers dangerous segments from I-20 to Decker Blvd, infrastructure design flaws, common crash types, and your legal rights under South Carolina law.",
-            "meta": {
-                "_roden_author_attorney": "Ivy S. Montano",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is Two Notch Road so dangerous for truck accidents?",
-                        "answer": "Local business owners describe Two Notch Road as \"accident-prone just because of how the infrastructure is set up.\" The road was designed for lighter traffic and has been widened without comprehensive redesign, creating inconsistent lane widths, awkward merge points, and intersection geometry that cannot accommodate modern truck sizes. Heavy commercial truck traffic from retail and distribution operations compounds the design problems."
-                    },
-                    {
-                        "question": "What happened in the fatal crash at Two Notch and Decker Blvd?",
-                        "answer": "In July 2025, a firetruck struck a sedan making a left turn at the intersection of Two Notch Road and Decker Boulevard, killing Carolyn Collins, 64. While the striking vehicle was an emergency vehicle, the crash illustrates the fundamental danger of the intersection for any large, heavy vehicle — including commercial trucks — colliding with passenger cars making left turns."
-                    },
-                    {
-                        "question": "Which segments of Two Notch Road are most dangerous?",
-                        "answer": "Two dangerous segments stand out: I-20 East to Parklane Road, where trucks exit the interstate at highway speed into a commercial zone with closely spaced traffic lights, and Atrium Way to Greengage Park Road, where dense commercial development generates constant turning-movement conflicts with delivery trucks and through traffic."
-                    },
-                    {
-                        "question": "How long do I have to file a truck accident lawsuit in South Carolina?",
-                        "answer": "South Carolina has a 3-year statute of limitations for personal injury claims (S.C. Code 15-3-530). However, you should contact an attorney within 24-48 hours because critical evidence like ELD data, delivery logs, dash cam footage, and event data recorder information can be destroyed or overwritten quickly."
-                    },
-                    {
-                        "question": "Can the road design be a factor in my truck accident case?",
-                        "answer": "Yes. If infrastructure design defects — such as inadequate signal timing, inconsistent lane widths, or poor intersection geometry — contributed to the crash, SCDOT or Richland County may share liability. However, claims against government entities are subject to the SC Tort Claims Act (S.C. Code Section 15-78-110), which shortens the filing deadline to two years and caps damages."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "Two Notch Road is one of Columbia's most accident-prone truck corridors, with local business owners describing it as <strong>\"accident-prone just because of how the infrastructure is set up.\"</strong> Dangerous segments include I-20 East to Parklane Rd and Atrium Way to Greengage Park Rd. A <strong>firetruck struck and killed Carolyn Collins, 64</strong>, at Two Notch &amp; Decker Blvd in July 2025, illustrating the lethal risk of heavy-vehicle collisions at these intersections. Richland County recorded <strong>12,450 traffic collisions and 58 fatal collisions</strong> in 2023 (SCDPS). South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>."
-            }
-        },
-        "/resources/us-17-sc-544-truck-accidents-surfside-beach/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "US-17 &amp; SC-544 Truck Accidents in Surfside Beach",
-            "excerpt": "Data-driven guide to truck accidents at US-17 and SC-544 in Surfside Beach — Horry County's most hazardous intersection with 240 crashes in 3 years. Covers delivery truck risks, pedestrian dangers, and your legal rights under South Carolina law.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is US-17 and SC-544 so dangerous for truck accidents?",
-                        "answer": "The US-17/SC-544 intersection recorded 240 crashes over three years (2018&ndash;2020), which makes it one of the most crash-prone intersections in Horry County. Heavy commercial delivery trucks serving Surfside Beach tourist businesses share the intersection with unfamiliar tourist drivers and pedestrians crossing a multi-lane highway. US-17 carries a disproportionate share of the county's truck traffic along the whole Grand Strand, which is why crashes cluster on it."
-                    },
-                    {
-                        "question": "What types of trucks cause crashes at US-17 and SC-544?",
-                        "answer": "Delivery trucks serving Surfside Beach tourist businesses are the primary concern: food service deliveries, beverage distributors, linen services, retail merchandise trucks, and construction vehicles. These trucks make frequent left turns across US-17 traffic to access businesses, creating conflict points with high-speed through traffic and pedestrians."
-                    },
-                    {
-                        "question": "Are pedestrians at risk from truck accidents at this intersection?",
-                        "answer": "Yes, extremely so. Tourists staying at hotels west of US-17 must cross the multi-lane highway to reach the beach. Many cross at unmarked locations. Truck drivers have large blind spots that make pedestrians invisible during turns and lane changes. Pedestrian crashes involving commercial trucks at this location are almost always fatal or life-altering."
-                    },
-                    {
-                        "question": "How long do I have to file a truck accident lawsuit in South Carolina?",
-                        "answer": "South Carolina has a 3-year statute of limitations for personal injury claims (S.C. Code 15-3-530). However, you should contact an attorney within 24-48 hours because critical evidence like ELD data, delivery manifests, dash cam footage, and business surveillance camera recordings can be destroyed or overwritten quickly."
-                    },
-                    {
-                        "question": "Can I sue the business that was receiving the delivery?",
-                        "answer": "Potentially, yes. If a business directed delivery trucks to use unsafe access points on US-17, failed to provide safe off-street loading areas, or created conditions that forced trucks to make dangerous left turns across traffic, the business may share liability for resulting crashes. An attorney can investigate delivery routing and loading dock arrangements."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "US-17 &amp; SC-544 is one of the most hazardous intersections in Horry County, with <strong>240 crashes over 3 years (2018&ndash;2020)</strong>. Heavy commercial delivery traffic to Surfside Beach tourist businesses shares the intersection with unfamiliar tourists and <strong>pedestrians crossing a multi-lane highway</strong>. US-17 carries a disproportionate share of the county's truck traffic along the Grand Strand, which is why crashes cluster on it. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>."
             }
         },
         "/resources/us-52-truck-train-accidents-goose-creek/": {
