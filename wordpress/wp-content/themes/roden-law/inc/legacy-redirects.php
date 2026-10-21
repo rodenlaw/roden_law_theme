@@ -1358,10 +1358,17 @@ function roden_phase1_removed_urls() {
  *   WordPress's 404 slug guess (published posts only) until the Myrtle Beach
  *   child was retired on 2026-09-18 (roden_evaluate_location_urls()). The
  *   only URL of this shape in the replay fixture (site-health 2026-10-21).
+ * - /truck-accident-lawyers/drunk-driver-accident/: a truck scenario page with
+ *   no post behind it and no entry in roden_zero_click_scenario_urls() (its car,
+ *   motorcycle and pedestrian siblings are there). The nested
+ *   /practice-areas/truck-accident-lawyers/drunk-driver-accident/ form, the one
+ *   in the replay fixture, canonicalises to this key before the lookup. Lands
+ *   on the truck pillar, like its siblings. Owner, 2026-10-21.
  */
 function roden_orphan_alias_urls() {
     return array(
         '/locations/south-carolina/murrells-inlet/' => '/locations/south-carolina/myrtle-beach/murrells-inlet/',
+        '/truck-accident-lawyers/drunk-driver-accident/' => '/practice-areas/truck-accident-lawyers/',
     );
 }
 
