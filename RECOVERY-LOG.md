@@ -3257,3 +3257,13 @@ Follow-ups:
   Ashley Phosphate 2026-12-31, Savannah highways 2027-01-01. The Ravenel cyclists guide's ledger status is unknown.
 - The floor check still fails on 13 pages kept or held on purpose. A keep-list is proposed in
   docs/floor-cull-2026-10-21.md.
+
+## 2026-10-21 — Floor-cull merge carry-over — applied (3 of 4 targets)
+
+Owner: "do 1 and 3 now".
+- **Carried over:** 8 short passages into Folly Road (4344), Ashley Phosphate (4337) and Savannah highways
+  (4538), with no statements of law. Every fact traces to a primary source.
+- **Ravenel cyclists guide (3499):** held for Gillin. It carries a live three-year deadline that is wrong for a
+  claim over the bridge path (SCTCA § 15-78-110, two years), and an unsupported PIP sentence.
+- **Freshness benchmark:** the 4 targets and 18 retired control posts are excluded (refreshed 76, control 260).
+- **Detail:** docs/floor-cull-carryover-2026-10-21.md.

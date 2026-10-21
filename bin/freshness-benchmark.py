@@ -4,6 +4,8 @@
 Baseline: docs/gsc-2026-10-06/ (16 months to 2026-10-03, sc-domain:rodenlaw.com).
 Cohorts are frozen in docs/gsc-2026-10-06/cohorts.json — refreshed = the 79 queue posts
 live with _roden_last_reviewed >= 2026-09-23; control = the 279 live EN posts never queued.
+Since the 2026-10-21 floor cull: 76 refreshed, 260 control. The removed URLs are listed under
+`excluded`, with the reason for each.
 Do not rebuild the cohorts from a later content/meta.json: later edits would move posts
 between groups and the comparison would stop being like-for-like.
 
