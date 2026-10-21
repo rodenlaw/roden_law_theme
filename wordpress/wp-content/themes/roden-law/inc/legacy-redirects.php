@@ -2523,11 +2523,14 @@ function roden_resolve_removed_dest( $dest, $map = null ) {
  * 1 click). Owner decision 2026-10-21: redirect only, no restore. Their old
  * aliases translate like the rest and land on the North Charleston hub.
  *
- * Held, pending an owner decision, and therefore NOT translated:
- * - The bare /charleston/goose-creek/ and /charleston/summerville/ pages.
- *   Also incorporated municipalities; same open question. Their
- *   neighbourhoods are sub-municipal and are translated.
- * Removing an entry from the held list is the whole change once decided.
+ * The bare /charleston/goose-creek/ and /charleston/summerville/ pages were
+ * held here pending the same question (also incorporated municipalities).
+ * Released 2026-10-21 with the redirects pass that cleared the site-health
+ * LOST list: they translate like Hanahan and land where the current-hierarchy
+ * addresses already go (roden_stale_place_urls()). This decides only the old
+ * alias. Restoring either page is still open and would be done by removing its
+ * roden_stale_place_urls() entry; the alias then falls back to WordPress's
+ * slug guess, which finds the republished page, exactly as it did before.
  *
  * @param string $path Request path with trailing slash.
  * @return string The current-hierarchy path, or $path unchanged.
@@ -2535,14 +2538,6 @@ function roden_resolve_removed_dest( $dest, $map = null ) {
 function roden_canonicalize_charleston_location_path( $path ) {
     $old = '/locations/south-carolina/charleston/';
     $new = '/locations/south-carolina/north-charleston/';
-
-    $held = array(
-        $old . 'goose-creek/',
-        $old . 'summerville/',
-    );
-    if ( in_array( $path, $held, true ) ) {
-        return $path;
-    }
 
     $reparented = array(
         $old . 'north-charleston/' => $new,
