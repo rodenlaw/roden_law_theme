@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "note": "Roden Law's own attorney sign-off over the shared law packs (internal-ai-scripts/law/, schema law-signoff.schema.json). SC is not declared: the SC pack is signed by Graeham C. Gillin, Roden's SC signer, so it already counts for Roden.",
+  "states": {
+    "GA": {
+      "status": "unsigned",
+      "attorney": null,
+      "signedAt": null,
+      "authorities": {},
+      "note": "Owner decision 2026-10-21 (D6): Tyler Love signs the GA pack for Roden. Packet sent for signature: data/facts/ga-signoff-packet-2026-10-21.md (33 authorities + 18 pending). Until his signatures are recorded here, no new Roden GA claim may cite the pack. Record them with: node internal-ai-scripts/scripts/facts/validate-law-pack.mjs --client roden --sign-template GA"
+    }
+  }
+}
