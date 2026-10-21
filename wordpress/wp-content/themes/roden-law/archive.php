@@ -34,6 +34,14 @@ $post_type = get_post_type();
                 <?php roden_attorneys_grid( [ 'columns' => 4 ] ); ?>
 
             <?php elseif ( $post_type === 'location' ) : ?>
+                <?php
+                // /locations/: the office cards are h3.location-city and used to
+                // sit directly under the hero h1 (HEADING_SKIP h1->h3, site-health
+                // 2026-10-21). Visually hidden section heading, same words the
+                // practice-areas hub shows visibly above the same cards; existing
+                // msgid, already translated.
+                ?>
+                <h2 class="screen-reader-text"><?php esc_html_e( 'Our Offices', 'roden-law' ); ?></h2>
                 <?php roden_location_cards(); ?>
 
             <?php elseif ( $post_type === 'case_result' ) : ?>

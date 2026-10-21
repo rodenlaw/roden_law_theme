@@ -29,6 +29,14 @@ $firm = roden_firm_data();
 <section class="section section-alt">
     <div class="container">
         <?php
+        // Section heading for the card grid. The cards are h3 and used to sit
+        // directly under the hero h1 (HEADING_SKIP h1->h3, site-health
+        // 2026-10-21). Visually hidden so the layout is unchanged; existing
+        // msgid, already translated. The /es/ hub is a separate page with its
+        // own visible h2 group headings.
+        ?>
+        <h2 class="screen-reader-text"><?php esc_html_e( 'Practice Areas', 'roden-law' ); ?></h2>
+        <?php
         // Full grid of all 18 pillar practice areas.
         // Query both CPT slugs: 'practice_area' (theme) and 'practice-area' (ACF legacy).
         $all_areas = get_posts( array(
