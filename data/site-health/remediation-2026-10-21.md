@@ -27,7 +27,7 @@ not mean silence (see the open question at the end).
 
 | Check | Finding class | 09-10 | 10-21 | Status | PR |
 |---|---|---|---|---|---|
-| a11y | `HEADING_SKIP:h1->h3` | 467 | 2 | **Fixed** (second pass) | PR-A11Y |
+| a11y | `HEADING_SKIP:h1->h3` | 467 | 2 | **Fixed** (second pass) | #221 |
 | a11y | `EMPTY_ALT` | 135 | 34 | **Fixed** | #212 |
 | a11y | `LOW_MAIN_TEXT_RATIO` | 162 | 10 | Deferred | — |
 | a11y | `DUPLICATE_TITLE` | 64 | 4 | Deferred: out of scope (hubs) | — |
@@ -36,14 +36,14 @@ not mean silence (see the open question at the end).
 | a11y | `AMBIGUOUS_LINK_NAME` (notice) | 26 | 32 | Deferred | — |
 | redirects | `LOST`: old Charleston-parent neighbourhoods and Ladson | 22 | 23 | **Fixed** | #213 |
 | redirects | `LOST`: Hanahan, Moncks Corner | 2 | 2 | **Fixed**: owner chose redirect-only | #213 |
-| redirects | `LOST`: bare Goose Creek, Summerville (old path) | 0 | 2 | **Fixed** (second pass; alias only) | PR-REDIR |
-| redirects | `LOST`: root-level aliases of retired blog posts | 0 | 12 | **Fixed** (second pass) | PR-REDIR |
-| redirects | `LOST`: Murrells Inlet (state-level alias) | 0 | 1 | **Fixed** (second pass) | PR-REDIR |
+| redirects | `LOST`: bare Goose Creek, Summerville (old path) | 0 | 2 | **Fixed** (second pass; alias only) | #219 |
+| redirects | `LOST`: root-level aliases of retired blog posts | 0 | 12 | **Fixed** (second pass) | #219 |
+| redirects | `LOST`: Murrells Inlet (state-level alias) | 0 | 1 | **Fixed** (second pass) | #219 |
 | redirects | `LOST`: `/practice-areas/truck-accident-lawyers/drunk-driver-accident/` | 0 | 1 | Deferred: owner (destination) | — |
-| redirects | `CHAIN` (2 hops) | 28 | 3 | **Fixed** (second pass) | PR-REDIR |
+| redirects | `CHAIN` (2 hops) | 28 | 3 | **Fixed** (second pass) | #219 |
 | redirects | departed-attorney destinations disagree | 4 | — | Disputed: owner (unchanged) | — |
 | crawl | links that 404 or redirect | 14 | 0 | Passing | — |
-| crawl | orphans | 162 | 3 | **Fixed** (second pass) | PR-CRAWL |
+| crawl | orphans | 162 | 3 | **Fixed** (second pass) | #220 |
 | crawl | `badStatus`, `falseAffordances` | 0 | 0 | Passing | — |
 | floor | granularity-floor violations | 162 | 54 | Deferred: out of scope | — |
 | doorway | location-targeted ratio | 40.9% | 23.9% | **Passing** (ceiling 25%) | — |
@@ -116,7 +116,7 @@ theme files match `main`, which includes #213, so #213 is live). A live re-trace
 of the 44 reported URLs showed 25 already resolving (the 23 from #213, plus
 Hanahan and Moncks Corner). That left 19.
 
-### redirects — 15 LOST + 3 CHAIN (PR-REDIR)
+### redirects — 15 LOST + 3 CHAIN (#219)
 
 All in `inc/legacy-redirects.php`. Three generators, each fixed once:
 
@@ -203,7 +203,7 @@ Replay of the 44 reported URLs. "Today" is production now (`main`, #213 live).
 
 `redirects.csv` is the replay fixture and was not edited.
 
-### crawl — 3 orphaned Georgia statewide pages (PR-CRAWL)
+### crawl — 3 orphaned Georgia statewide pages (#220)
 
 No template linked any of the six GA statewide pages (posts 6317–6322). Car,
 personal injury and wrongful death were reachable only through hand-written
@@ -225,7 +225,7 @@ Noticed, not fixed (out of scope): `roden_sc_statewide_pillar_slug()` maps car
 accidents to `south-carolina-car-accident-lawyer`, but the page is
 `…-lawyers`. The SC car uplink on SC intersections therefore never renders.
 
-### a11y — `HEADING_SKIP:h1->h3` on `/practice-areas/` and `/locations/` (PR-A11Y)
+### a11y — `HEADING_SKIP:h1->h3` on `/practice-areas/` and `/locations/` (#221)
 
 `archive-practice_area.php` (card h3s) and the location branch of `archive.php`
 (`roden_location_cards()` h3s) sat directly under the hero h1. Each grid now
