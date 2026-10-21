@@ -1061,7 +1061,7 @@ function roden_get_legacy_redirect_map() {
         '/request-your-free-case-review-today-main_phone_number/' => '/contact/',
 
         // Duplicate Coleman Boulevard posts → canonical version
-        '/car-accidents-on-coleman-boulevard/' => '/blog/car-accidents-on-coleman-boulevard-in-mount-pleasant/',
+        '/car-accidents-on-coleman-boulevard/' => '/car-accident-lawyers/charleston-sc/', // was the Mount Pleasant post, retired 2026-10-21 (roden_floor_cull_mid_urls)
 
         // Duplicate Columbia truck accident guides → single canonical post
         '/your-first-steps-after-a-truck-accident-in-downtown-columbia-sc/' => '/blog/your-step-by-step-guide-after-a-downtown-columbia-truck-accident/',
@@ -1344,7 +1344,8 @@ function roden_phase1_removed_urls() {
         roden_resource_consolidation_urls(),
         roden_ashley_phosphate_fold_urls(),
         roden_orphan_alias_urls(),
-        roden_floor_cull_urls()
+        roden_floor_cull_urls(),
+        roden_floor_cull_mid_urls()
     );
 }
 
@@ -1402,6 +1403,21 @@ function roden_floor_cull_urls() {
         '/resources/summerville-truck-accidents-i-26-corridor/'                   => '/practice-areas/truck-accident-lawyers/',
         '/resources/highway-22-truck-accidents-conway-bypass/'                    => '/practice-areas/truck-accident-lawyers/',
         '/resources/us-17-sc-544-truck-accidents-surfside-beach/'                 => '/practice-areas/truck-accident-lawyers/',
+    );
+}
+
+/**
+ * The five middle-tier floor-cull posts (10-13 clicks each in 16 months, at most 1
+ * in the last 28 days), kept in their own function so the owner can drop them
+ * from the batch independently. Owner, 2026-10-21: retire.
+ */
+function roden_floor_cull_mid_urls() {
+    return array(
+        '/blog/car-accidents-on-i-26-in-north-charleston/'                          => '/car-accident-lawyers/north-charleston-sc/',
+        '/blog/ben-sawyer-boulevard-bridge-accidents-sullivans-island/'             => '/car-accident-lawyers/charleston-sc/',
+        '/blog/maybank-highway-car-accidents-johns-island/'                         => '/car-accident-lawyers/charleston-sc/',
+        '/blog/car-accidents-on-coleman-boulevard-in-mount-pleasant/'               => '/car-accident-lawyers/charleston-sc/',
+        '/blog/filing-an-emotional-distress-claim-after-a-ravenel-bridge-accident/' => '/car-accident-lawyers/charleston-sc/',
     );
 }
 
