@@ -158,6 +158,10 @@ Two things will muddy every checkpoint:
   `/blog/` posts not in the queue (279, including 29 reviewed for other reasons in July–September).
   Retired, merged and redirected queue posts (10) are excluded from both. Post 4337 now carries 4624's
   merged content and inbound redirect, so its post-refresh numbers include 4624's traffic.
+- Floor cull 2026-10-21 (#223): 4 merge targets and 18 retired control posts excluded, as listed in
+  cohorts.json `excluded`. Refreshed 79 → 76 (Folly Road, Ashley Phosphate, Savannah highways); control
+  279 → 260 (the Ravenel cyclists guide plus the 18). The merge redirects feed the targets new inbound
+  signal, so they are confounded whether or not their content changes.
 - Per-day rates throughout; windows differ in length.
 - Files: `daily_final.csv`, `daily_all.csv` (site per day); `pages_16mo.csv`; `queries_16mo.csv.gz`
   (107,812 queries); `blog_page_date.csv.gz` (168,916 blog page×day rows, the input to the
