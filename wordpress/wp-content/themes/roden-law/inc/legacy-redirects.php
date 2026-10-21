@@ -2420,9 +2420,12 @@ function roden_phase1_removal_redirects() {
  * hop, with no second set of keys — and any future retirement in this subtree
  * covers its old alias automatically.
  *
+ * Hanahan and Moncks Corner are incorporated municipalities; their stub pages
+ * were retired with the dead locations on 2026-08-25 (21,548 impressions,
+ * 1 click). Owner decision 2026-10-21: redirect only, no restore. Their old
+ * aliases translate like the rest and land on the North Charleston hub.
+ *
  * Held, pending an owner decision, and therefore NOT translated:
- * - Hanahan and Moncks Corner are absent from the prefix list. Both are
- *   incorporated municipalities that may have been retired in error.
  * - The bare /charleston/goose-creek/ and /charleston/summerville/ pages.
  *   Also incorporated municipalities; same open question. Their
  *   neighbourhoods are sub-municipal and are translated.
@@ -2448,6 +2451,8 @@ function roden_canonicalize_charleston_location_path( $path ) {
         $old . 'goose-creek/'      => $new . 'goose-creek/',
         $old . 'summerville/'      => $new . 'summerville/',
         $old . 'ladson/'           => $new . 'ladson/',
+        $old . 'hanahan/'          => $new . 'hanahan/',
+        $old . 'moncks-corner/'    => $new . 'moncks-corner/',
     );
     foreach ( $reparented as $from => $to ) {
         if ( 0 === strpos( $path, $from ) ) {
