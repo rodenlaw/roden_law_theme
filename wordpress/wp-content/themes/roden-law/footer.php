@@ -36,6 +36,21 @@ $footer_sc_pillars = array(
     'Wrongful Death'        => '/south-carolina-wrongful-death-lawyer/',
     'Personal Injury'       => '/south-carolina-personal-injury-lawyer/',
 );
+
+// Georgia statewide pillars (the P2 pages, template-pillar-ga-statewide.php).
+// Before this list nothing in the theme linked any of the six: three were
+// reachable only through hand-written links in three resource bodies, and
+// truck, motorcycle and workers' comp were orphans (site-health 2026-10-21).
+// They have no /es/ twins, so the list renders on English pages only and
+// Spanish pages never link out of the Spanish silo (same rule as #161).
+$footer_ga_pillars = array(
+    'Car Accidents'         => '/georgia-car-accident-lawyers/',
+    'Truck Accidents'       => '/georgia-truck-accident-lawyers/',
+    'Motorcycle Accidents'  => '/georgia-motorcycle-accident-lawyer/',
+    'Workers&rsquo; Compensation' => '/georgia-workers-compensation-lawyer/',
+    'Wrongful Death'        => '/georgia-wrongful-death-lawyer/',
+    'Personal Injury'       => '/georgia-personal-injury-lawyer/',
+);
 ?>
     </main><!-- .site-content -->
 
@@ -179,8 +194,22 @@ $footer_sc_pillars = array(
                     <?php endforeach; ?>
                 </div>
 
-                <!-- Column 4: South Carolina statewide pillars -->
-                <div class="footer-col footer-sc-statewide">
+                <!-- Column 4: statewide pillars — Georgia (English only), then South Carolina -->
+                <div class="footer-col footer-sc-statewide footer-statewide-col">
+                    <?php if ( 'es' !== $footer_lang ) : ?>
+                    <h3 class="footer-heading footer-heading-accent">
+                        <?php esc_html_e( 'Georgia', 'roden-law' ); ?>
+                    </h3>
+                    <ul class="footer-links">
+                        <?php foreach ( $footer_ga_pillars as $label => $path ) : ?>
+                            <li>
+                                <a href="<?php echo esc_url( home_url( $path ) ); ?>" aria-label="<?php echo esc_attr( sprintf( /* translators: %s: practice area label. */ __( '%s — Georgia', 'roden-law' ), wp_strip_all_tags( $label ) ) ); ?>">
+                                    <?php echo wp_kses( $label, array() ); ?>
+                                </a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                    <?php endif; ?>
                     <h3 class="footer-heading footer-heading-accent">
                         <?php esc_html_e( 'South Carolina', 'roden-law' ); ?>
                     </h3>
