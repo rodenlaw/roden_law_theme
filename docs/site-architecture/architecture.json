@@ -4,7 +4,7 @@
   "status": "approved in part 2026-09-26 — Rule 6 reopened (capped, allowlisted); wave 1 not yet built",
   "sources": {
     "gsc": "sc-domain:rodenlaw.com, 2025-05-12..2026-09-24 (16 mo) and 2026-06-27..09-24 (90 d); per-URL inventory of the 685 sitemap URLs",
-    "doorway": "node bin/doorway-ratio-now.mjs, 2026-09-26: 171 geo / 685 = 24.96%, ceiling 25%",
+    "doorway": "node bin/doorway-ratio-now.mjs, 2026-10-21 after the floor cull (#223): 124 geo / 650 = 19.08%, ceiling 25%",
     "competitors": "Semrush US organic + competitor sitemaps, 2026-09-26; Local Falcon grids",
     "rules": "SEO-PREEMPTION-PLAN, STEINBERG-MODEL-PLAN, KNOWLEDGE-BASE-PLAN, strategy/2026-Q4.md, RECOVERY-LOG.md"
   },
