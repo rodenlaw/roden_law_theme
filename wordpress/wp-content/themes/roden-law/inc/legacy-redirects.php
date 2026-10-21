@@ -238,6 +238,25 @@ function roden_normalize_blog_dest( $dest ) {
 function roden_redirect_dest_or_fallback( $dest ) {
 	$dest = roden_normalize_blog_dest( $dest );
 
+	/*
+	 * A destination may itself have been retired since this rule was written.
+	 * The consolidation map below predates the culls, and three of its entries
+	 * pointed at /blog/your-step-by-step-guide-after-a-downtown-columbia-truck-
+	 * accident/ after that post was retired, producing 2-hop chains (site-health
+	 * 2026-10-21). Following the destination through the removal map here fixes
+	 * every such entry at once, and every future retirement of a destination.
+	 * A root-level /{slug}/ destination whose /blog/{slug}/ form was retired
+	 * resolves the same way (see roden_root_blog_alias_key()).
+	 */
+	$removed = roden_phase1_removed_urls();
+	if ( ! isset( $removed[ $dest ] ) ) {
+		$alias = roden_root_blog_alias_key( $dest, $removed );
+		if ( '' !== $alias && ! url_to_postid( home_url( $dest ) ) ) {
+			$dest = $alias;
+		}
+	}
+	$dest = roden_resolve_removed_dest( $dest, $removed );
+
 	if ( url_to_postid( home_url( $dest ) ) ) {
 		return $dest;
 	}
@@ -1323,7 +1342,26 @@ function roden_phase1_removed_urls() {
         roden_gbp_landing_urls(),
         roden_p0_hygiene_urls(),
         roden_resource_consolidation_urls(),
-        roden_ashley_phosphate_fold_urls()
+        roden_ashley_phosphate_fold_urls(),
+        roden_orphan_alias_urls()
+    );
+}
+
+/**
+ * Old addresses with no post and no pattern behind them, pointed at the
+ * retired page they used to alias. The value is that page's own removal key,
+ * so roden_resolve_removed_dest() lands it wherever that page's retirement
+ * goes, in one hop, and follows it if the retirement target ever moves.
+ *
+ * - /locations/south-carolina/murrells-inlet/: the place sat at the state
+ *   level before it was parented under Myrtle Beach. It resolved through
+ *   WordPress's 404 slug guess (published posts only) until the Myrtle Beach
+ *   child was retired on 2026-09-18 (roden_evaluate_location_urls()). The
+ *   only URL of this shape in the replay fixture (site-health 2026-10-21).
+ */
+function roden_orphan_alias_urls() {
+    return array(
+        '/locations/south-carolina/murrells-inlet/' => '/locations/south-carolina/myrtle-beach/murrells-inlet/',
     );
 }
 
@@ -2386,12 +2424,72 @@ function roden_phase1_removal_redirects() {
         }
     }
 
+    /*
+     * Look up the root-level blog alias too. See roden_root_blog_alias_key().
+     * Old /%postname%/ URLs reach /blog/{slug}/ through the blog catch-all in
+     * roden_legacy_content_redirects(), which only sees PUBLISHED posts, so
+     * retiring a post killed its root alias while /blog/{slug}/ kept 301ing
+     * (12 LOST, site-health 2026-10-21). Gated on is_404() like the
+     * Charleston lookup, so it can never pre-empt a page that serves.
+     */
+    if ( ! isset( $map[ $path ] ) && is_404() ) {
+        $alias = roden_root_blog_alias_key( $path, $map );
+        if ( '' !== $alias ) {
+            $path = $alias;
+        }
+    }
+
     if ( ! isset( $map[ $path ] ) ) {
         return;
     }
 
-    wp_redirect( home_url( $map[ $path ] ), 301 );
+    wp_redirect( home_url( roden_resolve_removed_dest( $map[ $path ], $map ) ), 301 );
     exit;
+}
+
+/**
+ * The /blog/{slug}/ removal-map key for a root-level /{slug}/ path, or ''.
+ *
+ * The permalink structure is /blog/%postname%/. Every post also has the old
+ * root-level address from the /%postname%/ era, which the blog catch-all 301s
+ * while the post is published. Once the post is retired that alias has no rule
+ * of its own; this maps it onto the /blog/ key the retirement already decided,
+ * so the alias lands exactly where the /blog/ form does, in one hop, and every
+ * future blog retirement covers its root alias with no second set of keys.
+ *
+ * Single-segment paths only; '/blog/' and '/es/' themselves are never aliased.
+ *
+ * @param string               $path Request or destination path, trailing slash.
+ * @param array<string,string> $map  roden_phase1_removed_urls().
+ * @return string
+ */
+function roden_root_blog_alias_key( $path, $map ) {
+    if ( ! preg_match( '#^/([a-z0-9-]+)/$#', $path, $m ) || in_array( $m[1], array( 'blog', 'es' ), true ) ) {
+        return '';
+    }
+    $key = '/blog/' . $m[1] . '/';
+    return isset( $map[ $key ] ) ? $key : '';
+}
+
+/**
+ * Follow a destination through the removal map to a path the map keeps.
+ *
+ * A removal target can itself be retired later; without this, every such
+ * retirement turns the earlier rule into a 2-hop chain. Bounded so a cycle
+ * introduced by a bad edit degrades to a redirect, never a loop in PHP.
+ *
+ * @param string                    $dest Destination path.
+ * @param array<string,string>|null $map  roden_phase1_removed_urls(), if already built.
+ * @return string
+ */
+function roden_resolve_removed_dest( $dest, $map = null ) {
+    if ( null === $map ) {
+        $map = roden_phase1_removed_urls();
+    }
+    for ( $i = 0; $i < 5 && isset( $map[ $dest ] ); $i++ ) {
+        $dest = $map[ $dest ];
+    }
+    return $dest;
 }
 
 /**
