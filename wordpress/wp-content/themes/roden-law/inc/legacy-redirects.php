@@ -2372,12 +2372,95 @@ function roden_phase1_removal_redirects() {
         }
     }
 
+    /*
+     * Look up the old Charleston-parent address too. See
+     * roden_canonicalize_charleston_location_path() for why. Same shape as the
+     * practice-area canonicalisation above: translate, and act only if the
+     * translated path is itself a removal this map already decided. Gated on
+     * is_404() so it can never pre-empt a page that serves.
+     */
+    if ( ! isset( $map[ $path ] ) && is_404() ) {
+        $current = roden_canonicalize_charleston_location_path( $path );
+        if ( $current !== $path && isset( $map[ $current ] ) ) {
+            $path = $current;
+        }
+    }
+
     if ( ! isset( $map[ $path ] ) ) {
         return;
     }
 
     wp_redirect( home_url( $map[ $path ] ), 301 );
     exit;
+}
+
+/**
+ * Old Charleston-parent location address => its current-hierarchy address.
+ *
+ * North Charleston, Goose Creek, Summerville and Ladson used to be children of
+ * the Charleston location (/locations/south-carolina/charleston/goose-creek/...)
+ * and were re-parented under the North Charleston office hub
+ * (/locations/south-carolina/north-charleston/goose-creek/...). No rule was
+ * written for the old addresses. They kept resolving only because WordPress's
+ * 404 slug guess (redirect_guess_404_permalink) found the moved post by its
+ * last path segment, and that guess only sees PUBLISHED posts. So every
+ * retirement in the North Charleston subtree silently turned its old alias into
+ * a bare 404, while the current address correctly 301s:
+ *
+ *   /locations/south-carolina/north-charleston/goose-creek/devon-forest/  301 -> hub
+ *   /locations/south-carolina/charleston/goose-creek/devon-forest/        404
+ *
+ * Site-health 2026-09-10 found 22 such neighbourhoods; the 2026-10-21 re-crawl
+ * found 27, because later retirements killed three more aliases the same
+ * way: Ladson (2026-09-18, roden_evaluate_location_urls()) and the Goose Creek
+ * and Summerville pages themselves (2026-09-25, roden_stale_place_urls()).
+ *
+ * Translating the alias and resolving it through roden_phase1_removed_urls()
+ * means the alias always lands exactly where the current address does, in one
+ * hop, with no second set of keys — and any future retirement in this subtree
+ * covers its old alias automatically.
+ *
+ * Hanahan and Moncks Corner are incorporated municipalities; their stub pages
+ * were retired with the dead locations on 2026-08-25 (21,548 impressions,
+ * 1 click). Owner decision 2026-10-21: redirect only, no restore. Their old
+ * aliases translate like the rest and land on the North Charleston hub.
+ *
+ * Held, pending an owner decision, and therefore NOT translated:
+ * - The bare /charleston/goose-creek/ and /charleston/summerville/ pages.
+ *   Also incorporated municipalities; same open question. Their
+ *   neighbourhoods are sub-municipal and are translated.
+ * Removing an entry from the held list is the whole change once decided.
+ *
+ * @param string $path Request path with trailing slash.
+ * @return string The current-hierarchy path, or $path unchanged.
+ */
+function roden_canonicalize_charleston_location_path( $path ) {
+    $old = '/locations/south-carolina/charleston/';
+    $new = '/locations/south-carolina/north-charleston/';
+
+    $held = array(
+        $old . 'goose-creek/',
+        $old . 'summerville/',
+    );
+    if ( in_array( $path, $held, true ) ) {
+        return $path;
+    }
+
+    $reparented = array(
+        $old . 'north-charleston/' => $new,
+        $old . 'goose-creek/'      => $new . 'goose-creek/',
+        $old . 'summerville/'      => $new . 'summerville/',
+        $old . 'ladson/'           => $new . 'ladson/',
+        $old . 'hanahan/'          => $new . 'hanahan/',
+        $old . 'moncks-corner/'    => $new . 'moncks-corner/',
+    );
+    foreach ( $reparented as $from => $to ) {
+        if ( 0 === strpos( $path, $from ) ) {
+            return $to . substr( $path, strlen( $from ) );
+        }
+    }
+
+    return $path;
 }
 
 /* ------------------------------------------------------------------
