@@ -1061,7 +1061,7 @@ function roden_get_legacy_redirect_map() {
         '/request-your-free-case-review-today-main_phone_number/' => '/contact/',
 
         // Duplicate Coleman Boulevard posts → canonical version
-        '/car-accidents-on-coleman-boulevard/' => '/blog/car-accidents-on-coleman-boulevard-in-mount-pleasant/',
+        '/car-accidents-on-coleman-boulevard/' => '/car-accident-lawyers/charleston-sc/', // was the Mount Pleasant post, retired 2026-10-21 (roden_floor_cull_mid_urls)
 
         // Duplicate Columbia truck accident guides → single canonical post
         '/your-first-steps-after-a-truck-accident-in-downtown-columbia-sc/' => '/blog/your-step-by-step-guide-after-a-downtown-columbia-truck-accident/',
@@ -1343,7 +1343,81 @@ function roden_phase1_removed_urls() {
         roden_p0_hygiene_urls(),
         roden_resource_consolidation_urls(),
         roden_ashley_phosphate_fold_urls(),
-        roden_orphan_alias_urls()
+        roden_orphan_alias_urls(),
+        roden_floor_cull_urls(),
+        roden_floor_cull_mid_urls()
+    );
+}
+
+/**
+ * The granularity-floor cull, 2026-10-21 (owner: "go with 1"). Site-health's floor
+ * check flagged 54 street, highway and neighbourhood pages below the municipality
+ * floor. Evidence (docs/floor-cull-2026-10-21.md): 578 clicks in 16
+ * months across all 54, 22 in the 28 days to 2026-10-18. Eleven earners are kept
+ * and two are held (ledger-waiting to December); this function is the rest but
+ * the five middle-tier posts in roden_floor_cull_mid_urls().
+ *
+ * Merges (6): redirect only onto the stronger page on the same road. Carrying
+ * any unique facts across is deferred to each target's ledger date.
+ * Retires (30): 0-9 clicks each in 16 months. Each lands on the live wave-1
+ * office page for its city and practice where one exists, otherwise the
+ * practice pillar. Set to DRAFT and marked _roden_retired, not trashed.
+ */
+function roden_floor_cull_urls() {
+    return array(
+        // Merges onto a kept page on the same road.
+        '/blog/what-to-do-after-a-bike-crash-on-charlestons-ravenel-bridge/' => '/blog/a-cyclists-guide-after-a-ravenel-bridge-accident/',
+        '/blog/a-step-by-step-guide-for-folly-road-car-accidents/'           => '/blog/folly-road-car-accidents-james-island-charleston/',
+        '/resources/ashley-phosphate-i-26-truck-accidents/'                  => '/blog/ashley-phosphate-road-i-26-dangerous-intersection-charleston/',
+        '/resources/i-16-truck-accidents-savannah/'                          => '/blog/savannah-dangerous-highways-i16-i95-abercorn/',
+        '/resources/i-95-truck-accidents-savannah-brunswick/'                => '/blog/savannah-dangerous-highways-i16-i95-abercorn/',
+        '/resources/abercorn-street-truck-accidents-savannah/'               => '/blog/savannah-dangerous-highways-i16-i95-abercorn/',
+        // Retires.
+        '/blog/a-guide-to-car-wrecks-on-aviation-avenue-near-charleston-airport/' => '/car-accident-lawyers/north-charleston-sc/',
+        '/blog/car-accidents-ladson-i-26-exit-203-danger-zone/'                   => '/car-accident-lawyers/north-charleston-sc/',
+        '/blog/what-to-do-after-a-car-crash-on-savannah-highway/'                 => '/car-accident-lawyers/charleston-sc/',
+        '/blog/i-526-expansion-construction-zone-accidents-charleston/'           => '/car-accident-lawyers/charleston-sc/',
+        '/blog/johns-island-accidents-no-hospital-emergency-room/'                => '/car-accident-lawyers/charleston-sc/',
+        '/blog/daniel-island-accidents-event-traffic-golf-carts/'                 => '/car-accident-lawyers/charleston-sc/',
+        '/blog/west-ashley-vs-downtown-charleston-driving-risks/'                 => '/car-accident-lawyers/charleston-sc/',
+        '/blog/savannah-highway-truck-accidents-west-ashley-us-17/'               => '/truck-accident-lawyers/charleston-sc/',
+        '/resources/i-526-construction-zone-truck-accidents-charleston/'          => '/truck-accident-lawyers/charleston-sc/',
+        '/resources/i-526-truck-accidents-charleston/'                            => '/truck-accident-lawyers/charleston-sc/',
+        '/resources/dean-forest-road-truck-accidents-pooler/'                     => '/truck-accident-lawyers/savannah-ga/',
+        '/resources/i-516-truck-accidents-port-savannah/'                         => '/truck-accident-lawyers/savannah-ga/',
+        '/resources/jimmy-deloach-connector-truck-accidents-savannah/'            => '/truck-accident-lawyers/savannah-ga/',
+        '/blog/rivers-avenue-pedestrian-deaths-north-charleston/'                 => '/practice-areas/pedestrian-accident-lawyers/',
+        '/blog/pedestrian-safety-park-circle-north-charleston/'                   => '/practice-areas/pedestrian-accident-lawyers/',
+        '/blog/east-bay-street-savannah-pedestrian-accident-lawyer/'              => '/practice-areas/pedestrian-accident-lawyers/',
+        '/resources/georgetown-county-us-17-truck-accidents/'                     => '/practice-areas/truck-accident-lawyers/',
+        '/resources/i-20-truck-accidents-columbia/'                               => '/practice-areas/truck-accident-lawyers/',
+        '/resources/bush-river-road-i-26-truck-accidents-columbia/'               => '/practice-areas/truck-accident-lawyers/',
+        '/resources/two-notch-road-truck-accidents-columbia/'                     => '/practice-areas/truck-accident-lawyers/',
+        '/resources/columbia-i-26-i-20-i-77-interchange-truck-accidents/'         => '/practice-areas/truck-accident-lawyers/',
+        '/resources/i-77-truck-accidents-columbia-rock-hill/'                     => '/practice-areas/truck-accident-lawyers/',
+        '/resources/dorchester-road-truck-accidents-north-charleston/'            => '/practice-areas/truck-accident-lawyers/',
+        '/resources/spruill-avenue-port-trucks-north-charleston/'                 => '/practice-areas/truck-accident-lawyers/',
+        '/resources/port-access-road-truck-accidents-leatherman-terminal/'        => '/practice-areas/truck-accident-lawyers/',
+        '/resources/aviation-avenue-i-26-truck-accidents/'                        => '/practice-areas/truck-accident-lawyers/',
+        '/resources/rivers-avenue-truck-accidents-north-charleston/'              => '/practice-areas/truck-accident-lawyers/',
+        '/resources/summerville-truck-accidents-i-26-corridor/'                   => '/practice-areas/truck-accident-lawyers/',
+        '/resources/highway-22-truck-accidents-conway-bypass/'                    => '/practice-areas/truck-accident-lawyers/',
+        '/resources/us-17-sc-544-truck-accidents-surfside-beach/'                 => '/practice-areas/truck-accident-lawyers/',
+    );
+}
+
+/**
+ * The five middle-tier floor-cull posts (10-13 clicks each in 16 months, at most 1
+ * in the last 28 days), kept in their own function so the owner can drop them
+ * from the batch independently. Owner, 2026-10-21: retire.
+ */
+function roden_floor_cull_mid_urls() {
+    return array(
+        '/blog/car-accidents-on-i-26-in-north-charleston/'                          => '/car-accident-lawyers/north-charleston-sc/',
+        '/blog/ben-sawyer-boulevard-bridge-accidents-sullivans-island/'             => '/car-accident-lawyers/charleston-sc/',
+        '/blog/maybank-highway-car-accidents-johns-island/'                         => '/car-accident-lawyers/charleston-sc/',
+        '/blog/car-accidents-on-coleman-boulevard-in-mount-pleasant/'               => '/car-accident-lawyers/charleston-sc/',
+        '/blog/filing-an-emotional-distress-claim-after-a-ravenel-bridge-accident/' => '/car-accident-lawyers/charleston-sc/',
     );
 }
 

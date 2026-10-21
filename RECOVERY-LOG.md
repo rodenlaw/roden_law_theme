@@ -3207,3 +3207,29 @@ table) and marked _roden_retired; both caches flushed. In Chrome, both
 with a 200; 4337 serves the merged, verified content with its own canonical, FAQPage JSON-LD parses, dateModified
 2026-10-02. JSON-LD guard PASS. content/meta.json regenerated (4624 out, 4337 changed). Records:
 docs/freshness/2026-10-02-merge-4624-into-4337/.
+
+## 2026-10-21 — Granularity-floor cull: 41 of the 54 floor pages — decided
+
+Owner: "go with 1". The site-health floor check listed 54 street, highway and neighbourhood pages. Together they
+earned 578 clicks in 16 months (docs/gsc-2026-10-06/pages_16mo.csv) and 22 in the 28 days to 2026-10-18
+(data/gsc/latest.json). Decision:
+- keep 11 earners (≥18 clicks; 363 of the 578);
+- hold 2 that are ledger-waiting to December;
+- merge 6 onto a kept page on the same road (redirect only; content carry-over deferred to the target's ledger date);
+- retire 30 (0–9 clicks each, ≤1 in 28 days);
+- retire the 5 middle-tier posts (10–13 clicks each), kept in their own map function so they can be dropped.
+
+Retire destinations are the wave-1 office page for the city and practice where one is live, otherwise the practice
+pillar.
+
+Pre-flight (read-only):
+- No children.
+- No Ads final URL or sitelink, and no GBP link.
+- One Spanish twin (5004, already a draft with its own redirect).
+- `_roden_see_also` references resolve at render time.
+
+The redirects ship in `roden_floor_cull_urls()` and `roden_floor_cull_mid_urls()`. Scripts:
+`bin/relink-floor-cull.php` and `bin/remove-floor-cull.php` (draft + `_roden_retired`).
+
+Doorway 165/691 = 23.88% → 124/650 = 19.08%. Evidence and the 54-row table:
+docs/floor-cull-2026-10-21.md.
