@@ -4684,3 +4684,8 @@ msgstr "Si se lesionó en el trabajo, contáctenos para una revisión gratuita y
 # T-ES7
 msgid "If you lost a loved one because of someone else’s negligence, contact us for a free, confidential review — at no upfront cost."
 msgstr "Si perdió a un ser querido por la negligencia de otra persona, contáctenos para una revisión gratuita y confidencial, sin costo inicial."
+
+#. translators: %s: practice area label.
+#: footer.php:206
+msgid "%s — Georgia"
+msgstr "%s — Georgia"
