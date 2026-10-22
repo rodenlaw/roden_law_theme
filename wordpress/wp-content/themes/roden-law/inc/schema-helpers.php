@@ -14,7 +14,7 @@
  *  6. HowTo                       — Resource pages
  *  7. BreadcrumbList              — Sitewide (except homepage)
  *  8. Speakable                   — Homepage + practice area heroes
- *  9. AggregateRating             — Office LocalBusiness nodes (per-office GBP)
+ *  9. AggregateRating             — none (self-serving; removed 2026-10-22)
  * 10. WebSite                     — Homepage (Sitelinks Searchbox)
  * 11. BlogPosting                 — Blog posts (bonus)
  *
@@ -818,22 +818,13 @@ function roden_schema_local_business_office( $firm, $key, $office, $extra_area_s
         $schema['sameAs'] = array_values( $office_same_as );
     }
 
-    // aggregateRating — output only when this office has enough of its own GBP
-    // reviews to make an aggregate meaningful (RODEN_MIN_AGGREGATE_REVIEWS).
-    // review_count and review_rating are set in inc/firm-data.php per office and
-    // are that office's own live figures — never the firm-wide average, which
-    // would publish 4.9 over a two-review listing.
-    $review_count  = isset( $office['review_count'] ) ? intval( $office['review_count'] ) : 0;
-    $review_rating = isset( $office['review_rating'] ) ? $office['review_rating'] : '';
-    if ( $review_count >= RODEN_MIN_AGGREGATE_REVIEWS && '' !== $review_rating ) {
-        $schema['aggregateRating'] = array(
-            '@type'       => 'AggregateRating',
-            'ratingValue' => $review_rating,
-            'bestRating'  => '5',
-            'worstRating' => '1',
-            'reviewCount' => $review_count,
-        );
-    }
+    // No aggregateRating (removed 2026-10-22, schema review). Google does not
+    // show review snippets for a business's markup about itself (LocalBusiness
+    // and Organization are "self-serving"), and its review-snippet guidelines
+    // bar marking up ratings aggregated from another site. These figures are
+    // the office's Google Business Profile reviews. The GBP listing, linked in
+    // sameAs above, is where those reviews count. The figures stay in
+    // inc/firm-data.php for visible copy.
 
     $logo_url = roden_get_logo_url();
     if ( $logo_url ) {
@@ -1918,10 +1909,10 @@ function roden_schema_speakable_location() {
 }
 
 /* ==========================================================================
-   9. AggregateRating — the firm-level LegalService that carried the
-   firm-wide rating was retired 2026-10-22. Per-office ratings ride on each
-   LocalBusiness in roden_schema_local_business_office when the per-office
-   GBP review_count is populated. No standalone AggregateRating function.
+   9. AggregateRating — none. The firm-level rating went with the firm-level
+   LegalService and the per-office ratings were removed from the office
+   LocalBusiness nodes (both 2026-10-22): self-serving markup that Google does
+   not show, aggregated from GBP. Reviews count on the GBP listings themselves.
    ========================================================================== */
 
 /* ==========================================================================
@@ -2337,14 +2328,22 @@ function roden_schema_neighborhood_legal_service( $firm ) {
         'wrongful-death-lawyers'      => 'Wrongful Death Lawyer',
         'medical-malpractice-lawyers' => 'Medical Malpractice Lawyer',
     );
-    $offers = array();
+    // Resolve each office page through the removal map: the floor cull
+    // (2026-10-21) retired several, and a url that 301s is a schema error
+    // (Brunswick linked six retired Darien pages; schema review 2026-10-22).
+    $removed = function_exists( 'roden_phase1_removed_urls' ) ? roden_phase1_removed_urls() : array();
+    $offers  = array();
     foreach ( $top_slugs as $slug => $label ) {
+        $path = '/' . $slug . '/' . $office['slug'] . '/';
+        if ( $removed && function_exists( 'roden_resolve_removed_dest' ) ) {
+            $path = roden_resolve_removed_dest( $path, $removed );
+        }
         $offers[] = array(
             '@type'       => 'Offer',
             'itemOffered' => array(
                 '@type' => 'Service',
                 'name'  => $label . ' in ' . $neighborhood_name,
-                'url'   => home_url( '/' . $slug . '/' . $office['slug'] . '/' ),
+                'url'   => home_url( $path ),
             ),
         );
     }
@@ -2713,29 +2712,23 @@ function roden_schema_office_area_served( $office, $extra = '' ) {
  * @param array $firm Firm data from roden_firm_data().
  */
 function roden_schema_attorneys_list( $firm ) {
+    // Lawyers only: the same rule as the sitemap (roden_exclude_staff_from_sitemap).
+    // This keyed on `_roden_atty_role`, which no post carries, so it always
+    // fell back to every attorney-CPT post and published 11 staff (paralegals,
+    // case managers, the CFO) in a list named "Attorneys at Roden Law", each
+    // linking a profile that roden_staff_redirect() 301s to /attorneys/
+    // (schema review, 2026-10-22).
     $attorneys = new WP_Query( array(
         'post_type'      => 'attorney',
         'posts_per_page' => -1,
         'orderby'        => 'menu_order',
         'order'          => 'ASC',
         'meta_query'     => array(
-            array(
-                'key'     => '_roden_atty_role',
-                'value'   => 'attorney',
-                'compare' => '=',
-            ),
+            'relation' => 'OR',
+            array( 'key' => '_roden_team_role', 'value' => 'attorney' ),
+            array( 'key' => '_roden_team_role', 'compare' => 'NOT EXISTS' ),
         ),
     ) );
-
-    if ( ! $attorneys->have_posts() ) {
-        // Fallback: query all attorneys without role filter
-        $attorneys = new WP_Query( array(
-            'post_type'      => 'attorney',
-            'posts_per_page' => -1,
-            'orderby'        => 'menu_order',
-            'order'          => 'ASC',
-        ) );
-    }
 
     if ( ! $attorneys->have_posts() ) {
         return;
