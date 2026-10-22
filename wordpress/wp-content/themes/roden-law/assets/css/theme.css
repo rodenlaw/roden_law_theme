@@ -510,6 +510,40 @@ h1, h2, h3, h4, h5, h6 {
 .filter-count { opacity: 0.7; }
 .results-shown { color: var(--text-light); font-size: 0.9rem; margin: 16px 0 0; }
 
+/* /case-results/ cards: white, left-aligned, with optional tags, attorney and
+   offer-vs-result comparison (modelled on GAL's results grid). The navy
+   .result-card is unchanged everywhere else. */
+.result-card--detail {
+    background: var(--white); border: 1px solid var(--gray-200); border-top: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg); box-shadow: var(--shadow); text-align: left;
+    padding: 24px; transition: box-shadow 0.2s ease;
+}
+.result-card--detail:hover { box-shadow: var(--shadow-lg); }
+.result-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.result-tag {
+    display: inline-block; background: var(--gray-100); color: var(--gray-800);
+    font-size: 12px; font-weight: 600; line-height: 1; padding: 6px 10px; border-radius: 4px;
+}
+.result-tag--category { background: #e3edf2; color: var(--navy); }
+.result-card--detail .result-type { color: var(--gray-600); margin-bottom: 2px; }
+.result-card--detail .result-amount {
+    color: var(--navy); font-size: 34px; line-height: 1.15; margin-bottom: 10px;
+}
+.result-card--detail .result-desc {
+    color: var(--gray-700); font-size: 14px; font-style: italic; line-height: 1.6; margin: 0 0 12px;
+}
+.result-attorney { color: var(--gray-800); font-size: 14px; margin: 0 0 12px; }
+.result-attorney a {
+    color: var(--navy); font-weight: 700; text-decoration: underline;
+    text-decoration-color: var(--gray-300); text-underline-offset: 2px;
+}
+.result-attorney a:hover { text-decoration-color: var(--navy); }
+.result-compare { border-top: 1px solid var(--gray-100); padding-top: 12px; }
+.result-compare p { font-size: 14px; margin: 0 0 4px; }
+.result-compare-offer { color: var(--gray-600); }
+.result-compare-won { color: var(--navy); font-weight: 700; }
+.result-compare-multiple { color: #8a5300; font-weight: 600; margin-bottom: 0; }
+
 @media (max-width: 768px) {
     .case-results-grid.cols-3,
     .case-results-grid.cols-4 { grid-template-columns: repeat(2, 1fr); }

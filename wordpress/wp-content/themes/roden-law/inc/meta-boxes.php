@@ -7,7 +7,7 @@
  *   - practice_area (jurisdiction, SOL, FAQs, author attribution, office key)
  *   - location       (office key, service area, map embed, local content)
  *   - attorney       (title, office, bar admissions, education, awards, URLs)
- *   - case_result    (amount, result type, description, attorney)
+ *   - case_result    (amount, result type, year, venue, initial offer, description, attorney)
  *
  * @package Roden_Law
  */
@@ -875,7 +875,7 @@ function roden_atty_awards_meta_box( $post ) {
    CASE RESULT META BOX CALLBACK
    ========================================================================== */
 
-/** Case Result details: amount, type, accident type, injury type, description, attorney, initial offer. */
+/** Case Result details: amount, type, accident type, injury type, year, venue, initial offer, description, attorney. */
 function roden_case_details_meta_box( $post ) {
     wp_nonce_field( 'roden_case_details_nonce', '_roden_case_details_nonce' );
 
@@ -886,6 +886,8 @@ function roden_case_details_meta_box( $post ) {
     $description   = get_post_meta( $post->ID, '_roden_description', true );
     $attorney_id   = get_post_meta( $post->ID, '_roden_attorney', true );
     $initial_offer = get_post_meta( $post->ID, '_roden_result_initial_offer', true );
+    $case_year     = get_post_meta( $post->ID, '_roden_case_year', true );
+    $case_venue    = get_post_meta( $post->ID, '_roden_case_venue', true );
 
     $attorneys = get_posts( array(
         'post_type'      => 'attorney',
@@ -991,6 +993,24 @@ function roden_case_details_meta_box( $post ) {
                     <?php endforeach; ?>
                 </select>
                 <p class="description"><?php esc_html_e( 'The type of injury sustained (e.g., Traumatic Brain Injury, Broken Bones).', 'roden-law' ); ?></p>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="roden_case_year"><?php esc_html_e( 'Year', 'roden-law' ); ?></label></th>
+            <td>
+                <input type="number" id="roden_case_year" name="_roden_case_year"
+                       value="<?php echo esc_attr( $case_year ); ?>"
+                       placeholder="2026" min="1990" max="2100" style="width:100px;">
+                <p class="description"><?php esc_html_e( 'Optional. Year the case resolved; shown as a tag on the card.', 'roden-law' ); ?></p>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="roden_case_venue"><?php esc_html_e( 'Venue', 'roden-law' ); ?></label></th>
+            <td>
+                <input type="text" id="roden_case_venue" name="_roden_case_venue"
+                       value="<?php echo esc_attr( $case_venue ); ?>"
+                       placeholder="Glynn County, GA" class="regular-text">
+                <p class="description"><?php esc_html_e( 'Optional. County or city where the case was resolved; shown as a tag on the card.', 'roden-law' ); ?></p>
             </td>
         </tr>
         <tr>
@@ -1336,8 +1356,15 @@ function roden_save_meta_fields( $post_id ) {
     if ( isset( $_POST['_roden_case_details_nonce'] ) &&
          wp_verify_nonce( $_POST['_roden_case_details_nonce'], 'roden_case_details_nonce' ) ) {
 
-        update_post_meta( $post_id, '_roden_case_amount',
-            sanitize_text_field( $_POST['_roden_case_amount'] ?? '' ) );
+        $amount = sanitize_text_field( $_POST['_roden_case_amount'] ?? '' );
+        update_post_meta( $post_id, '_roden_case_amount', $amount );
+        // The /case-results/ query orders by this key, and a WP_Query with a
+        // meta_key drops posts that lack it -- so a result saved without it
+        // never appears. Derived here; "$250K" style amounts are left alone.
+        $amount_raw = preg_replace( '/[^0-9]/', '', $amount );
+        if ( '' !== $amount_raw && ! preg_match( '/[kKmM]/', $amount ) ) {
+            update_post_meta( $post_id, '_roden_case_amount_raw', (int) $amount_raw );
+        }
 
         $result_type = sanitize_text_field( $_POST['_roden_case_type'] ?? '' );
         if ( in_array( $result_type, array( 'Settlement', 'Verdict', 'Recovery', 'Resolution', 'Policy Limits', '' ), true ) ) {
@@ -1352,6 +1379,12 @@ function roden_save_meta_fields( $post_id ) {
 
         update_post_meta( $post_id, '_roden_result_initial_offer',
             sanitize_text_field( $_POST['_roden_result_initial_offer'] ?? '' ) );
+
+        $case_year = absint( $_POST['_roden_case_year'] ?? 0 );
+        update_post_meta( $post_id, '_roden_case_year', $case_year ? $case_year : '' );
+
+        update_post_meta( $post_id, '_roden_case_venue',
+            sanitize_text_field( $_POST['_roden_case_venue'] ?? '' ) );
 
         update_post_meta( $post_id, '_roden_description',
             sanitize_textarea_field( $_POST['_roden_description'] ?? '' ) );
