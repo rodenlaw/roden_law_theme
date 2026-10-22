@@ -4689,3 +4689,11 @@ msgstr "Si perdió a un ser querido por la negligencia de otra persona, contáct
 #: footer.php:206
 msgid "%s — Georgia"
 msgstr "%s — Georgia"
+
+#: inc/template-tags.php
+msgid "Add Roden Law as a preferred source on Google"
+msgstr "Añadir Roden Law como fuente preferida en Google"
+
+#: single.php
+msgid "Want more from Roden Law in your Google results?"
+msgstr "¿Quiere ver más de Roden Law en sus resultados de Google?"

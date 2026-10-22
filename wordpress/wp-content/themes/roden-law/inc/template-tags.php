@@ -4311,3 +4311,25 @@ function roden_thumbnail_alt_fallback( $attr ) {
     }
     return $attr;
 }
+
+/**
+ * Google "Add as a preferred source" badge.
+ *
+ * The deeplink option from developers.google.com/search/docs/appearance/preferred-sources:
+ * a plain link plus Google's official translated badge art (@2x PNGs), so no
+ * third-party script loads. Keep Google's own call to action — the badge
+ * invites a reader to follow the site, it is not an endorsement.
+ *
+ * @param string $theme 'light' (white badge, light backgrounds) or 'dark' (black badge, navy).
+ */
+function roden_preferred_source_badge( $theme = 'light' ) {
+    $lang  = ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() ) ? 'es' : 'en';
+    $theme = 'dark' === $theme ? 'dark' : 'light';
+    $src   = get_template_directory_uri() . '/assets/images/google-preferred-source-' . $lang . '-' . $theme . '.png';
+    ?>
+    <a href="https://www.google.com/preferences/source?q=rodenlaw.com" class="preferred-source-badge" target="_blank" rel="noopener noreferrer">
+        <img src="<?php echo esc_url( $src ); ?>" width="180" height="57" loading="lazy" decoding="async"
+             alt="<?php esc_attr_e( 'Add Roden Law as a preferred source on Google', 'roden-law' ); ?>">
+    </a>
+    <?php
+}
