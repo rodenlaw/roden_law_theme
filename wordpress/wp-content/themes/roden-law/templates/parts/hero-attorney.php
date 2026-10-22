@@ -50,10 +50,10 @@ $linkedin  = isset( $linkedin ) ? $linkedin : '';
                 <?php endif; ?>
 
                 <div class="bar-badges">
-                    <?php foreach ( $bar_items as $bar ) :
+                    <?php foreach ( array_values( $bar_items ) as $i => $bar ) :
                         $parts = array_map( 'trim', explode( ' — ', $bar ) );
                     ?>
-                        <span class="bar-badge">Licensed: <?php echo esc_html( $parts[1] ?? $parts[0] ); ?></span>
+                        <span class="bar-badge"><?php echo 0 === $i ? esc_html__( 'Licensed:', 'roden-law' ) . ' ' : ''; ?><?php echo esc_html( $parts[1] ?? $parts[0] ); ?></span>
                     <?php endforeach; ?>
                 </div>
 

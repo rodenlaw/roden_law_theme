@@ -1,0 +1,13 @@
+=== APPLY ===
+
+  [3732] graeham-c-gillin
+    - South Carolina Bar Association
+    + South Carolina | North Carolina | Arizona | Texas | Montana | District of Columbia | New York | Colorado | Connecticut | Pennsylvania | Tennessee | Massachusetts | Washington
+    verify: ok
+  [3736] nolan-alexander
+    - Massachusetts Bar Association
+    + South Carolina | Massachusetts
+    verify: ok
+
+BACKUP-JSON: {"3732":"South Carolina Bar Association","3736":"Massachusetts Bar Association"}
+Done.

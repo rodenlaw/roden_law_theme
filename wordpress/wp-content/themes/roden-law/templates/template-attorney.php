@@ -49,10 +49,13 @@
 
                 <!-- Bar admission badges -->
                 <div class="bar-badges">
-                    <?php foreach ( $bar_items as $bar ) :
+                    <?php
+                    // "Licensed:" once, on the first badge: one line per state
+                    // repeated it 13 times on a multi-state profile (2026-10-22).
+                    foreach ( array_values( $bar_items ) as $i => $bar ) :
                         $parts = array_map('trim', explode(' — ', $bar));
                     ?>
-                        <span class="bar-badge">Licensed: <?php echo esc_html($parts[0]); ?></span>
+                        <span class="bar-badge"><?php echo 0 === $i ? esc_html__( 'Licensed:', 'roden-law' ) . ' ' : ''; ?><?php echo esc_html($parts[0]); ?></span>
                     <?php endforeach; ?>
                 </div>
 
