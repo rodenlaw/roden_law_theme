@@ -1506,6 +1506,17 @@ h2.key-takeaways-title {
     color: var(--navy);
 }
 
+/* Google Preferred Source badge (footer + end of post) */
+.preferred-source-badge { display: inline-block; line-height: 0; border-radius: 8px; transition: opacity 0.2s ease; }
+.preferred-source-badge:hover { opacity: 0.9; }
+.preferred-source-badge img { width: 180px; height: auto; }
+.footer-preferred-source { margin-top: 32px; }
+.post-preferred-source {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px;
+    margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--gray-200);
+}
+.post-preferred-source p { margin: 0; font-size: 14px; }
+
 .footer-disclaimers {
     border-top: 1px solid rgba(255,255,255,0.1);
     margin-top: 32px; padding: 24px 0 0;

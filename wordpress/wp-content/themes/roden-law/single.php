@@ -98,6 +98,12 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                 </div>
             <?php endif; ?>
 
+            <!-- Google Preferred Source -->
+            <div class="post-preferred-source">
+                <p><?php esc_html_e( 'Want more from Roden Law in your Google results?', 'roden-law' ); ?></p>
+                <?php roden_preferred_source_badge( 'light' ); ?>
+            </div>
+
             <!-- Post Navigation -->
             <nav class="post-nav" aria-label="Post navigation">
                 <div class="post-nav-links">

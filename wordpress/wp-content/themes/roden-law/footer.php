@@ -236,6 +236,11 @@ $footer_ga_pillars = array(
 
             </div><!-- .footer-grid -->
 
+            <!-- Google Preferred Source -->
+            <div class="footer-preferred-source">
+                <?php roden_preferred_source_badge( 'dark' ); ?>
+            </div>
+
             <!-- Legal Disclaimers -->
             <div class="footer-disclaimers">
                 <p><strong><?php esc_html_e( 'Disclaimer:', 'roden-law' ); ?></strong> <?php esc_html_e( 'Attorney Eric Roden is responsible for the content of this website, and his primary office address is 333 Commercial Drive, Savannah, GA 31406. South Carolina cases are principally handled out of the Charleston and North Charleston, South Carolina offices. South Carolina cases are primarily handled by attorney Graeham Gillin, and the primary office addresses are 127 King Street, Charleston, SC 29401 and 2703 Spruill Ave, North Charleston, SC 29405. Georgia cases are principally handled out of the Savannah and Darien, Georgia offices.', 'roden-law' ); ?></p>
