@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 312" role="img" aria-labelledby="gatruckwhodiedT gatruckwhodiedD" style="max-width:100%;height:auto;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+<title id="gatruckwhodiedT">Who died in truck-involved fatal crashes in Georgia, 2020 to 2024</title>
+<desc id="gatruckwhodiedD">In other vehicles: 806 (70.0%); In the large truck: 204 (17.7%); Pedestrians: 131 (11.4%); Cyclists: 8 (0.7%); Other people outside a vehicle: 2 (0.2%). Total 1,151 deaths. Source: NHTSA FARS.</desc>
+<text x="0" y="22" font-size="15" font-weight="700" fill="var(--roden-text,#111)">Who died in truck-involved fatal crashes, Georgia</text>
+<text x="0" y="41" font-size="12.5" fill="var(--roden-muted,#555)">1,151 deaths, 2020&#8211;2024, by where the person was</text>
+<text x="218" y="78" text-anchor="end" font-size="13" fill="var(--roden-text,#111)">In other vehicles</text>
+<rect x="230" y="58" width="360.0" height="30" fill="var(--roden-accent,#0b5c8a)" rx="3"><title>In other vehicles: 806 (70.0%)</title></rect>
+<text x="600.0" y="78" font-size="13" font-weight="600" fill="var(--roden-text,#111)">806 (70.0%)</text>
+<text x="218" y="122" text-anchor="end" font-size="13" fill="var(--roden-text,#111)">In the large truck</text>
+<rect x="230" y="102" width="91.1" height="30" fill="var(--roden-bar,#4f93c4)" rx="3"><title>In the large truck: 204 (17.7%)</title></rect>
+<text x="331.1" y="122" font-size="13" font-weight="600" fill="var(--roden-text,#111)">204 (17.7%)</text>
+<text x="218" y="166" text-anchor="end" font-size="13" fill="var(--roden-text,#111)">Pedestrians</text>
+<rect x="230" y="146" width="58.5" height="30" fill="var(--roden-accent,#0b5c8a)" rx="3"><title>Pedestrians: 131 (11.4%)</title></rect>
+<text x="298.5" y="166" font-size="13" font-weight="600" fill="var(--roden-text,#111)">131 (11.4%)</text>
+<text x="218" y="210" text-anchor="end" font-size="13" fill="var(--roden-text,#111)">Cyclists</text>
+<rect x="230" y="190" width="3.6" height="30" fill="var(--roden-accent,#0b5c8a)" rx="3"><title>Cyclists: 8 (0.7%)</title></rect>
+<text x="243.6" y="210" font-size="13" font-weight="600" fill="var(--roden-text,#111)">8 (0.7%)</text>
+<text x="218" y="254" text-anchor="end" font-size="13" fill="var(--roden-text,#111)">Other people outside a vehicle</text>
+<rect x="230" y="234" width="2.0" height="30" fill="var(--roden-accent,#0b5c8a)" rx="3"><title>Other people outside a vehicle: 2 (0.2%)</title></rect>
+<text x="242.0" y="254" font-size="13" font-weight="600" fill="var(--roden-text,#111)">2 (0.2%)</text>
+<text x="0" y="304" font-size="11" fill="var(--roden-muted,#555)">Source: NHTSA Fatality Analysis Reporting System, 2020&#8211;2024 annual files. Fatal crashes only; 2024 file may be revised.</text>
+</svg>
