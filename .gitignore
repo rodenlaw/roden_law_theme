@@ -83,3 +83,7 @@ content/meta.*.json
 /strategy/briefs/*.director.log
 # Strategy director run state and the applied-switch ledger (local operational history)
 /data/strategy/
+
+# Kept out of this public repo: Search Console data and draft correspondence
+data/gsc/
+data/facts/*email-drafts*
