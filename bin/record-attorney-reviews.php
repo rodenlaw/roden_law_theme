@@ -5,14 +5,16 @@
  *   ssh $H "wp --path=... eval-file - <reviews.json>"       < bin/record-attorney-reviews.php
  *   ssh $H "wp --path=... eval-file - <reviews.json> apply" < bin/record-attorney-reviews.php
  *
- * <reviews.json> is a path ON THE SERVER, or '-' for an inline JSON argument as
- * the third arg. Each entry records ONE review that an attorney actually did,
+ * <reviews.json> is a path ON THE SERVER, or '-' followed by the JSON inline. Over
+ * ssh, pass it base64-encoded, since shell quoting mangles JSON:
+ *   ssh $H "wp ... eval-file - - b64:$(base64 < reviews.json)" < bin/record-attorney-reviews.php Each entry records ONE review that an attorney actually did,
  * relayed by the owner:
  *
  *   [{ "post_id": 1693, "reviewer": "graeham-c-gillin", "date": "2026-10-28",
  *      "jurisdiction": "sc", "source": "Brian, 2026-10-28: Gillin reviewed batch 1" }]
  *
- *   reviewer      attorney post slug
+ *   reviewer      attorney post slug, or an array of two for a two-state page
+ *                 (no attorney is admitted in both GA and SC)
  *   date          Y-m-d the review happened (never "today" by default)
  *   jurisdiction  ga | sc | both. Optional where the post already records one;
  *                 required where it does not, because the reviewer has to be
@@ -21,8 +23,9 @@
  *                 exactly the claim this site refuses to manufacture
  *
  * REFUSES an entry when:
- *   - the reviewer is not a published attorney post
- *   - the reviewer is not admitted in every state the page covers
+ *   - a reviewer is not a published attorney post
+ *   - a reviewer is admitted in none of the page's states, or the reviewers
+ *     together are not admitted in every state the page covers
  *     (roden_attorney_bar_states() against roden_page_jurisdiction_states()),
  *     because the theme would not publish that name anyway, and recording it
  *     would only make the database disagree with the page
@@ -41,6 +44,9 @@ $apply = in_array( 'apply', $args, true );
 echo $apply ? "=== APPLY ===\n\n" : "=== DRY RUN (add 'apply' to write) ===\n\n";
 
 $raw = ( '-' === $file ) ? ( $args[1] ?? '' ) : ( $file && is_readable( $file ) ? file_get_contents( $file ) : '' );
+if ( 0 === strpos( (string) $raw, 'b64:' ) ) {
+	$raw = base64_decode( substr( $raw, 4 ) ); // survives ssh quoting: '-' b64:$(base64 < reviews.json)
+}
 $rows = json_decode( (string) $raw, true );
 if ( ! is_array( $rows ) ) {
 	echo "No reviews: pass a readable JSON file path, or '-' and the JSON.\n";
@@ -69,9 +75,17 @@ foreach ( $rows as $i => $r ) {
 		$why[] = 'date before the post was published';
 	}
 
-	$atty = get_page_by_path( (string) ( $r['reviewer'] ?? '' ), OBJECT, 'attorney' );
-	if ( ! $atty || 'publish' !== $atty->post_status ) {
-		$why[] = 'reviewer is not a published attorney';
+	$attys = array();
+	foreach ( (array) ( $r['reviewer'] ?? array() ) as $slug ) {
+		$a = get_page_by_path( (string) $slug, OBJECT, 'attorney' );
+		if ( ! $a || 'publish' !== $a->post_status ) {
+			$why[] = "reviewer '$slug' is not a published attorney";
+		} else {
+			$attys[ $a->ID ] = $a;
+		}
+	}
+	if ( ! $attys && ! $why ) {
+		$why[] = 'no reviewer';
 	}
 
 	$have = $post ? (string) get_post_meta( $id, '_roden_jurisdiction', true ) : '';
@@ -84,11 +98,19 @@ foreach ( $rows as $i => $r ) {
 	if ( ! $scope ) {
 		$why[] = 'no jurisdiction on the post or the entry';
 	}
-	if ( $atty && $scope && function_exists( 'roden_attorney_bar_states' ) ) {
+	if ( $attys && $scope && function_exists( 'roden_attorney_bar_states' ) ) {
 		$needs = array( 'ga' => array( 'Georgia' ), 'sc' => array( 'South Carolina' ), 'both' => array( 'Georgia', 'South Carolina' ) )[ $scope ];
-		$miss  = array_diff( $needs, roden_attorney_bar_states( $atty->ID ) );
+		$held  = array();
+		foreach ( $attys as $a ) {
+			$bars = roden_attorney_bar_states( $a->ID );
+			if ( ! array_intersect( $needs, $bars ) ) {
+				$why[] = $a->post_title . ' is admitted in none of ' . implode( ', ', $needs );
+			}
+			$held = array_merge( $held, $bars );
+		}
+		$miss = array_diff( $needs, $held );
 		if ( $miss ) {
-			$why[] = $atty->post_title . ' is not admitted in ' . implode( ' and ', $miss );
+			$why[] = 'no reviewer is admitted in ' . implode( ' and ', $miss );
 		}
 	}
 
@@ -97,8 +119,8 @@ foreach ( $rows as $i => $r ) {
 		printf( "  REFUSE [%d] %s: %s\n", $id, $label, implode( '; ', $why ) );
 		continue;
 	}
-	$ok[ $id ] = array( 'atty' => $atty, 'date' => $date, 'scope' => $scope, 'set_scope' => ! $have, 'source' => $r['source'] );
-	printf( "  ok     [%d] %s: %s, %s (%s)%s\n", $id, $label, $atty->post_title, $date, $scope, $have ? '' : ' +jurisdiction' );
+	$ok[ $id ] = array( 'attys' => $attys, 'date' => $date, 'scope' => $scope, 'set_scope' => ! $have, 'source' => $r['source'] );
+	printf( "  ok     [%d] %s: %s, %s (%s)%s\n", $id, $label, implode( ' + ', wp_list_pluck( $attys, 'post_title' ) ), $date, $scope, $have ? '' : ' +jurisdiction' );
 }
 
 printf( "\n%d to record, %d refused.\n", count( $ok ), count( $rows ) - count( $ok ) );
@@ -115,7 +137,7 @@ foreach ( $ok as $id => $o ) {
 		'_roden_jurisdiction'  => get_post_meta( $id, '_roden_jurisdiction', true ),
 	);
 	update_post_meta( $id, '_roden_last_reviewed', wp_slash( $o['date'] ) );
-	update_post_meta( $id, '_roden_reviewed_by', (int) $o['atty']->ID );
+	update_post_meta( $id, '_roden_reviewed_by', implode( ',', array_keys( $o['attys'] ) ) );
 	if ( $o['set_scope'] ) {
 		update_post_meta( $id, '_roden_jurisdiction', wp_slash( $o['scope'] ) );
 	}
@@ -124,9 +146,12 @@ foreach ( $ok as $id => $o ) {
 echo "\nBACKUP-JSON: " . wp_json_encode( $backups ) . "\n\n--- VERIFY ---\n";
 $bad = 0;
 foreach ( $ok as $id => $o ) {
-	$named = function_exists( 'roden_page_reviewer' ) ? roden_page_reviewer( $id ) : null;
-	$good  = get_post_meta( $id, '_roden_last_reviewed', true ) === $o['date'] && $named && $named->ID === $o['atty']->ID;
+	$named = function_exists( 'roden_page_reviewers' ) ? wp_list_pluck( roden_page_reviewers( $id ), 'ID' ) : array();
+	$want  = array_keys( $o['attys'] );
+	sort( $named );
+	sort( $want );
+	$good  = get_post_meta( $id, '_roden_last_reviewed', true ) === $o['date'] && $named === $want;
 	$bad  += $good ? 0 : 1;
-	printf( "  [%d] %s\n", $id, $good ? 'ok: publishes reviewedBy ' . $named->post_title : 'CHECK' );
+	printf( "  [%d] %s\n", $id, $good ? 'ok: publishes reviewedBy ' . implode( ' + ', wp_list_pluck( $o['attys'], 'post_title' ) ) : 'CHECK' );
 }
 printf( "%d of %d verified.\nDone.\n", count( $ok ) - $bad, count( $ok ) );

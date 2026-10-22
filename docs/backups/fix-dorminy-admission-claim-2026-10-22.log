@@ -1,0 +1,9 @@
+=== APPLY ===
+
+  [5220] /resources/truck-accident-settlement-process/
+  - the Roden Law partner who leads the firm's trucking litigation and is admitted in both Georgia and South Carolina, points out
+  + the Roden Law partner who leads the firm's trucking litigation, points out
+
+BACKUP-SHA1 before: f91c3b0f00b26a61dd2a9560a6fcbe72242eaefb
+verify: claim gone yes, replacement present yes, length 16853 -> 16802
+Done.
