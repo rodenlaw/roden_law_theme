@@ -208,14 +208,10 @@ function roden_generate_llms_txt( $full = false ) {
     $output .= "## Attorneys\n\n";
 
     // Resolve each attorney's real permalink rather than assuming the firm-data
-    // array key is the WP post slug. It is not, for two of the seven: the keys
-    // 'graeham-gillin' and 'ivy-montano' belong to posts slugged
-    // 'graeham-c-gillin' and 'ivy-s-montano', so this file — the one written
-    // specifically for AI engines — was the only place on the site publishing a
-    // 404 for the partner bylined on essentially every South Carolina page.
-    //
-    // Matching on post_title keeps firm-data and WP in sync without a second
-    // hand-maintained slug field to drift. Attorneys whose bio is unpublished
+    // array key is the WP post slug. Two keys once were not ('graeham-gillin',
+    // 'ivy-montano'; renamed to the post slugs 2026-10-22), and this file, the
+    // one written for AI engines, published a 404 for the partner bylined on
+    // most South Carolina pages. Matching on post_title stays safe either way. Attorneys whose bio is unpublished
     // are listed without a link rather than linked to a page that redirects.
     $atty_posts = get_posts( array(
         'post_type'   => 'attorney',

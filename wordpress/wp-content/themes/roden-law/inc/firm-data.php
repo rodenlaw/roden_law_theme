@@ -873,17 +873,31 @@ EOT
                 'office'         => 'darien',
                 'focus'          => 'Leads trucking litigation',
             ),
-            'graeham-gillin' => array(
+            // Keyed by the attorney post's slug: these were 'graeham-gillin' and
+            // 'ivy-montano', which matched no post, so the Person schema's
+            // hasCredential supplement and roden_attorney_bar_states() never saw
+            // them. Admissions per Brian, 2026-10-22.
+            'graeham-c-gillin' => array(
                 'name'           => 'Graeham C. Gillin',
                 'title'          => 'Partner, COO',
-                'bar_admissions' => array( 'South Carolina' ),
+                'bar_admissions' => array(
+                    'South Carolina', 'North Carolina', 'Arizona', 'Texas', 'Montana',
+                    'District of Columbia', 'New York', 'Colorado', 'Connecticut',
+                    'Pennsylvania', 'Tennessee', 'Massachusetts', 'Washington',
+                ),
                 'office'         => 'charleston',
             ),
-            'ivy-montano' => array(
+            'ivy-s-montano' => array(
                 'name'           => 'Ivy S. Montano',
                 'title'          => 'Associate',
                 'bar_admissions' => array( 'South Carolina' ),
                 'office'         => 'myrtle-beach',
+            ),
+            'nolan-alexander' => array(
+                'name'           => 'Nolan Alexander',
+                'title'          => 'Of Counsel',
+                'bar_admissions' => array( 'South Carolina', 'Massachusetts' ),
+                'office'         => 'charleston',
             ),
         ),
 
