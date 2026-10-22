@@ -766,7 +766,10 @@ function roden_case_results_grid( $args = array() ) {
         return;
     }
 
-    echo '<div class="case-results-grid cols-' . intval( $args['columns'] ) . '">';
+    // Fewer results than columns: widen the cards to fill the row instead of
+    // leaving one narrow card beside empty columns.
+    $columns = min( intval( $args['columns'] ), count( $ids ) );
+    echo '<div class="case-results-grid cols-' . $columns . '">';
     foreach ( $ids as $id ) {
         if ( 'detail' === $args['style'] ) {
             roden_case_result_detail_card( $id );
