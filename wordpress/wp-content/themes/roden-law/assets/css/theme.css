@@ -468,6 +468,7 @@ h1, h2, h3, h4, h5, h6 {
 .case-results-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
 .case-results-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
 .case-results-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.case-results-grid.cols-1 { grid-template-columns: 1fr; }
 
 .result-card {
     background: var(--navy); border: 1px solid rgba(255,255,255,0.12);
