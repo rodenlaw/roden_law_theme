@@ -75,21 +75,24 @@ Batch 1 covers 205 of 263 clicks and 22412 of 47203 impressions in the queue, fo
 [{ "post_id": 4839, "reviewer": "graeham-c-gillin", "date": "YYYY-MM-DD", "jurisdiction": "sc", "source": "Brian, YYYY-MM-DD: <attorney> reviewed batch 1" }]
 ```
 
-## Also: 62 reviewed pages to confirm jurisdiction
+## Second-state reviews: 62 pages (added 2026-10-22)
 
-These pages have a review on record and still publish `reviewedBy`, because no jurisdiction is recorded and the theme only withholds a name on evidence. Their text suggests content the credited lawyer isn't admitted for. In most cases that means two-state content credited to a one-state lawyer (54 Graeham C. Gillin, 8 Eric Roden). Example: `/blog/georgia-statute-of-limitations/` credits Gillin, who is not admitted in Georgia.
+These 62 pages have a review on record from one lawyer, but they state both states' law. Their jurisdiction was read and recorded as `both` (owner-approved, 2026-10-22; see `confirm-jurisdiction-2026-10.md`). Since then each one shows its review date with no reviewer name. A second-state review brings both names back, recorded as a pair with `bin/record-attorney-reviews.php`:
 
-The suggestion is a text heuristic (state names and statute citations), so it can't be written to the database as fact. **Each page needs a person to say which state(s) it covers.** That's a quick read, not a full review. Once confirmed, `bin/record-attorney-reviews.php` stores it, and the theme drops the name wherever the lawyer doesn't cover it. List: `confirm-jurisdiction-2026-10.csv`. The 10 with the most traffic:
+- **54 reviewed by Gillin (SC):** a Georgia lawyer (Eric Roden or Joshua Dorminy) reviews the Georgia sections. That's 165 clicks in 28 days.
+- **8 reviewed by Eric Roden (GA):** Gillin reviews the South Carolina sections. That's 6 clicks.
 
-| Page | Clicks | Impr. | Credited | Suggested |
-|---|---:|---:|---|---|
-| [Reasons Why Insurance Companies May Ignore Your Demand Letter](https://rodenlaw.com/blog/insurance-company-ignoring-demand-letter/) | 21 | 1500 | Graeham C. Gillin | both |
-| [Average Personal Injury Settlement Amounts: What to Realistically Expect](https://rodenlaw.com/blog/average-personal-injury-settlement-amounts/) | 11 | 2197 | Graeham C. Gillin | both |
-| [Can an Insurance Company Go Against a Police Report in Georgia or South Carolina?](https://rodenlaw.com/blog/can-an-insurance-company-go-against-a-police-report/) | 11 | 1608 | Graeham C. Gillin | both |
-| [Gym Liability Explained](https://rodenlaw.com/blog/gym-injury-liability/) | 10 | 1329 | Graeham C. Gillin | both |
-| [Epilepsy & Driving: Liability for Seizure-Related Crashes](https://rodenlaw.com/blog/liability-for-epilepsy-related-car-accidents/) | 8 | 797 | Graeham C. Gillin | both |
-| [How to Answer Insurance Company Questions After a Car Accident in Georgia or South Carolina](https://rodenlaw.com/blog/answering-insurance-questions-after-crash/) | 8 | 594 | Graeham C. Gillin | both |
-| [Seeking Workers’ Compensation for a Sprained Ankle at Work](https://rodenlaw.com/blog/when-does-a-sprained-ankle-become-a-work-injury/) | 7 | 618 | Graeham C. Gillin | both |
-| [Do Traffic Tickets Determine Fault in a Car Accident?](https://rodenlaw.com/blog/traffic-tickets-and-car-accident-claims/) | 6 | 567 | Graeham C. Gillin | both |
-| [What Do Fault and No-Fault Mean in Car Insurance?](https://rodenlaw.com/blog/fault-vs-no-fault-car-insurance/) | 5 | 17542 | Graeham C. Gillin | both |
-| [How Surgery Impacts Your Personal Injury Claim: What You Need to Know](https://rodenlaw.com/blog/impact-of-surgery-recommendation/) | 5 | 518 | Graeham C. Gillin | both |
+Full list, ranked by traffic: `second-state-reviews-2026-10.csv`. The 10 with the most traffic:
+
+| Page | Clicks | Reviewed by | Needs |
+|---|---:|---|---|
+| [Reasons Why Insurance Companies May Ignore Your Demand Letter](https://rodenlaw.com/blog/insurance-company-ignoring-demand-letter/) | 21 | Gillin | GA lawyer, Georgia sections |
+| [Average Personal Injury Settlement Amounts: What to Realistically Expect](https://rodenlaw.com/blog/average-personal-injury-settlement-amounts/) | 11 | Gillin | GA lawyer, Georgia sections |
+| [Can an Insurance Company Go Against a Police Report in Georgia or South Carolina?](https://rodenlaw.com/blog/can-an-insurance-company-go-against-a-police-report/) | 11 | Gillin | GA lawyer, Georgia sections |
+| [Gym Liability Explained](https://rodenlaw.com/blog/gym-injury-liability/) | 10 | Gillin | GA lawyer, Georgia sections |
+| [Epilepsy & Driving: Liability for Seizure-Related Crashes](https://rodenlaw.com/blog/liability-for-epilepsy-related-car-accidents/) | 8 | Gillin | GA lawyer, Georgia sections |
+| [How to Answer Insurance Company Questions After a Car Accident in Georgia or South Carolina](https://rodenlaw.com/blog/answering-insurance-questions-after-crash/) | 8 | Gillin | GA lawyer, Georgia sections |
+| [Seeking Workers’ Compensation for a Sprained Ankle at Work](https://rodenlaw.com/blog/when-does-a-sprained-ankle-become-a-work-injury/) | 7 | Gillin | GA lawyer, Georgia sections |
+| [Do Traffic Tickets Determine Fault in a Car Accident?](https://rodenlaw.com/blog/traffic-tickets-and-car-accident-claims/) | 6 | Gillin | GA lawyer, Georgia sections |
+| [What Do Fault and No-Fault Mean in Car Insurance?](https://rodenlaw.com/blog/fault-vs-no-fault-car-insurance/) | 5 | Gillin | GA lawyer, Georgia sections |
+| [How Surgery Impacts Your Personal Injury Claim: What You Need to Know](https://rodenlaw.com/blog/impact-of-surgery-recommendation/) | 5 | Gillin | GA lawyer, Georgia sections |
