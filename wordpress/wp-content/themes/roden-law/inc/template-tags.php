@@ -1299,8 +1299,15 @@ function roden_content_modified_ts( $post_id = null ) {
             $ts = $t;
         }
     }
-    if ( ! $ts ) {
-        $ts = (int) get_post_time( 'U', true, $post_id );
+    // Never earlier than the post's own publish time: content cannot change
+    // before it exists. The editorial dates are bare Y-m-d (midnight), so a
+    // page reviewed and published on the same afternoon otherwise published a
+    // dateModified hours BEFORE its datePublished (9 pages, schema review
+    // 2026-10-22). Both publish columns are read because datePublished comes
+    // from the local one and a few posts still carry a scheduling split.
+    $published = max( (int) get_post_time( 'U', true, $post_id ), (int) get_post_time( 'U', false, $post_id ) );
+    if ( $ts < $published ) {
+        $ts = $published;
     }
     return $ts;
 }

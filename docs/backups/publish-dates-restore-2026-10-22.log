@@ -1,0 +1,218 @@
+=== APPLY ===
+
+  skip [4344] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4345] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4348] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4349] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4350] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4351] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4352] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4355] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4356] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4357] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4358] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4359] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4360] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4361] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4362] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4363] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4367] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4368] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4369] shown 2026-03-16 09:00:00 is earlier than recorded 2026-03-16 14:00:00
+  skip [4534] shown 2026-03-18 09:00:00 is earlier than recorded 2026-03-18 16:23:25
+  skip [4478] shown 2026-03-18 09:30:00 is earlier than recorded 2026-03-18 10:00:00
+  skip [1714] shown 2026-03-23 09:00:00 is earlier than recorded 2026-03-23 13:00:00
+  skip [1740] shown 2026-03-23 09:00:00 is earlier than recorded 2026-03-23 13:00:00
+  skip [1767] shown 2026-03-23 09:00:00 is earlier than recorded 2026-03-23 13:00:00
+  skip [1813] shown 2026-03-23 09:00:00 is earlier than recorded 2026-03-23 13:00:00
+  skip [1683] shown 2026-03-23 09:15:00 is earlier than recorded 2026-03-23 13:15:00
+  skip [1758] shown 2026-03-23 09:30:00 is earlier than recorded 2026-03-23 13:30:00
+  skip [4581] shown 2026-04-02 09:00:00 is earlier than recorded 2026-04-02 20:46:47
+published rows scanned                   : 658
+post_date differs from post_date_gmt     : 88
+  of which dateModified < datePublished  : 13 (the schema-review finding)
+
+  [1651] post     2026-03-17 09:00:00 -> 2023-07-11 14:41:00    /blog/value-of-pain-and-suffering/
+  [1663] post     2026-03-17 09:00:00 -> 2023-03-06 13:30:00    /blog/compensatory-damages-vs-punitive-damages/
+  [1679] post     2026-03-17 09:00:00 -> 2022-09-28 13:32:00    /blog/can-an-insurance-company-go-against-a-police-report/
+  [2586] post     2026-03-17 09:00:00 -> 2024-05-31 14:58:37    /blog/are-red-light-runners-always-liable-if-they-crash/
+  [2647] post     2026-03-17 09:00:00 -> 2024-06-07 20:43:30    /blog/rollover-crashes-and-what-they-do-to-your-body/
+  [1653] post     2026-03-18 09:00:00 -> 2023-06-14 13:00:00    /blog/calculating-compensation-for-whiplash-injuries/
+  [1816] post     2026-03-18 09:00:00 -> 2018-08-23 16:11:00    /blog/benefits-of-hiring-personal-injury-lawyer/
+  [3433] post     2026-03-18 09:00:00 -> 2025-08-01 13:44:42    /blog/how-to-maximize-your-car-accident-compensation-in-georgia/
+  [3440] post     2026-03-18 09:00:00 -> 2025-08-01 23:38:29    /blog/how-pain-and-suffering-is-calculated-after-an-accident-in-south-carolina/
+  [3493] post     2026-03-18 09:00:00 -> 2025-09-10 23:33:18    /blog/how-pain-and-suffering-is-calculated-after-an-accident-in-georgia/
+  [1661] post     2026-03-20 09:00:00 -> 2023-03-24 21:58:00 *  /blog/commercial-truck-accidents-who-is-at-fault/
+  [1665] post     2026-03-20 09:00:00 -> 2023-02-16 19:50:44 *  /blog/the-most-common-causes-of-truck-accidents/
+  [1793] post     2026-03-20 09:00:00 -> 2019-02-25 22:07:00    /blog/dangerous-savannah-intersections/
+  [1838] post     2026-03-20 09:00:00 -> 2018-03-08 14:31:00    /blog/georgia-comparative-negligence-law/
+  [1671] post     2026-03-20 10:00:00 -> 2022-12-20 20:12:00    /blog/what-to-do-when-you-are-in-a-car-accident/
+  [3553] post     2026-03-20 10:00:00 -> 2025-11-04 23:00:06    /blog/columbia-dangerous-intersections-roads/
+  [1662] post     2026-03-22 09:00:00 -> 2023-03-14 18:41:00 *  /blog/what-to-do-if-your-workers-compensation-claim-is-denied/
+  [1664] post     2026-03-22 09:00:00 -> 2023-02-28 16:09:00    /blog/the-importance-of-gathering-evidence-after-a-motorcycle-accident/
+  [1669] post     2026-03-22 09:00:00 -> 2023-01-19 14:54:00    /blog/5-benefits-of-hiring-a-truck-accident-attorney-in-2023/
+  [1647] post     2026-03-23 09:00:00 -> 2023-08-16 09:45:00    /blog/truck-accident-reconstruction/
+  [1657] post     2026-03-23 09:00:00 -> 2023-05-03 13:00:00    /blog/answering-insurance-questions-after-crash/
+  [1658] post     2026-03-23 09:00:00 -> 2023-04-24 13:00:00    /blog/steps-after-work-injury/
+  [1666] post     2026-03-23 09:00:00 -> 2023-02-08 16:49:00 *  /blog/the-role-of-vocational-rehabilitation-in-workers-compensation-cases/
+  [1667] post     2026-03-23 09:00:00 -> 2023-01-31 19:54:00    /blog/7-mistakes-to-avoid-after-a-motorcycle-accident/
+  [1668] post     2026-03-23 09:00:00 -> 2023-01-25 17:04:00    /blog/5-most-common-types-of-medical-malpractice-in-2023/
+  [1684] post     2026-03-23 09:00:00 -> 2022-06-03 08:17:00    /blog/is-workers-compensation-an-employee-benefit/
+  [1705] post     2026-03-23 09:00:00 -> 2021-10-28 14:54:00    /blog/benefits-of-an-accident-reconstruction-expert/
+  [1745] post     2026-03-23 09:00:00 -> 2020-03-26 11:34:48 *  /blog/certification-of-permanent-injury/
+  [1749] post     2026-03-23 09:00:00 -> 2020-03-03 11:19:00    /blog/fault-vs-no-fault-car-insurance/
+  [1752] post     2026-03-23 09:00:00 -> 2020-02-13 10:34:00 *  /blog/workers-comp-medical-coverage/
+  [1753] post     2026-03-23 09:00:00 -> 2020-02-06 09:49:00    /blog/contingency-fee-system/
+  [1756] post     2026-03-23 09:00:00 -> 2020-01-10 10:34:00    /blog/negligence-vs-gross-negligence/
+  [1757] post     2026-03-23 09:00:00 -> 2020-01-03 17:56:08    /blog/using-uninsured-underinsured-motorist-coverage-in-georgia/
+  [1761] post     2026-03-23 09:00:00 -> 2019-11-30 17:53:00    /blog/workers-comp-for-carpal-tunnel-syndrome/
+  [1769] post     2026-03-23 09:00:00 -> 2019-09-17 20:17:00    /blog/taxes-on-car-crash-settlement-in-georgia/
+  [1773] post     2026-03-23 09:00:00 -> 2019-08-21 15:21:00    /blog/determining-fault-in-multi-vehicle-accidents/
+  [1790] post     2026-03-23 09:00:00 -> 2019-03-22 13:56:00    /blog/georgia-super-speeder-law/
+  [1796] post     2026-03-23 09:00:00 -> 2019-01-30 13:00:00    /blog/steps-after-slip-and-fall-injury/
+  [1810] post     2026-03-23 09:00:00 -> 2018-09-28 21:20:00    /blog/truck-accident-liability/
+  [1811] post     2026-03-23 09:00:00 -> 2018-09-26 13:53:00    /blog/recovering-damages-with-pre-existing-injuries/
+  [1823] post     2026-03-23 09:00:00 -> 2018-06-28 13:00:00    /blog/driving-tips-around-trucks/
+  [1824] post     2026-03-23 09:00:00 -> 2018-06-26 18:52:00    /blog/informed-consent/
+  [1831] post     2026-03-23 09:00:00 -> 2018-04-25 16:15:00    /blog/blind-spot-accidents/
+  [1835] post     2026-03-23 09:00:00 -> 2018-03-28 13:00:00    /blog/signs-of-concussion-from-car-crash/
+  [1837] post     2026-03-23 09:00:00 -> 2018-03-14 13:00:00    /blog/financial-abuse-at-nursing-homes/
+  [1840] post     2026-03-23 09:00:00 -> 2018-02-20 15:58:00    /blog/georgia-statute-of-limitations/
+  [1856] post     2026-03-23 09:00:00 -> 2016-07-18 13:00:00    /blog/pedestrian-safety-georgia/
+  [1746] post     2026-03-23 09:15:00 -> 2020-03-20 13:15:00    /blog/animal-accident-insurance-coverage/
+  [1772] post     2026-03-23 09:30:00 -> 2019-08-28 13:30:00    /blog/benefit-of-a-personal-injury-pain-diary/
+  [1646] post     2026-03-24 09:00:00 -> 2023-08-28 14:15:00    /blog/first-steps-in-a-medical-malpractice-case/
+  [1649] post     2026-03-24 09:00:00 -> 2023-07-25 10:11:00    /blog/claims-against-at-fault-drivers-who-died/
+  [1670] post     2026-03-24 09:00:00 -> 2022-12-21 13:47:00    /blog/how-long-can-someone-sue-you-after-a-car-accident/
+  [1672] post     2026-03-24 09:00:00 -> 2022-12-15 16:07:00    /blog/are-accident-lawyers-worth-it/
+  [1673] post     2026-03-24 09:00:00 -> 2022-11-25 11:12:00    /blog/how-do-i-know-if-i-have-a-personal-injury-case/
+  [1674] post     2026-03-24 09:00:00 -> 2022-11-04 15:11:00 *  /blog/does-workers-compensation-cover-prescriptions/
+  [1675] post     2026-03-24 09:00:00 -> 2022-10-28 14:50:00    /blog/can-someone-sue-me-for-a-car-accident/
+  [1676] post     2026-03-24 09:00:00 -> 2022-10-21 14:48:00    /blog/medical-malpractice-limits-georgia/
+  [1677] post     2026-03-24 09:00:00 -> 2022-10-07 18:23:00    /blog/when-does-workers-compensation-stop-paying/
+  [1682] post     2026-03-24 09:00:00 -> 2022-08-12 14:09:00    /blog/how-long-can-a-person-stay-on-workers-compensation/
+  [1696] post     2026-03-24 09:00:00 -> 2022-01-20 13:55:00    /blog/what-if-i-suspect-medical-malpractice/
+  [1650] post     2026-03-25 09:00:00 -> 2023-07-18 13:31:00    /blog/benefits-for-workplace-violence/
+  [1681] post     2026-03-25 09:00:00 -> 2022-08-31 07:33:00    /blog/tips-for-choosing-a-motor-vehicle-accident-attorney/
+  [1686] post     2026-03-25 09:00:00 -> 2022-05-13 14:56:11    /blog/why-wont-a-personal-lawyer-take-my-case/
+  [1690] post     2026-03-25 09:00:00 -> 2022-04-07 13:19:00 *  /blog/does-worker-compensation-cover-employee-negligence/
+  [1692] post     2026-03-25 09:00:00 -> 2022-03-10 09:22:54    /blog/when-is-the-right-time-to-hire-a-personal-injury-lawyer/
+  [1693] post     2026-03-25 09:00:00 -> 2022-03-03 09:15:00 *  /blog/am-i-eligible-for-workers-compensation/
+  [1695] post     2026-03-25 09:00:00 -> 2022-02-10 16:22:49    /blog/should-i-file-a-personal-injury-or-a-workers-compensation-claim/
+  [1697] post     2026-03-25 09:00:00 -> 2022-01-14 12:33:00    /blog/what-happens-if-i-resign-while-on-workers-compensation/
+  [1698] post     2026-03-25 09:00:00 -> 2022-01-05 12:27:00    /blog/steps-to-take-if-you-are-involved-in-a-bicycle-hit-and-run/
+  [1702] post     2026-03-25 09:00:00 -> 2021-11-18 19:56:00    /blog/maximum-medical-improvement-in-an-injury-claim/
+  [1703] post     2026-04-09 09:00:00 -> 2021-11-11 22:48:00    /blog/driving-record-and-injury-claim/
+  [1704] post     2026-04-09 09:00:00 -> 2021-11-04 19:39:00    /blog/filing-a-claim-for-an-injured-minor/
+  [1706] post     2026-04-09 09:00:00 -> 2021-10-21 13:22:00    /blog/claims-for-lost-wages/
+  [1707] post     2026-04-09 09:00:00 -> 2021-10-14 15:29:00    /blog/liability-for-sudden-emergency-accidents/
+  [1708] post     2026-04-09 09:00:00 -> 2021-10-07 14:57:00    /blog/switching-lawyers-during-a-case/
+  [1709] post     2026-04-09 09:00:00 -> 2021-09-30 21:02:00    /blog/how-car-insurers-use-private-investigators/
+  [1711] post     2026-04-09 09:00:00 -> 2021-09-10 16:18:00    /blog/liens-and-your-personal-injury-claims/
+  [1712] post     2026-04-09 09:00:00 -> 2021-08-31 13:38:00    /blog/letters-of-protection-for-injury-victims/
+  [1713] post     2026-04-09 09:00:00 -> 2021-08-25 20:48:00 *  /blog/importance-of-eyewitness-testimony/
+  [1715] post     2026-04-09 09:00:00 -> 2021-08-06 13:06:00    /blog/car-insurance-add-ons/
+  [1716] post     2026-04-09 09:00:00 -> 2021-07-27 13:04:00    /blog/liability-for-crashes-in-heavy-rainfall/
+  [1717] post     2026-04-09 09:00:00 -> 2021-07-15 21:29:00 *  /blog/resolving-claims-through-arbitration/
+  [1718] post     2026-04-09 09:00:00 -> 2021-07-08 15:36:00 *  /blog/continuing-post-accident-medical-treatment/
+  [1719] post     2026-04-09 09:00:00 -> 2021-07-01 20:27:00    /blog/car-insurance-claim-denial-tactics/
+  [1720] post     2026-04-09 09:00:00 -> 2021-06-17 17:13:00    /blog/options-for-denied-injury-claims/
+  [1722] post     2026-04-09 09:00:00 -> 2021-06-03 20:02:00    /blog/demand-letters-in-personal-injury-cases/
+  [1723] post     2026-04-09 09:00:00 -> 2021-05-27 20:06:00 *  /blog/independent-medical-exams/
+  [1724] post     2026-04-09 09:00:00 -> 2021-05-21 13:18:00    /blog/options-for-recovering-more-than-policy-limits/
+
+  * = currently publishes dateModified earlier than datePublished
+  set 1651: 2026-03-17 09:00:00 -> 2023-07-11 14:41:00 ok
+  set 1663: 2026-03-17 09:00:00 -> 2023-03-06 13:30:00 ok
+  set 1679: 2026-03-17 09:00:00 -> 2022-09-28 13:32:00 ok
+  set 2586: 2026-03-17 09:00:00 -> 2024-05-31 14:58:37 ok
+  set 2647: 2026-03-17 09:00:00 -> 2024-06-07 20:43:30 ok
+  set 1653: 2026-03-18 09:00:00 -> 2023-06-14 13:00:00 ok
+  set 1816: 2026-03-18 09:00:00 -> 2018-08-23 16:11:00 ok
+  set 3433: 2026-03-18 09:00:00 -> 2025-08-01 13:44:42 ok
+  set 3440: 2026-03-18 09:00:00 -> 2025-08-01 23:38:29 ok
+  set 3493: 2026-03-18 09:00:00 -> 2025-09-10 23:33:18 ok
+  set 1661: 2026-03-20 09:00:00 -> 2023-03-24 21:58:00 ok
+  set 1665: 2026-03-20 09:00:00 -> 2023-02-16 19:50:44 ok
+  set 1793: 2026-03-20 09:00:00 -> 2019-02-25 22:07:00 ok
+  set 1838: 2026-03-20 09:00:00 -> 2018-03-08 14:31:00 ok
+  set 1671: 2026-03-20 10:00:00 -> 2022-12-20 20:12:00 ok
+  set 3553: 2026-03-20 10:00:00 -> 2025-11-04 23:00:06 ok
+  set 1662: 2026-03-22 09:00:00 -> 2023-03-14 18:41:00 ok
+  set 1664: 2026-03-22 09:00:00 -> 2023-02-28 16:09:00 ok
+  set 1669: 2026-03-22 09:00:00 -> 2023-01-19 14:54:00 ok
+  set 1647: 2026-03-23 09:00:00 -> 2023-08-16 09:45:00 ok
+  set 1657: 2026-03-23 09:00:00 -> 2023-05-03 13:00:00 ok
+  set 1658: 2026-03-23 09:00:00 -> 2023-04-24 13:00:00 ok
+  set 1666: 2026-03-23 09:00:00 -> 2023-02-08 16:49:00 ok
+  set 1667: 2026-03-23 09:00:00 -> 2023-01-31 19:54:00 ok
+  set 1668: 2026-03-23 09:00:00 -> 2023-01-25 17:04:00 ok
+  set 1684: 2026-03-23 09:00:00 -> 2022-06-03 08:17:00 ok
+  set 1705: 2026-03-23 09:00:00 -> 2021-10-28 14:54:00 ok
+  set 1745: 2026-03-23 09:00:00 -> 2020-03-26 11:34:48 ok
+  set 1749: 2026-03-23 09:00:00 -> 2020-03-03 11:19:00 ok
+  set 1752: 2026-03-23 09:00:00 -> 2020-02-13 10:34:00 ok
+  set 1753: 2026-03-23 09:00:00 -> 2020-02-06 09:49:00 ok
+  set 1756: 2026-03-23 09:00:00 -> 2020-01-10 10:34:00 ok
+  set 1757: 2026-03-23 09:00:00 -> 2020-01-03 17:56:08 ok
+  set 1761: 2026-03-23 09:00:00 -> 2019-11-30 17:53:00 ok
+  set 1769: 2026-03-23 09:00:00 -> 2019-09-17 20:17:00 ok
+  set 1773: 2026-03-23 09:00:00 -> 2019-08-21 15:21:00 ok
+  set 1790: 2026-03-23 09:00:00 -> 2019-03-22 13:56:00 ok
+  set 1796: 2026-03-23 09:00:00 -> 2019-01-30 13:00:00 ok
+  set 1810: 2026-03-23 09:00:00 -> 2018-09-28 21:20:00 ok
+  set 1811: 2026-03-23 09:00:00 -> 2018-09-26 13:53:00 ok
+  set 1823: 2026-03-23 09:00:00 -> 2018-06-28 13:00:00 ok
+  set 1824: 2026-03-23 09:00:00 -> 2018-06-26 18:52:00 ok
+  set 1831: 2026-03-23 09:00:00 -> 2018-04-25 16:15:00 ok
+  set 1835: 2026-03-23 09:00:00 -> 2018-03-28 13:00:00 ok
+  set 1837: 2026-03-23 09:00:00 -> 2018-03-14 13:00:00 ok
+  set 1840: 2026-03-23 09:00:00 -> 2018-02-20 15:58:00 ok
+  set 1856: 2026-03-23 09:00:00 -> 2016-07-18 13:00:00 ok
+  set 1746: 2026-03-23 09:15:00 -> 2020-03-20 13:15:00 ok
+  set 1772: 2026-03-23 09:30:00 -> 2019-08-28 13:30:00 ok
+  set 1646: 2026-03-24 09:00:00 -> 2023-08-28 14:15:00 ok
+  set 1649: 2026-03-24 09:00:00 -> 2023-07-25 10:11:00 ok
+  set 1670: 2026-03-24 09:00:00 -> 2022-12-21 13:47:00 ok
+  set 1672: 2026-03-24 09:00:00 -> 2022-12-15 16:07:00 ok
+  set 1673: 2026-03-24 09:00:00 -> 2022-11-25 11:12:00 ok
+  set 1674: 2026-03-24 09:00:00 -> 2022-11-04 15:11:00 ok
+  set 1675: 2026-03-24 09:00:00 -> 2022-10-28 14:50:00 ok
+  set 1676: 2026-03-24 09:00:00 -> 2022-10-21 14:48:00 ok
+  set 1677: 2026-03-24 09:00:00 -> 2022-10-07 18:23:00 ok
+  set 1682: 2026-03-24 09:00:00 -> 2022-08-12 14:09:00 ok
+  set 1696: 2026-03-24 09:00:00 -> 2022-01-20 13:55:00 ok
+  set 1650: 2026-03-25 09:00:00 -> 2023-07-18 13:31:00 ok
+  set 1681: 2026-03-25 09:00:00 -> 2022-08-31 07:33:00 ok
+  set 1686: 2026-03-25 09:00:00 -> 2022-05-13 14:56:11 ok
+  set 1690: 2026-03-25 09:00:00 -> 2022-04-07 13:19:00 ok
+  set 1692: 2026-03-25 09:00:00 -> 2022-03-10 09:22:54 ok
+  set 1693: 2026-03-25 09:00:00 -> 2022-03-03 09:15:00 ok
+  set 1695: 2026-03-25 09:00:00 -> 2022-02-10 16:22:49 ok
+  set 1697: 2026-03-25 09:00:00 -> 2022-01-14 12:33:00 ok
+  set 1698: 2026-03-25 09:00:00 -> 2022-01-05 12:27:00 ok
+  set 1702: 2026-03-25 09:00:00 -> 2021-11-18 19:56:00 ok
+  set 1703: 2026-04-09 09:00:00 -> 2021-11-11 22:48:00 ok
+  set 1704: 2026-04-09 09:00:00 -> 2021-11-04 19:39:00 ok
+  set 1706: 2026-04-09 09:00:00 -> 2021-10-21 13:22:00 ok
+  set 1707: 2026-04-09 09:00:00 -> 2021-10-14 15:29:00 ok
+  set 1708: 2026-04-09 09:00:00 -> 2021-10-07 14:57:00 ok
+  set 1709: 2026-04-09 09:00:00 -> 2021-09-30 21:02:00 ok
+  set 1711: 2026-04-09 09:00:00 -> 2021-09-10 16:18:00 ok
+  set 1712: 2026-04-09 09:00:00 -> 2021-08-31 13:38:00 ok
+  set 1713: 2026-04-09 09:00:00 -> 2021-08-25 20:48:00 ok
+  set 1715: 2026-04-09 09:00:00 -> 2021-08-06 13:06:00 ok
+  set 1716: 2026-04-09 09:00:00 -> 2021-07-27 13:04:00 ok
+  set 1717: 2026-04-09 09:00:00 -> 2021-07-15 21:29:00 ok
+  set 1718: 2026-04-09 09:00:00 -> 2021-07-08 15:36:00 ok
+  set 1719: 2026-04-09 09:00:00 -> 2021-07-01 20:27:00 ok
+  set 1720: 2026-04-09 09:00:00 -> 2021-06-17 17:13:00 ok
+  set 1722: 2026-04-09 09:00:00 -> 2021-06-03 20:02:00 ok
+  set 1723: 2026-04-09 09:00:00 -> 2021-05-27 20:06:00 ok
+  set 1724: 2026-04-09 09:00:00 -> 2021-05-21 13:18:00 ok
+
+BACKUP-JSON: {"1651":{"post_date":"2026-03-17 09:00:00","post_date_gmt":"2023-07-11 14:41:00"},"1663":{"post_date":"2026-03-17 09:00:00","post_date_gmt":"2023-03-06 13:30:00"},"1679":{"post_date":"2026-03-17 09:00:00","post_date_gmt":"2022-09-28 13:32:00"},"2586":{"post_date":"2026-03-17 09:00:00","post_date_gmt":"2024-05-31 14:58:37"},"2647":{"post_date":"2026-03-17 09:00:00","post_date_gmt":"2024-06-07 20:43:30"},"1653":{"post_date":"2026-03-18 09:00:00","post_date_gmt":"2026-03-17 13:00:00"},"1816":{"post_date":"2026-03-18 09:00:00","post_date_gmt":"2018-08-23 16:11:00"},"3433":{"post_date":"2026-03-18 09:00:00","post_date_gmt":"2025-08-01 13:44:42"},"3440":{"post_date":"2026-03-18 09:00:00","post_date_gmt":"2025-08-01 23:38:29"},"3493":{"post_date":"2026-03-18 09:00:00","post_date_gmt":"2025-09-10 23:33:18"},"1661":{"post_date":"2026-03-20 09:00:00","post_date_gmt":"2023-03-24 21:58:00"},"1665":{"post_date":"2026-03-20 09:00:00","post_date_gmt":"2023-02-16 19:50:44"},"1793":{"post_date":"2026-03-20 09:00:00","post_date_gmt":"2019-02-25 22:07:00"},"1838":{"post_date":"2026-03-20 09:00:00","post_date_gmt":"2018-03-08 14:31:00"},"1671":{"post_date":"2026-03-20 10:00:00","post_date_gmt":"2022-12-20 20:12:00"},"3553":{"post_date":"2026-03-20 10:00:00","post_date_gmt":"2025-11-04 23:00:06"},"1662":{"post_date":"2026-03-22 09:00:00","post_date_gmt":"2023-03-14 18:41:00"},"1664":{"post_date":"2026-03-22 09:00:00","post_date_gmt":"2023-02-28 16:09:00"},"1669":{"post_date":"2026-03-22 09:00:00","post_date_gmt":"2023-01-19 14:54:00"},"1647":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2023-08-16 09:45:00"},"1657":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2026-03-23 13:00:00"},"1658":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2026-03-23 13:00:00"},"1666":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2023-02-08 16:49:00"},"1667":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2023-01-31 19:54:00"},"1668":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2023-01-25 17:04:00"},"1684":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2022-06-03 08:17:00"},"1705":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2021-10-28 14:54:00"},"1745":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2020-03-26 11:34:48"},"1749":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2020-03-03 11:19:00"},"1752":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2020-02-13 10:34:00"},"1753":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2020-02-06 09:49:00"},"1756":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2020-01-10 10:34:00"},"1757":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2020-01-03 17:56:08"},"1761":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2019-11-30 17:53:00"},"1769":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2019-09-17 20:17:00"},"1773":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2019-08-21 15:21:00"},"1790":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2019-03-22 13:56:00"},"1796":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2026-03-23 13:00:00"},"1810":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2018-09-28 21:20:00"},"1811":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2018-09-26 13:53:00"},"1823":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2026-03-23 13:00:00"},"1824":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2018-06-26 18:52:00"},"1831":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2018-04-25 16:15:00"},"1835":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2026-03-23 13:00:00"},"1837":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2026-03-23 13:00:00"},"1840":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2018-02-20 15:58:00"},"1856":{"post_date":"2026-03-23 09:00:00","post_date_gmt":"2026-03-23 13:00:00"},"1746":{"post_date":"2026-03-23 09:15:00","post_date_gmt":"2026-03-23 13:15:00"},"1772":{"post_date":"2026-03-23 09:30:00","post_date_gmt":"2026-03-23 13:30:00"},"1646":{"post_date":"2026-03-24 09:00:00","post_date_gmt":"2023-08-28 14:15:00"},"1649":{"post_date":"2026-03-24 09:00:00","post_date_gmt":"2023-07-25 10:11:00"},"1670":{"post_date":"2026-03-24 09:00:00","post_date_gmt":"2022-12-21 13:47:00"},"1672":{"post_date":"2026-03-24 09:00:00","post_date_gmt":"2022-12-15 16:07:00"},"1673":{"post_date":"2026-03-24 09:00:00","post_date_gmt":"2022-11-25 11:12:00"},"1674":{"post_date":"2026-03-24 09:00:00","post_date_gmt":"2022-11-04 15:11:00"},"1675":{"post_date":"2026-03-24 09:00:00","post_date_gmt":"2022-10-28 14:50:00"},"1676":{"post_date":"2026-03-24 09:00:00","post_date_gmt":"2022-10-21 14:48:00"},"1677":{"post_date":"2026-03-24 09:00:00","post_date_gmt":"2022-10-07 18:23:00"},"1682":{"post_date":"2026-03-24 09:00:00","post_date_gmt":"2022-08-12 14:09:00"},"1696":{"post_date":"2026-03-24 09:00:00","post_date_gmt":"2022-01-20 13:55:00"},"1650":{"post_date":"2026-03-25 09:00:00","post_date_gmt":"2023-07-18 13:31:00"},"1681":{"post_date":"2026-03-25 09:00:00","post_date_gmt":"2022-08-31 07:33:00"},"1686":{"post_date":"2026-03-25 09:00:00","post_date_gmt":"2022-05-13 14:56:11"},"1690":{"post_date":"2026-03-25 09:00:00","post_date_gmt":"2022-04-07 13:19:00"},"1692":{"post_date":"2026-03-25 09:00:00","post_date_gmt":"2022-03-10 09:22:54"},"1693":{"post_date":"2026-03-25 09:00:00","post_date_gmt":"2022-03-03 09:15:00"},"1695":{"post_date":"2026-03-25 09:00:00","post_date_gmt":"2022-02-10 16:22:49"},"1697":{"post_date":"2026-03-25 09:00:00","post_date_gmt":"2022-01-14 12:33:00"},"1698":{"post_date":"2026-03-25 09:00:00","post_date_gmt":"2022-01-05 12:27:00"},"1702":{"post_date":"2026-03-25 09:00:00","post_date_gmt":"2021-11-18 19:56:00"},"1703":{"post_date":"2026-04-09 09:00:00","post_date_gmt":"2021-11-11 22:48:00"},"1704":{"post_date":"2026-04-09 09:00:00","post_date_gmt":"2021-11-04 19:39:00"},"1706":{"post_date":"2026-04-09 09:00:00","post_date_gmt":"2021-10-21 13:22:00"},"1707":{"post_date":"2026-04-09 09:00:00","post_date_gmt":"2021-10-14 15:29:00"},"1708":{"post_date":"2026-04-09 09:00:00","post_date_gmt":"2021-10-07 14:57:00"},"1709":{"post_date":"2026-04-09 09:00:00","post_date_gmt":"2021-09-30 21:02:00"},"1711":{"post_date":"2026-04-09 09:00:00","post_date_gmt":"2021-09-10 16:18:00"},"1712":{"post_date":"2026-04-09 09:00:00","post_date_gmt":"2021-08-31 13:38:00"},"1713":{"post_date":"2026-04-09 09:00:00","post_date_gmt":"2021-08-25 20:48:00"},"1715":{"post_date":"2026-04-09 09:00:00","post_date_gmt":"2021-08-06 13:06:00"},"1716":{"post_date":"2026-04-09 09:00:00","post_date_gmt":"2021-07-27 13:04:00"},"1717":{"post_date":"2026-04-09 09:00:00","post_date_gmt":"2021-07-15 21:29:00"},"1718":{"post_date":"2026-04-09 09:00:00","post_date_gmt":"2021-07-08 15:36:00"},"1719":{"post_date":"2026-04-09 09:00:00","post_date_gmt":"2021-07-01 20:27:00"},"1720":{"post_date":"2026-04-09 09:00:00","post_date_gmt":"2021-06-17 17:13:00"},"1722":{"post_date":"2026-04-09 09:00:00","post_date_gmt":"2021-06-03 20:02:00"},"1723":{"post_date":"2026-04-09 09:00:00","post_date_gmt":"2021-05-27 20:06:00"},"1724":{"post_date":"2026-04-09 09:00:00","post_date_gmt":"2021-05-21 13:18:00"}}
+
+--- VERIFY (read back from the table, not the object cache) ---
+88 of 88 restored; 0 wrong.
+Done.
