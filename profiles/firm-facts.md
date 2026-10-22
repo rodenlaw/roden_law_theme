@@ -18,6 +18,7 @@ GENERATED from client.json by internal-ai-scripts/scripts/clients/gen-firm-facts
 | Joshua Dorminy | Partner | GA, SC | — |
 | Graeham C. Gillin | Partner, COO | SC | reviewer |
 | Ivy S. Montano | Associate | SC | — |
+| Nolan Alexander | Of Counsel | MA | — |
 
 An attorney may only be attributed on content whose jurisdiction is within their bar admissions. A name not in this table is not on staff and must not appear.
 
