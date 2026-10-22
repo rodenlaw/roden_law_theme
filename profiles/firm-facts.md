@@ -15,9 +15,9 @@ GENERATED from client.json by internal-ai-scripts/scripts/clients/gen-firm-facts
 |---|---|---|---|
 | Eric Roden | Founding Partner, CEO | GA | **expert voice** (default attribution, review bylines); reviewer |
 | Tyler Love | Founding Partner, CTO | GA | reviewer |
-| Joshua Dorminy | Partner | GA, SC | — |
+| Joshua Dorminy | Partner | GA | reviewer |
 | Graeham C. Gillin | Partner, COO | SC, NC, AZ, TX, MT, DC, NY, CO, CT, PA, TN, MA, WA | reviewer |
-| Ivy S. Montano | Associate | SC | — |
+| Ivy S. Montano | Associate | GA | — |
 | Nolan Alexander | Of Counsel | MA, SC | — |
 
 An attorney may only be attributed on content whose jurisdiction is within their bar admissions. A name not in this table is not on staff and must not appear.

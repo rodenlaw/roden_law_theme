@@ -869,7 +869,10 @@ EOT
             'joshua-dorminy' => array(
                 'name'           => 'Joshua Dorminy',
                 'title'          => 'Partner',
-                'bar_admissions' => array( 'Georgia', 'South Carolina' ),
+                // Georgia only (Brian, 2026-10-22). This said Georgia and South
+                // Carolina, which published an SC bar credential in his Person
+                // schema and "Licensed in Georgia, South Carolina" in llms.txt.
+                'bar_admissions' => array( 'Georgia' ),
                 'office'         => 'darien',
                 'focus'          => 'Leads trucking litigation',
             ),
@@ -890,7 +893,9 @@ EOT
             'ivy-s-montano' => array(
                 'name'           => 'Ivy S. Montano',
                 'title'          => 'Associate',
-                'bar_admissions' => array( 'South Carolina' ),
+                // Georgia only (Brian, 2026-10-22); her profile's own bar list
+                // is all Georgia. This said South Carolina.
+                'bar_admissions' => array( 'Georgia' ),
                 'office'         => 'myrtle-beach',
             ),
             'nolan-alexander' => array(
