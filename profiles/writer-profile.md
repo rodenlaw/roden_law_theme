@@ -44,7 +44,8 @@ $300M+ recovered · 4.9-star average · 500+ client reviews · 5,000+ cases hand
 ## Attribution (hard rule, corrected 2026-07-21)
 
 - Georgia content: **Eric Roden**, founding partner. Inline prose: *"Eric Roden, Roden Law's founding partner, points out that …"*, placed after the section's direct answer.
-- South Carolina content: an SC-barred attorney. Default **Graeham C. Gillin** (Charleston, North Charleston, Myrtle Beach) and **Ivy S. Montano** (Columbia). Eric Roden is not licensed in South Carolina; never attribute SC legal commentary or a "Last reviewed" line to him. Briefs sometimes hardcode Eric Roden on SC posts: swap to the SC attorney and keep the frontmatter consistent.
+- South Carolina content: an SC-barred attorney. Default **Graeham C. Gillin** (all SC offices). Eric Roden, Tyler Love, Joshua Dorminy and Ivy S. Montano are admitted in Georgia only (corrected 2026-10-22: Ivy Montano was listed here for Columbia and is not SC-barred); never attribute SC legal commentary or a "Last reviewed" line to them. Briefs sometimes hardcode Eric Roden on SC posts: swap to the SC attorney and keep the frontmatter consistent.
+- Content covering both states: no attorney is admitted in both. Attribute Georgia commentary to a GA attorney inside the Georgia section and South Carolina commentary to Gillin inside the South Carolina section; never credit one attorney with both states' law, and never describe any attorney as admitted in both.
 - Only attorneys in `firm-facts.md` exist. Departed attorneys must not appear.
 - Every practice-area page gets an "About the Author" section; every blog post gets a visible byline.
 

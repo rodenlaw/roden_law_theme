@@ -16,11 +16,11 @@ Generated 2026-10-22 from production (read-only) and `data/gsc/latest.json` (28 
 |---|---:|---:|---:|---:|---:|
 | Eric Roden | 123 | 20 | 52 | 17415 | 98,361 |
 | Graeham C. Gillin | 85 | 26 | 129 | 14656 | 107,175 |
-| Joshua Dorminy | 71 | 23 | 80 | 14230 | 140,250 |
+| Pair: Joshua Dorminy (GA) + Graeham C. Gillin (SC) | 71 | 23 | 80 | 14230 | 140,250 |
 | (needs a decision) | 8 | 1 | 2 | 902 | 6,167 |
 | **Total** | **287** | **70** | **263** | **47203** | **351,953** |
 
-Routing: GA → the author if a GA reviewer, else Tyler Love; SC → Graeham C. Gillin; both states → Joshua Dorminy, the only lawyer admitted in both. **Dorminy is not a designated reviewer in `client.json` (`roles: []`)**, so two-state pages need either his designation or a pair of reviews (one GA, one SC). The theme names one reviewer, and it must cover both states.
+Routing: GA → the author if a GA reviewer, else Tyler Love; SC → Graeham C. Gillin; **both states → a pair, one GA reviewer and Gillin.** Updated 2026-10-22: Dorminy is a designated reviewer but admitted in Georgia only, Ivy S. Montano is Georgia only, and no attorney at the firm is admitted in both states. **The theme names one reviewer and requires that lawyer to cover every state on the page, so two-state pages cannot publish `reviewedBy` until it accepts two reviewers.** A pair of reviews can still be recorded; the date publishes either way.
 
 Traffic is concentrated: 258 of 287 pages had any impressions in 28 days, and 70 had a click. The first batch below covers most of the traffic.
 
@@ -29,9 +29,9 @@ Traffic is concentrated: 258 of 287 pages had any impressions in 28 days, and 70
 | # | Page | Clicks | Impr. | Jurisdiction | Reviewer | Words |
 |---|---|---:|---:|---|---|---:|
 | 1 | [South Carolina Workers’ Comp Body Part Value Chart](https://rodenlaw.com/resources/south-carolina-workers-comp-body-part-values/) | 40 | 2427 | sc | Graeham C. Gillin | 826 |
-| 2 | [How Much Is a HIPAA Violation Lawsuit Worth?](https://rodenlaw.com/blog/hipaa-violation-lawsuit-worth/) | 24 | 1650 | both | Joshua Dorminy | 1773 |
+| 2 | [How Much Is a HIPAA Violation Lawsuit Worth?](https://rodenlaw.com/blog/hipaa-violation-lawsuit-worth/) | 24 | 1650 | both | Dorminy (GA) + Gillin (SC) | 1773 |
 | 3 | [Stacking UM and UIM Coverage in South Carolina](https://rodenlaw.com/resources/south-carolina-um-uim-stacking/) | 21 | 834 | sc | Graeham C. Gillin | 1031 |
-| 4 | [HIPAA Violation Lawyer for Patients in Georgia and South Carolina](https://rodenlaw.com/blog/hipaa-violation-lawyer/) | 19 | 779 | both | Joshua Dorminy | 1535 |
+| 4 | [HIPAA Violation Lawyer for Patients in Georgia and South Carolina](https://rodenlaw.com/blog/hipaa-violation-lawyer/) | 19 | 779 | both | Dorminy (GA) + Gillin (SC) | 1535 |
 | 5 | [How Much Is a SC Wrongful Death Case Worth?](https://rodenlaw.com/resources/south-carolina-wrongful-death-settlement-value/) | 9 | 411 | sc | Graeham C. Gillin | 1177 |
 | 6 | [Why Should I Hire a Medical Malpractice Lawyer?](https://rodenlaw.com/blog/advantages-of-a-medical-malpractice-attorney/) | 7 | 5246 | ga* | Eric Roden | 790 |
 | 7 | [How Much Is a SC Car Accident Case Worth?](https://rodenlaw.com/resources/south-carolina-car-accident-settlement-value/) | 7 | 1289 | sc | Graeham C. Gillin | 1593 |
@@ -40,17 +40,17 @@ Traffic is concentrated: 258 of 287 pages had any impressions in 28 days, and 70
 | 10 | [I-95 Widening Construction Zone: Georgia-South Carolina Border](https://rodenlaw.com/resources/i-95-widening-construction-zone-ga-sc/) | 6 | 598 | ga | Eric Roden | 1149 |
 | 11 | [How Much Is a SC Slip and Fall Case Worth?](https://rodenlaw.com/resources/south-carolina-slip-and-fall-settlement-value/) | 6 | 371 | sc | Graeham C. Gillin | 1324 |
 | 12 | [How Much Does South Carolina Workers’ Comp Pay?](https://rodenlaw.com/resources/how-much-does-south-carolina-workers-comp-pay/) | 5 | 836 | sc | Graeham C. Gillin | 883 |
-| 13 | [Can You Sue for a HIPAA Violation in Georgia or South Carolina?](https://rodenlaw.com/blog/can-you-sue-hipaa-violation/) | 5 | 460 | both | Joshua Dorminy | 1837 |
-| 14 | [¿Una violación de HIPAA es negligencia médica?](https://rodenlaw.com/es/blog/is-hipaa-violation-medical-malpractice/) | 5 | 357 | both | Joshua Dorminy | 1915 |
+| 13 | [Can You Sue for a HIPAA Violation in Georgia or South Carolina?](https://rodenlaw.com/blog/can-you-sue-hipaa-violation/) | 5 | 460 | both | Dorminy (GA) + Gillin (SC) | 1837 |
+| 14 | [¿Una violación de HIPAA es negligencia médica?](https://rodenlaw.com/es/blog/is-hipaa-violation-medical-malpractice/) | 5 | 357 | both | Dorminy (GA) + Gillin (SC) | 1915 |
 | 15 | [What South Carolina’s 2026 Liquor Liability Law Changed](https://rodenlaw.com/resources/south-carolina-liquor-liability-2026/) | 5 | 157 | sc | Graeham C. Gillin | 1146 |
 | 16 | [South Carolina Pedestrian Right-of-Way Laws: What Accident Victims Need to Know](https://rodenlaw.com/blog/south-carolina-pedestrian-right-of-way-laws/) | 4 | 1038 | sc* | Graeham C. Gillin | 2524 |
 | 17 | [What to Know About Workers’ Compensation for Burn Injuries](https://rodenlaw.com/blog/burn-injury-workers-compensation/) | 4 | 623 | ga* | Eric Roden | 827 |
 | 18 | [North Charleston Pedestrian & Bicycle Safety: Know Your Rights](https://rodenlaw.com/resources/pedestrian-bicycle-safety-north-charleston/) | 4 | 191 | sc | Graeham C. Gillin | 647 |
 | 19 | [Types of Major Injuries From ‘Minor’ Car Accidents](https://rodenlaw.com/blog/major-injuries-from-minor-car-accidents/) | 3 | 1027 | ga* | Eric Roden | 633 |
-| 20 | [Can You Sue a Hospital for Negligence in Georgia or South Carolina?](https://rodenlaw.com/blog/can-you-sue-hospital-negligence/) | 3 | 1023 | both | Joshua Dorminy | 1833 |
+| 20 | [Can You Sue a Hospital for Negligence in Georgia or South Carolina?](https://rodenlaw.com/blog/can-you-sue-hospital-negligence/) | 3 | 1023 | both | Dorminy (GA) + Gillin (SC) | 1833 |
 | 21 | [How Much Is a SC Truck Accident Case Worth?](https://rodenlaw.com/resources/south-carolina-truck-accident-settlement-value/) | 3 | 934 | sc | Graeham C. Gillin | 1475 |
 | 22 | [How a Liability Waiver May Affect Your Ability to File a Lawsuit After an Injury](https://rodenlaw.com/blog/liability-waivers-and-injury-lawsuits/) | 3 | 289 | ga* | Eric Roden | 737 |
-| 23 | [How Arbitration Works in Personal Injury Cases](https://rodenlaw.com/blog/resolving-claims-through-arbitration/) | 3 | 229 | both* | Joshua Dorminy | 2565 |
+| 23 | [How Arbitration Works in Personal Injury Cases](https://rodenlaw.com/blog/resolving-claims-through-arbitration/) | 3 | 229 | both* | Dorminy (GA) + Gillin (SC) | 2565 |
 | 24 | [Blythewood & I-77 Truck Accidents North of Columbia](https://rodenlaw.com/resources/blythewood-i-77-truck-accidents/) | 3 | 174 | sc | Graeham C. Gillin | 1219 |
 | 25 | [South Carolina Statute of Limitations for Personal Injury Claims](https://rodenlaw.com/resources/south-carolina-statute-of-limitations/) | 3 | 68 | sc | Graeham C. Gillin | 1406 |
 

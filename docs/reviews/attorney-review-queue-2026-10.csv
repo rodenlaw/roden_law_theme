@@ -1,8 +1,8 @@
 rank,post_id,type,lang,path,title,clicks_28d,impressions_28d,position,jurisdiction,jurisdiction_source,suggested_reviewer,reason,current_review,last_refreshed,words
 1,4839,resource,en,/resources/south-carolina-workers-comp-body-part-values/,"South Carolina Workers’ Comp Body Part Value Chart",40,2427,8,sc,recorded,graeham-c-gillin,"no review",,,826
-2,5126,post,en,/blog/hipaa-violation-lawsuit-worth/,"How Much Is a HIPAA Violation Lawsuit Worth?",24,1650,7.3,both,recorded,joshua-dorminy,"reviewer not admitted for jurisdiction",2026-07-24,,1773
+2,5126,post,en,/blog/hipaa-violation-lawsuit-worth/,"How Much Is a HIPAA Violation Lawsuit Worth?",24,1650,7.3,both,recorded,joshua-dorminy+graeham-c-gillin,"reviewer not admitted for jurisdiction",2026-07-24,,1773
 3,4812,resource,en,/resources/south-carolina-um-uim-stacking/,"Stacking UM and UIM Coverage in South Carolina",21,834,7,sc,recorded,graeham-c-gillin,"no review",,,1031
-4,5135,post,en,/blog/hipaa-violation-lawyer/,"HIPAA Violation Lawyer for Patients in Georgia and South Carolina",19,779,15.5,both,recorded,joshua-dorminy,"reviewer not admitted for jurisdiction",2026-07-24,,1535
+4,5135,post,en,/blog/hipaa-violation-lawyer/,"HIPAA Violation Lawyer for Patients in Georgia and South Carolina",19,779,15.5,both,recorded,joshua-dorminy+graeham-c-gillin,"reviewer not admitted for jurisdiction",2026-07-24,,1535
 5,4861,resource,en,/resources/south-carolina-wrongful-death-settlement-value/,"How Much Is a SC Wrongful Death Case Worth?",9,411,18,sc,recorded,graeham-c-gillin,"no review",,,1177
 6,1798,post,en,/blog/advantages-of-a-medical-malpractice-attorney/,"Why Should I Hire a Medical Malpractice Lawyer?",7,5246,65.1,ga,suggested,eric-roden,"no review",,,790
 7,4809,resource,en,/resources/south-carolina-car-accident-settlement-value/,"How Much Is a SC Car Accident Case Worth?",7,1289,10.4,sc,recorded,graeham-c-gillin,"no review",,,1593
@@ -11,101 +11,101 @@ rank,post_id,type,lang,path,title,clicks_28d,impressions_28d,position,jurisdicti
 10,4689,resource,en,/resources/i-95-widening-construction-zone-ga-sc/,"I-95 Widening Construction Zone: Georgia-South Carolina Border",6,598,7.6,ga,recorded,eric-roden,"no review",,2026-09-24,1149
 11,4859,resource,en,/resources/south-carolina-slip-and-fall-settlement-value/,"How Much Is a SC Slip and Fall Case Worth?",6,371,9,sc,recorded,graeham-c-gillin,"no review",,,1324
 12,4840,resource,en,/resources/how-much-does-south-carolina-workers-comp-pay/,"How Much Does South Carolina Workers’ Comp Pay?",5,836,12.1,sc,recorded,graeham-c-gillin,"no review",,,883
-13,5121,post,en,/blog/can-you-sue-hipaa-violation/,"Can You Sue for a HIPAA Violation in Georgia or South Carolina?",5,460,6.6,both,recorded,joshua-dorminy,"reviewer not admitted for jurisdiction",2026-07-23,,1837
-14,5133,post,es,/es/blog/is-hipaa-violation-medical-malpractice/,"¿Una violación de HIPAA es negligencia médica?",5,357,8.9,both,recorded,joshua-dorminy,"reviewer not admitted for jurisdiction",2026-07-24,,1915
+13,5121,post,en,/blog/can-you-sue-hipaa-violation/,"Can You Sue for a HIPAA Violation in Georgia or South Carolina?",5,460,6.6,both,recorded,joshua-dorminy+graeham-c-gillin,"reviewer not admitted for jurisdiction",2026-07-23,,1837
+14,5133,post,es,/es/blog/is-hipaa-violation-medical-malpractice/,"¿Una violación de HIPAA es negligencia médica?",5,357,8.9,both,recorded,joshua-dorminy+graeham-c-gillin,"reviewer not admitted for jurisdiction",2026-07-24,,1915
 15,5355,resource,en,/resources/south-carolina-liquor-liability-2026/,"What South Carolina’s 2026 Liquor Liability Law Changed",5,157,6.9,sc,recorded,graeham-c-gillin,"reviewer not admitted for jurisdiction",2026-08-26,,1146
 16,4478,post,en,/blog/south-carolina-pedestrian-right-of-way-laws/,"South Carolina Pedestrian Right-of-Way Laws: What Accident Victims Need to Know",4,1038,8,sc,suggested,graeham-c-gillin,"no review",,,2524
 17,1841,post,en,/blog/burn-injury-workers-compensation/,"What to Know About Workers’ Compensation for Burn Injuries",4,623,11.2,ga,suggested,eric-roden,"no review",,,827
 18,4639,resource,en,/resources/pedestrian-bicycle-safety-north-charleston/,"North Charleston Pedestrian & Bicycle Safety: Know Your Rights",4,191,8.9,sc,recorded,graeham-c-gillin,"no review",,,647
 19,1763,post,en,/blog/major-injuries-from-minor-car-accidents/,"Types of Major Injuries From ‘Minor’ Car Accidents",3,1027,17.7,ga,suggested,eric-roden,"no review",,,633
-20,5128,post,en,/blog/can-you-sue-hospital-negligence/,"Can You Sue a Hospital for Negligence in Georgia or South Carolina?",3,1023,28.2,both,recorded,joshua-dorminy,"reviewer not admitted for jurisdiction",2026-07-24,,1833
+20,5128,post,en,/blog/can-you-sue-hospital-negligence/,"Can You Sue a Hospital for Negligence in Georgia or South Carolina?",3,1023,28.2,both,recorded,joshua-dorminy+graeham-c-gillin,"reviewer not admitted for jurisdiction",2026-07-24,,1833
 21,4806,resource,en,/resources/south-carolina-truck-accident-settlement-value/,"How Much Is a SC Truck Accident Case Worth?",3,934,14,sc,recorded,graeham-c-gillin,"no review",,,1475
 22,1730,post,en,/blog/liability-waivers-and-injury-lawsuits/,"How a Liability Waiver May Affect Your Ability to File a Lawsuit After an Injury",3,289,6.8,ga,suggested,eric-roden,"no review",,,737
-23,1717,post,en,/blog/resolving-claims-through-arbitration/,"How Arbitration Works in Personal Injury Cases",3,229,32.2,both,suggested,joshua-dorminy,"no review",,,2565
+23,1717,post,en,/blog/resolving-claims-through-arbitration/,"How Arbitration Works in Personal Injury Cases",3,229,32.2,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,2565
 24,4688,resource,en,/resources/blythewood-i-77-truck-accidents/,"Blythewood & I-77 Truck Accidents North of Columbia",3,174,9.5,sc,recorded,graeham-c-gillin,"no review",,,1219
 25,4810,resource,en,/resources/south-carolina-statute-of-limitations/,"South Carolina Statute of Limitations for Personal Injury Claims",3,68,4.4,sc,recorded,graeham-c-gillin,"no review",,,1406
 26,1660,post,en,/blog/supporting-a-whiplash-claim/,"5 Steps to Build a Whiplash Claim After a Car Accident in Charleston",2,700,30.3,sc,suggested,graeham-c-gillin,"no review",,,875
 27,4678,resource,en,/resources/broad-river-road-truck-accidents-columbia/,"Broad River Road Truck Accidents in Columbia, SC",2,611,8.3,sc,recorded,graeham-c-gillin,"no review",,,1074
 28,1839,post,en,/blog/steps-after-hit-and-run-accident/,"7 Steps to Take After a Hit-and-Run Accident",2,519,24.4,ga,suggested,eric-roden,"no review",,,853
-29,1690,post,en,/blog/does-worker-compensation-cover-employee-negligence/,"Does Workers’ Compensation Cover Employee Negligence in Georgia and South Carolina?",2,401,11.7,both,suggested,joshua-dorminy,"no review",,,2259
+29,1690,post,en,/blog/does-worker-compensation-cover-employee-negligence/,"Does Workers’ Compensation Cover Employee Negligence in Georgia and South Carolina?",2,401,11.7,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,2259
 30,4860,resource,en,/resources/south-carolina-premises-liability-settlement-value/,"How Much Is a SC Premises Liability Case Worth?",2,260,13.7,sc,recorded,graeham-c-gillin,"no review",,,1310
-31,4583,post,en,/blog/how-much-is-my-car-accident-claim-worth/,"How Much Is My Car Accident Claim Worth?",2,218,21.3,both,suggested,joshua-dorminy,"no review",,,2701
-32,1658,post,en,/blog/steps-after-work-injury/,"5 Steps to Take After a Workplace Injury for Workers Compensation Benefits in Georgia and South Carolina",2,167,19.6,both,suggested,joshua-dorminy,"no review",,2026-08-25,2430
-33,4369,post,en,/blog/personal-injury-claim-charleston-berkeley-dorchester-county/,"Filing a Personal Injury Claim in Three Different Counties: Charleston, Berkeley, and Dorchester",2,147,11.2,both,suggested,joshua-dorminy,"no review",,2026-08-26,2863
+31,4583,post,en,/blog/how-much-is-my-car-accident-claim-worth/,"How Much Is My Car Accident Claim Worth?",2,218,21.3,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,2701
+32,1658,post,en,/blog/steps-after-work-injury/,"5 Steps to Take After a Workplace Injury for Workers Compensation Benefits in Georgia and South Carolina",2,167,19.6,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-08-25,2430
+33,4369,post,en,/blog/personal-injury-claim-charleston-berkeley-dorchester-county/,"Filing a Personal Injury Claim in Three Different Counties: Charleston, Berkeley, and Dorchester",2,147,11.2,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-08-26,2863
 34,1826,post,en,/blog/choking-at-nursing-homes/,"Lowering the Risk of Choking Accidents in Nursing Homes",2,130,25.6,,unknown,,"no review",,,619
 35,4361,post,en,/blog/charleston-historic-sidewalk-slip-fall-city-liable/,"Slip and Fall on Charleston’s Historic Sidewalks: When the City or Property Owner Is Liable",2,124,7.5,sc,suggested,graeham-c-gillin,"no review",,2026-08-26,2029
 36,1733,post,en,/blog/liability-for-crashes-caused-by-teen-drivers/,"Filing a Claim for an Accident Caused by a Teen Driver",2,100,8.8,sc,suggested,graeham-c-gillin,"no review",,,633
 37,1845,post,en,/blog/atm-attack-liability/,"ATM Attacks & Bank Liability in Georgia",2,84,8.6,ga,suggested,eric-roden,"no review",,,633
 38,4671,resource,en,/resources/bay-street-truck-accidents-savannah-historic-district/,"Bay Street Truck Traffic in Savannah’s Historic District",2,68,9.1,ga,recorded,eric-roden,"no review",,2026-09-24,1154
-39,1723,post,en,/blog/independent-medical-exams/,"Independent Medical Exams in Personal Injury Cases: What You Need to Know",1,686,18.1,both,suggested,joshua-dorminy,"no review",,,2973
-40,4350,post,en,/blog/how-long-personal-injury-case-charleston-sc/,"How Long Does a Personal Injury Case Take in Charleston, SC?",1,367,12.6,both,suggested,joshua-dorminy,"no review",,2026-09-23,1800
+39,1723,post,en,/blog/independent-medical-exams/,"Independent Medical Exams in Personal Injury Cases: What You Need to Know",1,686,18.1,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,2973
+40,4350,post,en,/blog/how-long-personal-injury-case-charleston-sc/,"How Long Does a Personal Injury Case Take in Charleston, SC?",1,367,12.6,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-09-23,1800
 41,1736,post,en,/blog/when-do-injury-claims-go-to-court/,"When Do Personal Injury Claims End Up in Court?",1,367,17.8,ga,suggested,eric-roden,"no review",,,632
-42,1693,post,en,/blog/am-i-eligible-for-workers-compensation/,"Am I Eligible for Workers’ Compensation in Georgia or South Carolina?",1,365,19.3,both,suggested,joshua-dorminy,"no review",,,2035
+42,1693,post,en,/blog/am-i-eligible-for-workers-compensation/,"Am I Eligible for Workers’ Compensation in Georgia or South Carolina?",1,365,19.3,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,2035
 43,4617,resource,en,/resources/dangerous-roads-north-charleston/,"Most Dangerous Roads & Intersections in North Charleston, SC",1,317,7.5,sc,recorded,graeham-c-gillin,"no review",,2026-08-26,818
-44,5123,post,en,/blog/is-hipaa-violation-medical-malpractice/,"Is a HIPAA Violation Medical Malpractice?",1,253,8.9,both,recorded,joshua-dorminy,"reviewer not admitted for jurisdiction",2026-07-24,,1550
+44,5123,post,en,/blog/is-hipaa-violation-medical-malpractice/,"Is a HIPAA Violation Medical Malpractice?",1,253,8.9,both,recorded,joshua-dorminy+graeham-c-gillin,"reviewer not admitted for jurisdiction",2026-07-24,,1550
 45,4811,resource,en,/resources/south-carolina-comparative-negligence/,"South Carolina Comparative Negligence — the 51% Bar Explained",1,228,7.2,sc,recorded,graeham-c-gillin,"no review",,,1040
 46,1748,post,en,/blog/damage-coverage-for-stolen-car/,"How Are Damages Covered if My Car Was Stolen and Damaged in an Accident?",1,213,12.5,ga,suggested,eric-roden,"no review",,,705
-47,1718,post,en,/blog/continuing-post-accident-medical-treatment/,"Why Continuing Medical Treatment After an Accident Matters for Your Claim",1,206,16.5,both,suggested,joshua-dorminy,"no review",,,2518
-48,4363,post,en,/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/,"Emergency Room Errors in Charleston: When a Misdiagnosis Leads to a Malpractice Claim",1,193,14.2,both,suggested,joshua-dorminy,"no review",,2026-08-26,2364
+47,1718,post,en,/blog/continuing-post-accident-medical-treatment/,"Why Continuing Medical Treatment After an Accident Matters for Your Claim",1,206,16.5,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,2518
+48,4363,post,en,/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/,"Emergency Room Errors in Charleston: When a Misdiagnosis Leads to a Malpractice Claim",1,193,14.2,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-08-26,2364
 49,1802,post,en,/blog/nursing-home-liability/,"Can a Nursing Home Itself be Liable for Abuse?",1,190,14.9,ga,suggested,eric-roden,"no review",,,770
 50,1750,post,en,/blog/liability-for-school-bus-crash/,"Who Can Be Liable When a Child is Hurt on a School Bus?",1,188,12.4,ga,suggested,eric-roden,"no review",,,786
-51,1837,post,en,/blog/financial-abuse-at-nursing-homes/,"Elder Financial Abuse in Nursing Homes: Georgia and South Carolina Laws",1,175,10.7,both,suggested,joshua-dorminy,"no review",,,1779
+51,1837,post,en,/blog/financial-abuse-at-nursing-homes/,"Elder Financial Abuse in Nursing Homes: Georgia and South Carolina Laws",1,175,10.7,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,1779
 52,1777,post,en,/blog/personal-injury-calculating-loss-of-earning-capacity/,"Valuing Your Loss of Earning Capacity",1,163,12.7,ga,suggested,eric-roden,"no review",,,777
 53,1655,post,en,/blog/steps-of-a-burn-injury-case/,"Documenting Your Burn Injuries: Steps to Take After an Accident",1,155,15.4,sc,suggested,graeham-c-gillin,"no review",,,722
-54,1772,post,en,/blog/benefit-of-a-personal-injury-pain-diary/,"How a Post-Accident Pain Diary Can Strengthen Your Personal Injury Claim",1,150,9.2,both,suggested,joshua-dorminy,"no review",,,1700
-55,1745,post,en,/blog/certification-of-permanent-injury/,"Certification of a Permanent Injury: How It Strengthens Your Georgia or South Carolina Lawsuit",1,115,9.7,both,suggested,joshua-dorminy,"no review",,,1919
-56,1646,post,en,/blog/first-steps-in-a-medical-malpractice-case/,"Medical Malpractice in Georgia and South Carolina: A Complete Guide",1,112,27.4,both,suggested,joshua-dorminy,"no review",,2026-10-06,2281
+54,1772,post,en,/blog/benefit-of-a-personal-injury-pain-diary/,"How a Post-Accident Pain Diary Can Strengthen Your Personal Injury Claim",1,150,9.2,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,1700
+55,1745,post,en,/blog/certification-of-permanent-injury/,"Certification of a Permanent Injury: How It Strengthens Your Georgia or South Carolina Lawsuit",1,115,9.7,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,1919
+56,1646,post,en,/blog/first-steps-in-a-medical-malpractice-case/,"Medical Malpractice in Georgia and South Carolina: A Complete Guide",1,112,27.4,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-10-06,2281
 57,1731,post,en,/blog/police-report-as-proof-of-liability/,"Can a Police Report Help Prove Liability After an Accident?",1,90,6.7,sc,suggested,graeham-c-gillin,"no review",,,694
 58,3096,post,en,/blog/hearing-loss-after-charleston-car-accident/,"Can I Sue if I Have Hearing Loss After a Car Accident in Charleston?",1,86,22.9,sc,suggested,graeham-c-gillin,"no review",,,1485
 59,2795,post,en,/blog/charleston-lyft-driver-ran-red-light-and-hit-my-car/,"Charleston Lyft Driver Ran a Red Light and Hit My Car: Can I Sue?",1,83,8,sc,suggested,graeham-c-gillin,"no review",,,1003
 60,3448,post,en,/blog/what-to-do-after-a-hit-and-run-in-downtown-charleston/,"What to Do After a Hit and Run in Downtown Charleston",1,79,14.4,sc,suggested,graeham-c-gillin,"no review",,,1293
-61,1668,post,en,/blog/5-most-common-types-of-medical-malpractice-in-2023/,"5 Most Common Types of Medical Malpractice in Georgia and South Carolina",1,77,11.6,both,suggested,joshua-dorminy,"no review",,,1923
+61,1668,post,en,/blog/5-most-common-types-of-medical-malpractice-in-2023/,"5 Most Common Types of Medical Malpractice in Georgia and South Carolina",1,77,11.6,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,1923
 62,1791,post,en,/blog/car-accidents-and-daylight-savings-time/,"Does Daylight Saving Time Increase Car Accidents?",1,70,14.4,ga,suggested,eric-roden,"no review",,,635
-63,5348,resource,en,/resources/i-26-i-95-corridor-report/,"The I-26 / I-95 Corridor Report: Fatal Truck Crashes in Georgia and South Carolina, 2020–2024",1,57,6.6,both,recorded,joshua-dorminy,"reviewer not admitted for jurisdiction",2026-08-25,2026-08-25,879
+63,5348,resource,en,/resources/i-26-i-95-corridor-report/,"The I-26 / I-95 Corridor Report: Fatal Truck Crashes in Georgia and South Carolina, 2020–2024",1,57,6.6,both,recorded,joshua-dorminy+graeham-c-gillin,"reviewer not admitted for jurisdiction",2026-08-25,2026-08-25,879
 64,1876,post,en,/blog/common-workplace-injuries-georgia/,"Most Common Workplace Injuries in Georgia",1,48,19.7,ga,suggested,eric-roden,"no review",,2026-08-25,662
 65,2709,post,en,/blog/accepting-a-cash-offer-after-savannah-car-crash/,"What if an At-Fault Driver Offers Cash After a Savannah Car Crash?",1,29,6.4,ga,suggested,eric-roden,"no review",,,1219
 66,3067,post,en,/blog/liability-for-brake-checking-crashes-charleston/,"Who Is At Fault in a Charleston Accident Caused by Brake Checking?",1,20,11.3,sc,suggested,graeham-c-gillin,"no review",,,1053
 67,1728,post,en,/blog/why-injury-claims-may-be-delayed/,"Common Reasons Why Personal Injury Claims May Be Delayed",1,18,16.8,ga,suggested,eric-roden,"no review",,,692
 68,1762,post,en,/blog/turkey-fryer-injury-claims/,"Claims for Turkey Fryer Injuries During the Holidays",1,18,8.4,ga,suggested,eric-roden,"no review",,,727
 69,2953,post,en,/blog/risk-of-refusing-medical-care-after-car-crash-charleston/,"Can Refusing Medical Treatment Hurt My Charleston Car Crash Claim?",1,13,9.7,sc,suggested,graeham-c-gillin,"no review",,,1039
-70,5145,post,en,/blog/medical-malpractice-examples/,"Medical Malpractice Examples: What Qualifies in Georgia and South Carolina",1,7,7.6,both,recorded,joshua-dorminy,"reviewer not admitted for jurisdiction",2026-07-24,,1750
-71,1671,post,en,/blog/what-to-do-when-you-are-in-a-car-accident/,"Car Accident Checklist: What to Do After a Wreck in Georgia and South Carolina",0,1297,37.3,both,suggested,joshua-dorminy,"no review",,,2328
-72,1674,post,en,/blog/does-workers-compensation-cover-prescriptions/,"Does Workers’ Compensation Cover Prescriptions in Georgia and South Carolina?",0,732,26.6,both,suggested,joshua-dorminy,"no review",,,1971
+70,5145,post,en,/blog/medical-malpractice-examples/,"Medical Malpractice Examples: What Qualifies in Georgia and South Carolina",1,7,7.6,both,recorded,joshua-dorminy+graeham-c-gillin,"reviewer not admitted for jurisdiction",2026-07-24,,1750
+71,1671,post,en,/blog/what-to-do-when-you-are-in-a-car-accident/,"Car Accident Checklist: What to Do After a Wreck in Georgia and South Carolina",0,1297,37.3,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,2328
+72,1674,post,en,/blog/does-workers-compensation-cover-prescriptions/,"Does Workers’ Compensation Cover Prescriptions in Georgia and South Carolina?",0,732,26.6,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,1971
 73,1809,post,en,/blog/workers-compensation-claim-process-georgia/,"What Should I Do After Being Injured in a Workplace Accident?",0,667,58.3,ga,suggested,eric-roden,"no review",,,760
-74,1647,post,en,/blog/truck-accident-reconstruction/,"What Is Truck Accident Reconstruction?",0,541,26.9,both,suggested,joshua-dorminy,"no review",,,1759
-75,1752,post,en,/blog/workers-comp-medical-coverage/,"Types of Medical Care Covered by Workers’ Compensation in Georgia and South Carolina",0,492,16.5,both,suggested,joshua-dorminy,"no review",,,1952
+74,1647,post,en,/blog/truck-accident-reconstruction/,"What Is Truck Accident Reconstruction?",0,541,26.9,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,1759
+75,1752,post,en,/blog/workers-comp-medical-coverage/,"Types of Medical Care Covered by Workers’ Compensation in Georgia and South Carolina",0,492,16.5,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,1952
 76,1738,post,en,/blog/liability-for-accidents-with-borrowed-vehicles/,"Who May Be Liable for an Accident Involving a Borrowed Vehicle?",0,389,61.3,ga,suggested,eric-roden,"no review",,,788
-77,4586,post,en,/blog/ptsd-after-car-accident-compensation/,"PTSD After a Car Accident: Symptoms, Treatment, and Compensation",0,342,28.3,both,suggested,joshua-dorminy,"no review",,,2502
-78,1830,post,en,/blog/truck-accident-injuries/,"Common Truck Accident Injuries",0,326,44.4,both,suggested,joshua-dorminy,"no review",,,808
+77,4586,post,en,/blog/ptsd-after-car-accident-compensation/,"PTSD After a Car Accident: Symptoms, Treatment, and Compensation",0,342,28.3,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,2502
+78,1830,post,en,/blog/truck-accident-injuries/,"Common Truck Accident Injuries",0,326,44.4,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,808
 79,1739,post,en,/blog/follow-doctors-orders-after-accident/,"The Importance of Following the Doctor’s Orders After an Accident",0,318,5.2,ga,suggested,eric-roden,"no review",,,807
 80,1710,post,en,/blog/understanding-vicarious-liability/,"Understanding Vicarious Liability for a Personal Injury",0,307,13.7,ga,suggested,eric-roden,"no review",,,624
 81,1851,post,en,/blog/much-worth-ga-worker-compared-states/,"How Much Am I Worth as a GA Worker, Compared to Other States?",0,297,47.3,ga,suggested,eric-roden,"no review",,2026-08-26,702
 82,1648,post,en,/blog/after-boat-accident-guide/,"What to Do After a Boat Accident: A Comprehensive Guide",0,279,42.1,sc,suggested,graeham-c-gillin,"no review",,,623
 83,1822,post,en,/blog/four-common-construction-accidents/,"4 Dangerous Types of Construction Accidents",0,272,53.8,,unknown,,"no review",,,696
 84,1827,post,en,/blog/how-spinal-cord-injuries-affect-you/,"How Does a Spinal Cord Injury Affect Your Life?",0,265,18.5,ga,suggested,eric-roden,"no review",,,706
-85,1661,post,en,/blog/commercial-truck-accidents-who-is-at-fault/,"Who Is at Fault in a Commercial Truck Accident in Georgia and South Carolina?",0,259,7.4,both,suggested,joshua-dorminy,"no review",,,2021
-86,4357,post,en,/blog/pedestrian-accidents-musc-charleston-medical-district/,"Pedestrian Accidents Near MUSC and the Charleston Medical District",0,248,10.2,both,suggested,joshua-dorminy,"no review",,,3146
+85,1661,post,en,/blog/commercial-truck-accidents-who-is-at-fault/,"Who Is at Fault in a Commercial Truck Accident in Georgia and South Carolina?",0,259,7.4,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,2021
+86,4357,post,en,/blog/pedestrian-accidents-musc-charleston-medical-district/,"Pedestrian Accidents Near MUSC and the Charleston Medical District",0,248,10.2,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,3146
 87,1779,post,en,/blog/using-dashcams-as-evidence-of-fault-in-a-car-accident/,"How Dashcam Footage Can Help Prove Fault for a Car Accident",0,241,20.8,ga,suggested,eric-roden,"no review",,,669
 88,1766,post,en,/blog/georgia-law-on-steps-after-car-accident/,"What Georgia Law Requires Drivers to do After an Accident",0,235,22.4,ga,suggested,eric-roden,"no review",,,859
 89,3583,post,en,/blog/lower-king-street-pedestrian-safety/,"The Lower King Street Pedestrian Safety Guide",0,221,9.7,sc,suggested,graeham-c-gillin,"no review",,,752
-90,1715,post,en,/blog/car-insurance-add-ons/,"Car Insurance Add-Ons That Can Help Your Personal Injury Claim",0,207,19.2,both,suggested,joshua-dorminy,"no review",,2026-08-25,2717
+90,1715,post,en,/blog/car-insurance-add-ons/,"Car Insurance Add-Ons That Can Help Your Personal Injury Claim",0,207,19.2,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-08-25,2717
 91,4841,resource,en,/resources/south-carolina-workers-comp-impairment-rating-mmi/,"MMI and Impairment Ratings in SC Workers’ Comp",0,197,12.5,sc,recorded,graeham-c-gillin,"no review",,,772
 92,1743,post,en,/blog/how-to-handle-calls-from-insurance-companies/,"How to Handle Calls From Insurance Companies After an Accident",0,195,14.5,,unknown,,"no review",,,722
 93,1852,post,en,/blog/settle-workers-comp-case/,"When To Settle in A Workers Compensation Case",0,193,26.1,ga,suggested,eric-roden,"no review",,,667
 94,3440,post,en,/blog/how-pain-and-suffering-is-calculated-after-an-accident-in-south-carolina/,"How Pain and Suffering Is Calculated After an Accident in South Carolina",0,190,6.4,sc,suggested,graeham-c-gillin,"no review",,2026-08-26,3647
 95,1878,post,en,/blog/workers-comp-benefits-georgia-taxable/,"Are Workers’ Comp Benefits in Georgia Taxable?",0,188,29.2,ga,suggested,eric-roden,"no review",,2026-08-25,665
-96,1666,post,en,/blog/the-role-of-vocational-rehabilitation-in-workers-compensation-cases/,"The Role of Vocational Rehabilitation in Workers’ Compensation Cases in Georgia and South Carolina",0,184,17.8,both,suggested,joshua-dorminy,"no review",,,1907
+96,1666,post,en,/blog/the-role-of-vocational-rehabilitation-in-workers-compensation-cases/,"The Role of Vocational Rehabilitation in Workers’ Compensation Cases in Georgia and South Carolina",0,184,17.8,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,1907
 97,2401,post,en,/blog/determining-liability-for-crash-at-four-way-stop-sign/,"How Is Liability Determined for a Crash at a Four-Way Stop in Savannah?",0,182,5.4,ga,suggested,eric-roden,"no review",,,1266
 98,1794,post,en,/blog/documents-for-personal-injury-claim/,"What Documents Do I Need to Prove My Personal Injury Claim?",0,178,21.1,,unknown,,"no review",,,679
 99,4356,post,en,/blog/jones-act-claims-south-carolina-maritime-worker-rights/,"Jones Act Claims in South Carolina: Maritime Worker Injury Rights Explained",0,168,18.3,sc,suggested,graeham-c-gillin,"no review",,2026-09-23,2625
 100,4686,resource,en,/resources/us-52-truck-train-accidents-goose-creek/,"US-52 Truck & Train Accidents in Goose Creek, SC",0,166,10.3,sc,recorded,graeham-c-gillin,"no review",,,1128
-101,5352,resource,en,/resources/georgia-vs-south-carolina-comparative-negligence/,"Comparative Negligence in Georgia vs South Carolina: The 50% and 51% Bars",0,163,6.7,both,recorded,joshua-dorminy,"reviewer not admitted for jurisdiction",2026-09-19,2026-08-26,1080
-102,1811,post,en,/blog/recovering-damages-with-pre-existing-injuries/,"Can You Recover Damages With a Pre-Existing Injury in Georgia or South Carolina?",0,162,17.1,both,suggested,joshua-dorminy,"no review",,,2010
+101,5352,resource,en,/resources/georgia-vs-south-carolina-comparative-negligence/,"Comparative Negligence in Georgia vs South Carolina: The 50% and 51% Bars",0,163,6.7,both,recorded,joshua-dorminy+graeham-c-gillin,"reviewer not admitted for jurisdiction",2026-09-19,2026-08-26,1080
+102,1811,post,en,/blog/recovering-damages-with-pre-existing-injuries/,"Can You Recover Damages With a Pre-Existing Injury in Georgia or South Carolina?",0,162,17.1,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,2010
 103,1829,post,en,/blog/hospital-liability-for-medical-malpractice/,"When Can I File a Lawsuit Against a Hospital for Medical Malpractice?",0,162,37,ga,suggested,eric-roden,"no review",,,638
 104,2777,post,en,/blog/liability-and-causes-for-backing-up-crashes-in-charleston/,"Backing-Up Crashes – How They Happen and Who May Be Liable",0,155,8.5,sc,suggested,graeham-c-gillin,"no review",,,1092
 105,4842,resource,en,/resources/south-carolina-workers-comp-claim-denied/,"What to Do If Your SC Workers’ Comp Claim Is Denied",0,142,10.8,sc,recorded,graeham-c-gillin,"no review",,,752
 106,1844,post,en,/blog/valid-premises-liability-claim-georgia/,"What To Know About A Georgia Premises Liability Claim",0,137,40.9,ga,suggested,eric-roden,"no review",,,647
-107,1716,post,en,/blog/liability-for-crashes-in-heavy-rainfall/,"Who Is Liable for a Car Accident Caused by Heavy Rain?",0,134,6.5,both,suggested,joshua-dorminy,"no review",,2026-08-26,2527
+107,1716,post,en,/blog/liability-for-crashes-in-heavy-rainfall/,"Who Is Liable for a Car Accident Caused by Heavy Rain?",0,134,6.5,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-08-26,2527
 108,1765,post,en,/blog/refusing-opioid-prescription-in-workers-comp-claim/,"Can Your Workers’ Comp Claim Be Denied for Refusing an Opioid Prescription?",0,134,12,ga,suggested,eric-roden,"no review",,,745
 109,2855,post,en,/blog/mistakes-charleston-slip-and-fall-victims-make/,"Costly Mistakes Victims Make After a Charleston Slip-and-Fall Injury",0,128,33,sc,suggested,graeham-c-gillin,"no review",,,912
 110,1833,post,en,/blog/dog-bite-prevention-tips/,"Prevent Dog Bites by Following These Safety Tips",0,127,10.1,ga,suggested,eric-roden,"no review",,,690
@@ -113,26 +113,26 @@ rank,post_id,type,lang,path,title,clicks_28d,impressions_28d,position,jurisdicti
 112,1806,post,en,/blog/filing-medication-error-lawsuit/,"What You Need to Know About Medication Error Lawsuits",0,126,50.6,ga,suggested,eric-roden,"no review",,,725
 113,1755,post,en,/blog/deposition-in-a-personal-injury-claim/,"What is a Deposition in a Personal Injury Claim?",0,119,11.2,,unknown,,"no review",,,801
 114,1789,post,en,/blog/avoiding-motorcycle-crash-injuries/,"What Can I Do to Help Prevent Injury in a Motorcycle Crash?",0,112,18.1,ga,suggested,eric-roden,"no review",,,758
-115,1836,post,en,/blog/fault-for-car-accident/,"Determining Fault After a Georgia Car Accident",0,109,16.7,both,suggested,joshua-dorminy,"no review",,2026-08-26,668
+115,1836,post,en,/blog/fault-for-car-accident/,"Determining Fault After a Georgia Car Accident",0,109,16.7,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-08-26,668
 116,3022,post,en,/blog/charleston-car-crash-brain-injuries/,"What Types of Traumatic Brain Injuries Can Happen in a Charleston Car Crash?",0,103,57.3,sc,suggested,graeham-c-gillin,"no review",,,1383
 117,1850,post,en,/blog/2017-safest-college-campuses-in-georgia/,"2017 Safest College Campuses in Georgia",0,103,8.9,ga,suggested,eric-roden,"no review",,,667
 118,2388,post,en,/blog/leg-pain-and-leg-injuries-from-crash/,"Why Am I Experiencing Leg Pain After a Car Crash in Savannah, GA?",0,96,16.5,ga,suggested,eric-roden,"no review",,,1266
-119,1813,post,en,/blog/how-do-i-know-if-i-have-a-medical-malpractice-case/,"Four Elements of a Medical Malpractice Claim",0,92,9.2,both,suggested,joshua-dorminy,"no review",,2026-10-06,2303
+119,1813,post,en,/blog/how-do-i-know-if-i-have-a-medical-malpractice-case/,"Four Elements of a Medical Malpractice Claim",0,92,9.2,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-10-06,2303
 120,1842,post,en,/blog/do-you-need-a-workers-compensation-lawyer/,"Should I Hire a Workers’ Compensation Lawyer?",0,91,16.9,ga,suggested,eric-roden,"no review",,,793
 121,3518,post,en,/blog/guide-after-a-car-accident-in-columbia-sc/,"Your Step by Step Guide After a Car Accident in Columbia SC",0,90,17.8,sc,suggested,graeham-c-gillin,"no review",,,1370
 122,1805,post,en,/blog/slip-and-fall-negligence-elements/,"Proving Negligence in a Slip and Fall Accident",0,89,43.9,ga,suggested,eric-roden,"no review",,,891
 123,1754,post,en,/blog/liability-in-a-driverless-car-crash/,"Determining Fault for an Accident Involving a Driverless Car",0,81,18.2,ga,suggested,eric-roden,"no review",,,683
 124,4653,resource,en,/resources/logging-truck-accidents-us-17-mcintosh-glynn/,"Logging Truck Accidents on US-17 in McIntosh & Glynn Counties",0,80,17.1,ga,recorded,eric-roden,"no review",,,815
-125,1816,post,en,/blog/benefits-of-hiring-personal-injury-lawyer/,"Benefits of Hiring a Personal Injury Lawyer in Georgia and South Carolina",0,80,12.4,both,suggested,joshua-dorminy,"no review",,2026-10-06,2436
+125,1816,post,en,/blog/benefits-of-hiring-personal-injury-lawyer/,"Benefits of Hiring a Personal Injury Lawyer in Georgia and South Carolina",0,80,12.4,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-10-06,2436
 126,1862,post,en,/blog/common-driver-distractions/,"What Are the Most Common Driver Distractions?",0,79,23.2,ga,suggested,eric-roden,"no review",,2026-08-25,648
 127,2875,post,en,/blog/impaired-driving-caused-by-prescription-medications/,"Does Prescription Medication Increase Your Crash Risk?",0,76,17.8,sc,suggested,graeham-c-gillin,"no review",,,1043
 128,3210,post,en,/blog/compensation-for-chronic-pain-after-a-car-crash-in-charleston/,"Can I Seek Compensation for Chronic Pain After a Car Accident in Charleston?",0,74,43,sc,suggested,graeham-c-gillin,"no review",,,1492
-129,1823,post,en,/blog/driving-tips-around-trucks/,"Safe Driving Tips for Sharing the Road with Large Trucks in Georgia and South Carolina",0,73,10.4,both,suggested,joshua-dorminy,"no review",,,1709
+129,1823,post,en,/blog/driving-tips-around-trucks/,"Safe Driving Tips for Sharing the Road with Large Trucks in Georgia and South Carolina",0,73,10.4,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,1709
 130,1726,post,en,/blog/paying-medical-bills-during-a-claim/,"How Do I Pay My Medical Bills While My Personal Injury Claim is Open?",0,68,15.7,sc,suggested,graeham-c-gillin,"no review",,,651
 131,1778,post,en,/blog/reasons-for-workers-comp-claim-denial/,"Reasons a Workers’ Comp Claim is Likely to be Denied",0,68,25.1,ga,suggested,eric-roden,"no review",,,776
 132,3082,post,en,/blog/tactics-insurers-use-to-deny-crash-claims-charleston/,"Why Insurance Companies May Dispute or Deny Your Charleston Car Accident Claim",0,67,10.6,sc,suggested,graeham-c-gillin,"no review",,,1696
-133,5353,resource,en,/resources/georgia-vs-south-carolina-filing-deadlines/,"Personal Injury Filing Deadlines in Georgia vs South Carolina",0,65,5.4,both,recorded,joshua-dorminy,"reviewer not admitted for jurisdiction",2026-09-19,,780
-134,1698,post,en,/blog/steps-to-take-if-you-are-involved-in-a-bicycle-hit-and-run/,"Steps to Take After a Bicycle Hit and Run in Georgia or South Carolina",0,65,11.3,both,suggested,joshua-dorminy,"no review",,2026-08-25,1798
+133,5353,resource,en,/resources/georgia-vs-south-carolina-filing-deadlines/,"Personal Injury Filing Deadlines in Georgia vs South Carolina",0,65,5.4,both,recorded,joshua-dorminy+graeham-c-gillin,"reviewer not admitted for jurisdiction",2026-09-19,,780
+134,1698,post,en,/blog/steps-to-take-if-you-are-involved-in-a-bicycle-hit-and-run/,"Steps to Take After a Bicycle Hit and Run in Georgia or South Carolina",0,65,11.3,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-08-25,1798
 135,2761,post,en,/blog/how-loud-music-increases-crash-risk-charleston/,"Loud Music and Crashes: What Charleston Drivers Need to Know",0,63,11,sc,suggested,graeham-c-gillin,"no review",,,992
 136,1659,post,en,/blog/releasing-medical-records/,"Disclosing Medical Records in Charleston Injury Claims: What You Need to Know",0,63,18.9,sc,suggested,graeham-c-gillin,"no review",,,946
 137,2729,post,en,/blog/how-to-spot-distracted-drivers-ten-signs-savannah-ga/,"Can You Spot Distracted Drivers in Savannah? 10 Signs to Know",0,61,8.4,ga,suggested,eric-roden,"no review",,,1373
@@ -142,20 +142,20 @@ rank,post_id,type,lang,path,title,clicks_28d,impressions_28d,position,jurisdicti
 141,2743,post,en,/blog/understanding-eye-injuries-after-a-savannah-car-accident/,"Understanding Eye Injuries After a Savannah Car Accident",0,59,16.3,ga,suggested,eric-roden,"no review",,,1375
 142,4651,resource,en,/resources/port-of-savannah-truck-routes/,"Port of Savannah Truck Routes: Where Crashes Happen Most",0,58,7.6,ga,recorded,eric-roden,"no review",,2026-08-25,897
 143,1783,post,en,/blog/aggressive-driving-in-georgia/,"Study: Georgia Has Third-Most Aggressive Drivers in Nation",0,58,12,ga,suggested,eric-roden,"no review",,,666
-144,1821,post,en,/blog/proving-negligence-personal-injury/,"How Do I Prove the Other Party Is Liable for My Injury?",0,57,8.5,both,suggested,joshua-dorminy,"no review",,,790
+144,1821,post,en,/blog/proving-negligence-personal-injury/,"How Do I Prove the Other Party Is Liable for My Injury?",0,57,8.5,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,790
 145,1737,post,en,/blog/pedestrian-liability-for-car-accidents/,"Liability for Car Accidents Caused by Pedestrians",0,56,11.8,ga,suggested,eric-roden,"no review",,,668
-146,1835,post,en,/blog/signs-of-concussion-from-car-crash/,"Concussion Signs to Watch for After a Car Accident in Georgia and South Carolina",0,54,12.6,both,suggested,joshua-dorminy,"no review",,,1840
+146,1835,post,en,/blog/signs-of-concussion-from-car-crash/,"Concussion Signs to Watch for After a Car Accident in Georgia and South Carolina",0,54,12.6,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,1840
 147,2844,post,en,/blog/value-of-car-crash-claim-if-permanent-injuries/,"How Much Is My Charleston Car Crash Claim Worth if I Have Permanent Injuries?",0,50,18.6,sc,suggested,graeham-c-gillin,"no review",,,1086
 148,1815,post,en,/blog/brain-injury-claim/,"Filing a Personal Injury Claim for a Brain Injury",0,50,66.8,ga,suggested,eric-roden,"no review",,,707
-149,1664,post,en,/blog/the-importance-of-gathering-evidence-after-a-motorcycle-accident/,"The Importance of Gathering Evidence After a Motorcycle Accident in Georgia and South Carolina",0,49,9,both,suggested,joshua-dorminy,"no review",,,2100
+149,1664,post,en,/blog/the-importance-of-gathering-evidence-after-a-motorcycle-accident/,"The Importance of Gathering Evidence After a Motorcycle Accident in Georgia and South Carolina",0,49,9,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,2100
 150,2944,post,en,/blog/feeling-fatigued-after-charleston-car-accident/,"Is It Normal to Feel Fatigued After a Charleston Car Accident?",0,48,12.6,sc,suggested,graeham-c-gillin,"no review",,,1147
-151,1856,post,en,/blog/pedestrian-safety-georgia/,"Pedestrian Safety Laws and Accident Claims in Georgia and South Carolina",0,48,12.2,both,suggested,joshua-dorminy,"no review",,2026-10-05,2239
+151,1856,post,en,/blog/pedestrian-safety-georgia/,"Pedestrian Safety Laws and Accident Claims in Georgia and South Carolina",0,48,12.2,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-10-05,2239
 152,3420,post,en,/blog/charleston-parking-lot-car-accident-liability/,"Who May Be Liable for a Parking Lot Car Accident in Charleston?",0,47,50.8,sc,suggested,graeham-c-gillin,"no review",,,1956
 153,2695,post,en,/blog/legal-rights-after-memory-loss-savannah-crash/,"Memory Loss After a Savannah Car Crash? What Victims Need to Know",0,47,10.7,ga,suggested,eric-roden,"no review",,,1256
-154,5354,resource,en,/resources/georgia-vs-south-carolina-workers-compensation/,"Workers’ Compensation in Georgia vs South Carolina",0,45,11.2,both,recorded,joshua-dorminy,"reviewer not admitted for jurisdiction",2026-08-25,,1414
+154,5354,resource,en,/resources/georgia-vs-south-carolina-workers-compensation/,"Workers’ Compensation in Georgia vs South Carolina",0,45,11.2,both,recorded,joshua-dorminy+graeham-c-gillin,"reviewer not admitted for jurisdiction",2026-08-25,,1414
 155,2701,post,en,/blog/dangers-of-emotional-driving-in-savannah-ga/,"Emotional Driving in Savannah: What It Is and Why It Is Dangerous",0,44,11.3,ga,suggested,eric-roden,"no review",,,1003
 156,1787,post,en,/blog/dealing-with-uber-lyft-accident/,"What to Do If Injured in an Uber or Lyft Car Accident",0,44,20.7,ga,suggested,eric-roden,"no review",,,813
-157,1773,post,en,/blog/determining-fault-in-multi-vehicle-accidents/,"Why Fault Is Complicated in Multi-Vehicle Crashes in Georgia and South Carolina",0,41,7.6,both,suggested,joshua-dorminy,"no review",,2026-08-26,1771
+157,1773,post,en,/blog/determining-fault-in-multi-vehicle-accidents/,"Why Fault Is Complicated in Multi-Vehicle Crashes in Georgia and South Carolina",0,41,7.6,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-08-26,1771
 158,1869,post,en,/blog/college-campus-safety-tips-every-student-should-know/,"College Campus Safety Tips Every Student Should Know",0,40,11.6,ga,suggested,eric-roden,"no review",,2026-08-25,778
 159,4534,post,en,/blog/how-to-maximize-your-car-accident-compensation-in-south-carolina/,"How to Maximize Your Car Accident Compensation in South Carolina",0,39,7.8,sc,suggested,graeham-c-gillin,"no review",,2026-08-25,3336
 160,3183,post,en,/blog/liability-for-roundabout-crashes-in-charleston/,"Roundabout Crashes in Charleston: Who May Be at Fault for Your Damages",0,38,8.4,sc,suggested,graeham-c-gillin,"no review",,,1151
@@ -166,14 +166,14 @@ rank,post_id,type,lang,path,title,clicks_28d,impressions_28d,position,jurisdicti
 165,2425,post,en,/blog/knee-injuries-after-georgia-car-crash/,"Knee Injuries From a Georgia Car Crash and What To Do Next",0,35,55,ga,suggested,eric-roden,"no review",,,1302
 166,1804,post,en,/blog/passenger-car-accident-claim/,"Filing a Car Accident Claim as a Passenger",0,34,30.4,ga,suggested,eric-roden,"no review",,,750
 167,1853,post,en,/blog/beginning-motorcycle-biker-risks/,"Beginning Bikers: Risks for New Motorcycle Owners",0,34,8.4,ga,suggested,eric-roden,"no review",,2026-08-25,702
-168,4587,post,en,/blog/car-totaled-in-accident-what-to-do/,"What to Do When Your Car Is Totaled in an Accident",0,33,10,both,suggested,joshua-dorminy,"no review",,2026-10-05,2602
+168,4587,post,en,/blog/car-totaled-in-accident-what-to-do/,"What to Do When Your Car Is Totaled in an Accident",0,33,10,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-10-05,2602
 169,3413,post,en,/blog/legal-rights-if-hit-by-driver-in-company-car-charleston/,"What if the Person Who Hit My Car Was Driving a Company Car in Charleston?",0,33,14.9,sc,suggested,graeham-c-gillin,"no review",,,1552
 170,1774,post,en,/blog/workers-comp-for-skin-cancer/,"Does Workers’ Compensation Cover Skin Cancer?",0,33,14.5,ga,suggested,eric-roden,"no review",,,747
 171,2963,post,en,/blog/shoulder-injuries-after-charleston-car-crash/,"Shoulder Injuries After a Charleston Car Crash: What You Need to Know",0,31,31,sc,suggested,graeham-c-gillin,"no review",,,1324
 172,1759,post,en,/blog/compensation-while-not-wearing-seat-belt/,"Can I Be Compensated if I Was Not Wearing a Seat Belt?",0,31,10.5,ga,suggested,eric-roden,"no review",,2026-08-07,767
 173,1729,post,en,/blog/discovery-process-in-personal-injury-cases/,"What Should I Expect During the Discovery Process in my Personal Injury Case?",0,30,13.2,ga,suggested,eric-roden,"no review",,,628
 174,3499,post,en,/blog/a-cyclists-guide-after-a-ravenel-bridge-accident/,"A Cyclist’s Guide After a Ravenel Bridge Accident",0,29,14.4,sc,suggested,graeham-c-gillin,"no review",,,1439
-175,1713,post,en,/blog/importance-of-eyewitness-testimony/,"How Eyewitness Testimony Strengthens Your Personal Injury Claim",0,29,7.4,both,suggested,joshua-dorminy,"no review",,,2578
+175,1713,post,en,/blog/importance-of-eyewitness-testimony/,"How Eyewitness Testimony Strengthens Your Personal Injury Claim",0,29,7.4,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,2578
 176,1751,post,en,/blog/valuing-compensation-for-a-personal-injury/,"Why Some Injury Victims Recover More than Others",0,29,9.5,ga,suggested,eric-roden,"no review",,,655
 177,1768,post,en,/blog/georgia-law-on-tailgating-accident-liability/,"How Negligence Per Se May Apply to a Tailgating Claim",0,27,12.5,ga,suggested,eric-roden,"no review",,,717
 178,1817,post,en,/blog/duty-of-care-personal-injury-claim/,"What Is Duty of Care in a Personal Injury Claim?",0,27,18.9,ga,suggested,eric-roden,"no review",,,790
@@ -193,16 +193,16 @@ rank,post_id,type,lang,path,title,clicks_28d,impressions_28d,position,jurisdicti
 192,2510,post,en,/blog/what-to-know-about-chest-pain-after-a-savannah-car-crash/,"What if I Have Chest Pain After a Savannah Car Crash?",0,20,7.5,ga,suggested,eric-roden,"no review",,,919
 193,1799,post,en,/blog/safe-driving-in-construction-zones/,"Tips for Driving Safely Near Roadway Construction",0,20,7.3,ga,suggested,eric-roden,"no review",,,693
 194,1875,post,en,/blog/safety-tips-driving-work-zones-georgia/,"Safety Tips for Driving in Work Zones in Georgia",0,20,16.2,ga,suggested,eric-roden,"no review",,,682
-195,4348,post,en,/blog/nursing-home-abuse-charleston-signs-families/,"Signs of Nursing Home Abuse in Charleston: What Families Should Watch For",0,19,6.9,both,suggested,joshua-dorminy,"no review",,2026-09-23,1900
-196,1669,post,en,/blog/5-benefits-of-hiring-a-truck-accident-attorney-in-2023/,"5 Benefits of Hiring a Truck Accident Attorney in Georgia and South Carolina",0,18,8.8,both,suggested,joshua-dorminy,"no review",,2026-08-26,2179
+195,4348,post,en,/blog/nursing-home-abuse-charleston-signs-families/,"Signs of Nursing Home Abuse in Charleston: What Families Should Watch For",0,19,6.9,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-09-23,1900
+196,1669,post,en,/blog/5-benefits-of-hiring-a-truck-accident-attorney-in-2023/,"5 Benefits of Hiring a Truck Accident Attorney in Georgia and South Carolina",0,18,8.8,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-08-26,2179
 197,1814,post,en,/blog/georgia-wrongful-death-lawsuit/,"How a Wrongful Death Lawsuit Works",0,18,53.4,ga,suggested,eric-roden,"no review",,,724
 198,1819,post,en,/blog/third-party-liability-for-work-injury/,"Is a Third Party Liable for My Workplace Injury?",0,17,75.9,ga,suggested,eric-roden,"no review",,,731
 199,1828,post,en,/blog/avoiding-bicycle-accidents/,"How to Avoid Bicycle Accidents",0,17,12.2,sc,suggested,graeham-c-gillin,"no review",,,648
 200,4640,resource,en,/resources/personal-injury-claim-charleston-county-court/,"Filing a Personal Injury Claim in Charleston County Circuit Court",0,16,11.4,sc,recorded,graeham-c-gillin,"no review",,,660
 201,1801,post,en,/blog/workers-compensation-car-accident/,"Filing a Workers’ Compensation Claim for a Car Accident",0,16,52.8,ga,suggested,eric-roden,"no review",,,1012
-202,4588,post,en,/blog/fmcsa-violations-truck-accident-claims/,"How FMCSA Violations Strengthen Your Truck Accident Claim",0,15,7.1,both,suggested,joshua-dorminy,"no review",,,3119
-203,4341,post,en,/blog/construction-worker-injuries-charleston-sc-rights/,"Construction Worker Injuries in Charleston: Your Rights on the Fastest-Growing Job Sites in SC",0,15,14.1,both,suggested,joshua-dorminy,"no review",,2026-10-05,2079
-204,1662,post,en,/blog/what-to-do-if-your-workers-compensation-claim-is-denied/,"What to Do If Your Workers’ Compensation Claim Is Denied in Georgia or South Carolina",0,15,6.3,both,suggested,joshua-dorminy,"no review",,,1872
+202,4588,post,en,/blog/fmcsa-violations-truck-accident-claims/,"How FMCSA Violations Strengthen Your Truck Accident Claim",0,15,7.1,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,3119
+203,4341,post,en,/blog/construction-worker-injuries-charleston-sc-rights/,"Construction Worker Injuries in Charleston: Your Rights on the Fastest-Growing Job Sites in SC",0,15,14.1,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-10-05,2079
+204,1662,post,en,/blog/what-to-do-if-your-workers-compensation-claim-is-denied/,"What to Do If Your Workers’ Compensation Claim Is Denied in Georgia or South Carolina",0,15,6.3,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,1872
 205,1866,post,en,/blog/drowsy-driving-epidemic-georgia/,"The Drowsy Driving Epidemic in Georgia",0,15,19.9,ga,suggested,eric-roden,"no review",,,674
 206,4683,resource,en,/resources/i-16-i-95-construction-zone-truck-accidents/,"I-16/I-95 Construction Zone Truck Accidents in Chatham County",0,14,13.6,ga,recorded,eric-roden,"no review",,2026-09-24,993
 207,3501,post,en,/blog/a-pedestrians-guide-to-proving-negligence-in-charleston-parking-lots/,"A Pedestrian’s Guide to Proving Negligence in Charleston Parking Lots",0,14,15.6,sc,suggested,graeham-c-gillin,"no review",,,1490
@@ -225,23 +225,23 @@ rank,post_id,type,lang,path,title,clicks_28d,impressions_28d,position,jurisdicti
 224,3442,post,en,/blog/king-calhoun-intersection-car-collisions/,"King & Calhoun Intersection Car Collisions",0,7,7.6,sc,suggested,graeham-c-gillin,"no review",,,1265
 225,2833,post,en,/blog/dangerous-rural-crashes-in-charleston/,"Rural Crashes in Charleston: Why Country Roads Are So Dangerous",0,7,28.3,sc,suggested,graeham-c-gillin,"no review",,,1167
 226,2475,post,en,/blog/who-pays-for-damages-from-t-bone-crashes-in-savannah/,"Who Can Be Liable for Damages From a Savannah T-Bone Crash?",0,7,22,ga,suggested,eric-roden,"no review",,,1114
-227,1812,post,en,/blog/personal-injury-lawsuit-steps/,"Steps in a Personal Injury Lawsuit",0,7,8.4,both,suggested,joshua-dorminy,"no review",,,934
+227,1812,post,en,/blog/personal-injury-lawsuit-steps/,"Steps in a Personal Injury Lawsuit",0,7,8.4,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,934
 228,1825,post,en,/blog/summer-road-trip-safety/,"Tips on Safe Driving and Readying a Car for Road Trips",0,7,27.4,,unknown,,"no review",,,728
 229,2738,post,en,/blog/liability-in-head-on-collisions-savannah-ga/,"Head-on Collisions in Savannah, GA: Who May Be Liable?",0,6,13.5,ga,suggested,eric-roden,"no review",,,1466
-230,1681,post,en,/blog/tips-for-choosing-a-motor-vehicle-accident-attorney/,"How to Choose the Right Car Accident Lawyer in Georgia or South Carolina",0,6,10.3,both,suggested,joshua-dorminy,"no review",,,2599
+230,1681,post,en,/blog/tips-for-choosing-a-motor-vehicle-accident-attorney/,"How to Choose the Right Car Accident Lawyer in Georgia or South Carolina",0,6,10.3,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,2599
 231,1800,post,en,/blog/road-hazard-car-accident-liability/,"Liability for a Car Crash Caused by Roadway Hazards",0,6,29.8,ga,suggested,eric-roden,"no review",,,891
 232,1868,post,en,/blog/protecting-child-burn-injuries-home/,"Protecting Your Child from Burn Injuries in Your Home",0,6,8.7,ga,suggested,eric-roden,"no review",,2026-08-25,689
-233,5137,post,es,/es/blog/can-you-sue-hipaa-violation/,"¿Puedo demandar por violación de HIPAA en Georgia o Carolina del Sur?",0,5,19.4,both,recorded,joshua-dorminy,"reviewer not admitted for jurisdiction",2026-07-24,,2193
+233,5137,post,es,/es/blog/can-you-sue-hipaa-violation/,"¿Puedo demandar por violación de HIPAA en Georgia o Carolina del Sur?",0,5,19.4,both,recorded,joshua-dorminy+graeham-c-gillin,"reviewer not admitted for jurisdiction",2026-07-24,,2193
 234,1775,post,en,/blog/work-zone-car-accident-liability/,"Why Liability for a Road Work Zone Crash Is Complicated",0,5,5.4,ga,suggested,eric-roden,"no review",,,726
 235,1846,post,en,/blog/workers-compensation-2017/,"A Glance at Workers’ Compensation for 2017",0,5,15.4,ga,suggested,eric-roden,"no review",,,655
 236,4643,post,en,/blog/port-truck-accidents-charleston-liability/,"Port Truck Accidents in Charleston: Who’s Liable?",0,4,7.8,sc,recorded,graeham-c-gillin,"no review",,,549
 237,1854,post,en,/blog/get-auto-accident-claim-georgia/,"How to Get the Most Out of an Auto Accident Claim in Georgia",0,4,9,ga,suggested,eric-roden,"no review",,2026-08-25,682
 238,4814,resource,en,/resources/south-carolina-personal-injury-faq/,"South Carolina Personal Injury FAQ",0,3,7,sc,recorded,graeham-c-gillin,"no review",,2026-08-07,226
-239,1665,post,en,/blog/the-most-common-causes-of-truck-accidents/,"The Most Common Causes of Truck Accidents in Georgia and South Carolina",0,3,5,both,suggested,joshua-dorminy,"no review",,,2545
-240,1672,post,en,/blog/are-accident-lawyers-worth-it/,"Are Accident Lawyers Worth It?",0,3,10.7,both,suggested,joshua-dorminy,"no review",,,2174
+239,1665,post,en,/blog/the-most-common-causes-of-truck-accidents/,"The Most Common Causes of Truck Accidents in Georgia and South Carolina",0,3,5,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,2545
+240,1672,post,en,/blog/are-accident-lawyers-worth-it/,"Are Accident Lawyers Worth It?",0,3,10.7,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,2174
 241,1721,post,en,/blog/when-to-consider-settling-a-claim/,"What You Should Consider Before Settling a Personal Injury Claim",0,3,10.3,ga,suggested,eric-roden,"no review",,,650
 242,1725,post,en,/blog/mediation-for-a-personal-injury-claim/,"Resolving a Personal Injury Claim Through Mediation",0,3,11.7,sc,suggested,graeham-c-gillin,"no review",,,612
-243,1796,post,en,/blog/steps-after-slip-and-fall-injury/,"Steps to Take After a Slip and Fall Injury in Georgia and South Carolina",0,3,4.7,both,suggested,joshua-dorminy,"no review",,,1877
+243,1796,post,en,/blog/steps-after-slip-and-fall-injury/,"Steps to Take After a Slip and Fall Injury in Georgia and South Carolina",0,3,4.7,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,1877
 244,1847,post,en,/blog/high-risk-occupations-2017/,"High-Risk Occupations in 2017",0,3,6.7,ga,suggested,eric-roden,"no review",,,695
 245,3462,post,en,/blog/charleston-delivery-truck-pedestrian-cyclist-accidents/,"Delivery Truck Crashes Downtown: Pedestrian & Cyclist Guide | Charleston",0,2,9,sc,suggested,graeham-c-gillin,"no review",,,1002
 246,1781,post,en,/blog/trucking-regulations-and-accident-cases/,"What Trucking Safety Regulations Affect My Case?",0,2,10.5,ga,suggested,eric-roden,"no review",,,795
@@ -257,24 +257,24 @@ rank,post_id,type,lang,path,title,clicks_28d,impressions_28d,position,jurisdicti
 256,1795,post,en,/blog/teenagers-and-driving-distracted/,"What You Need to Know About Teenagers and Distracted Driving",0,1,39,ga,suggested,eric-roden,"no review",,,724
 257,1803,post,en,/blog/seven-safe-driving-tips/,"7 Tips for Driving Safe During the Holiday Season",0,1,7,,unknown,,"no review",,,986
 258,1877,post,en,/blog/boating-safely-in-georgia/,"Boating Safely in Georgia",0,1,4,ga,suggested,eric-roden,"no review",,,696
-259,5143,post,es,/es/blog/hipaa-violation-lawyer/,"Abogado de violación de HIPAA para pacientes en Georgia y Carolina del Sur",0,0,,both,recorded,joshua-dorminy,"reviewer not admitted for jurisdiction",2026-07-24,,1833
-260,5141,post,es,/es/blog/can-you-sue-hospital-negligence/,"¿Puedo demandar a un hospital por negligencia en Georgia o Carolina del Sur?",0,0,,both,recorded,joshua-dorminy,"reviewer not admitted for jurisdiction",2026-07-24,,2372
-261,5139,post,es,/es/blog/hipaa-violation-lawsuit-worth/,"¿Cuánto vale una demanda por violación de HIPAA?",0,0,,both,recorded,joshua-dorminy,"reviewer not admitted for jurisdiction",2026-07-24,,2337
+259,5143,post,es,/es/blog/hipaa-violation-lawyer/,"Abogado de violación de HIPAA para pacientes en Georgia y Carolina del Sur",0,0,,both,recorded,joshua-dorminy+graeham-c-gillin,"reviewer not admitted for jurisdiction",2026-07-24,,1833
+260,5141,post,es,/es/blog/can-you-sue-hospital-negligence/,"¿Puedo demandar a un hospital por negligencia en Georgia o Carolina del Sur?",0,0,,both,recorded,joshua-dorminy+graeham-c-gillin,"reviewer not admitted for jurisdiction",2026-07-24,,2372
+261,5139,post,es,/es/blog/hipaa-violation-lawsuit-worth/,"¿Cuánto vale una demanda por violación de HIPAA?",0,0,,both,recorded,joshua-dorminy+graeham-c-gillin,"reviewer not admitted for jurisdiction",2026-07-24,,2337
 262,4687,resource,en,/resources/carolina-crossroads-construction-zone-truck-accidents/,"Carolina Crossroads Construction Zone Truck Accidents in Columbia",0,0,,sc,recorded,graeham-c-gillin,"no review",,,1109
 263,4340,post,en,/blog/boating-accidents-charleston-harbor-legal-rights/,"Boating Accidents in Charleston Harbor: Common Causes and Your Legal Rights",0,0,,sc,suggested,graeham-c-gillin,"no review",,2026-10-05,2156
-264,4345,post,en,/blog/boeing-north-charleston-workplace-injuries-workers-comp/,"Boeing North Charleston Workplace Injuries: Workers’ Comp and Third-Party Claims",0,0,,both,suggested,joshua-dorminy,"no review",,2026-09-23,1991
+264,4345,post,en,/blog/boeing-north-charleston-workplace-injuries-workers-comp/,"Boeing North Charleston Workplace Injuries: Workers’ Comp and Third-Party Claims",0,0,,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-09-23,1991
 265,3539,post,en,/blog/your-guide-to-justice-after-a-charleston-truck-accident/,"Your Guide to Justice After a Charleston Truck Accident",0,0,,sc,suggested,graeham-c-gillin,"no review",,,1390
 266,3485,post,en,/blog/proving-pain-and-suffering-after-an-ashley-river-road-accident/,"Proving Pain and Suffering After an Ashley River Road Accident",0,0,,sc,suggested,graeham-c-gillin,"no review",,,1328
 267,3404,post,en,/blog/why-are-highway-road-shoulder-accidents-in-charleston-dangerous/,"Why Are Highway Road Shoulder Accidents in Charleston Dangerous?",0,0,,sc,suggested,graeham-c-gillin,"no review",,,1548
 268,2992,post,en,/blog/how-to-talk-to-your-doctor-about-your-charleston-car-accident-injuries/,"How to Talk to Your Doctor About Your Charleston Car Accident Injuries",0,0,,sc,suggested,graeham-c-gillin,"no review",,,1085
 269,2678,post,en,/blog/can-passengers-be-at-fault-for-a-crash/,"Can Passengers Be Held Liable for Causing a Crash in Savannah?",0,0,,ga,suggested,eric-roden,"no review",,,867
-270,1667,post,en,/blog/7-mistakes-to-avoid-after-a-motorcycle-accident/,"7 Post-Accident Mistakes That Can Destroy Your Motorcycle Claim",0,0,,both,suggested,joshua-dorminy,"no review",,2026-09-19,1755
-271,1677,post,en,/blog/when-does-workers-compensation-stop-paying/,"When Does Workers’ Compensation Stop Paying? Georgia and South Carolina Rules",0,0,,both,suggested,joshua-dorminy,"no review",,2026-08-25,1966
-272,1683,post,en,/blog/what-is-the-role-of-a-personal-injury-lawyer-in-a-case/,"What Does a Personal Injury Lawyer Do?",0,0,,both,suggested,joshua-dorminy,"no review",,,1735
-273,1695,post,en,/blog/should-i-file-a-personal-injury-or-a-workers-compensation-claim/,"Should I File a Personal Injury or Workers’ Compensation Claim in Georgia or South Carolina?",0,0,,both,suggested,joshua-dorminy,"no review",,,1617
-274,1705,post,en,/blog/benefits-of-an-accident-reconstruction-expert/,"What Is an Accident Reconstructionist?",0,0,,both,suggested,joshua-dorminy,"no review",,2026-10-06,1582
+270,1667,post,en,/blog/7-mistakes-to-avoid-after-a-motorcycle-accident/,"7 Post-Accident Mistakes That Can Destroy Your Motorcycle Claim",0,0,,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-09-19,1755
+271,1677,post,en,/blog/when-does-workers-compensation-stop-paying/,"When Does Workers’ Compensation Stop Paying? Georgia and South Carolina Rules",0,0,,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-08-25,1966
+272,1683,post,en,/blog/what-is-the-role-of-a-personal-injury-lawyer-in-a-case/,"What Does a Personal Injury Lawyer Do?",0,0,,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,1735
+273,1695,post,en,/blog/should-i-file-a-personal-injury-or-a-workers-compensation-claim/,"Should I File a Personal Injury or Workers’ Compensation Claim in Georgia or South Carolina?",0,0,,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,1617
+274,1705,post,en,/blog/benefits-of-an-accident-reconstruction-expert/,"What Is an Accident Reconstructionist?",0,0,,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,2026-10-06,1582
 275,1727,post,en,/blog/questions-about-filing-a-lawsuit/,"Factors to Consider Before Filing a Personal Injury Lawsuit",0,0,,ga,suggested,eric-roden,"no review",,,713
-276,1741,post,en,/blog/how-covid-19-affects-a-workers-comp-claim/,"How Could COVID-19 Affect Your Workers’ Compensation Claim?",0,0,,both,suggested,joshua-dorminy,"no review",,,653
+276,1741,post,en,/blog/how-covid-19-affects-a-workers-comp-claim/,"How Could COVID-19 Affect Your Workers’ Compensation Claim?",0,0,,both,suggested,joshua-dorminy+graeham-c-gillin,"no review",,,653
 277,1776,post,en,/blog/how-using-social-media-can-hurt-an-accident-claim/,"How Using Social Media Can Hurt an Accident Claim",0,0,,ga,suggested,eric-roden,"no review",,,628
 278,1784,post,en,/blog/workers-compensation-faqs/,"Frequently Asked Questions About Georgia Workers’ Compensation",0,0,,ga,suggested,eric-roden,"no review",,2026-08-26,669
 279,1785,post,en,/blog/workers-compensation-benefit-types/,"What Workers’ Compensation Benefits Am I Entitled To?",0,0,,ga,suggested,eric-roden,"no review",,,628
