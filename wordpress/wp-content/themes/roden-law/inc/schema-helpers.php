@@ -7,14 +7,14 @@
  *
  * Schema types:
  *  1. Organization / LawFirm     — Homepage
- *  2. LegalService                — Homepage + practice area pages
+ *  2. Service                     — Practice area, class-action and statewide pages
  *  3. LocalBusiness               — Homepage (×5) + location pages
  *  4. Person / Attorney           — Attorney pages + author attribution
  *  5. FAQPage                     — Practice area + location pages
  *  6. HowTo                       — Resource pages
  *  7. BreadcrumbList              — Sitewide (except homepage)
  *  8. Speakable                   — Homepage + practice area heroes
- *  9. AggregateRating             — Homepage
+ *  9. AggregateRating             — Office LocalBusiness nodes (per-office GBP)
  * 10. WebSite                     — Homepage (Sitelinks Searchbox)
  * 11. BlogPosting                 — Blog posts (bonus)
  *
@@ -252,8 +252,12 @@ function roden_output_schema() {
     $firm = roden_firm_data();
 
     if ( is_front_page() ) {
+        // No firm-level LegalService node. It duplicated the Organization
+        // under a second @id, had no address (LocalBusiness-family types
+        // need one), and carried a self-serving firm rating that Google does
+        // not show. The Organization and the six office LocalBusiness nodes
+        // describe the firm (schema review, 2026-10-22).
         roden_schema_organization( $firm );
-        roden_schema_legal_service( $firm ); // emits aggregateRating inline on homepage
         roden_schema_local_business_all( $firm );
         roden_schema_speakable_homepage( $firm );
         roden_schema_website( $firm );
@@ -265,20 +269,18 @@ function roden_output_schema() {
     // the block above never fires (it shipped with only a BreadcrumbList,
     // vs 11 nodes on the EN home — audit G3, 2026-07-08). Mirror the entity
     // graph: Organization/LocalBusiness are language-neutral (same @ids —
-    // re-asserting them strengthens entity association), LegalService takes
-    // its non-front-page branch (page-scoped @id, isPartOf firm entity), and
-    // the WebPage node is ES-specific (roden_json_ld stamps inLanguage:es).
-    // WebSite is intentionally not re-emitted: its @id/inLanguage belong to
-    // the EN home. aggregateRating stays homepage-only by design.
+    // re-asserting them strengthens entity association), and the WebPage
+    // node is ES-specific (roden_json_ld stamps inLanguage:es). WebSite is
+    // intentionally not re-emitted: its @id/inLanguage belong to the EN home.
+    // No firm-level LegalService here either (see the EN home above).
     if ( function_exists( 'roden_is_es_home' ) && roden_is_es_home() ) {
         roden_schema_organization( $firm );
-        roden_schema_legal_service( $firm );
         roden_schema_local_business_all( $firm );
         roden_schema_es_home_webpage( $firm );
     }
 
     if ( roden_is_pa_singular() ) {
-        roden_schema_legal_service( $firm );
+        roden_schema_pa_service( $firm );
         roden_schema_pa_attorney( $firm );
         roden_schema_faq_page();
         roden_schema_speakable_practice_area();
@@ -440,6 +442,18 @@ function roden_schema_organization( $firm ) {
             array( '@type' => 'State', 'name' => 'Georgia' ),
             array( '@type' => 'State', 'name' => 'South Carolina' ),
         ),
+        // Moved here from the retired firm-level LegalService (2026-10-22):
+        // knowsAbout is a property of the Organization, not of a Service.
+        'knowsAbout'   => array(
+            'Car Accidents', 'Truck Accidents', 'Slip and Fall',
+            'Motorcycle Accidents', 'Medical Malpractice', 'Wrongful Death',
+            'Workers Compensation', 'Dog Bites', 'Brain Injuries',
+            'Spinal Cord Injuries', 'Maritime Injuries', 'Product Liability',
+            'Boating Accidents', 'Burn Injuries', 'Construction Accidents',
+            'Nursing Home Abuse', 'Premises Liability', 'Pedestrian Accidents',
+            'Bicycle Accidents', 'Electric Scooter Accidents',
+            'ATV & Side-by-Side Accidents', 'Golf Cart Accidents',
+        ),
         'sameAs' => array_values( array_unique( $same_as ) ),
     );
 
@@ -496,129 +510,70 @@ function roden_schema_organization( $firm ) {
 }
 
 /* ==========================================================================
-   2. LegalService (Homepage + Practice Area pages)
+   2. Service (Practice Area pages)
    ========================================================================== */
 
-function roden_schema_legal_service( $firm ) {
-    // Homepage uses the firm-level @id; all other pages get page-specific @ids
-    // linked back to the firm entity via isPartOf to maintain entity hierarchy.
-    $firm_ls_id = $firm['url'] . '/#legalservice';
-    if ( is_front_page() ) {
-        $ls_id  = $firm_ls_id;
-        $ls_url = $firm['url'];
-    } else {
-        $ls_url = roden_get_canonical_url();
-        $ls_id  = rtrim( $ls_url, '/' ) . '/#legalservice';
-    }
+/**
+ * One practice area on one page, as a schema.org Service the firm provides.
+ *
+ * Typed Service, not LegalService: LegalService is a LocalBusiness, so Google
+ * expects an address on it, and a practice-area page is not a business
+ * location. The offices are the LocalBusiness entities (with addresses), the
+ * firm is the Organization, and this node says what the firm offers here.
+ * Every property below is valid on Service. dateModified lives on the page's
+ * WebPage node (roden_schema_speakable_practice_area); the firm's telephone,
+ * priceRange and knowsAbout live on the Organization (schema review,
+ * 2026-10-22).
+ *
+ * No aggregateRating: the firm-wide rating on a practice-area page is
+ * self-serving review markup. Per-office ratings stay on the office
+ * LocalBusiness co-emitted on intersection pages.
+ *
+ * provider is always the firm. E-E-A-T attorney attribution ships through
+ * roden_schema_pa_attorney() as a separate Person entity.
+ */
+function roden_schema_pa_service( $firm ) {
+    $url         = roden_get_canonical_url();
+    $description = roden_schema_clean_description( get_the_ID() );
 
     $schema = array(
         '@context'    => 'https://schema.org',
-        '@type'       => 'LegalService',
-        '@id'         => $ls_id,
-        'name'        => $firm['name'],
-        'url'         => $ls_url,
-        'description' => $firm['description'],
-        'telephone'   => $firm['phone_e164'],
-        'priceRange'  => roden_schema_price_range(),
+        '@type'       => 'Service',
+        '@id'         => rtrim( $url, '/' ) . '/#service',
+        'name'        => get_the_title() . ' — ' . $firm['name'],
+        'url'         => $url,
+        'description' => $description ? $description : $firm['description'],
+        'serviceType' => roden_schema_service_type(),
         'areaServed'  => array(
             array( '@type' => 'State', 'name' => 'Georgia' ),
             array( '@type' => 'State', 'name' => 'South Carolina' ),
         ),
-        'serviceType' => roden_schema_service_type(),
-        'knowsAbout'  => array(
-            'Car Accidents', 'Truck Accidents', 'Slip and Fall',
-            'Motorcycle Accidents', 'Medical Malpractice', 'Wrongful Death',
-            'Workers Compensation', 'Dog Bites', 'Brain Injuries',
-            'Spinal Cord Injuries', 'Maritime Injuries', 'Product Liability',
-            'Boating Accidents', 'Burn Injuries', 'Construction Accidents',
-            'Nursing Home Abuse', 'Premises Liability', 'Pedestrian Accidents',
-            'Bicycle Accidents', 'Electric Scooter Accidents',
-            'ATV & Side-by-Side Accidents', 'Golf Cart Accidents',
-        ),
+        'provider'    => array( '@id' => $firm['url'] . '/#organization' ),
     );
 
-    // Non-homepage pages: link back to the firm-level entity
-    if ( ! is_front_page() ) {
-        $schema['isPartOf'] = array( '@id' => $firm_ls_id );
-    }
-
-    // image — firm logo as a fallback so the LocalBusiness-derived rich
-    // result has the required image field. Per-PA hero images are not
-    // surfaced as schema today; once they are, prefer those for pillar pages.
-    $logo_url = roden_get_logo_url();
-    if ( $logo_url ) {
-        $schema['image'] = $logo_url;
-    }
-
-    // Homepage carries the firm-wide AggregateRating inline as a property of
-    // the LegalService it rates, not as a standalone node. Google's review
-    // snippet docs expect aggregateRating to be a property of the reviewed
-    // entity; standalone nodes only bind reliably inside a single @graph.
-    // Only emit aggregateRating when we have a real, verifiable review count
-    // (the live per-office GBP sum from firm-data). Never fall back to a
-    // hardcoded figure — an inflated reviewCount is a Google structured-data
-    // violation and gets the rich result stripped. Same floor as the per-office
-    // entities so one rule governs every rating the site publishes.
-    if ( is_front_page() ) {
-        $review_count = isset( $firm['trust_stats']['review_count'] ) ? intval( $firm['trust_stats']['review_count'] ) : 0;
-        $rating       = isset( $firm['trust_stats']['rating'] ) ? $firm['trust_stats']['rating'] : '4.9';
-        if ( $review_count >= RODEN_MIN_AGGREGATE_REVIEWS ) {
-            $schema['aggregateRating'] = array(
-                '@type'       => 'AggregateRating',
-                'ratingValue' => $rating,
-                'bestRating'  => '5',
-                'worstRating' => '1',
-                'reviewCount' => $review_count,
+    // Narrow areaServed on intersection pages to the specific location.
+    if ( function_exists( 'roden_is_intersection_page' ) && roden_is_intersection_page() ) {
+        $office = roden_get_intersection_office();
+        if ( $office ) {
+            $schema['areaServed'] = array(
+                array(
+                    '@type' => 'City',
+                    'name'  => $office['market_name'] . ', ' . $office['state'],
+                ),
             );
         }
     }
 
-    // On singular practice area, customize for that page
-    if ( roden_is_pa_singular() ) {
-        $schema['name']        = get_the_title() . ' — ' . $firm['name'];
-        $schema['description'] = roden_schema_clean_description( get_the_ID() );
-
-        // dateModified — critical AI freshness signal (+40% citation boost with recency)
-        $schema['dateModified'] = roden_content_modified_iso();
-
-        $is_intersection = function_exists( 'roden_is_intersection_page' ) && roden_is_intersection_page();
-
-        // Narrow areaServed on intersection pages to the specific location
-        if ( $is_intersection ) {
-            $office = roden_get_intersection_office();
-            if ( $office ) {
-                $schema['areaServed'] = array(
-                    array(
-                        '@type' => 'City',
-                        'name'  => $office['market_name'] . ', ' . $office['state'],
-                    ),
-                );
-            }
-        }
-
-        // No aggregateRating on per-PA LegalService entities. Asserting the
-        // firm-wide rating on every practice-area page is treated by Google as
-        // self-serving review snippet markup (the rating is about the firm,
-        // not the specific service) and risks sitewide review-snippet
-        // suppression / manual action. Per-office ratings on the co-emitted
-        // intersection LocalBusiness are still allowed because they're scoped
-        // to a real reviewed entity (the office's GBP listing).
-
-        // provider is always the firm (Organization) — a single attorney
-        // doesn't "provide" an entire practice area, and Person isn't a
-        // valid provider type for LegalService in Google's parsing. E-E-A-T
-        // attorney attribution still ships through roden_schema_pa_attorney()
-        // as a separate Person entity referenced by the WebPage / Article.
-        $schema['provider'] = array(
-            '@id' => $firm['url'] . '/#organization',
-        );
+    $logo_url = roden_get_logo_url();
+    if ( $logo_url ) {
+        $schema['image'] = $logo_url;
     }
 
     roden_json_ld( $schema );
 }
 
 /* ==========================================================================
-   2b. LegalService — Class Action / Mass Tort pages
+   2b. Service — Class Action / Mass Tort pages
    ========================================================================== */
 
 /**
@@ -651,11 +606,11 @@ function roden_class_action_page_type() {
 }
 
 /**
- * LegalService for the class-action hub + tort child pages.
+ * Service for the class-action hub + tort child pages.
  *
- * Mirrors roden_schema_legal_service() conventions: page-scoped @id,
- * isPartOf → firm-level LegalService, provider → firm Organization,
- * no aggregateRating (self-serving markup risk).
+ * Mirrors roden_schema_pa_service(): typed Service (not LegalService, which
+ * needs an address), page-scoped @id, provider → firm Organization, no
+ * aggregateRating (self-serving markup risk).
  *
  * @param array  $firm Firm data.
  * @param string $type 'hub' or 'child' (from roden_class_action_page_type()).
@@ -665,32 +620,39 @@ function roden_schema_class_action( $firm, $type ) {
 
     $schema = array(
         '@context'    => 'https://schema.org',
-        '@type'       => 'LegalService',
-        '@id'         => rtrim( $url, '/' ) . '/#legalservice',
+        '@type'       => 'Service',
+        '@id'         => rtrim( $url, '/' ) . '/#service',
         'url'         => $url,
-        'telephone'   => $firm['phone_e164'],
-        'priceRange'  => roden_schema_price_range(),
         'areaServed'  => array(
             array( '@type' => 'State', 'name' => 'Georgia' ),
             array( '@type' => 'State', 'name' => 'South Carolina' ),
         ),
-        'isPartOf'    => array( '@id' => $firm['url'] . '/#legalservice' ),
         'provider'    => array( '@id' => $firm['url'] . '/#organization' ),
-        // dateModified — AI freshness signal, mirrors the PA LegalService.
-        'dateModified' => roden_content_modified_iso(),
     );
 
     if ( 'hub' === $type ) {
         $schema['name']        = 'Class Action & Mass Tort Lawyers — ' . $firm['name'];
         $schema['serviceType'] = 'Class Action & Mass Tort Litigation';
-        // knowsAbout — the live tort roster, so the entity stays in sync as
-        // torts are added/retired.
+        // The live tort roster as an OfferCatalog (knowsAbout is not a
+        // Service property), so the entity stays in sync as torts are
+        // added/retired.
         $children = get_pages( array(
             'parent'      => get_the_ID(),
             'post_status' => 'publish',
         ) );
         if ( $children ) {
-            $schema['knowsAbout'] = array_values( wp_list_pluck( $children, 'post_title' ) );
+            $offers = array();
+            foreach ( wp_list_pluck( $children, 'post_title' ) as $title ) {
+                $offers[] = array(
+                    '@type'       => 'Offer',
+                    'itemOffered' => array( '@type' => 'Service', 'name' => $title ),
+                );
+            }
+            $schema['hasOfferCatalog'] = array(
+                '@type'           => 'OfferCatalog',
+                'name'            => 'Class Action & Mass Tort Cases',
+                'itemListElement' => $offers,
+            );
         }
     } else {
         // Strip a trailing "Lawsuit(s)" from the tort name (matches the title
@@ -1953,8 +1915,8 @@ function roden_schema_speakable_location() {
 }
 
 /* ==========================================================================
-   9. AggregateRating — emitted inline on the homepage LegalService entity
-   by roden_schema_legal_service(). Per-office ratings ride on each
+   9. AggregateRating — the firm-level LegalService that carried the
+   firm-wide rating was retired 2026-10-22. Per-office ratings ride on each
    LocalBusiness in roden_schema_local_business_office when the per-office
    GBP review_count is populated. No standalone AggregateRating function.
    ========================================================================== */
@@ -2377,7 +2339,7 @@ function roden_schema_neighborhood_legal_service( $firm ) {
         $offers[] = array(
             '@type'       => 'Offer',
             'itemOffered' => array(
-                '@type' => 'LegalService',
+                '@type' => 'Service',
                 'name'  => $label . ' in ' . $neighborhood_name,
                 'url'   => home_url( '/' . $slug . '/' . $office['slug'] . '/' ),
             ),
@@ -2600,24 +2562,26 @@ function roden_schema_state_landing( $firm ) {
         );
     }
 
-    // --- LegalService (state-scoped) ---
+    // --- Service (state-scoped) ---
+    // Service, not LegalService: a LocalBusiness type needs an address. The
+    // offices (with addresses) are reached through availableChannel.
     roden_json_ld( array(
-        '@context'        => 'https://schema.org',
-        '@type'           => 'LegalService',
-        '@id'             => $page_url . '#legalservice',
-        'name'            => 'Personal Injury Lawyers in ' . $state_full . ' — ' . $firm['name'],
-        'url'             => $page_url,
-        'description'     => 'Roden Law represents personal injury victims throughout ' . $state_full . '. Free consultation, no fees unless we win.',
-        'telephone'       => $firm['phone_e164'],
-        'priceRange'      => roden_schema_price_range(),
-        'serviceType'     => 'Personal Injury Law',
-        'dateModified'    => roden_content_modified_iso(),
-        'areaServed'      => array(
+        '@context'         => 'https://schema.org',
+        '@type'            => 'Service',
+        '@id'              => $page_url . '#service',
+        'name'             => 'Personal Injury Lawyers in ' . $state_full . ' — ' . $firm['name'],
+        'url'              => $page_url,
+        'description'      => 'Roden Law represents personal injury victims throughout ' . $state_full . '. Free consultation, no fees unless we win.',
+        'serviceType'      => 'Personal Injury Law',
+        'areaServed'       => array(
             '@type' => 'State',
             'name'  => $state_full,
         ),
-        'serviceLocation' => $service_locations,
-        'isPartOf'        => array( '@id' => $firm['url'] . '/#legalservice' ),
+        'provider'         => array( '@id' => $firm['url'] . '/#organization' ),
+        'availableChannel' => array(
+            '@type'           => 'ServiceChannel',
+            'serviceLocation' => $service_locations,
+        ),
     ) );
 
     // --- Organization (state-scoped) with department[] ---
@@ -2807,7 +2771,7 @@ function roden_schema_attorneys_list( $firm ) {
         }
 
         $person['worksFor'] = array(
-            '@type' => 'LegalService',
+            '@type' => 'Organization',
             '@id'   => $firm['url'] . '/#organization',
             'name'  => $firm['name'],
         );
@@ -2840,7 +2804,7 @@ function roden_schema_sc_statewide( $firm ) {
     $page_url    = $firm['url'] . '/south-carolina-car-accident-lawyer/';
     $sc_keys     = array( 'charleston', 'columbia', 'myrtle-beach' );
 
-    // --- LegalService ---
+    // --- Service ---
     $service_locations = array();
     foreach ( $sc_keys as $key ) {
         if ( ! isset( $firm['offices'][ $key ] ) ) {
@@ -2857,26 +2821,25 @@ function roden_schema_sc_statewide( $firm ) {
         );
     }
 
+    // Service, not LegalService (a LocalBusiness type needs an address); the
+    // offices are reached through availableChannel.
     roden_json_ld( array(
-        '@context'        => 'https://schema.org',
-        '@type'           => 'LegalService',
-        '@id'             => $page_url . '#legalservice',
-        'name'            => 'South Carolina Car Accident Lawyers — Roden Law',
-        'url'             => $page_url,
-        'description'     => 'Roden Law represents car accident victims throughout South Carolina. With offices in Charleston, Columbia, and Myrtle Beach, our attorneys fight for maximum compensation on a contingency fee — no fees unless we win.',
-        'telephone'       => $firm['vanity_phone'],
-        'priceRange'      => roden_schema_price_range(),
-        'areaServed'      => array(
+        '@context'         => 'https://schema.org',
+        '@type'            => 'Service',
+        '@id'              => $page_url . '#service',
+        'name'             => 'South Carolina Car Accident Lawyers — Roden Law',
+        'url'              => $page_url,
+        'description'      => 'Roden Law represents car accident victims throughout South Carolina. With offices in Charleston, Columbia, and Myrtle Beach, our attorneys fight for maximum compensation on a contingency fee — no fees unless we win.',
+        'areaServed'       => array(
             '@type' => 'State',
             'name'  => 'South Carolina',
         ),
-        'serviceType'     => 'Car Accident Law',
-        'knowsAbout'      => array(
-            'Car Accidents', 'Truck Accidents', 'Motorcycle Accidents',
-            'Pedestrian Accidents', 'Bicycle Accidents', 'Wrongful Death',
-            'Uninsured Motorist Claims', 'South Carolina Auto Insurance Law',
+        'serviceType'      => 'Car Accident Law',
+        'provider'         => array( '@id' => $firm['url'] . '/#organization' ),
+        'availableChannel' => array(
+            '@type'           => 'ServiceChannel',
+            'serviceLocation' => $service_locations,
         ),
-        'serviceLocation' => $service_locations,
         'hasOfferCatalog' => array(
             '@type'           => 'OfferCatalog',
             'name'            => 'Car Accident Legal Services',
@@ -3000,23 +2963,23 @@ function roden_schema_sc_pillar( $firm, $state = 'SC' ) {
 
     roden_json_ld( array(
         '@context'        => 'https://schema.org',
-        '@type'           => 'LegalService',
-        '@id'             => $page_url . '#legalservice',
+        '@type'           => 'Service',
+        '@id'             => $page_url . '#service',
         'name'            => get_the_title() . ' — Roden Law',
         'url'             => $page_url,
         // "personal injury injury victims" / "car accident injury victims" (GA sweep, 2026-09-29).
         'description'     => 'Roden Law represents ' . ( false !== stripos( $practice_label, 'workers' ) ? 'injured workers' : ( ( ! $practice_label || false !== stripos( $practice_label, 'personal injury' ) ) ? 'injury victims' : ( false !== stripos( $practice_label, 'wrongful death' ) ? 'families who lost a loved one' : strtolower( $practice_label ) . ' victims' ) ) ) . ' throughout ' . $state_name . ' on a contingency fee — no fees unless we win.',
-        'telephone'       => $firm['vanity_phone'],
-        'priceRange'      => roden_schema_price_range(),
         'areaServed'      => array(
             '@type' => 'State',
             'name'  => $state_name,
         ),
         'serviceType'     => $service_type,
-        'serviceLocation' => $service_locations,
-        'parentOrganization' => array(
-            '@type' => 'Organization',
-            '@id'   => $firm['url'] . '/#organization',
+        // Service, not LegalService (a LocalBusiness type needs an address);
+        // the offices are reached through availableChannel.
+        'provider'         => array( '@id' => $firm['url'] . '/#organization' ),
+        'availableChannel' => array(
+            '@type'           => 'ServiceChannel',
+            'serviceLocation' => $service_locations,
         ),
     ) );
 }
@@ -3101,8 +3064,8 @@ function roden_schema_testimonial( $firm ) {
         '@context'     => 'https://schema.org',
         '@type'        => 'Review',
         'itemReviewed' => array(
-            '@type' => 'LegalService',
-            '@id'   => $firm['url'] . '/#legalservice',
+            '@type' => 'Organization',
+            '@id'   => $firm['url'] . '/#organization',
             'name'  => $firm['name'],
         ),
         'reviewBody'   => $content,

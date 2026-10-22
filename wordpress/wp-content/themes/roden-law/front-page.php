@@ -6,7 +6,7 @@
  * locations grid (6 offices), case results, testimonials, and bottom CTA.
  *
  * Schema output for this page (auto via functions.php):
- * Organization, LegalService, LocalBusiness ×5, Speakable,
+ * Organization, LocalBusiness ×5, Speakable,
  * AggregateRating, WebSite (Sitelinks Searchbox)
  *
  * @package Roden_Law
