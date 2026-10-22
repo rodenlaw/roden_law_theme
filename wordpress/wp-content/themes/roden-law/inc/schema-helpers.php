@@ -909,7 +909,9 @@ function roden_schema_person( $firm ) {
             'South Carolina' => 'South Carolina State Bar',
         );
         foreach ( $firm['attorneys'][ $atty_slug ]['bar_admissions'] as $state ) {
-            $bar_name = isset( $bar_state_map[ $state ] ) ? $bar_state_map[ $state ] : $state . ' State Bar';
+            // Name only the bars we know; for any other state describe the admission,
+            // not an invented body ("District of Columbia State Bar" does not exist).
+            $bar_name = isset( $bar_state_map[ $state ] ) ? $bar_state_map[ $state ] : 'Admitted to practice law in ' . $state;
             // Avoid duplicate if meta already has a matching entry
             $already_listed = false;
             foreach ( $bar_list as $existing ) {
@@ -1076,16 +1078,26 @@ function roden_schema_pa_attorney( $firm ) {
         );
         $credentials = array();
         foreach ( $firm['attorneys'][ $atty_slug ]['bar_admissions'] as $state ) {
-            $org_name    = isset( $bar_state_to_org[ $state ] ) ? $bar_state_to_org[ $state ] : $state . ' State Bar';
-            $credentials[] = array(
-                '@type'              => 'EducationalOccupationalCredential',
-                'credentialCategory' => 'Bar Admission',
-                'name'               => $org_name,
-                'recognizedBy'       => array(
-                    '@type' => 'GovernmentOrganization',
-                    'name'  => $org_name,
-                ),
-            );
+            // recognizedBy only for bars we can name correctly. Elsewhere,
+            // "<State> State Bar" invents bodies ("District of Columbia State
+            // Bar", "Massachusetts State Bar") that do not exist under those names.
+            if ( isset( $bar_state_to_org[ $state ] ) ) {
+                $credentials[] = array(
+                    '@type'              => 'EducationalOccupationalCredential',
+                    'credentialCategory' => 'Bar Admission',
+                    'name'               => $bar_state_to_org[ $state ],
+                    'recognizedBy'       => array(
+                        '@type' => 'GovernmentOrganization',
+                        'name'  => $bar_state_to_org[ $state ],
+                    ),
+                );
+            } else {
+                $credentials[] = array(
+                    '@type'              => 'EducationalOccupationalCredential',
+                    'credentialCategory' => 'Bar Admission',
+                    'name'               => 'Admitted to practice law in ' . $state,
+                );
+            }
         }
         if ( ! empty( $credentials ) ) {
             $schema['hasCredential'] = $credentials;
@@ -1744,10 +1756,76 @@ function roden_schema_review_fields( $post_id, $firm ) {
         return array();
     }
 
-    return array(
-        'lastReviewed' => gmdate( 'Y-m-d', $ts ),
-        'reviewedBy'   => roden_schema_author_node( $post_id, $firm ),
-    );
+    $fields   = array( 'lastReviewed' => gmdate( 'Y-m-d', $ts ) );
+    $reviewer = roden_page_reviewer( $post_id );
+    if ( $reviewer ) {
+        $fields['reviewedBy'] = array(
+            '@type' => 'Person',
+            '@id'   => $firm['url'] . '/attorneys/' . $reviewer->post_name . '/#person',
+            'name'  => $reviewer->post_title,
+            'url'   => str_replace( home_url(), $firm['url'], get_permalink( $reviewer ) ),
+        );
+    }
+    return $fields;
+}
+
+/**
+ * The attorney who reviewed this page, or null when none can be named honestly.
+ *
+ * `_roden_reviewed_by` (an attorney post ID) records the reviewer. It is set
+ * when a review is recorded (bin/record-attorney-reviews.php) or in the editor.
+ * Until 2026-10-22 there was no such field and reviewedBy named the AUTHOR,
+ * which credited a Georgia-only lawyer on a South Carolina-only post, and on 15
+ * two-state posts a lawyer admitted in one of the two. So:
+ *
+ *   - the recorded reviewer, else the author, is the candidate;
+ *   - the candidate is named only if admitted in every state the page covers
+ *     (`_roden_jurisdiction`), so a review claim never outruns a bar admission;
+ *   - a page with no jurisdiction recorded keeps its candidate. There is no
+ *     evidence of a mismatch, and the review queue sets the jurisdiction as
+ *     part of every new review.
+ *
+ * @param int $post_id Post ID.
+ * @return WP_Post|null Published attorney post.
+ */
+function roden_page_reviewer( $post_id ) {
+    $id   = absint( get_post_meta( $post_id, '_roden_reviewed_by', true ) );
+    $id   = $id ? $id : absint( get_post_meta( $post_id, '_roden_author_attorney', true ) );
+    $atty = $id ? get_post( $id ) : null;
+    if ( ! $atty || 'attorney' !== $atty->post_type || 'publish' !== $atty->post_status ) {
+        return null;
+    }
+
+    $needs = roden_page_jurisdiction_states( $post_id );
+    if ( null === $needs ) {
+        return $atty;
+    }
+    $has = function_exists( 'roden_attorney_bar_states' ) ? roden_attorney_bar_states( $atty->ID ) : array();
+    return array_diff( $needs, $has ) ? null : $atty;
+}
+
+/**
+ * States a page's legal content covers, from `_roden_jurisdiction`.
+ *
+ * The field was written by several batches over time, so it holds several
+ * spellings for the same scope (ga, GA, georgia-only; sc, SC, south-carolina,
+ * south-carolina-only; both).
+ *
+ * @param int $post_id Post ID.
+ * @return array<string>|null State names, or null when not recorded.
+ */
+function roden_page_jurisdiction_states( $post_id ) {
+    $j = strtolower( trim( (string) get_post_meta( $post_id, '_roden_jurisdiction', true ) ) );
+    if ( in_array( $j, array( 'ga', 'georgia', 'georgia-only' ), true ) ) {
+        return array( 'Georgia' );
+    }
+    if ( in_array( $j, array( 'sc', 'south-carolina', 'south-carolina-only' ), true ) ) {
+        return array( 'South Carolina' );
+    }
+    if ( 'both' === $j ) {
+        return array( 'Georgia', 'South Carolina' );
+    }
+    return null;
 }
 
 /**

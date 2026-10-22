@@ -66,6 +66,7 @@ $keys = array(
 	'_roden_sol_sc',
 	'_roden_author_attorney',
 	'_roden_last_reviewed',
+	'_roden_reviewed_by',
 	'_roden_meta_description',
 	// Added 2026-09-09 alongside the field itself. `_roden_meta_title` REPLACES
 	// the <title> tag and short-circuits every other title rule, so a wrong or
@@ -192,7 +193,7 @@ foreach ( $posts as $p ) {
 		}
 
 		// Attorney attribution: the name is what a reviewer can check.
-		if ( '_roden_author_attorney' === $k ) {
+		if ( '_roden_author_attorney' === $k || '_roden_reviewed_by' === $k ) {
 			$atty = get_post( (int) $v );
 			$meta[ $k ] = $atty ? $atty->post_title : '(missing attorney ' . (int) $v . ')';
 			continue;
