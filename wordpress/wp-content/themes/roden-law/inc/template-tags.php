@@ -589,6 +589,98 @@ function roden_case_result_card( $post_id ) {
     <?php
 }
 
+/**
+ * IDs of case results flagged "Show first" (_roden_case_featured), newest
+ * first. They lead /case-results/, the homepage spotlight, and any grid that
+ * asks for them.
+ *
+ * @return int[]
+ */
+function roden_featured_case_result_ids() {
+    return get_posts( array(
+        'post_type'      => 'case_result',
+        'post_status'    => 'publish',
+        'posts_per_page' => -1,
+        'fields'         => 'ids',
+        'meta_key'       => '_roden_case_featured',
+        'meta_value'     => '1',
+        'orderby'        => 'date',
+        'order'          => 'DESC',
+    ) );
+}
+
+/**
+ * The white case-result card (modelled on GAL's results grid): year, category
+ * and venue tags, result type and amount, description, lead attorney, and the
+ * offer-vs-result comparison. Every part but the amount is optional, so a
+ * result carrying only amount + type renders as just those.
+ *
+ * @param int   $post_id Case result post ID.
+ * @param array $args    'tag' (default 'div') and 'attrs' (extra attributes,
+ *                       escaped here; 'class' is appended to the card class).
+ */
+function roden_case_result_detail_card( $post_id, $args = array() ) {
+    $args   = wp_parse_args( $args, array( 'tag' => 'div', 'attrs' => array() ) );
+    $tag    = in_array( $args['tag'], array( 'div', 'li', 'article' ), true ) ? $args['tag'] : 'div';
+    $amount = get_post_meta( $post_id, '_roden_case_amount', true );
+    $raw    = (int) get_post_meta( $post_id, '_roden_case_amount_raw', true );
+    $type   = trim( (string) get_post_meta( $post_id, '_roden_case_type', true ) );
+    $desc   = get_post_meta( $post_id, '_roden_description', true );
+    $year   = get_post_meta( $post_id, '_roden_case_year', true );
+    $venue  = get_post_meta( $post_id, '_roden_case_venue', true );
+    $cat    = roden_case_result_category( $post_id );
+
+    $attorney_id = (int) get_post_meta( $post_id, '_roden_attorney', true );
+    $has_atty    = $attorney_id && 'publish' === get_post_status( $attorney_id );
+
+    $offer     = trim( (string) get_post_meta( $post_id, '_roden_result_initial_offer', true ) );
+    $offer_raw = (int) preg_replace( '/[^0-9]/', '', $offer );
+    $multiple  = ( $offer_raw > 0 && $raw > $offer_raw ) ? round( $raw / $offer_raw, 1 ) : 0;
+
+    $attrs          = $args['attrs'];
+    $attrs['class'] = trim( 'result-card result-card--detail ' . ( $attrs['class'] ?? '' ) );
+    $attr_html      = '';
+    foreach ( $attrs as $k => $v ) {
+        $attr_html .= ' ' . esc_attr( $k ) . '="' . esc_attr( $v ) . '"';
+    }
+    ?>
+    <<?php echo $tag . $attr_html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- whitelisted tag, attributes escaped above. ?>>
+        <?php if ( $year || $cat || $venue ) : ?>
+            <div class="result-tags">
+                <?php if ( $year ) : ?>
+                    <span class="result-tag"><?php echo esc_html( $year ); ?></span>
+                <?php endif; ?>
+                <?php if ( $cat ) : ?>
+                    <span class="result-tag result-tag--category"><?php echo esc_html( $cat ); ?></span>
+                <?php endif; ?>
+                <?php if ( $venue ) : ?>
+                    <span class="result-tag"><?php echo esc_html( $venue ); ?></span>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
+        <?php if ( $type ) : ?>
+            <span class="result-type"><?php echo esc_html( roden_case_type_label( $type ) ); ?></span>
+        <?php endif; ?>
+        <span class="result-amount"><?php echo esc_html( $amount ); ?></span>
+        <?php if ( $desc ) : ?>
+            <p class="result-desc"><?php echo esc_html( $desc ); ?></p>
+        <?php endif; ?>
+        <?php if ( $has_atty ) : ?>
+            <p class="result-attorney">
+                Handled by <a href="<?php echo esc_url( get_permalink( $attorney_id ) ); ?>"><?php echo esc_html( get_the_title( $attorney_id ) ); ?></a>
+            </p>
+        <?php endif; ?>
+        <?php if ( $multiple ) : ?>
+            <div class="result-compare">
+                <p class="result-compare-offer">Settlement Offered: <s><?php echo esc_html( $offer ); ?></s></p>
+                <p class="result-compare-won"><?php echo 'verdict' === strtolower( $type ) ? 'Jury Awarded' : 'We Recovered'; ?>: <?php echo esc_html( $amount ); ?></p>
+                <p class="result-compare-multiple">That&rsquo;s <?php echo esc_html( $multiple ); ?>x the original offer</p>
+            </div>
+        <?php endif; ?>
+    </<?php echo $tag; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
+    <?php
+}
+
 function roden_case_results_grid( $args = array() ) {
     $defaults = array(
         'count'             => 4,
@@ -596,12 +688,38 @@ function roden_case_results_grid( $args = array() ) {
         'location_served'   => '',
         'columns'           => 4,
         'exclude'           => array(),
+        // Results matching every meta_key => value pair here lead the grid
+        // (e.g. this attorney's own results); the rest is filled as before.
+        'lead'              => array(),
+        // false: when any lead result exists, show only lead results.
+        'fill'              => true,
+        // 'detail' renders the white roden_case_result_detail_card().
+        'style'             => '',
     );
     $args = wp_parse_args( $args, $defaults );
 
+    $lead_ids = array();
+    if ( ! empty( $args['lead'] ) ) {
+        $meta_query = array();
+        foreach ( $args['lead'] as $key => $value ) {
+            $meta_query[] = array( 'key' => $key, 'value' => $value );
+        }
+        $lead_ids = get_posts( array(
+            'post_type'      => 'case_result',
+            'post_status'    => 'publish',
+            'posts_per_page' => $args['count'],
+            'fields'         => 'ids',
+            'meta_query'     => $meta_query,
+            'post__not_in'   => (array) $args['exclude'],
+            'orderby'        => 'date',
+            'order'          => 'DESC',
+        ) );
+        $args['exclude'] = array_merge( (array) $args['exclude'], $lead_ids );
+    }
+
     $query_args = array(
         'post_type'      => 'case_result',
-        'posts_per_page' => $args['count'],
+        'posts_per_page' => ( $lead_ids && ! $args['fill'] ) ? 0 : max( 0, $args['count'] - count( $lead_ids ) ),
         'orderby'        => 'meta_value_num',
         'meta_key'       => '_roden_case_amount_raw',
         'order'          => 'DESC',
@@ -622,10 +740,11 @@ function roden_case_results_grid( $args = array() ) {
         $query_args['tax_query'] = $tax_query;
     }
 
-    $results = new WP_Query( $query_args );
+    $results = $query_args['posts_per_page'] ? new WP_Query( $query_args ) : null;
+    $ids     = array_merge( $lead_ids, $results ? wp_list_pluck( $results->posts, 'ID' ) : array() );
 
     // Fallback: hardcoded results if no CPT posts exist yet
-    if ( ! $results->have_posts() ) {
+    if ( ! $ids ) {
         $fallback_results = array(
             array( 'amount' => '$27,000,000', 'type' => 'Settlement', 'title' => 'Truck Accident',      'desc' => 'Client paralyzed in collision with commercial semi-truck.' ),
             array( 'amount' => '$10,860,000', 'type' => 'Verdict',    'title' => 'Product Liability',    'desc' => 'Defective product caused catastrophic injury.' ),
@@ -648,13 +767,15 @@ function roden_case_results_grid( $args = array() ) {
     }
 
     echo '<div class="case-results-grid cols-' . intval( $args['columns'] ) . '">';
-    while ( $results->have_posts() ) :
-        $results->the_post();
-        roden_case_result_card( get_the_ID() );
-    endwhile;
+    foreach ( $ids as $id ) {
+        if ( 'detail' === $args['style'] ) {
+            roden_case_result_detail_card( $id );
+        } else {
+            roden_case_result_card( $id );
+        }
+    }
     echo '</div>';
     echo '<p class="results-disclaimer">' . esc_html__( 'Results shown are gross settlement/verdict amounts before fees and costs. Past results do not guarantee similar outcomes.', 'roden-law' ) . '</p>';
-    wp_reset_postdata();
 }
 
 /* ==========================================================================

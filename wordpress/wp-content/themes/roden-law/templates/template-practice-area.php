@@ -567,7 +567,20 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  ═══════════════════════════════════════════════════════════ -->
             <div class="content-section" id="pa-results">
                 <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Recent %s Case Results', 'roden-law' ), esc_html( roden_pa_noun() ) ); ?></h2>
-                <?php roden_case_results_grid( array( 'count' => 4, 'columns' => 3, 'practice_category' => $cat_slug ) ); ?>
+                <?php
+                // Results whose accident type names this practice area
+                // ("Medical Malpractice Lawyers" -> "Medical Malpractice") are
+                // shown alone when any exist, so the "Recent … Case Results"
+                // heading is true; otherwise the firm-wide grid as before.
+                roden_case_results_grid( array(
+                    'count'             => 4,
+                    'columns'           => 3,
+                    'practice_category' => $cat_slug,
+                    'style'             => 'detail',
+                    'fill'              => false,
+                    'lead'              => array( '_roden_accident_type' => preg_replace( '/\s+Lawyers$/', '', get_the_title( $post_id ) ) ),
+                ) );
+                ?>
             </div>
 
             <!-- ═══════════════════════════════════════════════════════════

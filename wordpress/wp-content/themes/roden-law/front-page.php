@@ -291,6 +291,16 @@ if ( 'es' === $home_lang ) {
                 <h2 class="text-white"><?php esc_html_e( 'Our Results Speak for Themselves', 'roden-law' ); ?></h2>
             </div>
 
+            <?php
+            $featured_results = roden_featured_case_result_ids();
+            if ( $featured_results ) : ?>
+                <div class="results-spotlight">
+                    <?php foreach ( array_slice( $featured_results, 0, 2 ) as $featured_id ) {
+                        roden_case_result_detail_card( $featured_id );
+                    } ?>
+                </div>
+            <?php endif; ?>
+
             <div class="results-carousel">
                 <button class="results-arrow results-arrow-left" aria-label="<?php esc_attr_e( 'Scroll left', 'roden-law' ); ?>">&lsaquo;</button>
                 <div class="results-track">

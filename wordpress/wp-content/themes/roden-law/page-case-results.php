@@ -61,16 +61,6 @@ foreach ( $results->posts as $cr ) {
         }
     }
 
-    // Optional detail, filled on newer results only: year, venue, lead
-    // attorney, and the offer on the table before we recovered.
-    $attorney_id = (int) get_post_meta( $cr->ID, '_roden_attorney', true );
-    $attorney    = ( $attorney_id && 'publish' === get_post_status( $attorney_id ) )
-        ? array( 'name' => get_the_title( $attorney_id ), 'url' => get_permalink( $attorney_id ) )
-        : null;
-    $offer       = trim( (string) get_post_meta( $cr->ID, '_roden_result_initial_offer', true ) );
-    $offer_raw   = (int) preg_replace( '/[^0-9]/', '', $offer );
-    $multiple    = ( $offer_raw > 0 && $raw > $offer_raw ) ? round( $raw / $offer_raw, 1 ) : 0;
-
     $items[] = array(
         'id'       => $cr->ID,
         'slug'     => $cr->post_name,
@@ -78,12 +68,7 @@ foreach ( $results->posts as $cr ) {
         'type'     => $type,
         'category' => $category,
         'band'     => $band,
-        'desc'     => get_post_meta( $cr->ID, '_roden_description', true ),
-        'year'     => get_post_meta( $cr->ID, '_roden_case_year', true ),
-        'venue'    => get_post_meta( $cr->ID, '_roden_case_venue', true ),
-        'attorney' => $attorney,
-        'offer'    => $multiple ? $offer : '',
-        'multiple' => $multiple,
+        'featured' => '1' === get_post_meta( $cr->ID, '_roden_case_featured', true ),
     );
 
     if ( $category ) {
@@ -96,6 +81,10 @@ foreach ( $results->posts as $cr ) {
         $band_count[ $band ]++;
     }
 }
+// Results flagged "Show first" lead the list; the rest stay largest first.
+usort( $items, function ( $a, $b ) {
+    return (int) $b['featured'] - (int) $a['featured'];
+} );
 arsort( $categories );
 arsort( $types );
 
@@ -124,7 +113,7 @@ $total = count( $items );
         <div class="site-container">
             <div class="section-header">
                 <h2>Case Results</h2>
-                <p>Settlements, verdicts, and recoveries our attorneys have secured, largest first.</p>
+                <p>Settlements, verdicts, and recoveries our attorneys have secured.</p>
             </div>
 
             <?php if ( $items ) : ?>
@@ -170,43 +159,15 @@ $total = count( $items );
 
             <ul class="case-results-grid cols-3 case-results-list" id="case-results-list">
                 <?php foreach ( $items as $it ) : ?>
-                    <li class="result-card result-card--detail" id="<?php echo esc_attr( $it['slug'] ); ?>"
-                        data-category="<?php echo esc_attr( $it['category'] ); ?>"
-                        data-type="<?php echo esc_attr( $it['type'] ); ?>"
-                        data-band="<?php echo esc_attr( $it['band'] ); ?>">
-                        <?php if ( $it['year'] || $it['category'] || $it['venue'] ) : ?>
-                            <div class="result-tags">
-                                <?php if ( $it['year'] ) : ?>
-                                    <span class="result-tag"><?php echo esc_html( $it['year'] ); ?></span>
-                                <?php endif; ?>
-                                <?php if ( $it['category'] ) : ?>
-                                    <span class="result-tag result-tag--category"><?php echo esc_html( $it['category'] ); ?></span>
-                                <?php endif; ?>
-                                <?php if ( $it['venue'] ) : ?>
-                                    <span class="result-tag"><?php echo esc_html( $it['venue'] ); ?></span>
-                                <?php endif; ?>
-                            </div>
-                        <?php endif; ?>
-                        <?php if ( $it['type'] ) : ?>
-                            <span class="result-type"><?php echo esc_html( ucfirst( $it['type'] ) ); ?></span>
-                        <?php endif; ?>
-                        <span class="result-amount"><?php echo esc_html( $it['amount'] ); ?></span>
-                        <?php if ( $it['desc'] ) : ?>
-                            <p class="result-desc"><?php echo esc_html( $it['desc'] ); ?></p>
-                        <?php endif; ?>
-                        <?php if ( $it['attorney'] ) : ?>
-                            <p class="result-attorney">
-                                Handled by <a href="<?php echo esc_url( $it['attorney']['url'] ); ?>"><?php echo esc_html( $it['attorney']['name'] ); ?></a>
-                            </p>
-                        <?php endif; ?>
-                        <?php if ( $it['multiple'] ) : ?>
-                            <div class="result-compare">
-                                <p class="result-compare-offer">Settlement Offered: <s><?php echo esc_html( $it['offer'] ); ?></s></p>
-                                <p class="result-compare-won"><?php echo 'Verdict' === $it['type'] ? 'Jury Awarded' : 'We Recovered'; ?>: <?php echo esc_html( $it['amount'] ); ?></p>
-                                <p class="result-compare-multiple">That&rsquo;s <?php echo esc_html( $it['multiple'] ); ?>x the original offer</p>
-                            </div>
-                        <?php endif; ?>
-                    </li>
+                    <?php roden_case_result_detail_card( $it['id'], array(
+                        'tag'   => 'li',
+                        'attrs' => array(
+                            'id'            => $it['slug'],
+                            'data-category' => $it['category'],
+                            'data-type'     => $it['type'],
+                            'data-band'     => $it['band'],
+                        ),
+                    ) ); ?>
                 <?php endforeach; ?>
             </ul>
 

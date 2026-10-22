@@ -513,8 +513,10 @@ h1, h2, h3, h4, h5, h6 {
 /* /case-results/ cards: white, left-aligned, with optional tags, attorney and
    offer-vs-result comparison (modelled on GAL's results grid). The navy
    .result-card is unchanged everywhere else. */
-.result-card--detail {
-    background: var(--white); border: 1px solid var(--gray-200); border-top: 1px solid var(--gray-200);
+/* Raised over .main-content .result-card (navy) on attorney and practice pages. */
+.case-results-grid .result-card.result-card--detail,
+.result-card.result-card--detail {
+    background: var(--white); color: var(--gray-800); border: 1px solid var(--gray-200); border-top: 1px solid var(--gray-200);
     border-radius: var(--radius-lg); box-shadow: var(--shadow); text-align: left;
     padding: 24px; transition: box-shadow 0.2s ease;
 }
@@ -543,6 +545,12 @@ h1, h2, h3, h4, h5, h6 {
 .result-compare-offer { color: var(--gray-600); }
 .result-compare-won { color: var(--navy); font-weight: 700; }
 .result-compare-multiple { color: #8a5300; font-weight: 600; margin-bottom: 0; }
+
+/* Homepage: featured results above the navy carousel. */
+.results-spotlight {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-bottom: 32px;
+}
+.results-spotlight .result-card--detail { flex: 0 1 420px; }
 
 @media (max-width: 768px) {
     .case-results-grid.cols-3,
