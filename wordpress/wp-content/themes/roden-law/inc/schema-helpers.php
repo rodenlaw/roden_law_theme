@@ -6,7 +6,7 @@
  * No schema plugins required — everything is handled here.
  *
  * Schema types:
- *  1. Organization / LawFirm     — Homepage
+ *  1. Organization              — Homepage
  *  2. Service                     — Practice area, class-action and statewide pages
  *  3. LocalBusiness               — Homepage (×5) + location pages
  *  4. Person / Attorney           — Attorney pages + author attribution
@@ -417,7 +417,7 @@ function roden_output_schema() {
 }
 
 /* ==========================================================================
-   1. Organization / LawFirm (Homepage)
+   1. Organization (Homepage)
    ========================================================================== */
 
 function roden_schema_organization( $firm ) {
@@ -431,7 +431,10 @@ function roden_schema_organization( $firm ) {
 
     $schema = array(
         '@context'     => 'https://schema.org',
-        '@type'        => array( 'Organization', 'LawFirm' ),
+        // 'LawFirm' is not a schema.org type (parsers drop it; schema
+        // review 2026-10-22). Organization + the office LegalService nodes
+        // carry the law-firm meaning.
+        '@type'        => 'Organization',
         '@id'          => $firm['url'] . '/#organization',
         'name'         => $firm['name'],
         'url'          => $firm['url'],
@@ -778,7 +781,7 @@ function roden_schema_local_business_single( $firm ) {
 function roden_schema_local_business_office( $firm, $key, $office, $extra_area_served = '' ) {
     $schema = array(
         '@context'   => 'https://schema.org',
-        '@type'      => array( 'LocalBusiness', 'LegalService', 'LawFirm' ),
+        '@type'      => array( 'LocalBusiness', 'LegalService' ), // no 'LawFirm': not a schema.org type
         '@id'        => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/#localbusiness',
         'name'       => $office['name'],
         'url'        => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/',
@@ -2425,7 +2428,7 @@ function roden_schema_local_business_neighborhood( $firm ) {
 
     $schema = array(
         '@context'   => 'https://schema.org',
-        '@type'      => array( 'LocalBusiness', 'LegalService', 'LawFirm' ),
+        '@type'      => array( 'LocalBusiness', 'LegalService' ), // no 'LawFirm': not a schema.org type
         '@id'        => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/#localbusiness',
         'name'       => $office['name'],
         'url'        => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/',
@@ -2587,7 +2590,7 @@ function roden_schema_state_landing( $firm ) {
     // --- Organization (state-scoped) with department[] ---
     roden_json_ld( array(
         '@context'           => 'https://schema.org',
-        '@type'              => array( 'Organization', 'LawFirm' ),
+        '@type'              => 'Organization', // no 'LawFirm': not a schema.org type
         '@id'                => $page_url . '#organization',
         'name'               => $firm['name'] . ' — ' . $state_full,
         'url'                => $page_url,
