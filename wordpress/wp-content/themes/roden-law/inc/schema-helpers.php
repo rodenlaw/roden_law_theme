@@ -1756,52 +1756,87 @@ function roden_schema_review_fields( $post_id, $firm ) {
         return array();
     }
 
-    $fields   = array( 'lastReviewed' => gmdate( 'Y-m-d', $ts ) );
-    $reviewer = roden_page_reviewer( $post_id );
-    if ( $reviewer ) {
-        $fields['reviewedBy'] = array(
-            '@type' => 'Person',
-            '@id'   => $firm['url'] . '/attorneys/' . $reviewer->post_name . '/#person',
-            'name'  => $reviewer->post_title,
-            'url'   => str_replace( home_url(), $firm['url'], get_permalink( $reviewer ) ),
-        );
+    $fields    = array( 'lastReviewed' => gmdate( 'Y-m-d', $ts ) );
+    $reviewers = roden_page_reviewers( $post_id );
+    if ( $reviewers ) {
+        $nodes = array_map( function( $r ) use ( $firm ) {
+            return array(
+                '@type' => 'Person',
+                '@id'   => $firm['url'] . '/attorneys/' . $r->post_name . '/#person',
+                'name'  => $r->post_title,
+                'url'   => str_replace( home_url(), $firm['url'], get_permalink( $r ) ),
+            );
+        }, $reviewers );
+        // schema.org reviewedBy takes one or more values.
+        $fields['reviewedBy'] = 1 === count( $nodes ) ? $nodes[0] : $nodes;
     }
     return $fields;
 }
 
 /**
- * The attorney who reviewed this page, or null when none can be named honestly.
+ * The attorneys who reviewed this page, or none when none can be named honestly.
  *
- * `_roden_reviewed_by` (an attorney post ID) records the reviewer. It is set
- * when a review is recorded (bin/record-attorney-reviews.php) or in the editor.
- * Until 2026-10-22 there was no such field and reviewedBy named the AUTHOR,
- * which credited a Georgia-only lawyer on a South Carolina-only post, and on 15
- * two-state posts a lawyer admitted in one of the two. So:
+ * `_roden_reviewed_by` records the reviewers: attorney post IDs, comma-separated
+ * (one ID is the common case). It is set when a review is recorded
+ * (bin/record-attorney-reviews.php) or in the editor. Until 2026-10-22 there was
+ * no such field and reviewedBy named the AUTHOR. That credited a Georgia-only
+ * lawyer on a South Carolina-only post, and single-state lawyers on two-state
+ * posts. No attorney at the firm is admitted in both states, so a two-state
+ * page needs two reviewers. So:
  *
- *   - the recorded reviewer, else the author, is the candidate;
- *   - the candidate is named only if admitted in every state the page covers
- *     (`_roden_jurisdiction`), so a review claim never outruns a bar admission;
- *   - a page with no jurisdiction recorded keeps its candidate. There is no
- *     evidence of a mismatch, and the review queue sets the jurisdiction as
- *     part of every new review.
+ *   - the recorded reviewers, else the author, are the candidates;
+ *   - they are named only if, together, they are admitted in every state the
+ *     page covers (`_roden_jurisdiction`), and each is admitted in at least one
+ *     of those states. A review claim never outruns a bar admission, and nobody
+ *     is credited on a page whose law they are not admitted to practice;
+ *   - a page with no jurisdiction recorded keeps its candidates. There is no
+ *     evidence of a mismatch, and the review queue sets the jurisdiction as part
+ *     of every new review.
  *
  * @param int $post_id Post ID.
- * @return WP_Post|null Published attorney post.
+ * @return WP_Post[] Published attorney posts, possibly empty.
  */
-function roden_page_reviewer( $post_id ) {
-    $id   = absint( get_post_meta( $post_id, '_roden_reviewed_by', true ) );
-    $id   = $id ? $id : absint( get_post_meta( $post_id, '_roden_author_attorney', true ) );
-    $atty = $id ? get_post( $id ) : null;
-    if ( ! $atty || 'attorney' !== $atty->post_type || 'publish' !== $atty->post_status ) {
-        return null;
+function roden_page_reviewers( $post_id ) {
+    $ids = array_filter( array_map( 'absint', explode( ',', (string) get_post_meta( $post_id, '_roden_reviewed_by', true ) ) ) );
+    if ( ! $ids ) {
+        $ids = array_filter( array( absint( get_post_meta( $post_id, '_roden_author_attorney', true ) ) ) );
+    }
+    $attys = array();
+    foreach ( array_unique( $ids ) as $id ) {
+        $a = get_post( $id );
+        if ( $a && 'attorney' === $a->post_type && 'publish' === $a->post_status ) {
+            $attys[] = $a;
+        }
+    }
+    if ( ! $attys ) {
+        return array();
     }
 
     $needs = roden_page_jurisdiction_states( $post_id );
     if ( null === $needs ) {
-        return $atty;
+        return $attys;
     }
-    $has = function_exists( 'roden_attorney_bar_states' ) ? roden_attorney_bar_states( $atty->ID ) : array();
-    return array_diff( $needs, $has ) ? null : $atty;
+    $held = array();
+    foreach ( $attys as $a ) {
+        $bars = function_exists( 'roden_attorney_bar_states' ) ? roden_attorney_bar_states( $a->ID ) : array();
+        if ( ! array_intersect( $needs, $bars ) ) {
+            return array(); // admitted in none of this page's states
+        }
+        $held = array_merge( $held, $bars );
+    }
+    return array_diff( $needs, $held ) ? array() : $attys;
+}
+
+/**
+ * The single reviewer, for callers that expect one. Null when the page names
+ * none or more than one.
+ *
+ * @param int $post_id Post ID.
+ * @return WP_Post|null
+ */
+function roden_page_reviewer( $post_id ) {
+    $r = roden_page_reviewers( $post_id );
+    return 1 === count( $r ) ? $r[0] : null;
 }
 
 /**

@@ -325,19 +325,23 @@ function roden_pa_author_meta_box( $post ) {
         <input type="date" id="roden_last_reviewed" name="_roden_last_reviewed"
                value="<?php echo esc_attr( $reviewed ); ?>" style="width:100%;">
     </p>
-    <?php $reviewed_by = absint( get_post_meta( $post->ID, '_roden_reviewed_by', true ) ); ?>
+    <?php
+    $reviewed_by = array_values( array_filter( array_map( 'absint', explode( ',', (string) get_post_meta( $post->ID, '_roden_reviewed_by', true ) ) ) ) );
+    foreach ( array( 0 => __( 'Reviewed By:', 'roden-law' ), 1 => __( 'Second Reviewer (two-state pages):', 'roden-law' ) ) as $slot => $label ) :
+        ?>
     <p>
-        <label for="roden_reviewed_by"><strong><?php esc_html_e( 'Reviewed By:', 'roden-law' ); ?></strong></label><br>
-        <select id="roden_reviewed_by" name="_roden_reviewed_by" style="width:100%;">
-            <option value=""><?php esc_html_e( '— Same as attributed attorney —', 'roden-law' ); ?></option>
+        <label for="roden_reviewed_by_<?php echo (int) $slot; ?>"><strong><?php echo esc_html( $label ); ?></strong></label><br>
+        <select id="roden_reviewed_by_<?php echo (int) $slot; ?>" name="_roden_reviewed_by[]" style="width:100%;">
+            <option value=""><?php echo esc_html( 0 === $slot ? __( '— Same as attributed attorney —', 'roden-law' ) : __( '— None —', 'roden-law' ) ); ?></option>
             <?php foreach ( $attorneys as $atty ) : ?>
-                <option value="<?php echo esc_attr( $atty->ID ); ?>" <?php selected( $reviewed_by, $atty->ID ); ?>>
+                <option value="<?php echo esc_attr( $atty->ID ); ?>" <?php selected( $reviewed_by[ $slot ] ?? 0, $atty->ID ); ?>>
                     <?php echo esc_html( $atty->post_title ); ?>
                 </option>
             <?php endforeach; ?>
         </select>
     </p>
-    <p class="description"><?php esc_html_e( 'The attorney who did the review. Published as reviewedBy only if admitted in every state this page covers (Jurisdiction); otherwise the page shows the review date with no name.', 'roden-law' ); ?></p>
+    <?php endforeach; ?>
+    <p class="description"><?php esc_html_e( 'The attorney(s) who did the review. No attorney is admitted in both Georgia and South Carolina, so a two-state page needs one reviewer from each. Published as reviewedBy only if together they are admitted in every state this page covers (Jurisdiction); otherwise the page shows the review date with no name.', 'roden-law' ); ?></p>
     <p class="description"><?php esc_html_e( 'Date an attorney last verified this page is accurate. Publishes as lastReviewed + reviewedBy on practice-area, resource and blog pages — location pages record the date but deliberately publish no review claim. Leave blank if no review has happened — do not guess, an unverified review claim is worse than none. Set this after any legal change, since template edits do not update the post\'s modified date.', 'roden-law' ); ?></p>
     <?php
     // Separate field, separate claim. Content gets corrected far more often
@@ -1084,9 +1088,15 @@ function roden_save_meta_fields( $post_id ) {
         }
 
         // Who reviewed it. Only meaningful alongside a review date.
-        $reviewed_by = absint( $_POST['_roden_reviewed_by'] ?? 0 );
-        if ( $reviewed_by && 'attorney' === get_post_type( $reviewed_by ) ) {
-            update_post_meta( $post_id, '_roden_reviewed_by', $reviewed_by );
+        $reviewed_by = array();
+        foreach ( (array) ( $_POST['_roden_reviewed_by'] ?? array() ) as $rid ) {
+            $rid = absint( $rid );
+            if ( $rid && 'attorney' === get_post_type( $rid ) && ! in_array( $rid, $reviewed_by, true ) ) {
+                $reviewed_by[] = $rid;
+            }
+        }
+        if ( $reviewed_by ) {
+            update_post_meta( $post_id, '_roden_reviewed_by', implode( ',', $reviewed_by ) );
         } else {
             delete_post_meta( $post_id, '_roden_reviewed_by' );
         }

@@ -193,7 +193,16 @@ foreach ( $posts as $p ) {
 		}
 
 		// Attorney attribution: the name is what a reviewer can check.
-		if ( '_roden_author_attorney' === $k || '_roden_reviewed_by' === $k ) {
+		if ( '_roden_reviewed_by' === $k ) {
+			$names = array();
+			foreach ( array_filter( array_map( 'absint', explode( ',', (string) $v ) ) ) as $rid ) {
+				$a       = get_post( $rid );
+				$names[] = $a ? $a->post_title : '(missing attorney ' . $rid . ')';
+			}
+			$meta[ $k ] = implode( ' + ', $names );
+			continue;
+		}
+		if ( '_roden_author_attorney' === $k ) {
 			$atty = get_post( (int) $v );
 			$meta[ $k ] = $atty ? $atty->post_title : '(missing attorney ' . (int) $v . ')';
 			continue;
