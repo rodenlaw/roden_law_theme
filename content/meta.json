@@ -742,6 +742,7 @@
                         "answer": "In Georgia, you have 2 years from the date of the accident (O.C.G.A. § 9-3-33). In South Carolina, you have 3 years (S.C. Code § 15-3-530). Do not let concerns about your expired license delay filing — the deadline applies regardless of your license status."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "An expired driver's license does not bar personal injury claims in Georgia or South Carolina. Courts distinguish between administrative violations and accident causation — an expired license does not cause collisions. Georgia (O.C.G.A. § 51-12-33) and South Carolina use modified comparative fault, reducing damages by fault percentage. Insurance companies may try to exploit an expired license, but Georgia's Court of Appeals held in 2025 that lack of a valid license 'does not, by itself, support a negligence claim' without a causal link to the crash, and South Carolina requires the same causal link. Georgia statute of limitations is 2 years (O.C.G.A. § 9-3-33); South Carolina is 3 years (S.C. Code § 15-3-530).",
                 "_roden_last_reviewed": "2026-10-02",
                 "_roden_meta_description": "An expired license does not bar an injury claim in Georgia or South Carolina. How courts treat the lapse, comparative fault, and the criminal penalties."
@@ -940,6 +941,7 @@
                         "answer": "Deer-vehicle collisions peak during October through December — the deer mating season (rut). During this period, deer are more active and more likely to cross roadways, especially at dawn and dusk."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Hitting an animal directly is covered by comprehensive insurance if you carry it, while swerving into another object falls under collision coverage. Livestock owners who negligently let animals run at large can be liable under O.C.G.A. § 4-3-3 (Georgia) and S.C. Code § 47-7-110 (South Carolina). Georgia allows 2 years for injury claims (O.C.G.A. § 9-3-33) and South Carolina allows 3 years (S.C. Code § 15-3-530). Minimum liability-only insurance does not cover animal strike damage to your vehicle.",
                 "_roden_last_reviewed": "2026-09-25"
             }
@@ -977,6 +979,7 @@
                         "answer": "Yes. Insurance companies routinely monitor claimants' social media accounts. Photos of physical activities, check-ins at events, or posts about your daily life can be used to argue your injuries are not as severe as claimed. Limit social media activity during your claim."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "After a car accident in Georgia or South Carolina, you have no obligation to speak with the at-fault driver's insurer. Never give recorded statements without legal counsel. Georgia uses modified comparative fault under O.C.G.A. § 51-12-33 (less than 50%), South Carolina allows recovery if you are 50% or less at fault (less than 51%). Injury lawsuit deadlines: 2 years in GA (O.C.G.A. § 9-3-33), 3 years in SC (S.C. Code § 15-3-530). Avoid admitting fault or saying you feel fine.",
                 "_roden_last_reviewed": "2026-10-02",
                 "_roden_meta_description": "What to say when an adjuster calls after a Georgia or South Carolina crash, and why you owe the at-fault driver's insurer no recorded statement."
@@ -1082,6 +1085,7 @@
                         "answer": "You may recover economic damages (medical expenses, lost wages, property damage), non-economic damages (pain and suffering, emotional distress, loss of enjoyment of life), and in cases involving extreme recklessness like DUI, punitive damages. Georgia caps punitive damages at $250,000 in most cases, with no cap where the defendant intended to cause harm or drove while substantially impaired by alcohol or drugs (O.C.G.A. § 51-12-5.1(f)-(g)). South Carolina caps them at the greater of three times compensatory damages or $500,000, a floor indexed each year ($739,245 in 2026), with no cap where the defendant intended harm, pled guilty to or was convicted of a felony arising from the same conduct, or was substantially impaired by alcohol or drugs (S.C. Code § 15-32-530)."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Red light runners are not automatically liable for intersection crashes in Georgia or South Carolina. Fault is determined by examining whether the other driver was speeding, made an illegal turn, or failed to exercise caution entering the intersection. Both states apply modified comparative fault rules — Georgia bars recovery at 50% or more fault (O.C.G.A. § 51-12-33), South Carolina at 51% or more (Nelson v. Concrete Supply Co.). Dashcam and surveillance video, traffic signal timing data, and witness testimony help establish fault; red light camera images exist only at Georgia's twelve permitted intersections and South Carolina has none. Filing deadlines are two years in Georgia (O.C.G.A. § 9-3-33) and three years in South Carolina (S.C. Code § 15-3-530).",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -1181,6 +1185,7 @@
                         "answer": "Free consultation with an experienced attorney who can review records, calculate damages, and provide a range based on comparable cases."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "There is no reliable \"average\" settlement. In the most recent federal study of state-court tort trials (Bureau of Justice Statistics, 2005 data), half of winning plaintiffs were awarded $24,000 or less ($15,000 in car-accident trials, $400,000 in medical-malpractice trials), but those are trial awards, not settlements. Only about 4% of tort cases end in a trial; most of the rest settle. Georgia caps punitive damages at $250,000 in most cases (O.C.G.A. § 51-12-5.1). South Carolina caps them at the greater of 3x compensatory damages or an inflation-indexed $500,000, which is $739,245 in 2026 (S.C. Code § 15-32-530); the cap rises to the greater of 4x or $2 million for certain profit-motivated misconduct or conduct that could support a felony conviction, and does not apply to impaired defendants, intent to harm, or a felony plea or conviction for the same conduct.",
                 "_roden_last_reviewed": "2026-10-02",
                 "_roden_meta_description": "No reliable \"average\" personal injury settlement exists. See what federal court data shows, what drives case value, and how GA and SC law applies."
@@ -1379,6 +1384,7 @@
                         "answer": "It depends on the state. In Georgia, PTSD is covered only when it comes with a physical injury from the same incident — a worker physically hurt in an assault can claim the resulting PTSD, but a worker traumatized by a robbery without physical injury cannot (Southwire Co. v. George; Abernathy v. City of Albany). In South Carolina, PTSD without a physical injury can be covered if you prove with medical evidence that the event was extraordinary and unusual for your particular job (S.C. Code § 42-1-160(B)) — a bar that is hard for police officers and other workers whose jobs already involve violence (Bentley v. Spartanburg County). An attorney can evaluate whether your psychological injuries qualify."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Workplace violence injuries are covered by workers' comp when the violence is connected to employment — customer attacks, criminal acts during work, coworker disputes over work matters, and violence against high-risk workers generally qualify. A worker who deliberately set out to injure someone is barred (O.C.G.A. § 34-9-17; S.C. Code § 42-9-60). Domestic violence at work is generally not covered. Beyond workers' comp, victims can file personal injury lawsuits against attackers and negligent security claims against property owners other than the employer. Report within 30 days in Georgia (O.C.G.A. § 34-9-80) or 90 days in South Carolina (S.C. Code § 42-15-20).",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -1488,6 +1494,7 @@
                         "answer": "You may recover medical expenses, lost wages, pain and suffering, property damage, and loss of enjoyment of life. When the at-fault driver's conduct was willful, wanton or showed conscious indifference to consequences — proven by clear and convincing evidence — punitive damages may also be available; in Georgia, negligence, even gross negligence, is not enough (O.C.G.A. § 51-12-5.1(b); Colonial Pipeline Co. v. Brown). Georgia generally caps punitive damages at $250,000 unless the driver intended harm or was impaired by alcohol or drugs; South Carolina caps them at the greater of three times compensatory damages or $500,000, indexed to $739,245 for 2026 (S.C. Code § 15-32-530), with no cap for intentional harm, a related felony conviction, or impairment. If the accident caused a fatality, the family may pursue a wrongful death claim."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Lane-change crashes number in the hundreds of thousands nationally each year (NHTSA), and blind spot crashes hit motorcyclists, bicyclists, and pedestrians hardest. Proper mirror adjustment, shoulder checks, and defensive driving significantly reduce risk. Georgia requires safe, signaled lane changes under O.C.G.A. §§ 40-6-48 and 40-6-123, with a 2-year filing deadline (O.C.G.A. § 9-3-33). South Carolina imposes similar duties under S.C. Code §§ 56-5-1900 and 56-5-2150, including a signal for at least the last 100 feet, with a 3-year deadline (S.C. Code § 15-3-530). Both states apply modified comparative fault rules.",
                 "_roden_last_reviewed": "2026-10-02",
                 "_roden_meta_description": "How blind spot crashes happen, how to set your mirrors, and how Georgia and South Carolina lane-change laws decide fault."
@@ -1724,6 +1731,7 @@
                         "answer": "In most cases, no. Initial settlement offers from insurance companies are often lower than the full value of a whiplash claim. Insurers make early offers hoping you will accept before you fully understand the extent of your injury and future treatment needs. An attorney can review any offer, calculate the full value of your damages including future medical costs, and negotiate for a fair settlement on your behalf."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Whiplash injuries range from Grade 0 (no symptoms) to Grade IV (fractures or dislocations), and compensation covers medical bills, lost wages, pain and suffering, and diminished quality of life. Georgia's modified comparative fault rule (O.C.G.A. § 51-12-33) bars recovery at 50% or more fault, while South Carolina bars recovery at 51% or more (Nelson v. Concrete Supply Co.). Filing deadlines are two years in Georgia (O.C.G.A. § 9-3-33) and three years in South Carolina (S.C. Code § 15-3-530). Thorough medical documentation and consistent treatment records are critical to maximizing a whiplash claim.",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -1792,6 +1800,7 @@
                         "answer": "Yes. When an insurance company disputes a police report that supports your claim, an experienced personal injury attorney can subpoena the officer to testify, use the other driver's guilty plea to a traffic charge as an admission, gather independent evidence to corroborate the report, and — when it is your own insurer refusing a covered claim — pursue the statutory bad-faith penalties (O.C.G.A. § 33-4-6; S.C. Code § 38-59-40)."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Insurance companies can and frequently do dispute police report findings in Georgia and South Carolina, using their own investigators and adjusters to challenge the officer's fault determination. In South Carolina a crash report cannot be used as evidence of negligence at trial (S.C. Code § 56-5-1290); in Georgia only the officer's own observations come in under the public-records exception (O.C.G.A. § 24-8-803(8)). In both states the responding officer can testify about what they observed. If a police report contains errors, you can ask the investigating agency to correct them; whether it issues a supplemental report is at the agency's discretion. Strengthening your claim with independent evidence such as dashcam footage, witness statements, medical records, and accident reconstruction reports is essential when an insurer disputes the official report.",
                 "_roden_last_reviewed": "2026-09-23"
             }
@@ -1860,6 +1869,7 @@
                         "answer": "Yes. Even if you were partially at fault, you may have a valid counterclaim for your own injuries under Georgia or South Carolina's comparative fault rules. You can recover compensation as long as your share of fault is below the threshold — less than 50% in Georgia, less than 51% in South Carolina. An attorney can evaluate whether a counterclaim is viable."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Yes, someone can sue you after a car accident in Georgia or South Carolina — both are at-fault states. Your liability insurance covers your defense and damages up to policy limits, but personal assets are at risk when damages exceed coverage. Georgia and South Carolina both require only $25,000 per person minimum coverage. Comparative fault rules (O.C.G.A. § 51-12-33) reduce your exposure if the other driver shared blame. Filing deadlines are two years in Georgia and three years in South Carolina.",
                 "_roden_last_reviewed": "2026-08-31"
             }
@@ -2071,6 +2081,7 @@
                         "answer": "Significantly. Insurance companies know a lawyer will hold them accountable and take the case to trial if necessary. We handle cases on contingency — you pay nothing unless we win."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Insurance companies use tactics including recorded statements, insurer-selected medical exams, over-broad medical record requests, pre-existing condition blame, delays, and lowball offers. Bad-faith remedies run against your own insurer, not the other driver's: Georgia's O.C.G.A. § 33-4-6 gives a policyholder up to 50% of the loss or $5,000, whichever is greater, plus attorney's fees after a 60-day demand; South Carolina gives attorney's fees after a 90-day demand (S.C. Code § 38-59-40) and a bad-faith tort claim (Nichols v. State Farm). Both states' claims-handling rules (O.C.G.A. § 33-6-34; S.C. Code § 38-59-20) are enforced by the insurance regulator. Never give a recorded statement to the other driver's insurer or sign a blanket medical release without consulting an attorney.",
                 "_roden_last_reviewed": "2026-09-25"
             }
@@ -2712,6 +2723,7 @@
                         "answer": "The deceased driver cannot testify, which means the insurance company may try to shift blame onto you without contradiction. This makes objective evidence critical: police reports, witness statements, dashcam footage, accident reconstruction analysis, cell phone records, and toxicology reports from the autopsy can all help establish fault in the absence of the other driver's testimony."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Your right to compensation does not disappear when the at-fault driver dies. Georgia (O.C.G.A. § 9-2-41) and South Carolina (S.C. Code § 15-5-90) both allow personal injury claims to survive the tortfeasor's death. You can pursue the claim through the driver's liability insurance, a lawsuit against their estate, or your own UM/UIM coverage. Filing deadlines are two years in Georgia (O.C.G.A. § 9-3-33) and three in South Carolina (S.C. Code § 15-3-530), and the driver's death can pause those clocks (O.C.G.A. § 9-3-93; S.C. Code § 62-3-802(b)), but any recovery beyond the driver's insurance must also be presented as a probate claim, in South Carolina within the earlier of one year after death or eight months after notice to creditors (S.C. Code § 62-3-803).",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -2749,6 +2761,7 @@
                         "answer": "In Georgia, your lost wage award is reduced by your percentage of fault, and you recover nothing if you are 50% or more at fault (O.C.G.A. § 51-12-33). In South Carolina, the threshold is 51% — you can recover as long as your fault does not equal or exceed 51%. Both states reduce your total award proportionally to your share of blame."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Lost wages and lost earning capacity are two distinct categories of economic damages recoverable in Georgia and South Carolina personal injury cases. Lost wages cover income already missed during recovery, while lost earning capacity addresses permanent reductions in future income. Georgia's 2-year statute of limitations (O.C.G.A. § 9-3-33) and modified comparative fault rule (O.C.G.A. § 51-12-33) allow recovery if less than 50% at fault. South Carolina gives 3 years (S.C. Code § 15-3-530) with a 51% fault threshold. Self-employed and gig workers can recover using tax returns, contracts, and financial records.",
                 "_roden_last_reviewed": "2026-09-25"
             }
@@ -3035,6 +3048,7 @@
                         "definition": "Losses that arrive with no invoice: physical pain, mental anguish, disfigurement, and loss of enjoyment of life. Proved through testimony and medical records rather than receipts. Also called non-economic damages."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Compensatory damages reimburse injury victims for medical bills, lost wages, and pain and suffering, while punitive damages punish extreme misconduct like drunk driving or fraud. Georgia caps punitive damages at $250,000 unless specific exceptions apply (O.C.G.A. § 51-12-5.1), and South Carolina caps them at the greater of three times compensatory damages or $500,000 (indexed each year; $739,245 in 2026) (S.C. Code § 15-32-530) on clear and convincing evidence, a cap lifted for intent to harm, a felony conviction, or substantial impairment by alcohol or drugs. Both damage types require thorough documentation and expert testimony to maximize recovery.",
                 "_roden_last_reviewed": "2026-09-23"
             }
@@ -3108,6 +3122,7 @@
                         "answer": "Key questions include: What is the fee percentage at each stage? Are expenses deducted before or after the attorney fee? What happens to expenses if the case fails? Can I terminate the agreement? How will settlement funds be handled?"
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "The contingency fee system allows injury victims to hire experienced attorneys with no upfront costs — the lawyer's fee is a percentage of the recovery, commonly one-third, often higher if suit is filed or the case is tried. Georgia and South Carolina both require contingent fee agreements to be in writing (Rule 1.5(c) of each state's Rules of Professional Conduct); South Carolina also requires the client's signature. Case expenses like expert witnesses and filing fees are typically advanced by the firm and repaid from the recovery. At Roden Law, fees and costs apply only upon successful recovery — no fees or costs with no recovery.",
                 "_roden_last_reviewed": "2026-10-02",
                 "_roden_meta_description": "How contingency fees work in Georgia and South Carolina injury cases: common percentages, case expenses, written-agreement rules, and questions to ask."
@@ -3309,6 +3324,7 @@
                         "answer": "Georgia generally allows two years from the date of injury to file a personal injury lawsuit (O.C.G.A. § 9-3-33), but no strict liability action may be brought more than ten years after the product's first sale (O.C.G.A. § 51-1-11(b)(2)), and that bar also covers negligence claims against the manufacturer, with narrow exceptions (O.C.G.A. § 51-1-11(c)). South Carolina allows three years (S.C. Code § 15-3-530(5)), running from when you knew or reasonably should have known of the claim (S.C. Code § 15-3-535), and has no statute of repose for product claims. Keeping the tool, its packaging and any manual is what makes such a claim provable."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Keep the tool that injured you, its packaging and any manual, and act quickly: Georgia generally allows two years to sue (O.C.G.A. § 9-3-33) and bars strict liability claims more than ten years after a product's first sale (O.C.G.A. § 51-1-11(b)(2)), while South Carolina allows three years (S.C. Code § 15-3-530(5)) with no repose period. Georgia holds the manufacturer strictly liable for a defective tool, but not a seller that did not make it (O.C.G.A. § 51-1-11.1). South Carolina holds any seller of a defective, unreasonably dangerous product strictly liable, retailers included (S.C. Code § 15-73-10). CPSC estimates about 30,600 emergency-room table saw blade-contact injuries a year (2010-2021 data), 96.4 percent of them to the finger in its 2017 study. The CDC reports about 36,000 emergency-room visits a year for chainsaw injuries.",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -3446,6 +3462,7 @@
                         "answer": "You can, but it is not recommended. A poorly drafted demand that undervalues your claim or admits fault can permanently damage your recovery. An experienced attorney maximizes the demand and anticipates insurer tactics. In Georgia, only a demand prepared with a lawyer's help is an O.C.G.A. § 9-11-67.1 offer."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "A personal injury demand letter is a formal document your attorney sends to the insurance company outlining liability, itemizing damages, and demanding compensation. Send after reaching MMI but before the statute of limitations expires (2 years GA, 3 years SC). In Georgia motor-vehicle cases an attorney's pre-suit demand must follow O.C.G.A. § 9-11-67.1 (at least 30 days to accept, 40 to pay). Bad-faith penalties in both states run against your own insurer only: Georgia's O.C.G.A. § 33-4-6 after a 60-day demand, South Carolina's S.C. Code § 38-59-40 after a 90-day demand. South Carolina has no demand statute for claims against the other driver's insurer.",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -3612,6 +3629,7 @@
                         "answer": "Smaller claims can often be handled yourself, including in magistrate court (up to $15,000 in Georgia, rising to $25,000 on January 1, 2027, and $7,500 in South Carolina). For larger claims, structural damage, or an insurer that will not move, a lawyer can make the formal demand that preserves Georgia's bad-faith penalty."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Diminished value claims recover the loss in vehicle market value after repair. Georgia is one of the strongest DV states (State Farm v. Mabry, 2001; O.C.G.A. § 33-4-7). South Carolina allows third-party DV claims (Newman v. Brown) but not under a standard collision policy (Schulmeyer v. State Farm). An independent appraisal is the best answer to an insurer's 17c number.",
                 "_roden_last_reviewed": "2026-10-02",
                 "_roden_meta_description": "Recover your repaired car's lost value in Georgia (4 years to sue) or South Carolina (3 years). How DV claims, the 17c formula and appraisals work."
@@ -3815,6 +3833,7 @@
                         "answer": "Seek medical attention immediately for wound care and infection prevention. Report the bite to animal control and the S.C. Department of Public Health. Document the dog, owner, and location. Photograph your injuries. Get witness information."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "South Carolina imposes strict liability on dog owners under S.C. Code § 47-3-110, meaning victims need not prove the owner knew the dog was dangerous. Landlords are generally not liable for a tenant's dog, but may be if the attack happened in a common area they control and they knew the dog was dangerous (Clea v. Odom, 2011). Georgia requires proof that the dog was dangerous — usually the owner's knowledge of prior aggression, or a leash-law violation (O.C.G.A. § 51-2-7). Provocation is a defense in both states. South Carolina's filing deadline is three years (S.C. Code § 15-3-530); Georgia allows two years (O.C.G.A. § 9-3-33).",
                 "_roden_last_reviewed": "2026-10-05",
                 "_roden_meta_description": "South Carolina holds dog owners strictly liable under S.C. Code § 47-3-110. What it means for a Charleston bite claim, landlord rules, and deadlines."
@@ -3884,6 +3903,7 @@
                         "answer": "Absolutely. An experienced personal injury attorney can file motions to exclude irrelevant driving history evidence, counter insurance company arguments about your past, and focus the case on the at-fault driver's negligence. At Roden Law, we handle cases on a contingency fee basis — you pay nothing unless we recover compensation for you. Call 1-844-RESULTS for a free consultation."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "A prior driving record with traffic violations, DUI charges, or previous accidents does not automatically disqualify you from filing a car accident claim in Georgia or South Carolina. Under Georgia's modified comparative fault rule (O.C.G.A. § 51-12-33), you can recover damages if less than 50% at fault. South Carolina sets the threshold at 51%. Both states follow evidentiary rules that generally prohibit using prior bad acts to prove fault in the current incident, though exceptions exist for pattern evidence and credibility impeachment.",
                 "_roden_last_reviewed": "2026-09-01"
             }
@@ -3988,6 +4008,7 @@
                         "answer": "Key evidence includes surveillance camera footage, witness testimony, the police report, the driver's cell phone records showing distraction, accident reconstruction analysis, and vehicle black box data showing speed and braking. This evidence helps establish driver negligence independent of the pedestrian's intoxication."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Intoxicated pedestrians can file personal injury claims in both Georgia and South Carolina under modified comparative fault rules. Georgia allows recovery if less than 50% at fault (O.C.G.A. § 51-12-33); South Carolina if less than 51% (Nelson v. Concrete Supply Co.). Drivers owe a duty of care to all pedestrians, and both states' statutes expressly require extra precaution around an obviously intoxicated person (O.C.G.A. § 40-6-93; S.C. Code § 56-5-3230). Compensation is reduced proportionally to fault percentage. Georgia has a 2-year statute of limitations (O.C.G.A. § 9-3-33); South Carolina has 3 years (S.C. Code § 15-3-530).",
                 "_roden_last_reviewed": "2026-10-02",
                 "_roden_meta_description": "Hit by a car after drinking? Intoxication does not automatically bar a pedestrian injury claim in Georgia or South Carolina. How shared fault works."
@@ -4186,6 +4207,7 @@
                         "answer": "Not as PIP. Georgia does not require PIP and Georgia insurers sell Medical Payments (MedPay) coverage instead — an optional coverage that pays medical expenses for you and your passengers regardless of fault, up to the limit you choose. It does not replace lost wages; those are recovered from the at-fault driver's liability insurer."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Georgia and South Carolina are both fault states where the at-fault driver pays for damages, unlike no-fault states that use PIP coverage. Georgia bars recovery at 50% fault (O.C.G.A. § 51-12-33); South Carolina bars at 51% (Nelson v. Concrete Supply Co.). Georgia's statute of limitations is two years (O.C.G.A. § 9-3-33); South Carolina allows three years (S.C. Code § 15-3-530). Understanding these rules is critical to maximizing your car accident recovery.",
                 "_roden_last_reviewed": "2026-09-23"
             }
@@ -4254,6 +4276,7 @@
                         "answer": "At Roden Law, we handle all personal injury cases — including claims for injured children — on a contingency fee basis. This means you pay nothing upfront and owe no attorney fees unless we recover compensation for your child. We typically advance case costs and expenses. Call 1-844-RESULTS for a free, no-obligation consultation about your child's injury claim."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Parents and legal guardians can file personal injury claims on behalf of injured children in both Georgia and South Carolina. Georgia's statute of limitations for minors is tolled until age 18 under O.C.G.A. § 9-3-90, giving children until their 20th birthday to file (medical malpractice claims run on a shorter clock, O.C.G.A. § 9-3-73). South Carolina's tolling provision (S.C. Code § 15-3-40) extends the deadline only to one year past the child's 18th birthday — age 19 — or three years from the injury if that is later. Both states require court approval for larger minor settlements — above $25,000 in Georgia and above $2,500 in South Carolina — with the money paid to a conservator, into a court-restricted account or into a structured settlement. Recoverable damages include medical costs, future earning capacity, pain and suffering, and emotional impact.",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -4529,6 +4552,7 @@
                         "answer": "Do not accept the insurer's fault determination without consulting an attorney. Insurance companies have a financial incentive to assign you as much fault as possible. An experienced personal injury lawyer can independently investigate the accident, gather evidence that supports your version of events, and negotiate to minimize your assigned fault percentage."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Georgia bars personal injury recovery at 50% fault under O.C.G.A. § 51-12-33, while South Carolina sets the bar at 51% under Nelson v. Concrete Supply Co. — a one-percentage-point difference that can mean the difference between a six-figure recovery and nothing. Both states reduce damages proportionally by the plaintiff's fault percentage. Insurance companies aggressively exploit comparative negligence to minimize payouts through recorded statements, surveillance, and rapid lowball offers.",
                 "_roden_last_reviewed": "2026-08-31"
             }
@@ -4666,6 +4690,7 @@
                         "answer": "Yes. Georgia requires an ante-litem notice within six months for municipal claims under O.C.G.A. § 36-33-5 and within 12 months for county claims (O.C.G.A. § 36-11-1) and state claims. South Carolina requires no pre-suit notice, but the Tort Claims Act shortens the filing deadline to two years (S.C. Code § 15-78-110); filing a verified claim within one year is optional and extends it to three."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Georgia allows two years to file personal injury lawsuits under O.C.G.A. § 9-3-33, while South Carolina allows three years under S.C. Code § 15-3-530. Exceptions include tolling for minors and mental incapacity in both states, and South Carolina's discovery rule; Georgia has no general discovery rule. Government claims run on shorter clocks — ante litem notice within six months for a Georgia city, and a two-year filing deadline under South Carolina's Tort Claims Act. Missing the deadline permanently bars recovery.",
                 "_roden_last_reviewed": "2026-09-25"
             }
@@ -4703,6 +4728,7 @@
                         "answer": "Potentially yes. If the speeding driver's conduct rises to willful misconduct or conscious indifference to consequences, punitive damages may be available. Georgia caps punitive damages at $250,000 in most cases, with no cap where the driver intended to cause harm or was substantially impaired by alcohol or drugs (O.C.G.A. § 51-12-5.1(f)-(g)). South Carolina caps them at the greater of three times compensatory damages or $500,000 — a floor indexed to inflation and set at $739,245 for 2026 — and removes the cap where the driver was substantially impaired (S.C. Code § 15-32-530)."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Georgia's Super Speeder Law (O.C.G.A. § 40-6-189(b)) imposes an additional $200 surcharge on drivers convicted of 75+ mph on two-lane roads or 85+ mph anywhere, with automatic license suspension for non-payment within 120 days. South Carolina has no equivalent law; it fines speeding on a tiered scale that tops out at $75-$200 or 30 days in jail for 25+ mph over (S.C. Code § 56-5-1520), and can charge reckless driving (S.C. Code § 56-5-2920) where the speed shows wilful or wanton disregard for safety. Proof that a driver was speeding establishes negligence per se (duty and breach) in both states; the injured person must still prove causation and damages, and modified comparative fault then applies (Georgia bars recovery at 50% fault, South Carolina at 51%).",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -4897,6 +4923,7 @@
                         "answer": "Report it to staff so an incident record exists, photograph the equipment or hazard involved before it is fixed or cleared, get medical attention, and keep your copy of any waiver you signed for review."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_last_reviewed": "2026-10-02",
                 "_roden_meta_description": "Hurt at a gym in Georgia or South Carolina? Learn when a signed waiver bars a claim, when it does not, and who may be liable for your injury."
             }
@@ -5027,6 +5054,7 @@
                         "answer": "Yes. South Carolina allows recovery if your fault is less than 51 percent (Nelson v. Concrete Supply Co.). Georgia applies a stricter threshold of less than 50 percent."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Highway 41 in Mount Pleasant has become increasingly dangerous as rapid residential and commercial development outpaces road infrastructure improvements. Common crashes include T-bone collisions at new intersections, rear-end pileups from sudden congestion, and bicycle or pedestrian strikes. Liable parties may include negligent drivers, developers, or Charleston County for inadequate road design. South Carolina's 3-year statute of limitations applies (S.C. Code 15-3-530), and comparative fault bars recovery at 51% or more.",
                 "_roden_last_reviewed": "2026-08-31"
             }
@@ -5202,6 +5230,7 @@
                         "answer": "Absolutely. Your attorney can move to exclude evidence obtained illegally. Secretly recorded or intercepted communications are inadmissible by statute in both states (O.C.G.A. § 16-11-67; S.C. Code § 17-30-65), and evidence gathered by trespass or other privacy violations can be challenged as well. They can also challenge misleading surveillance footage that shows a brief moment taken out of context — for example, a 10-second clip of you bending over does not disprove chronic back pain. Expert testimony can explain how edited surveillance misrepresents your actual condition."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Insurance companies routinely hire licensed private investigators to conduct surveillance on personal injury claimants in Georgia and South Carolina. Georgia requires PI licensing under O.C.G.A. § 43-38-6 and prohibits eavesdropping and secret recording under O.C.G.A. § 16-11-62. South Carolina governs PI licensing under S.C. Code § 40-18-70 (SLED) and wiretapping under S.C. Code § 17-30-20. PIs can legally observe, photograph, and video record you in public places and monitor your social media. They cannot trespass, record private conversations, hack accounts, or access medical records. Protect your claim by following doctor's orders, limiting social media, and being honest about your physical limitations.",
                 "_roden_last_reviewed": "2026-09-23"
             }
@@ -5302,6 +5331,7 @@
                         "answer": "Personal injury victims can recover <strong>economic damages</strong> (medical bills, lost wages, property damage, future medical costs), <strong>non-economic damages</strong> (pain and suffering, emotional distress, loss of enjoyment of life), and in rare cases involving egregious conduct, <strong>punitive damages</strong>. Georgia caps punitive damages at $250,000 in most cases (O.C.G.A. § 51-12-5.1), while South Carolina caps them at three times compensatory damages or $739,245, the 2026 inflation-indexed figure, whichever is greater."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "A viable personal injury case requires four elements: duty of care, breach, causation, and damages. Georgia allows recovery if you are less than 50% at fault (O.C.G.A. § 51-12-33); South Carolina's threshold is 51%. Filing deadlines are strict — two years in Georgia (O.C.G.A. § 9-3-33) and three years in South Carolina (S.C. Code § 15-3-530). Recoverable damages include medical expenses, lost wages, pain and suffering, and in egregious cases, punitive damages subject to state-specific caps.",
                 "_roden_last_reviewed": "2026-08-31"
             }
@@ -5339,6 +5369,7 @@
                         "answer": "Follow your treatment plan consistently, do not return to work prematurely, get an independent medical opinion if you disagree with the insurer's doctor, challenge premature benefit terminations through a hearing, and hire an attorney early. Insurers use tactics like premature MMI declarations, low impairment ratings, and surveillance to justify ending benefits — legal representation helps counter these strategies."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Workers' comp benefit duration varies by state and disability type: Georgia caps TTD at 400 weeks from the date of injury (O.C.G.A. § 34-9-261), with no cap for catastrophic injuries while the disability lasts; South Carolina allows 500 weeks (S.C. Code § 42-9-10), or life for paraplegia, quadriplegia or physical brain damage (S.C. Code § 42-9-10(C)). Medical benefits outlast wage benefits but are not unlimited: Georgia covers up to 400 weeks from injury unless the injury is catastrophic (O.C.G.A. § 34-9-200), and South Carolina covers treatment the Commission finds will lessen your disability (S.C. Code § 42-15-60). To maximize benefits, follow your treatment plan, challenge premature MMI declarations, and never accept a settlement without legal review. When benefits end, options include SSDI, third-party lawsuits, and vocational rehabilitation.",
                 "_roden_last_reviewed": "2026-10-02",
                 "_roden_meta_description": "Georgia pays TTD up to 400 weeks, South Carolina up to 500. How catastrophic injuries, medical limits and settlements shape how long workers' comp lasts."
@@ -5377,6 +5408,7 @@
                         "answer": "The same time limits apply — two years in Georgia and three years in South Carolina — but the clock starts on the <strong>date of death</strong> rather than the date of the accident. If a car accident victim survives for several months before passing away, the filing deadline is measured from when they died, not when the crash occurred."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "In Georgia, car accident victims have two years to file a personal injury lawsuit (O.C.G.A. § 9-3-33), while South Carolina allows three years (S.C. Code § 15-3-530). Missing these deadlines permanently bars the claim. Exceptions exist for minors, mental incapacity, and defendants who leave the state. Both states follow modified comparative fault rules that may reduce or eliminate recovery based on the injured party's share of blame.",
                 "_roden_last_reviewed": "2026-08-31"
             }
@@ -5846,6 +5878,7 @@
                         "answer": "Discuss the details of your case with an experienced attorney before making decisions about settlement. Documenting the recommendation and the reasoning behind it is what allows the claim to account for it."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_last_reviewed": "2026-09-25"
             }
         },
@@ -5985,6 +6018,7 @@
                         "answer": "You must prove the doctor had a duty to disclose specific information, failed to do so, a reasonable patient in your position would have declined the procedure (or, in Georgia, chosen an accepted alternative) with full information, and you suffered actual harm from an undisclosed risk. This requires medical records, expert testimony, and evidence of what was or was not communicated."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Informed consent requires doctors to disclose risks, benefits, and alternatives before treatment. Georgia's duty is statutory, covers only surgery under general, spinal or major regional anesthesia and certain diagnostic procedures, and treats a compliant signed form as a rebuttable presumption of consent (O.C.G.A. § 31-9-6.1); South Carolina's duty is broader in scope but measured by what a reasonable physician would disclose, proven through expert testimony (Hook v. Rothstein). Claims must be filed within 2 years of the injury in Georgia (O.C.G.A. § 9-3-71) or 3 years in South Carolina, capped at 6 years (S.C. Code § 15-3-545); both require expert affidavits, and South Carolina also requires a pre-suit notice and mediation (S.C. Code § 15-79-125).",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -6018,6 +6052,7 @@
                         "answer": "You can, and many people do. The risk is undervaluing the claim or omitting losses that are hard to recover later, which is why having the letter prepared or reviewed by a lawyer is usually worthwhile. Two cautions: in Georgia only a demand prepared with a lawyer is a § 9-11-67.1 offer, and both states cut recovery by your share of fault. Georgia bars recovery at 50% or more (O.C.G.A. § 51-12-33); South Carolina bars it when your fault is greater than the other driver's (Nelson v. Concrete Supply Co.)."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Your deadline to sue does not pause while an insurer ignores your demand: two years from the injury in Georgia (O.C.G.A. § 9-3-33) and three years in South Carolina (S.C. Code § 15-3-530). In a Georgia motor-vehicle case, a demand prepared with a lawyer is a pre-suit offer under O.C.G.A. § 9-11-67.1 and must give the insurer at least 30 days to accept and at least 40 days to pay. Neither state sets a statutory deadline for the other driver's insurer to answer a demand. The bad-faith penalties in O.C.G.A. § 33-4-6 and S.C. Code § 38-59-40 apply only to your own insurer; against the other driver's insurer, the remedy is a lawsuit against the driver, not a bad-faith claim. Unfair claim practices, such as failing to acknowledge claim communications with reasonable promptness, can be reported to the state insurance regulator.",
                 "_roden_last_reviewed": "2026-09-23"
             }
@@ -6093,6 +6128,7 @@
                         "answer": "It depends on the state. In South Carolina, it is illegal to fire or demote you for filing a workers compensation claim in good faith; you can sue for lost wages and reinstatement, but you must do so within one year (S.C. Code § 41-1-80). Georgia has no equivalent law, and most employees there can be fired at will (Evans v. Bibb Co., 178 Ga. App. 139 (1986)), but losing your job does not necessarily end your benefits, especially if the firing was a pretext to avoid paying them (Padgett v. Waffle House, 269 Ga. 105 (1998)). An attorney can review your options in either state."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Workers compensation is a legally mandated insurance program — not an optional employee benefit — that provides medical care and wage replacement for work-related injuries. Georgia requires coverage for employers with 3+ employees (O.C.G.A. § 34-9-1 et seq.), while South Carolina requires it for 4+ employees (S.C. Code § 42-1-10 et seq.). Benefits include TTD, TPD, PPD, medical treatment and death benefits, plus vocational rehabilitation in Georgia catastrophic cases. Filing deadlines are 1 year in Georgia (or 1 year after the last employer-paid treatment, or 2 years after the last income benefit, O.C.G.A. § 34-9-82) and 2 years in South Carolina.",
                 "_roden_last_reviewed": "2026-10-02",
                 "_roden_meta_description": "Workers' comp is required, not a perk: Georgia employers with 3+ workers and South Carolina employers with 4+ must carry it. Benefits and deadlines."
@@ -6421,6 +6457,7 @@
                         "answer": "An LOP is a voluntary agreement arranged by your attorney, usually before or early in treatment. A medical lien is a statutory right that hospitals and providers can assert after treatment. In Georgia, hospitals, physician practices and certain other providers have a statutory lien under O.C.G.A. § 44-14-470. South Carolina has no hospital-lien statute; providers there rely on contract, including letters of protection."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "A letter of protection (LOP) is a written agreement, signed by you and your attorney, promising a medical provider that its bills will be paid out of your settlement or verdict, so you can get treatment without paying up front. You remain responsible for the bill. LOPs are common in Georgia and South Carolina personal injury cases where victims lack health insurance or face coverage gaps. Georgia gives hospitals, physician practices and other providers a statutory lien on your injury claim (O.C.G.A. § 44-14-470); South Carolina has no hospital-lien statute, so South Carolina providers rely on contract — often a letter of protection. Insurance companies may attack LOPs by arguing provider bias. In Georgia, for injuries on or after April 21, 2025, the insurer can obtain the letter itself, itemized charges, any sale of the bill to a third party and its price, and who referred you (O.C.G.A. § 51-12-1.1(d)). Attorneys can often negotiate LOP balances down after settlement.",
                 "_roden_last_reviewed": "2026-10-02",
                 "_roden_meta_description": "Learn how a letter of protection lets you get medical treatment now and pay from your settlement later, and how LOPs work in Georgia and South Carolina."
@@ -6680,6 +6717,7 @@
                         "answer": "Seek medical care and preserve the scene evidence, then get the circumstances reviewed. These cases turn on medical history and foreseeability, so a free case evaluation is the practical way to assess them."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "A seizure does not automatically make a driver liable for a crash; in both Georgia and South Carolina the question is whether the seizure was foreseeable, such as when the driver knew the condition was uncontrolled or ignored a doctor's advice. Georgia bars recovery if you are 50 percent or more at fault, while South Carolina bars it only at 51 percent, so a driver found exactly half at fault recovers half in South Carolina and nothing in Georgia. In Georgia, a noncommercial license cannot be denied for epilepsy unless a seizure occurred within the previous six months (O.C.G.A. § 40-5-35). South Carolina sets no fixed seizure-free period, and the SCDMV decides medical fitness case by case with advice from its Medical Advisory Board. About 3.4 million Americans have active epilepsy, and CDC data show fewer than half of adults taking epilepsy medication were seizure-free in the previous year.",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -6779,6 +6817,7 @@
                         "answer": "If the at-fault driver successfully proves a sudden medical emergency, coverage that pays regardless of fault may still apply: MedPay, personal injury protection (PIP) if you purchased it (neither state requires it), and health insurance. Uninsured/underinsured motorist (UM/UIM) coverage pays only what you are legally entitled to recover from the other driver, so it applies when the driver is liable but uninsured or underinsured. An attorney can review all available coverage to maximize your recovery even when the other driver escapes liability."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "The sudden medical emergency defense allows drivers to avoid liability for accidents caused by unforeseeable medical events like heart attacks, seizures, and strokes. In both Georgia and South Carolina, the burden falls on the driver to prove the episode was genuinely unforeseeable. The defense fails when the driver had prior episodes, doctor's warnings, or untreated conditions. Georgia's 2-year statute of limitations (O.C.G.A. § 9-3-33) and South Carolina's 3-year deadline (S.C. Code § 15-3-530) apply. Even if the defense succeeds, coverage that pays regardless of fault (MedPay, optional PIP, health insurance) may still apply, and in South Carolina a medical provider who failed to warn the driver about impairing treatment may be liable; Georgia does not recognize that claim. UM/UIM applies when the driver is liable but uninsured or underinsured.",
                 "_roden_last_reviewed": "2026-09-23"
             }
@@ -6909,6 +6948,7 @@
                         "answer": "Ignoring a valid lien has serious consequences. Insurers, workers' compensation carriers and Medicaid can sue to recover what they are owed (in Georgia, a hospital enforces its lien against the at-fault party or its insurer), and your attorney must hold disputed funds in trust until the claims are resolved. Medicare charges interest on unpaid demands, refers unpaid debts to the U.S. Treasury for offset, and can collect from your attorney; in South Carolina, continued Medicaid eligibility depends on cooperating with the agency's reimbursement claim."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Liens from hospitals, health insurers, Medicare, Medicaid, workers' compensation carriers, and attorneys can significantly reduce your personal injury settlement. Georgia's provider lien statute (O.C.G.A. § 44-14-470) lets hospitals and medical practices place a lien on your claim; South Carolina has no hospital-lien statute, so providers there rely on contract. Federal liens from Medicare (42 U.S.C. § 1395y) take priority over state law. Workers' comp liens are governed by O.C.G.A. § 34-9-11.1 in Georgia and S.C. Code § 42-1-560 in South Carolina. An experienced attorney audits every lien, challenges invalid or unrelated charges, and applies every statutory reduction the lien holder must accept.",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -7039,6 +7079,7 @@
                         "answer": "You can (1) request a <strong>second opinion</strong> from an independent physician, (2) have your attorney request a hearing — Form WC-14 with Georgia's State Board or Form 50 with South Carolina's Commission, (3) provide additional medical evidence showing you have not yet stabilized, or (4) in Georgia, use your one-time independent examination at the insurer's expense within 120 days of your first income-benefit check (O.C.G.A. § 34-9-202(e)); in South Carolina, ask the Commission to order an examination (S.C. Code § 42-15-80). Do not accept a premature MMI without legal advice."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Maximum medical improvement (MMI) is when your condition stabilizes — not when you are fully healed. In Georgia, MMI is when your impairment rating is assigned; PPD (O.C.G.A. § 34-9-263) is paid once TTD or TPD ends, and MMI alone does not end TTD; catastrophic injuries are not subject to the 400-week caps (O.C.G.A. §§ 34-9-261, 34-9-200.1). In South Carolina, MMI triggers PPD within the 500-week cap (S.C. Code § 42-9-10, § 42-9-30). Medical benefits continue after MMI in both states, subject to Georgia's 400-week limit for non-catastrophic injuries. Do not settle a PI case before reaching MMI — and challenge premature determinations.",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -7250,6 +7291,7 @@
                         "answer": "A local Charleston attorney can handle your case even if you PCS to another base. You would only need to return for trial."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "The Feres Doctrine generally bars active-duty military personnel from suing the federal government for injuries sustained during service, but off-duty accidents and claims against civilian drivers are permitted. Civilians injured by military vehicles near Joint Base Charleston can file claims against the government under the Federal Tort Claims Act. Dangerous roads near the base include I-526 and Rivers Avenue. South Carolina's filing deadline is three years (S.C. Code § 15-3-530).",
                 "_roden_last_reviewed": "2026-08-31"
             }
@@ -7453,6 +7495,7 @@
                         "answer": "In Georgia, the personal injury statute of limitations is 2 years from the date of injury under O.C.G.A. § 9-3-33. In South Carolina, you have 3 years under S.C. Code § 15-3-530. These deadlines apply to both ordinary negligence and gross negligence claims."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Ordinary negligence is the failure to exercise reasonable care, while gross negligence involves conscious disregard for others' safety. Georgia recognizes three degrees of negligence under O.C.G.A. §§ 51-1-2 through 51-1-4 (§ 51-1-4 defines gross negligence). In Georgia, negligence, even gross negligence, does not support punitive damages; O.C.G.A. § 51-12-5.1(b) requires clear and convincing evidence of wilful misconduct, malice, fraud, wantonness, oppression or conscious indifference. Georgia caps punitive damages at $250,000 under O.C.G.A. § 51-12-5.1, with no cap where the defendant intended harm or was substantially impaired by alcohol or drugs, or in product liability cases. South Carolina requires wilful, wanton or reckless conduct (S.C. Code § 15-32-520(D)) and caps punitive damages at the greater of three times compensatory damages or $500,000 (indexed each year; $739,245 in 2026) under S.C. Code § 15-32-530. Georgia's comparative fault threshold is 50% (O.C.G.A. § 51-12-33); South Carolina's is 51% (Nelson v. Concrete Supply Co.).",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -7654,6 +7697,7 @@
                         "answer": "Absolutely. A denied claim is not the end. An attorney can identify the issue, gather evidence, press the insurer to reconsider, bring a bad-faith claim against your own insurer where the facts support one, and take the case against the at-fault party to trial. We handle denied claims on contingency — you pay nothing unless we recover."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "A denied claim is not the end. Steps include reviewing the denial letter, gathering evidence, asking for reconsideration in writing, complaining to the state insurance regulator, and filing suit before the deadline. Bad-faith remedies run against your own insurer, not the other driver's: Georgia's O.C.G.A. § 33-4-6 gives a policyholder up to 50% of the loss or $5,000, whichever is greater, plus attorney's fees after a 60-day demand; South Carolina awards attorney's fees after a 90-day demand (S.C. Code § 38-59-40) and recognizes a bad-faith tort (Nichols v. State Farm). Georgia's 2-year and South Carolina's 3-year filing deadlines are not extended by a denial.",
                 "_roden_last_reviewed": "2026-09-25"
             }
@@ -7691,6 +7735,7 @@
                         "answer": "An attorney identifies all recovery sources: UM/UIM, multiple parties, umbrella policies, employer liability, and bad faith claims. They conduct investigations, asset searches, and policy reviews to maximize every dollar available."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "When policy limits are insufficient, recovery options include your own UM/UIM coverage (in South Carolina UM is mandatory under S.C. Code § 38-77-150 and UIM must be offered under § 38-77-160; in Georgia UM/UIM is included unless rejected in writing under O.C.G.A. § 33-7-11), claims against multiple parties, umbrella policies, employer liability, personal assets, and the failure-to-settle claim against the at-fault driver's insurer. Georgia's statutory bad-faith penalties (O.C.G.A. § 33-4-6; § 33-7-11(j) for UM claims) run only against your own insurer.",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -8370,6 +8415,7 @@
                         "answer": "Yes, a person with a criminal record can still testify as a witness. However, in both Georgia and South Carolina, opposing counsel can generally use a witness's felony convictions, and any conviction for a crime involving dishonesty or a false statement, to challenge the witness's credibility, usually only if the conviction is less than ten years old (O.C.G.A. § 24-6-609; Rule 609, SCRE). Georgia does not count nolo contendere pleas or first-offender discharges. A criminal record does not automatically disqualify a witness, but it may reduce the weight given to their testimony."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Credible car accident witnesses are independent, had clear vantage points, provide consistent and specific accounts, and give testimony corroborated by physical evidence. Georgia follows the Daubert standard for expert testimony (O.C.G.A. § 24-7-702) and allows two years to file (O.C.G.A. § 9-3-33). South Carolina has not adopted Daubert but applies a similar reliability test under Rule 702, SCRE (State v. Council), and provides three years (S.C. Code § 15-3-530). Both states use modified comparative fault rules where witness testimony is critical to determining each party's percentage of responsibility.",
                 "_roden_last_reviewed": "2026-10-02",
                 "_roden_meta_description": "What makes a car accident witness credible in Georgia and South Carolina, how testimony gets challenged, and how each state screens expert witnesses."
@@ -8439,6 +8485,7 @@
                         "answer": "Absolutely. Many rear-end collision injuries — including whiplash, concussions, and herniated discs — produce delayed symptoms that may not appear for hours or days. Seeking immediate medical evaluation protects your health and creates documented evidence linking the accident to your injuries, which is critical for any future injury claim."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Rear-end collisions made up about 28.5% of police-reported U.S. crashes in 2023 (NHTSA) and commonly cause whiplash and other neck and back injuries, and sometimes concussions — symptoms that can take hours or days to appear. The rear driver is often found at fault because Georgia and South Carolina law both bar following too closely, but neither state presumes fault — it is decided on the facts. Victims can recover compensation for medical expenses, lost wages, pain and suffering, and more. Seeking immediate medical attention is essential for both your health and your injury claim.",
                 "_roden_last_reviewed": "2026-10-02",
                 "_roden_meta_description": "Rear-end crash injuries, why symptoms can take hours or days to appear, and how fault is decided in Georgia and South Carolina."
@@ -8799,6 +8846,7 @@
                         "answer": "You may recover economic damages (medical expenses, lost wages, future treatment costs, property damage), non-economic damages (pain and suffering, emotional distress, loss of enjoyment of life, disfigurement), and in cases involving extreme recklessness or defective products, punitive damages. If a loved one was killed, a wrongful death claim may be brought — in Georgia by the surviving spouse or children (O.C.G.A. § 51-4-2), and in South Carolina by the executor or administrator of the estate on behalf of the family (S.C. Code § 15-51-20)."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Rollover crashes are among the most violent vehicle accidents, often caused by top-heavy SUVs, overcorrection, tire blowouts, or defective vehicle design. Occupants suffer traumatic brain injuries, spinal cord damage, ejection injuries, and crush injuries. Liability may fall on other drivers, vehicle manufacturers, or government entities responsible for road conditions. Georgia bars recovery at 50% or more fault (O.C.G.A. § 51-12-33) and allows two years to file (O.C.G.A. § 9-3-33), while South Carolina bars recovery at 51% or more fault (Nelson v. Concrete Supply Co.) and allows three years (S.C. Code § 15-3-530).",
                 "_roden_last_reviewed": "2026-09-23"
             }
@@ -9293,6 +9341,7 @@
                         "answer": "In SC, yes, as long as your fault is less than 51 percent. In GA, you must be less than 50 percent at fault. Even at 49 percent fault in SC, you would recover 51 percent of your damages."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "South Carolina follows a modified comparative fault system that reduces a plaintiff's recovery by their percentage of fault and bars recovery entirely at 51% or more. Insurance companies aggressively inflate shared fault to minimize payouts. South Carolina also applies joint and several liability, allowing plaintiffs to collect full damages from any at-fault defendant. The filing deadline is three years (S.C. Code § 15-3-530). Georgia uses a stricter 50% bar (O.C.G.A. § 51-12-33) with a two-year deadline.",
                 "_roden_last_reviewed": "2026-08-31"
             }
@@ -9793,6 +9842,7 @@
                         "answer": "Not if done properly and promptly. A responsive, experienced attorney can improve your outcome compared with staying with one who is neglecting your case. The key is to switch early enough that your new lawyer has time to build the strongest possible case before any deadlines or trial dates."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "You have the legal right to switch personal injury lawyers at any time in both Georgia and South Carolina under Rule 1.16 of each state's Rules of Professional Conduct. Warning signs include unreturned calls, no case updates, pressure to settle low, and inexperience with your case type. Your first attorney may claim a fee for work already done — in Georgia secured by a lien on the case under O.C.G.A. § 15-19-14; South Carolina has no attorney's-lien statute and measures the claim by the reasonable value of the work (Rule 1.5(a), Rule 407 SCACR). Switching is easiest during pre-litigation and becomes harder near trial. Georgia's 2-year (O.C.G.A. § 9-3-33) and South Carolina's 3-year (S.C. Code § 15-3-530) statutes of limitations make prompt action critical.",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -9861,6 +9911,7 @@
                         "answer": "Yes. A structured settlement pays compensation over time through an annuity, and the investment income earned within the annuity is tax-free — unlike a lump sum that you invest independently. This is particularly beneficial for large settlements involving lifetime care needs from brain injuries or spinal cord injuries."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Most personal injury settlements are tax-free under IRC § 104(a)(2), including compensation for medical expenses, pain and suffering, lost wages from the injury, and property damage. Punitive damages (capped at $250,000 in most Georgia cases under O.C.G.A. § 51-12-5.1, and at the greater of three times compensatory damages or an inflation-indexed $500,000 — $739,245 in 2026 — under S.C. Code § 15-32-530), interest on a judgment, and emotional-distress damages with no physical injury are taxable. A settlement agreement that states what each payment is for makes the tax treatment clear.",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -10033,6 +10084,7 @@
                         "answer": "No. A third-party claim runs alongside your workers' compensation claim rather than replacing it. The two have different targets, different standards of proof, and different types of recoverable damages. Your workers' compensation insurer may, however, be repaid out of what you recover from the third party."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_last_reviewed": "2026-10-02",
                 "_roden_meta_description": "Hurt at work by someone other than your employer? Learn how a third-party claim works alongside workers' comp in Georgia and South Carolina."
             }
@@ -10137,6 +10189,7 @@
                         "answer": "In Georgia, you have 2 years from the date of the accident to file a lawsuit (O.C.G.A. § 9-3-33). In South Carolina, you have 3 years (S.C. Code § 15-3-530). Do not delay filing because of uncertainty about traffic tickets — consult an attorney promptly."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Traffic tickets carry weight with insurance adjusters but are not conclusive, and the ticket itself is generally not admissible at trial in Georgia or South Carolina. The doctrine of negligence per se may apply when a traffic violation directly causes an accident. Both Georgia (O.C.G.A. § 51-12-33) and South Carolina use modified comparative fault, allowing recovery even with shared fault. Pleading guilty to a traffic ticket can be used against you in a civil case. Georgia has a 2-year statute of limitations (O.C.G.A. § 9-3-33); South Carolina has 3 years (S.C. Code § 15-3-530).",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -10205,6 +10258,7 @@
                         "answer": "Yes. Truck accident claims frequently involve multiple defendants — the driver, trucking company, cargo loader, maintenance provider, and manufacturer. Filing against all liable parties gives you access to multiple insurance policies and maximizes potential recovery."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Truck accident liability can extend to the driver, trucking company, cargo loader, maintenance provider, and vehicle manufacturer. Federal FMCSA regulations establish safety standards whose violation is strong evidence of negligence. Georgia allows 2 years to file (O.C.G.A. § 9-3-33) while South Carolina allows 3 years (S.C. Code § 15-3-530). Critical evidence like ELD and black box data must be preserved immediately through spoliation letters.",
                 "_roden_last_reviewed": "2026-09-01"
             }
@@ -10433,6 +10487,7 @@
                         "answer": "In Georgia, the statute of limitations is 2 years from the date of injury under O.C.G.A. § 9-3-33. In South Carolina, you have 3 years under S.C. Code § 15-3-530. These deadlines apply to UM/UIM claims just as they do to standard personal injury claims."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Uninsured/underinsured motorist (UM/UIM) coverage protects you when the at-fault driver has no insurance or insufficient limits. Georgia requires UM/UIM on every auto policy unless rejected in writing (O.C.G.A. § 33-7-11) and, by default, adds UIM on top of the at-fault driver's limits unless you selected reduced-by coverage in writing. South Carolina mandates UM coverage at the state minimums under S.C. Code § 38-77-150 (it cannot be rejected), makes UIM optional under § 38-77-160, and pays UIM on top of the at-fault driver's limits up to your actual damages. Georgia allows stacking across separate policies but not across vehicles on a single policy; South Carolina lets a Class I insured stack coverage up to the amount on the vehicle involved. Georgia imposes a 2-year filing deadline (O.C.G.A. § 9-3-33); South Carolina allows 3 years (S.C. Code § 15-3-530).",
                 "_roden_last_reviewed": "2026-09-23"
             }
@@ -10564,6 +10619,7 @@
                         "answer": "Strong evidence includes medical records documenting your injuries and treatment, mental health records such as therapy notes or psychiatric evaluations, a pain journal tracking your daily symptoms and limitations, photographs of your injuries, testimony from family and friends about changes in your life, and expert testimony from medical professionals about the severity and expected duration of your suffering."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Pain and suffering damages compensate injury victims for physical discomfort, emotional distress, anxiety, and diminished quality of life beyond economic losses. Adjusters and attorneys use informal multiplier or per diem conventions to negotiate these non-economic damages; neither is a rule of law, and a jury is not bound by them. Georgia does not cap pain and suffering in most personal injury cases, and South Carolina likewise imposes no general cap. Comparative fault reduces awards proportionally in both states, barring recovery at 50% fault in Georgia (O.C.G.A. § 51-12-33) and 51% in South Carolina (Nelson v. Concrete Supply Co.).",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -10664,6 +10720,7 @@
                         "answer": "This is one of the highest-risk scenarios. The insurer can argue you refused suitable employment, triggering benefit suspension under Georgia's O.C.G.A. § 34-9-240 or South Carolina's S.C. Code § 42-9-190. In Georgia the job must be within the authorized treating physician's restrictions and offered in writing under Board Rule 240; in South Carolina the employment must be approved by the Commission. Before refusing, have an attorney evaluate whether the job is genuinely within your restrictions and offered in good faith."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Resigning while on workers' comp does not automatically end your benefits, but it creates risks. Medical benefits continue regardless of employment status in both Georgia and South Carolina. Wage replacement benefits are vulnerable — insurers will argue refusal of suitable employment (O.C.G.A. § 34-9-240) or unjustified refusal of commission-approved suitable employment (S.C. Code § 42-9-190). A separation caused by the injury or the employer's response to it is weighed differently from a personal-reasons quit in both states. Before resigning, consult an attorney, get your doctor's restrictions documented, and consider waiting until after your impairment rating.",
                 "_roden_last_reviewed": "2026-09-23"
             }
@@ -10732,6 +10789,7 @@
                         "answer": "Most medical malpractice attorneys work on a <strong>contingency fee basis</strong>, meaning you pay nothing upfront and owe nothing unless your case results in compensation. The attorney typically advances the costs of investigation, expert review, and litigation. This makes experienced legal representation accessible regardless of your financial situation."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "If you suspect medical malpractice, act quickly: get independent medical care, request your complete records, document everything, and avoid discussing the situation with the provider or their insurer. Georgia requires suit within two years from the injury, filed with an expert affidavit (O.C.G.A. § 9-3-71, § 9-11-9.1); South Carolina allows three years but requires a Notice of Intent to File Suit, filed together with a qualified expert's affidavit, and then mandatory mediation, before suit (S.C. Code § 15-3-545, § 15-79-125). Both states have strict statutes of repose — five years in Georgia, six in South Carolina.",
                 "_roden_last_reviewed": "2026-10-02",
                 "_roden_meta_description": "Suspect medical malpractice in Georgia or South Carolina? Get independent care, request your records, avoid the insurer, and act before strict deadlines."
@@ -11073,6 +11131,7 @@
                         "answer": "Yes, but under a separate, stricter test. Both states exclude disease from the definition of 'injury' except where it results naturally and unavoidably from the accident, and compensate occupational disease under their own rules. Georgia requires proof of all five elements in O.C.G.A. § 34-9-280(2), including a direct causal connection between the work conditions and the disease and that it is not an ordinary disease of life to which the general public is exposed. South Carolina requires a disease 'due to hazards in excess of those ordinarily incident to employment' and peculiar to the occupation, and excludes ordinary diseases of life and chronic skeletal joint diseases (S.C. Code § 42-11-10). Those claims turn on connecting the condition to the hazards of the particular job rather than to one event."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Report a work injury to a supervisor or manager right away: in Georgia no compensation is payable unless your employer gets notice within 30 days (O.C.G.A. § 34-9-80), and in South Carolina the limit is 90 days (S.C. Code § 42-15-20). File your claim within one year of the injury in Georgia (O.C.G.A. § 34-9-82) and within two years of the accident in South Carolina (S.C. Code § 42-15-40). In both states a sprained ankle is covered only if it is an injury by accident arising out of and in the course of your employment. In Georgia you choose a doctor from your employer's posted panel of physicians; in South Carolina your employer chooses the treating doctor, and care you arrange on your own may not be paid. Medical records documenting when, where and how the injury happened are vital evidence in your claim.",
                 "_roden_last_reviewed": "2026-09-24"
             }
@@ -11146,6 +11205,7 @@
                         "answer": "Hire immediately if: you suffered serious injuries requiring surgery or hospitalization, the other party disputes fault, multiple vehicles or parties are involved, a commercial truck or government vehicle was involved, the insurance company denied your claim or made a lowball offer, or anyone involved in the accident died."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Hire a personal injury lawyer as soon as possible after an accident — ideally within days. Evidence deteriorates quickly, and insurance adjusters move fast to secure recorded statements and lowball settlements. Georgia allows 2 years to file (O.C.G.A. § 9-3-33); South Carolina allows 3 years (S.C. Code § 15-3-530). Immediate triggers include serious injuries, disputed liability, commercial vehicles, claim denials, and fatalities. Free consultations cost nothing and protect your rights.",
                 "_roden_last_reviewed": "2026-09-02"
             }
@@ -11464,6 +11524,7 @@
                         "answer": "Because personal injury lawyers work on <strong>contingency</strong> (they only get paid if you win), they must evaluate whether a case is likely to produce a recovery that justifies the time and expense invested. This does not mean your case has no merit — it means the lawyer assessed the risk-reward balance and decided it was not the right fit for their practice."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Personal injury lawyers may decline cases due to unclear liability, expired statutes of limitations (2 years GA, 3 years SC), insufficient damages, significant comparative fault, or lack of insurance coverage. Getting turned down by one lawyer does not mean your case has no merit — seek multiple consultations. Pre-existing conditions do not automatically bar recovery under the eggshell plaintiff doctrine. The closer you are to the filing deadline, the harder it becomes to find representation.",
                 "_roden_last_reviewed": "2026-08-31"
             }
@@ -11563,6 +11624,7 @@
                         "answer": "Recovery from carpal tunnel surgery typically takes several weeks to several months. Your surgeon sets your return-to-work date; grip and pinch strength usually return in about 2 to 3 months, but can take 6 to 12 months if the nerve was badly compressed. Workers' compensation covers authorized medical treatment and provides disability benefits during recovery."
                     }
                 ],
+                "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Carpal tunnel syndrome can qualify for workers' compensation in both Georgia and South Carolina as a repetitive work injury — South Carolina requires medical evidence of the work link (S.C. Code § 42-1-172). Georgia requires reporting within 30 days (O.C.G.A. § 34-9-80) and filing within one year of the injury, with extensions after employer-paid treatment or income benefits (O.C.G.A. § 34-9-82). South Carolina allows 90 days to report and two years to file, both measured from when you knew or should have known your carpal tunnel was work-related and compensable, with a seven-year outer limit for filing (S.C. Code §§ 42-15-20, 42-15-40). Workers' comp is no-fault — carelessness does not bar a claim, and work that aggravates a pre-existing condition can still be covered.",
                 "_roden_last_reviewed": "2026-10-02",
                 "_roden_meta_description": "Carpal tunnel from work? How Georgia and South Carolina workers' comp cover repetitive work injuries, reporting and filing deadlines, and benefits."

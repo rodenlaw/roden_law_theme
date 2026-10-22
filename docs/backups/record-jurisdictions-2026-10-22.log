@@ -1,0 +1,134 @@
+=== APPLY ===
+
+  set    [1744] insurance-company-ignoring-demand-letter -> both (reviewedBy now: Graeham C. Gillin)
+  set    [4584] average-personal-injury-settlement-amounts -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1679] can-an-insurance-company-go-against-a-police-report -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1849] gym-injury-liability -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1654] liability-for-epilepsy-related-car-accidents -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1657] answering-insurance-questions-after-crash -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1652] when-does-a-sprained-ankle-become-a-work-injury -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1740] traffic-tickets-and-car-accident-claims -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1749] fault-vs-no-fault-car-insurance -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1656] impact-of-surgery-recommendation -> both (reviewedBy now: Graeham C. Gillin)
+  set    [2647] rollover-crashes-and-what-they-do-to-your-body -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1675] can-someone-sue-me-for-a-car-accident -> both (reviewedBy now: Eric Roden)
+  set    [1684] is-workers-compensation-an-employee-benefit -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1653] calculating-compensation-for-whiplash-injuries -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1757] using-uninsured-underinsured-motorist-coverage-in-georgia -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1709] how-car-insurers-use-private-investigators -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1708] switching-lawyers-during-a-case -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1649] claims-against-at-fault-drivers-who-died -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1769] taxes-on-car-crash-settlement-in-georgia -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1724] options-for-recovering-more-than-policy-limits -> both (reviewedBy now: Graeham C. Gillin)
+  set    [4585] diminished-value-claims-after-car-accident -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1711] liens-and-your-personal-injury-claims -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1824] informed-consent -> both (reviewedBy now: Graeham C. Gillin)
+  set    [4359] military-base-accidents-joint-base-charleston-rights -> both (reviewedBy now: Graeham C. Gillin)
+  set    [4581] rear-end-accident-injuries -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1704] filing-a-claim-for-an-injured-minor -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1782] third-party-fault-for-work-injuries -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1761] workers-comp-for-carpal-tunnel-syndrome -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1722] demand-letters-in-personal-injury-cases -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1697] what-happens-if-i-resign-while-on-workers-compensation -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1651] value-of-pain-and-suffering -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1753] contingency-fee-system -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1746] animal-accident-insurance-coverage -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1720] options-for-denied-injury-claims -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1864] dangerous-tools-garage -> both (reviewedBy now: Graeham C. Gillin)
+  set    [2586] are-red-light-runners-always-liable-if-they-crash -> both (reviewedBy now: Graeham C. Gillin)
+  set    [4362] dog-bite-laws-south-carolina-charleston -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1756] negligence-vs-gross-negligence -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1840] georgia-statute-of-limitations -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1707] liability-for-sudden-emergency-accidents -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1831] blind-spot-accidents -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1714] accident-claims-with-an-expired-license -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1686] why-wont-a-personal-lawyer-take-my-case -> both (reviewedBy now: Eric Roden)
+  set    [1703] driving-record-and-injury-claim -> both (reviewedBy now: Eric Roden)
+  set    [1767] drunk-pedestrian-injury-claims -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1758] qualifications-for-car-accident-witnesses -> both (reviewedBy now: Graeham C. Gillin)
+  set    [4351] highway-41-accidents-mount-pleasant-development -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1663] compensatory-damages-vs-punitive-damages -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1790] georgia-super-speeder-law -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1682] how-long-can-a-person-stay-on-workers-compensation -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1650] benefits-for-workplace-violence -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1712] letters-of-protection-for-injury-victims -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1702] maximum-medical-improvement-in-an-injury-claim -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1719] car-insurance-claim-denial-tactics -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1706] claims-for-lost-wages -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1696] what-if-i-suspect-medical-malpractice -> both (reviewedBy now: Graeham C. Gillin)
+  set    [4367] south-carolina-comparative-fault-partially-at-fault -> both (reviewedBy now: Graeham C. Gillin)
+  set    [1838] georgia-comparative-negligence-law -> both (reviewedBy now: Eric Roden)
+  set    [1673] how-do-i-know-if-i-have-a-personal-injury-case -> both (reviewedBy now: Eric Roden)
+  set    [1810] truck-accident-liability -> both (reviewedBy now: Eric Roden)
+  set    [1670] how-long-can-someone-sue-you-after-a-car-accident -> both (reviewedBy now: Eric Roden)
+  set    [1692] when-is-the-right-time-to-hire-a-personal-injury-lawyer -> both (reviewedBy now: Eric Roden)
+
+62 to set.
+
+BACKUP-JSON: {"1744":"","4584":"","1679":"","1849":"","1654":"","1657":"","1652":"","1740":"","1749":"","1656":"","2647":"","1675":"","1684":"","1653":"","1757":"","1709":"","1708":"","1649":"","1769":"","1724":"","4585":"","1711":"","1824":"","4359":"","4581":"","1704":"","1782":"","1761":"","1722":"","1697":"","1651":"","1753":"","1746":"","1720":"","1864":"","2586":"","4362":"","1756":"","1840":"","1707":"","1831":"","1714":"","1686":"","1703":"","1767":"","1758":"","4351":"","1663":"","1790":"","1682":"","1650":"","1712":"","1702":"","1719":"","1706":"","1696":"","4367":"","1838":"","1673":"","1810":"","1670":"","1692":""}
+
+--- VERIFY ---
+  [1744] ok, reviewedBy Graeham C. Gillin -> none
+  [4584] ok, reviewedBy Graeham C. Gillin -> none
+  [1679] ok, reviewedBy Graeham C. Gillin -> none
+  [1849] ok, reviewedBy Graeham C. Gillin -> none
+  [1654] ok, reviewedBy Graeham C. Gillin -> none
+  [1657] ok, reviewedBy Graeham C. Gillin -> none
+  [1652] ok, reviewedBy Graeham C. Gillin -> none
+  [1740] ok, reviewedBy Graeham C. Gillin -> none
+  [1749] ok, reviewedBy Graeham C. Gillin -> none
+  [1656] ok, reviewedBy Graeham C. Gillin -> none
+  [2647] ok, reviewedBy Graeham C. Gillin -> none
+  [1675] ok, reviewedBy Eric Roden -> none
+  [1684] ok, reviewedBy Graeham C. Gillin -> none
+  [1653] ok, reviewedBy Graeham C. Gillin -> none
+  [1757] ok, reviewedBy Graeham C. Gillin -> none
+  [1709] ok, reviewedBy Graeham C. Gillin -> none
+  [1708] ok, reviewedBy Graeham C. Gillin -> none
+  [1649] ok, reviewedBy Graeham C. Gillin -> none
+  [1769] ok, reviewedBy Graeham C. Gillin -> none
+  [1724] ok, reviewedBy Graeham C. Gillin -> none
+  [4585] ok, reviewedBy Graeham C. Gillin -> none
+  [1711] ok, reviewedBy Graeham C. Gillin -> none
+  [1824] ok, reviewedBy Graeham C. Gillin -> none
+  [4359] ok, reviewedBy Graeham C. Gillin -> none
+  [4581] ok, reviewedBy Graeham C. Gillin -> none
+  [1704] ok, reviewedBy Graeham C. Gillin -> none
+  [1782] ok, reviewedBy Graeham C. Gillin -> none
+  [1761] ok, reviewedBy Graeham C. Gillin -> none
+  [1722] ok, reviewedBy Graeham C. Gillin -> none
+  [1697] ok, reviewedBy Graeham C. Gillin -> none
+  [1651] ok, reviewedBy Graeham C. Gillin -> none
+  [1753] ok, reviewedBy Graeham C. Gillin -> none
+  [1746] ok, reviewedBy Graeham C. Gillin -> none
+  [1720] ok, reviewedBy Graeham C. Gillin -> none
+  [1864] ok, reviewedBy Graeham C. Gillin -> none
+  [2586] ok, reviewedBy Graeham C. Gillin -> none
+  [4362] ok, reviewedBy Graeham C. Gillin -> none
+  [1756] ok, reviewedBy Graeham C. Gillin -> none
+  [1840] ok, reviewedBy Graeham C. Gillin -> none
+  [1707] ok, reviewedBy Graeham C. Gillin -> none
+  [1831] ok, reviewedBy Graeham C. Gillin -> none
+  [1714] ok, reviewedBy Graeham C. Gillin -> none
+  [1686] ok, reviewedBy Eric Roden -> none
+  [1703] ok, reviewedBy Eric Roden -> none
+  [1767] ok, reviewedBy Graeham C. Gillin -> none
+  [1758] ok, reviewedBy Graeham C. Gillin -> none
+  [4351] ok, reviewedBy Graeham C. Gillin -> none
+  [1663] ok, reviewedBy Graeham C. Gillin -> none
+  [1790] ok, reviewedBy Graeham C. Gillin -> none
+  [1682] ok, reviewedBy Graeham C. Gillin -> none
+  [1650] ok, reviewedBy Graeham C. Gillin -> none
+  [1712] ok, reviewedBy Graeham C. Gillin -> none
+  [1702] ok, reviewedBy Graeham C. Gillin -> none
+  [1719] ok, reviewedBy Graeham C. Gillin -> none
+  [1706] ok, reviewedBy Graeham C. Gillin -> none
+  [1696] ok, reviewedBy Graeham C. Gillin -> none
+  [4367] ok, reviewedBy Graeham C. Gillin -> none
+  [1838] ok, reviewedBy Eric Roden -> none
+  [1673] ok, reviewedBy Eric Roden -> none
+  [1810] ok, reviewedBy Eric Roden -> none
+  [1670] ok, reviewedBy Eric Roden -> none
+  [1692] ok, reviewedBy Eric Roden -> none
+62 of 62 set.
+Done.
