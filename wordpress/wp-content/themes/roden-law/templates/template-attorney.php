@@ -222,7 +222,7 @@
             <!-- Case Results -->
             <div class="content-section">
                 <h2>Notable Results</h2>
-                <?php roden_case_results_grid( [ 'count' => 4, 'columns' => 2 ] ); ?>
+                <?php roden_case_results_grid( [ 'count' => 4, 'columns' => 2, 'style' => 'detail', 'lead' => [ '_roden_attorney' => $post_id ] ] ); ?>
             </div>
 
             <!-- Team Grid -->

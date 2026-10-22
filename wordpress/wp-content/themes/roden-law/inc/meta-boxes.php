@@ -7,7 +7,7 @@
  *   - practice_area (jurisdiction, SOL, FAQs, author attribution, office key)
  *   - location       (office key, service area, map embed, local content)
  *   - attorney       (title, office, bar admissions, education, awards, URLs)
- *   - case_result    (amount, result type, year, venue, initial offer, description, attorney)
+ *   - case_result    (amount, result type, show first, year, venue, initial offer, description, attorney)
  *
  * @package Roden_Law
  */
@@ -888,6 +888,7 @@ function roden_case_details_meta_box( $post ) {
     $initial_offer = get_post_meta( $post->ID, '_roden_result_initial_offer', true );
     $case_year     = get_post_meta( $post->ID, '_roden_case_year', true );
     $case_venue    = get_post_meta( $post->ID, '_roden_case_venue', true );
+    $featured      = get_post_meta( $post->ID, '_roden_case_featured', true );
 
     $attorneys = get_posts( array(
         'post_type'      => 'attorney',
@@ -993,6 +994,15 @@ function roden_case_details_meta_box( $post ) {
                     <?php endforeach; ?>
                 </select>
                 <p class="description"><?php esc_html_e( 'The type of injury sustained (e.g., Traumatic Brain Injury, Broken Bones).', 'roden-law' ); ?></p>
+            </td>
+        </tr>
+        <tr>
+            <th><?php esc_html_e( 'Show First', 'roden-law' ); ?></th>
+            <td>
+                <label>
+                    <input type="checkbox" name="_roden_case_featured" value="1" <?php checked( $featured, '1' ); ?>>
+                    <?php esc_html_e( 'Feature this result: first on /case-results/ and in the homepage spotlight.', 'roden-law' ); ?>
+                </label>
             </td>
         </tr>
         <tr>
@@ -1385,6 +1395,12 @@ function roden_save_meta_fields( $post_id ) {
 
         update_post_meta( $post_id, '_roden_case_venue',
             sanitize_text_field( $_POST['_roden_case_venue'] ?? '' ) );
+
+        if ( ! empty( $_POST['_roden_case_featured'] ) ) {
+            update_post_meta( $post_id, '_roden_case_featured', '1' );
+        } else {
+            delete_post_meta( $post_id, '_roden_case_featured' );
+        }
 
         update_post_meta( $post_id, '_roden_description',
             sanitize_textarea_field( $_POST['_roden_description'] ?? '' ) );
