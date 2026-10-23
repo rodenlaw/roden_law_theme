@@ -99,7 +99,17 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                 <?php
                 // Related resources (sibling resources in same practice_category)
                 $res_cat_terms = wp_get_object_terms( $post_id, 'practice_category', array( 'fields' => 'slugs' ) );
-                $res_cat_slug  = ( ! is_wp_error( $res_cat_terms ) && ! empty( $res_cat_terms ) ) ? $res_cat_terms[0] : '';
+                $res_cat_terms = is_wp_error( $res_cat_terms ) ? array() : $res_cat_terms;
+                /*
+                 * The SC-law guides keep `south-carolina-law` as their sibling
+                 * set. wp_get_object_terms() sorts by term name, so adding a
+                 * topic term that sorts before it (Car Accidents, Motorcycle
+                 * Accidents, Premises Liability, Slip & Fall) would silently
+                 * switch this sidebar to that topic. Topic terms were added to
+                 * fill intersection and sub-type lists (2026-10-23), not to
+                 * change these sidebars.
+                 */
+                $res_cat_slug  = in_array( 'south-carolina-law', $res_cat_terms, true ) ? 'south-carolina-law' : ( $res_cat_terms ? $res_cat_terms[0] : '' );
                 $shown_guides = roden_related_resources( array(
                     'count'   => 5,
                     'cat_slug' => $res_cat_slug,
