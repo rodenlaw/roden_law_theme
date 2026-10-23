@@ -679,52 +679,43 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 $related_args['meta_query'] = roden_locale_meta_query();
             }
 
-            // Try practice_category taxonomy first.
-            $has_tax_filter = false;
-            if ( $cat_slug ) {
-                $related_args['tax_query'] = array(
-                    array(
-                        'taxonomy' => 'practice_category',
-                        'field'    => 'slug',
-                        'terms'    => $cat_slug,
-                    ),
-                );
-                $has_tax_filter = true;
-            }
-
-            // Fall back to WordPress category by mapping the PA slug to a blog category.
-            if ( ! $has_tax_filter ) {
-                $pa_to_blog_cat = array(
-                    'personal-injury-lawyers'           => 'personal-injury',
-                    'car-accident-lawyers'              => 'car-accident',
-                    'truck-accident-lawyers'             => 'truck-accident',
-                    'motorcycle-accident-lawyers'        => 'personal-injury',
-                    'slip-and-fall-lawyers'              => 'personal-injury',
-                    'medical-malpractice-lawyers'        => 'medical-malpractice',
-                    'wrongful-death-lawyers'             => 'personal-injury',
-                    'workers-compensation-lawyers'       => 'workers-compensation',
-                    'dog-bite-lawyers'                   => 'personal-injury',
-                    'brain-injury-lawyers'               => 'personal-injury',
-                    'spinal-cord-injury-lawyers'         => 'personal-injury',
-                    'maritime-injury-lawyers'            => 'personal-injury',
-                    'product-liability-lawyers'          => 'personal-injury',
-                    'boating-accident-lawyers'           => 'personal-injury',
-                    'burn-injury-lawyers'                => 'personal-injury',
-                    'construction-accident-lawyers'      => 'workers-compensation',
-                    'nursing-home-abuse-lawyers'         => 'nursing-home-abuse',
-                    'premises-liability-lawyers'         => 'personal-injury',
-                    'pedestrian-accident-lawyers'        => 'car-accident',
-                    'bicycle-accident-lawyers'           => 'bicycle-accident',
-                    'electric-scooter-accident-lawyers'  => 'personal-injury',
-                    'atv-side-by-side-accident-lawyers'  => 'personal-injury',
-                    'golf-cart-accident-lawyers'         => 'personal-injury',
-                    'e-bike-accident-lawyers'            => 'bicycle-accident',
-                );
-                $pa_slug   = $post->post_name;
-                $blog_cat  = isset( $pa_to_blog_cat[ $pa_slug ] ) ? $pa_to_blog_cat[ $pa_slug ] : '';
-                if ( $blog_cat ) {
-                    $related_args['category_name'] = $blog_cat;
-                }
+            // Blog posts are not in the practice_category taxonomy (it is
+            // registered for practice_area, case_result and resource only), so
+            // filtering posts by the pillar's term matched nothing and removed
+            // this block from every pillar that has a term: the five that had
+            // one in 2026-10, and all of them once the pillars got theirs
+            // (simulation 2026-10-23). The blog category map is the only
+            // filter that can match posts.
+            $pa_to_blog_cat = array(
+                'personal-injury-lawyers'           => 'personal-injury',
+                'car-accident-lawyers'              => 'car-accident',
+                'truck-accident-lawyers'             => 'truck-accident',
+                'motorcycle-accident-lawyers'        => 'personal-injury',
+                'slip-and-fall-lawyers'              => 'personal-injury',
+                'medical-malpractice-lawyers'        => 'medical-malpractice',
+                'wrongful-death-lawyers'             => 'personal-injury',
+                'workers-compensation-lawyers'       => 'workers-compensation',
+                'dog-bite-lawyers'                   => 'personal-injury',
+                'brain-injury-lawyers'               => 'personal-injury',
+                'spinal-cord-injury-lawyers'         => 'personal-injury',
+                'maritime-injury-lawyers'            => 'personal-injury',
+                'product-liability-lawyers'          => 'personal-injury',
+                'boating-accident-lawyers'           => 'personal-injury',
+                'burn-injury-lawyers'                => 'personal-injury',
+                'construction-accident-lawyers'      => 'workers-compensation',
+                'nursing-home-abuse-lawyers'         => 'nursing-home-abuse',
+                'premises-liability-lawyers'         => 'personal-injury',
+                'pedestrian-accident-lawyers'        => 'car-accident',
+                'bicycle-accident-lawyers'           => 'bicycle-accident',
+                'electric-scooter-accident-lawyers'  => 'personal-injury',
+                'atv-side-by-side-accident-lawyers'  => 'personal-injury',
+                'golf-cart-accident-lawyers'         => 'personal-injury',
+                'e-bike-accident-lawyers'            => 'bicycle-accident',
+            );
+            $pa_slug   = $post->post_name;
+            $blog_cat  = isset( $pa_to_blog_cat[ $pa_slug ] ) ? $pa_to_blog_cat[ $pa_slug ] : '';
+            if ( $blog_cat ) {
+                $related_args['category_name'] = $blog_cat;
             }
 
             $related_posts = new WP_Query( $related_args );
@@ -759,6 +750,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
             if ( function_exists( 'roden_locale_meta_query' ) ) {
                 $resource_args['meta_query'] = roden_locale_meta_query();
             }
+            $resource_unfiltered = $resource_args;
             if ( $cat_slug ) {
                 $resource_args['tax_query'] = array(
                     array(
@@ -769,6 +761,12 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 );
             }
             $resource_posts = new WP_Query( $resource_args );
+            // Most categories have no resource in a given locale (2026-10: only
+            // car and truck guides carry a term). Then show the newest guides,
+            // as a pillar without a term does, rather than drop the box.
+            if ( $cat_slug && ! $resource_posts->have_posts() ) {
+                $resource_posts = new WP_Query( $resource_unfiltered );
+            }
             if ( $resource_posts->have_posts() ) : ?>
                 <div class="content-section pa-guides">
                     <h2><?php esc_html_e( 'Related Guides & Legal Resources', 'roden-law' ); ?></h2>

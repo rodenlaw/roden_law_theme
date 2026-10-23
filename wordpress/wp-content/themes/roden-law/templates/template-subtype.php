@@ -211,6 +211,12 @@
                     'cat_slug' => $subtype_cat_slug,
                     'heading'  => __( 'Related Guides & Legal Resources', 'roden-law' ),
                     'display'  => 'section',
+                    // A single-state sub-type lists only same-state (or
+                    // two-state) guides; a two-state page is unfiltered. The SC
+                    // port-freight page would otherwise list the Georgia truck
+                    // settlement guide once the truck pillar carries its
+                    // practice_category (simulation 2026-10-23).
+                    'jurisdiction_of' => $post_id,
                 ) );
             }
             ?>

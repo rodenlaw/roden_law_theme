@@ -1,0 +1,319 @@
+{
+ "_about": "Pillar practice_area -> existing practice_category term. Read by bin/assign-pillar-practice-category.php. Rows whose post already carries the term are reported as same and not written. Spanish pillars take their English twin's term: Spanish resources carry the same term slugs (car-accidents, south-carolina-law) and the four Spanish pillars that already had a term carry their twin's. Owner decision 2026-10-23; simulation in data/site-health/remediation-2026-10-23.md.",
+ "generated": "2026-10-23",
+ "map": [
+  {
+   "post_id": 4089,
+   "slug": "atv-side-by-side-accident-lawyers",
+   "locale": "en",
+   "term": "atv-accidents",
+   "current": [
+    "atv-accidents"
+   ]
+  },
+  {
+   "post_id": 4087,
+   "slug": "bicycle-accident-lawyers",
+   "locale": "en",
+   "term": "bicycle-accidents",
+   "current": [
+    "bicycle-accidents"
+   ]
+  },
+  {
+   "post_id": 3616,
+   "slug": "boating-accident-lawyers",
+   "locale": "en",
+   "term": "boating-accidents"
+  },
+  {
+   "post_id": 3612,
+   "slug": "brain-injury-lawyers",
+   "locale": "en",
+   "term": "brain-injuries"
+  },
+  {
+   "post_id": 3617,
+   "slug": "burn-injury-lawyers",
+   "locale": "en",
+   "term": "burn-injuries"
+  },
+  {
+   "post_id": 3604,
+   "slug": "car-accident-lawyers",
+   "locale": "en",
+   "term": "car-accidents"
+  },
+  {
+   "post_id": 3618,
+   "slug": "construction-accident-lawyers",
+   "locale": "en",
+   "term": "construction-accidents"
+  },
+  {
+   "post_id": 3611,
+   "slug": "dog-bite-lawyers",
+   "locale": "en",
+   "term": "dog-bites"
+  },
+  {
+   "post_id": 4578,
+   "slug": "e-bike-accident-lawyers",
+   "locale": "en",
+   "term": "e-bike-accidents",
+   "current": [
+    "e-bike-accidents"
+   ]
+  },
+  {
+   "post_id": 4088,
+   "slug": "electric-scooter-accident-lawyers",
+   "locale": "en",
+   "term": "electric-scooter-accidents",
+   "current": [
+    "electric-scooter-accidents"
+   ]
+  },
+  {
+   "post_id": 4090,
+   "slug": "golf-cart-accident-lawyers",
+   "locale": "en",
+   "term": "golf-cart-accidents",
+   "current": [
+    "golf-cart-accidents"
+   ]
+  },
+  {
+   "post_id": 3614,
+   "slug": "maritime-injury-lawyers",
+   "locale": "en",
+   "term": "maritime-injuries"
+  },
+  {
+   "post_id": 3608,
+   "slug": "medical-malpractice-lawyers",
+   "locale": "en",
+   "term": "medical-malpractice"
+  },
+  {
+   "post_id": 3607,
+   "slug": "motorcycle-accident-lawyers",
+   "locale": "en",
+   "term": "motorcycle-accidents"
+  },
+  {
+   "post_id": 3619,
+   "slug": "nursing-home-abuse-lawyers",
+   "locale": "en",
+   "term": "nursing-home-abuse"
+  },
+  {
+   "post_id": 3621,
+   "slug": "pedestrian-accident-lawyers",
+   "locale": "en",
+   "term": "pedestrian-accidents"
+  },
+  {
+   "post_id": 3620,
+   "slug": "premises-liability-lawyers",
+   "locale": "en",
+   "term": "premises-liability"
+  },
+  {
+   "post_id": 3615,
+   "slug": "product-liability-lawyers",
+   "locale": "en",
+   "term": "product-liability"
+  },
+  {
+   "post_id": 3606,
+   "slug": "slip-and-fall-lawyers",
+   "locale": "en",
+   "term": "slip-and-fall"
+  },
+  {
+   "post_id": 3613,
+   "slug": "spinal-cord-injury-lawyers",
+   "locale": "en",
+   "term": "spinal-cord-injuries"
+  },
+  {
+   "post_id": 3605,
+   "slug": "truck-accident-lawyers",
+   "locale": "en",
+   "term": "truck-accidents"
+  },
+  {
+   "post_id": 3610,
+   "slug": "workers-compensation-lawyers",
+   "locale": "en",
+   "term": "workers-compensation"
+  },
+  {
+   "post_id": 3609,
+   "slug": "wrongful-death-lawyers",
+   "locale": "en",
+   "term": "wrongful-death"
+  },
+  {
+   "post_id": 4900,
+   "slug": "es-atv-side-by-side-accident-lawyers",
+   "locale": "es",
+   "term": "atv-accidents",
+   "current": [
+    "atv-accidents"
+   ]
+  },
+  {
+   "post_id": 4898,
+   "slug": "es-bicycle-accident-lawyers",
+   "locale": "es",
+   "term": "bicycle-accidents",
+   "current": [
+    "bicycle-accidents"
+   ]
+  },
+  {
+   "post_id": 4895,
+   "slug": "es-boating-accident-lawyers",
+   "locale": "es",
+   "term": "boating-accidents"
+  },
+  {
+   "post_id": 4890,
+   "slug": "es-brain-injury-lawyers",
+   "locale": "es",
+   "term": "brain-injuries"
+  },
+  {
+   "post_id": 4896,
+   "slug": "es-burn-injury-lawyers",
+   "locale": "es",
+   "term": "burn-injuries"
+  },
+  {
+   "post_id": 4873,
+   "slug": "es-car-accident-lawyers",
+   "locale": "es",
+   "term": "car-accidents"
+  },
+  {
+   "post_id": 4876,
+   "slug": "es-construction-accident-lawyers",
+   "locale": "es",
+   "term": "construction-accidents"
+  },
+  {
+   "post_id": 4880,
+   "slug": "es-dog-bite-lawyers",
+   "locale": "es",
+   "term": "dog-bites"
+  },
+  {
+   "post_id": 4899,
+   "slug": "es-electric-scooter-accident-lawyers",
+   "locale": "es",
+   "term": "electric-scooter-accidents",
+   "current": [
+    "electric-scooter-accidents"
+   ]
+  },
+  {
+   "post_id": 4901,
+   "slug": "es-golf-cart-accident-lawyers",
+   "locale": "es",
+   "term": "golf-cart-accidents",
+   "current": [
+    "golf-cart-accidents"
+   ]
+  },
+  {
+   "post_id": 4894,
+   "slug": "es-maritime-injury-lawyers",
+   "locale": "es",
+   "term": "maritime-injuries"
+  },
+  {
+   "post_id": 4881,
+   "slug": "es-medical-malpractice-lawyers",
+   "locale": "es",
+   "term": "medical-malpractice"
+  },
+  {
+   "post_id": 4877,
+   "slug": "es-motorcycle-accident-lawyers",
+   "locale": "es",
+   "term": "motorcycle-accidents"
+  },
+  {
+   "post_id": 4897,
+   "slug": "es-nursing-home-abuse-lawyers",
+   "locale": "es",
+   "term": "nursing-home-abuse"
+  },
+  {
+   "post_id": 4878,
+   "slug": "es-pedestrian-accident-lawyers",
+   "locale": "es",
+   "term": "pedestrian-accidents"
+  },
+  {
+   "post_id": 4893,
+   "slug": "es-premises-liability-lawyers",
+   "locale": "es",
+   "term": "premises-liability"
+  },
+  {
+   "post_id": 4892,
+   "slug": "es-product-liability-lawyers",
+   "locale": "es",
+   "term": "product-liability"
+  },
+  {
+   "post_id": 4879,
+   "slug": "es-slip-and-fall-lawyers",
+   "locale": "es",
+   "term": "slip-and-fall"
+  },
+  {
+   "post_id": 4891,
+   "slug": "es-spinal-cord-injury-lawyers",
+   "locale": "es",
+   "term": "spinal-cord-injuries"
+  },
+  {
+   "post_id": 4874,
+   "slug": "es-truck-accident-lawyers",
+   "locale": "es",
+   "term": "truck-accidents"
+  },
+  {
+   "post_id": 4875,
+   "slug": "es-workers-compensation-lawyers",
+   "locale": "es",
+   "term": "workers-compensation"
+  },
+  {
+   "post_id": 4882,
+   "slug": "es-wrongful-death-lawyers",
+   "locale": "es",
+   "term": "wrongful-death"
+  }
+ ],
+ "not_mapped": [
+  {
+   "post_id": 4692,
+   "slug": "personal-injury-lawyers",
+   "locale": "en",
+   "current": [],
+   "reason": "no existing practice_category term fits (the only non-practice term, south-carolina-law, is a jurisdiction tag)"
+  },
+  {
+   "post_id": 5200,
+   "slug": "es-personal-injury-lawyers",
+   "locale": "es",
+   "current": [],
+   "reason": "no existing practice_category term fits (the only non-practice term, south-carolina-law, is a jurisdiction tag)"
+  }
+ ]
+}
