@@ -3811,15 +3811,27 @@ function roden_related_resources( $args = array() ) {
 
     $firm = roden_firm_data();
 
-    // Build query: filter by practice_category if provided.
+    /*
+     * Filter FIRST, then cap at $count (below, after the loop).
+     *
+     * This used to fetch only the newest count + 4 (count + 16 with an
+     * office_key) resources and apply the local boost and the other-office /
+     * other-state drops to that slice. An older local or on-topic guide could
+     * therefore never surface: once enough newer statewide guides existed it
+     * fell outside the slice before any filter saw it (site-health 2026-10-22,
+     * resource orphans after the floor cull; same flaw fixed on
+     * template-location.php in #247). The resource set is under 50 per locale,
+     * so fetch them all and let the rules below decide. Ordering is unchanged:
+     * boosted local resources first, then the rest, each newest-first.
+     */
     $query_args = array(
-        'post_type'      => 'resource',
-        // Over-fetch to allow dedup/filtering; more on an office page, which also
-        // drops the other state's resources below.
-        'posts_per_page' => $args['count'] + ( $args['office_key'] ? 16 : 4 ),
-        'post_status'    => 'publish',
-        'orderby'        => 'date',
-        'order'          => 'DESC',
+        'post_type'              => 'resource',
+        'posts_per_page'         => -1,
+        'post_status'            => 'publish',
+        'orderby'                => 'date',
+        'order'                  => 'DESC',
+        'no_found_rows'          => true,
+        'update_post_term_cache' => false,
     );
 
     // Match the request's locale: Spanish resources on /es/, English elsewhere.
