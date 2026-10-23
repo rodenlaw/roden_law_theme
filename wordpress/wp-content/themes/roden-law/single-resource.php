@@ -100,7 +100,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                 // Related resources (sibling resources in same practice_category)
                 $res_cat_terms = wp_get_object_terms( $post_id, 'practice_category', array( 'fields' => 'slugs' ) );
                 $res_cat_slug  = ( ! is_wp_error( $res_cat_terms ) && ! empty( $res_cat_terms ) ) ? $res_cat_terms[0] : '';
-                roden_related_resources( array(
+                $shown_guides = roden_related_resources( array(
                     'count'   => 5,
                     'cat_slug' => $res_cat_slug,
                     'heading'  => __( 'Related Guides', 'roden-law' ),
@@ -111,7 +111,16 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                 ) );
                 ?>
 
-                <?php roden_related_practice_areas( 6 ); ?>
+                <?php
+                // Other guides: same state rule as above, minus the ones it listed.
+                roden_related_practice_areas( 6, array(
+                    'jurisdiction_of' => $post_id,
+                    'exclude'         => is_array( $shown_guides ) ? $shown_guides : array(),
+                    // It lists guides, not practice areas. Existing msgid, already
+                    // translated in es_ES.po/.mo ("Recursos Relacionados").
+                    'heading'         => __( 'Related Resources', 'roden-law' ),
+                ) );
+                ?>
 
                 <?php roden_why_roden_sidebar(); ?>
             </div>
