@@ -3793,6 +3793,9 @@ function roden_canonicalize_pa_path( $path ) {
  *     @type string $heading        Section heading. Default 'Related Guides'.
  *     @type string $display        'sidebar' for compact list, 'section' for card grid. Default 'sidebar'.
  *     @type int    $exclude        Post ID to exclude (current resource page).
+ *     @type int    $jurisdiction_of Post ID whose `_roden_jurisdiction` scopes the list
+ *                                  when there is no office_key. Ignored when an
+ *                                  office_key is given (the office rule decides).
  * }
  */
 function roden_related_resources( $args = array() ) {
@@ -3806,6 +3809,7 @@ function roden_related_resources( $args = array() ) {
         // Heading used instead when nothing in the list is about this office's
         // own city or market (so the box is not called "Local" for nothing).
         'fallback_heading' => '',
+        'jurisdiction_of'  => 0,
     );
     $args = wp_parse_args( $args, $defaults );
 
@@ -3910,6 +3914,26 @@ function roden_related_resources( $args = array() ) {
         $other_state = ( 'SC' === $firm['offices'][ $args['office_key'] ]['state'] ) ? 'georgia' : 'south-carolina';
     }
 
+    /*
+     * No office, but the caller's page is about one state (single-resource
+     * sidebars): list only resources about that same state. The Myrtle Beach
+     * fatal-crashes guide (SC) listed Georgia Moped Laws: 78 cross-state pairs
+     * on 30 resource pages, EN and ES (site-health 2026-10-23).
+     *
+     * Decided from `_roden_jurisdiction` on both sides, never the slug. Same
+     * spirit as the office rule above (one page, one state's law), so two-state
+     * `both` resources are dropped too. An untagged resource is kept: its state
+     * is not guessed. A `both` or untagged page gets no state filter. The office
+     * path above is untouched and takes precedence.
+     */
+    $page_states = null;
+    if ( ! $other_state && $args['jurisdiction_of'] && function_exists( 'roden_page_jurisdiction_states' ) ) {
+        $page_states = roden_page_jurisdiction_states( (int) $args['jurisdiction_of'] );
+        if ( ! is_array( $page_states ) || 1 !== count( $page_states ) ) {
+            $page_states = null;
+        }
+    }
+
     while ( $resources->have_posts() ) {
         $resources->the_post();
         $slug = get_post_field( 'post_name', get_the_ID() );
@@ -3925,6 +3949,13 @@ function roden_related_resources( $args = array() ) {
                 continue;
             }
             if ( '' === $res_jur && false !== strpos( roden_strip_es_slug( $slug ), $other_state ) ) {
+                continue;
+            }
+        }
+
+        if ( $page_states ) {
+            $res_states = roden_page_jurisdiction_states( get_the_ID() );
+            if ( is_array( $res_states ) && $res_states !== $page_states ) {
                 continue;
             }
         }

@@ -8,7 +8,7 @@ pages.
 |---|---|---|
 | crawl: resource orphans, generator `roden_related_resources()` | fixed (PR, unmerged) | `inc/template-tags.php` |
 | Two-state I-95 guide tagged `ga`, now surfaces on 3 Savannah pages | **owner, decide before merge** | resource meta (DB) |
-| Cross-state links in single-resource sidebars (pre-existing, unchanged) | deferred, fix proposed | `single-resource.php` + function |
+| Cross-state links in single-resource sidebars | fixed (second PR, unmerged; see below) | `single-resource.php` + function |
 | Intersection pillars carry no `practice_category`, so no topical filter | deferred, data | DB taxonomy |
 
 ## Fixed: `roden_related_resources()` filtered a newest-N slice
@@ -122,3 +122,150 @@ node vendor/site-health/site-health.mjs crawl --repo . --base https://rodenlaw.c
 
 Expected: no new orphans. The 6 guides above gain a template link. The crawl gate is now
 blocking (#249), so a regression would show as a red deploy job.
+
+## Fixed (second PR): single-resource sidebars listed the other state's guides
+
+Owner decision 2026-10-23: fix now.
+
+### Generator
+
+`single-resource.php` calls `roden_related_resources()` with `count`, `cat_slug` and
+`exclude` but no `office_key`. The other-state drop only runs when an `office_key` is
+given, so resource sidebars never had a state filter. Example: `myrtle-beach-fatal-crashes`
+(SC) listed Georgia Moped Laws, Georgia Car Seat Laws, GA UM coverage and GA wrongful death.
+
+### Fix
+
+- New optional arg `jurisdiction_of` (post ID). When there is **no** `office_key`, the
+  function reads that post's `_roden_jurisdiction` through the existing normaliser
+  `roden_page_jurisdiction_states()`, which covers ga / georgia / georgia-only, the three
+  SC spellings, and `both`. If the page is about one state, the function keeps a resource
+  only when the resource's own tag, read the same way, names that same single state.
+- `single-resource.php` passes `'jurisdiction_of' => $post_id`. Nothing else changes.
+- The signal is the **tag on both sides, never the slug**. The office path is different:
+  it reads the resource's tag first and falls back to the slug for untagged resources.
+  This PR leaves that path and its signal alone. The new branch runs only when the office
+  path did not set `$other_state`, and no office caller passes the new arg.
+- **`both` resources are dropped from single-state pages.** That follows the office rule
+  (one page, one state's law; W10 drops two-state comparisons too). Trade-off numbers
+  are below.
+- Untagged resources are kept and their state is not guessed. There are **0 untagged
+  published resources** (58 in total: EN 28 sc, 13 ga, 6 both; ES 9 sc, 2 ga), so this
+  rule places nothing today.
+- A page tagged `both` or untagged gets no filter. That covers the 6 `both` EN resource
+  pages and no untagged ones.
+- No strings, no CSS/JS, no content or DB edits. `php -l` is clean on both files.
+
+### Verification (read-only `wp eval-file -` on prod, 2026-10-23)
+
+Prod theme matched `origin/main` on all 93 theme files (md5) before the run. The harness
+renders the real templates twice in one process: `origin/main` (template plus function)
+and patched (patched `single-resource.php` plus the patched function under a renamed
+prefix). For practice areas it renders `single-practice_area.php`, and the
+intersection and sub-type includes are routed through the same rename. Each page is
+routed with `$wp->main()` on a clone of the global `WP`. EN ran with
+`--url=https://rodenlaw.com/`, ES with `--url=https://rodenlaw.com/es/`, each over that
+locale's pages. A third render keeps `both` resources, to size the alternative.
+get_header() and get_footer() load once per process, so a warm-up render runs first
+and the harness compares the body. Neither file calls the function.
+
+| Template | Pages rendered | Sidebar/section changed | Rest of page |
+|---|---|---|---|
+| single-resource (EN) | 47 | **28** | identical (all 47) |
+| single-resource (ES) | 11 | **2** | identical (all 11) |
+| intersection (EN) | 11 (all show the block) | 0 | full body byte-identical, 11/11 |
+| sub-type (EN) | 118 | 0 | full body byte-identical, 118/118 |
+
+Correction to the brief: 21 sub-types *call* the function, because their parent has a
+`practice_category`. None of those categories (atv, bicycle, electric-scooter, golf-cart
+accidents) has a resource, so **0 sub-types display the box**, before and after. The
+full-body comparison covers all 118 either way.
+
+**Cross-state pairs, read by tag on both sides:** before **78 pairs on 30 pages** (70 on
+28 EN, 8 on 2 ES). After: **0**. The earlier count of "61 on 21" read the page tag
+literally as `ga`/`sc`. That missed the 10 pages tagged `georgia-only` /
+`south-carolina-only`, and it was taken before #251 retagged 4689. The table below uses
+the normalised count.
+
+**`both` choice:** today 11 sidebar slots on 11 single-state EN pages hold a `both`
+resource, all of them `i-95-widening-construction-zone-ga-sc`. If `both` is dropped
+(this PR), that becomes 0. If `both` is kept, it becomes **21 slots on 21 pages**. Freeing
+the other-state slots pulls `georgia-vs-south-carolina-workers-compensation` onto the 10
+uncategorised state-law guides, and I-95 widening stays on the 11 truck guides. Keeping
+`both` would also fill the five SC truck sidebars back to 5 items. With `both` dropped
+they show 4. No ES page is affected either way.
+
+**Short or empty sidebars after the fix:**
+
+| Page | Before → after | Note |
+|---|---|---|
+| `/resources/georgia-car-accident-settlement-value/` | 2 → **0** | The box disappears cleanly: the function returns before any markup, and the rest of the page is identical. The `car-accidents` category has no other GA EN resource. |
+| `/resources/south-carolina-car-accident-settlement-value/` | 2 → 1 | Only dangerous-roads-north-charleston remains. |
+| `/resources/dangerous-roads-north-charleston/` | 2 → 1 | Only south-carolina-car-accident-settlement-value remains. |
+| `/es/resources/georgia-truck-accident-settlement-value/` | 5 → 1 | All 4 dropped items were SC workers' comp / PI guides. Only 2 GA ES resources exist. |
+| `/es/resources/georgia-car-accident-settlement-value/` | 5 → 1 | Same. |
+| `/es/resources/south-carolina-car-accident-settlement-value/` | 0 → 0 | Already empty before this change (alone in its ES category). |
+
+The short lists come from thin `practice_category` pools, and on ES from having only 2
+GA resources. They do not come from the filter being wrong. Widening to uncategorised
+same-state guides would be a separate rule, and is not in this PR.
+
+Every changed page, before → after (count; pairs = other-state items before; both = `both`
+items before; out; in):
+
+| Page | Tag | Items | Pairs | both | Removed | Added |
+|---|---|---|---|---|---|---|
+| georgia-wrongful-death-settlement-value | ga | 5 → 5 | 2 | 0 | south-carolina-moped-laws, south-carolina-golf-cart-laws | georgia-helmet-laws, georgia-statute-of-limitations |
+| georgia-uninsured-motorist-coverage | ga | 5 → 5 | 2 | 0 | south-carolina-moped-laws, south-carolina-golf-cart-laws | georgia-helmet-laws, georgia-statute-of-limitations |
+| georgia-car-seat-laws | ga | 5 → 5 | 2 | 0 | south-carolina-moped-laws, south-carolina-golf-cart-laws | georgia-helmet-laws, georgia-statute-of-limitations |
+| south-carolina-moped-laws | sc | 5 → 5 | 4 | 0 | georgia-wrongful-death-settlement-value, georgia-uninsured-motorist-coverage, georgia-car-seat-laws, georgia-moped-laws | south-carolina-helmet-laws, myrtle-beach-fatal-crashes, south-carolina-liquor-liability-2026, south-carolina-wrongful-death-settlement-value |
+| georgia-moped-laws | ga | 5 → 5 | 2 | 0 | south-carolina-moped-laws, south-carolina-golf-cart-laws | georgia-helmet-laws, georgia-statute-of-limitations |
+| south-carolina-golf-cart-laws | sc | 5 → 5 | 4 | 0 | georgia-wrongful-death-settlement-value, georgia-uninsured-motorist-coverage, georgia-car-seat-laws, georgia-moped-laws | south-carolina-helmet-laws, myrtle-beach-fatal-crashes, south-carolina-liquor-liability-2026, south-carolina-wrongful-death-settlement-value |
+| south-carolina-helmet-laws | sc | 5 → 5 | 4 | 0 | georgia-wrongful-death-settlement-value, georgia-uninsured-motorist-coverage, georgia-car-seat-laws, georgia-moped-laws | south-carolina-golf-cart-laws, myrtle-beach-fatal-crashes, south-carolina-liquor-liability-2026, south-carolina-wrongful-death-settlement-value |
+| georgia-helmet-laws | ga | 5 → 5 | 1 | 0 | south-carolina-moped-laws | georgia-statute-of-limitations |
+| myrtle-beach-fatal-crashes | sc | 5 → 5 | 4 | 0 | georgia-wrongful-death-settlement-value, georgia-uninsured-motorist-coverage, georgia-car-seat-laws, georgia-moped-laws | south-carolina-golf-cart-laws, south-carolina-helmet-laws, south-carolina-liquor-liability-2026, south-carolina-wrongful-death-settlement-value |
+| south-carolina-liquor-liability-2026 | sc | 5 → 5 | 4 | 0 | georgia-wrongful-death-settlement-value, georgia-uninsured-motorist-coverage, georgia-car-seat-laws, georgia-moped-laws | south-carolina-golf-cart-laws, south-carolina-helmet-laws, myrtle-beach-fatal-crashes, south-carolina-wrongful-death-settlement-value |
+| georgia-statute-of-limitations | ga | 5 → 5 | 1 | 0 | south-carolina-moped-laws | georgia-helmet-laws |
+| south-carolina-car-accident-settlement-value | sc | 2 → 1 | 1 | 0 | georgia-car-accident-settlement-value | — |
+| georgia-truck-accident-settlement-value | ga | 5 → 5 | 4 | 1 | south-carolina-truck-accident-settlement-value, i-95-widening-construction-zone-ga-sc, blythewood-i-77-truck-accidents, carolina-crossroads-construction-zone-truck-accidents, us-52-truck-train-accidents-goose-creek | i-16-i-95-construction-zone-truck-accidents, bay-street-truck-accidents-savannah-historic-district, port-of-savannah-truck-routes, pooler-warehouse-district-truck-accidents, logging-truck-accidents-us-17-mcintosh-glynn |
+| georgia-car-accident-settlement-value | ga | 2 → 0 (box gone) | 2 | 0 | south-carolina-car-accident-settlement-value, dangerous-roads-north-charleston | — |
+| south-carolina-truck-accident-settlement-value | sc | 5 → 4 | 1 | 1 | georgia-truck-accident-settlement-value, i-95-widening-construction-zone-ga-sc | broad-river-road-truck-accidents-columbia |
+| blythewood-i-77-truck-accidents | sc | 5 → 4 | 1 | 1 | georgia-truck-accident-settlement-value, i-95-widening-construction-zone-ga-sc | broad-river-road-truck-accidents-columbia |
+| carolina-crossroads-construction-zone-truck-accidents | sc | 5 → 4 | 1 | 1 | georgia-truck-accident-settlement-value, i-95-widening-construction-zone-ga-sc | broad-river-road-truck-accidents-columbia |
+| us-52-truck-train-accidents-goose-creek | sc | 5 → 4 | 1 | 1 | georgia-truck-accident-settlement-value, i-95-widening-construction-zone-ga-sc | broad-river-road-truck-accidents-columbia |
+| i-16-i-95-construction-zone-truck-accidents | ga | 5 → 5 | 3 | 1 | south-carolina-truck-accident-settlement-value, i-95-widening-construction-zone-ga-sc, blythewood-i-77-truck-accidents, carolina-crossroads-construction-zone-truck-accidents | bay-street-truck-accidents-savannah-historic-district, port-of-savannah-truck-routes, pooler-warehouse-district-truck-accidents, logging-truck-accidents-us-17-mcintosh-glynn |
+| broad-river-road-truck-accidents-columbia | sc | 5 → 4 | 1 | 1 | georgia-truck-accident-settlement-value, i-95-widening-construction-zone-ga-sc | us-52-truck-train-accidents-goose-creek |
+| bay-street-truck-accidents-savannah-historic-district | ga | 5 → 5 | 3 | 1 | south-carolina-truck-accident-settlement-value, i-95-widening-construction-zone-ga-sc, blythewood-i-77-truck-accidents, carolina-crossroads-construction-zone-truck-accidents | i-16-i-95-construction-zone-truck-accidents, port-of-savannah-truck-routes, pooler-warehouse-district-truck-accidents, logging-truck-accidents-us-17-mcintosh-glynn |
+| logging-truck-accidents-us-17-mcintosh-glynn | ga | 5 → 5 | 3 | 1 | south-carolina-truck-accident-settlement-value, i-95-widening-construction-zone-ga-sc, blythewood-i-77-truck-accidents, carolina-crossroads-construction-zone-truck-accidents | i-16-i-95-construction-zone-truck-accidents, bay-street-truck-accidents-savannah-historic-district, port-of-savannah-truck-routes, pooler-warehouse-district-truck-accidents |
+| pooler-warehouse-district-truck-accidents | ga | 5 → 5 | 3 | 1 | south-carolina-truck-accident-settlement-value, i-95-widening-construction-zone-ga-sc, blythewood-i-77-truck-accidents, carolina-crossroads-construction-zone-truck-accidents | i-16-i-95-construction-zone-truck-accidents, bay-street-truck-accidents-savannah-historic-district, port-of-savannah-truck-routes, logging-truck-accidents-us-17-mcintosh-glynn |
+| port-of-savannah-truck-routes | ga | 5 → 5 | 3 | 1 | south-carolina-truck-accident-settlement-value, i-95-widening-construction-zone-ga-sc, blythewood-i-77-truck-accidents, carolina-crossroads-construction-zone-truck-accidents | i-16-i-95-construction-zone-truck-accidents, bay-street-truck-accidents-savannah-historic-district, pooler-warehouse-district-truck-accidents, logging-truck-accidents-us-17-mcintosh-glynn |
+| personal-injury-claim-charleston-county-court | sc | 5 → 5 | 4 | 0 | georgia-wrongful-death-settlement-value, georgia-uninsured-motorist-coverage, georgia-car-seat-laws, georgia-moped-laws | south-carolina-golf-cart-laws, south-carolina-helmet-laws, myrtle-beach-fatal-crashes, south-carolina-liquor-liability-2026 |
+| pedestrian-bicycle-safety-north-charleston | sc | 5 → 5 | 4 | 0 | georgia-wrongful-death-settlement-value, georgia-uninsured-motorist-coverage, georgia-car-seat-laws, georgia-moped-laws | south-carolina-golf-cart-laws, south-carolina-helmet-laws, myrtle-beach-fatal-crashes, south-carolina-liquor-liability-2026 |
+| north-charleston-truck-accident-guide | sc | 5 → 5 | 4 | 0 | georgia-wrongful-death-settlement-value, georgia-uninsured-motorist-coverage, georgia-car-seat-laws, georgia-moped-laws | south-carolina-golf-cart-laws, south-carolina-helmet-laws, myrtle-beach-fatal-crashes, south-carolina-liquor-liability-2026 |
+| dangerous-roads-north-charleston | sc | 2 → 1 | 1 | 0 | georgia-car-accident-settlement-value | — |
+| es/georgia-truck-accident-settlement-value | ga | 5 → 1 | 4 | 0 | south-carolina-workers-comp-impairment-rating-mmi, south-carolina-personal-injury-faq, how-much-does-south-carolina-workers-comp-pay, south-carolina-workers-comp-claim-denied | — |
+| es/georgia-car-accident-settlement-value | ga | 5 → 1 | 4 | 0 | south-carolina-workers-comp-impairment-rating-mmi, south-carolina-personal-injury-faq, how-much-does-south-carolina-workers-comp-pay, south-carolina-workers-comp-claim-denied | — |
+
+### Re-run after deploy
+
+**Reachability.** EN resources linked from a resource sidebar or an intersection block go
+from 28 to 33. Seven gain a link: logging-truck US-17, I-16/I-95, Pooler warehouse,
+GA statute of limitations, GA helmet laws, Myrtle Beach fatal crashes, SC liquor
+liability. Two lose their last such link:
+
+- `georgia-car-accident-settlement-value`: only SC car pages listed it. 7 published
+  bodies still link it, including the GA car accident page and the Savannah pillar.
+- `i-95-widening-construction-zone-ga-sc` (`both` since #251): only single-state truck
+  guides listed it. **0 body links.** It stays reachable from the `/resources/` archive
+  (page 4), so the crawl should not report it as an orphan. Its only links, though,
+  are now archive pagination. If the owner wants it in sidebars, keeping `both` (above)
+  restores it on 11 truck guides.
+
+ES reachability is unchanged at 8.
+
+### Re-run after deploy
+
+Flush both cache layers, then run the crawl check (as above). Expected: no new orphans.
+Spot-check `/resources/myrtle-beach-fatal-crashes/`: the sidebar should list only SC
+guides. `/resources/georgia-car-accident-settlement-value/` should have no Related
+Guides box.

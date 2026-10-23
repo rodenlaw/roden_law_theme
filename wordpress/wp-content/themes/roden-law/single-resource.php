@@ -106,6 +106,8 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                     'heading'  => __( 'Related Guides', 'roden-law' ),
                     'display'  => 'sidebar',
                     'exclude'  => $post_id,
+                    // Same-state guides only (from _roden_jurisdiction).
+                    'jurisdiction_of' => $post_id,
                 ) );
                 ?>
 
