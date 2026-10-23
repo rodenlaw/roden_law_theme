@@ -3398,3 +3398,14 @@ four changed theme files on prod match the repo.
   remain, both on the kept page:** it is an orphan (its only inbound links were the hub, its siblings and the
   nav), and its body links the hub ("class action attorney"), which is now a redirect. Fix proposed, waiting on
   the owner.
+
+**Fix for the two kept-page errors (owner: "yes, do both and open the PR"):**
+- **Body link: applied 2026-10-23.** `bin/unlink-hub-from-troubled-teen.php` (exact-match guard, dry run, then
+  `wp_update_post( wp_slash() )`) removed the `<a>` around "class action attorney" on 4574 and kept the text.
+  64 bytes out; stored md5 verified; a revision was left as the undo. Backup:
+  `docs/backups/4574-post-content-2026-10-23.html`. Both caches flushed. Live: no hub link. The JSON-LD guard
+  passes.
+- **Orphan: ships with the records PR.** `roden_practice_index_kept_hub_cards()` adds a card to the
+  `/practice-areas/` grid (both branches of `archive-practice_area.php`) for every published page still under the
+  hub. Today that is troubled-teen. English only, since the kept page has no Spanish twin. This is where the
+  retired hub's 301s land, so mass-tort intent still finds the kept page.

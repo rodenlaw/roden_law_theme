@@ -4745,3 +4745,38 @@ function roden_preferred_source_badge( $theme = 'light' ) {
     </a>
     <?php
 }
+
+/**
+ * Practice-areas index: cards for the pages kept under the retired class-action hub.
+ *
+ * Mass torts were retired 2026-10-23 (#267): the hub /class-action-lawyers/ 301s
+ * here and its 13 tort pages are drafts. The one page kept under it,
+ * troubled-teen industry abuse, was then linked from nowhere: its inbound links
+ * had been the hub, its siblings and the nav (site-health crawl, 2026-10-23,
+ * "orphan"). This lists whatever is still published under the hub, so
+ * mass-tort intent that lands here can still find it. The kept pages are
+ * English-only, so the cards are not shown on the Spanish index.
+ *
+ * Renders <a> cards inside the caller's grid; nothing when there are none.
+ */
+function roden_practice_index_kept_hub_cards() {
+    if ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() ) {
+        return;
+    }
+    $hub = get_page_by_path( 'class-action-lawyers' );
+    if ( ! $hub ) {
+        return;
+    }
+    $kept = get_pages( array(
+        'parent'      => $hub->ID,
+        'post_status' => 'publish',
+        'sort_column' => 'post_title',
+    ) );
+    foreach ( $kept as $page ) {
+        printf(
+            '<a href="%1$s" class="card practice-area-card"><h3>%2$s</h3><span class="card-arrow" aria-hidden="true">&rarr;</span></a>',
+            esc_url( get_permalink( $page ) ),
+            esc_html( get_the_title( $page ) )
+        );
+    }
+}
