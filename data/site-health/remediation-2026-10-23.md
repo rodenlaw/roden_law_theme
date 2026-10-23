@@ -742,7 +742,8 @@ Map: `docs/practice-category/pillar-map-2026-10-23.json`.
 Read-only harness on prod. It filters `get_object_terms` so the mapped pillars appear to
 carry their term, pins `ORDER BY RAND()` (the pillar "Related Practice Areas" widget), and
 renders every page three times: live, simulated, and live again as a control. 0 control
-diffs on 287 pages. Assigning the terms with today's code would have made three changes
+diffs on 289 rendered pages (265 pages plus 24 term archives; the archives' SQL main
+query cannot be filtered, so they are covered separately below). Assigning the terms with today's code would have made three changes
 nobody asked for:
 
 1. **Case results → hardcoded fallback cards.** `roden_case_results_grid()` filters by
@@ -850,7 +851,7 @@ all three modes: 784 page→resource links checked.
   most others 8 → 5–10. Cosmetic. No term drops to 0.
 - **Doorway ratio / floor:** unchanged by construction. No page, URL, title or content
   changes, and no sitemap change.
-- **Structured data:** `roden_output_schema()` output byte-identical on all 287 pages in
+- **Structured data:** `roden_output_schema()` output byte-identical on all 289 rendered pages in
   all modes. Only `is_tax('practice_category')` archives read the taxonomy for schema.
 - **Breadcrumbs:** no breadcrumb code reads `practice_category`. The full `<main>` diff
   shows no change outside the listed blocks.
