@@ -725,6 +725,8 @@ function roden_get_legacy_redirect_map() {
         // Six near-duplicate posts asking one question, which is why they were culled.
         // They consolidate onto the surviving canonical answer. The lawsuit-framed
         // one goes to the lawsuit page instead of the lawyer page.
+        // Their root-level keys in CATEGORY 12, and the two workers' comp entries
+        // above, point to the same pages (2026-10-23). Change a pair together.
         '/blog/why-should-i-hire-an-accident-lawyer-after-an-accident/'               => '/blog/benefits-of-hiring-personal-injury-lawyer/',  // 473 impr
         '/blog/when-should-you-hire-an-attorney-after-being-in-an-accident/'          => '/blog/benefits-of-hiring-personal-injury-lawyer/',  // 235 impr
         '/blog/why-is-having-a-personal-injury-lawyer-important/'                     => '/blog/benefits-of-hiring-personal-injury-lawyer/',  // 206 impr
@@ -732,7 +734,7 @@ function roden_get_legacy_redirect_map() {
         '/blog/how-can-an-attorney-help-with-my-car-accident-claim/'                  => '/blog/benefits-of-hiring-personal-injury-lawyer/',  // 28 impr
         '/blog/what-are-the-upsides-of-filing-a-personal-injury-lawsuit/'             => '/blog/questions-about-filing-a-lawsuit/',  // 47 impr
 
-        // NOT REDIRECTED, deliberately:
+        // NOT REDIRECTED, deliberately (410 since 2026-10-23, see CATEGORY 13):
         // /blog/car-crash-crush-injuries-in-charleston/ — 333 impressions at
         // position 20.6. The site has no crush-injury page and no page about a
         // comparable injury mechanism. Sending a specific injury-type query to a
@@ -1187,35 +1189,45 @@ function roden_get_legacy_redirect_map() {
         // "Can a car accident lawyer help with insurance" → "Are accident lawyers worth it"
         '/can-a-car-accident-lawyer-help-with-claiming-insurance-benefits/' => '/are-accident-lawyers-worth-it/',
 
-        // "Car accident claims: why you need an attorney" → "Are accident lawyers worth it"
-        '/how-can-an-attorney-help-with-my-car-accident-claim/' => '/are-accident-lawyers-worth-it/',
+        // Eight of the keys below have a hand-written /blog/ twin in CATEGORY 19
+        // (how-can-an-attorney…, upsides-of-filing…, why-is-workers-compensation…,
+        // why-should-i-consult…, why-should-i-hire…, why-is-having…, when-should-you-
+        // hire…, benefits-of-hiring-a-workers-compensation-lawyer). Each root key
+        // points where its twin points (owner decision 2026-10-23): the twins carry
+        // all the search history, and their destinations were the 2026-09-03 cull's
+        // deliberate choice. These root keys also drive the /blog-{slug}/ and
+        // /blog/blog-{slug}/ forms (roden_resolve_legacy_blog_dest()), so those
+        // follow too. Change a pair together or not at all.
+
+        // "Car accident claims: why you need an attorney" → "Benefits of hiring a PI lawyer"
+        '/how-can-an-attorney-help-with-my-car-accident-claim/' => '/blog/benefits-of-hiring-personal-injury-lawyer/',
 
         // "Should I pursue a PI claim after car accident" → "Do I have a PI case"
         '/i-was-in-a-car-accident-should-i-pursue-a-personal-injury-claim/' => '/how-do-i-know-if-i-have-a-personal-injury-case/',
 
-        // "Upsides of filing a PI lawsuit" → "Do I have a PI case"
-        '/what-are-the-upsides-of-filing-a-personal-injury-lawsuit/' => '/how-do-i-know-if-i-have-a-personal-injury-case/',
+        // "Upsides of filing a PI lawsuit" → "Factors to consider before filing a PI lawsuit"
+        '/what-are-the-upsides-of-filing-a-personal-injury-lawsuit/' => '/blog/questions-about-filing-a-lawsuit/',
 
         // "Benefits of WC claims" → "Am I eligible for WC"
         '/what-are-the-benefits-of-workers-compensation-claims/' => '/am-i-eligible-for-workers-compensation/',
 
-        // "Why is WC so important" → "Am I eligible for WC"
-        '/why-is-workers-compensation-so-important-to-have/' => '/am-i-eligible-for-workers-compensation/',
+        // "Why is WC so important" → the workers' comp pillar
+        '/why-is-workers-compensation-so-important-to-have/' => '/practice-areas/workers-compensation-lawyers/',
 
-        // "Why consult a PI lawyer" → "Are accident lawyers worth it"
-        '/why-should-i-consult-a-personal-injury-lawyer-for-my-accident/' => '/are-accident-lawyers-worth-it/',
+        // "Why consult a PI lawyer" → "Benefits of hiring a PI lawyer"
+        '/why-should-i-consult-a-personal-injury-lawyer-for-my-accident/' => '/blog/benefits-of-hiring-personal-injury-lawyer/',
 
-        // "Why hire an accident lawyer" → "Are accident lawyers worth it"
-        '/why-should-i-hire-an-accident-lawyer-after-an-accident/' => '/are-accident-lawyers-worth-it/',
+        // "Why hire an accident lawyer" → "Benefits of hiring a PI lawyer"
+        '/why-should-i-hire-an-accident-lawyer-after-an-accident/' => '/blog/benefits-of-hiring-personal-injury-lawyer/',
 
-        // "Why is having a PI lawyer important" → "Are accident lawyers worth it"
-        '/why-is-having-a-personal-injury-lawyer-important/' => '/are-accident-lawyers-worth-it/',
+        // "Why is having a PI lawyer important" → "Benefits of hiring a PI lawyer"
+        '/why-is-having-a-personal-injury-lawyer-important/' => '/blog/benefits-of-hiring-personal-injury-lawyer/',
 
-        // "When should you hire an attorney" → "Are accident lawyers worth it"
-        '/when-should-you-hire-an-attorney-after-being-in-an-accident/' => '/are-accident-lawyers-worth-it/',
+        // "When should you hire an attorney" → "Benefits of hiring a PI lawyer"
+        '/when-should-you-hire-an-attorney-after-being-in-an-accident/' => '/blog/benefits-of-hiring-personal-injury-lawyer/',
 
-        // "Benefits of hiring a WC lawyer" → "Are accident lawyers worth it"
-        '/what-are-the-benefits-of-hiring-a-workers-compensation-lawyer/' => '/are-accident-lawyers-worth-it/',
+        // "Benefits of hiring a WC lawyer" → the workers' comp pillar
+        '/what-are-the-benefits-of-hiring-a-workers-compensation-lawyer/' => '/practice-areas/workers-compensation-lawyers/',
 
         // ══════════════════════════════════════════════════════════════
         // CATEGORY 13: Sitemap audit — 2026-03-30
@@ -1235,9 +1247,29 @@ function roden_get_legacy_redirect_map() {
         '/practice-areas/medical-malpractice-attorneys/' => '/practice-areas/medical-malpractice-lawyers/',
 
         // Root-level blog posts that may have been renamed (catch-all won't find them)
-        '/car-crash-crush-injuries-in-charleston/'                                        => '/blog/car-crash-crush-injuries-in-charleston/',
         '/should-i-worry-if-i-have-stomach-pain-after-a-car-accident-in-charleston/'      => '/blog/stomach-pain-after-a-car-accident-in-charleston/',
-        '/a-charleston-residents-guide-to-tourist-car-accidents/'                          => '/blog/a-charleston-residents-guide-to-tourist-car-accidents/',
+
+        // 410 Gone, every address form (owner decision 2026-10-23). Each root key
+        // used to 301 to its own /blog/ form, which 404s: no post by either slug
+        // exists in any status. No other entry in either map points at these
+        // URLs. The /blog-{slug}/ and /blog/blog-{slug}/ forms are listed
+        // explicitly: without them roden_resolve_legacy_blog_dest() skips the 410
+        // root key and sends them to /blog/. Explicit entries, not a resolver
+        // change, because a resolver change would also flip the /blog-/ forms of
+        // every other 410 key (e.g. coronavirus-business-claims), which nobody
+        // decided.
+        // Crush injuries: see the CATEGORY 19 note, the site has no comparable
+        // page. Tourist guide: its -2/-4 twins go to the car-accident pillar.
+        // This handler is not 404-gated, so if a post is ever published at
+        // either /blog/ address, delete its entry here or it will serve 410.
+        '/car-crash-crush-injuries-in-charleston/'                                        => false, // 410 Gone
+        '/blog/car-crash-crush-injuries-in-charleston/'                                   => false, // 410 Gone
+        '/a-charleston-residents-guide-to-tourist-car-accidents/'                          => false, // 410 Gone
+        '/blog/a-charleston-residents-guide-to-tourist-car-accidents/'                     => false, // 410 Gone
+        '/blog-car-crash-crush-injuries-in-charleston/'                                   => false, // 410 Gone
+        '/blog/blog-car-crash-crush-injuries-in-charleston/'                              => false, // 410 Gone
+        '/blog-a-charleston-residents-guide-to-tourist-car-accidents/'                     => false, // 410 Gone
+        '/blog/blog-a-charleston-residents-guide-to-tourist-car-accidents/'                => false, // 410 Gone
 
         // Ivy Montano — slug mismatch (old: ivy-montano, current: ivy-s-montano)
         '/who-we-are/attorneys/ivy-montano/' => '/attorneys/ivy-s-montano/',
