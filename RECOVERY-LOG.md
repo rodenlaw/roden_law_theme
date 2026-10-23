@@ -3267,3 +3267,44 @@ Owner: "do 1 and 3 now".
   claim over the bridge path (SCTCA § 15-78-110, two years), and an unsupported PIP sentence.
 - **Freshness benchmark:** the 4 targets and 18 retired control posts are excluded (refreshed 76, control 260).
 - **Detail:** docs/floor-cull-carryover-2026-10-21.md.
+
+## 2026-10-23 — City pages: generic blocks off, copied FAQs out — decided, template shipped
+
+**Owner decision, 2026-10-23:** apply the 2026-09-25 scenario-template treatment (#148) to the 11
+city practice pages (`template-intersection.php`) and remove the FAQ answers copied across them.
+
+**Why.** The content-similarity baseline (`internal-ai-scripts/scripts/content-similarity`,
+toolkit #114) compared the rendered `<main>` text of the live site with place names masked. The
+11 city pages share a median **57%** of their text with their closest sibling: Charleston,
+Columbia and North Charleston car accident 67–76%. Scenario pages, already treated on 09-25, sit
+at a median 39%, which is what that plan simulated.
+
+**What this changes, and what it does not.** Simulated on the cached live HTML, template plus FAQ
+dedupe takes about 500 duplicated words off each page (median 2,063 → 1,558 words) but leaves the
+closest-sibling share at **57%**. The remaining shared text is the "what to do" steps (feeds
+HowTo), the case-review form, and each page's own "rules that shape a … claim" and "why hire"
+sections in `post_content`. The overlap figure moves only when those are rewritten per city; that
+goes to the 12-24 step-3 re-measure. This change stands on two other grounds:
+- 34 of the 66 city-page FAQ answers are the same answer on 2–5 city pages, and FAQ answers
+  render as FAQPage structured data: the duplication Phase 4.4 removed on the blog.
+- The removed AI statistics block states "5 office locations" beside "our six offices" and stamps
+  the current month as its source date (noted in `docs/scenario-pages-plan-2026-09-25.md`).
+
+**Template (this PR).** `template-intersection.php` no longer renders the negligence section
+(four elements or the pillar's negligence intro), the compensation section, a second CTA banner,
+or `roden_ai_stats_block()`. It keeps the office, the state-law box (deadline and fault rule),
+the steps, the local court essay, attorneys, results and FAQs, and adds two links: the pillar's
+full treatment (same string as the scenario box) and the pillar's `#faq`. `es_ES.po`/`.mo`: both
+strings translated, which also translates the scenario box link that has shipped in English on
+`/es/` scenario pages since 09-25. The `/es/` city twins 301 to the Spanish pillar; no live
+Spanish page uses this template.
+
+**FAQ dedupe (after deploy).** `bin/build-city-faq-dedupe.sh` plans from `content/meta.json`
+(regenerated from prod 2026-10-23, identical to the committed copy) and runs
+`bin/apply-city-faq-dedupe.php`. Dry run on prod, 2026-10-23: 9 pages, 34 entries, 0 failures.
+Charleston/Columbia/North Charleston car 6 → 1, Savannah car 6 → 2, Charleston truck 6 → 1,
+Savannah truck 6 → 0, Charleston motorcycle 6 → 4, both workers' comp 6 → 5; medical
+malpractice and wrongful death untouched. Removal only, no text written. The seeder fails closed
+on any page whose `_roden_faqs` changed since the plan, writes with `wp_slash()`, reads back, and
+the builder saves a backup to `docs/backups/`. After applying: regenerate and commit
+`content/meta.json`, flush both caches, and re-run the rendered baseline.

@@ -488,158 +488,31 @@ if ( count( $sibling_urls ) >= 2 ) :
             ?>
 
             <!-- ═══════════════════════════════════════════════════════════
-                 NEGLIGENCE / LIABILITY FRAMING
-                 Pillar override (when _roden_pillar_negligence_intro set on
-                 parent) replaces the generic 4-element block. Falls back to
-                 the universal 4-element block for pillars without overrides.
+                 PILLAR LINK — negligence and compensation live on the pillar.
+
+                 Until 2026-10-23 this template re-rendered the pillar's generic
+                 sections on every city page: the four elements of negligence
+                 (or the pillar's negligence intro), the compensation columns,
+                 a second CTA banner and the AI statistics block. With place
+                 names masked, Charleston, Columbia and North Charleston car
+                 accident shared 67-76% of their text and the 11 city pages a
+                 median 57% (content-similarity baseline 2026-10-23). The same
+                 treatment the scenario template got on 2026-09-25: the city
+                 page keeps what is local (office, filing court and local
+                 context, the state-law box with the deadline and fault rule,
+                 the "what to do" steps that feed the HowTo schema) and links to
+                 the pillar for the general law. Same string as
+                 template-subtype.php's rules box.
                  ═══════════════════════════════════════════════════════════ -->
-            <?php
-            $accident_label_clean    = strtolower( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', $parent_title ) );
-            // ucfirst() on a lowercased title yields "Workers' compensation".
-            // roden_pa_noun() returns the pillar's own casing instead.
-            $accident_label_display  = roden_pa_noun( ucfirst( $accident_label_clean ) );
-            $pillar_negligence_html  = $parent_post
-                ? roden_render_pillar_intro( $parent_post->ID, '_roden_pillar_negligence_intro', $office, $jurisdiction )
-                : '';
-            ?>
-            <?php if ( $pillar_negligence_html ) : ?>
-            <div class="content-section pa-pillar-negligence" data-ai-extractable="true">
-                <h2><?php printf( /* translators: 1: practice area noun, e.g. "Workers' Compensation"; 2: city/market name. */ esc_html__( 'Do I Have a %1$s Case in %2$s?', 'roden-law' ), esc_html( $accident_label_display ), esc_html( $office['market_name'] ) ); ?></h2>
-                <?php echo $pillar_negligence_html; ?>
-            </div>
-            <?php elseif ( $int_is_statutory ) : ?>
-            <div class="content-section pa-elements-section" data-ai-extractable="true">
-                <h2><?php printf( /* translators: 1: practice area noun, e.g. "Workers' Compensation"; 2: city/market name. */ esc_html__( 'Do I Have a %1$s Case in %2$s?', 'roden-law' ), esc_html( $accident_label_display ), esc_html( $office['market_name'] ) ); ?></h2>
-                <p><?php printf( /* translators: %s: state name. */ esc_html__( '%s workers\' compensation is a no-fault system. You do not have to prove your employer did anything wrong — you have to show the injury arose out of and in the course of your employment, and that you met the notice and filing deadlines.', 'roden-law' ), esc_html( $office['state_full'] ) ); ?></p>
-                <div class="pa-elements">
-                    <?php
-                    $elements = array(
-                        array( 'num' => '01', 'title' => __( 'Covered Employment', 'roden-law' ), 'body' => __( 'You were an employee of a business required to carry workers\' compensation coverage. Independent contractors are treated differently, and misclassification is common — it is worth checking.', 'roden-law' ) ),
-                        array( 'num' => '02', 'title' => __( 'Arising Out of Employment', 'roden-law' ), 'body' => __( 'The injury was connected to what your job required you to do. This covers sudden accidents as well as conditions that developed over time, such as repetitive stress and occupational disease.', 'roden-law' ) ),
-                        array( 'num' => '03', 'title' => __( 'In the Course of Employment', 'roden-law' ), 'body' => __( 'The injury happened while you were working or doing something reasonably incidental to your work. Disputes here often decide the claim, particularly for travel, breaks, and off-site tasks.', 'roden-law' ) ),
-                        array( 'num' => '04', 'title' => __( 'Timely Notice and Filing', 'roden-law' ), 'body' => __( 'You reported the injury to your employer within the statutory notice period and filed the claim with the state board before the deadline. Both are strict, and both are separate steps.', 'roden-law' ) ),
-                    );
-                    foreach ( $elements as $el ) : ?>
-                        <div class="pa-element">
-                            <div class="pa-element__num"><?php echo esc_html( $el['num'] ); ?></div>
-                            <div class="pa-element__content">
-                                <h3><?php echo esc_html( $el['title'] ); ?></h3>
-                                <p><?php echo esc_html( $el['body'] ); ?></p>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-            <?php else : ?>
-            <div class="content-section pa-elements-section" data-ai-extractable="true">
-                <h2><?php printf( /* translators: 1: practice area noun, e.g. "Car Accident"; 2: city/market name. */ esc_html__( 'Do I Have a %1$s Case in %2$s?', 'roden-law' ), esc_html( $accident_label_display ), esc_html( $office['market_name'] ) ); ?></h2>
-                <p><?php printf( /* translators: %s: state name. */ esc_html__( 'To win a personal injury case in %s, your attorney must prove four elements of negligence by a preponderance of the evidence.', 'roden-law' ), esc_html( $office['state_full'] ) ); ?></p>
-                <div class="pa-elements">
-                    <?php
-                    $elements = array(
-                        array( 'num' => '01', 'title' => __( 'Duty of Care', 'roden-law' ), 'body' => __( 'The other party owed you a legal duty to act in a manner that ensured your safety.', 'roden-law' ) ),
-                        array( 'num' => '02', 'title' => __( 'Breach of Duty', 'roden-law' ), 'body' => __( 'The other party breached that duty by failing to act as a reasonably prudent person would have in the same situation.', 'roden-law' ) ),
-                        array( 'num' => '03', 'title' => __( 'Causation', 'roden-law' ), 'body' => __( 'The breach directly caused your injuries. We gather evidence proving that but for their negligence, you would not have been harmed.', 'roden-law' ) ),
-                        array( 'num' => '04', 'title' => __( 'Damages', 'roden-law' ), 'body' => __( 'You suffered actual, quantifiable damages — medical expenses, lost income, pain and suffering — as a direct result of the at-fault party\'s breach.', 'roden-law' ) ),
-                    );
-                    foreach ( $elements as $el ) : ?>
-                        <div class="pa-element">
-                            <div class="pa-element__num"><?php echo esc_html( $el['num'] ); ?></div>
-                            <div class="pa-element__content">
-                                <h3><?php echo esc_html( $el['title'] ); ?></h3>
-                                <p><?php echo esc_html( $el['body'] ); ?></p>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
+            <?php if ( $parent_post ) : ?>
+            <div class="content-section">
+                <p class="pa-rules__more"><a href="<?php echo esc_url( $parent_url ); ?>"><?php printf(
+                    /* translators: %s: pillar practice area title, e.g. "Dog Bite Lawyers". */
+                    esc_html__( 'How negligence, compensation, deadlines and fault work: %s', 'roden-law' ),
+                    esc_html( $parent_title )
+                ); ?> &rarr;</a></p>
             </div>
             <?php endif; ?>
-
-            <!-- ═══════════════════════════════════════════════════════════
-                 COMPENSATION / DAMAGES FRAMING
-                 Pillar override (when _roden_pillar_compensation_intro set on
-                 parent) replaces the generic two-column block. Falls back to
-                 the universal economic/non-economic split.
-                 ═══════════════════════════════════════════════════════════ -->
-            <?php
-            $pillar_compensation_html = $parent_post
-                ? roden_render_pillar_intro( $parent_post->ID, '_roden_pillar_compensation_intro', $office, $jurisdiction )
-                : '';
-            ?>
-            <?php if ( $pillar_compensation_html ) : ?>
-            <div class="content-section pa-pillar-compensation" data-ai-extractable="true">
-                <h2><?php printf( /* translators: 1: state name; 2: practice area noun, e.g. "Workers' Compensation". */ esc_html__( 'Types of Compensation in %1$s %2$s Cases', 'roden-law' ), esc_html( $office['state_full'] ), esc_html( $accident_label_display ) ); ?></h2>
-                <?php echo $pillar_compensation_html; ?>
-            </div>
-            <?php elseif ( $int_is_statutory ) : ?>
-            <div class="content-section pa-compensation" data-ai-extractable="true">
-                <h2><?php printf( /* translators: 1: state name; 2: practice area noun. */ esc_html__( 'What %1$s %2$s Benefits Cover', 'roden-law' ), esc_html( $office['state_full'] ), esc_html( $accident_label_display ) ); ?></h2>
-                <p class="section-lead"><?php printf( /* translators: %s: state name. */ esc_html__( 'Workers\' compensation pays a defined set of statutory benefits — it does not pay for pain and suffering, and the wage benefits are capped by %s law. That is why a separate third-party claim matters when someone other than your employer contributed to the injury.', 'roden-law' ), esc_html( $office['state_full'] ) ); ?></p>
-                <div class="pa-compensation__grid">
-                    <div class="pa-compensation__col">
-                        <h3><?php esc_html_e( 'Workers\' Compensation Benefits', 'roden-law' ); ?></h3>
-                        <ul>
-                            <li><?php esc_html_e( 'Authorized medical treatment and prescriptions', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Temporary total disability (a portion of your average weekly wage)', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Temporary partial disability for reduced-earnings work', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Permanent partial disability under the body-part schedule', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Mileage to and from authorized medical appointments', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Vocational rehabilitation, where available', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Death benefits for surviving dependents', 'roden-law' ); ?></li>
-                        </ul>
-                    </div>
-                    <div class="pa-compensation__col">
-                        <h3><?php esc_html_e( 'Only Through a Third-Party Claim', 'roden-law' ); ?></h3>
-                        <ul>
-                            <li><?php esc_html_e( 'Pain and suffering', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Mental and emotional distress', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Loss of companionship (spouse/family)', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Disfigurement and loss of enjoyment of life', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Full wage loss beyond the statutory cap', 'roden-law' ); ?></li>
-                        </ul>
-                        <p class="pa-compensation__note"><em><?php esc_html_e( 'These are unavailable through workers\' compensation. They require a claim against a party other than your employer — a negligent driver, an on-site contractor, or the manufacturer of a defective machine.', 'roden-law' ); ?></em></p>
-                    </div>
-                </div>
-            </div>
-            <?php else : ?>
-            <div class="content-section pa-compensation" data-ai-extractable="true">
-                <h2><?php printf( /* translators: 1: state name; 2: practice area noun, e.g. "Car Accident". */ esc_html__( 'Types of Compensation in %1$s %2$s Cases', 'roden-law' ), esc_html( $office['state_full'] ), esc_html( $accident_label_display ) ); ?></h2>
-                <p class="section-lead"><?php printf( /* translators: 1: lowercase accident type; 2: state name. */ esc_html__( 'Victims of %1$s injuries in %2$s can pursue two categories of damages: economic damages (quantifiable financial losses) and non-economic damages (quality-of-life impacts). Compensatory damages are generally not capped in an ordinary %2$s injury case, although claims against government entities, charitable organizations and medical providers carry statutory limits.', 'roden-law' ), esc_html( $accident_label_clean ), esc_html( $office['state_full'] ) ); ?></p>
-                <div class="pa-compensation__grid">
-                    <div class="pa-compensation__col">
-                        <h3><?php esc_html_e( 'Economic Damages', 'roden-law' ); ?></h3>
-                        <ul>
-                            <li><?php esc_html_e( 'Past and future medical expenses', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Lost wages or income', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Loss of earning capacity', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Property damage and vehicle repair/replacement', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Cost of rehabilitation and physical therapy', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Assistive medical equipment', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Cost of long-term or lifelong care', 'roden-law' ); ?></li>
-                        </ul>
-                    </div>
-                    <div class="pa-compensation__col">
-                        <h3><?php esc_html_e( 'Non-Economic Damages', 'roden-law' ); ?></h3>
-                        <ul>
-                            <li><?php esc_html_e( 'Pain and suffering', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Mental and emotional distress', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Loss of companionship (spouse/family)', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Disability and disfigurement', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Loss of enjoyment of life', 'roden-law' ); ?></li>
-                            <li><?php esc_html_e( 'Humiliation or loss of reputation', 'roden-law' ); ?></li>
-                        </ul>
-                        <p class="pa-compensation__note"><em><?php esc_html_e( 'Non-economic damages can only be pursued through a personal injury lawsuit, not a standard insurance claim.', 'roden-law' ); ?></em></p>
-                    </div>
-                </div>
-            </div>
-            <?php endif; ?>
-
-            <?php roden_inline_cta_banner(); ?>
-
-            <!-- ═══════════════════════════════════════════════════════════
-                 AI STATISTICS BLOCK (+37% visibility)
-                 ═══════════════════════════════════════════════════════════ -->
-            <?php roden_ai_stats_block( get_the_title() ); ?>
 
             <!-- Office Attorneys -->
             <div class="content-section">
@@ -700,6 +573,20 @@ if ( count( $sibling_urls ) >= 2 ) :
 
             <!-- FAQ Accordion -->
             <?php roden_faq_section( $post_id ); ?>
+
+            <?php
+            // The city page keeps only the FAQs that are its own (copied
+            // entries were removed 2026-10-23, bin/apply-city-faq-dedupe.php);
+            // the pillar carries the full set. One page may now have none.
+            if ( $parent_post ) : ?>
+            <div class="content-section">
+                <p class="pa-rules__more"><a href="<?php echo esc_url( $parent_url . '#faq' ); ?>"><?php printf(
+                    /* translators: %s: practice area noun, e.g. "Car Accident". */
+                    esc_html__( 'More %s questions, answered on our main page', 'roden-law' ),
+                    esc_html( roden_pa_noun( $parent_title ) )
+                ); ?> &rarr;</a></p>
+            </div>
+            <?php endif; ?>
 
             <!-- Bottom CTA -->
             <div class="bottom-cta-box">
