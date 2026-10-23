@@ -3308,3 +3308,13 @@ malpractice and wrongful death untouched. Removal only, no text written. The see
 on any page whose `_roden_faqs` changed since the plan, writes with `wp_slash()`, reads back, and
 the builder saves a backup to `docs/backups/`. After applying: regenerate and commit
 `content/meta.json`, flush both caches, and re-run the rendered baseline.
+
+**Applied 2026-10-23.** #254 deployed (drift guard clean). `bin/build-city-faq-dedupe.sh apply`:
+9 pages written, 34 entries removed, 0 failed, every readback matched; backup
+`docs/backups/city-faq-dedupe-2026-10-23.json`. Both caches flushed. Live JSON-LD guard
+(`check-unslashed-post-writes.php` via WP-CLI) PASS. `content/meta.json` regenerated: exactly the 9
+pages changed. Live check: Charleston car renders 1 FAQ and its FAQPage, Savannah truck renders none
+and emits no FAQPage, neither renders the negligence/compensation sections, and both carry the
+pillar and `#faq` links. Left as is: the Speakable `cssSelector` list (schema-helpers.php) still
+names `.ai-stats-block`, which no longer exists on scenario or city pages; a selector that matches
+nothing is ignored.
