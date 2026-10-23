@@ -1062,6 +1062,12 @@ function roden_get_legacy_redirect_map() {
 
         // Duplicate Coleman Boulevard posts → canonical version
         '/car-accidents-on-coleman-boulevard/' => '/car-accident-lawyers/charleston-sc/', // was the Mount Pleasant post, retired 2026-10-21 (roden_floor_cull_mid_urls)
+        // The /blog/ form of the duplicate had no rule. It resolved only through
+        // WordPress's 404 slug guess, which matched the published
+        // ...-in-mount-pleasant post by prefix. That post was retired in the
+        // 2026-10-21 floor cull and the guess went with it, so the URL became a
+        // 404 (site-health 2026-10-22, the replay fixture's only LOST).
+        '/blog/car-accidents-on-coleman-boulevard/' => '/car-accident-lawyers/charleston-sc/',
 
         // Duplicate Columbia truck accident guides → single canonical post
         '/your-first-steps-after-a-truck-accident-in-downtown-columbia-sc/' => '/blog/your-step-by-step-guide-after-a-downtown-columbia-truck-accident/',

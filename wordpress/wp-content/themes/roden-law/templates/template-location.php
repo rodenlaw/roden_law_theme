@@ -238,43 +238,56 @@ if ( ! empty( $neighborhood_children ) ) :
      4c. LOCAL LEGAL RESOURCES (auto-renders resources relevant to this office)
      ================================================================ -->
 <?php
+/*
+ * Filter for this office FIRST, then cap at 6.
+ *
+ * This used to fetch the 6 newest resources sitewide and filter those by office
+ * slug, so a local guide rendered only while it was one of the 6 newest
+ * resources overall. From September 2026 the newest six were all GA/SC
+ * statewide guides, so nothing matched and the section rendered on no office
+ * page. The North Charleston and Charleston County guides were then reachable
+ * only through blog posts, and those posts were retired in the 2026-10-21 floor
+ * cull. Site-health crawl, 2026-10-22: 3 orphans. Querying every published
+ * resource in the locale (under 50) and filtering in PHP links each local guide
+ * from its office page for as long as both exist.
+ *
+ * Only local matches render. The old code padded the list with the newest
+ * non-local resources, which would now put Georgia statewide guides on South
+ * Carolina office pages. That padding never reached a page, because the
+ * section was hidden whenever nothing matched.
+ */
 $loc_resource_args = array(
-    'post_type'      => 'resource',
-    'posts_per_page' => 6,
-    'post_status'    => 'publish',
-    'orderby'        => 'date',
-    'order'          => 'DESC',
+    'post_type'              => 'resource',
+    'posts_per_page'         => -1,
+    'post_status'            => 'publish',
+    'orderby'                => 'date',
+    'order'                  => 'DESC',
+    'no_found_rows'          => true,
+    'update_post_term_cache' => false,
 );
 if ( function_exists( 'roden_locale_meta_query' ) ) {
     $loc_resource_args['meta_query'] = roden_locale_meta_query();
 }
 $loc_resource_query = new WP_Query( $loc_resource_args );
 if ( $loc_resource_query->have_posts() ) :
-    // Filter and boost resources relevant to this office's geographic area.
+    // Resources whose slug names this office's market or city.
     $loc_boosted = array();
-    $loc_rest    = array();
     $loc_market_slug = sanitize_title( $office['market_name'] );
     $loc_city_slug   = sanitize_title( $office['city'] );
-    $loc_state_lower = strtolower( $office['state'] );
 
-    while ( $loc_resource_query->have_posts() ) {
-        $loc_resource_query->the_post();
-        $r_slug = get_post_field( 'post_name', get_the_ID() );
-        $r_item = array(
-            'title' => get_the_title(),
-            'url'   => get_the_permalink(),
-        );
+    foreach ( $loc_resource_query->posts as $r_post ) {
+        $r_slug = $r_post->post_name;
         if ( strpos( $r_slug, $loc_market_slug ) !== false || strpos( $r_slug, $loc_city_slug ) !== false ) {
-            $loc_boosted[] = $r_item;
-        } else {
-            $loc_rest[] = $r_item;
+            $loc_boosted[] = array(
+                'title' => get_the_title( $r_post ),
+                'url'   => get_permalink( $r_post ),
+            );
         }
     }
-    wp_reset_postdata();
 
     // Only show this section if we have at least 1 local resource.
     if ( ! empty( $loc_boosted ) ) :
-        $loc_items = array_slice( array_merge( $loc_boosted, $loc_rest ), 0, 6 );
+        $loc_items = array_slice( $loc_boosted, 0, 6 );
 ?>
 <section class="section">
     <div class="container">
