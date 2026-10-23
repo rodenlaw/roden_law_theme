@@ -681,3 +681,215 @@ fixture row changes.
 Run `node vendor/site-health/site-health.mjs redirects --repo . --base https://rodenlaw.com --live`.
 Expected: 997 ok / 0 chains / 0 lost. Spot-check `curl -sIL https://rodenlaw.com/blog/contact-us/`
 and `/blog/privacy-policy-2/`: each should be one 301 to `/contact/` and `/privacy-policy/`.
+
+## Prepared (sixth PR, not applied): pillar `practice_category` terms
+
+Owner decision 2026-10-23, following the #250 finding: give the practice-area pillars a
+`practice_category` term. Intersections and sub-types read their resource topic from the
+parent pillar's term. No main pillar had one, so `cat_slug` was `''` on all 11
+intersections (they listed local but off-topic guides: the Charleston workers' comp page
+listed the Charleston County court PI-claim guide), and the 97 sub-types under untermed
+pillars never called the resources block. **Status: prepared and simulated, not written.**
+The board strategist applies the change after review.
+
+### Mapping (existing terms only)
+
+Inventory read from prod 2026-10-23. 24 EN + 23 ES top-level pillars, 24 terms, no new
+terms. Every pillar except personal injury has a term of the same name. The terms were
+created for this purpose and are already on the pillars' children (125 published
+practice_area posts).
+
+| Pillar (EN id / ES id) | Term | Before (EN / ES) |
+|---|---|---|
+| atv-side-by-side-accident-lawyers (4089 / 4900) | atv-accidents | has it / has it |
+| bicycle-accident-lawyers (4087 / 4898) | bicycle-accidents | has it / has it |
+| boating-accident-lawyers (3616 / 4895) | boating-accidents | none / none |
+| brain-injury-lawyers (3612 / 4890) | brain-injuries | none / none |
+| burn-injury-lawyers (3617 / 4896) | burn-injuries | none / none |
+| car-accident-lawyers (3604 / 4873) | car-accidents | none / none |
+| construction-accident-lawyers (3618 / 4876) | construction-accidents | none / none |
+| dog-bite-lawyers (3611 / 4880) | dog-bites | none / none |
+| e-bike-accident-lawyers (4578 / no ES) | e-bike-accidents | has it / n/a |
+| electric-scooter-accident-lawyers (4088 / 4899) | electric-scooter-accidents | has it / has it |
+| golf-cart-accident-lawyers (4090 / 4901) | golf-cart-accidents | has it / has it |
+| maritime-injury-lawyers (3614 / 4894) | maritime-injuries | none / none |
+| medical-malpractice-lawyers (3608 / 4881) | medical-malpractice | none / none |
+| motorcycle-accident-lawyers (3607 / 4877) | motorcycle-accidents | none / none |
+| nursing-home-abuse-lawyers (3619 / 4897) | nursing-home-abuse | none / none |
+| pedestrian-accident-lawyers (3621 / 4878) | pedestrian-accidents | none / none |
+| premises-liability-lawyers (3620 / 4893) | premises-liability | none / none |
+| product-liability-lawyers (3615 / 4892) | product-liability | none / none |
+| slip-and-fall-lawyers (3606 / 4879) | slip-and-fall | none / none |
+| spinal-cord-injury-lawyers (3613 / 4891) | spinal-cord-injuries | none / none |
+| truck-accident-lawyers (3605 / 4874) | truck-accidents | none / none |
+| workers-compensation-lawyers (3610 / 4875) | workers-compensation | none / none |
+| wrongful-death-lawyers (3609 / 4882) | wrongful-death | none / none |
+| **personal-injury-lawyers (4692 / 5200)** | **none fits: flagged, not mapped** | none / none |
+
+36 to set (18 EN + 18 ES); 9 already carry the term. Spanish pillars take their English
+twin's term because that is how the site already does it: Spanish resources carry the same
+slugs (`car-accidents` on 1, `south-carolina-law` on 8), and the 4 Spanish pillars that
+already had a term carry their twin's. Spanish pillars have no children, so ES only affects
+the 18 ES pillar pages.
+
+Resources per term (published): `car-accidents` 3 EN + 1 ES; `truck-accidents` 12 EN;
+`south-carolina-law` 13 EN + 8 ES (a jurisdiction tag, not a practice term). No other term
+has a resource. 21 published resources have no term. No case result has any term.
+Map: `docs/practice-category/pillar-map-2026-10-23.json`.
+
+### What the raw term assignment would have broken (simulation, current code)
+
+Read-only harness on prod. It filters `get_object_terms` so the mapped pillars appear to
+carry their term, pins `ORDER BY RAND()` (the pillar "Related Practice Areas" widget), and
+renders every page three times: live, simulated, and live again as a control. 0 control
+diffs on 287 pages. Assigning the terms with today's code would have made three changes
+nobody asked for:
+
+1. **Case results → hardcoded fallback cards.** `roden_case_results_grid()` filters by
+   `practice_category`, and no case result has one. The grid matched nothing and fell back
+   to the 4 hardcoded, unlinked cards. All 11 intersections and 16 more EN + 18 ES pillars
+   would have switched. The 5 EN + 4 ES pillars that already have a term show this today.
+2. **Pillar "Related Resources" (blog) block removed.** It filtered posts by
+   `practice_category`, but posts are not in that taxonomy. 18 EN + 18 ES pillars would
+   lose 5–6 blog links each. Again, the 9 termed pillars already show no block.
+3. **Pillar "Related Guides" box removed** on every pillar whose category has no resource
+   (16 EN, 17 ES).
+
+### Code in this PR (separate commits)
+
+- `roden_case_results_grid()`: if the `practice_category` clause matches nothing, drop that
+  clause and keep the rest of the query.
+- `template-practice-area.php`: the blog block uses the blog-category map only. The guides
+  box keeps the category filter but falls back to the newest guides when the category has
+  none in this locale.
+- `template-subtype.php`: passes `jurisdiction_of` (the #252 rule). See the jurisdiction
+  section below.
+
+`bin/assign-pillar-practice-category.php` checks for all four markers in the live theme and
+refuses `apply` until they are deployed.
+
+### Simulation with the PR code (live vs patched code + terms)
+
+Pages compared byte-for-byte (`<main>` body and the `roden_output_schema()` JSON-LD). Every
+changed link sits inside a resource, blog or case-result block (0 non-block link changes).
+
+| Template | Pages | Changed by code alone | Changed by code + terms | Schema changed |
+|---|---|---|---|---|
+| Pillar EN | 24 | 5 (already-termed: blog block, guides box, real case results return) | 7 (those 5 + car, truck) | 0 |
+| Pillar ES | 23 | 4 (already-termed, same) | 5 (those 4 + car) | 0 |
+| Intersection (EN; ES has none) | 11 | 0 | 11 | 0 |
+| Sub-type (EN; ES has none) | 118 | 0 | 9 | 0 |
+| Single resource EN / ES | 47 / 11 | 0 | 0 | 0 |
+| Office pages, neighbourhood hub (EN / ES) | 9 / 4 | 0 | 0 | 0 |
+| Hubs (/, /practice-areas/, /locations/, /resources/, /case-results/, /blog/, /attorneys/; 5 ES) | 12 | 0 | 0 | 0 |
+| Blog posts (sample, EN / ES) | 3 / 3 | 0 | 0 | 0 |
+
+The code-only pillar changes fix a defect that is already live on 9 pillars, whether or not
+the terms are ever applied. Car and truck pillars switch their guides box to on-topic
+guides (EN car 3 car guides, EN truck 4 truck guides, ES car 1). Case results and blog
+blocks are unchanged on every pillar that gains a term.
+
+**Sub-types:** 9 newly show "Related Guides & Legal Resources": 6 car sub-types (SC + GA
+car settlement value, dangerous-roads-north-charleston) and 3 truck sub-types (GA + SC
+truck settlement value, i-95-widening (both), blythewood-i-77). The SC-only port-freight
+page drops the GA guide and adds carolina-crossroads. The other 109 call the block and
+still show nothing, because their category has no resource.
+
+**Intersections (resource block before → after; case results unchanged on all 11):**
+
+| Page | Before | After |
+|---|---|---|
+| car / savannah-ga | Local …, 4 (2 truck guides, GA WD, GA UM) | "Georgia Car Accident Resources", 1: georgia-car-accident-settlement-value |
+| car / charleston-sc | Local …, 4 (incl. Charleston County court PI guide) | Local …, 2: dangerous-roads-north-charleston, SC car settlement value |
+| car / north-charleston-sc | Local …, 4 | Local …, 2: same two |
+| car / columbia-sc | Local …, 4 (Broad River truck, moped, golf cart, helmet) | "South Carolina Car Accident Resources", 1: SC car settlement value |
+| truck / savannah-ga | Local …, 4 (incl. GA WD, GA UM) | Local …, 4: bay-street, port-of-savannah, GA truck settlement value, i-16-i-95 |
+| truck / charleston-sc | Local …, 4 (incl. PI court guide, pedestrian safety) | "South Carolina Truck Accident Resources", 4: SC truck settlement value, blythewood-i-77, carolina-crossroads, us-52-goose-creek |
+| motorcycle / charleston-sc | Local …, 4 | **block gone** (no motorcycle-accidents resource) |
+| medical-malpractice / charleston-sc | Local …, 4 | **block gone** |
+| wrongful-death / charleston-sc | Local …, 4 | **block gone** |
+| workers-compensation / savannah-ga | Local …, 4 | **block gone** |
+| workers-compensation / charleston-sc | Local …, 4 | **block gone** |
+
+3 intersections fall back to the "{State} … Resources" heading and 5 empty. The owner's
+example page (WC Charleston) stops listing the PI court guide by losing the block, because
+no resource carries `workers-compensation`. On-topic guides do exist but are tagged only
+`south-carolina-law` or untagged: 4 SC workers' comp guides, GA-vs-SC workers' comp, GA/SC
+wrongful death settlement value, SC motorcycle settlement value. Tagging them would fill
+these blocks. That is a separate data decision (owner item below). No resource loses its
+last link: the three guides that leave intersection lists (Charleston County court PI,
+North Charleston pedestrian safety, North Charleston truck guide) are still linked from the
+Charleston office page and the North Charleston hub (checked live).
+
+### Jurisdiction check
+
+Ran `roden_page_jurisdiction_states()` on page and resource for every list rendered in
+all three modes: 784 page→resource links checked.
+
+- Current code + terms: **1 cross-state pair**:
+  `/truck-accident-lawyers/port-freight-truck-accident/` (SC-only) → `georgia-truck-accident-settlement-value` (GA).
+- With the `template-subtype.php` fix: **0**.
+- Callers: intersections pass `office_key` (the office state rule, which drops `both`).
+  Sub-types passed no state filter before this PR and now pass `jurisdiction_of` (115 of
+  118 are two-state, so they stay unfiltered). Single-resource sidebars pass
+  `jurisdiction_of` (#252) and use the resource's own term, so pillar terms cannot reach
+  them (0 changed).
+
+### Sitemap, archives, doorway, floor, schema, breadcrumbs
+
+- **Sitemap:** no effect. The `taxonomies` provider is removed (`roden_remove_sitemap_providers()`).
+  Live providers are posts, eshubs and hubs, and none of the 8 live sub-sitemaps contains
+  `practice-category`. No URL is added or removed.
+- **Term archives** (`/practice-category/{slug}/`) already exist for all 24 terms and are
+  `noindex, follow` (`roden_output_noindex_pages()`). They already list the pillars'
+  children. After apply, each of the 18 archives also lists its EN pillar (ES is filtered
+  out on EN requests). No new archive URL appears: every term already has published objects.
+- **Term counts:** WordPress recounts the touched terms on write (published objects only).
+  The stored counts are stale today, so the EN blog sidebar "Categories" widget shows
+  different numbers after apply. Examples: Truck Accidents 45 → 17, Car Accidents 19 → 12,
+  most others 8 → 5–10. Cosmetic. No term drops to 0.
+- **Doorway ratio / floor:** unchanged by construction. No page, URL, title or content
+  changes, and no sitemap change.
+- **Structured data:** `roden_output_schema()` output byte-identical on all 287 pages in
+  all modes. Only `is_tax('practice_category')` archives read the taxonomy for schema.
+- **Breadcrumbs:** no breadcrumb code reads `practice_category`. The full `<main>` diff
+  shows no change outside the listed blocks.
+- **content/meta.json:** does not export taxonomy terms, so no regeneration is needed.
+
+### Apply (board strategist, after the theme commits are deployed)
+
+```bash
+H=rodenlawprod@rodenlawprod.ssh.wpengine.net
+M=docs/practice-category/pillar-map-2026-10-23.json
+ssh $H "wp --path=/home/wpe-user/sites/rodenlawprod eval-file - b64:$(base64 < $M)"       < bin/assign-pillar-practice-category.php   # dry run
+ssh $H "wp --path=/home/wpe-user/sites/rodenlawprod eval-file - b64:$(base64 < $M) apply" < bin/assign-pillar-practice-category.php   # write
+ssh $H "cd ~/sites/rodenlawprod && wp cache flush && wp page-cache flush"
+```
+
+Dry run on prod 2026-10-23: 36 set, 9 same, 0 refused, and all 4 prerequisites MISSING
+(expected before deploy). Keep the `BACKUP-JSON` line: it is a rollback map for the same
+script. The apply path has not been executed. Nothing was written to production.
+
+### Owner items
+
+- **Personal injury pillar** (EN 4692, ES 5200): no existing term fits. Either leave it
+  without one or create a `personal-injury` term. It has no children, so only its own
+  pillar blocks would change.
+- **Resource tagging:** 5 intersections and 109 sub-types have no resource in their
+  category. Tagging the existing on-topic guides would fill them (listed above). Adding a
+  term alongside `south-carolina-law` keeps single-resource sidebars unchanged, because
+  they read the first term by name.
+- ES pillar blog block (pre-existing): untermed ES pillars list the 5 newest ES posts
+  (currently HIPAA posts on the car pillar). The code fix gives the 4 termed ES pillars the
+  same list.
+- Pre-existing: on `car/charleston-sc`, `roden_related_resources()` still treats
+  `dangerous-roads-north-charleston` as Charleston-local, because "charleston" is a
+  substring. #256's longest-match helper covers office pages only.
+
+### Re-run after deploy and apply
+
+`node vendor/site-health/site-health.mjs crawl --repo . --base https://rodenlaw.com --live`.
+Expected: 0 orphans, 0 non-200 (no URL changes). Spot-check that `/car-accident-lawyers/charleston-sc/`
+lists the two car guides and real case results, `/workers-compensation-lawyers/charleston-sc/`
+has no resources block, and `/practice-areas/bicycle-accident-lawyers/` shows a Related
+Resources blog block again.
