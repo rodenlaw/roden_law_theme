@@ -306,6 +306,18 @@
       "owner": "client-strategy-director (plan); content-director (pi-content-writer-es); legal-accuracy-lead (sweep)",
       "due": "2026-11-03",
       "blocking": false
+    },
+    {
+      "item": "FOR NOVEMBER PLAYS (owner request 2026-10-23): a South Carolina medical malpractice reference guide under the referenceLayer lane, tagged _roden_jurisdiction sc and practice_category medical-malpractice. No medical-malpractice resource exists, so /medical-malpractice-lawyers/charleston-sc/ shows no resources block. Why: after the practice_category tagging of 2026-10-23 (#259, #261), intersection pages list only on-topic guides about their own state, and these two pages have none, so their resources block is empty. Constraints: claims traced to verified authorities only, no new claim resting on the unsigned packs (D6); legal sweep before publish; a statewide /resources/ page, so no location-targeted URL (doorway ratio unchanged); tag _roden_jurisdiction single-state and the practice_category at publish so it lists automatically. SC med-mal specifics to verify against primary text: the notice-of-intent and expert-affidavit prerequisites and the damages caps (indexed annually; the February update already covers $596,001 / $1,788,002 for 2026).",
+      "owner": "client-strategy-director (plan); content-director (pi-content-writer); legal-accuracy-lead (sweep)",
+      "due": "2026-11-03",
+      "blocking": false
+    },
+    {
+      "item": "FOR NOVEMBER PLAYS (owner request 2026-10-23): a Georgia-only workers' compensation reference guide under the referenceLayer lane, tagged _roden_jurisdiction ga and practice_category workers-compensation. The only Georgia workers' comp resource is the two-state GA-vs-SC comparison, which the office rule keeps off single-state office pages, so /workers-compensation-lawyers/savannah-ga/ shows no resources block. Why: after the practice_category tagging of 2026-10-23 (#259, #261), intersection pages list only on-topic guides about their own state, and these two pages have none, so their resources block is empty. Constraints: claims traced to verified authorities only, no new claim resting on the unsigned packs (D6); legal sweep before publish; a statewide /resources/ page, so no location-targeted URL (doorway ratio unchanged); tag _roden_jurisdiction single-state and the practice_category at publish so it lists automatically. Keep it distinct from the workers' comp pillar and the comparison guide (one question per page) to avoid overlap.",
+      "owner": "client-strategy-director (plan); content-director (pi-content-writer); legal-accuracy-lead (sweep)",
+      "due": "2026-11-03",
+      "blocking": false
     }
   ],
   "nextOffice": "Myrtle Beach",
