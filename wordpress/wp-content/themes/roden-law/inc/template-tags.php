@@ -3302,14 +3302,39 @@ function roden_comparative_fault_display( $jurisdiction = '' ) {
  * For pillar pages: shows other pillar pages.
  * For child pages: shows siblings under the same parent.
  *
- * @param int $count Max number of related items.
+ * Called with no $args (the historical form) it behaves exactly as before.
+ * single-resource.php passes $args; then the whole candidate set is fetched,
+ * filtered, and only then capped at $count (never filter a pre-capped list:
+ * the #247/#250 defect).
+ *
+ * @param int   $count Max number of related items.
+ * @param array $args {
+ *     Optional. Only single-resource.php passes these.
+ *
+ *     @type int    $jurisdiction_of Post ID whose `_roden_jurisdiction` scopes the
+ *                                   list, same rule as roden_related_resources().
+ *     @type int[]  $exclude         Post IDs already shown on the page (the
+ *                                   "Related Guides" sidebar), so they do not repeat.
+ *     @type string $heading         Heading override.
+ * }
  */
-function roden_related_practice_areas( $count = 6 ) {
+function roden_related_practice_areas( $count = 6, $args = array() ) {
     $post    = get_post();
     $current = $post->ID;
+    $scoped  = ! empty( $args );
+    $args    = wp_parse_args( $args, array(
+        'jurisdiction_of' => 0,
+        'exclude'         => array(),
+        'heading'         => '',
+    ) );
 
     // Match the request's locale: Spanish siblings/pillars on /es/, English elsewhere.
     $locale_mq = function_exists( 'roden_locale_meta_query' ) ? roden_locale_meta_query() : null;
+
+    $not_in = array( $current );
+    if ( $scoped ) {
+        $not_in = array_values( array_unique( array_merge( $not_in, array_map( 'intval', (array) $args['exclude'] ) ) ) );
+    }
 
     if ( $post->post_parent ) {
         // Child page — show siblings
@@ -3324,7 +3349,14 @@ function roden_related_practice_areas( $count = 6 ) {
         if ( $locale_mq ) {
             $sibling_args['meta_query'] = $locale_mq;
         }
+        if ( $scoped ) {
+            $sibling_args['posts_per_page'] = -1;
+            $sibling_args['post__not_in']   = $not_in;
+        }
         $siblings = get_posts( $sibling_args );
+        if ( $scoped ) {
+            $siblings = roden_related_pas_state_filter( $siblings, $args['jurisdiction_of'] );
+        }
         $related = array_slice( $siblings, 0, $count );
         $heading = __( 'Related Pages', 'roden-law' );
     } else {
@@ -3340,9 +3372,44 @@ function roden_related_practice_areas( $count = 6 ) {
         if ( $locale_mq ) {
             $pillar_args['meta_query'] = $locale_mq;
         }
+        if ( $scoped ) {
+            /*
+             * Fetch every candidate, filter, then cap. Every resource has
+             * menu_order 0, so menu_order alone left the order to MySQL: the
+             * same 7 resources on every page, picked by the LIMIT plan. The
+             * order is now publication order (date, then ID), started just
+             * after this page and wrapped around, so each page lists the
+             * guides that follow it. Deterministic, and it spreads these links
+             * across the set instead of repeating one list sitewide.
+             */
+            $pillar_args['posts_per_page'] = -1;
+            $pillar_args['post__not_in']   = $not_in;
+            $pillar_args['orderby']        = array( 'menu_order' => 'ASC', 'date' => 'ASC', 'ID' => 'ASC' );
+            unset( $pillar_args['order'] );
+        }
         $pillars = get_posts( $pillar_args );
+        if ( $scoped ) {
+            $pillars = roden_related_pas_state_filter( $pillars, $args['jurisdiction_of'] );
+            $after   = array();
+            $before  = array();
+            foreach ( $pillars as $p ) {
+                $later = ( (int) $p->menu_order > (int) $post->menu_order )
+                    || ( (int) $p->menu_order === (int) $post->menu_order
+                        && ( $p->post_date > $post->post_date
+                            || ( $p->post_date === $post->post_date && $p->ID > $post->ID ) ) );
+                if ( $later ) {
+                    $after[] = $p;
+                } else {
+                    $before[] = $p;
+                }
+            }
+            $pillars = array_merge( $after, $before );
+        }
         $related = array_slice( $pillars, 0, $count );
         $heading = __( 'Other Practice Areas', 'roden-law' );
+    }
+    if ( $scoped && '' !== $args['heading'] ) {
+        $heading = $args['heading'];
     }
 
     if ( empty( $related ) ) {
@@ -3358,6 +3425,40 @@ function roden_related_practice_areas( $count = 6 ) {
         </ul>
     </div>
     <?php
+}
+
+/**
+ * Drop candidates about the other state, for roden_related_practice_areas().
+ *
+ * The rule single-resource "Related Guides" uses (roden_related_resources(),
+ * jurisdiction_of; owner decisions 2026-10-23), decided from
+ * `_roden_jurisdiction` on both sides via roden_page_jurisdiction_states():
+ * on a single-state page, drop only items tagged for the other single state.
+ * Two-state `both` items are kept, untagged items are kept (not guessed), and a
+ * `both` or untagged page is not filtered. The Myrtle Beach fatal-crashes guide
+ * (SC) listed Georgia Statute of Limitations here (site-health 2026-10-23).
+ *
+ * @param WP_Post[] $posts           Candidates, in display order.
+ * @param int       $jurisdiction_of Post ID whose jurisdiction scopes the list.
+ * @return WP_Post[]
+ */
+function roden_related_pas_state_filter( $posts, $jurisdiction_of ) {
+    if ( ! $jurisdiction_of || ! function_exists( 'roden_page_jurisdiction_states' ) ) {
+        return $posts;
+    }
+    $page_states = roden_page_jurisdiction_states( (int) $jurisdiction_of );
+    if ( ! is_array( $page_states ) || 1 !== count( $page_states ) ) {
+        return $posts;
+    }
+    $kept = array();
+    foreach ( $posts as $p ) {
+        $states = roden_page_jurisdiction_states( $p->ID );
+        if ( is_array( $states ) && $states !== $page_states && 2 !== count( $states ) ) {
+            continue;
+        }
+        $kept[] = $p;
+    }
+    return $kept;
 }
 
 /* ==========================================================================
@@ -3797,6 +3898,9 @@ function roden_canonicalize_pa_path( $path ) {
  *                                  when there is no office_key. Ignored when an
  *                                  office_key is given (the office rule decides).
  * }
+ * @return int[] IDs of the resources rendered (empty when nothing renders).
+ *               Output is unaffected; single-resource.php uses it to keep the
+ *               block below it from repeating them.
  */
 function roden_related_resources( $args = array() ) {
     $defaults = array(
@@ -3861,7 +3965,7 @@ function roden_related_resources( $args = array() ) {
 
     if ( ! $resources->have_posts() ) {
         wp_reset_postdata();
-        return;
+        return array();
     }
 
     // If office_key provided, boost resources whose slug contains the office's city/market name.
@@ -4004,7 +4108,7 @@ function roden_related_resources( $args = array() ) {
     $items = array_slice( array_merge( $boosted, $rest ), 0, $args['count'] );
 
     if ( empty( $items ) ) {
-        return;
+        return array();
     }
     if ( $args['office_key'] && ! $has_local && $args['fallback_heading'] ) {
         $args['heading'] = $args['fallback_heading'];
@@ -4042,6 +4146,8 @@ function roden_related_resources( $args = array() ) {
     </div>
     <?php
     endif;
+
+    return wp_list_pluck( $items, 'id' );
 }
 
 /* ==========================================================================
