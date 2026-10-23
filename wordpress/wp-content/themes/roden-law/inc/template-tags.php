@@ -4150,6 +4150,121 @@ function roden_related_resources( $args = array() ) {
     return wp_list_pluck( $items, 'id' );
 }
 
+/**
+ * The resources for an office page's "Legal Resources for {market}" section:
+ * the published resources in the current locale that belong to this office,
+ * newest first, at most $count. An empty array hides the section.
+ *
+ * Every resource in the locale is considered, then the list is capped (#247:
+ * the section used to filter only the 6 newest resources sitewide, so it
+ * rendered nowhere once six statewide guides were newer than the city guides).
+ *
+ * Resources carry no office meta, so the slug is the only place signal. Each
+ * resource belongs to the ONE office whose city or market name is the longest
+ * match in its slug. north-charleston-truck-accident-guide contains
+ * "charleston", but it is North Charleston's guide, not the Charleston
+ * office's; a plain substring test listed all three North Charleston guides on
+ * the Charleston page and none on the North Charleston hub.
+ *
+ * Only this office's own resources are listed. There is deliberately no padding
+ * with statewide guides (#247): the section is about the office's area, and a
+ * filler pool is where other-state guides leak onto an office page.
+ *
+ * @param string $office_key Key in roden_firm_data()['offices'].
+ * @param int    $count      Max items.
+ * @return array<int,array{title:string,url:string}>
+ */
+function roden_office_local_resources( $office_key, $count = 6 ) {
+    $firm = roden_firm_data();
+    if ( ! isset( $firm['offices'][ $office_key ] ) ) {
+        return array();
+    }
+
+    // Place slug => office key, longest place first, so the first hit wins.
+    $places = array();
+    foreach ( $firm['offices'] as $key => $o ) {
+        foreach ( array( $o['market_name'] ?? '', $o['city'] ?? '' ) as $place ) {
+            $place = sanitize_title( $place );
+            if ( '' !== $place && ! isset( $places[ $place ] ) ) {
+                $places[ $place ] = $key;
+            }
+        }
+    }
+    uksort(
+        $places,
+        function ( $a, $b ) {
+            return strlen( $b ) - strlen( $a );
+        }
+    );
+
+    $args = array(
+        'post_type'              => 'resource',
+        'posts_per_page'         => -1,
+        'post_status'            => 'publish',
+        'orderby'                => 'date',
+        'order'                  => 'DESC',
+        'no_found_rows'          => true,
+        'update_post_term_cache' => false,
+    );
+    if ( function_exists( 'roden_locale_meta_query' ) ) {
+        $args['meta_query'] = roden_locale_meta_query();
+    }
+
+    $items = array();
+    foreach ( get_posts( $args ) as $r ) {
+        foreach ( $places as $place => $key ) {
+            if ( false !== strpos( $r->post_name, $place ) ) {
+                if ( $key === $office_key ) {
+                    $items[] = array(
+                        'title' => get_the_title( $r ),
+                        'url'   => get_permalink( $r ),
+                    );
+                }
+                break; // Longest match decides; another office's guide is skipped.
+            }
+        }
+    }
+
+    return array_slice( $items, 0, $count );
+}
+
+/**
+ * Print the "Legal Resources for {market}" section for an office, or nothing
+ * when the office has no resource of its own. Shared by the city office
+ * template (template-location.php) and the office hub that renders through the
+ * neighbourhood template (/locations/south-carolina/north-charleston/), so the
+ * markup lives in one place.
+ *
+ * @param string $office_key    Key in roden_firm_data()['offices'].
+ * @param string $section_class Extra class on the <section>, e.g. 'section-alt'.
+ */
+function roden_office_local_resources_section( $office_key, $section_class = '' ) {
+    $items = roden_office_local_resources( $office_key );
+    if ( ! $items ) {
+        return;
+    }
+    $firm   = roden_firm_data();
+    $market = $firm['offices'][ $office_key ]['market_name'];
+?>
+<section class="section<?php echo $section_class ? ' ' . esc_attr( $section_class ) : ''; ?>">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title"><?php printf( /* translators: %s: city/market name. */ esc_html__( 'Legal Resources for %s', 'roden-law' ), esc_html( $market ) ); ?></h2>
+            <p class="section-subtitle"><?php printf( /* translators: %s: city/market name. */ esc_html__( 'Guides and resources about accident hotspots, local roads, and injury claims in the %s area.', 'roden-law' ), esc_html( $market ) ); ?></p>
+        </div>
+        <div class="pa-resources__grid">
+            <?php foreach ( $items as $lr ) : ?>
+                <a href="<?php echo esc_url( $lr['url'] ); ?>" class="resource-link">
+                    <span class="resource-link__title"><?php echo esc_html( $lr['title'] ); ?></span>
+                    <span class="resource-link__arrow">&rarr;</span>
+                </a>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+<?php
+}
+
 /* ==========================================================================
    JURISDICTION COMPARISON TABLE
    ========================================================================== */

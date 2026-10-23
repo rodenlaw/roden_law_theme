@@ -235,80 +235,11 @@ if ( ! empty( $neighborhood_children ) ) :
 <?php endif; ?>
 
 <!-- ================================================================
-     4c. LOCAL LEGAL RESOURCES (auto-renders resources relevant to this office)
+     4c. LOCAL LEGAL RESOURCES — this office's own resources, or nothing.
+     roden_office_local_resources_section() in inc/template-tags.php; the
+     North Charleston hub (neighbourhood template) prints the same section.
      ================================================================ -->
-<?php
-/*
- * Filter for this office FIRST, then cap at 6.
- *
- * This used to fetch the 6 newest resources sitewide and filter those by office
- * slug, so a local guide rendered only while it was one of the 6 newest
- * resources overall. From September 2026 the newest six were all GA/SC
- * statewide guides, so nothing matched and the section rendered on no office
- * page. The North Charleston and Charleston County guides were then reachable
- * only through blog posts, and those posts were retired in the 2026-10-21 floor
- * cull. Site-health crawl, 2026-10-22: 3 orphans. Querying every published
- * resource in the locale (under 50) and filtering in PHP links each local guide
- * from its office page for as long as both exist.
- *
- * Only local matches render. The old code padded the list with the newest
- * non-local resources, which would now put Georgia statewide guides on South
- * Carolina office pages. That padding never reached a page, because the
- * section was hidden whenever nothing matched.
- */
-$loc_resource_args = array(
-    'post_type'              => 'resource',
-    'posts_per_page'         => -1,
-    'post_status'            => 'publish',
-    'orderby'                => 'date',
-    'order'                  => 'DESC',
-    'no_found_rows'          => true,
-    'update_post_term_cache' => false,
-);
-if ( function_exists( 'roden_locale_meta_query' ) ) {
-    $loc_resource_args['meta_query'] = roden_locale_meta_query();
-}
-$loc_resource_query = new WP_Query( $loc_resource_args );
-if ( $loc_resource_query->have_posts() ) :
-    // Resources whose slug names this office's market or city.
-    $loc_boosted = array();
-    $loc_market_slug = sanitize_title( $office['market_name'] );
-    $loc_city_slug   = sanitize_title( $office['city'] );
-
-    foreach ( $loc_resource_query->posts as $r_post ) {
-        $r_slug = $r_post->post_name;
-        if ( strpos( $r_slug, $loc_market_slug ) !== false || strpos( $r_slug, $loc_city_slug ) !== false ) {
-            $loc_boosted[] = array(
-                'title' => get_the_title( $r_post ),
-                'url'   => get_permalink( $r_post ),
-            );
-        }
-    }
-
-    // Only show this section if we have at least 1 local resource.
-    if ( ! empty( $loc_boosted ) ) :
-        $loc_items = array_slice( $loc_boosted, 0, 6 );
-?>
-<section class="section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title"><?php printf( /* translators: %s: city/market name. */ esc_html__( 'Legal Resources for %s', 'roden-law' ), esc_html( $office['market_name'] ) ); ?></h2>
-            <p class="section-subtitle"><?php printf( /* translators: %s: city/market name. */ esc_html__( 'Guides and resources about accident hotspots, local roads, and injury claims in the %s area.', 'roden-law' ), esc_html( $office['market_name'] ) ); ?></p>
-        </div>
-        <div class="pa-resources__grid">
-            <?php foreach ( $loc_items as $lr ) : ?>
-                <a href="<?php echo esc_url( $lr['url'] ); ?>" class="resource-link">
-                    <span class="resource-link__title"><?php echo esc_html( $lr['title'] ); ?></span>
-                    <span class="resource-link__arrow">&rarr;</span>
-                </a>
-            <?php endforeach; ?>
-        </div>
-    </div>
-</section>
-<?php
-    endif;
-endif;
-?>
+<?php roden_office_local_resources_section( $office_key ); ?>
 
 <!-- ================================================================
      5. ABOUT — full-width section with the_content()

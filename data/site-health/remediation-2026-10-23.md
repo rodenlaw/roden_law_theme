@@ -438,3 +438,123 @@ Flush both cache layers. Then run the crawl check
 Expected: no new orphans; EN resources linked from resource sidebars go 35 → 47. Spot-check
 `/resources/myrtle-beach-fatal-crashes/`: the second box is headed "Related Resources" and
 lists six SC guides, none of them in "Related Guides".
+
+## Fixed (fourth PR): salvage of `backup/floor-cull-followups-2026-10-22`
+
+Owner decision 2026-10-23: salvage the unpushed work from the 2026-10-22 session into one
+PR. The backup branch stays on origin (tip 44d0daf).
+
+| Backup commit | Decision | Why |
+|---|---|---|
+| 5c9a7fc, Coleman `/blog/` alias | **dropped** | Same entry #247 already merged |
+| fec0b53, 404 slug guess replayed against the removal map | **kept as is** (cherry-picked, applies cleanly) | Not on main |
+| 44d0daf, office resources | **partly kept**, rewritten on top of #247 | See below |
+
+| Class | Status | Where |
+|---|---|---|
+| redirects: retired posts' truncated and cross-section aliases 404 (the fourth alias form) | fixed (PR, unmerged) | `roden_removed_slug_guess_key()`, `inc/legacy-redirects.php` |
+| crawl: Charleston office page listed North Charleston's guides; NC hub had no resources section | fixed (same PR) | `roden_office_local_resources()` + `_section()`, `inc/template-tags.php` |
+| 2-hop chains `/blog/privacy-policy-2/` and `/blog/savannah/` (synthetic) | deferred, pre-existing, unchanged by this PR | legacy map |
+| 18 `/blog/` forms of legacy-map root keys still 404 (`/blog/contact-us/`, ...) | deferred, no request evidence (none in the fixture) | legacy map |
+
+### Redirects: the 404 slug guess
+
+Generator: core's `redirect_guess_404_permalink()` only matches **published** posts by
+prefix. A truncated or cross-section address (`/blog/{resource-slug}/`,
+`/blog/i-526-truck-accidents-charleston/`) reached its post only that way. Retiring the
+post (a draft) killed the address, while the canonical form kept its 301.
+`roden_removed_slug_guess_key()` runs the same match over the removal-map keys. It runs
+last, on a 404 only, and only after core's own guess has found nothing. It honours core's
+filters, so `/es/` stays guess-free. When the prefix matches retired posts with different
+destinations it does nothing.
+
+Read-only prod replay, run 2026-10-23. It drives the real `template_redirect` pipeline,
+with only `inc/legacy-redirects.php`'s own functions swapped (main vs patched), and follows
+each hop. The main run matched live first hops on 99/99 sampled paths (curl, 24 retried
+after WPE 429s).
+
+| Path set | Paths | Changed | Change type |
+|---|---|---|---|
+| `redirects.csv` fixture | 997 | 0 | — |
+| Sitemap EN | 594 | 0 | 0 redirect before or after |
+| Sitemap ES | 56 | 0 | 0 redirect before or after |
+| Alias candidates for the 41 floor-cull posts | 178 | 23 | 404 → one 301 → 200 |
+| `/blog/` forms of root keys with no `/blog/` key | 33 | 6 | 404 → one 301 → 200 |
+| Synthetic prefix truncations of the 41 cull slugs (`/blog/`, `/resources/`), not in any set above | 441 | 297 | 404 → one 301 → 200 |
+| **All /es/ paths** (included above) | 99 | **0** | — |
+| **Total unique** | 2,276 | 326 | |
+
+All 326 changes are 404 → a single 301 → 200. All 12 distinct destinations return 200
+live. The 6 root-key `/blog/` forms are the Florence, Greenville and Spartanburg
+car/workers'-comp keys, which are in the removal map. The 18 `/blog/` forms flagged in #247
+(`/blog/contact-us/`, `/blog/who-we-are/`, ...) are keys of the **legacy** map, which the
+guess does not read, so they still 404, the same as on main. Pre-existing 2-hop chains,
+identical on main and patched: `/blog/privacy-policy-2/` → `/privacy-policy-2/` →
+`/privacy-policy/`, and `/blog/savannah/` (synthetic) → `/savannah/` → `/practice-areas/`.
+48 fixture `case-result` rows read as loops in the harness only, because they redirect to
+a `#fragment` that the in-process follower re-requests. Live, each is one hop to
+`/case-results/`, and the rows are identical on both sides.
+
+site-health `redirects`, live, before this PR: `997 legacy URLs · ok: 997 · chains: 0 · lost: 0`.
+Expected after: unchanged (the fixture rows do not change in the replay).
+
+### Office pages: longest-match assignment and the North Charleston hub
+
+Reconciled with #247 (aebe0d3). #247 made template-location.php filter every locale
+resource first, then cap at 6, and render local matches only. Kept from 44d0daf:
+
+- **Longest match.** Each resource belongs to the one office whose city or market is the
+  longest match in its slug. `north-charleston-truck-accident-guide` contains "charleston",
+  but it is North Charleston's guide.
+- **North Charleston hub.** `/locations/south-carolina/north-charleston/` is a full office
+  that renders through `single-location-neighborhood.php`, and that template had no
+  resources section. It now prints the same section, on an office hub only (slug equals
+  its own office key; Brunswick is excluded). The section is the last one and unshaded,
+  so the alt/plain banding still alternates. 44d0daf had it shaded and after "Dangerous
+  Roads", which would have put two shaded sections side by side.
+- The markup moves into `roden_office_local_resources_section()`, shared by both templates.
+  It is byte-identical to #247's (same md5 on Savannah, Columbia and Myrtle Beach).
+
+**Disagreement resolved for #247:** 44d0daf padded the list with the state's single-state
+guides. #247 deliberately renders local matches only, and I found no evidence for the fill,
+so it is dropped.
+
+Read-only prod render, main vs patched templates, every location post in both locales:
+
+| Page | Main | Patched |
+|---|---|---|
+| Charleston | 4 (county court + 3 North Charleston guides) | 1 (`personal-injury-claim-charleston-county-court`) |
+| North Charleston hub | no section | 3 (`pedestrian-bicycle-safety-north-charleston`, `north-charleston-truck-accident-guide`, `dangerous-roads-north-charleston`) |
+| Savannah | 2 | 2, section byte-identical |
+| Columbia | 1 | 1, section byte-identical |
+| Myrtle Beach | 1 | 1, section byte-identical |
+| Darien, Brunswick | none | none |
+| /es/ Savannah, Charleston, Columbia, Myrtle Beach | none | none |
+
+- Other-state guides on any office page: **0** (normalised via `roden_page_jurisdiction_states()`).
+- Rest of every page: identical except for HTML comments and whitespace.
+- No resource loses its last office-page link: the three North Charleston guides move from
+  the Charleston page to the North Charleston hub.
+- site-health `crawl`, live, before this PR: `650/650 · not 200: 0 · orphans: 0 ·
+  unreachable from /: 0`. Expected after: unchanged.
+
+### Related-resources rules (#250, #252, #253) and city pages (5b4f123)
+
+Unchanged by construction. The `template-tags.php` diff only adds lines (+115/−0, 2 new
+functions, not hooked). All 73 existing functions are byte-identical to `origin/main`,
+including `roden_related_resources()`, `roden_related_practice_areas()` and
+`roden_related_pas_state_filter()`. Their callers (`single-resource.php`,
+`template-intersection.php`, `template-subtype.php`) are untouched, so 5b4f123's
+template-intersection.php is untouched too. The redirect change runs only on a 404, and 0
+sitemap URLs change. No CSS/JS, no new msgids (both strings already in `es_ES.po`), no
+content or DB edits, no new URLs: the doorway ratio and floor are unchanged. `php -l` is
+clean on all 4 files. Prod matched `origin/main` on all 93 theme files by md5 before the run.
+
+### Re-run after deploy
+
+Flush both cache layers, then run
+`node vendor/site-health/site-health.mjs redirects crawl --repo . --base https://rodenlaw.com --live`.
+Expected: redirects 997 ok / 0 chains / 0 lost; crawl 0 orphans. Spot-check
+`curl -sI https://rodenlaw.com/blog/i-526-truck-accidents-charleston/`: one 301 to
+`/truck-accident-lawyers/charleston-sc/`. `/locations/south-carolina/north-charleston/`
+should list its three guides.

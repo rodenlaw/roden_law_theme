@@ -2526,12 +2526,108 @@ function roden_phase1_removal_redirects() {
         }
     }
 
+    /*
+     * Last, core's own 404 slug guess, replayed against the removal map. See
+     * roden_removed_slug_guess_key(). A truncated or cross-section address
+     * (/blog/car-accidents-on-coleman-boulevard/, /blog/{resource-slug}/)
+     * reached its post only through redirect_guess_404_permalink(), which sees
+     * published posts only, so retiring the post killed it (1 LOST,
+     * site-health 2026-10-22). Defers to core whenever core's guess finds a
+     * published post, so it can never pre-empt a page that serves.
+     */
+    if ( ! isset( $map[ $path ] ) && is_404() ) {
+        $guess = roden_removed_slug_guess_key( $map );
+        if ( '' !== $guess ) {
+            $path = $guess;
+        }
+    }
+
     if ( ! isset( $map[ $path ] ) ) {
         return;
     }
 
     wp_redirect( home_url( roden_resolve_removed_dest( $map[ $path ], $map ) ), 301 );
     exit;
+}
+
+/**
+ * The removal-map key core's 404 slug guess would have found, had the post
+ * still been published, or ''.
+ *
+ * On a 404 with a `name` query var (/blog/{x}/, /resources/{x}/),
+ * redirect_guess_404_permalink() 301s to the first published post whose
+ * post_name starts with {x}, of the queried post type or, if none was queried,
+ * of any public type. That made every post reachable at shortened and
+ * cross-section addresses nobody wrote a rule for. Retiring the post (a
+ * draft) ends the guess, and those addresses 404 while the canonical form
+ * 301s. This is the fourth alias form a cull kills, after the nested
+ * practice-area, old Charleston-parent and root /{slug}/ forms.
+ *
+ * This replays the same match against the removal map, so the alias lands
+ * where the retired post's own address already goes. It is narrower than core:
+ *   - it runs only when core's guess finds nothing (core is asked first);
+ *   - it honours the same filters, including roden_es_disable_404_guess();
+ *   - if the prefix matches several retired posts with different
+ *     destinations, it does nothing, where core would pick one arbitrarily.
+ *
+ * @param array<string,string> $map roden_phase1_removed_urls().
+ * @return string
+ */
+function roden_removed_slug_guess_key( $map ) {
+    $name = (string) get_query_var( 'name' );
+    if ( '' === $name || ! function_exists( 'redirect_guess_404_permalink' ) ) {
+        return '';
+    }
+    if ( false === apply_filters( 'do_redirect_guess_404_permalink', true ) ) {
+        return '';
+    }
+    $strict = (bool) apply_filters( 'strict_redirect_guess_404_permalink', false );
+
+    // Restrict to the queried post type's base, as core restricts its SQL.
+    $bases = array();
+    $types = get_query_var( 'post_type' );
+    foreach ( array_filter( (array) $types ) as $type ) {
+        $obj = get_post_type_object( $type );
+        if ( $obj && ! empty( $obj->rewrite['slug'] ) ) {
+            $bases[] = '/' . trim( $obj->rewrite['slug'], '/' ) . '/';
+        }
+    }
+    if ( $types && ! $bases ) {
+        return '';
+    }
+
+    $hit  = '';
+    $dest = '';
+    foreach ( $map as $key => $target ) {
+        if ( 0 === strpos( $key, '/es/' ) ) {
+            continue; // Spanish post_names carry an es- prefix; core never guesses onto them from here.
+        }
+        $seg = basename( untrailingslashit( $key ) );
+        if ( $strict ? ( $seg !== $name ) : ( 0 !== strpos( $seg, $name ) ) ) {
+            continue;
+        }
+        if ( $bases ) {
+            $in_base = false;
+            foreach ( $bases as $base ) {
+                $in_base = $in_base || 0 === strpos( $key, $base );
+            }
+            if ( ! $in_base ) {
+                continue;
+            }
+        }
+        $resolved = roden_resolve_removed_dest( $target, $map );
+        if ( '' !== $dest && $resolved !== $dest ) {
+            return ''; // Ambiguous: retired posts with different destinations.
+        }
+        $hit  = '' === $hit ? $key : $hit;
+        $dest = $resolved;
+    }
+
+    // Core first: a published post that matches keeps its guess.
+    if ( '' === $hit || redirect_guess_404_permalink() ) {
+        return '';
+    }
+    return $hit;
 }
 
 /**

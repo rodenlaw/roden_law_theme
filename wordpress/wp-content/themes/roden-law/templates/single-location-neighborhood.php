@@ -485,6 +485,22 @@ if ( $nb_pa_slug ) {
 <?php endif; ?>
 
 <!-- ================================================================
+     10b. LOCAL LEGAL RESOURCES — on an office hub only: a location post
+     flagged as a neighbourhood whose slug is its own office key. Today that
+     is /locations/south-carolina/north-charleston/, a full office that
+     renders through this template and so never got template-location.php's
+     section; its three local guides were listed on the Charleston page
+     instead (a "charleston" substring match).
+     Same section as template-location.php, roden_office_local_resources_section().
+     Placed last and unshaded so the alt/plain section banding still alternates.
+     ================================================================ -->
+<?php
+if ( roden_strip_es_slug( $post->post_name ) === $parent_office_key ) {
+    roden_office_local_resources_section( $parent_office_key );
+}
+?>
+
+<!-- ================================================================
      11. BOTTOM CTA
      ================================================================ -->
 <section class="section bg-navy cta-bottom">
