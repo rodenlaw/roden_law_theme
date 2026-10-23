@@ -1,0 +1,118 @@
+=== APPLY ===
+
+Theme prerequisites:
+  ok      inc/template-tags.php: case-result grid drops an unmatched practice_category
+  ok      templates/template-practice-area.php: blog block ignores practice_category
+  ok      templates/template-practice-area.php: guides box falls back when empty
+  ok      templates/template-subtype.php: sub-type list keeps to the page state
+
+  same   [4089] atv-side-by-side-accident-lawyers: already atv-accidents
+  same   [4087] bicycle-accident-lawyers: already bicycle-accidents
+  set    [3616] boating-accident-lawyers: (none) -> boating-accidents
+  set    [3612] brain-injury-lawyers: (none) -> brain-injuries
+  set    [3617] burn-injury-lawyers: (none) -> burn-injuries
+  set    [3604] car-accident-lawyers: (none) -> car-accidents
+  set    [3618] construction-accident-lawyers: (none) -> construction-accidents
+  set    [3611] dog-bite-lawyers: (none) -> dog-bites
+  same   [4578] e-bike-accident-lawyers: already e-bike-accidents
+  same   [4088] electric-scooter-accident-lawyers: already electric-scooter-accidents
+  same   [4090] golf-cart-accident-lawyers: already golf-cart-accidents
+  set    [3614] maritime-injury-lawyers: (none) -> maritime-injuries
+  set    [3608] medical-malpractice-lawyers: (none) -> medical-malpractice
+  set    [3607] motorcycle-accident-lawyers: (none) -> motorcycle-accidents
+  set    [3619] nursing-home-abuse-lawyers: (none) -> nursing-home-abuse
+  set    [3621] pedestrian-accident-lawyers: (none) -> pedestrian-accidents
+  set    [3620] premises-liability-lawyers: (none) -> premises-liability
+  set    [3615] product-liability-lawyers: (none) -> product-liability
+  set    [3606] slip-and-fall-lawyers: (none) -> slip-and-fall
+  set    [3613] spinal-cord-injury-lawyers: (none) -> spinal-cord-injuries
+  set    [3605] truck-accident-lawyers: (none) -> truck-accidents
+  set    [3610] workers-compensation-lawyers: (none) -> workers-compensation
+  set    [3609] wrongful-death-lawyers: (none) -> wrongful-death
+  same   [4900] es-atv-side-by-side-accident-lawyers: already atv-accidents
+  same   [4898] es-bicycle-accident-lawyers: already bicycle-accidents
+  set    [4895] es-boating-accident-lawyers: (none) -> boating-accidents
+  set    [4890] es-brain-injury-lawyers: (none) -> brain-injuries
+  set    [4896] es-burn-injury-lawyers: (none) -> burn-injuries
+  set    [4873] es-car-accident-lawyers: (none) -> car-accidents
+  set    [4876] es-construction-accident-lawyers: (none) -> construction-accidents
+  set    [4880] es-dog-bite-lawyers: (none) -> dog-bites
+  same   [4899] es-electric-scooter-accident-lawyers: already electric-scooter-accidents
+  same   [4901] es-golf-cart-accident-lawyers: already golf-cart-accidents
+  set    [4894] es-maritime-injury-lawyers: (none) -> maritime-injuries
+  set    [4881] es-medical-malpractice-lawyers: (none) -> medical-malpractice
+  set    [4877] es-motorcycle-accident-lawyers: (none) -> motorcycle-accidents
+  set    [4897] es-nursing-home-abuse-lawyers: (none) -> nursing-home-abuse
+  set    [4878] es-pedestrian-accident-lawyers: (none) -> pedestrian-accidents
+  set    [4893] es-premises-liability-lawyers: (none) -> premises-liability
+  set    [4892] es-product-liability-lawyers: (none) -> product-liability
+  set    [4879] es-slip-and-fall-lawyers: (none) -> slip-and-fall
+  set    [4891] es-spinal-cord-injury-lawyers: (none) -> spinal-cord-injuries
+  set    [4874] es-truck-accident-lawyers: (none) -> truck-accidents
+  set    [4875] es-workers-compensation-lawyers: (none) -> workers-compensation
+  set    [4882] es-wrongful-death-lawyers: (none) -> wrongful-death
+
+36 to set.
+
+BACKUP-JSON (a rollback map for this script): {"map":[{"post_id":3616,"slug":"boating-accident-lawyers","term":null,"from":"boating-accidents","all_prior":[]},{"post_id":3612,"slug":"brain-injury-lawyers","term":null,"from":"brain-injuries","all_prior":[]},{"post_id":3617,"slug":"burn-injury-lawyers","term":null,"from":"burn-injuries","all_prior":[]},{"post_id":3604,"slug":"car-accident-lawyers","term":null,"from":"car-accidents","all_prior":[]},{"post_id":3618,"slug":"construction-accident-lawyers","term":null,"from":"construction-accidents","all_prior":[]},{"post_id":3611,"slug":"dog-bite-lawyers","term":null,"from":"dog-bites","all_prior":[]},{"post_id":3614,"slug":"maritime-injury-lawyers","term":null,"from":"maritime-injuries","all_prior":[]},{"post_id":3608,"slug":"medical-malpractice-lawyers","term":null,"from":"medical-malpractice","all_prior":[]},{"post_id":3607,"slug":"motorcycle-accident-lawyers","term":null,"from":"motorcycle-accidents","all_prior":[]},{"post_id":3619,"slug":"nursing-home-abuse-lawyers","term":null,"from":"nursing-home-abuse","all_prior":[]},{"post_id":3621,"slug":"pedestrian-accident-lawyers","term":null,"from":"pedestrian-accidents","all_prior":[]},{"post_id":3620,"slug":"premises-liability-lawyers","term":null,"from":"premises-liability","all_prior":[]},{"post_id":3615,"slug":"product-liability-lawyers","term":null,"from":"product-liability","all_prior":[]},{"post_id":3606,"slug":"slip-and-fall-lawyers","term":null,"from":"slip-and-fall","all_prior":[]},{"post_id":3613,"slug":"spinal-cord-injury-lawyers","term":null,"from":"spinal-cord-injuries","all_prior":[]},{"post_id":3605,"slug":"truck-accident-lawyers","term":null,"from":"truck-accidents","all_prior":[]},{"post_id":3610,"slug":"workers-compensation-lawyers","term":null,"from":"workers-compensation","all_prior":[]},{"post_id":3609,"slug":"wrongful-death-lawyers","term":null,"from":"wrongful-death","all_prior":[]},{"post_id":4895,"slug":"es-boating-accident-lawyers","term":null,"from":"boating-accidents","all_prior":[]},{"post_id":4890,"slug":"es-brain-injury-lawyers","term":null,"from":"brain-injuries","all_prior":[]},{"post_id":4896,"slug":"es-burn-injury-lawyers","term":null,"from":"burn-injuries","all_prior":[]},{"post_id":4873,"slug":"es-car-accident-lawyers","term":null,"from":"car-accidents","all_prior":[]},{"post_id":4876,"slug":"es-construction-accident-lawyers","term":null,"from":"construction-accidents","all_prior":[]},{"post_id":4880,"slug":"es-dog-bite-lawyers","term":null,"from":"dog-bites","all_prior":[]},{"post_id":4894,"slug":"es-maritime-injury-lawyers","term":null,"from":"maritime-injuries","all_prior":[]},{"post_id":4881,"slug":"es-medical-malpractice-lawyers","term":null,"from":"medical-malpractice","all_prior":[]},{"post_id":4877,"slug":"es-motorcycle-accident-lawyers","term":null,"from":"motorcycle-accidents","all_prior":[]},{"post_id":4897,"slug":"es-nursing-home-abuse-lawyers","term":null,"from":"nursing-home-abuse","all_prior":[]},{"post_id":4878,"slug":"es-pedestrian-accident-lawyers","term":null,"from":"pedestrian-accidents","all_prior":[]},{"post_id":4893,"slug":"es-premises-liability-lawyers","term":null,"from":"premises-liability","all_prior":[]},{"post_id":4892,"slug":"es-product-liability-lawyers","term":null,"from":"product-liability","all_prior":[]},{"post_id":4879,"slug":"es-slip-and-fall-lawyers","term":null,"from":"slip-and-fall","all_prior":[]},{"post_id":4891,"slug":"es-spinal-cord-injury-lawyers","term":null,"from":"spinal-cord-injuries","all_prior":[]},{"post_id":4874,"slug":"es-truck-accident-lawyers","term":null,"from":"truck-accidents","all_prior":[]},{"post_id":4875,"slug":"es-workers-compensation-lawyers","term":null,"from":"workers-compensation","all_prior":[]},{"post_id":4882,"slug":"es-wrongful-death-lawyers","term":null,"from":"wrongful-death","all_prior":[]}]}
+
+--- VERIFY ---
+  ok    [3616] boating-accident-lawyers: (none) -> boating-accidents
+  ok    [3612] brain-injury-lawyers: (none) -> brain-injuries
+  ok    [3617] burn-injury-lawyers: (none) -> burn-injuries
+  ok    [3604] car-accident-lawyers: (none) -> car-accidents
+  ok    [3618] construction-accident-lawyers: (none) -> construction-accidents
+  ok    [3611] dog-bite-lawyers: (none) -> dog-bites
+  ok    [3614] maritime-injury-lawyers: (none) -> maritime-injuries
+  ok    [3608] medical-malpractice-lawyers: (none) -> medical-malpractice
+  ok    [3607] motorcycle-accident-lawyers: (none) -> motorcycle-accidents
+  ok    [3619] nursing-home-abuse-lawyers: (none) -> nursing-home-abuse
+  ok    [3621] pedestrian-accident-lawyers: (none) -> pedestrian-accidents
+  ok    [3620] premises-liability-lawyers: (none) -> premises-liability
+  ok    [3615] product-liability-lawyers: (none) -> product-liability
+  ok    [3606] slip-and-fall-lawyers: (none) -> slip-and-fall
+  ok    [3613] spinal-cord-injury-lawyers: (none) -> spinal-cord-injuries
+  ok    [3605] truck-accident-lawyers: (none) -> truck-accidents
+  ok    [3610] workers-compensation-lawyers: (none) -> workers-compensation
+  ok    [3609] wrongful-death-lawyers: (none) -> wrongful-death
+  ok    [4895] es-boating-accident-lawyers: (none) -> boating-accidents
+  ok    [4890] es-brain-injury-lawyers: (none) -> brain-injuries
+  ok    [4896] es-burn-injury-lawyers: (none) -> burn-injuries
+  ok    [4873] es-car-accident-lawyers: (none) -> car-accidents
+  ok    [4876] es-construction-accident-lawyers: (none) -> construction-accidents
+  ok    [4880] es-dog-bite-lawyers: (none) -> dog-bites
+  ok    [4894] es-maritime-injury-lawyers: (none) -> maritime-injuries
+  ok    [4881] es-medical-malpractice-lawyers: (none) -> medical-malpractice
+  ok    [4877] es-motorcycle-accident-lawyers: (none) -> motorcycle-accidents
+  ok    [4897] es-nursing-home-abuse-lawyers: (none) -> nursing-home-abuse
+  ok    [4878] es-pedestrian-accident-lawyers: (none) -> pedestrian-accidents
+  ok    [4893] es-premises-liability-lawyers: (none) -> premises-liability
+  ok    [4892] es-product-liability-lawyers: (none) -> product-liability
+  ok    [4879] es-slip-and-fall-lawyers: (none) -> slip-and-fall
+  ok    [4891] es-spinal-cord-injury-lawyers: (none) -> spinal-cord-injuries
+  ok    [4874] es-truck-accident-lawyers: (none) -> truck-accidents
+  ok    [4875] es-workers-compensation-lawyers: (none) -> workers-compensation
+  ok    [4882] es-wrongful-death-lawyers: (none) -> wrongful-death
+
+Term counts (stored count; WordPress recounts published objects on write):
+  boating-accidents            8 -> 5
+  brain-injuries               8 -> 6
+  burn-injuries                8 -> 8
+  car-accidents                16 -> 18
+  construction-accidents       8 -> 7
+  dog-bites                    8 -> 10
+  maritime-injuries            8 -> 8
+  medical-malpractice          8 -> 10
+  motorcycle-accidents         6 -> 8
+  nursing-home-abuse           8 -> 10
+  pedestrian-accidents         5 -> 7
+  premises-liability           7 -> 9
+  product-liability            8 -> 8
+  slip-and-fall                6 -> 8
+  spinal-cord-injuries         8 -> 6
+  truck-accidents              19 -> 21
+  workers-compensation         13 -> 15
+  wrongful-death               8 -> 10
+
+36 of 36 set.
+Done.

@@ -1,0 +1,83 @@
+=== APPLY ===
+
+Theme prerequisites:
+  ok      single-resource.php: sidebar keeps south-carolina-law
+  ok      single-resource.php: sidebar falls back when topic is empty
+
+  add    [4839] south-carolina-workers-comp-body-part-values: south-carolina-law -> south-carolina-law,workers-compensation
+  add    [4840] how-much-does-south-carolina-workers-comp-pay: south-carolina-law -> south-carolina-law,workers-compensation
+  add    [4841] south-carolina-workers-comp-impairment-rating-mmi: south-carolina-law -> south-carolina-law,workers-compensation
+  add    [4842] south-carolina-workers-comp-claim-denied: south-carolina-law -> south-carolina-law,workers-compensation
+  add    [5354] georgia-vs-south-carolina-workers-compensation: (none) -> workers-compensation
+  add    [4933] es-how-much-does-south-carolina-workers-comp-pay: south-carolina-law -> south-carolina-law,workers-compensation
+  add    [4934] es-south-carolina-workers-comp-claim-denied: south-carolina-law -> south-carolina-law,workers-compensation
+  add    [4935] es-south-carolina-workers-comp-body-part-values: south-carolina-law -> south-carolina-law,workers-compensation
+  add    [4936] es-south-carolina-workers-comp-impairment-rating-mmi: south-carolina-law -> south-carolina-law,workers-compensation
+  add    [4861] south-carolina-wrongful-death-settlement-value: south-carolina-law -> south-carolina-law,wrongful-death
+  add    [6331] georgia-wrongful-death-settlement-value: (none) -> wrongful-death
+  add    [4858] south-carolina-motorcycle-accident-settlement-value: south-carolina-law -> motorcycle-accidents,south-carolina-law
+  add    [6312] georgia-helmet-laws: (none) -> motorcycle-accidents
+  add    [6313] south-carolina-helmet-laws: (none) -> motorcycle-accidents
+  add    [4859] south-carolina-slip-and-fall-settlement-value: south-carolina-law -> slip-and-fall,south-carolina-law
+  add    [4860] south-carolina-premises-liability-settlement-value: south-carolina-law -> premises-liability,south-carolina-law
+  add    [6314] south-carolina-golf-cart-laws: (none) -> golf-cart-accidents
+  add    [4632] north-charleston-truck-accident-guide: (none) -> truck-accidents
+  add    [5220] truck-accident-settlement-process: (none) -> truck-accidents
+  add    [5348] i-26-i-95-corridor-report: (none) -> truck-accidents
+  add    [4639] pedestrian-bicycle-safety-north-charleston: (none) -> bicycle-accidents,pedestrian-accidents
+  add    [6329] georgia-car-seat-laws: (none) -> car-accidents
+  add    [6330] georgia-uninsured-motorist-coverage: (none) -> car-accidents
+  add    [4813] south-carolina-car-seat-laws: south-carolina-law -> car-accidents,south-carolina-law
+  add    [4812] south-carolina-um-uim-stacking: south-carolina-law -> car-accidents,south-carolina-law
+  add    [4931] es-south-carolina-um-uim-stacking: south-carolina-law -> car-accidents,south-carolina-law
+  add    [5210] es-georgia-car-accident-settlement-value: (none) -> car-accidents
+  add    [5211] es-georgia-truck-accident-settlement-value: (none) -> truck-accidents
+
+28 to tag.
+
+BACKUP-JSON (rollback map: pass it back with 'rollback'): {"map":[{"post_id":4839,"slug":"south-carolina-workers-comp-body-part-values","current":["south-carolina-law","workers-compensation"],"restore":["south-carolina-law"]},{"post_id":4840,"slug":"how-much-does-south-carolina-workers-comp-pay","current":["south-carolina-law","workers-compensation"],"restore":["south-carolina-law"]},{"post_id":4841,"slug":"south-carolina-workers-comp-impairment-rating-mmi","current":["south-carolina-law","workers-compensation"],"restore":["south-carolina-law"]},{"post_id":4842,"slug":"south-carolina-workers-comp-claim-denied","current":["south-carolina-law","workers-compensation"],"restore":["south-carolina-law"]},{"post_id":5354,"slug":"georgia-vs-south-carolina-workers-compensation","current":["workers-compensation"],"restore":[]},{"post_id":4933,"slug":"es-how-much-does-south-carolina-workers-comp-pay","current":["south-carolina-law","workers-compensation"],"restore":["south-carolina-law"]},{"post_id":4934,"slug":"es-south-carolina-workers-comp-claim-denied","current":["south-carolina-law","workers-compensation"],"restore":["south-carolina-law"]},{"post_id":4935,"slug":"es-south-carolina-workers-comp-body-part-values","current":["south-carolina-law","workers-compensation"],"restore":["south-carolina-law"]},{"post_id":4936,"slug":"es-south-carolina-workers-comp-impairment-rating-mmi","current":["south-carolina-law","workers-compensation"],"restore":["south-carolina-law"]},{"post_id":4861,"slug":"south-carolina-wrongful-death-settlement-value","current":["south-carolina-law","wrongful-death"],"restore":["south-carolina-law"]},{"post_id":6331,"slug":"georgia-wrongful-death-settlement-value","current":["wrongful-death"],"restore":[]},{"post_id":4858,"slug":"south-carolina-motorcycle-accident-settlement-value","current":["motorcycle-accidents","south-carolina-law"],"restore":["south-carolina-law"]},{"post_id":6312,"slug":"georgia-helmet-laws","current":["motorcycle-accidents"],"restore":[]},{"post_id":6313,"slug":"south-carolina-helmet-laws","current":["motorcycle-accidents"],"restore":[]},{"post_id":4859,"slug":"south-carolina-slip-and-fall-settlement-value","current":["slip-and-fall","south-carolina-law"],"restore":["south-carolina-law"]},{"post_id":4860,"slug":"south-carolina-premises-liability-settlement-value","current":["premises-liability","south-carolina-law"],"restore":["south-carolina-law"]},{"post_id":6314,"slug":"south-carolina-golf-cart-laws","current":["golf-cart-accidents"],"restore":[]},{"post_id":4632,"slug":"north-charleston-truck-accident-guide","current":["truck-accidents"],"restore":[]},{"post_id":5220,"slug":"truck-accident-settlement-process","current":["truck-accidents"],"restore":[]},{"post_id":5348,"slug":"i-26-i-95-corridor-report","current":["truck-accidents"],"restore":[]},{"post_id":4639,"slug":"pedestrian-bicycle-safety-north-charleston","current":["bicycle-accidents","pedestrian-accidents"],"restore":[]},{"post_id":6329,"slug":"georgia-car-seat-laws","current":["car-accidents"],"restore":[]},{"post_id":6330,"slug":"georgia-uninsured-motorist-coverage","current":["car-accidents"],"restore":[]},{"post_id":4813,"slug":"south-carolina-car-seat-laws","current":["car-accidents","south-carolina-law"],"restore":["south-carolina-law"]},{"post_id":4812,"slug":"south-carolina-um-uim-stacking","current":["car-accidents","south-carolina-law"],"restore":["south-carolina-law"]},{"post_id":4931,"slug":"es-south-carolina-um-uim-stacking","current":["car-accidents","south-carolina-law"],"restore":["south-carolina-law"]},{"post_id":5210,"slug":"es-georgia-car-accident-settlement-value","current":["car-accidents"],"restore":[]},{"post_id":5211,"slug":"es-georgia-truck-accident-settlement-value","current":["truck-accidents"],"restore":[]}]}
+
+--- VERIFY ---
+  ok    [4839] south-carolina-workers-comp-body-part-values: south-carolina-law -> south-carolina-law,workers-compensation
+  ok    [4840] how-much-does-south-carolina-workers-comp-pay: south-carolina-law -> south-carolina-law,workers-compensation
+  ok    [4841] south-carolina-workers-comp-impairment-rating-mmi: south-carolina-law -> south-carolina-law,workers-compensation
+  ok    [4842] south-carolina-workers-comp-claim-denied: south-carolina-law -> south-carolina-law,workers-compensation
+  ok    [5354] georgia-vs-south-carolina-workers-compensation: (none) -> workers-compensation
+  ok    [4933] es-how-much-does-south-carolina-workers-comp-pay: south-carolina-law -> south-carolina-law,workers-compensation
+  ok    [4934] es-south-carolina-workers-comp-claim-denied: south-carolina-law -> south-carolina-law,workers-compensation
+  ok    [4935] es-south-carolina-workers-comp-body-part-values: south-carolina-law -> south-carolina-law,workers-compensation
+  ok    [4936] es-south-carolina-workers-comp-impairment-rating-mmi: south-carolina-law -> south-carolina-law,workers-compensation
+  ok    [4861] south-carolina-wrongful-death-settlement-value: south-carolina-law -> south-carolina-law,wrongful-death
+  ok    [6331] georgia-wrongful-death-settlement-value: (none) -> wrongful-death
+  ok    [4858] south-carolina-motorcycle-accident-settlement-value: south-carolina-law -> motorcycle-accidents,south-carolina-law
+  ok    [6312] georgia-helmet-laws: (none) -> motorcycle-accidents
+  ok    [6313] south-carolina-helmet-laws: (none) -> motorcycle-accidents
+  ok    [4859] south-carolina-slip-and-fall-settlement-value: south-carolina-law -> slip-and-fall,south-carolina-law
+  ok    [4860] south-carolina-premises-liability-settlement-value: south-carolina-law -> premises-liability,south-carolina-law
+  ok    [6314] south-carolina-golf-cart-laws: (none) -> golf-cart-accidents
+  ok    [4632] north-charleston-truck-accident-guide: (none) -> truck-accidents
+  ok    [5220] truck-accident-settlement-process: (none) -> truck-accidents
+  ok    [5348] i-26-i-95-corridor-report: (none) -> truck-accidents
+  ok    [4639] pedestrian-bicycle-safety-north-charleston: (none) -> bicycle-accidents,pedestrian-accidents
+  ok    [6329] georgia-car-seat-laws: (none) -> car-accidents
+  ok    [6330] georgia-uninsured-motorist-coverage: (none) -> car-accidents
+  ok    [4813] south-carolina-car-seat-laws: south-carolina-law -> car-accidents,south-carolina-law
+  ok    [4812] south-carolina-um-uim-stacking: south-carolina-law -> car-accidents,south-carolina-law
+  ok    [4931] es-south-carolina-um-uim-stacking: south-carolina-law -> car-accidents,south-carolina-law
+  ok    [5210] es-georgia-car-accident-settlement-value: (none) -> car-accidents
+  ok    [5211] es-georgia-truck-accident-settlement-value: (none) -> truck-accidents
+
+Term counts (stored count; WordPress recounts published objects on write):
+  workers-compensation         9 -> 13
+  wrongful-death               8 -> 8
+  motorcycle-accidents         8 -> 6
+  slip-and-fall                8 -> 6
+  premises-liability           8 -> 7
+  golf-cart-accidents          8 -> 8
+  truck-accidents              45 -> 19
+  bicycle-accidents            10 -> 8
+  pedestrian-accidents         8 -> 5
+  car-accidents                19 -> 16
+
+28 of 28 done.
+Done.
