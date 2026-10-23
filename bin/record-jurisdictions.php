@@ -13,8 +13,9 @@
  * two-state (docs/reviews/confirm-jurisdiction-2026-10.md). Owner approval is
  * required before 'apply'.
  *
- * Refuses a post that already records a different jurisdiction; fix that
- * deliberately rather than overwrite it. Prints, per post, whether it names a
+ * Refuses a post that already records a different jurisdiction unless the row
+ * names the value it replaces: { "post_id": 4689, "jurisdiction": "both",
+ * "from": "ga" } changes it only while the page still records 'ga'. Prints, per post, whether it names a
  * reviewer before and after. Before values are printed as BACKUP-JSON.
  */
 
@@ -47,8 +48,11 @@ foreach ( $rows as $r ) {
 	}
 	$have_raw = (string) get_post_meta( $id, '_roden_jurisdiction', true );
 	$have     = $norm[ strtolower( trim( $have_raw ) ) ] ?? '';
-	if ( $have && $have !== $want ) {
-		printf( "  REFUSE [%d] %s: records '%s', map says '%s'\n", $id, $post->post_name, $have_raw, $want );
+	// A deliberate correction names the value it replaces ("from"); it goes
+	// through only while the page still records exactly that value.
+	$from = isset( $r['from'] ) ? ( $norm[ strtolower( trim( (string) $r['from'] ) ) ] ?? 'invalid' ) : null;
+	if ( $have && $have !== $want && $from !== $have ) {
+		printf( "  REFUSE [%d] %s: records '%s', map says '%s'%s\n", $id, $post->post_name, $have_raw, $want, null === $from ? ' (add "from" to correct it deliberately)' : " (map's from '{$r['from']}' does not match)" );
 		continue;
 	}
 	if ( $have === $want ) {
