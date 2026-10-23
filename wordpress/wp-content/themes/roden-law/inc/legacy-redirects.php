@@ -732,7 +732,7 @@ function roden_get_legacy_redirect_map() {
         '/blog/how-can-an-attorney-help-with-my-car-accident-claim/'                  => '/blog/benefits-of-hiring-personal-injury-lawyer/',  // 28 impr
         '/blog/what-are-the-upsides-of-filing-a-personal-injury-lawsuit/'             => '/blog/questions-about-filing-a-lawsuit/',  // 47 impr
 
-        // NOT REDIRECTED, deliberately:
+        // NOT REDIRECTED, deliberately (410 since 2026-10-23, see CATEGORY 13):
         // /blog/car-crash-crush-injuries-in-charleston/ — 333 impressions at
         // position 20.6. The site has no crush-injury page and no page about a
         // comparable injury mechanism. Sending a specific injury-type query to a
@@ -1235,9 +1235,22 @@ function roden_get_legacy_redirect_map() {
         '/practice-areas/medical-malpractice-attorneys/' => '/practice-areas/medical-malpractice-lawyers/',
 
         // Root-level blog posts that may have been renamed (catch-all won't find them)
-        '/car-crash-crush-injuries-in-charleston/'                                        => '/blog/car-crash-crush-injuries-in-charleston/',
         '/should-i-worry-if-i-have-stomach-pain-after-a-car-accident-in-charleston/'      => '/blog/stomach-pain-after-a-car-accident-in-charleston/',
-        '/a-charleston-residents-guide-to-tourist-car-accidents/'                          => '/blog/a-charleston-residents-guide-to-tourist-car-accidents/',
+
+        // 410 Gone, both address forms (owner decision 2026-10-23). Each root key
+        // used to 301 to its own /blog/ form, which 404s: no post by either slug
+        // exists in any status. No other entry in either map points at these four
+        // URLs. The /blog-{slug}/ and /blog/blog-{slug}/ forms, which followed the
+        // root key, now land on /blog/ in one hop (roden_resolve_legacy_blog_dest()
+        // skips 410 keys), never on a 410.
+        // Crush injuries: see the CATEGORY 19 note, the site has no comparable
+        // page. Tourist guide: its -2/-4 twins go to the car-accident pillar.
+        // This handler is not 404-gated, so if a post is ever published at
+        // either /blog/ address, delete its entry here or it will serve 410.
+        '/car-crash-crush-injuries-in-charleston/'                                        => false, // 410 Gone
+        '/blog/car-crash-crush-injuries-in-charleston/'                                   => false, // 410 Gone
+        '/a-charleston-residents-guide-to-tourist-car-accidents/'                          => false, // 410 Gone
+        '/blog/a-charleston-residents-guide-to-tourist-car-accidents/'                     => false, // 410 Gone
 
         // Ivy Montano — slug mismatch (old: ivy-montano, current: ivy-s-montano)
         '/who-we-are/attorneys/ivy-montano/' => '/attorneys/ivy-s-montano/',
