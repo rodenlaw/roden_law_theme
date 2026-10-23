@@ -894,3 +894,222 @@ Expected: 0 orphans, 0 non-200 (no URL changes). Spot-check that `/car-accident-
 lists the two car guides and real case results, `/workers-compensation-lawyers/charleston-sc/`
 has no resources block, and `/practice-areas/bicycle-accident-lawyers/` shows a Related
 Resources blog block again.
+
+## Prepared (seventh PR, not applied): resource `practice_category` terms, before the pillar terms
+
+Owner decision 2026-10-23, on the sixth PR's finding: tag on-topic resources with their
+existing `practice_category` term first, then apply the pillar terms. Only `car-accidents`
+and `truck-accidents` were on any published resource, so the pillar terms alone empty the
+resources block on 5 intersections and leave 109 sub-types without one. **Status: prepared
+and simulated, nothing written to production.** #259 merged and deployed during this work
+(prod theme = `origin/main` a2316dd, checked by md5 over all 198 theme files), so "live"
+below already includes #259's code. The pillar terms are not applied yet (5 EN + 4 ES
+pillars carry a term, as before).
+
+### Mapping (append only, existing terms only)
+
+Survey of all 58 published resources (47 EN, 11 ES), read from prod 2026-10-23: title,
+H2s, excerpt and opening text. 28 get a term, 16 already carry the right one, 14 are left
+out. No term is removed and none is created. Map: `docs/practice-category/resource-map-2026-10-23.json`.
+
+| Resource (id) | Now | Add | Why |
+|---|---|---|---|
+| SC workers' comp body part values (4839), pay (4840), MMI (4841), denied (4842) | south-carolina-law | workers-compensation | SC workers' comp guides |
+| ES twins of those four (4935, 4933, 4936, 4934) | south-carolina-law | workers-compensation | same |
+| georgia-vs-south-carolina-workers-compensation (5354) | none | workers-compensation | two-state WC comparison |
+| south-carolina-wrongful-death-settlement-value (4861) | south-carolina-law | wrongful-death | |
+| georgia-wrongful-death-settlement-value (6331) | none | wrongful-death | |
+| south-carolina-motorcycle-accident-settlement-value (4858) | south-carolina-law | motorcycle-accidents | |
+| georgia-helmet-laws (6312) | none | motorcycle-accidents | the motorcycle helmet statute; closes "Talk to a Georgia Motorcycle Accident Lawyer" |
+| south-carolina-helmet-laws (6313) | none | motorcycle-accidents | "the whole of the state's motorcycle helmet requirement" |
+| south-carolina-slip-and-fall-settlement-value (4859) | south-carolina-law | slip-and-fall | |
+| south-carolina-premises-liability-settlement-value (4860) | south-carolina-law | premises-liability | |
+| south-carolina-golf-cart-laws (6314) | none | golf-cart-accidents | "If you are hurt in a golf cart crash" |
+| north-charleston-truck-accident-guide (4632) | none | truck-accidents | |
+| truck-accident-settlement-process (5220) | none | truck-accidents | |
+| i-26-i-95-corridor-report (5348) | none | truck-accidents | fatal truck crash report |
+| pedestrian-bicycle-safety-north-charleston (4639) | none | bicycle-accidents, pedestrian-accidents | H2s: SC Pedestrian Laws, SC Bicycle Laws |
+| georgia-car-seat-laws (6329), georgia-uninsured-motorist-coverage (6330) | none | car-accidents | crash-claim guides; both close "Talk to a Georgia car accident lawyer" |
+| south-carolina-car-seat-laws (4813), south-carolina-um-uim-stacking (4812), ES twin (4931) | south-carolina-law | car-accidents | crash-claim / auto coverage after a crash |
+| ES georgia-car-accident-settlement-value (5210) | none | car-accidents | EN twin 4807 carries it |
+| ES georgia-truck-accident-settlement-value (5211) | none | truck-accidents | EN twin 4808 carries it |
+
+Left out (no clear single existing term): Grand Strand fatal crash report (5398, all crash
+types), SC liquor liability 2026 (5355, dram shop: premises or car both arguable), GA and SC
+moped laws (6315, 6316, no moped term), Charleston County court PI claim (4640), and the
+general-PI guides (SC SOL 4810, SC comparative negligence 4811, SC PI FAQ 4814, GA SOL 5223,
+GA-vs-SC comparative negligence 5352, GA-vs-SC deadlines 5353, ES 4929, 4930, 4937). No
+`personal-injury` term exists. Medical malpractice has no resource at all.
+
+### Single-resource sidebars: how the term is picked, and the fix
+
+`single-resource.php` called `wp_get_object_terms( $post_id, 'practice_category',
+array( 'fields' => 'slugs' ) )` and used `$res_cat_terms[0]`. The default `orderby` is
+`name ASC`, so the first term **by name** wins. The sixth PR's note ("adding a term alongside
+`south-carolina-law` keeps sidebars unchanged") holds only for terms named after "South
+Carolina Law". Per mapped resource:
+
+- **Unchanged by order:** Workers' Compensation and Wrongful Death sort after South Carolina
+  Law: 4839–4842, 4933–4936, 4861 (9).
+- **Would have switched topic:** Car Accidents, Motorcycle Accidents, Premises Liability and
+  Slip & Fall sort before it: 4812, 4813, 4931, 4858, 4859, 4860 (6).
+- **Untermed, so any term switches the sidebar** from the all-topics list to the topic: 13.
+
+Two theme commits in this PR, both in `single-resource.php`:
+
+1. Use `south-carolina-law` when the resource carries it, else the first term as before.
+   The 6 above keep their sidebar byte for byte (simulated).
+2. If the topic list renders nothing, render it again without the topic (the untermed
+   behaviour). That keeps the Related Guides box on 6 resources whose topic has no other
+   same-state guide: 6312, 6314, 6331, 4639, 5210, 5211 (byte-identical to today). Side
+   effect, visible as soon as this deploys: two resources that show **no** Related Guides
+   box today get one: EN `georgia-car-accident-settlement-value` (its car pool is all SC)
+   and ES `south-carolina-car-accident-settlement-value` (it is the only ES car guide). After
+   the tags, both list car guides instead. If the owner wants zero movement before apply,
+   drop commit 2. The price is that the 6 resources above lose the box at apply.
+
+### Simulation (read-only, prod, 2026-10-23)
+
+The harness renders every page five times: live, patched code with today's data, patched
+code with the pillar terms (the sixth PR's state), patched code with **both** term sets, and
+live again as a control. Terms are simulated for single-object term reads and, new in this
+run, for tax queries: in sim modes a `query` filter swaps `wp_term_relationships` for a
+derived table holding the extra rows in `SELECT … FROM wp_posts` statements. That is
+what makes `roden_related_resources()` and the term archives see the resource tags. Prod has a
+persistent object cache, so in sim modes `cache_results` is off and the term filters skip
+`get_the_terms`/`update_object_term_cache` before their cache writes. After the run, all 234
+practice_area/resource relationship cache entries matched the database (0 mismatches).
+
+289 pages: 0 control diffs, 0 schema diffs outside the term archives.
+
+| Template | Pages | Changed: pillar terms only | Changed: both | Notes |
+|---|---|---|---|---|
+| Intersection (EN) | 11 | 11 | 11 | 8 differ from pillar-only |
+| Sub-type (EN) | 118 | 9 | 48 | blocks now shown on 48 (was 0 live, 9 pillar-only); 70 still none |
+| Pillar EN / ES | 24 / 23 | 2 / 1 | 10 / 3 | Related Guides box only; blog block and case results unchanged |
+| Single resource EN / ES | 47 / 11 | 1 / 1 (commit 2) | 22 / 1 | sidebars only, see below |
+| Office pages + North Charleston hub EN / ES | 9 / 4 | 0 | 0 | |
+| Hubs EN / ES, blog posts EN / ES | 12 / 6 | 0 | 0 | |
+| Term archives (EN, noindex) | 24 | 17 | 20 | list the newly termed pillars and resources |
+
+**Intersections, resource block (live → both):**
+
+| Page | Live | Pillar terms only | Both |
+|---|---|---|---|
+| car / savannah-ga | Local: 2 truck, GA WD, GA UM | GA: GA car value | GA: GA UM, GA car seat, GA car value |
+| car / charleston-sc | Local: PI court, ped/bike, N Chas truck, dangerous roads | Local: dangerous roads, SC car value | Local: dangerous roads, SC car seat, SC UM stacking, SC car value |
+| car / north-charleston-sc | Local: ped/bike, N Chas truck, dangerous roads, SC moped | Local: dangerous roads, SC car value | same as Charleston |
+| car / columbia-sc | Local: Broad River truck, moped, golf cart, helmet | SC: SC car value | SC: SC car seat, SC UM stacking, SC car value |
+| truck / savannah-ga | Local: Bay St, port, GA WD, GA UM | Local: Bay St, port, GA truck value, I-16/I-95 | same as pillar-only |
+| truck / charleston-sc | Local: PI court, ped/bike, N Chas truck, dangerous roads | SC: SC truck value, Blythewood, Crossroads, US-52 | Local: N Chas truck, SC truck value, Blythewood, Crossroads |
+| **motorcycle / charleston-sc** | Local: 4 off-topic | **gone** | SC: SC helmet, SC motorcycle value |
+| **wrongful-death / charleston-sc** | Local: 4 off-topic | **gone** | SC: SC WD value |
+| **workers-comp / charleston-sc** | Local: 4 off-topic (incl. PI court) | **gone** | SC: SC WC denied, pay, MMI, body parts |
+| **medical-malpractice / charleston-sc** | Local: 4 off-topic | **gone** | **still gone**: no med-mal resource exists |
+| **workers-comp / savannah-ga** | Local: 4 off-topic | **gone** | **still gone**: the only GA WC guide is the two-state comparison, which the office rule drops |
+
+3 of the 5 that emptied now list on-topic guides, and 2 stay empty. Case results are
+unchanged on all 11.
+
+**Sub-types newly showing "Related Guides & Legal Resources"** (48; all two-state except
+the SC-only retail-shopping-center-fall and port-freight pages):
+bicycle 5 and pedestrian 4 (the North Charleston ped/bike guide); golf cart 5 (SC golf cart
+laws); motorcycle 3 (SC helmet, GA helmet, SC motorcycle value); premises 6 (SC premises
+value); slip and fall 6 (SC slip and fall value); workers' comp 4 (GA-vs-SC WC + 3 SC WC);
+wrongful death 6 (GA + SC WD value); car 6 and truck 3 (were already in the 9; their lists
+change, see below). Still none (no resource in the category): dog bite 8, nursing home 8,
+medical malpractice 8, maritime 6, product 6, burn 6, construction 6, ATV 6, e-scooter 5,
+brain 4, spinal cord 4, boating 3 (70).
+
+**Single-resource sidebar changes (EN 22, ES 1):**
+- Newly termed, switch from the all-topics list to the topic (7): N Chas truck guide,
+  truck settlement process, I-26/I-95 report, GA-vs-SC WC, SC helmet, GA car seat, GA UM.
+- Already termed, gain the new siblings (15): the 12 truck guides (Related Guides now
+  leads with the I-26/I-95 report and the settlement-process guide, newest first),
+  dangerous-roads-north-charleston and SC car value (add SC car seat, SC UM stacking),
+  GA car value (commit 2, then GA UM and GA car seat).
+- ES SC car value: commit 2, then ES SC UM stacking.
+- Unchanged: the other 21 mapped resources (9 by name order, 6 by commit 1, 6 by commit 2).
+- No sidebar box empties. "Related Resources" (second box) changes only where the first
+  box's list changed (it excludes what the first box shows).
+
+**Blocks that empty:** only the two intersections above. No resource loses its last block
+link: every one of the 58 still has inbound block links on the simulated pages. The biggest
+drop is SC moped laws, 38 → 22.
+
+**Ranking note:** lists are newest first, capped at 4. On the car pillar and the 6 car
+sub-types, the four newest car guides (GA UM, GA car seat, SC car seat, SC UM stacking)
+push out the two settlement-value guides. If the owner prefers the value guides there,
+drop the four car-seat/UM rows (6329, 6330, 4813, 4812, 4931) from the map. Each row stands alone.
+
+### Jurisdiction check
+
+I ran `roden_page_jurisdiction_states()` on both page and resource for every resource link in
+every rendered list (resource blocks, both resource sidebars): 808 links live, 811 with pillar
+terms, 866 with both. **Cross-state single-state pairs: 0 / 0 / 0.** Coverage is real, not
+an empty sweep: 371 links sit on SC-only resource pages, 136 on GA-only, 29 on single-state
+intersections, and 5 on SC-only sub-types. 119 single-state → two-state pairs are kept by
+the keep-both rule (sidebars, sub-types; the office rule still drops `both` on
+intersections).
+
+### Archives, sitemap, schema, breadcrumbs, doorway/floor
+
+- Term archives stay `noindex, follow` (checked live on `/practice-category/workers-compensation/`
+  and `/motorcycle-accidents/`). The sitemap index has no taxonomy sub-sitemap (8 providers:
+  post, page, attorney, practice_area, location, resource, eshubs, hubs). 20 archives list
+  more items and their CollectionPage JSON-LD changes with them. They are noindex. No new
+  archive URL appears, because every term already has published objects.
+- `roden_output_schema()` output is byte-identical on all 265 non-archive pages in every mode.
+  No breadcrumb code reads `practice_category`. Every changed link sits in a resource block
+  or sidebar list.
+- Doorway ratio / granularity floor: no page, URL, title, content or sitemap change.
+- Term counts recount on write (cosmetic, blog sidebar "Categories" widget).
+- `content/meta.json` does not export taxonomy terms, so it needs no regeneration.
+
+### Apply (board strategist): order matters
+
+```bash
+H=rodenlawprod@rodenlawprod.ssh.wpengine.net
+WP="wp --path=/home/wpe-user/sites/rodenlawprod"
+# 0. Merge this PR; the deploy carries the single-resource.php fix. The resource script refuses 'apply' without it.
+# 1. Resource tags
+M=docs/practice-category/resource-map-2026-10-23.json
+ssh $H "$WP eval-file - b64:$(base64 < $M)"       < bin/assign-resource-practice-category.php   # dry run: 28 add, 0 refused
+ssh $H "$WP eval-file - b64:$(base64 < $M) apply" < bin/assign-resource-practice-category.php   # keep the BACKUP-JSON line
+# 2. Pillar terms (#259; its prerequisites are live since a2316dd)
+P=docs/practice-category/pillar-map-2026-10-23.json
+ssh $H "$WP eval-file - b64:$(base64 < $P)"       < bin/assign-pillar-practice-category.php
+ssh $H "$WP eval-file - b64:$(base64 < $P) apply" < bin/assign-pillar-practice-category.php
+# 3. Flush both caches
+ssh $H "cd ~/sites/rodenlawprod && wp cache flush && wp page-cache flush"
+```
+
+Rollback for step 1: save the BACKUP-JSON payload to a file B and run
+`ssh $H "$WP eval-file - b64:$(base64 < B) rollback [apply]" < bin/assign-resource-practice-category.php`.
+It removes only the terms the apply added, and only while each post still carries exactly
+what the apply left on it.
+
+Dry run on prod 2026-10-23: 28 to tag, 0 refused, both prerequisites MISSING (expected
+before deploy). Guard test (dry run): a pillar ID, a wrong term ID, a stale `current`
+and a non-existent post were each refused. Nothing was written to production.
+
+### Owner items
+
+- **medical-malpractice / charleston-sc** and **workers-comp / savannah-ga** lose their (off-topic)
+  resource block at pillar apply. They need an SC med-mal guide or a GA-only WC guide, or the
+  owner accepts no block. Relaxing the office rule to keep `both` is not proposed: the rule
+  exists because an office page states one state's law.
+- The 14 left-out resources above, if the owner wants any of them in a topic.
+- Car-seat/UM rows vs settlement-value guides on car lists (ranking note).
+- Pre-existing: `roden_related_resources()` treats North Charleston guides as Charleston-local
+  (substring match): the Charleston truck intersection now leads with the North Charleston
+  truck guide under "Local". #256's longest-match helper covers office pages only.
+
+### Re-run after deploy and apply
+
+`node vendor/site-health/site-health.mjs crawl --repo . --base https://rodenlaw.com --live`
+and `… linktopics …`. Expected: no new non-200 or orphan (no URL changes). Block anchors are
+the destination's own title, so they add no link-topic findings. Spot checks:
+`/workers-compensation-lawyers/charleston-sc/` lists the 4 SC WC guides,
+`/motorcycle-accident-lawyers/lane-splitting-accident/` shows the block,
+`/resources/south-carolina-motorcycle-accident-settlement-value/` sidebar is unchanged.
