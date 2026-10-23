@@ -298,5 +298,77 @@
       "intakeAttribution": "continuous",
       "offlineCommunity": "quarterly"
     }
+  },
+  "siteHealth": {
+    "floor": {
+      "_comment": "Owner-approved 2026-10-22: pages kept/held below the granularity floor in the 2026-10-21 cull (docs/floor-cull-2026-10-21.md). Each fails the floor check again after its review date; re-decide then.",
+      "keep": [
+        {
+          "path": "/blog/a-cyclists-guide-after-a-ravenel-bridge-accident/",
+          "reason": "kept in floor cull 2026-10-21 on evidence: 113 clicks/16 mo; 90-day re-read",
+          "review": "2027-01-22"
+        },
+        {
+          "path": "/blog/savannah-dangerous-highways-i16-i95-abercorn/",
+          "reason": "kept in floor cull 2026-10-21 on evidence: 33 clicks/16 mo; carry-over/ledger date",
+          "review": "2027-01-01"
+        },
+        {
+          "path": "/resources/blythewood-i-77-truck-accidents/",
+          "reason": "kept in floor cull 2026-10-21 on evidence: 28 clicks/16 mo; 90-day re-read",
+          "review": "2027-01-22"
+        },
+        {
+          "path": "/blog/ashley-phosphate-road-i-26-dangerous-intersection-charleston/",
+          "reason": "kept in floor cull 2026-10-21 on evidence: 28 clicks/16 mo; carry-over/ledger date",
+          "review": "2026-12-31"
+        },
+        {
+          "path": "/blog/folly-road-car-accidents-james-island-charleston/",
+          "reason": "kept in floor cull 2026-10-21 on evidence: 27 clicks/16 mo; carry-over/ledger date",
+          "review": "2027-01-04"
+        },
+        {
+          "path": "/blog/carriage-tour-accidents-downtown-charleston-liability/",
+          "reason": "kept in floor cull 2026-10-21 on evidence: 25 clicks/16 mo; 90-day re-read",
+          "review": "2027-01-22"
+        },
+        {
+          "path": "/blog/darien-brunswick-dangerous-roads-i95-us17/",
+          "reason": "kept in floor cull 2026-10-21 on evidence: 25 clicks/16 mo; 90-day re-read",
+          "review": "2027-01-22"
+        },
+        {
+          "path": "/resources/bay-street-truck-accidents-savannah-historic-district/",
+          "reason": "kept in floor cull 2026-10-21 on evidence: 23 clicks/16 mo; 90-day re-read",
+          "review": "2027-01-22"
+        },
+        {
+          "path": "/resources/us-52-truck-train-accidents-goose-creek/",
+          "reason": "kept in floor cull 2026-10-21 on evidence: 23 clicks/16 mo; 90-day re-read",
+          "review": "2027-01-22"
+        },
+        {
+          "path": "/blog/lower-king-street-pedestrian-safety/",
+          "reason": "kept in floor cull 2026-10-21 on evidence: 20 clicks/16 mo; carry-over/ledger date",
+          "review": "2026-12-08"
+        },
+        {
+          "path": "/blog/what-to-do-after-a-hit-and-run-in-downtown-charleston/",
+          "reason": "kept in floor cull 2026-10-21 on evidence: 18 clicks/16 mo; 90-day re-read",
+          "review": "2027-01-22"
+        },
+        {
+          "path": "/blog/18-wheeler-wrecks-on-the-arthur-ravenel-jr-bridge-us-17/",
+          "reason": "held in floor cull 2026-10-21: 13 clicks/16 mo, ledger-waiting; re-decide at ledger date",
+          "review": "2026-12-08"
+        },
+        {
+          "path": "/blog/motorcycle-accidents-dorchester-road-data/",
+          "reason": "held in floor cull 2026-10-21: 12 clicks/16 mo, ledger-waiting; re-decide at ledger date",
+          "review": "2026-12-31"
+        }
+      ]
+    }
   }
 }
