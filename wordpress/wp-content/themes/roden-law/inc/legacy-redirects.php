@@ -1249,12 +1249,15 @@ function roden_get_legacy_redirect_map() {
         // Root-level blog posts that may have been renamed (catch-all won't find them)
         '/should-i-worry-if-i-have-stomach-pain-after-a-car-accident-in-charleston/'      => '/blog/stomach-pain-after-a-car-accident-in-charleston/',
 
-        // 410 Gone, both address forms (owner decision 2026-10-23). Each root key
+        // 410 Gone, every address form (owner decision 2026-10-23). Each root key
         // used to 301 to its own /blog/ form, which 404s: no post by either slug
-        // exists in any status. No other entry in either map points at these four
-        // URLs. The /blog-{slug}/ and /blog/blog-{slug}/ forms, which followed the
-        // root key, now land on /blog/ in one hop (roden_resolve_legacy_blog_dest()
-        // skips 410 keys), never on a 410.
+        // exists in any status. No other entry in either map points at these
+        // URLs. The /blog-{slug}/ and /blog/blog-{slug}/ forms are listed
+        // explicitly: without them roden_resolve_legacy_blog_dest() skips the 410
+        // root key and sends them to /blog/. Explicit entries, not a resolver
+        // change, because a resolver change would also flip the /blog-/ forms of
+        // every other 410 key (e.g. coronavirus-business-claims), which nobody
+        // decided.
         // Crush injuries: see the CATEGORY 19 note, the site has no comparable
         // page. Tourist guide: its -2/-4 twins go to the car-accident pillar.
         // This handler is not 404-gated, so if a post is ever published at
@@ -1263,6 +1266,10 @@ function roden_get_legacy_redirect_map() {
         '/blog/car-crash-crush-injuries-in-charleston/'                                   => false, // 410 Gone
         '/a-charleston-residents-guide-to-tourist-car-accidents/'                          => false, // 410 Gone
         '/blog/a-charleston-residents-guide-to-tourist-car-accidents/'                     => false, // 410 Gone
+        '/blog-car-crash-crush-injuries-in-charleston/'                                   => false, // 410 Gone
+        '/blog/blog-car-crash-crush-injuries-in-charleston/'                              => false, // 410 Gone
+        '/blog-a-charleston-residents-guide-to-tourist-car-accidents/'                     => false, // 410 Gone
+        '/blog/blog-a-charleston-residents-guide-to-tourist-car-accidents/'                => false, // 410 Gone
 
         // Ivy Montano — slug mismatch (old: ivy-montano, current: ivy-s-montano)
         '/who-we-are/attorneys/ivy-montano/' => '/attorneys/ivy-s-montano/',
