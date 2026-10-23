@@ -63,27 +63,49 @@ function roden_neutralize_old_practice_area_cpt( $args, $post_type ) {
    Both are matched on the URL, so they survive menu-item ID changes.
    Remove each once the menu item is fixed in Appearance → Menus;
    bin/repoint-class-actions-menu-item.php does that for (2).
+
+   2026-10-23: (2) now DROPS the item instead of repointing it. Mass torts
+   are retired (roden_mass_tort_retire_urls()) and the hub 301s to
+   /practice-areas/, so a "Class Actions" / "Demandas Colectivas" item would
+   advertise work the firm no longer takes and cost every page a hop. Items
+   linking the hub or a retired tort page go, along with any sub-items under
+   them. The kept troubled-teen page is not matched.
    ------------------------------------------------------------------ */
 
 add_filter( 'wp_nav_menu_objects', 'roden_fix_dead_nav_links', 10, 2 );
 
 function roden_fix_dead_nav_links( $items, $args ) {
-    $class_actions = home_url( '/class-actions/' );
+    // Paths whose menu items are dropped: the old class-actions page, the hub,
+    // and every retired tort page and alias (all keys of the retire map).
+    $retired = array();
+    foreach ( array_keys( roden_mass_tort_retire_urls() ) as $path ) {
+        $retired[ untrailingslashit( $path ) ] = true;
+    }
 
+    $dropped = array();
+    $kept    = array();
     foreach ( $items as $item ) {
         if ( ! isset( $item->url ) ) {
+            $kept[] = $item;
             continue;
         }
         if ( false !== strpos( $item->url, 'page_id=3126' ) ) {
             $item->url = home_url( '/practice-areas/' );
+            $kept[]    = $item;
             continue;
         }
         // Trailing-slash-insensitive, so a menu item saved without one still matches.
-        if ( untrailingslashit( $item->url ) === untrailingslashit( $class_actions ) ) {
-            $item->url = home_url( '/class-action-lawyers/' );
+        $path = untrailingslashit( (string) wp_parse_url( $item->url, PHP_URL_PATH ) );
+        $host = wp_parse_url( $item->url, PHP_URL_HOST );
+        $own  = ! $host || strtolower( $host ) === strtolower( (string) wp_parse_url( home_url(), PHP_URL_HOST ) );
+        // Items arrive parents first, so a sub-item's parent is already decided.
+        if ( ( $own && isset( $retired[ $path ] ) ) || isset( $dropped[ (int) $item->menu_item_parent ] ) ) {
+            $dropped[ (int) $item->ID ] = true;
+            continue;
         }
+        $kept[] = $item;
     }
-    return $items;
+    return $kept;
 }
 
 /* ------------------------------------------------------------------
@@ -395,9 +417,10 @@ function roden_legacy_content_redirects() {
         exit;
     }
 
-    // /class-action-lawyers/[category]/[case]/ → /class-action-lawyers/ (nested old class-action pages)
+    // /class-action-lawyers/[category]/[case]/ → /practice-areas/ (nested old class-action pages).
+    // Was /class-action-lawyers/, which is retired (roden_mass_tort_retire_urls), so go direct.
     if ( preg_match( '#^/class-action-lawyers/[^/]+/[^/]+/?$#', $clean_path ) ) {
-        wp_redirect( home_url( '/class-action-lawyers/' ), 301 );
+        wp_redirect( home_url( '/practice-areas/' ), 301 );
         exit;
     }
 
@@ -1483,8 +1506,59 @@ function roden_phase1_removed_urls() {
         roden_ashley_phosphate_fold_urls(),
         roden_orphan_alias_urls(),
         roden_floor_cull_urls(),
-        roden_floor_cull_mid_urls()
+        roden_floor_cull_mid_urls(),
+        roden_mass_tort_retire_urls()
     );
+}
+
+/**
+ * Mass-tort pages retired, 2026-10-23. Owner's call (2026-09-10, recorded in the
+ * standard-build migration decisions): mass torts are out, Camp Lejeune included.
+ * Owner, 2026-10-23: "yes, draft the redirect PR" once the live site was found
+ * still carrying them in the sitemap and the header nav.
+ *
+ * Evidence (docs/gsc-2026-10-06/pages_16mo.csv): the hub and 13 tort pages earned
+ * 66 clicks in 16 months between them, 0-15 each. None carries jurisdiction,
+ * author or review meta, and their FAQ answers (which also publish as FAQPage
+ * data) were never reviewed. All land on /practice-areas/, as the decision
+ * set: sending mass-tort intent to a pillar would read as still soliciting it.
+ *
+ * KEPT: /class-action-lawyers/troubled-teen-industry-abuse/ (83 clicks in 16
+ * months on this form alone, more than the other 14 combined). Not in this map,
+ * and its /class-action/ alias keeps its own redirect. The hub page stays
+ * PUBLISHED (only redirected, and kept out of the sitemap) so the kept child's
+ * permalink and path resolution are untouched. The 13 tort children go to draft
+ * with _roden_retired after deploy (bin/retire-mass-tort-pages.php).
+ *
+ * The old /class-action/{slug}/ CPT aliases and /class-actions/ are keyed here
+ * too, so each is one hop instead of two.
+ */
+function roden_mass_tort_retire_urls() {
+    $dest  = '/practice-areas/';
+    $torts = array(
+        'afff-firefighting-foam-lawsuits',
+        'camp-lejeune-lawsuits',
+        'hair-relaxer-cancer-lawsuits',
+        'invokana',
+        'ivc-filter',
+        'onglyza',
+        'ozempic-lawsuits',
+        'paraquat-lawsuit',
+        'roundup',
+        'stryker-hip-replacement',
+        'talcum-powder',
+        'truvada',
+        'uloric',
+    );
+    $map = array(
+        '/class-action-lawyers/' => $dest,
+        '/class-actions/'        => $dest,
+    );
+    foreach ( $torts as $slug ) {
+        $map[ '/class-action-lawyers/' . $slug . '/' ] = $dest;
+        $map[ '/class-action/' . $slug . '/' ]         = $dest;
+    }
+    return $map;
 }
 
 /**
