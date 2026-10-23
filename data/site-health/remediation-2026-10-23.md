@@ -558,3 +558,126 @@ Expected: redirects 997 ok / 0 chains / 0 lost; crawl 0 orphans. Spot-check
 `curl -sI https://rodenlaw.com/blog/i-526-truck-accidents-charleston/`: one 301 to
 `/truck-accident-lawyers/charleston-sc/`. `/locations/south-carolina/north-charleston/`
 should list its three guides.
+
+## Fixed (fifth PR): `/blog/` forms of root-level legacy keys, and three 2-hop chains
+
+Owner decision 2026-10-23: fix the `/blog/` forms of old root-level legacy-map keys that
+404, and fold in the `/blog/privacy-policy-2/` chain deferred above.
+
+### The list (regenerated from code against prod, 2026-10-23)
+
+`roden_get_legacy_redirect_map()` has 44 root-level keys. 25 have no `/blog/` key in either
+map. Their `/blog/` forms on prod (replay matches live curl):
+
+| `/blog/` form | Main | Patched |
+|---|---|---|
+| `/blog/truck-accident-lawyers-columbia-sc/` | 404 | 301 `/practice-areas/truck-accident-lawyers/` |
+| `/blog/truck-accident-lawyers-near-me/` | 404 | 301 `/practice-areas/truck-accident-lawyers/` |
+| `/blog/south-carolina-rear-end-accident-lawyer/` | 404 | 301 `/car-accident-lawyers/rear-end-collision/` |
+| `/blog/free-case-review/` | 404 | 301 `/contact/` |
+| `/blog/who-is-at-fault-in-a-charleston-merge-accident/` | 404 | 301 `/car-accident-lawyers/charleston-sc/` |
+| `/blog/thank-you-ppc-2/` | 404 | 301 `/` |
+| `/blog/who-we-are/` | 404 | 301 `/about/` |
+| `/blog/contact-us/` | 404 | 301 `/contact/` |
+| `/blog/truck-accident-lawyer-2/` | 404 | 301 `/practice-areas/truck-accident-lawyers/` |
+| `/blog/columbia-car-accident-lawyers/` | 404 | 301 `/car-accident-lawyers/columbia-sc/` |
+| `/blog/areas-we-serve/` | 404 | 301 `/locations/` |
+| `/blog/can-a-car-accident-lawyer-help-with-claiming-insurance-benefits/` | 404 | 301 `/blog/are-accident-lawyers-worth-it/` |
+| `/blog/terms-privacy-policy/` | 404 | 301 `/privacy-policy/` |
+| `/blog/results/` | 404 | 301 `/case-results/` |
+| `/blog/should-i-worry-if-i-have-stomach-pain-after-a-car-accident-in-charleston/` | 404 | 301 `/practice-areas/car-accident-lawyers/` |
+| `/blog/car-crash-crush-injuries-in-charleston/` | 404 | 404, unchanged (see below) |
+| `/blog/a-charleston-residents-guide-to-tourist-car-accidents/` | 404 | 404, unchanged (see below) |
+
+The other 8 already resolve on main and are unchanged: six `/blog/{pillar}-lawyers/` forms
+(one 301 to the pillar), `/blog/your-guide-to-justice-after-a-charleston-truck-accident/`
+(a live post, 200) and `/blog/a-guide-to-car-accident-claims-at-columbias-toughest-intersections/`
+(core's old-slug redirect, one 301 to `/blog/columbia-dangerous-intersections-roads/`).
+
+So 17 `/blog/` forms 404 on prod, not 18. The earlier figure of 18 does not reproduce: the
+pre-#256 replay output gives the same 17. 15 are fixed. 2 are deliberately left alone.
+
+### Approach: a narrow generic rule, not explicit entries
+
+`roden_blog_form_legacy_dest()` runs last in `roden_legacy_content_redirects()`. When a request
+is `/blog/{x}/`, 404s, and `/{x}/` is a legacy-map key, it 301s to that key's destination
+through the same funnel (`roden_redirect_dest_or_fallback()`).
+
+Why not explicit entries: 19 root keys already have a hand-written `/blog/` twin, and 8 of
+those twins now land somewhere other than their root key (final destination, replayed). For example
+`/how-can-an-attorney-help-with-my-car-accident-claim/` goes to
+`/are-accident-lawyers-worth-it/`, while its `/blog/` twin goes to
+`/blog/benefits-of-hiring-personal-injury-lawyer/`. A twin is a copy of a decision, and
+copies drift. The rule follows the root key, so re-pointing a key moves both forms. A key
+added later gets its `/blog/` form with no extra entry. Existing twins still win, because the
+exact-match lookup runs first.
+
+How it stays narrow:
+- It runs only on a 404, after the removal map (priority 0) and after every pattern rule.
+- It matches only a single segment under `/blog/`, so `/es/` and nested paths never match.
+- Core's old-slug redirect wins.
+- Core's 404 slug guess wins when it finds a published post, unless that post's own address
+  is the key itself (following it would be a 2-hop chain to the same place).
+- 410 entries are not extended to their `/blog/` form.
+- A key whose destination is this same `/blog/` URL is left alone, so it cannot loop. These
+  are the two unchanged rows above.
+
+### Chains fixed at their generator
+
+- **`/blog/privacy-policy-2/`** went `/privacy-policy-2/` → `/privacy-policy/`. Generator: core's
+  404 guess found the still-published page 3602, and the removal map 301'd that page.
+  `roden_removed_slug_guess_key()` now checks core's guess first. If the guessed address is
+  itself a removal key, it returns that key, so the request takes one hop to the same final
+  destination.
+- **`/should-i-worry-if-i-have-stomach-pain-after-a-car-accident-in-charleston/`** went to
+  `/blog/stomach-pain-…/`, which is itself a legacy key, then on to the pillar. The funnel
+  followed the removal map but not the legacy map. It now follows the legacy map too. The
+  loop is bounded and never follows into a 410. Today this is the only destination in either
+  map that is also a legacy key.
+- **`/a-guide-to-car-accident-claims-at-columbias-toughest-intersections/`** went to its old
+  `/blog/` address, then through core's old-slug redirect. For a `/blog/{slug}/` destination
+  that is not a published post, the funnel now uses a published post whose `_wp_old_slug` is
+  `{slug}`, as core would.
+
+The replay found the last two. Neither was in the brief, and neither is in the fixture.
+
+### Verification
+
+Read-only replay on prod through the real `template_redirect` pipeline, main vs patched,
+following every hop. Fragments are stripped before re-requesting. Prod matched `origin/main`
+on every theme file by md5 before the run. Sample checked against live curl: all match.
+
+| Set | Paths | Changed |
+|---|---|---|
+| `redirects.csv` fixture | 997 | 0 |
+| Sitemap URLs, EN + ES | 594 + 56 | 0 (0 redirect, main or patched) |
+| `/blog/` forms of every legacy + removal key | 700 | 16 |
+| Legacy-map keys themselves (excl. the one 410) | 267 | 2 |
+| Removal-map keys themselves | 601 | 0 |
+| Cull alias candidates | 178 | 0 |
+| #256 truncation set | 565 | 0 |
+| Every `/es/` path (incl. 43 `/es/blog/` forms) | 212 | 0 |
+
+All 18 changes are either 404 → one 301 → 200 (15) or 2-hop → one 301 → 200 (3). No existing
+200 changed. No existing single-hop redirect changed destination. The final destination
+is unchanged for all 3 chains. Paths that were chains or lost, across all sets: main 7,
+patched 4.
+
+site-health `redirects`, live, before this PR (2026-10-23T19:13Z):
+`997 legacy URLs · ok: 997 · chains: 0 · lost: 0`. Expected after: unchanged, since no
+fixture row changes.
+
+### Deferred / owner
+
+| Item | Status | Why |
+|---|---|---|
+| `/car-crash-crush-injuries-in-charleston/` → `/blog/car-crash-crush-injuries-in-charleston/` → 404 | deferred, owner | The `/blog/` URL was left 404 on purpose (Category 19 note: no comparable page). The root key still 301s into it. Options: point the root key at nothing (410), or leave it until the page is written. |
+| `/a-charleston-residents-guide-to-tourist-car-accidents/` → `/blog/…/` → 404 | deferred, owner | No post by that slug exists in any status, and there is no old-slug record. Its `-2`/`-4` twins go to `/practice-areas/car-accident-lawyers/`. Pick a destination or 410. |
+| 8 root keys whose `/blog/` twin lands elsewhere (e.g. root → `/blog/are-accident-lawyers-worth-it/`, twin → `/blog/benefits-of-hiring-personal-injury-lawyer/`) | deferred, owner | Pre-existing, unchanged by this PR. Two decisions for one old URL. If they should agree, delete the twin (the generic rule then takes over) or re-point the root key. |
+| `/blog/savannah/`, `/blog/practice-areas/brunswick/` 2-hop | deferred, synthetic | Core's guess lands on a published page that `roden_old_page_redirects()` (functions.php) redirects. No request evidence. |
+
+### Re-run after deploy
+
+Run `node vendor/site-health/site-health.mjs redirects --repo . --base https://rodenlaw.com --live`.
+Expected: 997 ok / 0 chains / 0 lost. Spot-check `curl -sIL https://rodenlaw.com/blog/contact-us/`
+and `/blog/privacy-policy-2/`: each should be one 301 to `/contact/` and `/privacy-policy/`.

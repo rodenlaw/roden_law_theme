@@ -236,6 +236,18 @@ function roden_normalize_blog_dest( $dest ) {
 }
 
 function roden_redirect_dest_or_fallback( $dest ) {
+	/*
+	 * A destination may itself be a legacy-map key. The root address
+	 * /should-i-worry-if-i-have-stomach-pain-after-a-car-accident-in-charleston/
+	 * pointed at /blog/stomach-pain-after-a-car-accident-in-charleston/, which a
+	 * later entry 301s to the car-accident pillar: a 2-hop chain (2026-10-23).
+	 * Follow the map to the end, bounded, and never into a 410.
+	 */
+	$legacy = roden_get_legacy_redirect_map();
+	for ( $i = 0; $i < 5 && isset( $legacy[ $dest ] ) && false !== $legacy[ $dest ]; $i++ ) {
+		$dest = $legacy[ $dest ];
+	}
+
 	$dest = roden_normalize_blog_dest( $dest );
 
 	/*
@@ -259,6 +271,30 @@ function roden_redirect_dest_or_fallback( $dest ) {
 
 	if ( url_to_postid( home_url( $dest ) ) ) {
 		return $dest;
+	}
+
+	/*
+	 * A /blog/{slug}/ destination whose post was later renamed. Core's old-slug
+	 * redirect (wp_old_slug_redirect()) still serves it, but as a second hop:
+	 * /a-guide-to-car-accident-claims-at-columbias-toughest-intersections/ went
+	 * to its old /blog/ address and on to /blog/columbia-dangerous-intersections-
+	 * roads/ (2026-10-23). Go to where core would send it, in one hop.
+	 */
+	if ( preg_match( '#^/blog/([a-z0-9-]+)/$#', $dest, $m ) ) {
+		$renamed = get_posts(
+			array(
+				'post_type'        => 'post',
+				'post_status'      => 'publish',
+				'meta_key'         => '_wp_old_slug', // phpcs:ignore WordPress.DB.SlowDBQuery
+				'meta_value'       => $m[1], // phpcs:ignore WordPress.DB.SlowDBQuery
+				'fields'           => 'ids',
+				'posts_per_page'   => 1,
+				'no_found_rows'    => true,
+			)
+		);
+		if ( $renamed ) {
+			return wp_make_link_relative( get_permalink( $renamed[0] ) );
+		}
 	}
 
 	/*
@@ -531,6 +567,70 @@ function roden_legacy_content_redirects() {
             exit;
         }
     }
+
+    // ── /blog/ form of a root-level map key ──────────────────────────────
+    // Last, so every rule above (and the removal map at priority 0) has
+    // already had its chance. See roden_blog_form_legacy_dest().
+    $blog_form_dest = roden_blog_form_legacy_dest( $clean_path, $redirects );
+    if ( '' !== $blog_form_dest ) {
+        wp_redirect( home_url( $blog_form_dest ), 301 );
+        exit;
+    }
+}
+
+/**
+ * Where the /blog/ form of a root-level legacy-map key goes, or ''.
+ *
+ * The permalink structure moved from /%postname%/ to /blog/%postname%/, and
+ * the old root addresses in roden_get_legacy_redirect_map() were written for
+ * the root form only. Their /blog/ forms (/blog/contact-us/, /blog/who-we-are/,
+ * /blog/results/ ...) had no rule and 404'd: 17 keys on 2026-10-23. Some keys
+ * were given a hand-written /blog/ twin over the years, and several of those
+ * twins now point somewhere other than their root key; a twin is a second
+ * copy of a decision, and it drifts. This sends the /blog/ form exactly where
+ * the root key goes, through the same funnel, so it is one hop and it follows
+ * the root key if that key is ever re-pointed.
+ *
+ * Narrow by construction. It answers only when nothing else would:
+ *   - a 404 only, so a published post at /blog/{x}/ always serves;
+ *   - /blog/{x}/ with a single segment, so /es/ and nested paths never match;
+ *   - an explicit /blog/ key wins (the exact-match lookup runs first), and so
+ *     does every pattern rule and the removal map (this runs after them);
+ *   - core's old-slug redirect wins: a post renamed away from {x} keeps its
+ *     redirect to the new slug;
+ *   - core's 404 slug guess wins when it finds a published post, unless that
+ *     post's own address is the root key itself, which the map redirects:
+ *     following the guess would be a 2-hop chain to the same destination;
+ *   - 410 (false) entries are not extended to their /blog/ form;
+ *   - a key whose destination is this very /blog/ URL (a root alias of a post
+ *     that has since gone) is left alone rather than looping.
+ *
+ * @param string               $path Request path with trailing slash.
+ * @param array<string,string> $map  roden_get_legacy_redirect_map().
+ * @return string Destination path, or ''.
+ */
+function roden_blog_form_legacy_dest( $path, $map ) {
+    if ( ! is_404() || ! preg_match( '#^/blog/([a-z0-9_-]+)/$#', $path, $m ) ) {
+        return '';
+    }
+    $key = '/' . $m[1] . '/';
+    if ( ! isset( $map[ $key ] ) || false === $map[ $key ] ) {
+        return '';
+    }
+
+    $type = get_query_var( 'post_type' );
+    $type = is_array( $type ) ? reset( $type ) : $type;
+    if ( function_exists( '_find_post_by_old_slug' ) && _find_post_by_old_slug( $type ? $type : 'post' ) ) {
+        return '';
+    }
+
+    $guess = function_exists( 'redirect_guess_404_permalink' ) ? redirect_guess_404_permalink() : false;
+    if ( $guess && trailingslashit( (string) wp_parse_url( $guess, PHP_URL_PATH ) ) !== $key ) {
+        return '';
+    }
+
+    $dest = roden_redirect_dest_or_fallback( $map[ $key ] );
+    return $dest === $path ? '' : $dest;
 }
 
 /**
@@ -2533,7 +2633,9 @@ function roden_phase1_removal_redirects() {
      * reached its post only through redirect_guess_404_permalink(), which sees
      * published posts only, so retiring the post killed it (1 LOST,
      * site-health 2026-10-22). Defers to core whenever core's guess finds a
-     * published post, so it can never pre-empt a page that serves.
+     * published post that serves, so it can never pre-empt a page that serves.
+     * When core's guess is a post the map itself removes (/privacy-policy-2/),
+     * it goes to that key directly instead of letting core add a hop.
      */
     if ( ! isset( $map[ $path ] ) && is_404() ) {
         $guess = roden_removed_slug_guess_key( $map );
@@ -2565,7 +2667,9 @@ function roden_phase1_removal_redirects() {
  *
  * This replays the same match against the removal map, so the alias lands
  * where the retired post's own address already goes. It is narrower than core:
- *   - it runs only when core's guess finds nothing (core is asked first);
+ *   - it runs only when core's guess finds nothing (core is asked first),
+ *     except that a guess landing on a removal key is taken as that key, so
+ *     the request makes one hop instead of core's hop plus the map's;
  *   - it honours the same filters, including roden_es_disable_404_guess();
  *   - if the prefix matches several retired posts with different
  *     destinations, it does nothing, where core would pick one arbitrarily.
@@ -2582,6 +2686,19 @@ function roden_removed_slug_guess_key( $map ) {
         return '';
     }
     $strict = (bool) apply_filters( 'strict_redirect_guess_404_permalink', false );
+
+    /*
+     * Core first: a published post that matches keeps its guess -- unless that
+     * post's own address is itself a removal key. /privacy-policy-2/ is a
+     * published page the map 301s to /privacy-policy/, so core guessed
+     * /blog/privacy-policy-2/ onto it and the map took a second hop. Going
+     * straight to the key lands on the same destination in one hop.
+     */
+    $core = redirect_guess_404_permalink();
+    if ( $core ) {
+        $core_path = trailingslashit( (string) wp_parse_url( $core, PHP_URL_PATH ) );
+        return isset( $map[ $core_path ] ) ? $core_path : '';
+    }
 
     // Restrict to the queried post type's base, as core restricts its SQL.
     $bases = array();
@@ -2623,11 +2740,7 @@ function roden_removed_slug_guess_key( $map ) {
         $dest = $resolved;
     }
 
-    // Core first: a published post that matches keeps its guess.
-    if ( '' === $hit || redirect_guess_404_permalink() ) {
-        return '';
-    }
-    return $hit;
+    return $hit; // Core's guess found nothing (checked above).
 }
 
 /**
