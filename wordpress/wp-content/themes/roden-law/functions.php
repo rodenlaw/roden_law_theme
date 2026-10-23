@@ -142,7 +142,7 @@ function roden_old_page_redirect_map() {
         'brunswick'                            => '/practice-areas/',
         'charleston'                           => '/practice-areas/',
         // 'thank-you-ppc-2' removed — page renamed to 'thank-you' for conversion tracking
-        'class-actions'                        => '/class-action-lawyers/',
+        'class-actions'                        => '/practice-areas/', // Was /class-action-lawyers/, retired 2026-10-23.
     );
 }
 
@@ -349,7 +349,7 @@ function roden_exclude_toxic_pages_from_sitemap( $args, $post_type ) {
             'brunswick',
             'savannah',
             'charleston',
-            // 'class-action-lawyers' removed — pillar page is now live and should be indexed
+            'class-action-lawyers',                                  // Retired 2026-10-23 (mass torts out); stays published so its kept troubled-teen child resolves, 301 to /practice-areas/.
             'savannah-ppi-attorney',                                // PPC landing page.
             'free-consultation-with-charleston-personal-injury-lawyer', // PPC landing page.
             'south-carolina-truck-accident-lawyer',                 // Duplicates PA CPT intersection.
@@ -628,10 +628,13 @@ add_filter( 'wp_robots', 'roden_p0_hygiene_noindex' );
 function roden_p0_hygiene_noindex( $robots ) {
     // Tags, taxonomies, search, author and date archives already get noindex
     // from roden_output_noindex_pages() (inc/seo-meta.php).
+    // gracias-ppc-2/-3 (PPC thank-you pages) and home-espanol (old Spanish homepage)
+    // added 2026-10-23: out of the sitemap but still indexable. noindex, not a 301,
+    // so any Ads conversion that fires on a thank-you page keeps firing.
     $thin = is_category()
         || ( ( is_home() || is_post_type_archive() || is_archive() ) && is_paged() )
         || is_singular( 'testimonial' )
-        || is_page( array( 'test', 'free-consultation-with-charleston-personal-injury-lawyer', 'savannah-ppi-attorney' ) );
+        || is_page( array( 'test', 'free-consultation-with-charleston-personal-injury-lawyer', 'savannah-ppi-attorney', 'gracias-ppc-2', 'gracias-ppc-3', 'home-espanol' ) );
     if ( $thin ) {
         $robots['noindex'] = true;
         $robots['follow']  = true;

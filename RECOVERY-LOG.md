@@ -3341,3 +3341,33 @@ reviewer admitted in both states.
 - **`content/meta.json`:** regenerated. The only diff is this field on this post.
 - **Open:** Joshua Dorminy (GA) and Graeham C. Gillin (SC) to read the page. On their read, set
   `_roden_last_reviewed` to that date and `_roden_reviewed_by` to both (attorney-review queue rank 63).
+
+## 2026-10-23 — Mass-tort pages retired on the live site — decided, PR open
+
+Owner: "yes, draft the redirect PR". Mass torts were ruled out on 2026-09-10, but the call was recorded only in
+the standard-build migration (`client-rodenlaw/migration/decisions.md` §3), so rodenlaw.com kept the cluster
+live, in the sitemap, and in both header menus ("Class Actions", "Demandas Colectivas"). `llms.txt` still
+told AI engines the firm takes mass-tort work. Found by diffing that migration's 2026-09-10 export against
+the live sitemap (650 URLs): 448 of the 461 export URLs missing from the sitemap now 301, and 13 serve, 10 of
+them noindexed.
+
+- **Retired (301 to `/practice-areas/`):** the hub and 13 tort pages, 66 clicks in 16 months between them
+  (0–15 each, `docs/gsc-2026-10-06/pages_16mo.csv`). No jurisdiction, author or review meta, and FAQ answers
+  that were never reviewed. The `/class-action/{slug}/` aliases and `/class-actions/` are keyed too, one hop each.
+- **Kept:** `/class-action-lawyers/troubled-teen-industry-abuse/` (83 clicks in 16 months on this URL). The hub
+  stays *published*, but redirected and out of the sitemap, so the kept child's permalink is untouched.
+- **Nav:** `roden_fix_dead_nav_links()` now drops menu items for the hub and the retired pages instead of
+  repointing them. The fallback menu's hard-coded item is removed.
+- **llms.txt:** the "represents individuals in class action and mass tort litigation" claim is gone; the kept
+  page is listed under its own heading.
+- **noindex:** `gracias-ppc-2`, `gracias-ppc-3` and `home-espanol`. They were out of the sitemap but indexable.
+  noindex rather than a 301, so a conversion that fires on a thank-you page keeps firing.
+- **Not done, on purpose:** `/es/contact/` and `/es/about/`. Their retire/merge calls belong to the standard
+  build, which has `/es/contacto`. On WordPress `/es/contacto/` is a 404, and `/es/contact/` carries the
+  Spanish nav's Contact link and every Spanish page's "Free case review" button.
+- **Ledger:** no page is waiting; several are UNKNOWN (history from 2024), covered by the owner's OK.
+- **Doorway:** removing 14 non-place pages takes 124/650 = 19.08% to 124/636 ≈ 19.50%, PASS.
+- **After deploy:** `bin/retire-mass-tort-pages.php` (dry run, then `apply`) sets the 13 children to draft with
+  `_roden_retired`; it refuses to run before the batch is deployed. Then flush both caches and replay the
+  28 URLs. One follow-up: the troubled-teen body links the hub ("class action attorney"), which becomes a
+  301. That's a minor edit to the kept page, so it's a separate call.

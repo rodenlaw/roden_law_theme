@@ -162,32 +162,33 @@ function roden_generate_llms_txt( $full = false ) {
     }
     $output .= "\n";
 
-    // ── Class Actions & Mass Torts ──────────────────────────────────────
-    // Regular pages under /class-action-lawyers/ (not practice_area posts),
-    // so the Practice Areas loop above never picks them up. Without this
-    // section AI engines reading the firm profile have no signal that Roden
-    // handles mass torts at all (audit G1, 2026-07-08).
+    // ── Other practice pages under /class-action-lawyers/ ───────────────
+    // Mass torts were retired 2026-10-23 (owner's call: mass torts are out), so
+    // the profile no longer says the firm takes that work, and the redirected hub
+    // is not linked. The pages kept under that parent (troubled-teen industry
+    // abuse) are regular pages the Practice Areas loop above never picks up, so
+    // they are listed here, published only.
     $ca_hub = get_page_by_path( 'class-action-lawyers' );
     if ( $ca_hub ) {
-        $output .= "## Class Actions & Mass Torts\n\n";
-        $output .= "Roden Law represents individuals in [class action and mass tort litigation](" . get_permalink( $ca_hub ) . ") over dangerous drugs, defective medical devices, and toxic exposure.\n\n";
-
         $ca_children = get_pages( array(
             'parent'      => $ca_hub->ID,
             'post_status' => 'publish',
             'sort_column' => 'post_title',
         ) );
-        foreach ( $ca_children as $ca_child ) {
-            $ca_url   = get_permalink( $ca_child );
-            $ca_title = roden_llms_decode( get_the_title( $ca_child ) );
-            $ca_desc  = roden_llms_get_excerpt( $ca_child );
-            $output  .= "- [{$ca_title}]({$ca_url})";
-            if ( $ca_desc ) {
-                $output .= ": {$ca_desc}";
+        if ( $ca_children ) {
+            $output .= "## Institutional Abuse\n\n";
+            foreach ( $ca_children as $ca_child ) {
+                $ca_url   = get_permalink( $ca_child );
+                $ca_title = roden_llms_decode( get_the_title( $ca_child ) );
+                $ca_desc  = roden_llms_get_excerpt( $ca_child );
+                $output  .= "- [{$ca_title}]({$ca_url})";
+                if ( $ca_desc ) {
+                    $output .= ": {$ca_desc}";
+                }
+                $output .= "\n";
             }
             $output .= "\n";
         }
-        $output .= "\n";
     }
 
     // ── Office Locations ────────────────────────────────────────────────
