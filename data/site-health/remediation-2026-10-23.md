@@ -10,6 +10,10 @@ pages.
 | Two-state I-95 guide tagged `ga`, now surfaces on 3 Savannah pages | **owner, decide before merge** | resource meta (DB) |
 | Cross-state links in single-resource sidebars | fixed (second PR, unmerged; see below) | `single-resource.php` + function |
 | Intersection pillars carry no `practice_category`, so no topical filter | deferred, data | DB taxonomy |
+| Cross-state links in the resource "Other Practice Areas" block | fixed (third PR, unmerged; see below) | `single-resource.php` + `roden_related_practice_areas()` |
+| Same block repeated "Related Guides" items | fixed (same PR) | same |
+| Same block headed "Other Practice Areas" while listing guides | fixed (same PR, separate droppable commit) | `single-resource.php` |
+| ES GA resource pages: second box now empty (only one other GA guide in ES) | deferred, content | ES translations |
 
 ## Fixed: `roden_related_resources()` filtered a newest-N slice
 
@@ -277,3 +281,160 @@ Flush both cache layers, then run the crawl check (as above). Expected: no new o
 Spot-check `/resources/myrtle-beach-fatal-crashes/`: the sidebar should list only SC
 guides. `/resources/georgia-car-accident-settlement-value/` should have no Related
 Guides box.
+
+## Fixed (third PR): the resource "Other Practice Areas" block listed the other state's guides
+
+Owner decision 2026-10-23: apply the #252 rule to the block below "Related Guides".
+
+### Generator
+
+`single-resource.php` calls `roden_related_practice_areas( 6 )` after "Related Guides". A
+resource has no parent, so the function takes its pillar branch: the first 7 resources by
+`menu_order`, locale-filtered, sliced to 6, with no jurisdiction filter. Every resource has
+`menu_order` 0, so the order was MySQL's tie order under `LIMIT 7`. The result was the same 7
+resources on every page (4860, 4861, 5220, 5223, 5348, 5352, 5353), whatever the page's
+state. Example: `myrtle-beach-fatal-crashes` (SC) listed `georgia-statute-of-limitations`.
+`templates/parts/sidebar-related-pas.php` wraps the function but **has no callers**, and no
+other template calls the function.
+
+### Fix
+
+- New optional second argument `$args`, passed only from `single-resource.php`. With no
+  `$args`, every line of the old path runs unchanged.
+- `jurisdiction_of`: the #252 rule (owner decisions), via the new helper
+  `roden_related_pas_state_filter()`. It decides from `_roden_jurisdiction` through
+  `roden_page_jurisdiction_states()` on both sides. On a single-state page it drops only
+  resources tagged for the other single state. `both` and untagged resources are kept
+  (0 published resources are untagged). A `both` or untagged page gets no filter.
+- `exclude`: the IDs "Related Guides" rendered. `roden_related_resources()` now returns
+  them. Its HTML is unchanged (proved below), and no caller used its return value.
+- Over-fetch then cap: `posts_per_page => -1`, filter, then slice to 6.
+- Order. The old tie order cannot be reproduced without `LIMIT`, so the scoped path needs
+  an explicit one. It uses publication order (`menu_order`, date, ID), starting just after
+  the current page and wrapping around, so each page lists the guides published after it.
+  This is deterministic and spreads the links across the set. Oldest-first was tried and
+  rejected: it put the same 4 North Charleston guides on ~33 pages and took the last
+  sidebar link from `georgia-vs-south-carolina-filing-deadlines`.
+- Heading (separate commit, droppable): "Related Resources". This is an existing msgid,
+  already used in `template-practice-area.php` and translated in `es_ES.po` and `.mo`
+  ("Recursos Relacionados"). No msgid was added or changed.
+- No CSS/JS, no content or DB edits, no new pages. `php -l` is clean.
+
+### Verification (read-only `wp eval-file -` on prod, 2026-10-23)
+
+All 83 theme php/css/js files on prod matched `origin/main` (fc54696) by md5 before the run.
+The harness is the #252 one, adapted. It renders `single-resource.php` on `origin/main` and
+on the patch in one process. The patched template calls `roden_related_resources_p` /
+`roden_related_practice_areas_p` (the patched code under a renamed prefix) and the new helper.
+Each page is routed with `$wp->main()` on a clone of the global `WP`. EN ran with
+`--url=https://rodenlaw.com/` and ES with `--url=https://rodenlaw.com/es/`, each covering
+every published resource in that locale. Bodies were compared from `<main>` to `</main>`.
+
+| | EN (47 pages) | ES (11 pages) |
+|---|---|---|
+| Pages whose block changed | 47 | 11 |
+| Cross-state items in the block (by tag) | 47 on 41 pages → **0** | 12 on 2 pages → **0** |
+| `both` items on single-state pages | 154 → 83 | 0 → 0 |
+| Items repeating "Related Guides" | 13 on 13 pages → **0** | 24 on 8 pages → **0** |
+| Block sizes after | all 6 | 6 ×1, 3 ×8, **empty ×2** |
+| "Related Guides" box | 47/47 identical | 11/11 identical |
+| Rest of page | 47/47 byte-identical | 9/11 byte-identical, 2 whitespace-only (the emptied box) |
+| Resources with a link from a resource sidebar | 35 → **47 of 47** | 11 → 11 of 11 |
+
+- **Box empties on 2 pages**: `/es/resources/georgia-car-accident-settlement-value/` and
+  `/es/resources/georgia-truck-accident-settlement-value/`. ES has only 2 GA resources, and
+  each is already in the other's "Related Guides". Before, each listed 6 SC guides.
+- No block falls to 1 item. Eight ES SC pages drop from 6 to 3, because 3 of their old 6
+  were repeats of "Related Guides".
+- **Other callers, byte-identical.** The no-`$args` form, live vs patched, renders identical
+  output on all 176 `practice_area` posts (153 EN, 23 ES), with and without the count
+  argument. A full render of `single-practice_area.php` (routing the pillar, intersection,
+  sub-type and statewide includes) is byte-identical live vs patched on 153/153 EN and 23/23 ES.
+  That covers the 49 that render a `roden_related_resources()` block. The pillar sidebar
+  "Related Practice Areas" uses `orderby => rand`, so for this comparison it was pinned to
+  `ID` on **both** sides; a main-vs-main control differs on 24/24 pillars without the pin
+  and on 0 with it.
+
+Every resource page, before → after. "Pairs" counts other-state items before; "Repeats"
+counts items before that were also in "Related Guides"; `both` counts items after:
+
+| Page | Tag | Items | Pairs before | Repeats before | `both` after | After |
+|---|---|---|---|---|---|---|
+| dangerous-roads-north-charleston | sc | 6 → 6 | 1 | 0 | 0 | north-charleston-truck-accident-guide, pedestrian-bicycle-safety-north-charleston, personal-injury-claim-charleston-county-court, broad-river-road-truck-accidents-columbia, us-52-truck-train-accidents-goose-creek, carolina-crossroads-construction-zone-truck-accidents |
+| north-charleston-truck-accident-guide | sc | 6 → 6 | 1 | 0 | 0 | pedestrian-bicycle-safety-north-charleston, personal-injury-claim-charleston-county-court, broad-river-road-truck-accidents-columbia, us-52-truck-train-accidents-goose-creek, carolina-crossroads-construction-zone-truck-accidents, blythewood-i-77-truck-accidents |
+| pedestrian-bicycle-safety-north-charleston | sc | 6 → 6 | 1 | 0 | 1 | personal-injury-claim-charleston-county-court, broad-river-road-truck-accidents-columbia, us-52-truck-train-accidents-goose-creek, carolina-crossroads-construction-zone-truck-accidents, blythewood-i-77-truck-accidents, i-95-widening-construction-zone-ga-sc |
+| personal-injury-claim-charleston-county-court | sc | 6 → 6 | 1 | 0 | 1 | broad-river-road-truck-accidents-columbia, us-52-truck-train-accidents-goose-creek, carolina-crossroads-construction-zone-truck-accidents, blythewood-i-77-truck-accidents, i-95-widening-construction-zone-ga-sc, south-carolina-truck-accident-settlement-value |
+| port-of-savannah-truck-routes | ga | 6 → 6 | 1 | 0 | 3 | logging-truck-accidents-us-17-mcintosh-glynn, georgia-car-accident-settlement-value, truck-accident-settlement-process, georgia-statute-of-limitations, i-26-i-95-corridor-report, georgia-vs-south-carolina-comparative-negligence |
+| pooler-warehouse-district-truck-accidents | ga | 6 → 6 | 1 | 0 | 3 | logging-truck-accidents-us-17-mcintosh-glynn, georgia-car-accident-settlement-value, truck-accident-settlement-process, georgia-statute-of-limitations, i-26-i-95-corridor-report, georgia-vs-south-carolina-comparative-negligence |
+| logging-truck-accidents-us-17-mcintosh-glynn | ga | 6 → 6 | 1 | 0 | 4 | georgia-car-accident-settlement-value, truck-accident-settlement-process, georgia-statute-of-limitations, i-26-i-95-corridor-report, georgia-vs-south-carolina-comparative-negligence, georgia-vs-south-carolina-filing-deadlines |
+| bay-street-truck-accidents-savannah-historic-district | ga | 6 → 6 | 1 | 0 | 4 | georgia-car-accident-settlement-value, truck-accident-settlement-process, georgia-statute-of-limitations, i-26-i-95-corridor-report, georgia-vs-south-carolina-comparative-negligence, georgia-vs-south-carolina-filing-deadlines |
+| broad-river-road-truck-accidents-columbia | sc | 6 → 6 | 1 | 0 | 0 | south-carolina-car-accident-settlement-value, south-carolina-statute-of-limitations, south-carolina-comparative-negligence, south-carolina-um-uim-stacking, south-carolina-car-seat-laws, south-carolina-personal-injury-faq |
+| i-16-i-95-construction-zone-truck-accidents | ga | 6 → 6 | 1 | 0 | 4 | georgia-car-accident-settlement-value, truck-accident-settlement-process, georgia-statute-of-limitations, i-26-i-95-corridor-report, georgia-vs-south-carolina-comparative-negligence, georgia-vs-south-carolina-filing-deadlines |
+| us-52-truck-train-accidents-goose-creek | sc | 6 → 6 | 1 | 0 | 0 | south-carolina-car-accident-settlement-value, south-carolina-statute-of-limitations, south-carolina-comparative-negligence, south-carolina-um-uim-stacking, south-carolina-car-seat-laws, south-carolina-personal-injury-faq |
+| carolina-crossroads-construction-zone-truck-accidents | sc | 6 → 6 | 1 | 0 | 0 | south-carolina-car-accident-settlement-value, south-carolina-statute-of-limitations, south-carolina-comparative-negligence, south-carolina-um-uim-stacking, south-carolina-car-seat-laws, south-carolina-personal-injury-faq |
+| blythewood-i-77-truck-accidents | sc | 6 → 6 | 1 | 0 | 0 | south-carolina-car-accident-settlement-value, south-carolina-statute-of-limitations, south-carolina-comparative-negligence, south-carolina-um-uim-stacking, south-carolina-car-seat-laws, south-carolina-personal-injury-faq |
+| i-95-widening-construction-zone-ga-sc | both | 6 → 6 | 0 | 0 | 0 | georgia-car-accident-settlement-value, south-carolina-car-accident-settlement-value, south-carolina-statute-of-limitations, south-carolina-comparative-negligence, south-carolina-um-uim-stacking, south-carolina-car-seat-laws |
+| south-carolina-truck-accident-settlement-value | sc | 6 → 6 | 1 | 0 | 0 | south-carolina-car-accident-settlement-value, south-carolina-statute-of-limitations, south-carolina-comparative-negligence, south-carolina-um-uim-stacking, south-carolina-car-seat-laws, south-carolina-personal-injury-faq |
+| georgia-car-accident-settlement-value | ga | 6 → 6 | 1 | 0 | 4 | georgia-truck-accident-settlement-value, truck-accident-settlement-process, georgia-statute-of-limitations, i-26-i-95-corridor-report, georgia-vs-south-carolina-comparative-negligence, georgia-vs-south-carolina-filing-deadlines |
+| georgia-truck-accident-settlement-value | ga | 6 → 6 | 1 | 0 | 5 | truck-accident-settlement-process, georgia-statute-of-limitations, i-26-i-95-corridor-report, georgia-vs-south-carolina-comparative-negligence, georgia-vs-south-carolina-filing-deadlines, georgia-vs-south-carolina-workers-compensation |
+| south-carolina-car-accident-settlement-value | sc | 6 → 6 | 1 | 0 | 0 | south-carolina-statute-of-limitations, south-carolina-comparative-negligence, south-carolina-um-uim-stacking, south-carolina-car-seat-laws, south-carolina-personal-injury-faq, south-carolina-workers-comp-body-part-values |
+| south-carolina-statute-of-limitations | sc | 6 → 6 | 1 | 1 | 0 | south-carolina-comparative-negligence, south-carolina-um-uim-stacking, south-carolina-car-seat-laws, south-carolina-personal-injury-faq, south-carolina-workers-comp-body-part-values, how-much-does-south-carolina-workers-comp-pay |
+| south-carolina-comparative-negligence | sc | 6 → 6 | 1 | 1 | 0 | south-carolina-um-uim-stacking, south-carolina-car-seat-laws, south-carolina-personal-injury-faq, south-carolina-workers-comp-body-part-values, how-much-does-south-carolina-workers-comp-pay, south-carolina-workers-comp-impairment-rating-mmi |
+| south-carolina-um-uim-stacking | sc | 6 → 6 | 1 | 1 | 1 | south-carolina-car-seat-laws, south-carolina-personal-injury-faq, south-carolina-workers-comp-body-part-values, how-much-does-south-carolina-workers-comp-pay, south-carolina-workers-comp-impairment-rating-mmi, truck-accident-settlement-process |
+| south-carolina-car-seat-laws | sc | 6 → 6 | 1 | 1 | 2 | south-carolina-personal-injury-faq, south-carolina-workers-comp-body-part-values, how-much-does-south-carolina-workers-comp-pay, south-carolina-workers-comp-impairment-rating-mmi, truck-accident-settlement-process, i-26-i-95-corridor-report |
+| south-carolina-personal-injury-faq | sc | 6 → 6 | 1 | 1 | 3 | south-carolina-workers-comp-body-part-values, how-much-does-south-carolina-workers-comp-pay, south-carolina-workers-comp-impairment-rating-mmi, truck-accident-settlement-process, i-26-i-95-corridor-report, georgia-vs-south-carolina-comparative-negligence |
+| south-carolina-workers-comp-body-part-values | sc | 6 → 6 | 1 | 1 | 4 | how-much-does-south-carolina-workers-comp-pay, south-carolina-workers-comp-impairment-rating-mmi, truck-accident-settlement-process, i-26-i-95-corridor-report, georgia-vs-south-carolina-comparative-negligence, georgia-vs-south-carolina-filing-deadlines |
+| how-much-does-south-carolina-workers-comp-pay | sc | 6 → 6 | 1 | 1 | 5 | south-carolina-workers-comp-impairment-rating-mmi, truck-accident-settlement-process, i-26-i-95-corridor-report, georgia-vs-south-carolina-comparative-negligence, georgia-vs-south-carolina-filing-deadlines, georgia-vs-south-carolina-workers-compensation |
+| south-carolina-workers-comp-impairment-rating-mmi | sc | 6 → 6 | 1 | 1 | 5 | truck-accident-settlement-process, i-26-i-95-corridor-report, georgia-vs-south-carolina-comparative-negligence, georgia-vs-south-carolina-filing-deadlines, georgia-vs-south-carolina-workers-compensation, south-carolina-liquor-liability-2026 |
+| south-carolina-workers-comp-claim-denied | sc | 6 → 6 | 1 | 1 | 5 | truck-accident-settlement-process, i-26-i-95-corridor-report, georgia-vs-south-carolina-comparative-negligence, georgia-vs-south-carolina-filing-deadlines, georgia-vs-south-carolina-workers-compensation, south-carolina-liquor-liability-2026 |
+| south-carolina-motorcycle-accident-settlement-value | sc | 6 → 6 | 1 | 1 | 5 | truck-accident-settlement-process, i-26-i-95-corridor-report, georgia-vs-south-carolina-comparative-negligence, georgia-vs-south-carolina-filing-deadlines, georgia-vs-south-carolina-workers-compensation, south-carolina-liquor-liability-2026 |
+| south-carolina-slip-and-fall-settlement-value | sc | 6 → 6 | 1 | 1 | 5 | truck-accident-settlement-process, i-26-i-95-corridor-report, georgia-vs-south-carolina-comparative-negligence, georgia-vs-south-carolina-filing-deadlines, georgia-vs-south-carolina-workers-compensation, south-carolina-liquor-liability-2026 |
+| south-carolina-premises-liability-settlement-value | sc | 6 → 6 | 1 | 1 | 5 | truck-accident-settlement-process, i-26-i-95-corridor-report, georgia-vs-south-carolina-comparative-negligence, georgia-vs-south-carolina-filing-deadlines, georgia-vs-south-carolina-workers-compensation, south-carolina-liquor-liability-2026 |
+| south-carolina-wrongful-death-settlement-value | sc | 6 → 6 | 1 | 1 | 5 | truck-accident-settlement-process, i-26-i-95-corridor-report, georgia-vs-south-carolina-comparative-negligence, georgia-vs-south-carolina-filing-deadlines, georgia-vs-south-carolina-workers-compensation, south-carolina-liquor-liability-2026 |
+| truck-accident-settlement-process | both | 6 → 6 | 0 | 0 | 0 | georgia-statute-of-limitations, i-26-i-95-corridor-report, georgia-vs-south-carolina-comparative-negligence, georgia-vs-south-carolina-filing-deadlines, georgia-vs-south-carolina-workers-compensation, south-carolina-liquor-liability-2026 |
+| georgia-statute-of-limitations | ga | 6 → 6 | 2 | 0 | 4 | i-26-i-95-corridor-report, georgia-vs-south-carolina-comparative-negligence, georgia-vs-south-carolina-filing-deadlines, georgia-vs-south-carolina-workers-compensation, port-of-savannah-truck-routes, pooler-warehouse-district-truck-accidents |
+| i-26-i-95-corridor-report | both | 6 → 6 | 0 | 0 | 0 | georgia-vs-south-carolina-comparative-negligence, georgia-vs-south-carolina-filing-deadlines, georgia-vs-south-carolina-workers-compensation, south-carolina-liquor-liability-2026, myrtle-beach-fatal-crashes, georgia-helmet-laws |
+| georgia-vs-south-carolina-comparative-negligence | both | 6 → 6 | 0 | 0 | 0 | georgia-vs-south-carolina-filing-deadlines, georgia-vs-south-carolina-workers-compensation, south-carolina-liquor-liability-2026, myrtle-beach-fatal-crashes, georgia-helmet-laws, south-carolina-helmet-laws |
+| georgia-vs-south-carolina-filing-deadlines | both | 6 → 6 | 0 | 0 | 0 | georgia-vs-south-carolina-workers-compensation, south-carolina-liquor-liability-2026, myrtle-beach-fatal-crashes, georgia-helmet-laws, south-carolina-helmet-laws, south-carolina-golf-cart-laws |
+| georgia-vs-south-carolina-workers-compensation | both | 6 → 6 | 0 | 0 | 0 | south-carolina-liquor-liability-2026, myrtle-beach-fatal-crashes, georgia-helmet-laws, south-carolina-helmet-laws, south-carolina-golf-cart-laws, dangerous-roads-north-charleston |
+| south-carolina-liquor-liability-2026 | sc | 6 → 6 | 1 | 0 | 0 | dangerous-roads-north-charleston, north-charleston-truck-accident-guide, pedestrian-bicycle-safety-north-charleston, personal-injury-claim-charleston-county-court, broad-river-road-truck-accidents-columbia, us-52-truck-train-accidents-goose-creek |
+| myrtle-beach-fatal-crashes | sc | 6 → 6 | 1 | 0 | 0 | dangerous-roads-north-charleston, north-charleston-truck-accident-guide, pedestrian-bicycle-safety-north-charleston, personal-injury-claim-charleston-county-court, broad-river-road-truck-accidents-columbia, us-52-truck-train-accidents-goose-creek |
+| georgia-helmet-laws | ga | 6 → 6 | 2 | 0 | 1 | port-of-savannah-truck-routes, pooler-warehouse-district-truck-accidents, logging-truck-accidents-us-17-mcintosh-glynn, bay-street-truck-accidents-savannah-historic-district, i-16-i-95-construction-zone-truck-accidents, i-95-widening-construction-zone-ga-sc |
+| south-carolina-helmet-laws | sc | 6 → 6 | 1 | 0 | 0 | dangerous-roads-north-charleston, north-charleston-truck-accident-guide, pedestrian-bicycle-safety-north-charleston, personal-injury-claim-charleston-county-court, broad-river-road-truck-accidents-columbia, us-52-truck-train-accidents-goose-creek |
+| south-carolina-golf-cart-laws | sc | 6 → 6 | 1 | 0 | 0 | dangerous-roads-north-charleston, north-charleston-truck-accident-guide, pedestrian-bicycle-safety-north-charleston, personal-injury-claim-charleston-county-court, broad-river-road-truck-accidents-columbia, us-52-truck-train-accidents-goose-creek |
+| georgia-moped-laws | ga | 6 → 6 | 2 | 0 | 1 | port-of-savannah-truck-routes, pooler-warehouse-district-truck-accidents, logging-truck-accidents-us-17-mcintosh-glynn, bay-street-truck-accidents-savannah-historic-district, i-16-i-95-construction-zone-truck-accidents, i-95-widening-construction-zone-ga-sc |
+| south-carolina-moped-laws | sc | 6 → 6 | 1 | 0 | 0 | dangerous-roads-north-charleston, north-charleston-truck-accident-guide, pedestrian-bicycle-safety-north-charleston, personal-injury-claim-charleston-county-court, broad-river-road-truck-accidents-columbia, us-52-truck-train-accidents-goose-creek |
+| georgia-car-seat-laws | ga | 6 → 6 | 2 | 0 | 1 | port-of-savannah-truck-routes, pooler-warehouse-district-truck-accidents, logging-truck-accidents-us-17-mcintosh-glynn, bay-street-truck-accidents-savannah-historic-district, i-16-i-95-construction-zone-truck-accidents, i-95-widening-construction-zone-ga-sc |
+| georgia-uninsured-motorist-coverage | ga | 6 → 6 | 2 | 0 | 1 | port-of-savannah-truck-routes, pooler-warehouse-district-truck-accidents, logging-truck-accidents-us-17-mcintosh-glynn, bay-street-truck-accidents-savannah-historic-district, i-16-i-95-construction-zone-truck-accidents, i-95-widening-construction-zone-ga-sc |
+| georgia-wrongful-death-settlement-value | ga | 6 → 6 | 2 | 0 | 1 | port-of-savannah-truck-routes, pooler-warehouse-district-truck-accidents, logging-truck-accidents-us-17-mcintosh-glynn, bay-street-truck-accidents-savannah-historic-district, i-16-i-95-construction-zone-truck-accidents, i-95-widening-construction-zone-ga-sc |
+
+| Page | Tag | Items | Pairs before | Repeats before | `both` after | After |
+|---|---|---|---|---|---|---|
+| es/south-carolina-statute-of-limitations | sc | 6 → 3 | 0 | 3 | 0 | es-south-carolina-comparative-negligence, es-south-carolina-um-uim-stacking, es-south-carolina-car-accident-settlement-value |
+| es/south-carolina-comparative-negligence | sc | 6 → 3 | 0 | 3 | 0 | es-south-carolina-um-uim-stacking, es-south-carolina-car-accident-settlement-value, es-south-carolina-statute-of-limitations |
+| es/south-carolina-um-uim-stacking | sc | 6 → 3 | 0 | 3 | 0 | es-south-carolina-car-accident-settlement-value, es-south-carolina-statute-of-limitations, es-south-carolina-comparative-negligence |
+| es/south-carolina-car-accident-settlement-value | sc | 6 → 6 | 0 | 0 | 0 | es-how-much-does-south-carolina-workers-comp-pay, es-south-carolina-workers-comp-claim-denied, es-south-carolina-workers-comp-body-part-values, es-south-carolina-workers-comp-impairment-rating-mmi, es-south-carolina-personal-injury-faq, es-south-carolina-statute-of-limitations |
+| es/how-much-does-south-carolina-workers-comp-pay | sc | 6 → 3 | 0 | 3 | 0 | es-south-carolina-statute-of-limitations, es-south-carolina-comparative-negligence, es-south-carolina-car-accident-settlement-value |
+| es/south-carolina-workers-comp-claim-denied | sc | 6 → 3 | 0 | 3 | 0 | es-south-carolina-statute-of-limitations, es-south-carolina-comparative-negligence, es-south-carolina-car-accident-settlement-value |
+| es/south-carolina-workers-comp-body-part-values | sc | 6 → 3 | 0 | 3 | 0 | es-south-carolina-statute-of-limitations, es-south-carolina-comparative-negligence, es-south-carolina-car-accident-settlement-value |
+| es/south-carolina-workers-comp-impairment-rating-mmi | sc | 6 → 3 | 0 | 3 | 0 | es-south-carolina-statute-of-limitations, es-south-carolina-comparative-negligence, es-south-carolina-car-accident-settlement-value |
+| es/south-carolina-personal-injury-faq | sc | 6 → 3 | 0 | 3 | 0 | es-south-carolina-statute-of-limitations, es-south-carolina-comparative-negligence, es-south-carolina-car-accident-settlement-value |
+| es/georgia-car-accident-settlement-value | ga | 6 → 0 | 6 | 0 | 0 | — (box gone) |
+| es/georgia-truck-accident-settlement-value | ga | 6 → 0 | 6 | 0 | 0 | — (box gone) |
+
+### Owner items
+
+- **Heading**: "Related Resources" sits directly under "Related Guides". If the owner prefers
+  a new wording (e.g. "More Guides"), that is a new msgid with an `es_ES.po` entry and a
+  local `.mo` recompile. Dropping the second commit restores "Other Practice Areas".
+- **ES GA resources**: the second box is gone on both. Only a new ES GA translation fills it.
+- **Order**: the wrap-around publication order is my choice; the old order had no intent
+  behind it. It is a one-line change if the owner wants another.
+
+### Re-run after deploy
+
+Flush both cache layers. Then run the crawl check
+(`node vendor/site-health/site-health.mjs crawl --repo . --base https://rodenlaw.com`).
+Expected: no new orphans; EN resources linked from resource sidebars go 35 → 47. Spot-check
+`/resources/myrtle-beach-fatal-crashes/`: the second box is headed "Related Resources" and
+lists six SC guides, none of them in "Related Guides".
