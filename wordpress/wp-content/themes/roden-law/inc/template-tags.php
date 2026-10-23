@@ -3920,10 +3920,11 @@ function roden_related_resources( $args = array() ) {
      * fatal-crashes guide (SC) listed Georgia Moped Laws: 78 cross-state pairs
      * on 30 resource pages, EN and ES (site-health 2026-10-23).
      *
-     * Decided from `_roden_jurisdiction` on both sides, never the slug. Same
-     * spirit as the office rule above (one page, one state's law), so two-state
-     * `both` resources are dropped too. An untagged resource is kept: its state
-     * is not guessed. A `both` or untagged page gets no state filter. The office
+     * Decided from `_roden_jurisdiction` on both sides, never the slug. A
+     * two-state `both` resource is kept: it covers this page's state too, and a
+     * sidebar is navigation, not the page stating law (owner decision
+     * 2026-10-23; the office rule above still drops `both`). An untagged
+     * resource is kept: its state is not guessed. A `both` or untagged page gets no state filter. The office
      * path above is untouched and takes precedence.
      */
     $page_states = null;
@@ -3955,7 +3956,7 @@ function roden_related_resources( $args = array() ) {
 
         if ( $page_states ) {
             $res_states = roden_page_jurisdiction_states( get_the_ID() );
-            if ( is_array( $res_states ) && $res_states !== $page_states ) {
+            if ( is_array( $res_states ) && $res_states !== $page_states && 2 !== count( $res_states ) ) {
                 continue;
             }
         }

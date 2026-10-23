@@ -146,8 +146,10 @@ given, so resource sidebars never had a state filter. Example: `myrtle-beach-fat
   it reads the resource's tag first and falls back to the slug for untagged resources.
   This PR leaves that path and its signal alone. The new branch runs only when the office
   path did not set `$other_state`, and no office caller passes the new arg.
-- **`both` resources are dropped from single-state pages.** That follows the office rule
-  (one page, one state's law; W10 drops two-state comparisons too). Trade-off numbers
+- **`both` resources are kept on single-state pages** (owner decision 2026-10-23, after
+  review; the first version of this PR dropped them). A two-state guide covers the page's
+  own state too, and a sidebar is navigation, not the page stating law. The office rule
+  still drops `both`. Trade-off numbers
   are below.
 - Untagged resources are kept and their state is not guessed. There are **0 untagged
   published resources** (58 in total: EN 28 sc, 13 ga, 6 both; ES 9 sc, 2 ga), so this
@@ -187,7 +189,13 @@ literally as `ga`/`sc`. That missed the 10 pages tagged `georgia-only` /
 `south-carolina-only`, and it was taken before #251 retagged 4689. The table below uses
 the normalised count.
 
-**`both` choice:** today 11 sidebar slots on 11 single-state EN pages hold a `both`
+**`both` choice: kept** (owner, 2026-10-23). Re-verified after the change with the same
+harness against the committed code: cross-state pairs 0 (EN and ES), 21 `both` slots on 21
+single-state EN pages, intersection 11/11 and sub-type 118/118 byte-identical, rest of
+every resource page identical, 0 render errors. The I-95 widening guide stays linked from
+the 11 truck guides.
+
+Numbers as first measured: today 11 sidebar slots on 11 single-state EN pages hold a `both`
 resource, all of them `i-95-widening-construction-zone-ga-sc`. If `both` is dropped
 (this PR), that becomes 0. If `both` is kept, it becomes **21 slots on 21 pages**. Freeing
 the other-state slots pulls `georgia-vs-south-carolina-workers-compensation` onto the 10
