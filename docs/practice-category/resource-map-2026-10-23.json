@@ -1,0 +1,643 @@
+{
+  "generated": "2026-10-23",
+  "purpose": "Append the existing practice_category term to on-topic published resources so intersection and sub-type resource blocks have guides once the pillars carry their terms (owner decision 2026-10-23). Append only: no existing term is removed.",
+  "script": "bin/assign-resource-practice-category.php",
+  "map": [
+    {
+      "post_id": 4839,
+      "slug": "south-carolina-workers-comp-body-part-values",
+      "lang": "en",
+      "jurisdiction": "sc",
+      "current": [
+        "south-carolina-law"
+      ],
+      "add": [
+        "workers-compensation"
+      ],
+      "add_term_ids": [
+        671
+      ],
+      "why": "SC workers' comp body part value chart: title and body are SC workers' compensation."
+    },
+    {
+      "post_id": 4840,
+      "slug": "how-much-does-south-carolina-workers-comp-pay",
+      "lang": "en",
+      "jurisdiction": "sc",
+      "current": [
+        "south-carolina-law"
+      ],
+      "add": [
+        "workers-compensation"
+      ],
+      "add_term_ids": [
+        671
+      ],
+      "why": "How much SC workers' comp pays: SC workers' compensation benefits."
+    },
+    {
+      "post_id": 4841,
+      "slug": "south-carolina-workers-comp-impairment-rating-mmi",
+      "lang": "en",
+      "jurisdiction": "sc",
+      "current": [
+        "south-carolina-law"
+      ],
+      "add": [
+        "workers-compensation"
+      ],
+      "add_term_ids": [
+        671
+      ],
+      "why": "MMI and impairment ratings in SC workers' comp."
+    },
+    {
+      "post_id": 4842,
+      "slug": "south-carolina-workers-comp-claim-denied",
+      "lang": "en",
+      "jurisdiction": "sc",
+      "current": [
+        "south-carolina-law"
+      ],
+      "add": [
+        "workers-compensation"
+      ],
+      "add_term_ids": [
+        671
+      ],
+      "why": "Denied SC workers' comp claim."
+    },
+    {
+      "post_id": 5354,
+      "slug": "georgia-vs-south-carolina-workers-compensation",
+      "lang": "en",
+      "jurisdiction": "both",
+      "current": [],
+      "add": [
+        "workers-compensation"
+      ],
+      "add_term_ids": [
+        671
+      ],
+      "why": "Workers' compensation in Georgia vs South Carolina (two-state comparison)."
+    },
+    {
+      "post_id": 4933,
+      "slug": "es-how-much-does-south-carolina-workers-comp-pay",
+      "lang": "es",
+      "jurisdiction": "sc",
+      "current": [
+        "south-carolina-law"
+      ],
+      "add": [
+        "workers-compensation"
+      ],
+      "add_term_ids": [
+        671
+      ],
+      "why": "ES twin of 4840 (SC workers' comp pay)."
+    },
+    {
+      "post_id": 4934,
+      "slug": "es-south-carolina-workers-comp-claim-denied",
+      "lang": "es",
+      "jurisdiction": "sc",
+      "current": [
+        "south-carolina-law"
+      ],
+      "add": [
+        "workers-compensation"
+      ],
+      "add_term_ids": [
+        671
+      ],
+      "why": "ES twin of 4842 (denied SC workers' comp claim)."
+    },
+    {
+      "post_id": 4935,
+      "slug": "es-south-carolina-workers-comp-body-part-values",
+      "lang": "es",
+      "jurisdiction": "sc",
+      "current": [
+        "south-carolina-law"
+      ],
+      "add": [
+        "workers-compensation"
+      ],
+      "add_term_ids": [
+        671
+      ],
+      "why": "ES twin of 4839 (SC body part value chart)."
+    },
+    {
+      "post_id": 4936,
+      "slug": "es-south-carolina-workers-comp-impairment-rating-mmi",
+      "lang": "es",
+      "jurisdiction": "sc",
+      "current": [
+        "south-carolina-law"
+      ],
+      "add": [
+        "workers-compensation"
+      ],
+      "add_term_ids": [
+        671
+      ],
+      "why": "ES twin of 4841 (SC MMI and impairment ratings)."
+    },
+    {
+      "post_id": 4861,
+      "slug": "south-carolina-wrongful-death-settlement-value",
+      "lang": "en",
+      "jurisdiction": "sc",
+      "current": [
+        "south-carolina-law"
+      ],
+      "add": [
+        "wrongful-death"
+      ],
+      "add_term_ids": [
+        670
+      ],
+      "why": "SC wrongful death settlement value."
+    },
+    {
+      "post_id": 6331,
+      "slug": "georgia-wrongful-death-settlement-value",
+      "lang": "en",
+      "jurisdiction": "georgia-only",
+      "current": [],
+      "add": [
+        "wrongful-death"
+      ],
+      "add_term_ids": [
+        670
+      ],
+      "why": "Georgia wrongful death settlement value."
+    },
+    {
+      "post_id": 4858,
+      "slug": "south-carolina-motorcycle-accident-settlement-value",
+      "lang": "en",
+      "jurisdiction": "sc",
+      "current": [
+        "south-carolina-law"
+      ],
+      "add": [
+        "motorcycle-accidents"
+      ],
+      "add_term_ids": [
+        663
+      ],
+      "why": "SC motorcycle accident settlement value."
+    },
+    {
+      "post_id": 6312,
+      "slug": "georgia-helmet-laws",
+      "lang": "en",
+      "jurisdiction": "georgia-only",
+      "current": [],
+      "add": [
+        "motorcycle-accidents"
+      ],
+      "add_term_ids": [
+        663
+      ],
+      "why": "Georgia helmet law is the motorcycle helmet statute (O.C.G.A. 40-6-315); page closes with 'Talk to a Georgia Motorcycle Accident Lawyer'."
+    },
+    {
+      "post_id": 6313,
+      "slug": "south-carolina-helmet-laws",
+      "lang": "en",
+      "jurisdiction": "south-carolina-only",
+      "current": [],
+      "add": [
+        "motorcycle-accidents"
+      ],
+      "add_term_ids": [
+        663
+      ],
+      "why": "SC helmet law (S.C. Code 56-5-3660) is 'the whole of the state's motorcycle helmet requirement'; motorcycle injury claims."
+    },
+    {
+      "post_id": 4859,
+      "slug": "south-carolina-slip-and-fall-settlement-value",
+      "lang": "en",
+      "jurisdiction": "sc",
+      "current": [
+        "south-carolina-law"
+      ],
+      "add": [
+        "slip-and-fall"
+      ],
+      "add_term_ids": [
+        669
+      ],
+      "why": "SC slip and fall settlement value."
+    },
+    {
+      "post_id": 4860,
+      "slug": "south-carolina-premises-liability-settlement-value",
+      "lang": "en",
+      "jurisdiction": "sc",
+      "current": [
+        "south-carolina-law"
+      ],
+      "add": [
+        "premises-liability"
+      ],
+      "add_term_ids": [
+        682
+      ],
+      "why": "SC premises liability settlement value."
+    },
+    {
+      "post_id": 6314,
+      "slug": "south-carolina-golf-cart-laws",
+      "lang": "en",
+      "jurisdiction": "south-carolina-only",
+      "current": [],
+      "add": [
+        "golf-cart-accidents"
+      ],
+      "add_term_ids": [
+        668
+      ],
+      "why": "SC golf cart laws; section 'If you are hurt in a golf cart crash'."
+    },
+    {
+      "post_id": 4632,
+      "slug": "north-charleston-truck-accident-guide",
+      "lang": "en",
+      "jurisdiction": "sc",
+      "current": [],
+      "add": [
+        "truck-accidents"
+      ],
+      "add_term_ids": [
+        662
+      ],
+      "why": "North Charleston truck accident guide (title, every H2)."
+    },
+    {
+      "post_id": 5220,
+      "slug": "truck-accident-settlement-process",
+      "lang": "en",
+      "jurisdiction": "both",
+      "current": [],
+      "add": [
+        "truck-accidents"
+      ],
+      "add_term_ids": [
+        662
+      ],
+      "why": "Truck accident settlement process."
+    },
+    {
+      "post_id": 5348,
+      "slug": "i-26-i-95-corridor-report",
+      "lang": "en",
+      "jurisdiction": "both",
+      "current": [],
+      "add": [
+        "truck-accidents"
+      ],
+      "add_term_ids": [
+        662
+      ],
+      "why": "I-26/I-95 corridor report: fatal truck crashes in GA and SC."
+    },
+    {
+      "post_id": 4639,
+      "slug": "pedestrian-bicycle-safety-north-charleston",
+      "lang": "en",
+      "jurisdiction": "sc",
+      "current": [],
+      "add": [
+        "bicycle-accidents",
+        "pedestrian-accidents"
+      ],
+      "add_term_ids": [
+        665,
+        664
+      ],
+      "why": "North Charleston pedestrian and bicycle safety: H2s 'South Carolina Pedestrian Laws', 'South Carolina Bicycle Laws', 'Compensation in Pedestrian & Bicycle Cases'."
+    },
+    {
+      "post_id": 6329,
+      "slug": "georgia-car-seat-laws",
+      "lang": "en",
+      "jurisdiction": "georgia-only",
+      "current": [],
+      "add": [
+        "car-accidents"
+      ],
+      "add_term_ids": [
+        661
+      ],
+      "why": "Georgia car seat laws: child passengers in a car crash; closes with 'Talk to a Georgia car accident lawyer'."
+    },
+    {
+      "post_id": 6330,
+      "slug": "georgia-uninsured-motorist-coverage",
+      "lang": "en",
+      "jurisdiction": "georgia-only",
+      "current": [],
+      "add": [
+        "car-accidents"
+      ],
+      "add_term_ids": [
+        661
+      ],
+      "why": "Georgia uninsured motorist coverage (auto policy after a crash); closes with 'Talk to a Georgia car accident lawyer'."
+    },
+    {
+      "post_id": 4813,
+      "slug": "south-carolina-car-seat-laws",
+      "lang": "en",
+      "jurisdiction": "sc",
+      "current": [
+        "south-carolina-law"
+      ],
+      "add": [
+        "car-accidents"
+      ],
+      "add_term_ids": [
+        661
+      ],
+      "why": "SC car seat laws; 'How do car seat laws affect an injury claim', 'Get help after a South Carolina crash involving your child'."
+    },
+    {
+      "post_id": 4812,
+      "slug": "south-carolina-um-uim-stacking",
+      "lang": "en",
+      "jurisdiction": "sc",
+      "current": [
+        "south-carolina-law"
+      ],
+      "add": [
+        "car-accidents"
+      ],
+      "add_term_ids": [
+        661
+      ],
+      "why": "SC UM/UIM stacking: auto coverage after a crash with an uninsured driver."
+    },
+    {
+      "post_id": 4931,
+      "slug": "es-south-carolina-um-uim-stacking",
+      "lang": "es",
+      "jurisdiction": "sc",
+      "current": [
+        "south-carolina-law"
+      ],
+      "add": [
+        "car-accidents"
+      ],
+      "add_term_ids": [
+        661
+      ],
+      "why": "ES twin of 4812 (SC UM/UIM stacking)."
+    },
+    {
+      "post_id": 5210,
+      "slug": "es-georgia-car-accident-settlement-value",
+      "lang": "es",
+      "jurisdiction": "ga",
+      "current": [],
+      "add": [
+        "car-accidents"
+      ],
+      "add_term_ids": [
+        661
+      ],
+      "why": "ES twin of georgia-car-accident-settlement-value (4807, which carries car-accidents)."
+    },
+    {
+      "post_id": 5211,
+      "slug": "es-georgia-truck-accident-settlement-value",
+      "lang": "es",
+      "jurisdiction": "ga",
+      "current": [],
+      "add": [
+        "truck-accidents"
+      ],
+      "add_term_ids": [
+        662
+      ],
+      "why": "ES twin of georgia-truck-accident-settlement-value (4808, which carries truck-accidents)."
+    }
+  ],
+  "not_mapped": [
+    {
+      "post_id": 5398,
+      "slug": "myrtle-beach-fatal-crashes",
+      "current": [],
+      "why": "Grand Strand fatal crash report: all crash types (28.4% pedestrian); no single term."
+    },
+    {
+      "post_id": 5355,
+      "slug": "south-carolina-liquor-liability-2026",
+      "current": [],
+      "why": "SC liquor liability (dram shop) 2026: drunk-driving claims against bars; premises liability or car accidents both arguable."
+    },
+    {
+      "post_id": 6315,
+      "slug": "georgia-moped-laws",
+      "current": [],
+      "why": "Georgia moped laws: no moped term; motorcycle-accidents would be a stretch (a moped is not a motorcycle in either Code)."
+    },
+    {
+      "post_id": 6316,
+      "slug": "south-carolina-moped-laws",
+      "current": [],
+      "why": "SC moped laws: same."
+    },
+    {
+      "post_id": 4640,
+      "slug": "personal-injury-claim-charleston-county-court",
+      "current": [],
+      "why": "Filing a PI claim in Charleston County court: general personal injury; no personal-injury term."
+    },
+    {
+      "post_id": 4810,
+      "slug": "south-carolina-statute-of-limitations",
+      "current": [
+        "south-carolina-law"
+      ],
+      "why": "SC statute of limitations (general PI)."
+    },
+    {
+      "post_id": 4811,
+      "slug": "south-carolina-comparative-negligence",
+      "current": [
+        "south-carolina-law"
+      ],
+      "why": "SC comparative negligence (general PI)."
+    },
+    {
+      "post_id": 4814,
+      "slug": "south-carolina-personal-injury-faq",
+      "current": [
+        "south-carolina-law"
+      ],
+      "why": "SC personal injury FAQ (general PI)."
+    },
+    {
+      "post_id": 5223,
+      "slug": "georgia-statute-of-limitations",
+      "current": [],
+      "why": "Georgia statute of limitations (general PI)."
+    },
+    {
+      "post_id": 5352,
+      "slug": "georgia-vs-south-carolina-comparative-negligence",
+      "current": [],
+      "why": "GA vs SC comparative negligence (general PI)."
+    },
+    {
+      "post_id": 5353,
+      "slug": "georgia-vs-south-carolina-filing-deadlines",
+      "current": [],
+      "why": "GA vs SC filing deadlines (general PI)."
+    },
+    {
+      "post_id": 4929,
+      "slug": "es-south-carolina-statute-of-limitations",
+      "current": [
+        "south-carolina-law"
+      ],
+      "why": "ES SC statute of limitations (general PI)."
+    },
+    {
+      "post_id": 4930,
+      "slug": "es-south-carolina-comparative-negligence",
+      "current": [
+        "south-carolina-law"
+      ],
+      "why": "ES SC comparative negligence (general PI)."
+    },
+    {
+      "post_id": 4937,
+      "slug": "es-south-carolina-personal-injury-faq",
+      "current": [
+        "south-carolina-law"
+      ],
+      "why": "ES SC personal injury FAQ (general PI)."
+    }
+  ],
+  "unchanged_already_termed": [
+    {
+      "post_id": 4617,
+      "slug": "dangerous-roads-north-charleston",
+      "current": [
+        "car-accidents"
+      ]
+    },
+    {
+      "post_id": 4651,
+      "slug": "port-of-savannah-truck-routes",
+      "current": [
+        "truck-accidents"
+      ]
+    },
+    {
+      "post_id": 4652,
+      "slug": "pooler-warehouse-district-truck-accidents",
+      "current": [
+        "truck-accidents"
+      ]
+    },
+    {
+      "post_id": 4653,
+      "slug": "logging-truck-accidents-us-17-mcintosh-glynn",
+      "current": [
+        "truck-accidents"
+      ]
+    },
+    {
+      "post_id": 4671,
+      "slug": "bay-street-truck-accidents-savannah-historic-district",
+      "current": [
+        "truck-accidents"
+      ]
+    },
+    {
+      "post_id": 4678,
+      "slug": "broad-river-road-truck-accidents-columbia",
+      "current": [
+        "truck-accidents"
+      ]
+    },
+    {
+      "post_id": 4683,
+      "slug": "i-16-i-95-construction-zone-truck-accidents",
+      "current": [
+        "truck-accidents"
+      ]
+    },
+    {
+      "post_id": 4686,
+      "slug": "us-52-truck-train-accidents-goose-creek",
+      "current": [
+        "truck-accidents"
+      ]
+    },
+    {
+      "post_id": 4687,
+      "slug": "carolina-crossroads-construction-zone-truck-accidents",
+      "current": [
+        "truck-accidents"
+      ]
+    },
+    {
+      "post_id": 4688,
+      "slug": "blythewood-i-77-truck-accidents",
+      "current": [
+        "truck-accidents"
+      ]
+    },
+    {
+      "post_id": 4689,
+      "slug": "i-95-widening-construction-zone-ga-sc",
+      "current": [
+        "truck-accidents"
+      ]
+    },
+    {
+      "post_id": 4806,
+      "slug": "south-carolina-truck-accident-settlement-value",
+      "current": [
+        "truck-accidents"
+      ]
+    },
+    {
+      "post_id": 4807,
+      "slug": "georgia-car-accident-settlement-value",
+      "current": [
+        "car-accidents"
+      ]
+    },
+    {
+      "post_id": 4808,
+      "slug": "georgia-truck-accident-settlement-value",
+      "current": [
+        "truck-accidents"
+      ]
+    },
+    {
+      "post_id": 4809,
+      "slug": "south-carolina-car-accident-settlement-value",
+      "current": [
+        "car-accidents"
+      ]
+    },
+    {
+      "post_id": 4932,
+      "slug": "es-south-carolina-car-accident-settlement-value",
+      "current": [
+        "car-accidents"
+      ]
+    }
+  ]
+}
