@@ -110,7 +110,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                  * change these sidebars.
                  */
                 $res_cat_slug  = in_array( 'south-carolina-law', $res_cat_terms, true ) ? 'south-carolina-law' : ( $res_cat_terms ? $res_cat_terms[0] : '' );
-                $shown_guides = roden_related_resources( array(
+                $res_guide_args = array(
                     'count'   => 5,
                     'cat_slug' => $res_cat_slug,
                     'heading'  => __( 'Related Guides', 'roden-law' ),
@@ -118,7 +118,18 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                     'exclude'  => $post_id,
                     // Same-state guides only (from _roden_jurisdiction).
                     'jurisdiction_of' => $post_id,
-                ) );
+                );
+                $shown_guides = roden_related_resources( $res_guide_args );
+                /*
+                 * A topic with no other same-state guide (the only golf cart
+                 * guide, Georgia's only wrongful death guide) renders nothing.
+                 * Then list as an untermed guide does, so a term never removes
+                 * this box.
+                 */
+                if ( ! $shown_guides && '' !== $res_cat_slug ) {
+                    $res_guide_args['cat_slug'] = '';
+                    $shown_guides = roden_related_resources( $res_guide_args );
+                }
                 ?>
 
                 <?php
