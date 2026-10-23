@@ -3324,3 +3324,20 @@ and emits no FAQPage, neither renders the negligence/compensation sections, and 
 pillar and `#faq` links. Left as is: the Speakable `cssSelector` list (schema-helpers.php) still
 names `.ai-stats-block`, which no longer exists on scenario or city pages; a selector that matches
 nothing is ignored.
+
+## 2026-10-23 — Study #1: self-stamped review date cleared
+
+Owner: "do option 2, Dorminy and Gillin read it". The open item said Study #1's `_roden_last_reviewed` was
+unset. It was not: post 5348 (`/resources/i-26-i-95-corridor-report/`) had held `2026-08-25`, the publish day,
+since the first export that included it (`9dde35e`). That was the same seeder self-stamp corrected on 5352/5353
+on 2026-09-19, with no attorney review recorded. It rendered "Last reviewed: August 25, 2026" on the page and
+`lastReviewed` in schema. `reviewedBy` was already absent, because the bar-admission guard found no attributed
+reviewer admitted in both states.
+
+- **Applied:** `bin/clear-self-stamped-review-5348.php` (exact-match guard, dry run first) deleted the one row;
+  `post_modified` was unchanged. Both caches were flushed. Backup: `docs/backups/5348-review-meta-2026-10-23.json`.
+- **Verified live** with a cache-buster: no "Last reviewed" line and no `lastReviewed` or `reviewedBy`; "Content
+  updated: August 25, 2026" (from `_roden_last_refreshed`) remains. Drift check matched before the write.
+- **`content/meta.json`:** regenerated. The only diff is this field on this post.
+- **Open:** Joshua Dorminy (GA) and Graeham C. Gillin (SC) to read the page. On their read, set
+  `_roden_last_reviewed` to that date and `_roden_reviewed_by` to both (attorney-review queue rank 63).
