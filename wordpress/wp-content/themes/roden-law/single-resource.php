@@ -116,6 +116,9 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                 roden_related_practice_areas( 6, array(
                     'jurisdiction_of' => $post_id,
                     'exclude'         => is_array( $shown_guides ) ? $shown_guides : array(),
+                    // It lists guides, not practice areas. Existing msgid, already
+                    // translated in es_ES.po/.mo ("Recursos Relacionados").
+                    'heading'         => __( 'Related Resources', 'roden-law' ),
                 ) );
                 ?>
 
