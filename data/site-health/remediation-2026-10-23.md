@@ -1240,3 +1240,84 @@ Flush both cache layers. Then run
 and expect 997 / 0 / 0. Then check:
 - `curl -sI https://rodenlaw.com/blog-car-crash-crush-injuries-in-charleston/` should return 410.
 - `curl -sI https://rodenlaw.com/why-should-i-hire-an-accident-lawyer-after-an-accident/` should be one 301 to `/blog/benefits-of-hiring-personal-injury-lawyer/`.
+
+## Fixed (#263): redirects onto the five old pages took a second hop
+
+Owner decision 2026-10-23: collapse `/blog/savannah/` and `/blog/practice-areas/brunswick/`
+(2 hops each in the #258/#260 replays) to one hop to their current final destination, and
+fix the pattern that produces them rather than adding two entries.
+
+| Class | Status | Where |
+|---|---|---|
+| redirects: any redirect landing on a page `roden_old_page_redirects()` 301s takes a second hop | fixed (PR, unmerged) | `functions.php` |
+| `/{savannah,brunswick,charleston}/{2,feed}/` → `/{2,feed}/{city}-{st}/` → 404 | deferred, observation (synthetic, other rule, unchanged) | not this pattern |
+
+### Root cause
+
+`roden_old_page_redirects()` 301s five pages that are still **published**: `car-accident-lawyer`
+(→ `/practice-areas/car-accident-lawyers/`), `savannah`, `brunswick`, `charleston`
+(→ `/practice-areas/`) and `class-actions` (→ `/class-action-lawyers/`). It only acts when the
+request itself is that page. Every other resolver treats the pages as live, because they are:
+core's 404 slug guess (`redirect_guess_404_permalink()`, `post_name LIKE '{last segment}%'`)
+sends `/blog/savannah/` to `/savannah/`, and `/savannah/` then 301s again. The legacy and
+removal funnels (`url_to_postid()` finds the page) and core's old-slug redirect would do the
+same for any future map destination or old slug that names one of them. Today only core's
+guess (via `redirect_canonical`) and core's paged-URL canonical (`/car-accident-lawyer/2/`) do.
+
+### Fix
+
+The map moves into `roden_old_page_redirect_map()` (same five entries, same handler). A new
+`wp_redirect` filter, `roden_old_page_redirect_final()`, rewrites a redirect target that is
+exactly the permalink of a published page whose `post_name` is in the map: the same test the
+handler applies when the page is requested. It returns `home_url( dest )`, which is
+byte-identical to the second hop it replaces. `wp_redirect` is the one point every generator
+passes through, so `inc/legacy-redirects.php` is not touched. Targets with a public query var
+(`?p=`, `?page_id=`), foreign hosts and admin requests are left alone. Non-public query args
+(`?utm_source=`) are dropped, as the handler's own hop already drops them.
+
+**Path classes the pattern matches** (all replayed): the page address and its no-slash,
+`/2/`, `/feed/`, `?utm_source=` and `?page_id=` forms; core-guess forms `/blog/{slug}/`,
+`/blog/practice-areas/{slug}/`, truncated prefixes (`/blog/savann/`, `/blog/class-actio/`),
+deeper paths, `/resources/`, `/locations/`, `/practice-areas/`, `/blog/category/` forms;
+`/blog-{slug}/`, `/blog/blog-{slug}/`, `-2` forms; and `/es/`, `/es/blog/`,
+`/es/blog/practice-areas/` forms. 123 paths (108 EN, 15 ES). No map destination, old slug or
+`redirects.csv` row points at any of the five pages.
+
+### Verification
+
+Read-only prod replay through the real `template_redirect` pipeline, main vs patched, every hop
+followed. Same sets as #258/#260 plus the class above. Prod matched `origin/main` by md5 on all
+93 theme files before the run (after the #261 deploy). The main trace matched live `curl` for
+five sampled changed paths.
+
+| Set | Paths | Changed |
+|---|---|---|
+| `redirects.csv` fixture | 997 | 0 (ok 997, chains 0, lost 0, both sides) |
+| Sitemap EN + ES | 594 + 56 | 0 (0 redirect, both sides) |
+| `/blog/` forms of legacy + removal keys | 700 + 43 ES | 1 (`/blog/practice-areas/brunswick/`) |
+| Legacy keys / removal keys / cull aliases | 267 / 601 / 136 | 0 |
+| #256 truncation set | 565 | 1 (`/blog/savannah/`) |
+| All `/es/` paths | 231 | 0 |
+| Old-page class | 123 | 23 |
+| **All** | 3,864 | **23, all 2-hop → one 301 → 200 at the same destination** |
+
+No existing 200 or single-hop redirect changed. 0 ERR. Two-or-more-hop/dead paths overall:
+35 → 12. The 12 left are #260's 6 new-410 forms (unchanged) and the 6 deferred
+`/{city}/{2,feed}/` paths above.
+
+The 23 changed paths: `/blog/savannah/`, `/blog/practice-areas/brunswick/`; `/blog/{slug}/`,
+`/blog/{slug}/?utm_source=x` and `/blog/practice-areas/{slug}/` for each of the five slugs except
+the two already counted (13 more); `/blog/savann/`, `/blog/savan/`,
+`/blog/brunswi/`, `/blog/bruns/`, `/blog/charlest/`, `/blog/car-accident-lawy/`;
+`/car-accident-lawyer/2/`, `/class-actions/2/`.
+
+**No interaction with #260.** #260 edits only values in the legacy map. A map hit leaves through
+`wp_redirect`, so this filter does see it, but it only rewrites a target that is one of the five
+page permalinks. Neither #260's diff nor either map has such a destination, and a 410 never
+calls `wp_redirect`. Merge order does not matter.
+
+### Re-run after deploy
+
+`node vendor/site-health/site-health.mjs redirects --repo . --base https://rodenlaw.com --live`
+should stay ok 997 / chains 0 / lost 0. Spot check: `curl -sI https://rodenlaw.com/blog/savannah/`
+is one 301 to `/practice-areas/`.
