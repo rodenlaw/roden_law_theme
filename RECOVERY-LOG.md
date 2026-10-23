@@ -3371,3 +3371,41 @@ them noindexed.
   `_roden_retired`; it refuses to run before the batch is deployed. Then flush both caches and replay the
   28 URLs. One follow-up: the troubled-teen body links the hub ("class action attorney"), which becomes a
   301. That's a minor edit to the kept page, so it's a separate call.
+
+## 2026-10-23 — Mass-tort pages retired — applied
+
+Owner: "merged, run the retire script and verify". #267 deployed. The drift guard passed, and the md5s of the
+four changed theme files on prod match the repo.
+
+- **Retired:** `bin/retire-mass-tort-pages.php` (dry run, then apply) set 13 pages to draft with `_roden_retired`
+  (4563–4573, 4575, 4576). Troubled-teen (4574) and the hub stay published. Both caches flushed.
+- **Verified live** with a cache-buster:
+  - all 28 keys return one 301 to `/practice-areas/` (200)
+  - the kept page returns 200; `/class-action/troubled-teen-industry-abuse/` takes one hop to it; the nested
+    `/class-action-lawyers/x/y/` form takes one hop to `/practice-areas/`
+  - no class-action link in the English or Spanish nav
+  - the sitemap is 636 URLs, with troubled-teen the only class-action URL
+  - `gracias-ppc-2/-3` and `home-espanol` are noindex,follow; `/es/contact/` and `/es/about/` still return 200
+- **llms.txt:** still served the 10-22 file, because #267 changed the generator without bumping
+  `RODEN_LLMS_TXT_VERSION`, so the static copies at ABSPATH were never rewritten. I regenerated them with the
+  theme's own `roden_llms_txt_flush_cache()`. Both files now have 0 mass-tort mentions and list the kept page.
+  The bump (`2026-10-23.1`) ships in the records PR. **Lesson: a change to `inc/llms-txt.php` must bump the
+  version, or the live file stays stale.**
+- **Guards:** `content/meta.json` regenerated (the 13 retired pages leave it). The live JSON-LD guard
+  (`bin/check-unslashed-post-writes.php`) passes.
+- **Site health:** the post-deploy CI crawl failed. 13 "sitemap URL not 200" errors, and canonicals at 636/649,
+  came from a sitemap read before the retirement; a local re-crawl against live clears them. **Two real errors
+  remain, both on the kept page:** it is an orphan (its only inbound links were the hub, its siblings and the
+  nav), and its body links the hub ("class action attorney"), which is now a redirect. Fix proposed, waiting on
+  the owner.
+
+**Fix for the two kept-page errors (owner: "yes, do both and open the PR"):**
+- **Body link: applied 2026-10-23.** `bin/unlink-hub-from-troubled-teen.php` (exact-match guard, dry run, then
+  `wp_update_post( wp_slash() )`) removed the `<a>` around "class action attorney" on 4574 and kept the text.
+  64 bytes out; stored md5 verified; a revision was left as the undo. Backup:
+  `docs/backups/4574-post-content-2026-10-23.html`. Both caches flushed. Live: no hub link. The JSON-LD guard
+  passes.
+- **Orphan: ships with the records PR.** `roden_practice_index_kept_hub_cards()` adds a card to the
+  `/practice-areas/` grid (both branches of `archive-practice_area.php`) for every published page still under the
+  hub. Today that is troubled-teen. English only, since the kept page has no Spanish twin. This is where the
+  retired hub's 301s land, so mass-tort intent still finds the kept page.

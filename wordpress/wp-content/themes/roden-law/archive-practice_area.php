@@ -92,6 +92,7 @@ $firm = roden_firm_data();
                         <span class="card-arrow" aria-hidden="true">&rarr;</span>
                     </a>
                 <?php endforeach; ?>
+                <?php roden_practice_index_kept_hub_cards(); ?>
             </div>
             <?php
         } else {
@@ -103,6 +104,7 @@ $firm = roden_firm_data();
                         <span class="card-arrow" aria-hidden="true">&rarr;</span>
                     </a>
                 <?php endforeach; ?>
+                <?php roden_practice_index_kept_hub_cards(); ?>
             </div>
             <?php
         }
