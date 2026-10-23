@@ -741,6 +741,29 @@ function roden_case_results_grid( $args = array() ) {
     }
 
     $results = $query_args['posts_per_page'] ? new WP_Query( $query_args ) : null;
+
+    /*
+     * practice_category narrows the grid only when some case result carries
+     * that term. None does today (see roden_case_result_category()), so a
+     * practice_category filter matched nothing and the grid fell through to
+     * the hardcoded, unlinked fallback cards below. That already happened on
+     * every pillar with a term (ATV, bicycle, e-scooter, golf cart, e-bike) and
+     * would have spread to all pillars and intersections once the pillars got
+     * their terms (simulation 2026-10-23). With no match, drop that one clause
+     * and keep the rest of the query: the grid every untermed page shows.
+     */
+    if ( $results && ! $results->posts && $args['practice_category'] ) {
+        $tax_query = array_values( array_filter( $tax_query, function ( $clause ) {
+            return 'practice_category' !== $clause['taxonomy'];
+        } ) );
+        if ( $tax_query ) {
+            $query_args['tax_query'] = $tax_query;
+        } else {
+            unset( $query_args['tax_query'] );
+        }
+        $results = new WP_Query( $query_args );
+    }
+
     $ids     = array_merge( $lead_ids, $results ? wp_list_pluck( $results->posts, 'ID' ) : array() );
 
     // Fallback: hardcoded results if no CPT posts exist yet
