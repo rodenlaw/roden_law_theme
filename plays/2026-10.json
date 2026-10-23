@@ -287,8 +287,8 @@
       "blocking": false
     },
     {
-      "item": "Study #1 has _roden_last_reviewed unset while publishing lastReviewed and reviewedBy in schema; it needs one genuine attorney read.",
-      "owner": "Eric Roden",
+      "item": "Study #1 (/resources/i-26-i-95-corridor-report/, post 5348) needs one genuine attorney read: Joshua Dorminy for the Georgia half, Graeham C. Gillin for the South Carolina half. Its _roden_last_reviewed was a seeder self-stamp (2026-08-25, the publish day), not unset as first written; cleared on prod 2026-10-23, so the page no longer claims a review. On the read: set _roden_last_reviewed to that date and _roden_reviewed_by to both.",
+      "owner": "Joshua Dorminy (GA), Graeham C. Gillin (SC)",
       "blocking": false
     },
     {
