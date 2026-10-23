@@ -3208,6 +3208,12 @@ with a 200; 4337 serves the merged, verified content with its own canonical, FAQ
 2026-10-02. JSON-LD guard PASS. content/meta.json regenerated (4624 out, 4337 changed). Records:
 docs/freshness/2026-10-02-merge-4624-into-4337/.
 
+**Closed 2026-10-23:** this merge resolved the "headline still asserts South Carolina's Deadliest
+Intersection" item (2026-10 plays, Q4 open items). On the live page today the redirect is a single 301, the title,
+H1, og:title and schema headline carry the sourced "one of the tri-county's highest-crash" claim, and no unsupported
+superlative is left in the body, Key Takeaways, excerpt or FAQs. The only "deadliest" is Live 5's attributed claim
+about roads. The item is removed from plays/2026-10.json and struck through in strategy/2026-Q4.md.
+
 ## 2026-10-21 — Granularity-floor cull: 41 of the 54 floor pages — decided
 
 Owner: "go with 1". The site-health floor check listed 54 street, highway and neighbourhood pages. Together they
