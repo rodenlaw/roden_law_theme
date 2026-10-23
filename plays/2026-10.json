@@ -300,6 +300,12 @@
       "item": "Myrtle Beach GBP is registered in Murrells Inlet; Radar's open question is whether that costs the Myrtle Beach map pack and AI answer, and whether a Myrtle Beach address is obtainable.",
       "owner": "owner",
       "blocking": false
+    },
+    {
+      "item": "FOR NOVEMBER PLAYS (owner request 2026-10-23): a Spanish two-state reference guide under the referenceLayer lane — adapt an attorney-reviewed English two-state guide (candidate: the GA-vs-SC comparative-negligence guide) into /es/resources/, tagged _roden_jurisdiction both. Why: Spanish has only two Georgia resources (GA car and truck settlement value) and no two-state ones, so after the same-state sidebar rule (#252/#253, keep-both) each Georgia page's sidebar holds one link and its second box is empty; a both-tagged Spanish guide would list on every Spanish GA and SC resource page. Low stakes on traffic (the two pages had 13 and 18 impressions, 0 clicks, in data/gsc/latest.json) but it is the only fix — code cannot fill them without breaking the state or locale rule. Constraints: adaptation of already-reviewed claims only, no new claim resting on the unsigned packs (D6); legal sweep before publish; tag the new guide both at publish (the 11 existing Spanish resources are already tagged: 2 ga, 9 sc).",
+      "owner": "client-strategy-director (plan); content-director (pi-content-writer-es); legal-accuracy-lead (sweep)",
+      "due": "2026-11-03",
+      "blocking": false
     }
   ],
   "nextOffice": "Myrtle Beach",
