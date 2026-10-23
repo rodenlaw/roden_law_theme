@@ -124,14 +124,19 @@ function roden_gtm_body() {
    3. OLD-FORMAT PAGE REDIRECTS — Legacy pages → canonical URLs
    ========================================================================== */
 
-add_action( 'template_redirect', 'roden_old_page_redirects', 1 );
-function roden_old_page_redirects() {
-    if ( ! is_page() ) {
-        return;
-    }
-
-    // Map page slugs to their canonical destinations
-    $redirects = array(
+/**
+ * Published pages whose address 301s elsewhere: post_name => destination path.
+ *
+ * These pages are still published, so every other resolver on the site treats
+ * their address as one that serves: core's 404 slug guess, the legacy and
+ * removal funnels in inc/legacy-redirects.php (url_to_postid() finds them) and
+ * core's old-slug redirect. Any of those landing here adds a second hop.
+ * roden_old_page_redirect_final() closes that for every one of them.
+ *
+ * @return array<string,string>
+ */
+function roden_old_page_redirect_map() {
+    return array(
         'car-accident-lawyer'                  => '/practice-areas/car-accident-lawyers/',
         'savannah'                             => '/practice-areas/',
         'brunswick'                            => '/practice-areas/',
@@ -139,6 +144,15 @@ function roden_old_page_redirects() {
         // 'thank-you-ppc-2' removed — page renamed to 'thank-you' for conversion tracking
         'class-actions'                        => '/class-action-lawyers/',
     );
+}
+
+add_action( 'template_redirect', 'roden_old_page_redirects', 1 );
+function roden_old_page_redirects() {
+    if ( ! is_page() ) {
+        return;
+    }
+
+    $redirects = roden_old_page_redirect_map();
 
     $slug = get_post_field( 'post_name', get_the_ID() );
 
@@ -146,6 +160,67 @@ function roden_old_page_redirects() {
         wp_redirect( home_url( $redirects[ $slug ] ), 301 );
         exit;
     }
+}
+
+/**
+ * Any redirect whose target is one of the pages above goes straight to that
+ * page's destination, instead of to the page and then on.
+ *
+ * Core's 404 slug guess sent /blog/savannah/ to /savannah/ and
+ * /blog/practice-areas/brunswick/ to /brunswick/, and roden_old_page_redirects()
+ * then took a second hop to /practice-areas/ (site-health replay, 2026-10-23).
+ * The guess, the legacy/removal funnels and the old-slug redirect all reach
+ * the page through its permalink, so the one place they all pass is
+ * wp_redirect: rewriting the target there fixes every generator at once.
+ *
+ * The test is the same one roden_old_page_redirects() applies on arrival -- a
+ * published page whose post_name is in the map -- plus "the target is exactly
+ * that page's permalink", so the destination is byte-identical to the second
+ * hop it replaces. A target carrying a public query var (?p=, ?page_id=) is
+ * left alone: it might not resolve to the page at all. Admin redirects are
+ * never touched.
+ *
+ * @param string $location Redirect target.
+ * @return string
+ */
+add_filter( 'wp_redirect', 'roden_old_page_redirect_final', 10 );
+function roden_old_page_redirect_final( $location ) {
+    if ( is_admin() || ! is_string( $location ) || '' === $location ) {
+        return $location;
+    }
+
+    $parts = wp_parse_url( $location );
+    if ( false === $parts || empty( $parts['path'] ) ) {
+        return $location;
+    }
+    if ( ! empty( $parts['host'] ) && strtolower( $parts['host'] ) !== strtolower( (string) wp_parse_url( home_url(), PHP_URL_HOST ) ) ) {
+        return $location;
+    }
+
+    $map  = roden_old_page_redirect_map();
+    $path = $parts['path'];
+    $slug = basename( untrailingslashit( $path ) );
+    if ( ! isset( $map[ $slug ] ) ) {
+        return $location;
+    }
+
+    if ( ! empty( $parts['query'] ) ) {
+        parse_str( $parts['query'], $args );
+        $public = isset( $GLOBALS['wp'] ) ? (array) $GLOBALS['wp']->public_query_vars : array();
+        if ( array_intersect( array_keys( (array) $args ), $public ) ) {
+            return $location;
+        }
+    }
+
+    $page = get_page_by_path( trim( $path, '/' ), OBJECT, 'page' );
+    if ( ! $page || 'publish' !== $page->post_status || $page->post_name !== $slug ) {
+        return $location;
+    }
+    if ( (string) wp_parse_url( get_permalink( $page ), PHP_URL_PATH ) !== $path ) {
+        return $location;
+    }
+
+    return home_url( $map[ $slug ] );
 }
 
 /* ==========================================================================
