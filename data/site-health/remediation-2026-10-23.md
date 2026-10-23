@@ -1113,3 +1113,130 @@ the destination's own title, so they add no link-topic findings. Spot checks:
 `/workers-compensation-lawyers/charleston-sc/` lists the 4 SC WC guides,
 `/motorcycle-accident-lawyers/lane-splitting-accident/` shows the block,
 `/resources/south-carolina-motorcycle-accident-settlement-value/` sidebar is unchanged.
+
+## Fixed (#260): owner decisions on the fifth PR's deferred items
+
+Owner decisions, 2026-10-23 (revised the same day; this replaces an earlier pair rule):
+(1) 410 both self-referencing legacy keys, every address form; (2) align the 8
+disagreeing root/`/blog/` pairs **to the `/blog/` twin**. The twins carry all the GSC
+history (the five "hire a lawyer" twins alone: 1,049 impressions), and their
+destinations were a deliberate 2026-09-03 cull choice. So every twin keeps its
+destination and the root key is re-pointed to match.
+
+One file of code (`inc/legacy-redirects.php`), three commits: 410 root + `/blog/` forms;
+8 root keys follow their twin; 410 the `/blog-` and `/blog/blog-` forms. Map edits only,
+no logic change, no new strings.
+
+### 410 (status: fixed)
+
+These 8 URLs return 410 through the legacy map's existing `false` value (the
+mechanism `/practice-areas/coronavirus-business-claims/` uses):
+
+| Slug | Forms |
+|---|---|
+| `car-crash-crush-injuries-in-charleston` | `/{slug}/`, `/blog/{slug}/`, `/blog-{slug}/`, `/blog/blog-{slug}/` |
+| `a-charleston-residents-guide-to-tourist-car-accidents` | same four |
+
+Before: the root, `/blog-` and `/blog/blog-` forms were 301 → 404; the `/blog/` forms were 404.
+
+**Why four explicit entries, not a resolver change.** `roden_resolve_legacy_blog_dest()`
+skips a `false` root key and falls back to `/blog/`. Making it return "gone" would
+change every 410 key's `/blog-` forms, not just these two. The replay proves that would
+be wider: `/blog-practice-areas/coronavirus-business-claims/` and its `/blog/blog-` form
+go 301 → `/blog/` (200) today, and nobody decided to change them. The explicit
+entries are exact-match, so they are read before the `/blog-` pattern rules, and they
+reach exactly the 4 URLs. Both control URLs are unchanged in the replay.
+
+Nothing else in either map points at these URLs. The `-2`/`-3`/`-4` tourist twins are
+unchanged. The handler is not 404-gated, so if a post is ever published at one of
+these addresses, its entry must be deleted. A code comment says so.
+
+### The 8 pairs (status: fixed, root re-pointed, twin unchanged)
+
+| Slug | Root key: old → | Root key: new → (= twin, unchanged) | Twin impr. |
+|---|---|---|---|
+| why-should-i-hire-an-accident-lawyer-after-an-accident | `/blog/are-accident-lawyers-worth-it/` | `/blog/benefits-of-hiring-personal-injury-lawyer/` | 473 |
+| when-should-you-hire-an-attorney-after-being-in-an-accident | `/blog/are-accident-lawyers-worth-it/` | `/blog/benefits-of-hiring-personal-injury-lawyer/` | 235 |
+| why-is-having-a-personal-injury-lawyer-important | `/blog/are-accident-lawyers-worth-it/` | `/blog/benefits-of-hiring-personal-injury-lawyer/` | 206 |
+| why-should-i-consult-a-personal-injury-lawyer-for-my-accident | `/blog/are-accident-lawyers-worth-it/` | `/blog/benefits-of-hiring-personal-injury-lawyer/` | 107 |
+| how-can-an-attorney-help-with-my-car-accident-claim | `/blog/are-accident-lawyers-worth-it/` | `/blog/benefits-of-hiring-personal-injury-lawyer/` | 28 |
+| why-is-workers-compensation-so-important-to-have | `/blog/am-i-eligible-for-workers-compensation/` | `/practice-areas/workers-compensation-lawyers/` | 201 |
+| what-are-the-upsides-of-filing-a-personal-injury-lawsuit | `/blog/how-do-i-know-if-i-have-a-personal-injury-case/` | `/blog/questions-about-filing-a-lawsuit/` | 47 |
+| what-are-the-benefits-of-hiring-a-workers-compensation-lawyer | `/blog/are-accident-lawyers-worth-it/` | `/practice-areas/workers-compensation-lawyers/` | 461 |
+
+(Twin impressions are the figures in the Category 19 comments.) The old root values
+were root-level slugs (`/are-accident-lawyers-worth-it/`), normalised to `/blog/` by the
+funnel. The new values are written in their served form.
+
+**Moved forms.** `roden_resolve_legacy_blog_dest()` reads the root key, so each pair's
+`/blog-{slug}/` and `/blog/blog-{slug}/` forms move with it. That is 16 URLs, and all 16
+are `redirects.csv` rows. Each is one 301 → 200 at the new destination (replay, patched):
+
+- `/blog-{slug}/` and `/blog/blog-{slug}/` for the five "hire a lawyer" slugs → `/blog/benefits-of-hiring-personal-injury-lawyer/` (10 URLs)
+- the same two forms of `why-is-workers-compensation-so-important-to-have` and `what-are-the-benefits-of-hiring-a-workers-compensation-lawyer` → `/practice-areas/workers-compensation-lawyers/` (4)
+- the same two forms of `what-are-the-upsides-of-filing-a-personal-injury-lawsuit` → `/blog/questions-about-filing-a-lawsuit/` (2)
+
+No other map entry or removal-map entry resolves through these 8 root keys. The replay
+of every legacy and removal key shows no other change.
+
+**`redirects.csv`:** the file does not change. It has no destination column (`URL,Last
+crawled`). 16 of its URLs now resolve to a different destination, each still one hop to
+a 200, so the check stays 997 / 0 / 0.
+
+### Impressions check (every GSC export in the repo, 45 files incl. `.gz`)
+
+- **The 8 root keys and the 16 moved forms: none appears in any export.** No URL with
+  impressions changes destination.
+- The 8 `/blog/` twins all appear, with 42 to 175 daily rows each in
+  `gsc-2026-10-06/blog_page_date`. All 8 are unchanged in the replay.
+- **The 410 set:** status change only, no new destination. The two `/blog-` forms and the
+  tourist `/blog/` form have no impressions. These do:
+  - `/blog/car-crash-crush-injuries-in-charleston/`: 764 impressions over 16 months, already 404 today.
+  - `/car-crash-crush-injuries-in-charleston/`: 532 impressions over 16 months (pos. 24.7), 301 → 404 today.
+  - `/a-charleston-residents-guide-to-tourist-car-accidents/`: 21 impressions, 301 → 404 today.
+
+### Verification
+
+This was a read-only replay on prod through the real `template_redirect` pipeline. It used
+the #258 harness and the same path sets, plus the two coronavirus `/blog-` control forms.
+Prod matched `origin/main` (a2316dd) by md5 on all 93 theme files. The main run was
+byte-identical to the previous run's main output, and all 32 changed paths' main
+behaviour matched live `curl`.
+
+| Set | Paths | Changed |
+|---|---|---|
+| `redirects.csv` fixture | 997 | 16 (the moved forms, destination only, 1 hop → 200) |
+| Sitemap, EN + ES | 594 + 56 | 0 (0 redirect, main or patched) |
+| `/blog/` forms of every legacy + removal key | 700 | 2 (the two `/blog/` 410s, 404 → 410); twins 0 |
+| Legacy keys | 267 + 1 (410) | 10 (8 root keys re-pointed, 2 → 410) |
+| 410-slug forms (root, `/blog/`, `/blog-`, `/blog/blog-`, `-2/-3/-4`, `/es/`) | 14 EN + 4 ES | 8 → 410; `-2/-3/-4` and `/es/` 0 |
+| Removal keys | 601 | 0 |
+| Cull alias candidates | 136 EN + 42 ES | 0 |
+| #256 truncation set | 565 | 0 |
+| All `/es/` paths | 216 | 0 |
+| Control: coronavirus `/blog-` forms | 2 | 0 |
+
+That is 32 EN changes in all, and 0 ES: 8 → 410, 8 root keys and 16 forms → one 301 → 200
+at the twin's destination. Chains or lost across all sets: main 8, patched 2. The 2 left
+are the pre-existing synthetic `/blog/savannah/` and `/blog/practice-areas/brunswick/`.
+
+site-health `redirects`, live, before (2026-10-23T19:51Z):
+`redirects.csv: 997 legacy URLs replayed against https://rodenlaw.com · ok: 997 · chains: 0 · lost: 0`.
+Expected after: the same.
+
+### Owner items
+
+- The crush-injury root URL has 532 impressions, separate from the `/blog/` URL's 764.
+  Both now answer 410 rather than 404 or 301 → 404. That matches the decision. It is
+  recorded here because the earlier tables showed only the `/blog/` figure.
+- `why-is-workers-compensation-so-important-to-have` now goes to the WC pillar, not the
+  eligibility post, in all four forms. This follows the align-to-twin rule. Neither page
+  is about why coverage matters.
+
+### Re-run after deploy
+
+Flush both cache layers. Then run
+`node vendor/site-health/site-health.mjs redirects --repo . --base https://rodenlaw.com --live`
+and expect 997 / 0 / 0. Then check:
+- `curl -sI https://rodenlaw.com/blog-car-crash-crush-injuries-in-charleston/` should return 410.
+- `curl -sI https://rodenlaw.com/why-should-i-hire-an-accident-lawyer-after-an-accident/` should be one 301 to `/blog/benefits-of-hiring-personal-injury-lawyer/`.
