@@ -3425,3 +3425,30 @@ is titled "Myrtle Beach Personal Injury Lawyer" with 631 Bellamy Ave, Murrells I
   downtown scan (11×11, 10 mi, 3–5 core keywords). It can't be set in config: `scan.mjs` takes its centre only
   from `client.json`, and the overlay may not carry `locations`. It needs a toolkit centre override, writing to
   its own rank-history series. Carried as an open item, due for the November plays.
+
+## 2026-10-24 — The 32 false-law pages: 32/32 remediated, re-verified
+
+The October plays carried a blocking item: "the brief does not state how many of the 32 pages carrying a false
+statement of law (audit 2026-08-26) have been remediated." The number was never missing. It was in the audit's
+own addendum (`docs/legal-accuracy-audit-2026-08-26.md`, "TIER 1 REMEDIATED"), which `brief.mjs` does not read:
+34 edits on 30 pages on 2026-08-26, in four batches (`bin/fix-tier1-batch{1,2,3,4}-*.php`). Batch 4 fixed
+stragglers that a re-sweep found on pages the audit hadn't listed.
+
+Re-verified today, because a fix from two months ago is not proof the page is clean now:
+- **Fresh production sweep** (`sweep-claims.mjs --client roden --fresh`, saved as
+  `data/facts/sweep-2026-10-24.json`): 645 published documents, every surface in the export. **0 findings**
+  in any Tier-1 class (`sc-medmal-cap-denied`, `sc-medmal-cap-struck-2012`, `sc-punitive-cap-denied`,
+  `sc-punitive-bac-threshold`, `municipal-ante-litem-12-months`, `county-ante-litem-6-months`,
+  `tca-15-78-50-deadline`).
+- **The audit's 41 Tier-1 URLs, rendered live:** 26 return 200 and none carries the false claims. 15 now 301
+  (cull and merges). A pattern pass flagged 3, all correct on reading: Georgia ante litem "6 months (city),
+  12 months (county or state)"; the SC med-mal notice of intent under § 15-79-125, which really is mandatory;
+  and *Nestlehutt* striking Georgia's caps in a GA-vs-SC table.
+
+Condition (1) of the hyperlocal pause is met. The pause stays on (2) the GA pack signature, (3) the
+§ 15-38-15 class re-check, and (4) the municipality floor.
+
+**The same sweep found one new error, outside Tier 1:** `abuse-sol-extension-overbroad` on
+`/class-action-lawyers/troubled-teen-industry-abuse/` (post 4574), FAQ 4. It says limitation rules "for abuse
+survivors" often extend the deadline, but Georgia's § 9-3-33.1 and South Carolina's § 15-3-555 cover sexual
+abuse only. A fix is being drafted separately.
