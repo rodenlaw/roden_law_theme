@@ -9342,7 +9342,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "both",
-                "_roden_key_takeaways": "South Carolina follows a modified comparative fault system that reduces a plaintiff's recovery by their percentage of fault and bars recovery entirely at 51% or more. Insurance companies aggressively inflate shared fault to minimize payouts. South Carolina also applies joint and several liability, allowing plaintiffs to collect full damages from any at-fault defendant. The filing deadline is three years (S.C. Code § 15-3-530). Georgia uses a stricter 50% bar (O.C.G.A. § 51-12-33) with a two-year deadline.",
+                "_roden_key_takeaways": "South Carolina follows a modified comparative fault system that reduces a plaintiff's recovery by their percentage of fault and bars recovery entirely at 51% or more. Insurance companies aggressively inflate shared fault to minimize payouts. South Carolina also applies joint and several liability to a defendant 50% or more at fault, allowing plaintiffs to collect full damages from that defendant. The filing deadline is three years (S.C. Code § 15-3-530). Georgia uses a stricter 50% bar (O.C.G.A. § 51-12-33) with a two-year deadline.",
                 "_roden_last_reviewed": "2026-08-31"
             }
         },
