@@ -292,8 +292,9 @@
       "blocking": false
     },
     {
-      "item": "Myrtle Beach GBP is registered in Murrells Inlet; Radar's open question is whether that costs the Myrtle Beach map pack and AI answer, and whether a Myrtle Beach address is obtainable.",
-      "owner": "owner",
+      "item": "Myrtle Beach rank scan never measures Myrtle Beach: every scan is a 7x7 grid, 5 mi radius, centred on the Murrells Inlet office pin (33.5550, -79.0425), and downtown Myrtle Beach is 12.9 mi away, outside it, so the 21.8% SoLV (scan 2026-08-10) is a Murrells Inlet number. Owner approved a downtown scan 2026-10-24 (11x11, 10 mi, 3-5 core keywords, centred near 33.689, -78.887). Needs a toolkit change first: scan.mjs takes its centre only from client.json and the overlay may not carry locations, so add a centre override that writes to its own rank-history series (not the office's). Read the result into the November plays. The address question itself is closed: the office is real, and the Murrells Inlet address with a Myrtle Beach page title is the same setup Morgan & Morgan uses while being named in 7 of 10 Myrtle Beach Radar answers (cycle 2026-10-01); the gap is reviews (2 on the profile) and directory presence (Super Lawyers, Best Lawyers).",
+      "owner": "local-visibility-lead (scan read); toolkit (centre override)",
+      "due": "2026-11-03",
       "blocking": false
     },
     {
