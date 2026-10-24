@@ -252,8 +252,8 @@
       "blocking": true
     },
     {
-      "item": "201 statutes and 410 page-citations not yet verified against primary text. Work down by exposure, not alphabetically - the unverified set averages 2.0 pages each against 34 for the verified set.",
-      "owner": "Eric Roden, Graeham C. Gillin",
+      "item": "397 statutes / 2,621 page-citations cited; 257 statutes / 396 page-citations not yet verified against primary text (84.9% of page-citations verified; recount 2026-10-24 with the fixed inventory, data/facts/statute-inventory-2026-10-24-postfix.txt). Pass 2026-10-24 (data/facts/statute-pass-2026-10-24.md) read the top 20: 10 correct, 10 wrong or mis-cited — 66 live errors on 34 documents. Batch 1 (citation swaps and removals, 19 edits on 11 posts) applied 2026-10-24; the rest (E1-E31, E34-E37, E39, E45, E47-E49, E51-E57a) rewrite what a rule says and wait on data/facts/attorney-packet-2026-10-24.md (Love GA, Gillin SC). Keep working down by exposure. Stays blocking while known false statements of law are live.",
+      "owner": "Tyler Love (GA), Graeham C. Gillin (SC); legal-accuracy-lead",
       "blocking": true
     },
     {
@@ -262,8 +262,8 @@
       "blocking": false
     },
     {
-      "item": "No Study #2 topic is named in the brief. The researchAssets lane is on with the method fixed but the subject unchosen; pick one that FARS or an equivalent primary dataset can carry.",
-      "owner": "content-director",
+      "item": "Study #2 is chosen and built (2026-09-30, b2c40ee): Georgia and South Carolina truck-crash deaths 2020-2024 (FARS), two state reports in research/; bin/truck-study-verify.py 321/321 (re-run 2026-10-24); no statutory claims. Unpublished. Next: attorney read — Tyler Love (GA report, owner 2026-10-24), Graeham C. Gillin (SC report) — via data/facts/attorney-packet-2026-10-24.md; then a publishing PR (two statewide /resources/ pages, chart SVGs into the theme, _roden_jurisdiction ga / sc, legal sweep before publish; doorway ratio unchanged).",
+      "owner": "Tyler Love (GA), Graeham C. Gillin (SC); content-director (publish)",
       "blocking": false
     },
     {

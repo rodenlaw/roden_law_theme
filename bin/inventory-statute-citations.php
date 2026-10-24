@@ -41,17 +41,26 @@ foreach ( $rows as $id ) {
     $surfaces = array(
         'post_content'           => $p->post_content,
         'post_excerpt'           => $p->post_excerpt,
-        '_roden_faqs'            => is_array( $faqs ) ? wp_json_encode( $faqs ) : (string) $faqs,
+        // JSON_UNESCAPED_UNICODE: without it every "§" in an FAQ becomes \u00a7 and the
+        // regex cannot see it (304 page-citations missed until 2026-10-24).
+        '_roden_faqs'            => is_array( $faqs ) ? wp_json_encode( $faqs, JSON_UNESCAPED_UNICODE ) : (string) $faqs,
         '_roden_key_takeaways'   => (string) get_post_meta( $id, '_roden_key_takeaways', true ),
         '_roden_meta_description'=> (string) get_post_meta( $id, '_roden_meta_description', true ),
         '_roden_sol_ga'          => (string) get_post_meta( $id, '_roden_sol_ga', true ),
         '_roden_sol_sc'          => (string) get_post_meta( $id, '_roden_sol_sc', true ),
+        // Pillar meta carries legal claims too (a § 40-6-294 miscite in _roden_why_hire on 4087, 2026-10-24).
+        '_roden_why_hire'        => (string) get_post_meta( $id, '_roden_why_hire', true ),
+        '_roden_common_injuries' => (string) get_post_meta( $id, '_roden_common_injuries', true ),
+        '_roden_common_causes'   => (string) get_post_meta( $id, '_roden_common_causes', true ),
+        '_roden_pillar_negligence_intro' => (string) get_post_meta( $id, '_roden_pillar_negligence_intro', true ),
     );
 
     foreach ( $surfaces as $name => $text ) {
         if ( ! $text ) {
             continue;
         }
+        // A tag or &nbsp; between "O.C.G.A." and "§" also defeats the regex: match on text.
+        $text = html_entity_decode( wp_strip_all_tags( $text ), ENT_QUOTES | ENT_HTML5, 'UTF-8' );
         if ( ! preg_match_all( $RE, $text, $m, PREG_SET_ORDER ) ) {
             continue;
         }
