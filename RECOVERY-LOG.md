@@ -3409,3 +3409,19 @@ four changed theme files on prod match the repo.
   `/practice-areas/` grid (both branches of `archive-practice_area.php`) for every published page still under the
   hub. Today that is troubled-teen. English only, since the kept page has no Spanish twin. This is where the
   retired hub's 301s land, so mass-tort intent still finds the kept page.
+
+## 2026-10-24 — Myrtle Beach GBP address: closed, no change
+
+Owner: the Myrtle Beach office is a real, staffed office in Murrells Inlet, chosen on purpose because Morgan &
+Morgan does the same. Checked live: Morgan & Morgan's office page is titled "Myrtle Beach Personal Injury
+Attorneys" with its office at 11915 Plaza Drive, Murrells Inlet. Roden's `/locations/south-carolina/myrtle-beach/`
+is titled "Myrtle Beach Personal Injury Lawyer" with 631 Bellamy Ave, Murrells Inlet. Same setup.
+- **Radar (cycle 2026-10-01):** Morgan & Morgan is named in 7 of 10 Myrtle Beach answers, Roden in 0, so the
+  address is not what keeps Roden out. The gap is reviews (2 on the profile, floor 20), the directories the
+  answers cite (Super Lawyers, Best Lawyers), and the 8 GBP posts rejected since 2026-07-07
+  (`data/local-seo/gbp-audit-2026-09-23.md`).
+- **Measurement gap found:** every Myrtle Beach rank scan is 7×7 with a 5-mile radius, centred on the office pin.
+  Downtown Myrtle Beach is 12.9 miles out, so the scan has never measured Myrtle Beach. The owner approved a
+  downtown scan (11×11, 10 mi, 3–5 core keywords). It can't be set in config: `scan.mjs` takes its centre only
+  from `client.json`, and the overlay may not carry `locations`. It needs a toolkit centre override, writing to
+  its own rank-history series. Carried as an open item, due for the November plays.
