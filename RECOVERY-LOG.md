@@ -3503,3 +3503,68 @@ A fresh export of all 645 documents, checked on every field: no SC plaintiff bar
   severally liable for economic damages". The proposed wording is "50% or more", without "for economic damages".
   Gillin needs to confirm that last part, because nobody has checked it. This is carried as a non-blocking open
   item.
+
+## 2026-10-24 — Statute pass on the top 20; batch 1 applied; attorney packet
+
+Owner: "do option 1", then "yes to 1, 2 and 3, Love reads Georgia".
+
+**The pass** (legal-accuracy-lead, `data/facts/statute-pass-2026-10-24.md`) read the 20 most-cited unverified
+statutes against primary text. 10 are stated correctly. The other 10 are wrong or miscited: **66 live errors on
+34 documents**. The worst is post 1690, which credits SC § 42-9-60 with a "reduce benefits for safety-rule
+violations" rule it doesn't contain, five times. Others:
+- 1677 says Georgia medical benefits have "no time limit" (400 weeks since 2013).
+- Three malpractice pages give a child under five "until the tenth birthday".
+- The emergency-care standard is wrong in both states.
+- The nursing-home pages cite the indigent-care statute; the dog-law pages state the tiers and insurance wrong.
+
+Source caveat: FindLaw and Justia blocked the agent, so the Georgia sections came from archived copies current to
+2024-03-28. The South Carolina sections came straight from scstatehouse.gov.
+
+**Batch 1, applied** (`bin/fix-statute-pass-2026-10-24-batch1.php` and `-batch1b.php`). These are citation swaps
+and removals of unsupported specifics only: 19 edits in 13 fields on 11 posts.
+- § 51-4-5 and § 9-3-71 → § 9-3-33 for the wrongful-death deadline;
+- § 40-6-294 → § 40-6-291 for cyclists' rights and duties, on 6 pages;
+- § 31-8-1 → § 31-7-1;
+- § 4-8-20 → § 4-8-21;
+- "requires expert testimony" → "tests expert testimony for reliability" (§ 24-7-702);
+- "SB 83, effective July 1, 2024" → the history-line date.
+
+The batch scripts check every match first and abort on any miss. Each field is written once (`wp_slash`) and read
+back, and `_roden_content_modified` is set. Backups: `docs/backups/statute-pass-2026-10-24-batch1{,b}.json`.
+Verified:
+- Live on all 11 pages, new text in, old text gone.
+- The JSON-LD guard passes.
+- `content/meta.json` is regenerated.
+- The fresh sweep passes.
+
+The only § 40-6-294 left is 4173 FAQ 2, a rule rewrite held for Love (E45).
+
+**Batch 1b came from the live check.** 4087 still showed § 40-6-294 after batch 1. The citation was in
+`_roden_why_hire`, which neither the pass's export nor the claims sweep reads. Same lesson as `CLAUDE.md`: check
+the live page as well as the database.
+
+**Inventory fixed** (`bin/inventory-statute-citations.php`):
+- `wp_json_encode` had escaped every "§" in an FAQ, so 304 FAQ page-citations were invisible. Fixed with
+  `JSON_UNESCAPED_UNICODE`, and matching now runs on stripped text.
+- It now also reads `_roden_why_hire`, `_roden_common_injuries`, `_roden_common_causes` and
+  `_roden_pillar_negligence_intro`.
+
+Today: **397 statutes / 2,621 page-citations, 84.9% verified; 257 / 396 not yet verified.** The claims sweep's
+export still doesn't read the pillar meta; that's a toolkit PR.
+
+**Attorney packet** (`data/facts/attorney-packet-2026-10-24.md`): one request per attorney.
+- **Love (GA):**
+  - the GA pack sign-off;
+  - the Study #2 Georgia report;
+  - the GA rule rewrites;
+  - confirmation of batch 1;
+  - open questions.
+- **Gillin (SC):**
+  - the Study #2 South Carolina report;
+  - the SC half of Study #1;
+  - "for economic damages" on post 4367;
+  - the troubled-teen FAQ wording;
+  - the SC rule rewrites, starting with post 1690;
+  - § 15-3-555 and § 15-3-40.
+
+Not sent. Sending it is the owner's call.
