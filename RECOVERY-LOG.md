@@ -3452,3 +3452,30 @@ Condition (1) of the hyperlocal pause is met. The pause stays on (2) the GA pack
 `/class-action-lawyers/troubled-teen-industry-abuse/` (post 4574), FAQ 4. It says limitation rules "for abuse
 survivors" often extend the deadline, but Georgia's § 9-3-33.1 and South Carolina's § 15-3-555 cover sexual
 abuse only. A fix is being drafted separately.
+
+## 2026-10-24 — Troubled-teen FAQ: abuse-deadline claim corrected (applied)
+
+Today's fresh sweep found `abuse-sol-extension-overbroad` on `/class-action-lawyers/troubled-teen-industry-abuse/`
+(post 4574), FAQ 5 (`_roden_faqs[4]`), which is also in the FAQPage structured data. It said limitation rules "for
+abuse survivors often extend the window to come forward". Georgia's § 9-3-33.1 and South Carolina's § 15-3-555
+cover sexual abuse only. legal-accuracy-lead checked every other field on the page and all 645 exported documents
+for the same kind of claim (`data/facts/remediation-2026-10-24-troubled-teen.md`). It appears in that one place
+only.
+- **Applied correction A** (owner: "apply fix A"), using `bin/fix-troubled-teen-abuse-sol-faq.php`. The first two
+  sentences now read: "It may not be too late, but some claims may already have expired. Filing deadlines depend
+  on the kind of claim and the state where it is filed, and they are strict." The rest of the answer is
+  unchanged. It names no period, statute or extension. The script matches the old text exactly once, writes with
+  `wp_slash`, reads the result back, and sets `_roden_content_modified`. Backup:
+  `docs/backups/4574-faqs-2026-10-24.json`.
+- **Verified:**
+  - Both caches flushed.
+  - The live page and its FAQPage schema carry the new text, and the old text is gone.
+  - The JSON-LD guard passes.
+  - `content/meta.json` is regenerated, with one line changed.
+  - The fresh re-sweep passes: 645 documents, 0 findings.
+- **Still open:**
+  - Tyler Love (GA) and Graeham C. Gillin (SC) should read the general wording. Nothing signed covers the Georgia
+    side yet.
+  - Correction B, which says the longer periods cover sexual abuse only, waits on GA § 9-3-33.1 / § 9-3-33 for
+    Roden and SC § 15-3-555 being signed.
+  - Items F3 to F6 of the 2026-10-21 plan are still open, and post 4348's FAQ 4 still cites the wrong sections.
