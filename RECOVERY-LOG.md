@@ -3568,3 +3568,19 @@ export still doesn't read the pillar meta; that's a toolkit PR.
   - § 15-3-555 and § 15-3-40.
 
 Not sent. Sending it is the owner's call.
+
+## 2026-10-24 — two stale open items closed; recovery gate block written
+
+- **GBP posts from the 2026-08-24 run (North Charleston, `wando-gardens-…`)**: not pending. Both
+  were published to GBP on 09-02 (EN) and 09-05 (ES) and **rejected** by Google
+  (`data/local-seo/gbp-audit-2026-09-23.tsv`). Posts 5341/5343 were retired to draft on 09-18 and
+  301 to `/practice-areas/car-accident-lawyers/` (EN/ES). `data/local-seo/gbp-pending.json` is `[]`;
+  the "2 pending" was a stale count in the 08-24 entry of the autorun log. Closed with no action.
+- **"No GSC comparison export"**: resolved 2026-10-21 (Monday pull, `data/gsc/latest.json` +
+  `monthly.json`; Sep 2026 = 1,202 clicks vs ≥ 1,191). Strategy already struck it; the plays copy
+  survived only because `brief.mjs` carries open items forward without reading the records. Removed.
+- **Recovery gate**: on the owner's instruction, `config.overlay.json` now carries
+  `localSeo.recovery` (`since` 2026-08-28, `reason`, `resumeWhen`: both law packs signed, the
+  statute-verification item closed, a fresh claims sweep PASS on resume day). `local-seo.config.json`
+  regenerated with `gen-configs.mjs roden --write --only local-seo`. **The block has no `paused`
+  key**: that switch is the owner's, and the guard stays clear until he adds `"paused": true`.
