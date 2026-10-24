@@ -247,12 +247,12 @@
   },
   "openItems": [
     {
-      "item": "Attorney sign-off on the GA and SC law packs (decision D6). Until signed, no lane may produce a new legal claim citing their authorities.",
-      "owner": "Eric Roden (GA), Graeham C. Gillin (SC)",
+      "item": "GA law pack unsigned for Roden: Tyler Love signs (D6, 2026-10-21; packet data/facts/ga-signoff-packet-2026-10-21.md, 33 authorities + 18 pending, re-asked in data/facts/attorney-packet-2026-10-24.md). Until his signatures are recorded in law-signoff.json, no new Roden GA claim may cite the pack. SC is signed (Graeham C. Gillin, 2026-09-26); its pending authorities SC 15-3-555 and 15-3-40 await him.",
+      "owner": "Tyler Love (GA), Graeham C. Gillin (SC pending authorities)",
       "blocking": true
     },
     {
-      "item": "397 statutes / 2,621 page-citations cited; 257 statutes / 396 page-citations not yet verified against primary text (84.9% of page-citations verified; recount 2026-10-24 with the fixed inventory, data/facts/statute-inventory-2026-10-24-postfix.txt). Pass 2026-10-24 (data/facts/statute-pass-2026-10-24.md) read the top 20: 10 correct, 10 wrong or mis-cited — 66 live errors on 34 documents. Batch 1 (citation swaps and removals, 19 edits on 11 posts) applied 2026-10-24; the rest (E1-E31, E34-E37, E39, E45, E47-E49, E51-E57a) rewrite what a rule says and wait on data/facts/attorney-packet-2026-10-24.md (Love GA, Gillin SC). Keep working down by exposure. Stays blocking while known false statements of law are live.",
+      "item": "396 statutes / 2,620 page-citations cited; 217 statutes / 275 page-citations not yet verified against primary text (89.5% of page-citations verified; recount 2026-10-24 after pass 2, data/facts/statute-inventory-2026-10-24-batch2.txt). Pass 1 (data/facts/statute-pass-2026-10-24.md, top 20: 66 live errors on 34 documents) and pass 2 (data/facts/statute-pass-2-2026-10-24.md, next 30: 39 live errors on 15 documents, including invented GA e-scooter and golf-cart rules) both ran 2026-10-24. Mechanical fixes applied (batch 1: 19 edits on 11 posts; batch 2: 21 edits on 5 posts). The rule rewrites (pass 1 E1-E31, E34-E37, E39, E45, E47-E49, E51-E57a; pass 2 F1-F3, F17-F29, F32-F37, plus held wording on 1856/4478 and F38's re-cite) wait on data/facts/attorney-packet-2026-10-24.md and its pass-2 addendum (Love GA, Gillin SC). Pass 3 is the next 30 in docs/statute-verification-tracker.md (a two-page tail). Stays blocking while known false statements of law are live.",
       "owner": "Tyler Love (GA), Graeham C. Gillin (SC); legal-accuracy-lead",
       "blocking": true
     },
@@ -277,8 +277,8 @@
       "blocking": false
     },
     {
-      "item": "Myrtle Beach rank scan never measures Myrtle Beach: every scan is a 7x7 grid, 5 mi radius, centred on the Murrells Inlet office pin (33.5550, -79.0425), and downtown Myrtle Beach is 12.9 mi away, outside it, so the 21.8% SoLV (scan 2026-08-10) is a Murrells Inlet number. Owner approved a downtown scan 2026-10-24 (11x11, 10 mi, 3-5 core keywords, centred near 33.689, -78.887). Needs a toolkit change first: scan.mjs takes its centre only from client.json and the overlay may not carry locations, so add a centre override that writes to its own rank-history series (not the office's). Read the result into the November plays. The address question itself is closed: the office is real, and the Murrells Inlet address with a Myrtle Beach page title is the same setup Morgan & Morgan uses while being named in 7 of 10 Myrtle Beach Radar answers (cycle 2026-10-01); the gap is reviews (2 on the profile) and directory presence (Super Lawyers, Best Lawyers).",
-      "owner": "local-visibility-lead (scan read); toolkit (centre override)",
+      "item": "FOR NOVEMBER PLAYS (downtown scan read 2026-10-24): Roden is effectively absent from the downtown Myrtle Beach map pack. Scan scan-2026-10-24-7895af (series 'Myrtle Beach (downtown)', 11x11, 10 mi, centred 33.689,-78.887, Local Dominator, 4 core keywords): 0.6% green (3 of 484 pins top 3), SoLV 0-1.7% per keyword, found in the top 20 only within 9 mi of the Murrells Inlet pin, against 21.8% on the office's own grid (2026-08-10, Local Falcon; not strictly comparable). Downtown top-3 holders: Derrick 270, Lovely 201, Morris 147, Sansbury 91, Morgan & Morgan 86 (same Murrells Inlet setup), so the address is not the constraint. Play: a review push on the Myrtle Beach GBP (2 reviews) plus Super Lawyers / Best Lawyers listings, measured by re-running the same downtown scan monthly (scan.mjs --centre 33.689,-78.887 --series 'Myrtle Beach (downtown)' --grid 11 --radius 10).",
+      "owner": "client-strategy-director (plan); local-visibility-lead (review moat, scan re-run); owner (review asks)",
       "due": "2026-11-03",
       "blocking": false
     },

@@ -1,7 +1,7 @@
 # Statute verification tracker
 
-**Generated from `bin/inventory-statute-citations.php`. Last updated 2026-10-24** (recount of
-`data/facts/statute-inventory-2026-10-24.txt`, 645 published documents).
+**Generated from `bin/inventory-statute-citations.php`. Last updated 2026-10-24, after pass 2 and
+batch 2** (recount `data/facts/statute-inventory-2026-10-24-batch2.txt`, 645 published documents).
 
 The inventory has existed since #97. Until pass 1 nothing recorded *which* of its
 statutes had been read against primary text, so every pass re-derived the question
@@ -10,11 +10,16 @@ a statute is verified.
 
 ## Coverage
 
-| 2026-10-24, after batch 1, fixed inventory | Statutes | Page-citations |
+| 2026-10-24, after pass 2 and batch 2, fixed inventory | Statutes | Page-citations |
 |---|---:|---:|
-| Verified against primary text | **140** | **2,225** (84.9%) |
-| Not yet verified | 257 | 396 |
-| Total cited | 397 | 2,621 |
+| Verified against primary text | **179** | **2,345** (89.5%) |
+| Not yet verified | 217 | 275 |
+| Total cited | 396 | 2,620 |
+
+*Pass 2 (30 sections in scope, 9 supporting that are cited) adds 39 statutes and 120 page-citations
+over the batch-1 figure of 140 / 2,225 of 2,621 (84.9%). Batch 2 removed one cited section
+(`SC 56-5-3190`, the white-cane section, cited for the walking-along-a-highway rule) and added
+`SC 56-5-500`.*
 
 *The inventory script was fixed on 2026-10-24 (`JSON_UNESCAPED_UNICODE` on `_roden_faqs`, and matching
 on stripped text). Before the fix it could not see FAQ citations written with "§", and it read 379 / 2,303
@@ -107,6 +112,7 @@ page. Work down by exposure, not alphabetically.
 | 2026-09-19 golf-cart pass | `SC 56-2-90`, `56-2-100`, `56-2-105`, `56-3-115` read on scstatehouse.gov; 2025 Act No. 64 (H.3292) read on the bill page | **`§ 56-2-105` was REPEALED 2025-05-22** by Act 64 §2 and replaced by `§ 56-2-90` (Act 64 §1). Four live pages still cite the repealed section as current law (4343, 4364, 4754, 4804). `§ 56-2-100` is the LOW-SPEED VEHICLE section, not a golf-cart one; 4738 cites it and `§ 56-3-115` (today: a deaf/hard-of-hearing registration notation, 2021) for golf-cart eligibility. Two sub-type pages (4185, 4186) say South Carolina has no statewide golf-cart statute. 4343 says SC does not require golf-cart liability insurance; `§ 56-2-90(A)` requires proof of it for the permit. 4364 says the licence rule means "minors under 15" cannot drive; `§ 56-2-90(B)` says at least sixteen. Record: `data/facts/golf-cart-verification-2026-09-19.md`. |
 | 2026-09-19 helmet pass | `GA 40-6-296`, `40-6-300`, `40-6-301`, `40-6-302`, `40-6-303`, `40-1-1(15.3)` read on codes.findlaw.com (current as of 2024-03-28) | **none** on the sections themselves: the site's uncited bicycle (under 16) and e-bike (Class III all ages, no operator under 15, Class I/II ride as bicycles) statements all match the text. The pass surfaced two evidence bars the site had never stated — § 40-6-296(d)(5) and § 40-6-303(c)(5): a bicycle or e-bike helmet violation "shall not … be considered evidence of negligence or liability". The motorcycle statute has no equivalent. Justia and LegiScan 403; the enrolled act (HB 454, 2019) was not cross-checked. |
 | 2026-10-24 pass (top 20 by exposure) | 20 in scope (GA 51-12-1.1, 34-9-17, 34-9-200.1, 9-3-73, 34-9-200, 51-4-5, 9-3-90, 51-1-29.5, 9-10-184, 24-7-702, 40-6-294, 31-8-1, 4-8-20, 34-9-11.1, 9-11-67.1; SC 38-59-40, 56-5-6160, 38-59-20, 56-5-1290, 15-78-60), plus 16 supporting. SC from scstatehouse.gov. GA from Internet Archive captures of codes.findlaw.com and law.justia.com, because both sites served bot checks to direct requests; FindLaw text is current as of 2024-03-28. SB 68 from legis.ga.gov. 0 unreadable. | **66 live errors on 34 documents; 10 of the 20 sections wrong or mis-cited somewhere.** Worst: post 1690 gives South Carolina an **invented safety-rule benefit reduction** under § 42-9-60, which bars compensation only for intoxication or wilful intent to injure. It appears in five places across the body, FAQ 3 and the key takeaways. ER sub-type 4197 says Georgia does not lower the standard in emergencies, against § 51-1-29.5's gross-negligence / clear-and-convincing rule (uncited). 5145, 5128 and ES 5141 say SC holds ER care to ordinary negligence, against § 15-32-230. § 34-9-200: 1677 says GA medical benefits have no time limit, in five places, against the 400-week limit for post-2013 non-catastrophic injuries. § 9-3-73: the repose (10th birthday) is given as the filing deadline on 1676, 1696 and 4195. § 34-9-17 is cited as an anti-retaliation statute (1662) and given a drug-free-policy precondition (1690). §§ 40-6-294 and 31-8-1 are mis-cited on five pages each. The § 4-8-21 dog definitions are wrong on 4119. § 9-11-67.1's 2024 amendment is dated July 1 instead of April 22 (1722). The wrongful-death deadline is cited to §§ 51-4-5 and 9-3-71 (4360, 1823). The pass also found the inventory's FAQ blind spot (`wp_json_encode` escapes "§"): 304 page-citations and 14 statutes it cannot see. Record: `data/facts/statute-pass-2026-10-24.md`. |
+| 2026-10-24 pass 2 (next 30, re-ranked on the fixed inventory) | 30 in scope (SC 42-9-200, 15-5-100, 56-5-6410, 56-5-3230, 15-3-40, 56-5-3150, 43-35-10, 42-1-560, 50-26-10, 15-3-535, 42-1-160, 56-5-2920, 56-1-460, 42-9-260, 56-5-3110; GA 40-6-305, 40-7-1, 40-6-320, 33-6-34, 34-9-263, 40-6-330, 40-6-93, 34-9-2, 24-4-403, 9-3-72, 40-5-121, 24-8-803, 36-1-4, 40-6-96, 40-13-58), plus supporting. SC from scstatehouse.gov; GA from FindLaw captures current to 2024-03-28 (§ 40-6-320 only to 2021-04-14) and the HB 579 committee substitute. | **39 live errors on 15 documents; 7 of the 30 wrong or mis-cited.** Worst: an **invented Georgia e-scooter rule set** (age 15/16, 20 mph, PTV, bicyclist rights, three feet, sidewalk ban) pinned to § 40-6-320, which covers self-balancing EPAMDs, across 4088 (body, FAQ 0, why-hire), 4224, 4227 and 4229. Golf carts the same way (4090, 4186, 4190): a statewide 25 mph cap, daylight and age 16 that §§ 40-6-330/-331 do not contain. 4478 gave SC driver due care to § 56-5-3150 seven times, with a quote that is not SC text; 1856 cited the white-cane section. The SC three-foot rule was still live on 4639 and 1698. 1837 gave SC a universal abuse-reporting duty. Batch 2 (17 mechanical + F4b, 21 edits on 5 posts) applied the same day; 22 rule rewrites in the attorney packet addendum. Two wrong stored pillar intros (4089, 4090) never render. Record: `data/facts/statute-pass-2-2026-10-24.md`. |
 
 **Three of four passes found a live error, and none surfaced from a sweep looking**
 **for something else.**
@@ -286,6 +292,37 @@ between the two pages gets opposite answers.
 | `SC 38-59-30` | 1 | pass 2026-10-24, supporting. The director, after notice and hearing, orders cease and desist and may impose a § 38-2-10 penalty for § 38-59-20 practices. |
 | `SC 41-1-80` | 2 | pass 2026-10-24, supporting. No discharge or demotion for instituting a workers'-comp proceeding in good faith or testifying; lost wages and reinstatement; burden on the employee; listed affirmative defenses; one-year limitation. HISTORY 1986 Act No. 451. |
 | `GA 40-6-291`, `GA 4-8-21`, `GA 4-8-27`, `GA 31-8-100`, `GA 31-8-108`, `SC 56-5-1280` | 0 | pass 2026-10-24, ahead of first use (they are the corrections' authorities in the pass record). § 40-6-291(a): the chapter's vehicle provisions apply to bicycles; § 4-8-21 / § 4-8-27 as above; § 31-8-100 short title; § 31-8-108 care "adequate and appropriate", "with reasonable care and skill", right to refuse medications; § 56-5-1280 reports by an occupant or owner when the driver cannot. |
+| `SC 42-9-200` | 5 | pass 2 2026-10-24 (scstatehouse.gov). No compensation for the first 7 days; payable from day one if the disability exceeds 14 days. Medical benefits are not subject to the wait (§ 42-15-60). |
+| `SC 15-5-100` | 5 | pass 2 2026-10-24 (scstatehouse.gov). Funeral expenses may be recovered in only one of the two actions. |
+| `SC 56-5-6410` | 4 | pass 2 2026-10-24 (scstatehouse.gov). Rear-facing under 2 until the child outgrows the seat; then a forward-facing harness; a booster from age 4; the adult belt at age 8 or 57 inches, subject to the fit test. |
+| `SC 56-5-3230` | 5 | pass 2 2026-10-24 (scstatehouse.gov). "every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian or any person propelling a human-powered vehicle and shall give an audible signal when necessary and shall exercise proper precaution upon observing any child or any … |
+| `SC 15-3-40` | 4 | pass 2 2026-10-24 (scstatehouse.gov). A minor gets the later of one year after turning 18 or the ordinary period. The insanity extension is capped at 5 years, and at 1 year after the disability ends. |
+| `SC 56-5-3150` | 3 | pass 2 2026-10-24 (scstatehouse.gov). (a) A pedestrian crossing outside a marked crosswalk, or outside an unmarked crosswalk at an intersection, "shall yield the right-of-way to all vehicles upon the roadway."; (c) "Between adjacent intersections at which traffic-control signals are in … **Mis-stated or mis-cited on the site: F4–F16.** |
+| `SC 43-35-10` | 4 | pass 2 2026-10-24 (scstatehouse.gov). § 43-35-10 holds the definitions. HISTORY shows a 2026 Act No. 146 amendment (eff 2026-05-15) that renames agencies only.; § 43-35-85 makes abuse, neglect and exploitation crimes.; § 43-35-25(A) limits the reporting duty. Listed professionals and facility … **Mis-stated or mis-cited on the site: F1–F3.** |
+| `SC 42-1-560` | 4 | pass 2 2026-10-24 (scstatehouse.gov). The employee has one year after acceptance or award to sue. After that, the action is assigned to the carrier on 20 days' notice. 30 days' notice of suit is required. The lien is net of fees, and (f) lets the Commission reduce it. |
+| `SC 50-26-10` | 4 | pass 2 2026-10-24 (scstatehouse.gov). § 50-26-10 is the short title only.; The chapter (§§ 50-26-20 to -70) supplies the rules: no operation under age 6; helmet and safety certificate through age 15; and (§ 50-26-30(B)) a parent may not let an unlicensed rider under 16 carry a passenger. |
+| `SC 15-3-535` | 3 | pass 2 2026-10-24 (scstatehouse.gov). Discovery rule. t15c003.php |
+| `SC 42-1-160` | 3 | pass 2 2026-10-24 (scstatehouse.gov). Injury by accident, including the stress and mental-injury provisions. t42c001.php |
+| `SC 56-5-2920` | 3 | pass 2 2026-10-24 (scstatehouse.gov). $25–$200 or 30 days. A second offense within 5 years carries a 3-month suspension. |
+| `SC 56-1-460` | 3 | pass 2 2026-10-24 (scstatehouse.gov). Driving under suspension. t56c001.php |
+| `SC 42-9-260` | 3 | pass 2 2026-10-24 (scstatehouse.gov). Termination or suspension of compensation. t42c009.php |
+| `SC 56-5-3110` | 3 | pass 2 2026-10-24 (scstatehouse.gov). Pedestrians subject to traffic-control signals. t56c005.php |
+| `GA 40-6-305` | 5 | pass 2 2026-10-24 (legis.ga.gov HB 579 committee substitute). A farmer 16 or older may operate a farm use vehicle (ATV or PTV) on a public road. The vehicle must display the § 40-8-4 slow-moving-vehicle emblem, and the trip must carry farm products or run between the farmer's residence and farm.; § 40-6-306 gives … |
+| `GA 40-7-1` | 5 | pass 2 2026-10-24 (FindLaw, current to 2024). § 40-7-4 bars operation without operative brakes or mufflers, on private property without the owner's express written permission, and within perennial streams. It sets no age rule.; § 40-7-5 lets localities regulate time periods and zones of use.; § 40-7-3 … |
+| `GA 40-6-320` | 4 | pass 2 2026-10-24 (FindLaw via Internet Archive, current 2021-04-14). EPAMDs may use highways and sidewalks, keeping a 48-inch clear path.; They may use a roadway only where the limit is 35 mph or less or there is a striped bicycle lane, and must travel in the direction of traffic.; § 40-6-321 requires due care toward … **Mis-stated or mis-cited on the site: F24–F32.** |
+| `GA 33-6-34` | 4 | pass 2 2026-10-24 (FindLaw, current to 2024). Unfair claims settlement practices. IA capture, current as of 2024-03-28. |
+| `GA 34-9-263` | 4 | pass 2 2026-10-24 (FindLaw, current to 2024). (b)(1): PPD is payable "without regard to whether the employee has suffered economic loss."; (b)(2): PPD is not paid while §§ 34-9-261 or -262 benefits are payable.; (c) schedule: hand 160 weeks, foot 135, eye 150, one ear 75, arm and leg 225, **body as a … **Mis-stated or mis-cited on the site: F22.** |
+| `GA 40-6-330` | 2 | pass 2 2026-10-24 (FindLaw, current to 2024). "Any local authority desiring to establish operating standards for personal transportation vehicles shall comply with Part 6 of this article."; § 40-6-331(a): a local ordinance designates the streets and "establish[es] the conditions under which PTVs may … **Mis-stated or mis-cited on the site: F33–F39.** |
+| `GA 40-6-93` | 3 | pass 2 2026-10-24 (FindLaw, current to 2024). Pedestrian due care / driver due care. Pending pack authority. IA capture, current as of 2024-03-28. |
+| `GA 34-9-2` | 3 | pass 2 2026-10-24 (FindLaw, current to 2024). The Act does not apply "to farm laborers or domestic servants; nor to employers of such employees," nor to employers with fewer than three employees. **Mis-stated or mis-cited on the site: F21.** |
+| `GA 24-4-403` | 3 | pass 2 2026-10-24 (FindLaw, current to 2024). Exclusion of relevant evidence. Current as of 2024-03-28. |
+| `GA 9-3-72` | 3 | pass 2 2026-10-24 (FindLaw, current to 2024). Foreign objects in medical malpractice: one year from discovery. Excludes chemical compounds, fixation devices and prosthetics. |
+| `GA 40-5-121` | 3 | pass 2 2026-10-24 (FindLaw, current to 2024). Driving while license suspended. Current as of 2024-01-01. |
+| `GA 24-8-803` | 3 | pass 2 2026-10-24 (FindLaw, current to 2024). Hearsay exceptions. Current as of 2024-01-01. |
+| `GA 36-1-4` | 3 | pass 2 2026-10-24 (FindLaw, current to 2024). County immunity. "A county is not liable to suit for any cause of action unless made so by statute." |
+| `GA 40-6-96` | 3 | pass 2 2026-10-24 (FindLaw, current to 2024). Use the sidewalk where there is one. Otherwise use the shoulder. Walk on the left of a two-way roadway only where there is neither sidewalk nor shoulder. (b) has a 1,000-foot exception. |
+| `GA 40-13-58` | 3 | pass 2 2026-10-24 (FindLaw, current to 2024). Posting a cash bond and failing to appear "shall be construed as an admission of guilt." **Mis-stated or mis-cited on the site: F23.** |
+| `SC 56-5-500`, `SC 56-5-970`, `SC 56-5-3130`, `SC 56-5-3140`, `SC 56-5-3160`, `SC 56-5-3190`, `SC 15-3-30`, `SC 15-3-50`, `SC 42-1-360`, `SC 43-35-25`, `SC 43-35-85`, `SC 50-26-20`, `SC 50-26-30`, `SC 50-26-40`, `SC 50-26-50`, `SC 50-26-60`, `SC 50-26-70`, `GA 40-6-330.1`, `GA 40-6-331`, `GA 40-6-321`, `GA 40-1-1`, `GA 40-7-3`, `GA 40-7-4`, `GA 40-7-5`, `GA 40-6-306`, `GA 40-6-307` | 27 across 12 cited | pass 2 2026-10-24, supporting (scstatehouse.gov t56c005, t15c003, t42c001, t43c035, t50c026; GA from FindLaw captures current to 2024, §§ 40-6-306/-307 from the HB 579 committee substitute). § 56-5-500 and §§ 56-5-3130/-3160/-3190 re-read by the strategist on scstatehouse.gov for batch 2. |
 
 ### Verified via pack authority (reconciled 2026-10-24)
 
@@ -323,60 +360,52 @@ recorded in this file. They are on the inventory basis, as of 2026-10-24. The da
 
 ## Not yet verified — top 30 by exposure
 
-Rebuilt 2026-10-24 from `data/facts/statute-inventory-2026-10-24.txt` (inventory basis; pack
-authorities and every row above excluded). Twenty-nine sections are cited on three or more pages.
-The 30th place is a 48-way tie at two pages, listed after the table.
+Rebuilt 2026-10-24 after pass 2 and batch 2, from `data/facts/statute-inventory-2026-10-24-batch2.txt`
+(the fixed inventory: FAQ, key takeaways and pillar meta included). Excluded: every section in
+## Verified and every verified pack authority. Ordered by pages, then by surface weight (FAQ, key
+takeaways, why-hire, excerpt and meta description render into structured data or above the fold).
+
+The exposure curve has flattened: after pass 2 only four unverified sections sit on three pages,
+and none on more. The rest of the list is a two-page tail.
 
 | Statute | Pages | Surfaces |
 |---|---:|---|
-| `GA 34-9-263` | 4 | post_content, KT |
-| `GA 40-6-305` | 4 | post_content |
-| `GA 40-6-320` | 4 | post_content |
-| `GA 40-7-1` | 4 | post_content |
-| `SC 15-3-40` | 4 | post_content, KT (pending pack authority) |
-| `SC 42-1-560` | 4 | post_content, KT |
-| `SC 43-35-10` | 4 | post_content, KT |
-| `SC 56-5-3150` | 4 | post_content |
-| `SC 56-5-3230` | 4 | post_content, KT, FAQ |
-| `GA 24-4-403` | 3 | post_content |
-| `GA 24-8-803` | 3 | post_content, KT |
-| `GA 33-6-34` | 3 | post_content, KT |
-| `GA 34-9-104` | 3 | post_content |
-| `GA 36-1-4` | 3 | post_content |
-| `GA 40-13-58` | 3 | post_content |
-| `GA 40-5-121` | 3 | post_content |
-| `GA 40-6-123` | 3 | post_content |
-| `GA 40-6-181` | 3 | post_content |
-| `GA 40-6-330` | 3 | post_content |
-| `GA 40-6-96` | 3 | post_content |
-| `GA 9-3-72` | 3 | post_content |
-| `SC 15-5-100` | 3 | post_content, KT |
-| `SC 42-1-160` | 3 | post_content |
-| `SC 42-9-200` | 3 | post_content, KT |
-| `SC 42-9-260` | 3 | post_content |
-| `SC 44-7-110` | 3 | post_content |
-| `SC 50-26-10` | 3 | post_content |
-| `SC 56-1-460` | 3 | post_content |
-| `SC 56-5-2920` | 3 | post_content, KT |
+| `GA 34-9-104` | 3 | body |
+| `GA 40-6-123` | 3 | body |
+| `GA 40-6-181` | 3 | body |
+| `SC 44-7-110` | 3 | body |
+| `GA 15-19-14` | 2 | body, FAQ, KT |
+| `GA 24-6-601` | 2 | body, FAQ, KT |
+| `GA 44-14-470` | 2 | body, FAQ, KT |
+| `GA 9-11-35` | 2 | body, FAQ, KT |
+| `GA 9-2-41` | 2 | body, FAQ, KT |
+| `GA 20-2-324.1` | 2 | body, FAQ |
+| `GA 24-6-609` | 2 | body, FAQ |
+| `GA 29-3-3` | 2 | body, FAQ |
+| `GA 34-9-202` | 2 | body, FAQ |
+| `GA 34-9-280` | 2 | body, FAQ |
+| `GA 34-9-8` | 2 | pillar intro (dormant), body, FAQ |
+| `GA 40-5-35` | 2 | body, KT |
+| `GA 40-6-188` | 2 | body, FAQ |
+| `GA 40-6-49` | 2 | body, FAQ |
+| `GA 51-1-11.1` | 2 | body, KT |
+| `GA 51-12-11` | 2 | body, FAQ |
+| `GA 52-7-12` | 2 | body, FAQ, pillar intro (dormant) |
+| `GA 52-7-8.2` | 2 | FAQ |
+| `GA 9-3-96` | 2 | body, FAQ |
+| `SC 38-71-190` | 2 | body, FAQ |
+| `SC 42-11-10` | 2 | body, FAQ |
+| `SC 50-21-145` | 2 | FAQ |
+| `SC 56-5-1520` | 2 | body, KT |
+| `SC 59-63-75` | 2 | body, FAQ |
+| `SC 61-4-580` | 2 | body, FAQ |
+| `SC 62-5-433` | 2 | body, FAQ |
 
-**Tied at 2 pages (48):**
-- GA: 15-19-14, 20-2-324.1, 24-4-404, 24-6-601, 24-6-609, 29-3-3, 34-9-108, 34-9-2, 34-9-202,
-  34-9-262, 40-5-35, 40-6-188, 40-6-20, 40-6-21, 40-6-49, 40-6-90, 40-6-93, 44-14-470, 50-18-72,
-  51-1-11.1, 51-1-6, 51-12-1, 51-12-11, 51-12-15, 51-12-4, 51-2-2, 9-2-41, 9-3-94, 9-3-96.
-- SC: 15-3-30, 15-3-535, 15-78-70, 38-71-190, 41-18-10, 50-21-10, 56-1-221, 56-1-720, 56-3-110,
-  56-5-1520, 56-5-2150, 56-5-2310, 56-5-2945, 56-5-3110, 56-5-3420, 56-5-6410, 56-5-970, 59-63-75,
-  62-5-433.
+…then 24 more at two pages and 163 at one. Regenerate with `bin/inventory-statute-citations.php`.
 
-…and 167 more at one page. The inventory misses 12 further unverified sections (its FAQ blind
-spot):
-- GA 52-7-8.2 (2), GA 34-9-2.1, GA 52-7-14, GA 25-2-40
-- SC 50-21-145 (2), SC 62-3-804, SC 42-15-80, SC 42-1-415, SC 50-21-130, SC 50-21-114,
-  SC 56-5-6420, SC 42-17-60
-
-Regenerate the full list from `bin/inventory-statute-citations.php`.
-
-**Next pass:** the 29 above. `SC 56-5-3230`/`3150` and `GA 40-6-320` are the most-read surfaces.
-`GA 33-6-34` and `GA 24-8-803` sit beside sections this pass found wrong on the same pages.
+**Next pass (pass 3):** the 30 above. At this exposure a 30-section pass covers 64 page-citations, about 2.4 percentage points of
+coverage, so pass 3 should also re-read the claim classes pass 2 found invented (e-scooter,
+golf-cart, three-foot passing) in any new content before it is weighed against more tail sections.
 
 ## Method
 

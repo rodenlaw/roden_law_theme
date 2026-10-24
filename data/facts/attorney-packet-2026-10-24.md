@@ -91,3 +91,77 @@ longer periods cover sexual abuse only, waits on § 15-3-555 being signed.
 | — | § 56-5-6160 pages | The guilty-plea carve-out rests on *Samuel v. Mouzon*. Please confirm. |
 
 **6. Still pending in the SC pack:** § 15-3-555 and § 15-3-40.
+
+---
+
+# Addendum — statute pass 2 (2026-10-24)
+
+Source: `data/facts/statute-pass-2-2026-10-24.md`. Each F number there gives the exact published
+sentence, the proposed correction and the primary text it rests on. The same three answers apply:
+*approve as written*, *approve with this change*, or *don't publish*.
+
+## Tyler Love — Georgia (pass 2)
+
+**Before anything else:** the Georgia text in pass 2 was read from FindLaw captures current to
+March 2024 (§ 40-6-320 and § 40-6-330.1 only to April 2021). Please check the 2024–2026 session
+laws for any e-scooter, PTV or golf-cart act before answering F24–F39.
+
+**1. E-scooters, the worst finding (F24–F29, F32).** 4088 (pillar body, FAQ 0, the "why hire"
+block), 4224, 4227 and 4229 state an age-15 (16 for rentals) minimum, a 20 mph cap, a PTV
+classification, bicyclist rights, three-foot passing and a sidewalk ban, all cited to § 40-6-320.
+That section governs self-balancing EPAMDs (§ 40-1-1(15.4)), and § 40-1-1(43.4) excludes scooters
+from PTVs. Proposed: the site says Georgia has no statewide stand-up e-scooter statute as read, and
+that local ordinances govern.
+
+**2. Golf carts (F33–F37).** 4090 (body, FAQ 0, the "why hire" block) and 4186 state a statewide
+25 mph cap (35 by ordinance), a daylight-only rule and an age-16 rule. §§ 40-6-330 and -331 leave
+the streets and conditions to the local ordinance and require a valid driver's licence. Also
+confirm the learner's-permit point (F33).
+
+**3. Workers' compensation.** F21 (1693 table: the GA farm-labourer exclusion, § 34-9-2, against
+the site's "10-worker exception"; confirm the farm-employer election). F22 (1677: unscheduled PPD
+is body as a whole, 300 weeks, § 34-9-263(c), not earning capacity under a 400-week cap).
+
+**4. Super speeder (F23).** 1790 says paying the fine online is the § 40-13-58 admission; the
+trigger is cash-bond forfeiture (1740 states it correctly). Confirm online payment versus bond
+forfeiture.
+
+**5. Live already, for your confirmation (batch 2, applied 2026-10-24).** Citations removed, no
+rule changed: F30 (4227 FAQ 0, § 40-6-320 dropped), F31 (4229, the "e-scooter statute" clause
+dropped), F38 (4190, § 40-6-330 dropped as the source of the rules-of-the-road duty; **re-cite to
+§ 40-6-91?** — yours to decide, held because no new GA citation goes up unsigned), F39 (4190 FAQ 0,
+§ 40-6-330 dropped). F31's next sentence (negligence per se) needs your read without a scooter
+statute.
+
+**6. Dormant, not live:** the stored golf-cart pillar intro on 4090 carries a 35 mph figure and a
+"§ 40-6-330 to -334" range. Nothing renders it today.
+
+## Graeham C. Gillin — South Carolina (pass 2)
+
+**1. Mandatory reporting (F1–F3).** 1837 (table, body, FAQ 3) says anyone who suspects abuse must
+report. Proposed: listed professionals and caregivers report on reason to believe; anyone else
+with actual knowledge (§ 43-35-25(A)).
+
+**2. Three-foot passing, still live (F17–F19).** 4639 key takeaways and body, and 1698 key
+takeaways ("Both states require 3-foot passing", which contradicts that page's own FAQ 3).
+Proposed: safe operating distance, no fixed number of feet (§ 56-5-3435).
+
+**3. Workers' comp table (F20).** 1693's SC agricultural cell cites the 4-employee threshold; farm
+workers are exempt unless the employer elects coverage (§ 42-1-360).
+
+**4. Live already, for your confirmation (batch 2, applied 2026-10-24).** 4478 and 1856 re-cited
+and quotes replaced with the statute's text, read on scstatehouse.gov 2026-10-24: driver due care
+to § 56-5-3230 (F4–F10; please confirm the quote against your annotated code); the "crossing at
+other than crosswalks" heading and bullets to § 56-5-3150 (F11, F12); § 56-5-3130(a) and (b)
+quoted verbatim (F13, F14), with the unmarked-crosswalk point now resting on the § 56-5-500
+definition; 1856 to § 56-5-3130(b) and § 56-5-3160 (F15, F16).
+
+**5. Wording held for you.**
+- 1856 and 4478: the walking-along-a-highway bullets say sidewalk, else the left side facing
+  traffic. § 56-5-3160(b)–(c) puts the shoulder before the left-side rule. Proposed: "use a
+  sidewalk when one is available, otherwise the shoulder, and walk on the left side facing traffic
+  only where there is neither."
+- 4478: now that § 56-5-3130(a) is quoted in full, its "critical elements" bullets and FAQ 0 state
+  the yield duty without the "signals not in place or not in operation" condition.
+- 4478: the gloss on "notwithstanding" reads it as overriding every other provision; the statute
+  says "notwithstanding other provisions of any local ordinance".
