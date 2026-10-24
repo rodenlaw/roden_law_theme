@@ -18,6 +18,12 @@
   "postplanify": {
     "workspaceId": "4b791a70-2403-46c9-8e82-5ea36b32070d"
   },
+  "recovery": {
+    "_comment": "Recovery gate written 2026-10-24 on the owner's instruction. The switch, recovery.paused, is the owner's: add \"paused\": true here to raise the gate (prepare-handoff.mjs refuses stage 3, guard-paused.sh skips launchd runs). Clearing it is also the owner's, recorded in RECOVERY-LOG.md.",
+    "since": "2026-08-28",
+    "reason": "Content generation paused 2026-08-28 during the legal-accuracy remediation. The autorun published sub-municipal slugs and re-imported corrected statute errors; the GA and SC law packs are not attorney-signed (decision D6) and 257 cited statutes / 396 page-citations are not yet verified against primary text (docs/statute-verification-tracker.md).",
+    "resumeWhen": "Both law packs signed (Tyler Love GA, Graeham C. Gillin SC; plays openItems D6), the statute-verification item closed or no longer blocking, and a fresh claims sweep PASS on the day of resume; then the owner clears recovery.paused and runs autorun-ctl enable."
+  },
   "writer": {
     "agent": "pi-content-writer",
     "expertName": "Eric Roden",

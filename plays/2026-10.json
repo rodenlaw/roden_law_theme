@@ -267,18 +267,8 @@
       "blocking": false
     },
     {
-      "item": "This client has no recovery.paused gate - config.overlay.json carries no localSeo.recovery block and the recovery guard reports clear, so the only hold on the pipeline is a note reading 'resumes on request'. Owner decision on whether to add a real gate.",
+      "item": "Recovery gate block written 2026-10-24 (config.overlay.json localSeo.recovery: since 2026-08-28, reason, resumeWhen = both packs signed + statute item closed + fresh sweep PASS). It carries no paused key yet: the owner adds \"paused\": true to raise it. Until then the only hold is the autorun pause note.",
       "owner": "owner",
-      "blocking": false
-    },
-    {
-      "item": "Two GBP posts pending from the 2026-08-24 run for a sub-municipal North Charleston post; scheduled dates 2026-09-02 and 2026-09-05 have passed. Release or drop.",
-      "owner": "client-ops",
-      "blocking": false
-    },
-    {
-      "item": "No GSC comparison export in data/gsc - the clicks target cannot be measured until one is produced.",
-      "owner": "client-ops",
       "blocking": false
     },
     {
