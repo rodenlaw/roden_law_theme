@@ -257,9 +257,9 @@
       "blocking": true
     },
     {
-      "item": "S.C. Code SS 15-38-15 threshold unresolved - the site states it as '50% or more' and as 'more than 50%', which differ at exactly 50%, the distinction the comparative-negligence guide exists to explain.",
+      "item": "Post 4367 (/blog/south-carolina-comparative-fault-partially-at-fault/) body still says a defendant \"more than 50% at fault may be held jointly and severally liable for economic damages\". S.C. Code § 15-38-15 applies joint and several liability at 50% or more (SC pack, verified by Gillin 2026-09-08). Proposed: \"A defendant found to be 50% or more at fault may be held jointly and severally liable, meaning…\" — held for Gillin to confirm whether dropping \"for economic damages\" is right (the pack entry carries no economic-only limit, but no one has read that point). On his answer, apply with an exact-match bin/ script (pattern: bin/fix-sc-jsl-takeaway-4367.php). The threshold question itself is closed (2026-10-24).",
       "owner": "Graeham C. Gillin",
-      "blocking": true
+      "blocking": false
     },
     {
       "item": "No Study #2 topic is named in the brief. The researchAssets lane is on with the method fixed but the subject unchosen; pick one that FARS or an equivalent primary dataset can carry.",

@@ -3479,3 +3479,27 @@ only.
   - Correction B, which says the longer periods cover sexual abuse only, waits on GA § 9-3-33.1 / § 9-3-33 for
     Roden and SC § 15-3-555 being signed.
   - Items F3 to F6 of the 2026-10-21 plan are still open, and post 4348's FAQ 4 still cites the wrong sections.
+
+## 2026-10-24 — § 15-38-15 threshold: closed; one page corrected, one sentence held
+
+The open item said the site states the § 15-38-15 threshold as both "50% or more" and "more than 50%", which differ
+at exactly 50%. Both phrasings are right, because they belong to two different rules. The SC pack, verified by
+Gillin 2026-09-08, already settles both:
+- **Defendants, § 15-38-15:** joint and several liability applies to a defendant at **50% or more** fault.
+  Below 50%, a defendant pays only their own share.
+- **Plaintiff, *Nelson v. Concrete Supply*, not § 15-38-15:** an injured person is barred at **more than 50%**
+  fault.
+
+A fresh export of all 645 documents, checked on every field: no SC plaintiff bar is stated as "50% or more", and
+9 pages state the defendant threshold correctly. One page was wrong, post 4367
+(`/blog/south-carolina-comparative-fault-partially-at-fault/`):
+- **Key takeaway: fixed** (owner: "ship fix 2 now"). It said "full damages from any at-fault defendant" and now
+  says "to a defendant 50% or more at fault … from that defendant". The fix uses
+  `bin/fix-sc-jsl-takeaway-4367.php`, with an exact-match check, a `wp_slash` write, a read-back, and
+  `_roden_content_modified` set. Backup: `docs/backups/4367-key-takeaways-2026-10-24.json`. Verified: caches
+  flushed, the live page carries the new text, the JSON-LD guard passes, `content/meta.json` is regenerated
+  (1 line), and the fresh re-sweep passes.
+- **Body sentence: held for Gillin** (owner: "hold fix 1"). It still says "more than 50% at fault … jointly and
+  severally liable for economic damages". The proposed wording is "50% or more", without "for economic damages".
+  Gillin needs to confirm that last part, because nobody has checked it. This is carried as a non-blocking open
+  item.
