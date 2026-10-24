@@ -3584,3 +3584,35 @@ Not sent. Sending it is the owner's call.
   statute-verification item closed, a fresh claims sweep PASS on resume day). `local-seo.config.json`
   regenerated with `gen-configs.mjs roden --write --only local-seo`. **The block has no `paused`
   key**: that switch is the owner's, and the guard stays clear until he adds `"paused": true`.
+
+## 2026-10-24 — statute pass 2 and batch 2; downtown Myrtle Beach measured; item 0 corrected
+
+- **Pass 2** (`data/facts/statute-pass-2-2026-10-24.md`): the next 30 sections, re-ranked on the
+  fixed inventory. 23 correct, 7 wrong or mis-cited, 0 repealed; 39 live errors on 15 documents
+  (17 mechanical, 22 rule rewrites). Worst: Georgia e-scooter rules invented and pinned to
+  § 40-6-320 (an EPAMD section) across 4088, 4224, 4227, 4229; golf-cart rules invented under
+  §§ 40-6-330/-331 on 4090, 4186, 4190. GA text read from FindLaw captures current to 2024 (2021
+  for § 40-6-320): Tyler Love to check the 2024–2026 session laws before any GA rewrite.
+- **Batch 2 applied on production** (`bin/fix-statute-pass-2-2026-10-24-batch2.php`, owner yes
+  2026-10-24; backup `docs/backups/statute-pass-2-2026-10-24-batch2.json`): 21 edits in 7 fields on
+  5 posts (4478, 1856, 4227, 4229, 4190). SC re-cites and verbatim quotes read on scstatehouse.gov
+  the same day (§§ 56-5-500, -3130, -3150, -3160, -3230), including F4b, a second § 56-5-3230
+  misquote on 4478 that pass 2 had not listed. Narrowed from the pass: F16 fixed the citation only
+  (shoulder wording to Gillin); F38 dropped § 40-6-330 rather than re-citing § 40-6-91 (no new GA
+  citation while the pack is unsigned). Verified live on all five pages; JSON-LD guard PASS;
+  `content/meta.json` regenerated; fresh claims sweep PASS (645 documents).
+- **Coverage**: 179 / 396 statutes, 2,345 / 2,620 page-citations (89.5%), up from 84.9%.
+  Tracker rows, pass log and a rebuilt top 30 (`docs/statute-verification-tracker.md`).
+- **Attorney packet addendum** appended to `data/facts/attorney-packet-2026-10-24.md` (Love: F21–F39
+  and the batch-2 GA removals; Gillin: F1–F3, F17–F20, the batch-2 SC re-cites and three held
+  wordings on 4478/1856). Not sent.
+- **Dormant**: `_roden_pillar_negligence_intro` is stored but never rendered
+  (`roden_render_pillar_intro()` has no call site). Two stored intros are wrong (4089 ATV
+  passengers, 4090 a 35 mph golf-cart figure); fix before anyone wires the renderer.
+- **Downtown Myrtle Beach scan** (`scan-2026-10-24-7895af`, series "Myrtle Beach (downtown)",
+  11×11, 10 mi, 4 keywords, Local Dominator; toolkit #122 added the centre override): 0.6% green,
+  SoLV 0–1.7%, found only within 9 mi of the Murrells Inlet pin, vs 21.8% on the office grid.
+  Morgan & Morgan, with the same Murrells Inlet setup, holds 86 downtown top-3 spots: the gap is
+  reviews and directories. Item closed; carried to November as a review/directory play.
+- **Plays item 0** corrected: the GA signer is Tyler Love (D6), not Eric Roden; SC is signed by
+  Gillin with two pending authorities.
