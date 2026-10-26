@@ -901,11 +901,14 @@ function roden_sidebar_form_js() {
             }
         })();
 
-        var form = document.getElementById('roden-sidebar-form');
-        if (!form) return;
+        /* Every render of roden_contact_form_sidebar() is wired up. Practice,
+           sub-type, intersection and neighbourhood pages render it twice; with
+           getElementById only the first got this handler, and the second fell
+           through to a native GET submit of the page URL (UI review 2026-10-26). */
+        document.querySelectorAll('form.roden-sidebar-form').forEach(function(form) {
 
         /* --- Phone auto-format: (xxx) xxx-xxxx --- */
-        var phoneInput = document.getElementById('rsf-phone');
+        var phoneInput = form.querySelector('input[name="phone"]');
         if (phoneInput) {
             phoneInput.addEventListener('input', function() {
                 var digits = this.value.replace(/\D/g, '').substring(0, 10);
@@ -917,7 +920,7 @@ function roden_sidebar_form_js() {
         }
 
         /* --- Email validation --- */
-        var emailInput = document.getElementById('rsf-email');
+        var emailInput = form.querySelector('input[name="email"]');
         if (emailInput) {
             emailInput.addEventListener('blur', function() {
                 var v = this.value.trim();
@@ -976,6 +979,8 @@ function roden_sidebar_form_js() {
                 btn.disabled = false;
                 btn.textContent = '<?php echo esc_js( __( 'See If You Qualify', 'roden-law' ) ); ?>';
             });
+        });
+
         });
     })();
     </script>

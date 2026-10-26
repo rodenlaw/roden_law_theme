@@ -35,7 +35,7 @@ Tags: legal, law-firm, personal-injury, custom-theme, schema-markup
     /* Colors */
     --color-navy: #013046;
     --color-orange: #FCB415;
-    --color-orange-text: #B8860B;
+    --color-orange-text: #8A6508;     /* gold for text on light surfaces: 5.32:1 on white, 4.93:1 on #F8F6F2 (was #B8860B, 3.25:1) */
     --color-light: #F8F6F2;
     --color-green: #27AE60;
     --color-white: #FFFFFF;
@@ -443,7 +443,7 @@ input[type="submit"]:focus-visible {
 
 .btn-primary {
     background: var(--color-orange);
-    color: var(--color-white);
+    color: var(--color-navy); /* AA: gold fills carry navy text (white on #FCB415 is 1.80:1). */
 }
 
 .btn-primary:hover,
@@ -466,7 +466,7 @@ input[type="submit"]:focus-visible {
 
 .btn-cta-phone {
     background: transparent;
-    color: var(--color-orange);
+    color: var(--color-orange-text); /* AA on white; gold stays on the border */
     font-size: 1rem;
     font-weight: 700;
     padding: 0.6rem 1.5rem;
@@ -476,7 +476,7 @@ input[type="submit"]:focus-visible {
 
 .btn-cta-phone:hover {
     background: var(--color-orange);
-    color: var(--color-white);
+    color: var(--color-navy);
 }
 
 /* ==========================================================================
@@ -618,7 +618,7 @@ input[type="submit"]:focus-visible {
 
 .badge-sc {
     background: var(--color-orange);
-    color: var(--color-white);
+    color: var(--color-navy); /* AA: gold fills carry navy text (white on #FCB415 is 1.80:1). */
 }
 
 .badge-new {
@@ -878,7 +878,6 @@ input[type="submit"]:focus-visible {
 .footer-office address {
     font-style: normal;
     font-size: 0.875rem;
-    opacity: 0.85;
     line-height: 1.8;
 }
 
@@ -897,7 +896,9 @@ input[type="submit"]:focus-visible {
     justify-content: space-between;
     align-items: center;
     font-size: 0.85rem;
-    opacity: 0.7;
+    /* Was opacity: 0.7, which dimmed the current-language marker to 3.6:1.
+       An explicit muted colour instead (6.66:1 on navy). */
+    color: var(--color-navy-muted);
 }
 
 .footer-bottom a {
@@ -1354,7 +1355,7 @@ input[type="submit"]:focus-visible {
 .btn-cta-submit {
     width: 100%;
     background: var(--color-orange);
-    color: var(--color-white);
+    color: var(--color-navy); /* AA: gold fills carry navy text (white on #FCB415 is 1.80:1). */
     font-size: 1.05rem;
     font-weight: 700;
     padding: 0.85rem var(--space-xl);
@@ -1537,6 +1538,12 @@ body.home .locations-grid {
     color: var(--color-white);
 }
 
+/* The text-gold token is dark (for light surfaces); on this dark card the
+   category label uses the brand gold: 6.34:1 on the card's #133E53. */
+.case-result-card-dark .case-type {
+    color: var(--color-orange);
+}
+
 .case-result-card-dark .case-description,
 .case-result-card-dark .case-label {
     font-size: 0.9rem;
@@ -1582,7 +1589,7 @@ body.home .locations-grid {
     height: 52px;
     border-radius: 50%;
     background: var(--color-orange);
-    color: var(--color-white);
+    color: var(--color-navy); /* AA: gold fills carry navy text (white on #FCB415 is 1.80:1). */
     font-family: var(--font-heading);
     font-size: 1.35rem;
     font-weight: 900;
@@ -1608,7 +1615,7 @@ body.home .locations-grid {
     display: block;
     font-size: 0.78rem;
     font-style: italic;
-    color: var(--color-gray-light);
+    color: var(--color-gray); /* #666, 5.74:1 (was #999, 2.85:1) */
     margin-bottom: 2px;
 }
 
@@ -1746,7 +1753,7 @@ body.home .locations-grid {
 .case-multiplier {
     display: inline-block;
     background: var(--color-orange);
-    color: var(--color-white);
+    color: var(--color-navy); /* AA: gold fills carry navy text (white on #FCB415 is 1.80:1). */
     font-size: 0.78rem;
     font-weight: 700;
     padding: 3px 10px;
@@ -2122,7 +2129,7 @@ a.lang-switcher-item:focus {
 
 .footer-social a:hover {
     background: var(--color-orange);
-    color: var(--color-white);
+    color: var(--color-navy);
 }
 
 /* Practice Area Links */
@@ -2504,7 +2511,7 @@ a.lang-switcher-item:focus {
 
 .roden-other-offices__card .office-badge.badge-sc {
     background: var(--color-orange);
-    color: var(--color-white);
+    color: var(--color-navy); /* AA: gold fills carry navy text (white on #FCB415 is 1.80:1). */
 }
 
 .roden-other-offices__card h4 {
@@ -3394,7 +3401,7 @@ a.lang-switcher-item:focus {
 
 .contact-phone-box {
     background: var(--color-orange);
-    color: var(--color-white);
+    color: var(--color-navy); /* AA: gold fills carry navy text (white on #FCB415 is 1.80:1). */
     border-radius: var(--border-radius);
     padding: var(--space-xl);
     text-align: center;
@@ -3414,13 +3421,13 @@ a.lang-switcher-item:focus {
 .contact-phone-number {
     font-size: 2rem;
     font-weight: 800;
-    color: var(--color-white);
+    color: var(--color-navy);
     text-decoration: none;
     letter-spacing: 0.02em;
 }
 
 .contact-phone-number:hover {
-    color: var(--color-white);
+    color: var(--color-navy);
     opacity: 0.9;
 }
 
@@ -3489,7 +3496,7 @@ a.lang-switcher-item:focus {
 /* Last Updated Date — Freshness signal for AI systems */
 .last-updated {
     font-size: 0.85rem;
-    color: var(--color-text-light, #888);
+    color: var(--color-gray); /* --color-text-light was never defined, so this was #888 (3.54:1) */
     margin: 8px 0 0;
     font-style: italic;
 }
@@ -3556,7 +3563,7 @@ a.lang-switcher-item:focus {
 
 .expert-quote-block .expert-quote-bar {
     font-size: 0.85rem;
-    color: var(--color-text-light, #888);
+    color: var(--color-gray);
 }
 
 /* AI Statistics Block — Extractable firm stats */
@@ -3666,7 +3673,7 @@ a.lang-switcher-item:focus {
 
 .jurisdiction-comparison .comparison-source {
     font-size: 0.85rem;
-    color: var(--color-text-light, #888);
+    color: var(--color-gray);
 }
 
 /* Section lead paragraphs (AI-extractable summaries) */

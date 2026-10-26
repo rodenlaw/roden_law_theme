@@ -1323,13 +1323,21 @@ function roden_neighborhood_grid( $current_post_id ) {
    ========================================================================== */
 
 function roden_contact_form_sidebar( $local_phone = '', $source = '' ) {
+    // Practice, sub-type, intersection and neighbourhood pages render this
+    // form twice (hero and sidebar). Every id is suffixed after the first
+    // render so each label targets its own field: with fixed ids the second
+    // form's labels pointed at the first form's inputs. The first render keeps
+    // the original ids unchanged.
+    static $rsf_instance = 0;
+    $rsf_instance++;
+    $sfx = ( $rsf_instance > 1 ) ? '-' . $rsf_instance : '';
     ?>
     <div class="sidebar-contact-form">
         <h2 class="form-title"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></h2>
         <?php $rf_stats = roden_firm_data(); ?>
         <p class="form-subtitle"><?php esc_html_e( 'No fees unless we win', 'roden-law' ); ?><br><?php printf( /* translators: %d: rounded live Google review count, e.g. 170. */ esc_html__( '%d+ verified Google reviews', 'roden-law' ), (int) $rf_stats['trust_stats']['review_count_rounded'] ); ?></p>
-        <form class="roden-sidebar-form" id="roden-sidebar-form" novalidate>
-            <?php wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce' ); ?>
+        <form class="roden-sidebar-form" id="roden-sidebar-form<?php echo esc_attr( $sfx ); ?>" novalidate>
+            <?php echo str_replace( 'id="roden_form_nonce"', 'id="roden_form_nonce' . esc_attr( $sfx ) . '"', wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce', true, false ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core-escaped nonce markup. ?>
             <input type="hidden" name="gclid" class="roden-gclid" value="">
             <input type="hidden" name="lang" value="<?php echo esc_attr( function_exists( 'roden_current_lang' ) ? roden_current_lang() : 'en' ); ?>">
             <?php if ( $source ) : ?>
@@ -1338,22 +1346,30 @@ function roden_contact_form_sidebar( $local_phone = '', $source = '' ) {
             <div style="position:absolute;left:-9999px;" aria-hidden="true">
                 <input type="text" name="website_url" tabindex="-1" autocomplete="off">
             </div>
+            <?php // Labels are visible: the placeholder alone disappears as soon as
+                  // the visitor types (UI review 2026-10-26, P2). ?>
             <div class="rsf-row rsf-half">
-                <div>
-                    <label for="rsf-first-name" class="screen-reader-text"><?php esc_html_e( 'First Name', 'roden-law' ); ?></label>
-                    <input type="text" name="first_name" id="rsf-first-name" placeholder="<?php esc_attr_e( 'First Name', 'roden-law' ); ?>" autocomplete="given-name" required>
+                <div class="rsf-field">
+                    <label for="rsf-first-name<?php echo esc_attr( $sfx ); ?>" class="rsf-label"><?php esc_html_e( 'First Name', 'roden-law' ); ?></label>
+                    <input type="text" name="first_name" id="rsf-first-name<?php echo esc_attr( $sfx ); ?>" placeholder="<?php esc_attr_e( 'First Name', 'roden-law' ); ?>" autocomplete="given-name" required>
                 </div>
-                <div>
-                    <label for="rsf-last-name" class="screen-reader-text"><?php esc_html_e( 'Last Name', 'roden-law' ); ?></label>
-                    <input type="text" name="last_name" id="rsf-last-name" placeholder="<?php esc_attr_e( 'Last Name', 'roden-law' ); ?>" autocomplete="family-name" required>
+                <div class="rsf-field">
+                    <label for="rsf-last-name<?php echo esc_attr( $sfx ); ?>" class="rsf-label"><?php esc_html_e( 'Last Name', 'roden-law' ); ?></label>
+                    <input type="text" name="last_name" id="rsf-last-name<?php echo esc_attr( $sfx ); ?>" placeholder="<?php esc_attr_e( 'Last Name', 'roden-law' ); ?>" autocomplete="family-name" required>
                 </div>
             </div>
-            <label for="rsf-phone" class="screen-reader-text"><?php esc_html_e( 'Phone Number', 'roden-law' ); ?></label>
-            <input type="tel" name="phone" id="rsf-phone" placeholder="(555) 555-5555" autocomplete="tel" required>
-            <label for="rsf-email" class="screen-reader-text"><?php esc_html_e( 'Email Address', 'roden-law' ); ?></label>
-            <input type="email" name="email" id="rsf-email" placeholder="<?php esc_attr_e( 'Email', 'roden-law' ); ?>" autocomplete="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
-            <label for="rsf-message" class="screen-reader-text"><?php esc_html_e( 'Describe what happened', 'roden-law' ); ?></label>
-            <textarea name="message" id="rsf-message" placeholder="<?php esc_attr_e( 'Please describe what happened', 'roden-law' ); ?>" rows="8"></textarea>
+            <div class="rsf-field">
+                <label for="rsf-phone<?php echo esc_attr( $sfx ); ?>" class="rsf-label"><?php esc_html_e( 'Phone Number', 'roden-law' ); ?></label>
+                <input type="tel" name="phone" id="rsf-phone<?php echo esc_attr( $sfx ); ?>" placeholder="(555) 555-5555" autocomplete="tel" required>
+            </div>
+            <div class="rsf-field">
+                <label for="rsf-email<?php echo esc_attr( $sfx ); ?>" class="rsf-label"><?php esc_html_e( 'Email Address', 'roden-law' ); ?></label>
+                <input type="email" name="email" id="rsf-email<?php echo esc_attr( $sfx ); ?>" placeholder="<?php esc_attr_e( 'Email', 'roden-law' ); ?>" autocomplete="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
+            </div>
+            <div class="rsf-field">
+                <label for="rsf-message<?php echo esc_attr( $sfx ); ?>" class="rsf-label"><?php esc_html_e( 'Describe what happened', 'roden-law' ); ?></label>
+                <textarea name="message" id="rsf-message<?php echo esc_attr( $sfx ); ?>" placeholder="<?php esc_attr_e( 'Please describe what happened', 'roden-law' ); ?>" rows="8"></textarea>
+            </div>
             <label class="rsf-consent">
                 <input type="checkbox" name="consent" value="1" checked required>
                 <span><?php
@@ -4779,4 +4795,35 @@ function roden_practice_index_kept_hub_cards() {
             esc_html( get_the_title( $page ) )
         );
     }
+}
+
+/* ==========================================================================
+   ICONS — inline SVG in place of emoji
+   ========================================================================== */
+
+/**
+ * Inline SVG icon, decorative (aria-hidden), sized 1em and coloured with
+ * currentColor so it takes the font size and colour of the text around it.
+ *
+ * Replaces emoji used as icons (📞 ⚖ 📍 📋 👤 ▶). Emoji render in each
+ * platform's own colour artwork, ignore the brand colours, and are announced by
+ * screen readers ("telephone receiver", "balance scale") before the label
+ * (UI review 2026-10-26, P3). Shapes from Feather / Lucide (MIT / ISC).
+ *
+ * @param string $name phone | scale | pin | clipboard | user | play.
+ * @return string SVG markup ('' for an unknown name).
+ */
+function roden_icon( $name ) {
+    static $shapes = array(
+        'phone'     => '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>',
+        'scale'     => '<path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>',
+        'pin'       => '<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>',
+        'clipboard' => '<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>',
+        'user'      => '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',
+        'play'      => '<polygon points="6 3 20 12 6 21 6 3" fill="currentColor"/>',
+    );
+    if ( ! isset( $shapes[ $name ] ) ) {
+        return '';
+    }
+    return '<svg class="roden-icon roden-icon--' . $name . '" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' . $shapes[ $name ] . '</svg>';
 }

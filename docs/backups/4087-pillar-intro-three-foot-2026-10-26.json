@@ -1,0 +1,15 @@
+{
+    "generated": "2026-10-26T19:27:33+00:00",
+    "mode": "apply",
+    "fields": [
+        {
+            "post": 4087,
+            "field": "pnintro",
+            "before": "Cyclists have the **same rights and duties as motor-vehicle operators** {{GA}}under O.C.G.A. § 40-6-290 to -298{{/GA}}{{SC}}under S.C. Code § 56-5-3410 to -3450{{/SC}}. A **3-foot passing rule** applies to motorists overtaking cyclists ({{GA}}O.C.G.A. § 40-6-56{{/GA}}{{SC}}S.C. Code § 56-5-3435{{/SC}}), violation of which supports negligence per se. Helmet laws are limited — {{GA}}Georgia requires helmets only for riders under 16 (O.C.G.A. § 40-6-296). {{/GA}}{{SC}}South Carolina has no statewide bicycle helmet requirement. {{/SC}}Door-zone collisions, right-hook turns, and intersection failure-to-yield are the most common claim patterns. Filing deadline: {sol_years} years under {sol_cite}.",
+            "after": "Cyclists have the **same rights and duties as motor-vehicle operators** {{GA}}under O.C.G.A. § 40-6-290 to -298{{/GA}}{{SC}}under S.C. Code § 56-5-3410 to -3450{{/SC}}. Motorists overtaking cyclists must keep {{GA}}at least **3 feet** of clearance (O.C.G.A. § 40-6-56){{/GA}}{{SC}}a **safe operating distance** (S.C. Code § 56-5-3435){{/SC}}, violation of which supports negligence per se. Helmet laws are limited — {{GA}}Georgia requires helmets only for riders under 16 (O.C.G.A. § 40-6-296). {{/GA}}{{SC}}South Carolina has no statewide bicycle helmet requirement. {{/SC}}Door-zone collisions, right-hook turns, and intersection failure-to-yield are the most common claim patterns. Filing deadline: {sol_years} years under {sol_cite}.",
+            "ids": [
+                "4087-intro"
+            ]
+        }
+    ]
+}

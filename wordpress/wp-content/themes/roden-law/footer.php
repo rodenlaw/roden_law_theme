@@ -94,7 +94,7 @@ $footer_ga_pillars = array(
                             <a href="<?php echo esc_url( $firm['social']['youtube'] ); ?>"
                                aria-label="<?php esc_attr_e( 'YouTube', 'roden-law' ); ?>"
                                target="_blank" rel="noopener noreferrer nofollow">
-                                <span aria-hidden="true">&#9654;</span>
+                                <span aria-hidden="true"><?php echo roden_icon( 'play' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?></span>
                             </a>
                         <?php endif; ?>
                         <?php if ( ! empty( $firm['social']['instagram'] ) ) : ?>
@@ -274,7 +274,7 @@ $footer_ga_pillars = array(
 
 <!-- Sticky Mobile CTA Bar (visible on mobile after scrolling past hero) -->
 <div class="pa-mobile-cta" aria-label="<?php esc_attr_e( 'Contact Roden Law', 'roden-law' ); ?>">
-    <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="pa-mobile-cta__phone">&#128222; <?php echo esc_html( $firm['phone'] ); ?></a>
+    <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="pa-mobile-cta__phone"><?php echo roden_icon( 'phone' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?> <?php echo esc_html( $firm['phone'] ); ?></a>
     <a href="<?php echo esc_url( roden_lang_home_url( $footer_lang, '/contact/' ) ); ?>" class="pa-mobile-cta__review"><?php esc_html_e( 'Free Review', 'roden-law' ); ?></a>
 </div>
 

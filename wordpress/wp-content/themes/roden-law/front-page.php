@@ -303,7 +303,9 @@ if ( 'es' === $home_lang ) {
 
             <div class="results-carousel">
                 <button class="results-arrow results-arrow-left" aria-label="<?php esc_attr_e( 'Scroll left', 'roden-law' ); ?>">&lsaquo;</button>
-                <div class="results-track">
+                <?php // The scroll container itself is the focusable, labelled region, so
+                      // keyboard users can scroll it (axe scrollable-region-focusable). ?>
+                <div class="results-track" tabindex="0" role="region" aria-label="<?php esc_attr_e( 'Case Results', 'roden-law' ); ?>">
                     <?php
                     while ( $top_results_query->have_posts() ) : $top_results_query->the_post();
                         $amount   = get_post_meta( get_the_ID(), '_roden_case_amount', true );
