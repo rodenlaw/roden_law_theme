@@ -87,3 +87,5 @@ content/meta.*.json
 # Kept out of this public repo: Search Console data and draft correspondence
 data/gsc/
 data/facts/*email-drafts*
+# Attorney review answers (pulled by internal-ai-scripts/scripts/review/review.mjs); the plan is committed
+data/facts/reviews/*/answers-*.json
