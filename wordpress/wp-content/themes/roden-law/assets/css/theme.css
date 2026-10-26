@@ -663,8 +663,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 22px; font-weight: 800; color: var(--navy); margin-bottom: 16px;
     padding-bottom: 10px; border-bottom: 2px solid var(--gray-100);
 }
+/* Body prose is 16px at every width (UI review 2026-10-26, P4): it was
+   14-15px on desktop and mobile alike. Cards, captions and disclaimers keep
+   their own sizes. */
 .main-content > p {
-    font-size: 14px; line-height: 1.85; color: var(--gray-700); margin-bottom: 16px;
+    font-size: 16px; line-height: 1.75; color: var(--gray-700); margin-bottom: 16px;
 }
 
 /* Result cards inside main-content need navy background */
@@ -673,20 +676,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .entry-content { margin-bottom: 32px; }
-.entry-content p { margin-bottom: 16px; font-size: 15px; line-height: 1.75; color: var(--gray-700); }
+.entry-content p { margin-bottom: 16px; font-size: 16px; line-height: 1.75; color: var(--gray-700); }
 .entry-content h2 { font-size: 22px; margin: 32px 0 14px; }
 .entry-content h3 { font-size: 18px; margin: 24px 0 12px; }
 .entry-content h4 { font-size: 16px; margin: 20px 0 10px; }
 .entry-content h5 { font-size: 15px; margin: 18px 0 8px; }
 .entry-content h6 { font-size: 14px; margin: 16px 0 8px; text-transform: uppercase; letter-spacing: 0.5px; }
 .entry-content ul, .entry-content ol { margin: 0 0 16px 24px; }
-.entry-content li { margin-bottom: 6px; font-size: 14px; line-height: 1.75; }
+.entry-content li { margin-bottom: 6px; font-size: 16px; line-height: 1.75; }
 .entry-content strong { color: var(--text-primary); }
 .entry-content blockquote {
     border-left: 4px solid var(--orange); padding: 16px 20px; margin: 16px 0;
     background: var(--light); font-style: italic; color: var(--gray-600);
 }
 .entry-content table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+/* Small screens: post-content tables take the column's width and wrap inside
+   cells instead of widening the page (a resource table was 439px wide). */
+@media (max-width: 600px) {
+    .entry-content table { table-layout: fixed; }
+    .entry-content th, .entry-content td { overflow-wrap: break-word; hyphens: auto; }
+}
 .entry-content th { background: var(--navy); color: var(--white); padding: 10px 14px; text-align: left; font-size: 13px; font-family: var(--font-sans); font-weight: 700; }
 .entry-content td { padding: 10px 14px; border-bottom: 1px solid var(--gray-200); }
 .entry-content tr:nth-child(even) td { background: var(--gray-50); }
@@ -1081,7 +1090,10 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid var(--gray-200);
 }
 .matrix-title { font-size: 17px; font-weight: 800; color: var(--navy); margin-bottom: 14px; }
-.location-matrix-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+/* minmax(0, 1fr): a bare 1fr track cannot shrink below its content's
+   min-content width, and the long unbroken .matrix-url pushed the grid to
+   410px inside a 375px screen (UI review 2026-10-26, P4). */
+.location-matrix-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
 .matrix-card {
     background: var(--white); border: 1px solid var(--gray-300);
     border-radius: var(--radius); padding: 13px 10px; text-align: center;
@@ -1094,7 +1106,7 @@ h1, h2, h3, h4, h5, h6 {
 .matrix-city { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
 .matrix-city a { color: var(--navy); text-decoration: none; }
 .matrix-city a:hover { color: var(--orange); }
-.matrix-url { font-size: 9px; color: var(--gray-400); }
+.matrix-url { font-size: 9px; color: var(--gray-400); overflow-wrap: anywhere; }
 .matrix-card-active {
     border-color: var(--navy); border-top-color: var(--navy);
     background: var(--navy); color: var(--white);
@@ -1182,7 +1194,7 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
     margin-top: 36px;
 }
 .bottom-cta-box h2 { color: var(--white); font-size: 21px; margin-bottom: 10px; }
-.bottom-cta-box p { color: var(--text-light); font-size: 14px; line-height: 1.7; max-width: 500px; margin: 0 auto 20px; }
+.bottom-cta-box p { color: var(--text-light); font-size: 16px; line-height: 1.7; max-width: 500px; margin: 0 auto 20px; }
 .bottom-cta-box .cta-actions { display: flex; gap: 12px; justify-content: center; }
 
 /* ─── STARS ─────────────────────────────────────────────────────────────── */
@@ -1288,7 +1300,7 @@ h2.key-takeaways-title {
     line-height: 1.2;
 }
 .key-takeaways-box p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.65;
     color: var(--text-dark, #333);
     margin: 0;
@@ -1614,7 +1626,7 @@ h2.key-takeaways-title {
 }
 .map-nap-address strong { font-size: 16px; }
 .map-nap-address span { color: var(--text-light); font-size: 14px; }
-.map-nap-actions { display: flex; gap: 10px; }
+.map-nap-actions { display: flex; flex-wrap: wrap; gap: 10px; } /* wraps: the two buttons were 319px in a 295px column */
 
 /* ─── OFFICE PRACTICE PAGE — office block with embedded map ─────────────
    template-intersection.php. The map sits in the light content column, so it
@@ -1676,12 +1688,12 @@ h2.key-takeaways-title {
     box-shadow: var(--shadow);
 }
 .directions-box h3 { font-size: 18px; margin-bottom: 12px; }
-.directions-box p { font-size: 14px; color: var(--gray-600); line-height: 1.7; margin-bottom: 16px; }
+.directions-box p { font-size: 16px; color: var(--gray-600); line-height: 1.7; margin-bottom: 16px; }
 
 /* ─── LOCATION PAGE — Local Content ─────────────────────────────────── */
 
 .local-content { margin-top: 16px; }
-.local-content p { font-size: 14px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 12px; }
+.local-content p { font-size: 16px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 12px; }
 
 /* ─── LOCATION PAGE — Locations Grid (4-col for "other offices") ──────── */
 
@@ -2049,7 +2061,7 @@ body.nav-open { overflow: hidden; }
     .main-content { padding: 24px 0; border-right: none; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
     .location-cards-grid { grid-template-columns: repeat(2, 1fr); }
-    .location-matrix-grid { grid-template-columns: repeat(3, 1fr); }
+    .location-matrix-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .practice-areas-grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
     .stats-bar { grid-template-columns: repeat(3, 1fr); }
     .hero-stats { grid-template-columns: repeat(3, 1fr); }
@@ -2104,6 +2116,14 @@ body.nav-open { overflow: hidden; }
 @media (max-width: 480px) {
     .hero-stats { grid-template-columns: 1fr; gap: 12px; }
     .location-matrix .matrix-grid { grid-template-columns: 1fr; }
+    /* Restated here because the max-width: 900px block above (2 columns)
+       comes later in the file than the original 480px rule and overrode it:
+       two $10,860,000 cards made the location page 480px wide. cols-2 (the
+       attorney pages' detail cards) had no small-screen rule at all: 563px. */
+    .case-results-grid.cols-2,
+    .case-results-grid.cols-3,
+    .case-results-grid.cols-4 { grid-template-columns: 1fr; }
+    .location-matrix-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     /* Stack half-width form fields on small screens */
     .sidebar-contact-form .gform_wrapper ul.gform_fields { grid-template-columns: 1fr; }
     .sidebar-contact-form .gform_wrapper ul.gform_fields li.gf-col-half { grid-column: span 1; }
