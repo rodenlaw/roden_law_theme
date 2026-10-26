@@ -33,7 +33,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
             <div class="hero-content">
                 <div class="speakable-hero" data-speakable="true">
                     <h1 class="hero-title"><?php the_title(); ?></h1>
-                    <p class="hero-jurisdiction">&#9878; <?php esc_html_e( 'Serving:', 'roden-law' ); ?> <strong><?php echo esc_html( $jurisdiction_label ); ?></strong></p>
+                    <p class="hero-jurisdiction"><?php echo roden_icon( 'scale' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?> <?php esc_html_e( 'Serving:', 'roden-law' ); ?> <strong><?php echo esc_html( $jurisdiction_label ); ?></strong></p>
                 </div>
                 <div class="speakable-intro" data-speakable="true">
                     <?php if ( $hero_intro ) : ?>
@@ -48,7 +48,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 <?php roden_stats_bar(); ?>
 
                 <div class="hero-actions">
-                    <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="btn btn-primary btn-lg">&#128222; <?php printf( /* translators: %s: phone number. */ esc_html__( 'Call %s', 'roden-law' ), esc_html( $firm['phone'] ) ); ?></a>
+                    <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="btn btn-primary btn-lg"><?php echo roden_icon( 'phone' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?> <?php printf( /* translators: %s: phone number. */ esc_html__( 'Call %s', 'roden-law' ), esc_html( $firm['phone'] ) ); ?></a>
                 </div>
             </div>
             <div class="hero-form">
@@ -80,7 +80,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                          alt="<?php printf( /* translators: %s: bar association name. */ esc_attr__( '%s Member Badge', 'roden-law' ), esc_attr( $badge['name'] ) ); ?>"
                          width="32" height="32" loading="lazy">
                 <?php else : ?>
-                    <span class="trust-badge__icon">&#9878;</span>
+                    <span class="trust-badge__icon"><?php echo roden_icon( 'scale' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?></span>
                 <?php endif; ?>
                 <span class="trust-badge__name"><?php echo esc_html( $badge['name'] ); ?></span>
             </div>
@@ -347,7 +347,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                                 // Same English; the context lets Spanish say "Reclamo"
                                 // (a comp claim) rather than "Demanda" (a lawsuit) (T-ES6).
                                 ?>
-                                <span class="sol-state">&#127825; <?php echo esc_html( $pa_is_statutory ? _x( 'Georgia Filing Deadline', 'workers compensation claim', 'roden-law' ) : __( 'Georgia Filing Deadline', 'roden-law' ) ); ?></span>
+                                <span class="sol-state"><?php echo esc_html( $pa_is_statutory ? _x( 'Georgia Filing Deadline', 'workers compensation claim', 'roden-law' ) : __( 'Georgia Filing Deadline', 'roden-law' ) ); ?></span>
                                 <span class="sol-years"><?php echo esc_html( $pa_sol_years( $pa_sol_ga ) ); ?></span>
                                 <span class="sol-cite"><?php echo esc_html( $pa_sol_ga['is_override'] ? ( $pa_sol_ga['deadline_detail'] ?: $pa_sol_ga['statute_cite'] ) : $sol_ga ); ?></span>
                                 <?php if ( $pa_sol_ga['notice_detail'] ) : ?>
@@ -357,7 +357,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                         <?php endif; ?>
                         <?php if ( $sol_sc && in_array( $jurisdiction, array( 'both', 'sc', 'SC' ) ) ) : ?>
                             <div class="sol-card sol-sc">
-                                <span class="sol-state">&#127769; <?php echo esc_html( $pa_is_statutory ? _x( 'South Carolina Filing Deadline', 'workers compensation claim', 'roden-law' ) : __( 'South Carolina Filing Deadline', 'roden-law' ) ); ?></span>
+                                <span class="sol-state"><?php echo esc_html( $pa_is_statutory ? _x( 'South Carolina Filing Deadline', 'workers compensation claim', 'roden-law' ) : __( 'South Carolina Filing Deadline', 'roden-law' ) ); ?></span>
                                 <span class="sol-years"><?php echo esc_html( $pa_sol_years( $pa_sol_sc ) ); ?></span>
                                 <span class="sol-cite"><?php echo esc_html( $pa_sol_sc['is_override'] ? ( $pa_sol_sc['deadline_detail'] ?: $pa_sol_sc['statute_cite'] ) : $sol_sc ); ?></span>
                                 <?php if ( $pa_sol_sc['notice_detail'] ) : ?>
@@ -496,13 +496,13 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 <div class="pa-fault__grid">
                     <?php if ( in_array( $jurisdiction, array( 'both', 'ga' ), true ) ) : ?>
                     <div class="pa-fault__box pa-fault__box--ga">
-                        <h3>&#127825; <?php esc_html_e( 'Georgia — Modified Comparative Fault', 'roden-law' ); ?></h3>
+                        <h3><?php esc_html_e( 'Georgia — Modified Comparative Fault', 'roden-law' ); ?></h3>
                         <p><?php printf( /* translators: %s: the phrase "less than 50% at fault" wrapped in <strong>. */ esc_html__( 'You can recover if %s (O.C.G.A. § 51-12-33). Your award is reduced by your fault percentage.', 'roden-law' ), '<strong>' . esc_html__( 'less than 50% at fault', 'roden-law' ) . '</strong>' ); ?></p>
                     </div>
                     <?php endif; ?>
                     <?php if ( in_array( $jurisdiction, array( 'both', 'sc' ), true ) ) : ?>
                     <div class="pa-fault__box pa-fault__box--sc">
-                        <h3>&#127769; <?php esc_html_e( 'South Carolina — Modified Comparative Fault', 'roden-law' ); ?></h3>
+                        <h3><?php esc_html_e( 'South Carolina — Modified Comparative Fault', 'roden-law' ); ?></h3>
                         <p><?php printf( /* translators: %s: the phrase "less than 51% at fault" wrapped in <strong>. */ esc_html__( 'You can recover if %s. Your award is reduced by your fault percentage.', 'roden-law' ), '<strong>' . esc_html__( 'less than 51% at fault', 'roden-law' ) . '</strong>' ); ?></p>
                     </div>
                     <?php endif; ?>
@@ -594,7 +594,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                             <?php if ( has_post_thumbnail( $atty ) ) : ?>
                                 <?php echo get_the_post_thumbnail( $atty, 'thumbnail', array( 'alt' => esc_attr( sprintf( /* translators: 1: attorney name; 2: attorney title. */ __( '%1$s, %2$s at Roden Law', 'roden-law' ), $atty->post_title, $atty_title ) ) ) ); ?>
                             <?php else : ?>
-                                <div class="author-photo-placeholder">&#128100;</div>
+                                <div class="author-photo-placeholder"><?php echo roden_icon( 'user' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?></div>
                             <?php endif; ?>
                         </div>
                         <div class="author-info">
@@ -803,7 +803,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 }
                 ?></p>
                 <div class="cta-actions">
-                    <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="btn btn-primary">&#128222; <?php printf( /* translators: %s: phone number. */ esc_html__( 'Call %s', 'roden-law' ), esc_html( $firm['phone'] ) ); ?></a>
+                    <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="btn btn-primary"><?php echo roden_icon( 'phone' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?> <?php printf( /* translators: %s: phone number. */ esc_html__( 'Call %s', 'roden-law' ), esc_html( $firm['phone'] ) ); ?></a>
                     <a href="#contact" class="btn btn-outline-light"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></a>
                 </div>
             </div>

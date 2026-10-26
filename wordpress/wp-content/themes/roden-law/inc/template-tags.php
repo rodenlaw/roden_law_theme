@@ -4796,3 +4796,34 @@ function roden_practice_index_kept_hub_cards() {
         );
     }
 }
+
+/* ==========================================================================
+   ICONS — inline SVG in place of emoji
+   ========================================================================== */
+
+/**
+ * Inline SVG icon, decorative (aria-hidden), sized 1em and coloured with
+ * currentColor so it takes the font size and colour of the text around it.
+ *
+ * Replaces emoji used as icons (📞 ⚖ 📍 📋 👤 ▶). Emoji render in each
+ * platform's own colour artwork, ignore the brand colours, and are announced by
+ * screen readers ("telephone receiver", "balance scale") before the label
+ * (UI review 2026-10-26, P3). Shapes from Feather / Lucide (MIT / ISC).
+ *
+ * @param string $name phone | scale | pin | clipboard | user | play.
+ * @return string SVG markup ('' for an unknown name).
+ */
+function roden_icon( $name ) {
+    static $shapes = array(
+        'phone'     => '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>',
+        'scale'     => '<path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>',
+        'pin'       => '<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>',
+        'clipboard' => '<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>',
+        'user'      => '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',
+        'play'      => '<polygon points="6 3 20 12 6 21 6 3" fill="currentColor"/>',
+    );
+    if ( ! isset( $shapes[ $name ] ) ) {
+        return '';
+    }
+    return '<svg class="roden-icon roden-icon--' . $name . '" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' . $shapes[ $name ] . '</svg>';
+}

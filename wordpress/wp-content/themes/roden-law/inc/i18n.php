@@ -544,8 +544,13 @@ function roden_language_switcher( $context = 'topbar' ) {
         'en' => __( 'English', 'roden-law' ),
         'es' => __( 'Español', 'roden-law' ),
     );
+    // Only the top-bar copy is a navigation landmark. The footer copy repeats
+    // the same two links, and two "Language" nav landmarks with the same name
+    // fail landmark-unique (UI review 2026-10-26); it renders as a labelled
+    // group instead. Styling hooks on .lang-switcher, not the element.
+    $tag = ( 'topbar' === $context ) ? 'nav' : 'div';
     ?>
-    <nav class="lang-switcher lang-switcher--<?php echo esc_attr( $context ); ?>"
+    <<?php echo $tag; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- fixed literal. ?> class="lang-switcher lang-switcher--<?php echo esc_attr( $context ); ?>"<?php echo ( 'div' === $tag ) ? ' role="group"' : ''; ?>
          aria-label="<?php esc_attr_e( 'Language', 'roden-law' ); ?>">
         <?php foreach ( $langs as $code => $label ) :
             $is_current = ( $code === $current );
@@ -560,7 +565,7 @@ function roden_language_switcher( $context = 'topbar' ) {
                    title="<?php echo esc_attr( $label ); ?>"><?php echo esc_html( strtoupper( $code ) ); ?></a>
             <?php endif; ?>
         <?php endforeach; ?>
-    </nav>
+    </<?php echo $tag; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- fixed literal. ?>>
     <?php
 }
 

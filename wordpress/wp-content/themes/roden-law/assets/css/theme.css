@@ -20,7 +20,7 @@
     --orange:       #FCB415;
     --orange-light: #FDC94A;
     --orange-dark:  #D49B00;
-    --orange-text:  #B8860B;
+    --orange-text:  #8A6508; /* text gold on light surfaces, AA (was #B8860B, 3.25:1) */
     --green:        #27AE60;
     --light:        #F8F6F2;
     --white:        #ffffff;
@@ -264,8 +264,14 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none; flex-shrink: 0;
     transition: var(--transition);
 }
-.mobile-phone-cta:hover { background: var(--orange-text, #e0a010); }
-.mobile-phone-cta svg { display: block; }
+.mobile-phone-cta:hover { background: var(--orange-dark); }
+.mobile-phone-cta svg { display: block; color: var(--navy); } /* icon on gold: navy 7.72:1 (white was 1.80:1) */
+
+/* Inline SVG icons from roden_icon() (replaced emoji, UI review 2026-10-26). */
+.roden-icon { display: inline-block; width: 1em; height: 1em; vertical-align: -0.125em; flex-shrink: 0; }
+
+/* The case-results scroller is focusable (front-page.php); show where focus is. */
+.results-track:focus-visible { outline: 2px solid var(--orange); outline-offset: 4px; border-radius: 4px; }
 
 /* Mobile Toggle */
 .mobile-toggle {
@@ -339,7 +345,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .hero-jurisdiction strong { color: var(--white); }
 .hero-subtitle {
-    color: var(--text-light); font-size: 15px; line-height: 1.75;
+    /* Same treatment as the case-results hero: white at 85%, about 10:1 on the
+       hero navy. #AAB4C8 passed AA (5.7-6.6:1 measured) but read as grey. */
+    color: rgba(255,255,255,0.85); font-size: 15px; line-height: 1.75;
     margin-bottom: 24px; max-width: 560px;
 }
 .hero-subtitle strong { color: var(--white); }
@@ -446,7 +454,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2px 8px; border-radius: 3px; margin-bottom: 8px;
 }
 .state-ga, .location-state-badge.state-ga { background: var(--navy); }
-.state-sc, .location-state-badge.state-sc { background: var(--orange); }
+.state-sc, .location-state-badge.state-sc { background: var(--orange); color: var(--navy); }
 .location-city { font-size: 15px; font-weight: 800; margin-bottom: 6px; }
 .location-city a { color: var(--navy); }
 .location-city a:hover { color: var(--orange-text); }
@@ -494,6 +502,8 @@ h1, h2, h3, h4, h5, h6 {
 .results-disclaimer {
     font-size: 11px; color: var(--gray-400); font-style: italic; margin-top: 12px;
 }
+/* #767676 passes on white (4.54:1) but not on navy sections (3.06:1). */
+.bg-navy .results-disclaimer, .hero .results-disclaimer { color: var(--text-light); }
 
 /* Card link wrapper. color: inherit and no underline so the card renders
    exactly as it did when it was an unlinked div -- every inner element sets
@@ -692,8 +702,15 @@ h1, h2, h3, h4, h5, h6 {
 .entry-content td { padding: 10px 14px; border-bottom: 1px solid var(--gray-200); }
 .entry-content tr:nth-child(even) td { background: var(--gray-50); }
 .entry-content img { border-radius: var(--radius); margin: 16px 0; }
-.entry-content a { color: var(--navy); text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 2px; }
-.entry-content a:hover { color: var(--orange-text); }
+/* Links inside prose are underlined so they are not told apart by colour
+   alone. .pa-why-hire__body is a the_content() wrapper shared by the practice,
+   sub-type and intersection templates; .pa-canonical-link is a prose line. */
+.entry-content a,
+.pa-why-hire__body a,
+.pa-canonical-link a { color: var(--navy); text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 2px; }
+.entry-content a:hover,
+.pa-why-hire__body a:hover,
+.pa-canonical-link a:hover { color: var(--orange-text); }
 
 /* ─── SUB-TYPES GRID ───────────────────────────────────────────────────── */
 
@@ -801,7 +818,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px; margin-bottom: 14px;
 }
 .state-badge.state-ga { background: var(--navy); border: 1px solid rgba(255,255,255,0.3); }
-.state-badge.state-sc { background: var(--orange); }
+.state-badge.state-sc { background: var(--orange); color: var(--navy); }
 
 /* ─── SIDEBAR WIDGETS ──────────────────────────────────────────────────── */
 
@@ -1028,7 +1045,7 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-contact-form .form-disclaimer {
     text-align: center;
     font-size: 11px;
-    color: var(--gray-500);
+    color: var(--text-light); /* 6.66:1 on the navy panel (was #717171, 2.84:1) */
     margin: 12px 0 0;
     line-height: 1.5;
 }
@@ -1053,7 +1070,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nap-card-name { font-weight: 800; color: var(--navy); font-size: 14px; margin-bottom: 4px; }
 .nap-card-phone {
-    display: block; color: var(--orange); font-weight: 700; font-size: 16px;
+    display: block; color: var(--orange-text); font-weight: 700; font-size: 16px;
     margin: 10px 0;
 }
 
@@ -1064,9 +1081,9 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 6px; padding: 10px 6px;
 }
 .deadline-ga { background: var(--navy); }
-.deadline-sc { background: var(--orange); }
+.deadline-sc { background: var(--orange); color: var(--navy); }
 .deadline-years { display: block; font-size: 20px; font-weight: 900; }
-.deadline-state { display: block; font-size: 9px; margin-top: 2px; opacity: 0.8; }
+.deadline-state { display: block; font-size: 11px; margin-top: 2px; }
 .deadline-cite { font-size: 11px; color: var(--gray-600); text-align: center; margin: 0 0 8px; }
 .deadline-notice {
     font-size: 11px; line-height: 1.45; color: var(--gray-700);
@@ -1119,7 +1136,8 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--navy); color: var(--white);
 }
 .matrix-card-active .matrix-city { color: var(--white); }
-.matrix-card-active .matrix-state { background: var(--orange); }
+.matrix-card-active .matrix-state { background: var(--orange); color: var(--navy); }
+.matrix-state.state-sc { color: var(--navy); }
 .matrix-current {
     display: block; font-size: 9px; color: rgba(255,255,255,0.6);
     text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px;
@@ -1584,7 +1602,7 @@ h2.key-takeaways-title {
     margin-top: 32px; padding: 24px 0 0;
 }
 .footer-disclaimers p {
-    font-size: 11px; color: #7a8aa0; line-height: 1.7; margin-bottom: 12px;
+    font-size: 11px; color: var(--text-light); line-height: 1.7; margin-bottom: 12px; /* was #7a8aa0, 4.18:1 */
 }
 .footer-disclaimers p:last-child { margin-bottom: 0; }
 .footer-disclaimers strong { color: #aab4c8; }
@@ -1594,9 +1612,9 @@ h2.key-takeaways-title {
     margin-top: 24px; padding: 16px 0 24px;
 }
 .footer-bottom-inner { text-align: center; max-width: var(--container); margin: 0 auto; }
-.footer-bottom p { font-size: 11px; color: #7a8aa0; margin-bottom: 8px; }
+.footer-bottom p { font-size: 11px; color: var(--text-light); margin-bottom: 8px; }
 .footer-disclaimer { font-size: 10px; color: #5a6a80; line-height: 1.6; }
-.footer-privacy-link { color: #8ab4d4; text-decoration: none; }
+.footer-privacy-link { color: #8ab4d4; text-decoration: underline; text-underline-offset: 2px; } /* in-text link: underlined, not colour alone */
 .footer-privacy-link:hover { color: var(--white); text-decoration: underline; }
 
 /* ─── 404 ──────────────────────────────────────────────────────────────── */
@@ -1773,7 +1791,7 @@ h2.key-takeaways-title {
 /* ─── LOCATION PAGE — Hero Description ────────────────────────────────── */
 
 .hero-description {
-    color: var(--text-light); font-size: 15px; line-height: 1.75;
+    color: rgba(255,255,255,0.85); font-size: 15px; line-height: 1.75;
     margin-bottom: 24px; max-width: 560px;
 }
 .hero-description strong { color: var(--white); }
@@ -1792,7 +1810,7 @@ h2.key-takeaways-title {
     padding: 3px 10px; border-radius: 3px; letter-spacing: 1px; margin-bottom: 8px;
 }
 .badge-ga { background: var(--navy); }
-.badge-sc { background: var(--orange); }
+.badge-sc { background: var(--orange); color: var(--navy); }
 
 /* ─── AUTHOR ATTRIBUTION (roden_author_attribution function) ───────────── */
 

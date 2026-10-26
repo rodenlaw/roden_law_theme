@@ -21,7 +21,7 @@
             <div class="hero-content">
                 <div class="speakable-hero" data-speakable="true">
                     <h1 class="hero-title"><?php the_title(); ?></h1>
-                    <p class="hero-jurisdiction">&#9878; <?php esc_html_e( 'SERVING:', 'roden-law' ); ?> <strong><?php echo esc_html( $jurisdiction_label ); ?></strong></p>
+                    <p class="hero-jurisdiction"><?php echo roden_icon( 'scale' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?> <?php esc_html_e( 'SERVING:', 'roden-law' ); ?> <strong><?php echo esc_html( $jurisdiction_label ); ?></strong></p>
                 </div>
                 <?php if ( has_excerpt() ) : ?>
                     <p class="hero-subtitle"><?php echo wp_kses_post( get_the_excerpt() ); ?></p>
@@ -32,7 +32,7 @@
                 <?php roden_stats_bar(); ?>
 
                 <div class="hero-actions">
-                    <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary btn-lg">&#128222; <?php printf( /* translators: %s: phone number. */ esc_html__( 'Call %s', 'roden-law' ), esc_html( $firm['phone'] ) ); ?></a>
+                    <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary btn-lg"><?php echo roden_icon( 'phone' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?> <?php printf( /* translators: %s: phone number. */ esc_html__( 'Call %s', 'roden-law' ), esc_html( $firm['phone'] ) ); ?></a>
                 </div>
             </div>
             <div class="hero-form">
@@ -241,7 +241,7 @@
                         <?php if ( has_post_thumbnail( $atty ) ) : ?>
                             <?php echo get_the_post_thumbnail( $atty, 'thumbnail', array( 'alt' => esc_attr( sprintf( /* translators: 1: attorney name; 2: attorney title. */ __( '%1$s, %2$s at Roden Law', 'roden-law' ), $atty->post_title, $atty_title ) ) ) ); ?>
                         <?php else : ?>
-                            <div class="author-photo-placeholder">&#128100;</div>
+                            <div class="author-photo-placeholder"><?php echo roden_icon( 'user' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?></div>
                         <?php endif; ?>
                     </div>
                     <div class="author-info">
@@ -280,7 +280,7 @@
                 }
                 ?></p>
                 <div class="cta-actions">
-                    <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary">&#128222; <?php printf( /* translators: %s: phone number. */ esc_html__( 'Call %s', 'roden-law' ), esc_html( $firm['phone'] ) ); ?></a>
+                    <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary"><?php echo roden_icon( 'phone' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?> <?php printf( /* translators: %s: phone number. */ esc_html__( 'Call %s', 'roden-law' ), esc_html( $firm['phone'] ) ); ?></a>
                     <a href="#contact" class="btn btn-outline-light"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></a>
                 </div>
             </div>
@@ -293,7 +293,7 @@
                 <!-- Back to Pillar -->
                 <?php if ( $parent_post ) : ?>
                 <div class="sidebar-widget">
-                    <h3 class="widget-title">&#128203; <?php esc_html_e( 'Main Practice Area', 'roden-law' ); ?></h3>
+                    <h3 class="widget-title"><?php echo roden_icon( 'clipboard' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?> <?php esc_html_e( 'Main Practice Area', 'roden-law' ); ?></h3>
                     <a href="<?php echo esc_url( $parent_url ); ?>" class="sidebar-back-link">&larr; <?php echo esc_html( $parent_title ); ?></a>
                 </div>
                 <?php endif; ?>
@@ -313,7 +313,7 @@
                 <!-- Location Pages -->
                 <?php if ( ! empty( $sibling_intersections ) ) : ?>
                 <div class="sidebar-widget">
-                    <h3 class="widget-title">&#128205; <?php esc_html_e( 'See by Location', 'roden-law' ); ?></h3>
+                    <h3 class="widget-title"><?php echo roden_icon( 'pin' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?> <?php esc_html_e( 'See by Location', 'roden-law' ); ?></h3>
                     <ul class="sidebar-links">
                         <?php foreach ( $sibling_intersections as $int_page ) :
                             $int_office  = get_post_meta( $int_page->ID, '_roden_pa_office_key', true );

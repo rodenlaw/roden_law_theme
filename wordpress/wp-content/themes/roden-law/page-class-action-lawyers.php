@@ -24,7 +24,7 @@ $firm = roden_firm_data();
             <div class="hero-content">
                 <div class="speakable-hero" data-speakable="true">
                     <h1 class="hero-title">Class Action Lawyers</h1>
-                    <p class="hero-jurisdiction">&#9878; Serving: <strong>Georgia &amp; South Carolina</strong></p>
+                    <p class="hero-jurisdiction"><?php echo roden_icon( 'scale' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?> Serving: <strong>Georgia &amp; South Carolina</strong></p>
                 </div>
                 <div class="speakable-intro" data-speakable="true">
                     <p class="hero-subtitle">Our mass tort and class action attorneys represent individuals and families harmed by dangerous drugs, defective products, toxic chemicals, and corporate negligence. If you or a loved one has been affected, we can help you pursue the compensation you deserve.</p>
@@ -33,7 +33,7 @@ $firm = roden_firm_data();
                 <?php roden_stats_bar(); ?>
 
                 <div class="hero-actions">
-                    <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="btn btn-primary btn-lg">&#128222; Call <?php echo esc_html( $firm['phone'] ); ?></a>
+                    <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="btn btn-primary btn-lg"><?php echo roden_icon( 'phone' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?> Call <?php echo esc_html( $firm['phone'] ); ?></a>
                 </div>
             </div>
             <div class="hero-form">
@@ -65,7 +65,7 @@ $firm = roden_firm_data();
                          alt="<?php echo esc_attr( $badge['name'] ); ?> Member Badge"
                          width="32" height="32" loading="lazy">
                 <?php else : ?>
-                    <span class="trust-badge__icon">&#9878;</span>
+                    <span class="trust-badge__icon"><?php echo roden_icon( 'scale' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?></span>
                 <?php endif; ?>
                 <span class="trust-badge__name"><?php echo esc_html( $badge['name'] ); ?></span>
             </div>
@@ -242,7 +242,7 @@ $firm = roden_firm_data();
                 <h2>Contact Our Class Action Lawyers Today</h2>
                 <p>If you or a loved one has been harmed by a dangerous product, drug, or toxic substance, contact us for a free, no-obligation case review. Our mass tort attorneys have the resources and experience to take on large corporations and fight for the compensation you deserve &mdash; at no upfront cost.</p>
                 <div class="cta-actions">
-                    <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="btn btn-primary">&#128222; Call <?php echo esc_html( $firm['phone'] ); ?></a>
+                    <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="btn btn-primary"><?php echo roden_icon( 'phone' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?> Call <?php echo esc_html( $firm['phone'] ); ?></a>
                     <a href="#contact" class="btn btn-outline-light">Free Case Review</a>
                 </div>
             </div>
