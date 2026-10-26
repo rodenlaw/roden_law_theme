@@ -1,0 +1,232 @@
+{
+    "generated": "2026-10-26T17:35:08+00:00",
+    "mode": "apply",
+    "fields": [
+        {
+            "post": 3616,
+            "field": "faqs",
+            "before": [
+                {
+                    "question": "What should I do immediately after a boating accident?",
+                    "answer": "First, ensure the safety of all passengers and render aid to anyone injured. Call 911 and the nearest DNR law enforcement. Take photos and video of the damage, water conditions, and any injuries. Exchange information with the other boat operator(s), including boat registration numbers and insurance information. Get contact information from witnesses. In Georgia, accidents involving death, injury, or property damage over $2,000 must be reported to DNR within 48 hours (O.C.G.A. § 52-7-14). In South Carolina, the reporting threshold is also triggered by injury, death, or significant property damage (S.C. Code § 50-21-130)."
+                },
+                {
+                    "question": "Does state law or federal maritime law apply to my boating accident?",
+                    "answer": "It depends on where the accident occurred. Accidents on navigable waters — including the Atlantic Ocean, coastal waterways, the Intracoastal Waterway, and tidal portions of rivers — generally fall under federal admiralty jurisdiction. Accidents on purely inland lakes and non-navigable rivers are typically governed by state law. In many cases, both state and federal claims may be available. The distinction matters because admiralty law has different rules regarding liability, damages, and statutes of limitations."
+                },
+                {
+                    "question": "How long do I have to file a boating accident lawsuit?",
+                    "answer": "For claims under Georgia state law, the statute of limitations is 2 years from the date of the accident (O.C.G.A. § 9-3-33). Under South Carolina state law, it is 3 years (S.C. Code § 15-3-530). For claims under federal admiralty law, the general maritime statute of limitations is 3 years. Wrongful death claims in admiralty must also be filed within 3 years. These deadlines are strictly enforced, so prompt legal consultation is essential."
+                },
+                {
+                    "question": "What is boating under the influence (BUI)?",
+                    "answer": "In Georgia, it is illegal to operate a vessel with a blood alcohol concentration (BAC) of 0.08% or higher (O.C.G.A. § 52-7-12). South Carolina has the same 0.08% threshold (S.C. Code § 50-21-114). BUI is treated similarly to DUI and carries criminal penalties including fines and imprisonment. In a civil lawsuit, proving that the other operator was intoxicated at the time of the accident significantly strengthens your negligence claim and may support punitive damages."
+                },
+                {
+                    "question": "Who can be held liable for a boating accident?",
+                    "answer": "Potentially liable parties include: the negligent boat operator, the boat owner (even if not operating at the time), rental companies and charter operators that failed to properly maintain vessels or screen operators, boat manufacturers (for defective design or equipment), marina and dock owners (for unsafe conditions), and employers (for commercial vessel accidents). Our attorneys investigate all potential sources of liability and insurance coverage."
+                },
+                {
+                    "question": "Can I sue a boat rental company if I was injured on a rented boat?",
+                    "answer": "Yes, if the rental company was negligent. Rental companies have a duty to provide boats in safe, seaworthy condition and to ensure operators have adequate instruction and safety equipment. If the company rented a boat with defective equipment, failed to provide required safety gear, or rented to an obviously impaired or inexperienced operator, they may be liable for resulting injuries. Waivers signed at rental companies are often not enforceable for injuries caused by gross negligence."
+                },
+                {
+                    "question": "What if the boating accident was caused by a wake from another boat?",
+                    "answer": "Boat operators are responsible for the wake their vessels create. If an excessive or negligent wake caused your boat to capsize, struck your vessel, or threw passengers from the boat, the operator who created the wake may be liable. Both Georgia and South Carolina have \"no wake\" zones near docks, marinas, and swimming areas. Violations of these speed/wake regulations establish negligence per se. Witness testimony and nearby surveillance footage are key evidence in wake-related cases."
+                },
+                {
+                    "question": "Are there special rules for jet ski and personal watercraft accidents?",
+                    "answer": "Yes. Georgia law (O.C.G.A. § 52-7-8.2) restricts personal watercraft operation near other vessels and swimmers, prohibits operation after sunset, and requires operators born after January 1, 1998 to complete a boating safety course. South Carolina has similar restrictions (S.C. Code § 50-21-145). Jet ski accidents are disproportionately common due to the high speeds, maneuverability, and lack of protective barriers. Rental operators who fail to provide adequate safety instruction face additional liability."
+                },
+                {
+                    "question": "What compensation can I recover after a boating accident?",
+                    "answer": "Boating accident victims may recover: medical expenses (emergency care, surgery, rehabilitation), lost wages and future lost earning capacity, pain and suffering, emotional distress, scarring and disfigurement, loss of enjoyment of life, property damage to your vessel and personal belongings, and in cases of extreme negligence or BUI, punitive damages. In a death case, the family may bring a wrongful death claim; where Georgia law applies, damages are measured by the full value of the decedent's life (O.C.G.A. § 51-4-1)."
+                },
+                {
+                    "question": "How much does a boating accident lawyer cost?",
+                    "answer": "At Roden Law, we handle boating accident cases on a contingency fee basis — you pay nothing upfront and owe no attorney fees unless we recover compensation for you. Boating accident cases often require marine accident reconstruction experts and specialized investigation, all of which we fund in advance. We provide free, confidential consultations to evaluate your case."
+                }
+            ],
+            "after": [
+                {
+                    "question": "What should I do immediately after a boating accident?",
+                    "answer": "First, ensure the safety of all passengers and render aid to anyone injured. Call 911 and the nearest DNR law enforcement. Take photos and video of the damage, water conditions, and any injuries. Exchange information with the other boat operator(s), including boat registration numbers and insurance information. Get contact information from witnesses. In Georgia, accidents involving death, injury, or property damage over $2,000 must be reported to DNR within 48 hours (O.C.G.A. § 52-7-14). In South Carolina, the reporting threshold is also triggered by injury, death, or significant property damage (S.C. Code § 50-21-130)."
+                },
+                {
+                    "question": "Does state law or federal maritime law apply to my boating accident?",
+                    "answer": "It depends on where the accident occurred. Accidents on navigable waters — including the Atlantic Ocean, coastal waterways, the Intracoastal Waterway, and tidal portions of rivers — generally fall under federal admiralty jurisdiction. Accidents on purely inland lakes and non-navigable rivers are typically governed by state law. In many cases, both state and federal claims may be available. The distinction matters because admiralty law has different rules regarding liability, damages, and statutes of limitations."
+                },
+                {
+                    "question": "How long do I have to file a boating accident lawsuit?",
+                    "answer": "For claims under Georgia state law, the statute of limitations is 2 years from the date of the accident (O.C.G.A. § 9-3-33). Under South Carolina state law, it is 3 years (S.C. Code § 15-3-530). For claims under federal admiralty law, the general maritime statute of limitations is 3 years. Wrongful death claims in admiralty must also be filed within 3 years. These deadlines are strictly enforced, so prompt legal consultation is essential."
+                },
+                {
+                    "question": "What is boating under the influence (BUI)?",
+                    "answer": "In Georgia, it is illegal to operate a vessel with a blood alcohol concentration (BAC) of 0.08% or higher (O.C.G.A. § 52-7-12). South Carolina has the same 0.08% threshold (S.C. Code § 50-21-114). BUI is treated similarly to DUI and carries criminal penalties including fines and imprisonment. In a civil lawsuit, proving that the other operator was intoxicated at the time of the accident significantly strengthens your negligence claim and may support punitive damages."
+                },
+                {
+                    "question": "Who can be held liable for a boating accident?",
+                    "answer": "Potentially liable parties include: the negligent boat operator, the boat owner (even if not operating at the time), rental companies and charter operators that failed to properly maintain vessels or screen operators, boat manufacturers (for defective design or equipment), marina and dock owners (for unsafe conditions), and employers (for commercial vessel accidents). Our attorneys investigate all potential sources of liability and insurance coverage."
+                },
+                {
+                    "question": "Can I sue a boat rental company if I was injured on a rented boat?",
+                    "answer": "Yes, if the rental company was negligent. Rental companies have a duty to provide boats in safe, seaworthy condition and to ensure operators have adequate instruction and safety equipment. If the company rented a boat with defective equipment, failed to provide required safety gear, or rented to an obviously impaired or inexperienced operator, they may be liable for resulting injuries. Waivers signed at rental companies are often not enforceable for injuries caused by gross negligence."
+                },
+                {
+                    "question": "What if the boating accident was caused by a wake from another boat?",
+                    "answer": "Boat operators are responsible for the wake their vessels create. If an excessive or negligent wake caused your boat to capsize, struck your vessel, or threw passengers from the boat, the operator who created the wake may be liable. Both Georgia and South Carolina have \"no wake\" zones near docks, marinas, and swimming areas. Violations of these speed/wake regulations establish negligence per se. Witness testimony and nearby surveillance footage are key evidence in wake-related cases."
+                },
+                {
+                    "question": "Are there special rules for jet ski and personal watercraft accidents?",
+                    "answer": "Yes. Georgia law (O.C.G.A. § 52-7-8.2) restricts personal watercraft operation near other vessels and swimmers, prohibits operation after sunset, and requires operators born after January 1, 1998 to complete a boating safety course. South Carolina has similar restrictions (S.C. Code § 50-21-870). Jet ski accidents are disproportionately common due to the high speeds, maneuverability, and lack of protective barriers. Rental operators who fail to provide adequate safety instruction face additional liability."
+                },
+                {
+                    "question": "What compensation can I recover after a boating accident?",
+                    "answer": "Boating accident victims may recover: medical expenses (emergency care, surgery, rehabilitation), lost wages and future lost earning capacity, pain and suffering, emotional distress, scarring and disfigurement, loss of enjoyment of life, property damage to your vessel and personal belongings, and in cases of extreme negligence or BUI, punitive damages. In a death case, the family may bring a wrongful death claim; where Georgia law applies, damages are measured by the full value of the decedent's life (O.C.G.A. § 51-4-1)."
+                },
+                {
+                    "question": "How much does a boating accident lawyer cost?",
+                    "answer": "At Roden Law, we handle boating accident cases on a contingency fee basis — you pay nothing upfront and owe no attorney fees unless we recover compensation for you. Boating accident cases often require marine accident reconstruction experts and specialized investigation, all of which we fund in advance. We provide free, confidential consultations to evaluate your case."
+                }
+            ],
+            "ids": [
+                "G1"
+            ]
+        },
+        {
+            "post": 4895,
+            "field": "faqs",
+            "before": [
+                {
+                    "question": "¿Qué debo hacer después de un accidente de lancha?",
+                    "answer": "Busque atención médica de inmediato, asegúrese de que el accidente se reporte al DNR estatal o a la Guardia Costera (es obligatorio cuando hay lesiones), tome fotos si puede, anote los datos del operador y de la embarcación, y no dé declaraciones a la aseguradora antes de hablar con un abogado."
+                },
+                {
+                    "question": "El operador del bote iba tomando alcohol. ¿Cómo afecta mi caso?",
+                    "answer": "Lo fortalece. Operar una embarcación bajo la influencia es un delito tanto en Georgia como en Carolina del Sur, y esa violación es evidencia poderosa de negligencia. En algunos casos también permite reclamar daños punitivos contra el operador ebrio."
+                },
+                {
+                    "question": "¿Puedo reclamar si me lesioné como pasajero del bote?",
+                    "answer": "Sí. Los pasajeros lesionados pueden reclamar contra el operador negligente — incluso si es un conocido, porque el reclamo lo paga su seguro — y contra cualquier otra embarcación o compañía de alquiler responsable del accidente."
+                },
+                {
+                    "question": "¿Quién responde si el bote era alquilado?",
+                    "answer": "Puede responder la compañía de alquiler si entregó la embarcación a un operador sin la edad o formación exigida, si no dio la instrucción de seguridad requerida o si el bote tenía fallas de mantenimiento. También responde el operador negligente y su seguro."
+                },
+                {
+                    "question": "¿Cuánto tiempo tengo para demandar?",
+                    "answer": "Como regla general, 2 años en Georgia (O.C.G.A. § 9-3-33) y 3 años en Carolina del Sur (S.C. Code § 15-3-530). Si el accidente ocurrió en aguas navegables, el derecho marítimo federal puede cambiar el plazo, así que consúltenos lo antes posible."
+                },
+                {
+                    "question": "¿Se aplica la ley estatal o la ley marítima federal a mi accidente de navegación?",
+                    "answer": "Depende de dónde ocurrió el accidente. Los accidentes en aguas navegables —incluyendo el océano Atlántico, las vías costeras, el Intracoastal Waterway y las porciones de marea de los ríos— generalmente caen bajo la jurisdicción federal de almirantazgo. Los accidentes en lagos interiores y en ríos no navegables normalmente se rigen por la ley estatal. En muchos casos existen las dos vías al mismo tiempo. La distinción importa porque la ley de almirantazgo tiene reglas distintas sobre responsabilidad, daños y plazos: bajo la ley marítima general el plazo es de 3 años, mientras que bajo la ley estatal de Georgia son 2 años (O.C.G.A. § 9-3-33) y bajo la de Carolina del Sur son 3 años (S.C. Code § 15-3-530)."
+                },
+                {
+                    "question": "¿Qué pasa si el accidente lo causó la estela (wake) de otra embarcación?",
+                    "answer": "Los operadores son responsables de la estela que genera su embarcación. Si una estela excesiva o negligente hizo que su bote volcara, golpeó su embarcación o lanzó a los pasajeros al agua, el operador que la creó puede ser responsable de sus lesiones. Tanto Georgia como Carolina del Sur tienen zonas de “no wake” (sin estela) cerca de muelles, marinas y áreas de nado, y violar esas reglas de velocidad y estela constituye negligencia per se. El testimonio de los testigos y los videos de las cámaras cercanas son pruebas clave en este tipo de casos, y desaparecen rápido si nadie las solicita a tiempo."
+                },
+                {
+                    "question": "¿Hay reglas especiales para los accidentes en jet ski o moto acuática?",
+                    "answer": "Sí. La ley de Georgia (O.C.G.A. § 52-7-8.2) restringe el uso de motos acuáticas cerca de otras embarcaciones y de nadadores, prohíbe operarlas después de la puesta del sol y exige que los operadores nacidos después del 1 de enero de 1998 completen un curso de seguridad náutica. Carolina del Sur tiene restricciones similares (S.C. Code § 50-21-145). Los accidentes en moto acuática son desproporcionadamente comunes por la alta velocidad, la maniobrabilidad y la falta de barreras de protección. Las empresas de alquiler que no dan instrucción de seguridad adecuada enfrentan responsabilidad adicional."
+                },
+                {
+                    "question": "¿Qué compensación puedo recuperar después de un accidente de navegación?",
+                    "answer": "Las víctimas de accidentes de navegación pueden recuperar gastos médicos (atención de emergencia, cirugía y rehabilitación), salarios perdidos y la pérdida de capacidad de ingresos a futuro, dolor y sufrimiento, angustia emocional, cicatrices y desfiguración, pérdida del disfrute de la vida, y los daños a su embarcación y a sus pertenencias personales. En casos de negligencia extrema o de navegar bajo los efectos del alcohol (BUI), también pueden otorgarse daños punitivos. En casos de muerte, la familia puede presentar un reclamo por muerte injusta; cuando se aplica la ley de Georgia, la pérdida se mide por el valor total de la vida de la persona fallecida (O.C.G.A. § 51-4-1)."
+                },
+                {
+                    "question": "¿Cuánto cuesta contratar a un abogado de accidentes de navegación?",
+                    "answer": "En Roden Law manejamos los casos de accidentes de navegación con honorarios de contingencia: usted no paga nada por adelantado y no debe honorarios de abogado a menos que recuperemos una compensación para usted. Estos casos suelen requerir expertos en reconstrucción de accidentes marítimos e investigaciones especializadas, y nosotros adelantamos esos costos. Ofrecemos consultas gratuitas y confidenciales para evaluar su caso. Atendemos en español y no le preguntamos por su estatus migratorio."
+                }
+            ],
+            "after": [
+                {
+                    "question": "¿Qué debo hacer después de un accidente de lancha?",
+                    "answer": "Busque atención médica de inmediato, asegúrese de que el accidente se reporte al DNR estatal o a la Guardia Costera (es obligatorio cuando hay lesiones), tome fotos si puede, anote los datos del operador y de la embarcación, y no dé declaraciones a la aseguradora antes de hablar con un abogado."
+                },
+                {
+                    "question": "El operador del bote iba tomando alcohol. ¿Cómo afecta mi caso?",
+                    "answer": "Lo fortalece. Operar una embarcación bajo la influencia es un delito tanto en Georgia como en Carolina del Sur, y esa violación es evidencia poderosa de negligencia. En algunos casos también permite reclamar daños punitivos contra el operador ebrio."
+                },
+                {
+                    "question": "¿Puedo reclamar si me lesioné como pasajero del bote?",
+                    "answer": "Sí. Los pasajeros lesionados pueden reclamar contra el operador negligente — incluso si es un conocido, porque el reclamo lo paga su seguro — y contra cualquier otra embarcación o compañía de alquiler responsable del accidente."
+                },
+                {
+                    "question": "¿Quién responde si el bote era alquilado?",
+                    "answer": "Puede responder la compañía de alquiler si entregó la embarcación a un operador sin la edad o formación exigida, si no dio la instrucción de seguridad requerida o si el bote tenía fallas de mantenimiento. También responde el operador negligente y su seguro."
+                },
+                {
+                    "question": "¿Cuánto tiempo tengo para demandar?",
+                    "answer": "Como regla general, 2 años en Georgia (O.C.G.A. § 9-3-33) y 3 años en Carolina del Sur (S.C. Code § 15-3-530). Si el accidente ocurrió en aguas navegables, el derecho marítimo federal puede cambiar el plazo, así que consúltenos lo antes posible."
+                },
+                {
+                    "question": "¿Se aplica la ley estatal o la ley marítima federal a mi accidente de navegación?",
+                    "answer": "Depende de dónde ocurrió el accidente. Los accidentes en aguas navegables —incluyendo el océano Atlántico, las vías costeras, el Intracoastal Waterway y las porciones de marea de los ríos— generalmente caen bajo la jurisdicción federal de almirantazgo. Los accidentes en lagos interiores y en ríos no navegables normalmente se rigen por la ley estatal. En muchos casos existen las dos vías al mismo tiempo. La distinción importa porque la ley de almirantazgo tiene reglas distintas sobre responsabilidad, daños y plazos: bajo la ley marítima general el plazo es de 3 años, mientras que bajo la ley estatal de Georgia son 2 años (O.C.G.A. § 9-3-33) y bajo la de Carolina del Sur son 3 años (S.C. Code § 15-3-530)."
+                },
+                {
+                    "question": "¿Qué pasa si el accidente lo causó la estela (wake) de otra embarcación?",
+                    "answer": "Los operadores son responsables de la estela que genera su embarcación. Si una estela excesiva o negligente hizo que su bote volcara, golpeó su embarcación o lanzó a los pasajeros al agua, el operador que la creó puede ser responsable de sus lesiones. Tanto Georgia como Carolina del Sur tienen zonas de “no wake” (sin estela) cerca de muelles, marinas y áreas de nado, y violar esas reglas de velocidad y estela constituye negligencia per se. El testimonio de los testigos y los videos de las cámaras cercanas son pruebas clave en este tipo de casos, y desaparecen rápido si nadie las solicita a tiempo."
+                },
+                {
+                    "question": "¿Hay reglas especiales para los accidentes en jet ski o moto acuática?",
+                    "answer": "Sí. La ley de Georgia (O.C.G.A. § 52-7-8.2) restringe el uso de motos acuáticas cerca de otras embarcaciones y de nadadores, prohíbe operarlas después de la puesta del sol y exige que los operadores nacidos después del 1 de enero de 1998 completen un curso de seguridad náutica. Carolina del Sur tiene restricciones similares (S.C. Code § 50-21-870). Los accidentes en moto acuática son desproporcionadamente comunes por la alta velocidad, la maniobrabilidad y la falta de barreras de protección. Las empresas de alquiler que no dan instrucción de seguridad adecuada enfrentan responsabilidad adicional."
+                },
+                {
+                    "question": "¿Qué compensación puedo recuperar después de un accidente de navegación?",
+                    "answer": "Las víctimas de accidentes de navegación pueden recuperar gastos médicos (atención de emergencia, cirugía y rehabilitación), salarios perdidos y la pérdida de capacidad de ingresos a futuro, dolor y sufrimiento, angustia emocional, cicatrices y desfiguración, pérdida del disfrute de la vida, y los daños a su embarcación y a sus pertenencias personales. En casos de negligencia extrema o de navegar bajo los efectos del alcohol (BUI), también pueden otorgarse daños punitivos. En casos de muerte, la familia puede presentar un reclamo por muerte injusta; cuando se aplica la ley de Georgia, la pérdida se mide por el valor total de la vida de la persona fallecida (O.C.G.A. § 51-4-1)."
+                },
+                {
+                    "question": "¿Cuánto cuesta contratar a un abogado de accidentes de navegación?",
+                    "answer": "En Roden Law manejamos los casos de accidentes de navegación con honorarios de contingencia: usted no paga nada por adelantado y no debe honorarios de abogado a menos que recuperemos una compensación para usted. Estos casos suelen requerir expertos en reconstrucción de accidentes marítimos e investigaciones especializadas, y nosotros adelantamos esos costos. Ofrecemos consultas gratuitas y confidenciales para evaluar su caso. Atendemos en español y no le preguntamos por su estatus migratorio."
+                }
+            ],
+            "ids": [
+                "G2"
+            ]
+        },
+        {
+            "post": 4164,
+            "field": "content",
+            "before": "<h2>Nursing Home Neglect Lawyers in Georgia &amp; South Carolina</h2>\n<p>While physical abuse grabs headlines, nursing home neglect is far more common — and equally deadly. Neglect occurs when a facility fails to provide the care, supervision, and services necessary to maintain a resident's health and safety. The <a href=\"https://oig.hhs.gov/\" target=\"_blank\" rel=\"noopener\">U.S. Department of Health and Human Services Office of Inspector General</a> has found that neglect is the most frequently substantiated form of nursing home maltreatment, affecting hundreds of thousands of residents each year.</p>\n<p>At Roden Law, our nursing home neglect attorneys represent families throughout Georgia and South Carolina whose loved ones have suffered harm due to substandard care. We investigate staffing levels, care plans, medical records, and facility inspection histories to build powerful cases against negligent nursing homes.</p>\n\n<h2>Common Forms of Nursing Home Neglect</h2>\n<p>Neglect in nursing homes takes many forms, all stemming from a facility's failure to meet its duty of care:</p>\n<ul>\n<li><strong>Malnutrition and dehydration:</strong> Failure to provide adequate meals, assist residents who cannot feed themselves, or monitor fluid intake — leading to dangerous weight loss, organ failure, and death</li>\n<li><strong>Bedsores (pressure ulcers):</strong> Failure to regularly reposition immobile residents, resulting in painful and potentially life-threatening <a href=\"/nursing-home-abuse-lawyers/bedsore-pressure-ulcer/\">pressure ulcers</a></li>\n<li><strong>Falls:</strong> Failure to implement fall prevention measures for at-risk residents, including bed alarms, non-slip flooring, proper footwear, and adequate supervision</li>\n<li><strong>Medication mismanagement:</strong> Failure to administer medications on schedule, at correct dosages, or at all — or administering medications to the wrong resident. See our <a href=\"/nursing-home-abuse-lawyers/medication-error-nursing-home/\">medication error nursing home</a> page for more information.</li>\n<li><strong>Hygiene neglect:</strong> Failure to bathe residents, change soiled clothing or bedding, and maintain basic hygiene — leading to infections, skin breakdown, and loss of dignity</li>\n<li><strong>Medical care neglect:</strong> Failure to recognize symptoms, notify physicians, follow care plans, or arrange timely transfers to hospitals for acute conditions</li>\n<li><strong>Wandering and elopement:</strong> Failure to supervise residents with dementia, allowing them to wander into dangerous areas or leave the facility entirely</li>\n</ul>\n\n<h2>Understaffing: The Root Cause of Most Neglect</h2>\n<p>The majority of nursing home neglect stems from one root cause: <strong>inadequate staffing</strong>. When facilities employ too few certified nursing assistants (CNAs), nurses, and other caregivers, residents do not receive the attention they need. Federal regulations under the <a href=\"https://www.law.cornell.edu/uscode/text/42/1396r\" target=\"_blank\" rel=\"noopener\">Nursing Home Reform Act (OBRA 1987)</a> require facilities to provide \"sufficient\" staffing, but enforcement is inconsistent.</p>\n<p>Georgia's nursing home licensing requirements under <a href=\"https://law.justia.com/codes/georgia/title-31/chapter-8/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 31-8-1 et seq.</a> mandate minimum standards of care and staffing. South Carolina's <a href=\"https://www.scstatehouse.gov/code/t44c007.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 44-7-110 et seq.</a> (State Certification of Need and Health Facility Licensure Act) establishes similar standards. Violations of these statutes can serve as evidence of negligence per se.</p>\n\n<h2>Proving Nursing Home Neglect</h2>\n<p>Our attorneys build neglect cases using multiple sources of evidence:</p>\n<ul>\n<li><strong>CMS inspection reports:</strong> Federal and state inspection results are public record and often document prior deficiencies, including understaffing and care failures</li>\n<li><strong>Medical records:</strong> Gaps in charting, missed medications, undocumented weight loss, and ignored physician orders all indicate systemic neglect</li>\n<li><strong>Staffing records:</strong> Actual staffing levels compared to census data and federal/state requirements</li>\n<li><strong>Care plans vs. care delivered:</strong> Comparing what the care plan prescribed with what the resident actually received</li>\n<li><strong>Expert testimony:</strong> Geriatric medicine specialists and nursing standards experts who can establish the standard of care and how the facility fell short</li>\n</ul>\n\n<h2>Compensation for Nursing Home Neglect Victims</h2>\n<p>Victims of nursing home neglect may recover medical treatment costs, pain and suffering, emotional distress, diminished quality of life, and punitive damages where the neglect was willful or the result of corporate cost-cutting. <a href=\"/nursing-home-abuse-lawyers/wrongful-death-nursing-home/\">Wrongful death claims</a> are available when neglect results in death, as is tragically common with malnutrition, dehydration, and untreated infections.</p>",
+            "after": "<h2>Nursing Home Neglect Lawyers in Georgia &amp; South Carolina</h2>\n<p>While physical abuse grabs headlines, nursing home neglect is far more common — and equally deadly. Neglect occurs when a facility fails to provide the care, supervision, and services necessary to maintain a resident's health and safety. The <a href=\"https://oig.hhs.gov/\" target=\"_blank\" rel=\"noopener\">U.S. Department of Health and Human Services Office of Inspector General</a> has found that neglect is the most frequently substantiated form of nursing home maltreatment, affecting hundreds of thousands of residents each year.</p>\n<p>At Roden Law, our nursing home neglect attorneys represent families throughout Georgia and South Carolina whose loved ones have suffered harm due to substandard care. We investigate staffing levels, care plans, medical records, and facility inspection histories to build powerful cases against negligent nursing homes.</p>\n\n<h2>Common Forms of Nursing Home Neglect</h2>\n<p>Neglect in nursing homes takes many forms, all stemming from a facility's failure to meet its duty of care:</p>\n<ul>\n<li><strong>Malnutrition and dehydration:</strong> Failure to provide adequate meals, assist residents who cannot feed themselves, or monitor fluid intake — leading to dangerous weight loss, organ failure, and death</li>\n<li><strong>Bedsores (pressure ulcers):</strong> Failure to regularly reposition immobile residents, resulting in painful and potentially life-threatening <a href=\"/nursing-home-abuse-lawyers/bedsore-pressure-ulcer/\">pressure ulcers</a></li>\n<li><strong>Falls:</strong> Failure to implement fall prevention measures for at-risk residents, including bed alarms, non-slip flooring, proper footwear, and adequate supervision</li>\n<li><strong>Medication mismanagement:</strong> Failure to administer medications on schedule, at correct dosages, or at all — or administering medications to the wrong resident. See our <a href=\"/nursing-home-abuse-lawyers/medication-error-nursing-home/\">medication error nursing home</a> page for more information.</li>\n<li><strong>Hygiene neglect:</strong> Failure to bathe residents, change soiled clothing or bedding, and maintain basic hygiene — leading to infections, skin breakdown, and loss of dignity</li>\n<li><strong>Medical care neglect:</strong> Failure to recognize symptoms, notify physicians, follow care plans, or arrange timely transfers to hospitals for acute conditions</li>\n<li><strong>Wandering and elopement:</strong> Failure to supervise residents with dementia, allowing them to wander into dangerous areas or leave the facility entirely</li>\n</ul>\n\n<h2>Understaffing: The Root Cause of Most Neglect</h2>\n<p>The majority of nursing home neglect stems from one root cause: <strong>inadequate staffing</strong>. When facilities employ too few certified nursing assistants (CNAs), nurses, and other caregivers, residents do not receive the attention they need. Federal regulations under the <a href=\"https://www.law.cornell.edu/uscode/text/42/1396r\" target=\"_blank\" rel=\"noopener\">Nursing Home Reform Act (OBRA 1987)</a> require facilities to provide \"sufficient\" staffing, but enforcement is inconsistent.</p>\n<p>Georgia's nursing home licensing requirements under <a href=\"https://law.justia.com/codes/georgia/title-31/chapter-8/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 31-8-1 et seq.</a> mandate minimum standards of care and staffing. South Carolina's <a href=\"https://www.scstatehouse.gov/code/t44c007.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 44-7-110 et seq.</a> (State Health Facility Licensure Act) establishes similar standards. Violations of these statutes can serve as evidence of negligence per se.</p>\n\n<h2>Proving Nursing Home Neglect</h2>\n<p>Our attorneys build neglect cases using multiple sources of evidence:</p>\n<ul>\n<li><strong>CMS inspection reports:</strong> Federal and state inspection results are public record and often document prior deficiencies, including understaffing and care failures</li>\n<li><strong>Medical records:</strong> Gaps in charting, missed medications, undocumented weight loss, and ignored physician orders all indicate systemic neglect</li>\n<li><strong>Staffing records:</strong> Actual staffing levels compared to census data and federal/state requirements</li>\n<li><strong>Care plans vs. care delivered:</strong> Comparing what the care plan prescribed with what the resident actually received</li>\n<li><strong>Expert testimony:</strong> Geriatric medicine specialists and nursing standards experts who can establish the standard of care and how the facility fell short</li>\n</ul>\n\n<h2>Compensation for Nursing Home Neglect Victims</h2>\n<p>Victims of nursing home neglect may recover medical treatment costs, pain and suffering, emotional distress, diminished quality of life, and punitive damages where the neglect was willful or the result of corporate cost-cutting. <a href=\"/nursing-home-abuse-lawyers/wrongful-death-nursing-home/\">Wrongful death claims</a> are available when neglect results in death, as is tragically common with malnutrition, dehydration, and untreated infections.</p>",
+            "ids": [
+                "G6"
+            ]
+        },
+        {
+            "post": 4087,
+            "field": "causes",
+            "before": [
+                "Distracted driving (texting, phone use)",
+                "Failure to check mirrors before turning right",
+                "Drivers passing too closely (violating 3-foot law)",
+                "Dooring — opening car doors into bike lanes",
+                "Running red lights or stop signs at intersections",
+                "Drunk or impaired driving",
+                "Right-hook turns across bike lanes",
+                "Left turns in front of oncoming cyclists",
+                "Failure to see cyclists in blind spots",
+                "Road hazards (potholes, debris, drainage grates)",
+                "Speeding in areas with bicycle traffic",
+                "Aggressive driving and road rage toward cyclists"
+            ],
+            "after": [
+                "Distracted driving (texting, phone use)",
+                "Failure to check mirrors before turning right",
+                "Drivers passing too closely (inside Georgia's 3-foot minimum, or without a safe operating distance in South Carolina)",
+                "Dooring — opening car doors into bike lanes",
+                "Running red lights or stop signs at intersections",
+                "Drunk or impaired driving",
+                "Right-hook turns across bike lanes",
+                "Left turns in front of oncoming cyclists",
+                "Failure to see cyclists in blind spots",
+                "Road hazards (potholes, debris, drainage grates)",
+                "Speeding in areas with bicycle traffic",
+                "Aggressive driving and road rage toward cyclists"
+            ],
+            "ids": [
+                "G9"
+            ]
+        }
+    ]
+}
