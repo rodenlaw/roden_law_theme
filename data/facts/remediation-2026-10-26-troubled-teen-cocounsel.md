@@ -37,7 +37,7 @@ the case, which the new co-counsel sentence corrects.
 - **F6(b)** "knowledgeable"/"experienced": kept, per the ruling.
 - **F4** FAQ 6 forum caveat: Q1 is answered and the co-counsel line now explains who handles out-of-state
   cases; the interstate-forum sentence in the 10-21 plan was not applied (not part of B).
-- **F6(d)** costs language on the five no-fee lines: **not ruled on**. Still open for Gillin.
+- **F6(d)** costs language on the five no-fee lines: **closed, no change.** Gillin, via the owner, 2026-10-26: "there are no needs to address costs." The no-fee lines stay as published.
 - **F5** "class action attorney" framing: unchanged, still open.
 - Remaining wording that says Roden handles the case: FAQ 4 ("prepared to handle your case") and
   FAQ 6 ("We handle every case with sensitivity…"). Left as published ("keep the rest as is"); flag
