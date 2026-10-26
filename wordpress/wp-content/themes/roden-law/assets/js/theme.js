@@ -169,10 +169,10 @@
             });
         }
 
-        // Keyboard navigation: arrow keys when carousel or buttons are focused
-        carousel.setAttribute('tabindex', '0');
-        carousel.setAttribute('role', 'region');
-        carousel.setAttribute('aria-label', 'Case results');
+        // Keyboard navigation: arrow keys when the track or a button is focused.
+        // The track carries tabindex/role/aria-label in the markup
+        // (front-page.php); this used to put them on the wrapper, in English
+        // only, which left the scroll container itself unfocusable.
         carousel.addEventListener('keydown', function (e) {
             if (e.key === 'ArrowLeft') {
                 e.preventDefault();

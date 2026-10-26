@@ -27,7 +27,7 @@ $linkedin  = isset( $linkedin ) ? $linkedin : '';
                     <?php if ( has_post_thumbnail() ) : ?>
                         <?php the_post_thumbnail( 'attorney-portrait', array( 'alt' => get_the_title() . ' — ' . ( $title ?: 'Attorney' ) . ' at Roden Law' ) ); ?>
                     <?php else : ?>
-                        <div class="attorney-photo-placeholder">&#128100;</div>
+                        <div class="attorney-photo-placeholder"><?php echo roden_icon( 'user' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?></div>
                     <?php endif; ?>
                 </div>
                 <div class="attorney-profile-links">
@@ -46,7 +46,7 @@ $linkedin  = isset( $linkedin ) ? $linkedin : '';
                     <span class="attorney-hero-title"><?php echo esc_html( $title ); ?></span>
                 <?php endif; ?>
                 <?php if ( $office ) : ?>
-                    <span class="attorney-hero-office">&#128205; <?php echo esc_html( $office['market_name'] . ', ' . $office['state'] ); ?> — <?php echo esc_html( $firm['vanity_phone'] ); ?></span>
+                    <span class="attorney-hero-office"><?php echo roden_icon( 'pin' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?> <?php echo esc_html( $office['market_name'] . ', ' . $office['state'] ); ?> — <?php echo esc_html( $firm['vanity_phone'] ); ?></span>
                 <?php endif; ?>
 
                 <div class="bar-badges">
@@ -65,7 +65,7 @@ $linkedin  = isset( $linkedin ) ? $linkedin : '';
 
                 <div class="hero-actions">
                     <?php if ( $office ) : ?>
-                        <a href="tel:<?php echo esc_attr( $firm['phone_raw'] ); ?>" class="btn btn-primary btn-lg">&#128222; <?php echo esc_html( $firm['vanity_phone'] ); ?></a>
+                        <a href="tel:<?php echo esc_attr( $firm['phone_raw'] ); ?>" class="btn btn-primary btn-lg"><?php echo roden_icon( 'phone' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?> <?php echo esc_html( $firm['vanity_phone'] ); ?></a>
                     <?php endif; ?>
                 </div>
             </div>

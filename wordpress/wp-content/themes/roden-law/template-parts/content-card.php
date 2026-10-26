@@ -22,7 +22,7 @@ $cat_name   = ! empty($categories) ? $categories[0]->name : '';
         </a>
     <?php else : ?>
         <a href="<?php the_permalink(); ?>" class="blog-card-image blog-card-image-placeholder">
-            <span class="placeholder-icon">⚖</span>
+            <span class="placeholder-icon"><?php echo roden_icon( 'scale' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?></span>
             <?php if ( $cat_name ) : ?>
                 <span class="blog-card-tag"><?php echo esc_html($cat_name); ?></span>
             <?php endif; ?>
@@ -51,7 +51,7 @@ $cat_name   = ! empty($categories) ? $categories[0]->name : '';
         <div class="blog-card-footer">
             <?php if ( $atty ) : ?>
                 <div class="blog-card-author">
-                    <span class="author-avatar">👤</span>
+                    <span class="author-avatar"><?php echo roden_icon( 'user' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?></span>
                     <div class="author-meta">
                         <span class="author-name"><?php echo esc_html($atty->post_title); ?></span>
                         <span class="author-title"><?php echo esc_html($atty_title); ?></span>

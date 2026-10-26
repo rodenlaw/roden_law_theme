@@ -59,7 +59,7 @@ if ( $is_state_page ) :
                     Roden Law serves injury victims across <?php echo esc_html($state_full); ?> from <?php echo count($state_offices); ?> office<?php echo count($state_offices) > 1 ? 's' : ''; ?>. We have recovered $300M+ for our clients. Free case review — no fees unless we win.
                 </p>
                 <div class="hero-buttons">
-                    <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary">📞 Call <?php echo esc_html($firm['phone']); ?></a>
+                    <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary"><?php echo roden_icon( 'phone' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?> Call <?php echo esc_html($firm['phone']); ?></a>
                 </div>
                 <?php roden_last_updated_date( $post_id ); ?>
             </div>
@@ -112,7 +112,7 @@ if ( $is_state_page ) :
             </div>
 
             <div class="state-law-box">
-                <h3>⚖ <?php echo esc_html($state_full); ?> Filing Rules</h3>
+                <h3><?php echo roden_icon( 'scale' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?> <?php echo esc_html($state_full); ?> Filing Rules</h3>
                 <div class="law-details-grid">
                     <div class="law-detail">
                         <span class="law-label">Statute of Limitations</span>

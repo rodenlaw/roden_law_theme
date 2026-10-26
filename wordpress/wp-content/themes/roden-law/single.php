@@ -29,7 +29,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                         <?php if ( has_post_thumbnail( $atty ) ) : ?>
                             <?php echo get_the_post_thumbnail( $atty, 'thumbnail', array( 'alt' => esc_attr( $atty->post_title . ', ' . $atty_title . ' at Roden Law' ) ) ); ?>
                         <?php else : ?>
-                            <span class="author-placeholder">👤</span>
+                            <span class="author-placeholder"><?php echo roden_icon( 'user' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?></span>
                         <?php endif; ?>
                     </div>
                     <div class="post-author-info">
@@ -84,7 +84,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                             <?php if ( has_post_thumbnail( $atty ) ) : ?>
                                 <?php echo get_the_post_thumbnail( $atty, 'thumbnail', array( 'alt' => esc_attr( $atty->post_title . ', ' . $atty_title . ' at Roden Law' ) ) ); ?>
                             <?php else : ?>
-                                <div class="author-photo-placeholder">👤</div>
+                                <div class="author-photo-placeholder"><?php echo roden_icon( 'user' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?></div>
                             <?php endif; ?>
                         </div>
                         <div class="author-info">
@@ -137,7 +137,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                 <div class="sidebar-widget sidebar-consult-cta">
                     <h3><?php esc_html_e( 'Injured? Talk to a Lawyer.', 'roden-law' ); ?></h3>
                     <p><?php esc_html_e( 'Free consultation. No fees unless we win.', 'roden-law' ); ?></p>
-                    <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary btn-block">📞 <?php echo esc_html($firm['phone']); ?></a>
+                    <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary btn-block"><?php echo roden_icon( 'phone' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?> <?php echo esc_html($firm['phone']); ?></a>
                     <a href="<?php echo esc_url( $contact_url ); ?>" class="btn btn-outline-light btn-block"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></a>
                 </div>
 
