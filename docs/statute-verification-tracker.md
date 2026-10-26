@@ -1,7 +1,7 @@
 # Statute verification tracker
 
-**Generated from `bin/inventory-statute-citations.php`. Last updated 2026-10-24, after pass 2 and
-batch 2** (recount `data/facts/statute-inventory-2026-10-24-batch2.txt`, 645 published documents).
+**Generated from `bin/inventory-statute-citations.php`. Last updated 2026-10-26, after pass 3 and
+its SC fixes**; last recount 2026-10-24, after pass 2 and batch 2 (recount `data/facts/statute-inventory-2026-10-24-batch2.txt`, 645 published documents).
 
 The inventory has existed since #97. Until pass 1 nothing recorded *which* of its
 statutes had been read against primary text, so every pass re-derived the question
@@ -9,6 +9,16 @@ and the answer lived in commit messages. This file is the record. Update it when
 a statute is verified.
 
 ## Coverage
+
+| 2026-10-26, after pass 3 (computed from the 2026-10-24 recount, not a new run) | Statutes | Page-citations |
+|---|---:|---:|
+| Verified against primary text | **209** | **2,409** (91.9%) |
+| Not yet verified | 187 | 211 |
+| Total cited | 396 | 2,620 |
+
+*Pass 3 read the 30 sections listed under "Not yet verified" below (64 page-citations). Eleven of
+the 30 are read but still carry open errors (G3–G5, G7, G8, G10–G29), which wait on the attorneys.
+Re-run `bin/inventory-statute-citations.php` before ranking pass 4.*
 
 | 2026-10-24, after pass 2 and batch 2, fixed inventory | Statutes | Page-citations |
 |---|---:|---:|
@@ -113,6 +123,7 @@ page. Work down by exposure, not alphabetically.
 | 2026-09-19 helmet pass | `GA 40-6-296`, `40-6-300`, `40-6-301`, `40-6-302`, `40-6-303`, `40-1-1(15.3)` read on codes.findlaw.com (current as of 2024-03-28) | **none** on the sections themselves: the site's uncited bicycle (under 16) and e-bike (Class III all ages, no operator under 15, Class I/II ride as bicycles) statements all match the text. The pass surfaced two evidence bars the site had never stated — § 40-6-296(d)(5) and § 40-6-303(c)(5): a bicycle or e-bike helmet violation "shall not … be considered evidence of negligence or liability". The motorcycle statute has no equivalent. Justia and LegiScan 403; the enrolled act (HB 454, 2019) was not cross-checked. |
 | 2026-10-24 pass (top 20 by exposure) | 20 in scope (GA 51-12-1.1, 34-9-17, 34-9-200.1, 9-3-73, 34-9-200, 51-4-5, 9-3-90, 51-1-29.5, 9-10-184, 24-7-702, 40-6-294, 31-8-1, 4-8-20, 34-9-11.1, 9-11-67.1; SC 38-59-40, 56-5-6160, 38-59-20, 56-5-1290, 15-78-60), plus 16 supporting. SC from scstatehouse.gov. GA from Internet Archive captures of codes.findlaw.com and law.justia.com, because both sites served bot checks to direct requests; FindLaw text is current as of 2024-03-28. SB 68 from legis.ga.gov. 0 unreadable. | **66 live errors on 34 documents; 10 of the 20 sections wrong or mis-cited somewhere.** Worst: post 1690 gives South Carolina an **invented safety-rule benefit reduction** under § 42-9-60, which bars compensation only for intoxication or wilful intent to injure. It appears in five places across the body, FAQ 3 and the key takeaways. ER sub-type 4197 says Georgia does not lower the standard in emergencies, against § 51-1-29.5's gross-negligence / clear-and-convincing rule (uncited). 5145, 5128 and ES 5141 say SC holds ER care to ordinary negligence, against § 15-32-230. § 34-9-200: 1677 says GA medical benefits have no time limit, in five places, against the 400-week limit for post-2013 non-catastrophic injuries. § 9-3-73: the repose (10th birthday) is given as the filing deadline on 1676, 1696 and 4195. § 34-9-17 is cited as an anti-retaliation statute (1662) and given a drug-free-policy precondition (1690). §§ 40-6-294 and 31-8-1 are mis-cited on five pages each. The § 4-8-21 dog definitions are wrong on 4119. § 9-11-67.1's 2024 amendment is dated July 1 instead of April 22 (1722). The wrongful-death deadline is cited to §§ 51-4-5 and 9-3-71 (4360, 1823). The pass also found the inventory's FAQ blind spot (`wp_json_encode` escapes "§"): 304 page-citations and 14 statutes it cannot see. Record: `data/facts/statute-pass-2026-10-24.md`. |
 | 2026-10-24 pass 2 (next 30, re-ranked on the fixed inventory) | 30 in scope (SC 42-9-200, 15-5-100, 56-5-6410, 56-5-3230, 15-3-40, 56-5-3150, 43-35-10, 42-1-560, 50-26-10, 15-3-535, 42-1-160, 56-5-2920, 56-1-460, 42-9-260, 56-5-3110; GA 40-6-305, 40-7-1, 40-6-320, 33-6-34, 34-9-263, 40-6-330, 40-6-93, 34-9-2, 24-4-403, 9-3-72, 40-5-121, 24-8-803, 36-1-4, 40-6-96, 40-13-58), plus supporting. SC from scstatehouse.gov; GA from FindLaw captures current to 2024-03-28 (§ 40-6-320 only to 2021-04-14) and the HB 579 committee substitute. | **39 live errors on 15 documents; 7 of the 30 wrong or mis-cited.** Worst: an **invented Georgia e-scooter rule set** (age 15/16, 20 mph, PTV, bicyclist rights, three feet, sidewalk ban) pinned to § 40-6-320, which covers self-balancing EPAMDs, across 4088 (body, FAQ 0, why-hire), 4224, 4227 and 4229. Golf carts the same way (4090, 4186, 4190): a statewide 25 mph cap, daylight and age 16 that §§ 40-6-330/-331 do not contain. 4478 gave SC driver due care to § 56-5-3150 seven times, with a quote that is not SC text; 1856 cited the white-cane section. The SC three-foot rule was still live on 4639 and 1698. 1837 gave SC a universal abuse-reporting duty. Batch 2 (17 mechanical + F4b, 21 edits on 5 posts) applied the same day; 22 rule rewrites in the attorney packet addendum. Two wrong stored pillar intros (4089, 4090) never render. Record: `data/facts/statute-pass-2-2026-10-24.md`. |
+| 2026-10-26 pass 3 (next 30 on the fixed inventory) | 30 in scope (GA 34-9-104, 40-6-123, 40-6-181, 15-19-14, 24-6-601, 44-14-470, 9-11-35, 9-2-41, 20-2-324.1, 24-6-609, 29-3-3, 34-9-202, 34-9-280, 34-9-8, 40-5-35, 40-6-188, 40-6-49, 51-1-11.1, 51-12-11, 52-7-12, 52-7-8.2, 9-3-96; SC 44-7-110, 38-71-190, 42-11-10, 50-21-145, 56-5-1520, 59-63-75, 61-4-580, 62-5-433), plus supporting (SC 50-21-870, 50-21-95, 56-5-1535). SC from scstatehouse.gov; GA from FindLaw captures current to 2024 (§§ 40-6-188 and 40-6-49 only to 2021-04-14) and Justia; § 52-7-8 unreadable. | **29 live errors on 16 documents; 11 of the 30 wrong or mis-cited.** Worst: the concussion pages (4207, 4205) say a coach who breaks the law "is negligent" and that a violation is "automatic proof of negligence", against § 20-2-324.1(e) (the Act creates no liability or cause of action), stretch the Georgia Act to all youth organisations, and call South Carolina's § 59-63-75 identical. Georgia "doubles" work-zone fines on 4162, 4683 and 1799; § 40-6-188 sets $100–$2,000, and SC § 56-5-1535 has not covered work-zone speeding since 2017 Act No. 81. Georgia occupational disease written in SC's statutory words, and hearing loss called an occupational disease (4111). The 120-day IME window misread (1682, 1702). SC boating rules cited to a former no-wake-zone section (3616, 4895) and an under-16 PWC ban plus a "born after 1988" rule that 2023 Act No. 74 replaced (4352). Class re-check of pass 2's invented rules: no new e-scooter or golf-cart survivors; the SC three-foot rule survived only in 4087's common-causes list (and its dormant intro). G1, G2, G6, G9 applied the same day (`bin/fix-statute-pass-3-2026-10-26-sc.php`, owner); 25 more go to the attorneys on the review pages. Record: `data/facts/statute-pass-3-2026-10-26.md`. |
 
 **Three of four passes found a live error, and none surfaced from a sweep looking**
 **for something else.**
@@ -357,8 +368,41 @@ recorded in this file. They are on the inventory basis, as of 2026-10-24. The da
 | `GA 15-10-2` | 1 | 2026-10-20 — magistrate court jurisdiction |
 | `SC 22-3-10` | 1 | 2026-09-26 — magistrate court jurisdiction |
 | `SC 42-1-410` | 1 | 2026-09-28 — statutory employer |
+| `GA 34-9-104` | 3 | 2026-10-26 pass 3 |
+| `GA 40-6-123` | 3 | 2026-10-26 pass 3 |
+| `GA 40-6-181` | 3 | 2026-10-26 pass 3 |
+| `SC 44-7-110` | 3 | 2026-10-26 pass 3 |
+| `GA 15-19-14` | 2 | 2026-10-26 pass 3 |
+| `GA 24-6-601` | 2 | 2026-10-26 pass 3 |
+| `GA 44-14-470` | 2 | 2026-10-26 pass 3 |
+| `GA 9-11-35` | 2 | 2026-10-26 pass 3 |
+| `GA 9-2-41` | 2 | 2026-10-26 pass 3 |
+| `GA 20-2-324.1` | 2 | 2026-10-26 pass 3 |
+| `GA 24-6-609` | 2 | 2026-10-26 pass 3 |
+| `GA 29-3-3` | 2 | 2026-10-26 pass 3 |
+| `GA 34-9-202` | 2 | 2026-10-26 pass 3 |
+| `GA 34-9-280` | 2 | 2026-10-26 pass 3 |
+| `GA 34-9-8` | 2 | 2026-10-26 pass 3 |
+| `GA 40-5-35` | 2 | 2026-10-26 pass 3 |
+| `GA 40-6-188` | 2 | 2026-10-26 pass 3 |
+| `GA 40-6-49` | 2 | 2026-10-26 pass 3 |
+| `GA 51-1-11.1` | 2 | 2026-10-26 pass 3 |
+| `GA 51-12-11` | 2 | 2026-10-26 pass 3 |
+| `GA 52-7-12` | 2 | 2026-10-26 pass 3 |
+| `GA 52-7-8.2` | 2 | 2026-10-26 pass 3 |
+| `GA 9-3-96` | 2 | 2026-10-26 pass 3 |
+| `SC 38-71-190` | 2 | 2026-10-26 pass 3 |
+| `SC 42-11-10` | 2 | 2026-10-26 pass 3 |
+| `SC 50-21-145` | 2 | 2026-10-26 pass 3 |
+| `SC 56-5-1520` | 2 | 2026-10-26 pass 3 |
+| `SC 59-63-75` | 2 | 2026-10-26 pass 3 |
+| `SC 61-4-580` | 2 | 2026-10-26 pass 3 |
+| `SC 62-5-433` | 2 | 2026-10-26 pass 3 |
 
 ## Not yet verified — top 30 by exposure
+
+**Read in pass 3 (2026-10-26)** and now listed under Verified; kept here as the record of what
+pass 3 covered. The next 30 come from a fresh run of `bin/inventory-statute-citations.php`.
 
 Rebuilt 2026-10-24 after pass 2 and batch 2, from `data/facts/statute-inventory-2026-10-24-batch2.txt`
 (the fixed inventory: FAQ, key takeaways and pillar meta included). Excluded: every section in

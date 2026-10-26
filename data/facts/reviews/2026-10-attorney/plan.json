@@ -9,7 +9,8 @@
     "p1": "data/facts/statute-pass-2026-10-24.md",
     "p2": "data/facts/statute-pass-2-2026-10-24.md",
     "ga": "data/facts/ga-signoff-packet-2026-10-21.md",
-    "sc": "data/facts/sc-signoff-packet-2026-10-21.md"
+    "sc": "data/facts/sc-signoff-packet-2026-10-21.md",
+    "p3": "data/facts/statute-pass-3-2026-10-26.md"
   },
   "reviewers": {
     "love": {
@@ -23,32 +24,273 @@
           "mode": "signoff",
           "intro": "Each card is one statement of Georgia law the site may make, with the authority it rests on. Once you sign a statement, new content may rely on it and the site check measures every page against it. Until then we publish no new Georgia legal claim. Approve, or give the wording you want; a correction comes back to you once more before it counts. \"Approve all\" on a group is fine.",
           "groups": [
-            { "title": "A. Authorities already cited across the site (33)", "table": "ga", "rows": "^A\\d+$" },
-            { "title": "B. Authorities checked against the statute text, not yet signed (16)", "table": "ga", "rows": "^B\\d+$" },
-            { "title": "C. Abuse-survivor filing deadlines (2)", "table": "ga", "rows": "^C\\d+$" }
+            {
+              "title": "A. Authorities already cited across the site (33)",
+              "table": "ga",
+              "rows": "^A\\d+$"
+            },
+            {
+              "title": "B. Authorities checked against the statute text, not yet signed (16)",
+              "table": "ga",
+              "rows": "^B\\d+$"
+            },
+            {
+              "title": "C. Abuse-survivor filing deadlines (2)",
+              "table": "ga",
+              "rows": "^C\\d+$"
+            }
           ],
           "items": [
-            { "id": "ga-CQ1", "kind": "question", "title": "Troubled-teen abuse page", "question": "Should the page mention that § 9-3-33.1 claims against an institution need more proof than claims against the abuser?", "url": "/class-action-lawyers/troubled-teen-industry-abuse/" },
-            { "id": "ga-CQ2", "kind": "question", "title": "Troubled-teen abuse page", "question": "Most of these facilities are outside Georgia. Does Roden refer those cases out, or co-counsel? The FAQ wording on where a survivor can bring a claim depends on your answer.", "url": "/class-action-lawyers/troubled-teen-industry-abuse/" }
+            {
+              "id": "ga-CQ1",
+              "kind": "question",
+              "title": "Troubled-teen abuse page",
+              "question": "Should the page mention that § 9-3-33.1 claims against an institution need more proof than claims against the abuser?",
+              "url": "/class-action-lawyers/troubled-teen-industry-abuse/"
+            },
+            {
+              "id": "ga-CQ2",
+              "kind": "question",
+              "title": "Troubled-teen abuse page",
+              "question": "Most of these facilities are outside Georgia. Does Roden refer those cases out, or co-counsel? The FAQ wording on where a survivor can bring a claim depends on your answer.",
+              "url": "/class-action-lawyers/troubled-teen-industry-abuse/"
+            }
           ]
         },
         {
           "id": "ga-corrections",
           "title": "Corrections that change what a page says the law is",
           "mode": "decide",
-          "intro": "Each card shows what the page says now and the wording we propose. None of these is live. Our Georgia text was read from FindLaw copies current to early 2024 (two sections only to 2021), so please check for any 2024–2026 act, especially on e-scooters, PTVs and golf carts.",
+          "intro": "Each card shows what the page says now and the wording we propose. None of these is live. Our Georgia text was read from FindLaw copies current to early 2024 (two sections only to 2021), so please check for any 2024–2026 act, especially on e-scooters, PTVs and golf carts. The work-zone fine cards (§ 40-6-188) rest on a 2021 copy, so a 2024–2026 check matters most there and on the concussion cards.",
           "items": [
-            { "ref": "p2:F24" }, { "ref": "p2:F25" }, { "ref": "p2:F26" }, { "ref": "p2:F27" }, { "ref": "p2:F28" }, { "ref": "p2:F29" }, { "ref": "p2:F32" },
-            { "ref": "p2:F33" }, { "ref": "p2:F34" }, { "ref": "p2:F35" }, { "ref": "p2:F36" }, { "ref": "p2:F37" },
-            { "ref": "p1:E1" }, { "ref": "p1:E2" }, { "ref": "p1:E3" }, { "ref": "p1:E4" }, { "ref": "p1:E5" }, { "ref": "p1:E6" }, { "ref": "p1:E7" }, { "ref": "p1:E8" },
-            { "ref": "p2:F21" }, { "ref": "p2:F22" },
-            { "ref": "p1:E11" }, { "ref": "p1:E12" }, { "ref": "p1:E13" }, { "ref": "p1:E14" }, { "ref": "p1:E15" }, { "ref": "p1:E16" },
-            { "ref": "p1:E17" }, { "ref": "p1:E18" }, { "ref": "p1:E19" }, { "ref": "p1:E20" }, { "ref": "p1:E21" },
-            { "ref": "p1:E22" }, { "ref": "p1:E23" }, { "ref": "p1:E24" }, { "ref": "p1:E25" }, { "ref": "p1:E27" }, { "ref": "p1:E28" }, { "ref": "p1:E29" }, { "ref": "p1:E30" },
-            { "ref": "p1:E34" }, { "ref": "p1:E39" }, { "ref": "p1:E45" },
-            { "ref": "p1:E47" }, { "ref": "p1:E48" }, { "ref": "p1:E49" }, { "ref": "p1:E51" }, { "ref": "p1:E52" },
-            { "ref": "p1:E53" }, { "ref": "p1:E54" }, { "ref": "p1:E55" }, { "ref": "p1:E56" }, { "ref": "p1:E57", "pairs": [0] },
-            { "ref": "p2:F23" }
+            {
+              "ref": "p2:F24"
+            },
+            {
+              "ref": "p2:F25"
+            },
+            {
+              "ref": "p2:F26"
+            },
+            {
+              "ref": "p2:F27"
+            },
+            {
+              "ref": "p2:F28"
+            },
+            {
+              "ref": "p2:F29"
+            },
+            {
+              "ref": "p2:F32"
+            },
+            {
+              "ref": "p2:F33"
+            },
+            {
+              "ref": "p2:F34"
+            },
+            {
+              "ref": "p2:F35"
+            },
+            {
+              "ref": "p2:F36"
+            },
+            {
+              "ref": "p2:F37"
+            },
+            {
+              "ref": "p1:E1"
+            },
+            {
+              "ref": "p1:E2"
+            },
+            {
+              "ref": "p1:E3"
+            },
+            {
+              "ref": "p1:E4"
+            },
+            {
+              "ref": "p1:E5"
+            },
+            {
+              "ref": "p1:E6"
+            },
+            {
+              "ref": "p1:E7"
+            },
+            {
+              "ref": "p1:E8"
+            },
+            {
+              "ref": "p2:F21"
+            },
+            {
+              "ref": "p2:F22"
+            },
+            {
+              "ref": "p1:E11"
+            },
+            {
+              "ref": "p1:E12"
+            },
+            {
+              "ref": "p1:E13"
+            },
+            {
+              "ref": "p1:E14"
+            },
+            {
+              "ref": "p1:E15"
+            },
+            {
+              "ref": "p1:E16"
+            },
+            {
+              "ref": "p1:E17"
+            },
+            {
+              "ref": "p1:E18"
+            },
+            {
+              "ref": "p1:E19"
+            },
+            {
+              "ref": "p1:E20"
+            },
+            {
+              "ref": "p1:E21"
+            },
+            {
+              "ref": "p1:E22"
+            },
+            {
+              "ref": "p1:E23"
+            },
+            {
+              "ref": "p1:E24"
+            },
+            {
+              "ref": "p1:E25"
+            },
+            {
+              "ref": "p1:E27"
+            },
+            {
+              "ref": "p1:E28"
+            },
+            {
+              "ref": "p1:E29"
+            },
+            {
+              "ref": "p1:E30"
+            },
+            {
+              "ref": "p1:E34"
+            },
+            {
+              "ref": "p1:E39"
+            },
+            {
+              "ref": "p1:E45"
+            },
+            {
+              "ref": "p1:E47"
+            },
+            {
+              "ref": "p1:E48"
+            },
+            {
+              "ref": "p1:E49"
+            },
+            {
+              "ref": "p1:E51"
+            },
+            {
+              "ref": "p1:E52"
+            },
+            {
+              "ref": "p1:E53"
+            },
+            {
+              "ref": "p1:E54"
+            },
+            {
+              "ref": "p1:E55"
+            },
+            {
+              "ref": "p1:E56"
+            },
+            {
+              "ref": "p1:E57",
+              "pairs": [
+                0
+              ]
+            },
+            {
+              "ref": "p2:F23"
+            },
+            {
+              "ref": "p3:G10"
+            },
+            {
+              "ref": "p3:G11"
+            },
+            {
+              "ref": "p3:G12"
+            },
+            {
+              "ref": "p3:G13"
+            },
+            {
+              "ref": "p3:G14"
+            },
+            {
+              "ref": "p3:G15"
+            },
+            {
+              "ref": "p3:G16"
+            },
+            {
+              "ref": "p3:G17"
+            },
+            {
+              "ref": "p3:G18"
+            },
+            {
+              "ref": "p3:G19"
+            },
+            {
+              "ref": "p3:G20"
+            },
+            {
+              "ref": "p3:G21"
+            },
+            {
+              "ref": "p3:G22"
+            },
+            {
+              "ref": "p3:G23"
+            },
+            {
+              "ref": "p3:G24"
+            },
+            {
+              "ref": "p3:G25"
+            },
+            {
+              "ref": "p3:G26"
+            },
+            {
+              "ref": "p3:G27"
+            },
+            {
+              "ref": "p3:G28"
+            },
+            {
+              "ref": "p3:G29"
+            }
           ]
         },
         {
@@ -56,10 +298,44 @@
           "title": "Questions",
           "mode": "decide",
           "items": [
-            { "id": "ga-Q-1840", "kind": "question", "title": "Brain-injury tolling sentence", "url": null, "post": 1840, "question": "Post 1840 has a sentence on tolling for a traumatic brain injury under § 9-3-90. Is it right as written? If not, what should it say?" },
-            { "id": "ga-Q-F31", "kind": "question", "title": "E-scooter intersection page: negligence per se", "url": "/electric-scooter-accident-lawyers/escooter-intersection-crash/", "question": "We removed the claim that a Georgia e-scooter statute governs these crashes. Does the next sentence's negligence-per-se point still stand without a scooter statute?" },
-            { "id": "ga-Q-F38", "kind": "question", "title": "Golf-cart pedestrian page: the rules-of-the-road hook", "url": "/golf-cart-accident-lawyers/golf-cart-pedestrian-accident/", "question": "We dropped § 40-6-330 as the source of a PTV driver's duty to follow the rules of the road. Should the page cite § 40-6-91 (or something else) instead, or stay uncited?" },
-            { "id": "ga-Q-E58", "kind": "question", "title": "Pre-suit offers: the bill number", "url": null, "post": 1722, "question": "Post 1722 now says § 9-11-67.1 was \"amended in 2024, for offers made on or after April 22, 2024\" (from the section's history line). What is the bill number, if you'd like it named?" }
+            {
+              "id": "ga-Q-1840",
+              "kind": "question",
+              "title": "Brain-injury tolling sentence",
+              "url": null,
+              "post": 1840,
+              "question": "Post 1840 has a sentence on tolling for a traumatic brain injury under § 9-3-90. Is it right as written? If not, what should it say?"
+            },
+            {
+              "id": "ga-Q-F31",
+              "kind": "question",
+              "title": "E-scooter intersection page: negligence per se",
+              "url": "/electric-scooter-accident-lawyers/escooter-intersection-crash/",
+              "question": "We removed the claim that a Georgia e-scooter statute governs these crashes. Does the next sentence's negligence-per-se point still stand without a scooter statute?"
+            },
+            {
+              "id": "ga-Q-F38",
+              "kind": "question",
+              "title": "Golf-cart pedestrian page: the rules-of-the-road hook",
+              "url": "/golf-cart-accident-lawyers/golf-cart-pedestrian-accident/",
+              "question": "We dropped § 40-6-330 as the source of a PTV driver's duty to follow the rules of the road. Should the page cite § 40-6-91 (or something else) instead, or stay uncited?"
+            },
+            {
+              "id": "ga-Q-E58",
+              "kind": "question",
+              "title": "Pre-suit offers: the bill number",
+              "url": null,
+              "post": 1722,
+              "question": "Post 1722 now says § 9-11-67.1 was \"amended in 2024, for offers made on or after April 22, 2024\" (from the section's history line). What is the bill number, if you'd like it named?"
+            },
+            {
+              "id": "ga-Q-1676",
+              "kind": "question",
+              "title": "Fraud and the malpractice repose",
+              "post": 1676,
+              "url": "/blog/medical-malpractice-limits-georgia/",
+              "question": "Post 1676 says: \"Fraud by the provider pauses the limitation, but not the repose, until the fraud is discovered (O.C.G.A. § 9-3-96).\" Georgia cases may hold that a provider’s fraud can toll or estop the § 9-3-71 repose. Is the sentence right? If not, what should it say?"
+            }
           ]
         },
         {
@@ -67,14 +343,27 @@
           "title": "Wording already changed on live pages",
           "mode": "decide",
           "intro": "These went live on 10-24 because the old sentence was plainly wrong. They change wording, not just a citation, so they need your yes.",
-          "items": [ { "ref": "p1:E38" }, { "ref": "p1:E58" } ]
+          "items": [
+            {
+              "ref": "p1:E38"
+            },
+            {
+              "ref": "p1:E58"
+            }
+          ]
         },
         {
           "id": "ga-report",
           "title": "Research to read as reviewing attorney",
           "mode": "decide",
           "items": [
-            { "id": "ga-truck-report", "kind": "report", "title": "Georgia truck-crash deaths, 2020–2024", "html": "research/ga-truck-study-body.html", "note": "From federal FARS crash data. It cites no statutes, and every figure has been checked against the data. On your approval it is published with you as the reviewing attorney." }
+            {
+              "id": "ga-truck-report",
+              "kind": "report",
+              "title": "Georgia truck-crash deaths, 2020–2024",
+              "html": "research/ga-truck-study-body.html",
+              "note": "From federal FARS crash data. It cites no statutes, and every figure has been checked against the data. On your approval it is published with you as the reviewing attorney."
+            }
           ]
         },
         {
@@ -83,8 +372,51 @@
           "mode": "objection",
           "intro": "These pointed at the wrong Code section, or cited a section for something it doesn't say. We corrected the citation; the rule the page states did not change. Nothing to do unless one is wrong: flag it by {respondBy}. After that we record them as approved.",
           "items": [
-            { "ref": "p1:E32" }, { "ref": "p1:E33" }, { "ref": "p1:E40" }, { "ref": "p1:E41" }, { "ref": "p1:E42" }, { "ref": "p1:E43" }, { "ref": "p1:E44" }, { "ref": "p1:E46" }, { "ref": "p1:E50" }, { "ref": "p1:E57", "pairs": [1] },
-            { "ref": "p2:F30" }, { "ref": "p2:F31" }, { "ref": "p2:F38" }, { "ref": "p2:F39" }
+            {
+              "ref": "p1:E32"
+            },
+            {
+              "ref": "p1:E33"
+            },
+            {
+              "ref": "p1:E40"
+            },
+            {
+              "ref": "p1:E41"
+            },
+            {
+              "ref": "p1:E42"
+            },
+            {
+              "ref": "p1:E43"
+            },
+            {
+              "ref": "p1:E44"
+            },
+            {
+              "ref": "p1:E46"
+            },
+            {
+              "ref": "p1:E50"
+            },
+            {
+              "ref": "p1:E57",
+              "pairs": [
+                1
+              ]
+            },
+            {
+              "ref": "p2:F30"
+            },
+            {
+              "ref": "p2:F31"
+            },
+            {
+              "ref": "p2:F38"
+            },
+            {
+              "ref": "p2:F39"
+            }
           ]
         }
       ]
@@ -99,10 +431,28 @@
           "title": "Two abuse-survivor deadlines to sign",
           "mode": "signoff",
           "intro": "You signed the South Carolina statements in September. These two are new. Once signed, new content may rely on them. The troubled-teen abuse page's FAQ now uses general deadline wording; a more specific version waits on these two.",
-          "groups": [ { "title": "Statements", "table": "sc", "rows": "^\\d+$" } ],
+          "groups": [
+            {
+              "title": "Statements",
+              "table": "sc",
+              "rows": "^\\d+$"
+            }
+          ],
           "items": [
-            { "id": "sc-Q1", "kind": "question", "title": "Troubled-teen abuse page", "url": "/class-action-lawyers/troubled-teen-industry-abuse/", "question": "Most of these facilities are outside South Carolina. Does Roden refer those cases out, or co-counsel?" },
-            { "id": "sc-Q2", "kind": "question", "title": "Troubled-teen abuse page: Rule 7.1 / 7.2", "url": "/class-action-lawyers/troubled-teen-industry-abuse/", "question": "The page says \"history of proven results\", calls the firm's experience \"decades\", uses \"knowledgeable\" and \"experienced\", and has five no-fee lines that say nothing about case costs. Is any of it a problem in South Carolina, and what wording do you want instead?" }
+            {
+              "id": "sc-Q1",
+              "kind": "question",
+              "title": "Troubled-teen abuse page",
+              "url": "/class-action-lawyers/troubled-teen-industry-abuse/",
+              "question": "Most of these facilities are outside South Carolina. Does Roden refer those cases out, or co-counsel?"
+            },
+            {
+              "id": "sc-Q2",
+              "kind": "question",
+              "title": "Troubled-teen abuse page: Rule 7.1 / 7.2",
+              "url": "/class-action-lawyers/troubled-teen-industry-abuse/",
+              "question": "The page says \"history of proven results\", calls the firm's experience \"decades\", uses \"knowledgeable\" and \"experienced\", and has five no-fee lines that say nothing about case costs. Is any of it a problem in South Carolina, and what wording do you want instead?"
+            }
           ]
         },
         {
@@ -111,13 +461,92 @@
           "mode": "decide",
           "intro": "Each card shows what the page says now and the wording we propose. None of these is live.",
           "items": [
-            { "ref": "p1:E9" }, { "ref": "p1:E10" },
-            { "ref": "p2:F1" }, { "ref": "p2:F2" }, { "ref": "p2:F3" },
-            { "ref": "p2:F17" }, { "ref": "p2:F18" }, { "ref": "p2:F19" },
-            { "ref": "p2:F20" },
-            { "ref": "p1:E26" }, { "ref": "p1:E31" }, { "ref": "p1:E35" }, { "ref": "p1:E36" }, { "ref": "p1:E37" },
-            { "ref": "p1:E2" },
-            { "id": "sc-4367", "kind": "correction", "title": "Comparative fault: joint and several liability", "url": "/blog/south-carolina-comparative-fault-partially-at-fault/", "where": "body", "pairs": [ { "now": "\"A defendant found to be more than 50% at fault may be held jointly and severally liable for economic damages\"", "proposed": "\"A defendant found to be 50% or more at fault may be held jointly and severally liable\" (S.C. Code § 15-38-15)" } ], "question": "Should \"for economic damages\" stay? Your pack entry for § 15-38-15 carries no economic-only limit, but we haven't checked that point. (The page's key takeaway was already corrected on 10-24.)" }
+            {
+              "ref": "p1:E9"
+            },
+            {
+              "ref": "p1:E10"
+            },
+            {
+              "ref": "p2:F1"
+            },
+            {
+              "ref": "p2:F2"
+            },
+            {
+              "ref": "p2:F3"
+            },
+            {
+              "ref": "p2:F17"
+            },
+            {
+              "ref": "p2:F18"
+            },
+            {
+              "ref": "p2:F19"
+            },
+            {
+              "ref": "p2:F20"
+            },
+            {
+              "ref": "p1:E26"
+            },
+            {
+              "ref": "p1:E31"
+            },
+            {
+              "ref": "p1:E35"
+            },
+            {
+              "ref": "p1:E36"
+            },
+            {
+              "ref": "p1:E37"
+            },
+            {
+              "ref": "p1:E2"
+            },
+            {
+              "id": "sc-4367",
+              "kind": "correction",
+              "title": "Comparative fault: joint and several liability",
+              "url": "/blog/south-carolina-comparative-fault-partially-at-fault/",
+              "where": "body",
+              "pairs": [
+                {
+                  "now": "\"A defendant found to be more than 50% at fault may be held jointly and severally liable for economic damages\"",
+                  "proposed": "\"A defendant found to be 50% or more at fault may be held jointly and severally liable\" (S.C. Code § 15-38-15)"
+                }
+              ],
+              "question": "Should \"for economic damages\" stay? Your pack entry for § 15-38-15 carries no economic-only limit, but we haven't checked that point. (The page's key takeaway was already corrected on 10-24.)"
+            },
+            {
+              "ref": "p3:G3"
+            },
+            {
+              "ref": "p3:G4"
+            },
+            {
+              "ref": "p3:G5"
+            },
+            {
+              "ref": "p3:G7"
+            },
+            {
+              "ref": "p3:G8"
+            },
+            {
+              "ref": "p3:G14",
+              "question": "This card is mainly Georgia. Please read the South Carolina half."
+            },
+            {
+              "ref": "p3:G21",
+              "question": "This card is mainly Georgia. Please read the South Carolina half."
+            },
+            {
+              "ref": "p3:G29",
+              "question": "This card is mainly Georgia. Please read the South Carolina half."
+            }
           ]
         },
         {
@@ -125,12 +554,62 @@
           "title": "Wording on the pedestrian pages, held for you",
           "mode": "decide",
           "items": [
-            { "id": "sc-held-shoulder", "kind": "correction", "title": "Walking along a highway", "url": "/blog/south-carolina-pedestrian-right-of-way-laws/", "where": "posts 1856 and 4478, the walking-along-a-highway bullets", "pairs": [ { "now": "Use the sidewalk; otherwise walk on the left side facing traffic.", "proposed": "\"Use a sidewalk when one is available, otherwise the shoulder, and walk on the left side facing traffic only where there is neither.\"" } ], "question": "§ 56-5-3160(b)–(c) puts the shoulder before the left-side rule. Is the proposed wording right?" },
-            { "id": "sc-held-3130a", "kind": "question", "title": "Crosswalk yield duty", "url": "/blog/south-carolina-pedestrian-right-of-way-laws/", "question": "The page now quotes § 56-5-3130(a) in full, but its \"critical elements\" bullets and FAQ 0 still state the yield duty without the condition \"when traffic-control signals are not in place or not in operation\". Should we add that condition there?" },
-            { "id": "sc-held-notwithstanding", "kind": "question", "title": "The \"notwithstanding\" gloss", "url": "/blog/south-carolina-pedestrian-right-of-way-laws/", "question": "The page reads § 56-5-3230's \"notwithstanding\" as overriding every other provision. The statute says \"notwithstanding other provisions of any local ordinance\". Should the gloss be narrowed to local ordinances?" },
-            { "id": "sc-Q-3435", "kind": "question", "title": "Cyclists' equal rights", "url": null, "post": 4172, "question": "Two cycling pages (posts 4172, 4173) cite § 56-5-3435 for cyclists having the same rights as drivers. We've only verified that section for the passing distance. Is it the right cite for equal rights? If not, which section is?" },
-            { "id": "sc-Q-6160", "kind": "question", "title": "Guilty pleas as evidence", "url": null, "question": "Pages citing § 56-5-6160 carve out guilty pleas from the bar on using traffic convictions as evidence, relying on Samuel v. Mouzon. Is that right?" },
-            { "id": "sc-ttfaq", "kind": "confirm", "title": "Troubled-teen FAQ: general deadline wording (live since 10-24)", "url": "/class-action-lawyers/troubled-teen-industry-abuse/", "pairs": [ { "now": "A claim that abuse survivors generally get extended deadlines.", "proposed": "\"It may not be too late, but some claims may already have expired. Filing deadlines depend on the kind of claim and the state where it is filed, and they are strict.\"" } ], "question": "Is the general wording acceptable until the two deadlines above are signed?" }
+            {
+              "id": "sc-held-shoulder",
+              "kind": "correction",
+              "title": "Walking along a highway",
+              "url": "/blog/south-carolina-pedestrian-right-of-way-laws/",
+              "where": "posts 1856 and 4478, the walking-along-a-highway bullets",
+              "pairs": [
+                {
+                  "now": "Use the sidewalk; otherwise walk on the left side facing traffic.",
+                  "proposed": "\"Use a sidewalk when one is available, otherwise the shoulder, and walk on the left side facing traffic only where there is neither.\""
+                }
+              ],
+              "question": "§ 56-5-3160(b)–(c) puts the shoulder before the left-side rule. Is the proposed wording right?"
+            },
+            {
+              "id": "sc-held-3130a",
+              "kind": "question",
+              "title": "Crosswalk yield duty",
+              "url": "/blog/south-carolina-pedestrian-right-of-way-laws/",
+              "question": "The page now quotes § 56-5-3130(a) in full, but its \"critical elements\" bullets and FAQ 0 still state the yield duty without the condition \"when traffic-control signals are not in place or not in operation\". Should we add that condition there?"
+            },
+            {
+              "id": "sc-held-notwithstanding",
+              "kind": "question",
+              "title": "The \"notwithstanding\" gloss",
+              "url": "/blog/south-carolina-pedestrian-right-of-way-laws/",
+              "question": "The page reads § 56-5-3230's \"notwithstanding\" as overriding every other provision. The statute says \"notwithstanding other provisions of any local ordinance\". Should the gloss be narrowed to local ordinances?"
+            },
+            {
+              "id": "sc-Q-3435",
+              "kind": "question",
+              "title": "Cyclists' equal rights",
+              "url": null,
+              "post": 4172,
+              "question": "Two cycling pages (posts 4172, 4173) cite § 56-5-3435 for cyclists having the same rights as drivers. We've only verified that section for the passing distance. Is it the right cite for equal rights? If not, which section is?"
+            },
+            {
+              "id": "sc-Q-6160",
+              "kind": "question",
+              "title": "Guilty pleas as evidence",
+              "url": null,
+              "question": "Pages citing § 56-5-6160 carve out guilty pleas from the bar on using traffic convictions as evidence, relying on Samuel v. Mouzon. Is that right?"
+            },
+            {
+              "id": "sc-ttfaq",
+              "kind": "confirm",
+              "title": "Troubled-teen FAQ: general deadline wording (live since 10-24)",
+              "url": "/class-action-lawyers/troubled-teen-industry-abuse/",
+              "pairs": [
+                {
+                  "now": "A claim that abuse survivors generally get extended deadlines.",
+                  "proposed": "\"It may not be too late, but some claims may already have expired. Filing deadlines depend on the kind of claim and the state where it is filed, and they are strict.\""
+                }
+              ],
+              "question": "Is the general wording acceptable until the two deadlines above are signed?"
+            }
           ]
         },
         {
@@ -138,18 +617,79 @@
           "title": "Research to read as reviewing attorney",
           "mode": "decide",
           "items": [
-            { "id": "sc-truck-report", "kind": "report", "title": "South Carolina truck-crash deaths, 2020–2024", "html": "research/sc-truck-study-body.html", "note": "From federal FARS crash data. It cites no statutes, and every figure has been checked against the data. On your approval it is published with you as the reviewing attorney." },
-            { "id": "sc-corridor", "kind": "report", "title": "I-26 / I-95 corridor report: the South Carolina half", "link": "/resources/i-26-i-95-corridor-report/", "note": "Live since August. Its review date was set at publication, not by an attorney's read, so we took it off. Joshua Dorminy is reading the Georgia half. Once you've both read it, it gets a real review date with your names." }
+            {
+              "id": "sc-truck-report",
+              "kind": "report",
+              "title": "South Carolina truck-crash deaths, 2020–2024",
+              "html": "research/sc-truck-study-body.html",
+              "note": "From federal FARS crash data. It cites no statutes, and every figure has been checked against the data. On your approval it is published with you as the reviewing attorney."
+            },
+            {
+              "id": "sc-corridor",
+              "kind": "report",
+              "title": "I-26 / I-95 corridor report: the South Carolina half",
+              "link": "/resources/i-26-i-95-corridor-report/",
+              "note": "Live since August. Its review date was set at publication, not by an attorney's read, so we took it off. Joshua Dorminy is reading the Georgia half. Once you've both read it, it gets a real review date with your names."
+            }
           ]
         },
         {
           "id": "sc-citation-fixes",
           "title": "Citation fixes already live",
           "mode": "objection",
-          "intro": "The pedestrian right-of-way posts cited the wrong sections. We re-cited them and replaced paraphrased quotes with the statute's own text, as read on scstatehouse.gov on 10-24. The rules the pages state did not change. Please check the § 56-5-3230 quote against your annotated code. Nothing else to do unless one is wrong: flag it by {respondBy}. After that we record them as approved.",
+          "intro": "We fixed these on live pages. The pedestrian right-of-way posts cited the wrong sections; we re-cited them and replaced paraphrased quotes with the statute’s own text, as read on scstatehouse.gov on 10-24. Please check the § 56-5-3230 quote against your annotated code. Since then: the boating pages cited a former no-wake-zone section (now § 50-21-870), the nursing-home page used the Act’s pre-2023 name, and the bicycle page’s causes list gave South Carolina a three-foot passing rule (§ 56-5-3435 sets a safe operating distance with no figure). Nothing else to do unless one is wrong: flag it by {respondBy}. After that we record them as approved.",
           "items": [
-            { "ref": "p2:F4" }, { "ref": "p2:F5" }, { "ref": "p2:F6" }, { "ref": "p2:F7" }, { "ref": "p2:F8" }, { "ref": "p2:F9" }, { "ref": "p2:F10" },
-            { "ref": "p2:F11" }, { "ref": "p2:F12" }, { "ref": "p2:F13" }, { "ref": "p2:F14" }, { "ref": "p2:F15" }, { "ref": "p2:F16" }
+            {
+              "ref": "p2:F4"
+            },
+            {
+              "ref": "p2:F5"
+            },
+            {
+              "ref": "p2:F6"
+            },
+            {
+              "ref": "p2:F7"
+            },
+            {
+              "ref": "p2:F8"
+            },
+            {
+              "ref": "p2:F9"
+            },
+            {
+              "ref": "p2:F10"
+            },
+            {
+              "ref": "p2:F11"
+            },
+            {
+              "ref": "p2:F12"
+            },
+            {
+              "ref": "p2:F13"
+            },
+            {
+              "ref": "p2:F14"
+            },
+            {
+              "ref": "p2:F15"
+            },
+            {
+              "ref": "p2:F16"
+            },
+            {
+              "ref": "p3:G1"
+            },
+            {
+              "ref": "p3:G2"
+            },
+            {
+              "ref": "p3:G6"
+            },
+            {
+              "ref": "p3:G9"
+            }
           ]
         }
       ]
@@ -164,7 +704,13 @@
           "title": "I-26 / I-95 corridor report: the Georgia half",
           "mode": "decide",
           "items": [
-            { "id": "ga-corridor", "kind": "report", "title": "I-26 / I-95 corridor report: the Georgia half", "link": "/resources/i-26-i-95-corridor-report/", "note": "Live since August. Its review date was set at publication, not by an attorney's read, so we took it off. Graeham Gillin is reading the South Carolina half. Once you've both read it, it gets a real review date with your names." }
+            {
+              "id": "ga-corridor",
+              "kind": "report",
+              "title": "I-26 / I-95 corridor report: the Georgia half",
+              "link": "/resources/i-26-i-95-corridor-report/",
+              "note": "Live since August. Its review date was set at publication, not by an attorney's read, so we took it off. Graeham Gillin is reading the South Carolina half. Once you've both read it, it gets a real review date with your names."
+            }
           ]
         }
       ]
