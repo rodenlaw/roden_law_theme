@@ -1323,13 +1323,21 @@ function roden_neighborhood_grid( $current_post_id ) {
    ========================================================================== */
 
 function roden_contact_form_sidebar( $local_phone = '', $source = '' ) {
+    // Practice, sub-type, intersection and neighbourhood pages render this
+    // form twice (hero and sidebar). Every id is suffixed after the first
+    // render so each label targets its own field: with fixed ids the second
+    // form's labels pointed at the first form's inputs. The first render keeps
+    // the original ids unchanged.
+    static $rsf_instance = 0;
+    $rsf_instance++;
+    $sfx = ( $rsf_instance > 1 ) ? '-' . $rsf_instance : '';
     ?>
     <div class="sidebar-contact-form">
         <h2 class="form-title"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></h2>
         <?php $rf_stats = roden_firm_data(); ?>
         <p class="form-subtitle"><?php esc_html_e( 'No fees unless we win', 'roden-law' ); ?><br><?php printf( /* translators: %d: rounded live Google review count, e.g. 170. */ esc_html__( '%d+ verified Google reviews', 'roden-law' ), (int) $rf_stats['trust_stats']['review_count_rounded'] ); ?></p>
-        <form class="roden-sidebar-form" id="roden-sidebar-form" novalidate>
-            <?php wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce' ); ?>
+        <form class="roden-sidebar-form" id="roden-sidebar-form<?php echo esc_attr( $sfx ); ?>" novalidate>
+            <?php echo str_replace( 'id="roden_form_nonce"', 'id="roden_form_nonce' . esc_attr( $sfx ) . '"', wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce', true, false ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core-escaped nonce markup. ?>
             <input type="hidden" name="gclid" class="roden-gclid" value="">
             <input type="hidden" name="lang" value="<?php echo esc_attr( function_exists( 'roden_current_lang' ) ? roden_current_lang() : 'en' ); ?>">
             <?php if ( $source ) : ?>
@@ -1338,22 +1346,30 @@ function roden_contact_form_sidebar( $local_phone = '', $source = '' ) {
             <div style="position:absolute;left:-9999px;" aria-hidden="true">
                 <input type="text" name="website_url" tabindex="-1" autocomplete="off">
             </div>
+            <?php // Labels are visible: the placeholder alone disappears as soon as
+                  // the visitor types (UI review 2026-10-26, P2). ?>
             <div class="rsf-row rsf-half">
-                <div>
-                    <label for="rsf-first-name" class="screen-reader-text"><?php esc_html_e( 'First Name', 'roden-law' ); ?></label>
-                    <input type="text" name="first_name" id="rsf-first-name" placeholder="<?php esc_attr_e( 'First Name', 'roden-law' ); ?>" autocomplete="given-name" required>
+                <div class="rsf-field">
+                    <label for="rsf-first-name<?php echo esc_attr( $sfx ); ?>" class="rsf-label"><?php esc_html_e( 'First Name', 'roden-law' ); ?></label>
+                    <input type="text" name="first_name" id="rsf-first-name<?php echo esc_attr( $sfx ); ?>" placeholder="<?php esc_attr_e( 'First Name', 'roden-law' ); ?>" autocomplete="given-name" required>
                 </div>
-                <div>
-                    <label for="rsf-last-name" class="screen-reader-text"><?php esc_html_e( 'Last Name', 'roden-law' ); ?></label>
-                    <input type="text" name="last_name" id="rsf-last-name" placeholder="<?php esc_attr_e( 'Last Name', 'roden-law' ); ?>" autocomplete="family-name" required>
+                <div class="rsf-field">
+                    <label for="rsf-last-name<?php echo esc_attr( $sfx ); ?>" class="rsf-label"><?php esc_html_e( 'Last Name', 'roden-law' ); ?></label>
+                    <input type="text" name="last_name" id="rsf-last-name<?php echo esc_attr( $sfx ); ?>" placeholder="<?php esc_attr_e( 'Last Name', 'roden-law' ); ?>" autocomplete="family-name" required>
                 </div>
             </div>
-            <label for="rsf-phone" class="screen-reader-text"><?php esc_html_e( 'Phone Number', 'roden-law' ); ?></label>
-            <input type="tel" name="phone" id="rsf-phone" placeholder="(555) 555-5555" autocomplete="tel" required>
-            <label for="rsf-email" class="screen-reader-text"><?php esc_html_e( 'Email Address', 'roden-law' ); ?></label>
-            <input type="email" name="email" id="rsf-email" placeholder="<?php esc_attr_e( 'Email', 'roden-law' ); ?>" autocomplete="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
-            <label for="rsf-message" class="screen-reader-text"><?php esc_html_e( 'Describe what happened', 'roden-law' ); ?></label>
-            <textarea name="message" id="rsf-message" placeholder="<?php esc_attr_e( 'Please describe what happened', 'roden-law' ); ?>" rows="8"></textarea>
+            <div class="rsf-field">
+                <label for="rsf-phone<?php echo esc_attr( $sfx ); ?>" class="rsf-label"><?php esc_html_e( 'Phone Number', 'roden-law' ); ?></label>
+                <input type="tel" name="phone" id="rsf-phone<?php echo esc_attr( $sfx ); ?>" placeholder="(555) 555-5555" autocomplete="tel" required>
+            </div>
+            <div class="rsf-field">
+                <label for="rsf-email<?php echo esc_attr( $sfx ); ?>" class="rsf-label"><?php esc_html_e( 'Email Address', 'roden-law' ); ?></label>
+                <input type="email" name="email" id="rsf-email<?php echo esc_attr( $sfx ); ?>" placeholder="<?php esc_attr_e( 'Email', 'roden-law' ); ?>" autocomplete="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
+            </div>
+            <div class="rsf-field">
+                <label for="rsf-message<?php echo esc_attr( $sfx ); ?>" class="rsf-label"><?php esc_html_e( 'Describe what happened', 'roden-law' ); ?></label>
+                <textarea name="message" id="rsf-message<?php echo esc_attr( $sfx ); ?>" placeholder="<?php esc_attr_e( 'Please describe what happened', 'roden-law' ); ?>" rows="8"></textarea>
+            </div>
             <label class="rsf-consent">
                 <input type="checkbox" name="consent" value="1" checked required>
                 <span><?php
