@@ -4,7 +4,7 @@ Theme URI: https://rodenlaw.com
 Author: Roden Law
 Author URI: https://rodenlaw.com
 Description: Custom AI-SEO optimized WordPress theme for Roden Law personal injury firm serving Georgia and South Carolina across 6 office locations. Built with structured data, E-E-A-T compliance, and local SEO as core architecture principles.
-Version: 1.4.46
+Version: 1.4.47
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 8.0
@@ -3221,7 +3221,7 @@ a.lang-switcher-item:focus {
 }
 
 .pa-injury__desc {
-    font-size: 13px;
+    font-size: 16px; /* body prose (was 13px), UI review 2026-10-26 P4 */
     line-height: 1.5;
     color: var(--color-gray, #666);
     margin: 0;
@@ -3637,6 +3637,18 @@ a.lang-switcher-item:focus {
     text-align: left;
     border: 1px solid var(--color-border, #e0e0e0);
     vertical-align: top;
+}
+
+/* Small screens: fixed layout so the table takes the column's width instead of
+   its content's (it was 400px in a 327px column, UI review 2026-10-26, P4);
+   long citations wrap inside their cell. */
+@media (max-width: 600px) {
+    .comparison-table { table-layout: fixed; font-size: 0.875rem; }
+    /* table. raises specificity over the base 25% rule further down the file. */
+    table.comparison-table thead th:first-child { width: 36%; }
+    table.comparison-table td:first-child { overflow-wrap: normal; hyphens: manual; } /* rule names stay whole */
+    .comparison-table th,
+    .comparison-table td { padding: 8px; overflow-wrap: break-word; hyphens: auto; }
 }
 
 .comparison-table thead th {
