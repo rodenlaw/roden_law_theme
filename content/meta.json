@@ -361,7 +361,7 @@
                     },
                     {
                         "question": "What rights do cyclists have at intersections?",
-                        "answer": "Cyclists have the same rights as motor vehicles at intersections. Under Georgia law (O.C.G.A. § 40-6-294) and South Carolina law (S.C. Code § 56-5-3435), cyclists may use the full lane, have the right of way when traveling with a green signal, and must be yielded to by turning vehicles."
+                        "answer": "Cyclists have the same rights as motor vehicles at intersections. Under Georgia law (O.C.G.A. § 40-6-294) and South Carolina law (S.C. Code § 56-5-3420), cyclists may use the full lane, have the right of way when traveling with a green signal, and must be yielded to by turning vehicles."
                     },
                     {
                         "question": "What should I do if I am hit by a car at an intersection while cycling?",
@@ -399,7 +399,7 @@
                     },
                     {
                         "question": "Do cyclists have the same rights as cars on the road?",
-                        "answer": "Yes. Both Georgia (O.C.G.A. § 40-6-291) and South Carolina (S.C. Code § 56-5-3435) grant cyclists the same rights and duties as motor vehicle drivers. Cyclists are entitled to use the roadway and have the right of way when traveling straight through an intersection."
+                        "answer": "Yes. Both Georgia (O.C.G.A. § 40-6-291) and South Carolina (S.C. Code § 56-5-3420) grant cyclists the same rights and duties as motor vehicle drivers. Cyclists are entitled to use the roadway and have the right of way when traveling straight through an intersection."
                     },
                     {
                         "question": "What is the statute of limitations for a bicycle accident claim?",
@@ -9356,7 +9356,7 @@
                 "_roden_faqs": [
                     {
                         "question": "Do drivers have to yield to pedestrians at unmarked crosswalks in South Carolina?",
-                        "answer": "Yes. S.C. Code § 56-5-3130 requires drivers to yield the right of way to pedestrians within any marked crosswalk or any unmarked crosswalk at an intersection. An unmarked crosswalk is the implied extension of the sidewalk across the intersection, even without painted lines."
+                        "answer": "Yes, where no traffic signal is in place or working. S.C. Code § 56-5-3130(a) then requires drivers to yield the right of way to pedestrians within any marked crosswalk or any unmarked crosswalk at an intersection. An unmarked crosswalk is the implied extension of the sidewalk across the intersection, even without painted lines."
                     },
                     {
                         "question": "What is the comparative fault rule for pedestrian accidents in South Carolina?",
@@ -12102,7 +12102,7 @@
                     },
                     {
                         "question": "Can I sue a coach for returning my child to play after a concussion?",
-                        "answer": "Yes. Georgia's Return to Play Act (O.C.G.A. § 20-2-324.1) and South Carolina's Youth Athletic Concussion Prevention Act (S.C. Code § 59-63-75) require immediate removal from play and medical clearance. A coach who violates these laws is negligent."
+                        "answer": "Yes. Georgia's Return to Play Act (O.C.G.A. § 20-2-324.1) and South Carolina's student-athlete concussion law (S.C. Code § 59-63-75) require immediate removal from play and medical clearance. A coach who violates these laws is negligent."
                     },
                     {
                         "question": "What is the statute of limitations for a second impact syndrome claim?",
@@ -12128,7 +12128,7 @@
                 "_roden_faqs": [
                     {
                         "question": "Can I sue a coach or school for my child's sports concussion?",
-                        "answer": "Yes, if the coach or school was negligent — for example, by returning a concussed athlete to play without medical clearance, violating Georgia's Return to Play Act (O.C.G.A. § 20-2-324.1) or South Carolina's Youth Athletic Concussion Prevention Act (S.C. Code § 59-63-75)."
+                        "answer": "Yes, if the coach or school was negligent — for example, by returning a concussed athlete to play without medical clearance, violating Georgia's Return to Play Act (O.C.G.A. § 20-2-324.1) or South Carolina's student-athlete concussion law (S.C. Code § 59-63-75)."
                     },
                     {
                         "question": "Does the assumption of risk defense bar all sports injury claims?",

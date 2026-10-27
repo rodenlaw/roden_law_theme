@@ -691,6 +691,148 @@
               "ref": "p3:G9"
             }
           ]
+        },
+        {
+          "id": "sc-followups-live",
+          "title": "Follow-ups to your answers, already live",
+          "mode": "objection",
+          "intro": "We wrote these from your answers on the pedestrian, cycling and guilty-plea questions, and fixed two more pages with the physician-choice error you corrected in the prescriptions table. They went live on 10-27 before you had read them. Nothing to do unless one is wrong: flag it by {respondBy}. After that we record them as approved.",
+          "items": [
+            {
+              "id": "sc-fu-3130a",
+              "kind": "live",
+              "title": "Crosswalk yield duty: the no-signal condition",
+              "url": "/blog/south-carolina-pedestrian-right-of-way-laws/",
+              "pairs": [
+                {
+                  "now": "The duty to yield applies at both marked and unmarked crosswalks",
+                  "proposed": "Where traffic-control signals are not in place or not in operation, the duty to yield applies at both marked and unmarked crosswalks"
+                },
+                {
+                  "now": "Yes. S.C. Code § 56-5-3130 requires drivers to yield the right of way to pedestrians within any marked crosswalk or any unmarked crosswalk at an intersection.",
+                  "proposed": "Yes, where no traffic signal is in place or working. S.C. Code § 56-5-3130(a) then requires drivers to yield the right of way to pedestrians within any marked crosswalk or any unmarked crosswalk at an intersection."
+                }
+              ]
+            },
+            {
+              "id": "sc-fu-3230",
+              "kind": "live",
+              "title": "The \"notwithstanding\" reading of § 56-5-3230",
+              "url": "/blog/south-carolina-pedestrian-right-of-way-laws/",
+              "pairs": [
+                {
+                  "now": "The word \"notwithstanding\" is key — it means this duty applies regardless of any other provision, including situations where the pedestrian does not have the right of way.",
+                  "proposed": "The opening words, \"notwithstanding other provisions of any local ordinance,\" mean no local ordinance can lower this duty. The duty also applies when the pedestrian does not have the right of way."
+                }
+              ]
+            },
+            {
+              "id": "sc-fu-3420-rh",
+              "kind": "live",
+              "title": "Cyclists' equal rights: re-cited to § 56-5-3420",
+              "url": "/bicycle-accident-lawyers/right-hook-left-cross-collision/",
+              "pairs": [
+                {
+                  "now": "S.C. Code § 56-5-3435 grants cyclists the same rights as vehicle drivers and prohibits drivers from making turns across a cyclist's path unless the turn can be made safely.",
+                  "proposed": "S.C. Code § 56-5-3420 gives cyclists the same rights and duties as drivers, subject to statutory exceptions, and § 56-5-3435 requires a driver passing a cyclist to keep a safe operating distance."
+                },
+                {
+                  "now": "FAQ: … South Carolina (S.C. Code § 56-5-3435) grant cyclists the same rights and duties as motor vehicle drivers.",
+                  "proposed": "FAQ: … South Carolina (S.C. Code § 56-5-3420) grant cyclists the same rights and duties as motor vehicle drivers."
+                }
+              ]
+            },
+            {
+              "id": "sc-fu-3420-int",
+              "kind": "live",
+              "title": "Cyclists' equal rights: re-cited to § 56-5-3420",
+              "url": "/bicycle-accident-lawyers/intersection-bicycle-accident/",
+              "pairs": [
+                {
+                  "now": "S.C. Code § 56-5-3435 grants cyclists identical rights and duties as motor vehicle operators, including the right of way at intersections when traveling with a green signal or stop-sign priority.",
+                  "proposed": "S.C. Code § 56-5-3420 gives cyclists the same rights and duties as drivers, subject to statutory exceptions, so the ordinary right-of-way rules at intersections apply to them."
+                },
+                {
+                  "now": "FAQ: … South Carolina law (S.C. Code § 56-5-3435), cyclists may use the full lane …",
+                  "proposed": "FAQ: … South Carolina law (S.C. Code § 56-5-3420), cyclists may use the full lane …"
+                }
+              ]
+            },
+            {
+              "id": "sc-fu-6160",
+              "kind": "live",
+              "title": "Guilty pleas: evidence, not proof",
+              "url": "/blog/georgia-super-speeder-law/",
+              "pairs": [
+                {
+                  "now": "When reconstruction evidence or the driver's guilty plea proves the other driver was traveling at extreme speed …",
+                  "proposed": "When reconstruction evidence or the driver's guilty plea shows the other driver was traveling at extreme speed …"
+                }
+              ]
+            },
+            {
+              "id": "sc-fu-15-60-rx",
+              "kind": "live",
+              "title": "Choice of physician (§ 42-15-60)",
+              "url": "/blog/does-workers-compensation-cover-prescriptions/",
+              "pairs": [
+                {
+                  "now": "South Carolina gives injured workers more flexibility in choosing their treating physician than Georgia. You can typically select your own doctor, though the insurer can request a change under certain circumstances (S.C. Code § 42-15-60).",
+                  "proposed": "In South Carolina the employer may choose and furnish the treating physician, and the injured worker must accept that physician (S.C. Code § 42-15-60)."
+                }
+              ]
+            },
+            {
+              "id": "sc-fu-15-60-elig",
+              "kind": "live",
+              "title": "Choice of physician (§ 42-15-60)",
+              "url": "/blog/am-i-eligible-for-workers-compensation/",
+              "pairs": [
+                {
+                  "now": "Unlike Georgia, South Carolina gives injured workers more flexibility in choosing their own treating physician (S.C. Code § 42-15-60)",
+                  "proposed": "The employer may choose and furnish the treating physician (S.C. Code § 42-15-60)"
+                }
+              ]
+            },
+            {
+              "id": "sc-fu-59-63-75-sis",
+              "kind": "live",
+              "title": "The concussion law's name in the FAQ",
+              "url": "/brain-injury-lawyers/second-impact-syndrome/",
+              "pairs": [
+                {
+                  "now": "South Carolina's Youth Athletic Concussion Prevention Act (S.C. Code § 59-63-75)",
+                  "proposed": "South Carolina's student-athlete concussion law (S.C. Code § 59-63-75)"
+                }
+              ]
+            },
+            {
+              "id": "sc-fu-59-63-75-sport",
+              "kind": "live",
+              "title": "The concussion law's name in the FAQ",
+              "url": "/brain-injury-lawyers/sports-related-brain-injury/",
+              "pairs": [
+                {
+                  "now": "South Carolina's Youth Athletic Concussion Prevention Act (S.C. Code § 59-63-75)",
+                  "proposed": "South Carolina's student-athlete concussion law (S.C. Code § 59-63-75)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sc-followups-question",
+          "title": "One question from the cycling pages",
+          "mode": "decide",
+          "items": [
+            {
+              "id": "sc-fu-fulllane",
+              "kind": "question",
+              "title": "Cyclists and the full lane",
+              "url": "/bicycle-accident-lawyers/intersection-bicycle-accident/",
+              "question": "The FAQ says that under South Carolina law cyclists \"may use the full lane\". Given the ride-to-the-right rule in § 56-5-3430 and its exceptions, is that right as written, or should it say when a cyclist may take the lane?"
+            }
+          ]
         }
       ]
     },

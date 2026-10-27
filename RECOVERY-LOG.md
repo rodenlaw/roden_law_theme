@@ -3670,3 +3670,31 @@ addition), G21, G29.
   on § 56-5-6160 pages (Q-6160).
 - From the claim-class sweep: the "Choice of physician" bullets on 1674 and 1693 (same error as E31), and the old
   act name in the 4207 FAQ 2 and 4205 FAQ 0 answers.
+
+## 2026-10-27 — SC follow-ups 1-6: applied before attorney review (owner's word)
+
+Owner, 2026-10-27: "apply those proposed changes in 1-6 now and we'll get Gillin to review in the future". The
+wording was drafted today from Gillin's answers and from the claim-class sweep, and it is **not yet
+attorney-reviewed**. No `_roden_last_reviewed` was set. An email draft to him was deleted by the owner. Instead, the
+nine changed passages are on his review page as objection cards (`sc-followups-live` in
+`data/facts/reviews/2026-10-attorney/plan.json`, published 2026-10-27; silence by 2026-11-06 is approval). There
+is also one question card, `sc-fu-fulllane`. His set was already submitted, so he needs to be told the cards are
+there. His earlier 31 answers are kept (`review.mjs status`: 31/32).
+1. **4478**, § 56-5-3130(a): the "critical elements" bullet and FAQ 0 now carry the no-signal condition.
+2. **4478**, § 56-5-3230: the "notwithstanding" gloss is narrowed to local ordinances.
+3. **4172, 4173**: equal rights re-cited from § 56-5-3435 to § 56-5-3420, in the bodies and in 4172 FAQ 3 and
+   4173 FAQ 2. 4172's turning-across-a-cyclist claim was dropped (no authority). 4173 FAQ 2's "may use the full
+   lane" is unchanged and is put to Gillin as a question (§ 56-5-3430).
+4. **1790**: a guilty plea "shows" rather than "proves" speed (§ 56-5-6160 condition, Q-6160).
+5. **1674, 1693**: the "Choice of physician" bullets now say the employer may choose and furnish the physician
+   (§ 42-15-60; same error as E31).
+6. **4207 FAQ 2, 4205 FAQ 0**: "Youth Athletic Concussion Prevention Act" became "student-athlete concussion law"
+   (§ 59-63-75). 4207 FAQ 2's "A coach who violates these laws is negligent" stays held with G21 for Love.
+
+`bin/apply-sc-followups-2026-10-27.php`, 12 edits on 8 posts, uses the same mechanics as the Gillin batch. Backup:
+`docs/backups/sc-followups-2026-10-27.json`. **Verified:** caches flushed; 12/12 on the live pages; the JSON-LD
+guard passes; the fresh sweep shows 0 findings; `content/meta.json` regenerated (5 lines).
+
+The sweep's 5 new warnings are not from this batch. They are `authority-quantity` on SC 15-3-40, newly active
+after internal-ai-scripts #134, and each reads correctly: "the 19th birthday, or three years from the injury if
+later". These are false alarms from a multi-statute sentence. The pack entry was left as Gillin verified it.
