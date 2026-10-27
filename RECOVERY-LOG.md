@@ -3616,3 +3616,19 @@ Not sent. Sending it is the owner's call.
   reviews and directories. Item closed; carried to November as a review/directory play.
 - **Plays item 0** corrected: the GA signer is Tyler Love (D6), not Eric Roden; SC is signed by
   Gillin with two pending authorities.
+
+## 2026-10-27 — Post 4367 joint-and-several body sentence: corrected (applied)
+
+This closes the sentence held on 2026-10-24. Gillin approved the proposed wording on the October attorney review
+(item `sc-4367`, `data/facts/reviews/2026-10-attorney/answers-gillin.json`, 2026-10-26; the sheet is pulled, not
+yet submitted). That approval covers dropping "for economic damages". Owner, 2026-10-27: "apply".
+- **Body, post 4367** (`/blog/south-carolina-comparative-fault-partially-at-fault/`): "more than 50% at fault may
+  be held jointly and severally liable for economic damages, meaning" now reads "50% or more at fault may be held
+  jointly and severally liable, meaning" (S.C. Code § 15-38-15, SC pack `SC 15-38-15`).
+  `bin/fix-sc-jsl-body-4367.php`: exact match once, `wp_update_post( wp_slash() )`, read back from the table,
+  `_roden_content_modified` set. Backup: `docs/backups/4367-body-2026-10-27.json`.
+- **Verified:** both caches flushed; the live page (cache-busted) carries the new sentence and no "for economic
+  damages"; the JSON-LD guard passes on prod and statically; the fresh claims sweep shows 0 findings. The FAQs and
+  excerpt carry no joint-and-several claim, and the key takeaway was fixed 2026-10-24, so all four places are now
+  correct. `content/meta.json` is unchanged because bodies are not exported.
+- The open item is removed from `plays/2026-10.json`.
