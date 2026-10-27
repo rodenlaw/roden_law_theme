@@ -3632,3 +3632,41 @@ yet submitted). That approval covers dropping "for economic damages". Owner, 202
   excerpt carry no joint-and-several claim, and the key takeaway was fixed 2026-10-24, so all four places are now
   correct. `content/meta.json` is unchanged because bodies are not exported.
 - The open item is removed from `plays/2026-10.json`.
+
+## 2026-10-27 — Gillin's South Carolina answers: 27 edits on 16 posts (applied)
+
+Gillin submitted all 31 SC items on the October attorney review on 2026-10-26 at 21:31Z
+(`data/facts/reviews/2026-10-attorney/answers-gillin.json`, re-pulled 2026-10-27; the 10-26 pull predated the
+submit). Owner, 2026-10-27: "yes on 1 and 2". Applied where the approved wording is South Carolina only:
+- **1690** (E9, E10): § 42-9-60 has no safety-rule defense and creates no intoxication presumption. Changed:
+  the subsection (heading now "No Safety-Rule Defense"; the "employer must prove" list removed), two SC table
+  cells, the OSHA bullet, FAQ 3, and the key takeaway. GA cells unchanged.
+- **1677** (E26, Gillin's wording, § 42-15-60(B)). **1674** (E31, SC physician cell).
+- **5145, 5128, 5141** (E35-E37, § 15-32-230; 5145 and 5128 are inside their ledger window to 2026-12-08, so
+  only a one-sentence or one-cell legal correction).
+- **1837** (F1-F3, § 43-35-25(A)), plus two `x27` apostrophe corruptions in its FAQs 0 and 3.
+- **4639** (F17 key takeaway, F18; the invented SC three-foot rule). **1693** (F20, agricultural cell).
+- **4207, 4205** (G3, G4, § 59-63-75). **4162** (G5, § 56-5-1535). **4352** (G7, § 50-21-95). **4111** (G8,
+  § 42-11-10(A)).
+- **1856, 4478** (sc-held-shoulder, § 56-5-3160).
+
+`bin/apply-gillin-sc-2026-10.php`: every edit is checked as an exact match, once, on every surface before any
+write. Each surface is written once with `wp_slash` and read back from the table, and `_roden_content_modified` is
+set per post. Backup with before text: `docs/backups/gillin-sc-2026-10-27.json`.
+
+**Verified:** caches flushed; 27/27 edits on the live pages (cache-busted); the JSON-LD guard passes on prod and
+statically; the fresh claims sweep shows 0 findings; `content/meta.json` regenerated (exactly the 5 meta fields
+changed).
+
+**Pack:** § 15-3-555 and § 15-3-40 approved (sc-1, sc-2) and moved into `authorities[]`, internal-ai-scripts
+#134. **Studies:** SC truck report and corridor SC half approved; GA reads outstanding.
+
+**Held for Love** (new wording states Georgia law; GA pack unsigned, D6): E2, F19, G14 (with Gillin's SC FAQ
+addition), G21, G29.
+
+**Still to draft:**
+- From Gillin's answers: the § 56-5-3130(a) signal condition and narrowing the § 56-5-3230 gloss (4478, both
+  "yes"); re-citing equal rights from § 56-5-3435 to § 56-5-3420 on 4172/4173 (Q-3435); the guilty-plea condition
+  on § 56-5-6160 pages (Q-6160).
+- From the claim-class sweep: the "Choice of physician" bullets on 1674 and 1693 (same error as E31), and the old
+  act name in the 4207 FAQ 2 and 4205 FAQ 0 answers.
