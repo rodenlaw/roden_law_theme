@@ -44,7 +44,7 @@
       "postplanifyGbpId": "bb3eb361-d2e4-419a-af94-7ebaf0c6415f",
       "serviceCounties": ["Chatham", "Bryan", "Effingham", "Liberty", "Bulloch"],
       "highways": ["I-95", "I-16", "Abercorn St"],
-      "competitors": ["Harris Lowry Manton", "Farah & Farah", "Morgan & Morgan", "Suthers & Harper", "Hasner Law", "The Wilson PC", "Bader Law", "Spiva Law Group", "The Brown Firm", "Kenneth S. Nugent", "Bowen Painter Injury Lawyers", "Georgia Auto Law"],
+      "competitors": ["Harris Lowry Manton", "Farah & Farah", "Morgan & Morgan", "Suthers & Harper", "Hasner Law", "The Wilson PC", "Bader Law", "Spiva Law Group", "The Brown Firm", "Kenneth S. Nugent", "Bowen Painter Injury Lawyers"],
       "pipeline": true,
       "radar": true
     },
@@ -60,7 +60,7 @@
       "postplanifyGbpId": "530e12f0-52fe-4a79-9207-c5f1199b0725",
       "serviceCounties": ["McIntosh", "Glynn"],
       "highways": ["I-95", "US-17"],
-      "competitors": ["Coppage Law Firm", "The Law Offices of Joshua W. Branch", "Farah & Farah", "Whitworth & McLelland", "Wallace Harrell III Law", "Bader Law", "Georgia Auto Law"],
+      "competitors": ["Coppage Law Firm", "The Law Offices of Joshua W. Branch", "Farah & Farah", "Whitworth & McLelland", "Wallace Harrell III Law", "Bader Law"],
       "pipeline": true,
       "radar": true
     },
