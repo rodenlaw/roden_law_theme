@@ -29,14 +29,14 @@ An attorney may only be attributed on content whose jurisdiction is within their
 - Phone (use this exact string): (912) 303-5850
 - Service counties: Chatham, Bryan, Effingham, Liberty, Bulloch
 - Major corridors: I-95, I-16, Abercorn St
-- Map-pack competitors (never name them in copy; context only): Harris Lowry Manton; Farah & Farah; Morgan & Morgan; Suthers & Harper; Hasner Law; The Wilson PC; Bader Law; Spiva Law Group; The Brown Firm; Kenneth S. Nugent; Bowen Painter Injury Lawyers; Georgia Auto Law
+- Map-pack competitors (never name them in copy; context only): Harris Lowry Manton; Farah & Farah; Morgan & Morgan; Suthers & Harper; Hasner Law; The Wilson PC; Bader Law; Spiva Law Group; The Brown Firm; Kenneth S. Nugent; Bowen Painter Injury Lawyers
 
 ### Darien, GA (office · content pipeline · Radar market)
 - Address: 1108 North Way, Darien, GA 31305 (McIntosh County)
 - Phone (use this exact string): (912) 303-5850
 - Service counties: McIntosh, Glynn
 - Major corridors: I-95, US-17
-- Map-pack competitors (never name them in copy; context only): Coppage Law Firm; The Law Offices of Joshua W. Branch; Farah & Farah; Whitworth & McLelland; Wallace Harrell III Law; Bader Law; Georgia Auto Law
+- Map-pack competitors (never name them in copy; context only): Coppage Law Firm; The Law Offices of Joshua W. Branch; Farah & Farah; Whitworth & McLelland; Wallace Harrell III Law; Bader Law
 
 ### Charleston, SC (office · content pipeline · Radar market)
 - Address: 127 King Street Suite 200, Charleston, SC 29401 (Charleston County)
