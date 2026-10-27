@@ -3750,7 +3750,7 @@
                     },
                     {
                         "question": "Can South Carolina reduce my benefits for violating a safety rule?",
-                        "answer": "Yes, but only for a <strong>willful</strong> violation. Under S.C. Code § 42-9-60, if you deliberately failed to use a safety device or obey a specific safety rule, the Workers' Compensation Commission may <strong>reduce</strong> (not eliminate) your compensation. The employer must prove the rule existed, you knew about it, you deliberately chose not to follow it, and the violation caused the injury. Simple forgetfulness or negligence is not enough."
+                        "answer": "No. S.C. Code § 42-9-60 bars compensation only when the injury was caused by intoxication or by a wilful intention to injure or kill yourself or another, and the employer bears the burden of proving it. The statute contains no reduction for a safety-rule violation."
                     },
                     {
                         "question": "Can I file a separate lawsuit if a third party caused my workplace injury?",
@@ -3761,7 +3761,7 @@
                         "answer": "Your own OSHA violation does <strong>not</strong> disqualify your workers' comp claim — the system is no-fault. However, your <strong>employer's</strong> OSHA violations can strengthen your case by showing unsafe conditions contributed to the injury. OSHA investigations are independent of workers' comp but their findings can be used as evidence."
                     }
                 ],
-                "_roden_key_takeaways": "Workers' compensation covers injuries regardless of employee negligence — it is a no-fault system in both Georgia and South Carolina. Only narrow exceptions apply: intoxication as proximate cause (O.C.G.A. § 34-9-17; S.C. Code § 42-9-60), intentional self-harm, or willful misconduct. South Carolina may reduce benefits for willful safety rule violations but cannot eliminate them. A positive drug test in Georgia creates a rebuttable presumption, not an automatic denial. Third-party negligence opens additional personal injury claims beyond workers' comp."
+                "_roden_key_takeaways": "Workers' compensation covers injuries regardless of employee negligence — it is a no-fault system in both Georgia and South Carolina. Only narrow exceptions apply: intoxication as proximate cause (O.C.G.A. § 34-9-17; S.C. Code § 42-9-60), intentional self-harm, or willful misconduct. South Carolina's act has no safety-rule defense (S.C. Code § 42-9-60). A positive drug test in Georgia creates a rebuttable presumption, not an automatic denial. Third-party negligence opens additional personal injury claims beyond workers' comp."
             }
         },
         "/blog/does-workers-compensation-cover-prescriptions/": {
@@ -4322,7 +4322,7 @@
                 "_roden_faqs": [
                     {
                         "question": "What is elder financial abuse in a nursing home?",
-                        "answer": "Elder financial abuse is the illegal or improper use of a nursing home residentx27s money, property, or assets for personal gain. It includes theft, forgery, unauthorized transactions, coerced changes to legal documents, identity theft, billing fraud, and improper use of power of attorney."
+                        "answer": "Elder financial abuse is the illegal or improper use of a nursing home resident's money, property, or assets for personal gain. It includes theft, forgery, unauthorized transactions, coerced changes to legal documents, identity theft, billing fraud, and improper use of power of attorney."
                     },
                     {
                         "question": "What are the warning signs of financial abuse of a nursing home resident?",
@@ -4334,7 +4334,7 @@
                     },
                     {
                         "question": "Is elder financial abuse a crime in South Carolina?",
-                        "answer": "Yes. Under South Carolinax27s Omnibus Adult Protection Act (S.C. Code § 43-35-10 et seq.), financial exploitation of a vulnerable adult is a crime. South Carolina has a broader mandatory reporting requirement — anyone who suspects abuse must report it."
+                        "answer": "Yes. Under South Carolina's Omnibus Adult Protection Act (S.C. Code § 43-35-10 et seq.), financial exploitation of a vulnerable adult is a crime. Listed professionals and caregivers must report when they have reason to believe abuse occurred, and anyone with actual knowledge of it must report (S.C. Code § 43-35-25(A))."
                     },
                     {
                         "question": "How do I report suspected elder financial abuse?",
@@ -22489,7 +22489,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "South Carolina law grants pedestrians the right-of-way in crosswalks and requires drivers to exercise <strong>due care</strong> (<strong>S.C. Code § 56-5-3230</strong>). Bicyclists have the <strong>same rights and duties as motor vehicles</strong> and are entitled to a <strong>3-foot passing distance</strong>. North Charleston's most dangerous corridors for pedestrians and cyclists include Rivers Avenue, Dorchester Road, and the Park Circle area. Victims can recover damages under comparative fault if less than <strong>51% at fault</strong>, with a <strong>3-year filing deadline</strong> (<strong>S.C. Code § 15-3-530</strong>)."
+                "_roden_key_takeaways": "South Carolina law grants pedestrians the right-of-way in crosswalks and requires drivers to exercise <strong>due care</strong> (<strong>S.C. Code § 56-5-3230</strong>). Bicyclists have the <strong>same rights and duties as drivers</strong> (S.C. Code § 56-5-3420), and a driver passing a cyclist must keep a <strong>safe operating distance</strong>; South Carolina sets no fixed number of feet (S.C. Code § 56-5-3435). North Charleston's most dangerous corridors for pedestrians and cyclists include Rivers Avenue, Dorchester Road, and the Park Circle area. Victims can recover damages under comparative fault if less than <strong>51% at fault</strong>, with a <strong>3-year filing deadline</strong> (<strong>S.C. Code § 15-3-530</strong>)."
             }
         },
         "/resources/personal-injury-claim-charleston-county-court/": {
