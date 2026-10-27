@@ -3674,8 +3674,12 @@ addition), G21, G29.
 ## 2026-10-27 — SC follow-ups 1-6: applied before attorney review (owner's word)
 
 Owner, 2026-10-27: "apply those proposed changes in 1-6 now and we'll get Gillin to review in the future". The
-wording was drafted today from Gillin's answers and from the claim-class sweep. It went to him by email (Gmail
-draft, unsent) and is **not yet attorney-reviewed**. No `_roden_last_reviewed` was set.
+wording was drafted today from Gillin's answers and from the claim-class sweep, and it is **not yet
+attorney-reviewed**. No `_roden_last_reviewed` was set. An email draft to him was deleted by the owner. Instead, the
+nine changed passages are on his review page as objection cards (`sc-followups-live` in
+`data/facts/reviews/2026-10-attorney/plan.json`, published 2026-10-27; silence by 2026-11-06 is approval). There
+is also one question card, `sc-fu-fulllane`. His set was already submitted, so he needs to be told the cards are
+there. His earlier 31 answers are kept (`review.mjs status`: 31/32).
 1. **4478**, § 56-5-3130(a): the "critical elements" bullet and FAQ 0 now carry the no-signal condition.
 2. **4478**, § 56-5-3230: the "notwithstanding" gloss is narrowed to local ordinances.
 3. **4172, 4173**: equal rights re-cited from § 56-5-3435 to § 56-5-3420, in the bodies and in 4172 FAQ 3 and
