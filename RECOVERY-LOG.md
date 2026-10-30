@@ -3698,3 +3698,42 @@ guard passes; the fresh sweep shows 0 findings; `content/meta.json` regenerated 
 The sweep's 5 new warnings are not from this batch. They are `authority-quantity` on SC 15-3-40, newly active
 after internal-ai-scripts #134, and each reads correctly: "the 19th birthday, or three years from the injury if
 later". These are false alarms from a multi-statute sentence. The pack entry was left as Gillin verified it.
+
+## 2026-10-30 — Snippet batch on three free-to-judge pages; Charleston "drop" diagnosed as a GBP link change
+
+Owner, 2026-10-30: "Do the changes for #1-3 now, then dig into the Charleston drop." These were the highest-ROI
+pages among the 158 `free` pages on `data/seo/ledger.json` (built 10-26), ranked against `data/gsc/latest.json`
+(09-26..10-23). `page-ledger.mjs --check` was clear on all of them.
+
+**Applied** (`bin/apply-snippets-2026-10-30.php`; 6 meta writes on 4 posts; backup
+`docs/backups/snippets-2026-10-30-apply.json`). The title and description changed only. H1, body and claims are
+untouched, and the descriptions state scope and contact only.
+- **3621** pedestrian pillar: title "Pedestrian Accident Lawyers in GA & SC | Free Case Review". The old one rendered
+  at 636px and truncated. The description now leads with "Hit by a car while walking…". Ranks 9.6–9.9 for "pedestrian
+  accident lawyer/attorney" (6,422 impressions, 1 click).
+- **4878** ES twin: title "Abogado de Accidentes de Peatones en GA y SC | Roden Law", down from 732px.
+  "abogado de accidente de peatón" ranks 10.7 (823 impressions).
+- **3597** Savannah office: the empty meta description now carries the address, counties and phone. **The title is
+  kept on purpose.** The office page already outranks `/car-accident-lawyers/savannah-ga/` for "savannah car accident
+  lawyer" (6.7 vs 18.8), and adding the car keyword would deepen that cannibalisation.
+- **4054** commercial-vehicle sub-type: title shortened to 564px, and a description was added. "commercial vehicle
+  accident lawyers" ranks 10.5 (610 impressions, 0 clicks).
+Verified live: 4/4 titles and descriptions, and the JSON-LD parses (6/6 and 7/7). Caches were flushed and
+`content/meta.json` regenerated (the 6 fields only). **Read on 2026-11-30** (28 days), using CTR at matched position.
+
+**Charleston: no page loss.** The `latest.json` loser row ("31→2 clicks, 32.8k→1.7k impressions, position
+4.5→42.8") folds the GBP tracking URL into the office page. The clean URL itself has sat at about 1–2k
+impressions a month, position 30–46, since January, and it did not move. What changed:
+1. **2026-09-18:** impressions on `?ref=gmb_chs` went from 1,224 a day to exactly 0. On the same day the homepage
+   went from 127 to 1,144 a day at position 2–4, with the same query mix ("personal injury lawyer", "medical
+   malpractice lawyer" at 1.0–1.4). The public Maps listing for the King St profile
+   (ChIJkx4ENNF7_ogRd1O08AhaJSw) now links to the bare `https://rodenlaw.com/`. **Someone retagged the Charleston
+   GBP website link to the homepage.** Savannah, Myrtle Beach, Darien and North Charleston were moved from
+   `?ref=gmb_*` to `?utm_campaign=gbp-*` in the same period. OWNER-CHECKLIST warns against that form, because
+   WP Engine strips `utm_*` before PHP, which loses the redirect and the attribution.
+2. **From about 2026-10-13:** pack impressions on the homepage fell again, from about 1,100–1,400 a day to
+   150–550, with position going from 2.5 to 6–12. This one may be a real Charleston pack decline. No Charleston
+   grid scan has run since 08-21 (`rank-history.json`), so it is unconfirmed.
+Not done (needs the owner or the firm): reset the Charleston GBP website link to
+`/locations/south-carolina/charleston/?ref=gmb_chs`, ask who retagged the profiles, and run a Charleston grid scan
+(about $1.23) to measure step 2.
