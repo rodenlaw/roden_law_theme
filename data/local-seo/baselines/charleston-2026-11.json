@@ -1,0 +1,218 @@
+{
+  "baseline": "Charleston map pack, November 2026",
+  "recorded": "2026-10-30",
+  "owner": "owner, 2026-10-30: record as a November baseline",
+  "grid": "7x7, 5 mi, office pin 127 King St (ChIJkx4ENNF7_ogRd1O08AhaJSw)",
+  "provider": "localdominator",
+  "rerun": "node --env-file=.env.local ../internal-ai-scripts/scripts/local-seo/scan.mjs --location Charleston --confirm",
+  "context": "GBP website link was the bare homepage 2026-09-18..2026-10-30, reset to ?ref=gmb_chs on 2026-10-30. Prior comparable scan 2026-08-21 (Local Falcon) 17.96% green, ARP 8.2.",
+  "previous": {
+    "run_id": "scan-2026-08-21-998bad",
+    "provider": "localfalcon",
+    "totals": {
+      "pins": 1225,
+      "weak_pins": 1005,
+      "green_pins": 220,
+      "green_pct": 17.96,
+      "avg_arp": 8.2,
+      "avg_solv": 17.96,
+      "zero_solv_keywords": 1
+    }
+  },
+  "snapshot": {
+    "run_id": "scan-2026-10-30-e33087",
+    "at": "2026-10-30T15:46:58.672Z",
+    "location_label": "Charleston",
+    "provider": "localdominator",
+    "keyword_count": 25,
+    "completed": 25,
+    "failed": 0,
+    "totals": {
+      "pins": 1225,
+      "weak_pins": 1044,
+      "green_pins": 181,
+      "green_pct": 14.78,
+      "avg_arp": 8.1,
+      "avg_solv": 14.78,
+      "zero_solv_keywords": 1
+    },
+    "spend_usd": 0,
+    "keywords": {
+      "car accident lawyer": {
+        "arp": 7.26,
+        "atrp": 12.31,
+        "solv": 18.37,
+        "weak": 40,
+        "pins": 49
+      },
+      "personal injury lawyer": {
+        "arp": 7.97,
+        "atrp": 13.02,
+        "solv": 16.33,
+        "weak": 41,
+        "pins": 49
+      },
+      "car accident attorney near me": {
+        "arp": 9.11,
+        "atrp": 14.2,
+        "solv": 6.12,
+        "weak": 46,
+        "pins": 49
+      },
+      "best car accident lawyer": {
+        "arp": 7.94,
+        "atrp": 12.73,
+        "solv": 2.04,
+        "weak": 48,
+        "pins": 49
+      },
+      "drunk driver accident lawyer": {
+        "arp": 8.56,
+        "atrp": 12.37,
+        "solv": 6.12,
+        "weak": 46,
+        "pins": 49
+      },
+      "hit and run accident lawyer": {
+        "arp": 7.57,
+        "atrp": 11.41,
+        "solv": 8.16,
+        "weak": 45,
+        "pins": 49
+      },
+      "18 wheeler accident lawyer": {
+        "arp": 7.92,
+        "atrp": 11.39,
+        "solv": 8.16,
+        "weak": 45,
+        "pins": 49
+      },
+      "fatal truck accident lawyer": {
+        "arp": 7.44,
+        "atrp": 11.04,
+        "solv": 4.08,
+        "weak": 47,
+        "pins": 49
+      },
+      "motorcycle accident lawyer": {
+        "arp": 6.56,
+        "atrp": 9.51,
+        "solv": 18.37,
+        "weak": 40,
+        "pins": 49
+      },
+      "rideshare accident lawyer": {
+        "arp": 8.66,
+        "atrp": 10.67,
+        "solv": 22.45,
+        "weak": 38,
+        "pins": 49
+      },
+      "truck accident lawyer": {
+        "arp": 6.28,
+        "atrp": 10.18,
+        "solv": 26.53,
+        "weak": 36,
+        "pins": 49
+      },
+      "uber accident lawyer": {
+        "arp": 9.32,
+        "atrp": 11.22,
+        "solv": 6.12,
+        "weak": 46,
+        "pins": 49
+      },
+      "uninsured motorist lawyer": {
+        "arp": 8.79,
+        "atrp": 12.53,
+        "solv": 2.04,
+        "weak": 48,
+        "pins": 49
+      },
+      "underinsured motorist lawyer": {
+        "arp": 8.11,
+        "atrp": 11.53,
+        "solv": 8.16,
+        "weak": 45,
+        "pins": 49
+      },
+      "bus accident lawyer": {
+        "arp": 7.71,
+        "atrp": 11.78,
+        "solv": 20.41,
+        "weak": 39,
+        "pins": 49
+      },
+      "pedestrian accident lawyer": {
+        "arp": 7.66,
+        "atrp": 9.84,
+        "solv": 30.61,
+        "weak": 34,
+        "pins": 49
+      },
+      "bicycle accident lawyer": {
+        "arp": 6.36,
+        "atrp": 9.35,
+        "solv": 36.73,
+        "weak": 31,
+        "pins": 49
+      },
+      "electric scooter accident lawyer": {
+        "arp": 7.4,
+        "atrp": 9.9,
+        "solv": 24.49,
+        "weak": 37,
+        "pins": 49
+      },
+      "electric bike accident lawyer": {
+        "arp": 6.54,
+        "atrp": 10.08,
+        "solv": 8.16,
+        "weak": 45,
+        "pins": 49
+      },
+      "atv accident lawyer": {
+        "arp": 8.14,
+        "atrp": 11.82,
+        "solv": 16.33,
+        "weak": 41,
+        "pins": 49
+      },
+      "golf cart accident lawyer": {
+        "arp": 7.64,
+        "atrp": 12,
+        "solv": 12.24,
+        "weak": 43,
+        "pins": 49
+      },
+      "jet ski accident lawyer": {
+        "arp": 4.97,
+        "atrp": 8.9,
+        "solv": 28.57,
+        "weak": 35,
+        "pins": 49
+      },
+      "wrongful death car accident lawyer": {
+        "arp": 21,
+        "atrp": 21,
+        "solv": 0,
+        "weak": 49,
+        "pins": 49
+      },
+      "brain injury car accident lawyer": {
+        "arp": 6.97,
+        "atrp": 10.69,
+        "solv": 12.24,
+        "weak": 43,
+        "pins": 49
+      },
+      "boating accident lawyer": {
+        "arp": 6.62,
+        "atrp": 10.14,
+        "solv": 26.53,
+        "weak": 36,
+        "pins": 49
+      }
+    }
+  }
+}

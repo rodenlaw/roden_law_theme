@@ -3737,3 +3737,26 @@ impressions a month, position 30–46, since January, and it did not move. What 
 Not done (needs the owner or the firm): reset the Charleston GBP website link to
 `/locations/south-carolina/charleston/?ref=gmb_chs`, ask who retagged the profiles, and run a Charleston grid scan
 (about $1.23) to measure step 2.
+
+## 2026-10-30 — Charleston map-pack baseline for November
+
+Owner, 2026-10-30: "record that as a November baseline." The GBP website link was reset to
+`?ref=gmb_chs` the same day.
+
+Scan `scan-2026-10-30-e33087` (Local Dominator, 25 keywords, 7×7 at 5 mi, office pin 127 King St): **14.78% of pins
+in the top 3 (181/1,225), average rank 8.10**. Previous comparable scan, 2026-08-21 (Local Falcon): 17.96%, 8.20.
+That is a broad, shallow slip. 18 keywords are down, 4 flat and 3 up, and most of the moves are 1–2 pins (one pin is
+about 2 points of share). The changes that look real: uber −12.3, bicycle −10.2, atv −10.2, drunk-driver −6.1,
+hit-and-run −6.1. The weakest areas are Mount Pleasant (Shoals Dr), Parkshore (29407) and Greenleaf Rd, at rank 16
+or worse on every keyword.
+
+**The map pack did not collapse.** The ~70% fall in GSC pack impressions from about 10-13 is far larger than this
+grid change. It is more likely an artefact of how Google counted impressions under the bare homepage link (or a
+change in how often the pack showed) than a loss of position.
+
+The baseline was recorded to `rank-history.json` (`report.mjs --record`) and committed as
+`data/local-seo/baselines/charleston-2026-11.json`, because rank history is gitignored. Re-run the same scan in
+late November and compare against it. In GSC, `?ref=gmb_chs` impressions should return within about 3–5 days of
+the reset.
+
+Tooling note: `scan.mjs` does not load `.env.local` itself. Run it with `node --env-file=.env.local`.
