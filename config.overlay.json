@@ -211,8 +211,8 @@
       "weeklySpendCapUSD": 0,
       "deployUrlTemplate": "https://rodenlaw.com/blog/{slug}/",
       "gbpCaptionTemplates": {
-        "en": "{title}\n\n{excerpt}\n\nRead the full guide: what to do, who may be liable, and the deadlines that apply.\n\n📞 Free consultation: {phone} — no fees unless we win.",
-        "es": "{title}\n\n{excerpt}\n\nSu estatus migratorio NO le impide reclamar. Atendemos en español.\n\n📞 Consulta gratis: {phone} — no cobramos honorarios a menos que ganemos."
+        "en": "{title}\n\n{excerpt}\n\nRead the full guide: what to do, who may be liable, and the deadlines that apply.\n\nFree consultation — no fees unless we win.",
+        "es": "{title}\n\n{excerpt}\n\nSu estatus migratorio NO le impide reclamar. Atendemos en español.\n\nConsulta gratis — no cobramos honorarios a menos que ganemos."
       }
     }
   },
