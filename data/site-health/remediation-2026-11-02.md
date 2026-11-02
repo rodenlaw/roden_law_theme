@@ -73,11 +73,11 @@ add main-content text. That side effect is not counted as a fix.
 
 | Class | Status | Reason |
 |---|---|---|
-| a11y LINK_NO_NAME (/testimonials/, card placeholder link) | **fixed (unmerged)** | `content-card.php`, see above |
-| a11y AMBIGUOUS_LINK_NAME from the card template ("read more →", category-tag names) on /blog/, /es/blog/, /resources/, /testimonials/ and their pagination | **fixed (unmerged)** | same PR |
+| a11y LINK_NO_NAME (/testimonials/, card placeholder link) | **fixed** (#293, deployed 2026-11-02) | `content-card.php`, see above |
+| a11y AMBIGUOUS_LINK_NAME from the card template ("read more →", category-tag names) on /blog/, /es/blog/, /resources/, /testimonials/ and their pagination | **fixed** (#293) | same PR |
 | a11y AMBIGUOUS_LINK_NAME in post bodies and nav/footer (28 of the 32 pages) | **deferred** | content and link strategy, notice tier, never gates; outside the approved scope |
-| a11y TABLE_NO_TH on /blog/much-worth-ga-worker-compared-states/ | **deferred** | post-body table (database content); needs a content edit through the patcher, not approved in this round |
-| a11y WEAK_ALT on /blog/workers-compensation-faqs/ | **deferred** | image alt in post content; content edit, not approved in this round |
+| a11y TABLE_NO_TH on /blog/much-worth-ga-worker-compared-states/ | **fixed** 2026-11-02 (owner-approved) | post 1851: header row is now `<thead>` with `th scope=col`, row labels are `th scope=row`, cell text unchanged; `bin/fix-a11y-two-posts-2026-11-02.php` |
+| a11y WEAK_ALT on /blog/workers-compensation-faqs/ | **fixed** 2026-11-02 (owner-approved) | post 1784: `walking-assistant-blog.jpg` alt changed from "Walker " to "Patient using a walker, steadied by a caregiver"; same script |
 | a11y LOW_MAIN_TEXT_RATIO on 10 hubs (/testimonials/, /contact/, /attorneys/, /attorneys/nolan-alexander/, /practice-areas/, /locations/, /es/practice-areas/, /es/locations/, /es/resources/, /es/blog/) | **deferred** | warning tier. Hubs are mostly links by design; adding text only to raise a ratio is a content decision for the owner |
 | Found: `page-testimonials.php` (page content + Trustindex reviews widget) is shadowed by the `testimonial` archive at /testimonials/ | **deferred** | not a report finding. Which of the two should own the URL is an owner decision |
 | Found: `templates/parts/content-blog-card.php` has the same hard-coded "Read More &rarr;" | **not touched** | dead file, nothing loads it, so it renders nowhere |
@@ -92,3 +92,16 @@ add main-content text. That side effect is not counted as a fix.
 After deploy: flush `wp cache flush` and `wp page-cache flush`, then re-run
 `node vendor/site-health/site-health.mjs a11y --repo . --base https://rodenlaw.com` and
 check that /testimonials/ has no issues.
+
+## After deploy (2026-11-02)
+
+- #293 merged as `999acf2`. Deploy run 41467902109: the drift guard was clean and the deploy
+  succeeded. The post-deploy site-health crawl gave all 8 checks PASS: a11y 636/636 clean,
+  0 issues, 11 warnings, AMBIGUOUS_LINK_NAME on 28 pages.
+- Posts 1851 and 1784 were patched on prod with `bin/fix-a11y-two-posts-2026-11-02.php`.
+  The dry run matched, apply verified ok on both, and the pre-edit `post_content` is in
+  `data/db-backups/2026-11-02-a11y-two-posts-before.json`.
+  `check-unslashed-post-writes.php` passed, both caches were flushed, and the live pages show
+  9 `<th scope>` and the new alt text. That crawl ran before this edit, so it still counts
+  these two warnings; expect 9 on the next run.
+
