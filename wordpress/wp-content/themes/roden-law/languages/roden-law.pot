@@ -3560,3 +3560,13 @@ msgstr ""
 #: templates/template-subtype.php:344
 msgid "See by Location"
 msgstr ""
+
+#: page-testimonials.php
+msgid "In Their Own Words"
+msgstr ""
+
+#: page-testimonials.php
+#. translators: %s: office name, e.g. Savannah.
+#, php-format
+msgid "Read our %s reviews on Google"
+msgstr ""

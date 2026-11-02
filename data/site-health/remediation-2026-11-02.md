@@ -79,7 +79,7 @@ add main-content text. That side effect is not counted as a fix.
 | a11y TABLE_NO_TH on /blog/much-worth-ga-worker-compared-states/ | **fixed** 2026-11-02 (owner-approved) | post 1851: header row is now `<thead>` with `th scope=col`, row labels are `th scope=row`, cell text unchanged; `bin/fix-a11y-two-posts-2026-11-02.php` |
 | a11y WEAK_ALT on /blog/workers-compensation-faqs/ | **fixed** 2026-11-02 (owner-approved) | post 1784: `walking-assistant-blog.jpg` alt changed from "Walker " to "Patient using a walker, steadied by a caregiver"; same script |
 | a11y LOW_MAIN_TEXT_RATIO on 10 hubs (/testimonials/, /contact/, /attorneys/, /attorneys/nolan-alexander/, /practice-areas/, /locations/, /es/practice-areas/, /es/locations/, /es/resources/, /es/blog/) | **deferred** | warning tier. Hubs are mostly links by design; adding text only to raise a ratio is a content decision for the owner |
-| Found: `page-testimonials.php` (page content + Trustindex reviews widget) is shadowed by the `testimonial` archive at /testimonials/ | **deferred** | not a report finding. Which of the two should own the URL is an owner decision |
+| Found: `page-testimonials.php` (page content + Trustindex reviews widget) is shadowed by the `testimonial` archive at /testimonials/ | **fixed (unmerged)** | owner decided 2026-11-02: the page owns the URL. See "/testimonials/ becomes the reviews page" below |
 | Found: `templates/parts/content-blog-card.php` has the same hard-coded "Read More &rarr;" | **not touched** | dead file, nothing loads it, so it renders nowhere |
 | redirects | pass | 997 replayed, 0 chains, 0 lost |
 | crawl | pass | 0 non-200, 0 broken/hop links, 0 orphans, 0 unreachable, 0 false affordances |
@@ -105,3 +105,50 @@ check that /testimonials/ has no issues.
   9 `<th scope>` and the new alt text. That crawl ran before this edit, so it still counts
   these two warnings; expect 9 on the next run.
 
+
+## /testimonials/ becomes the reviews page (owner decision 2026-11-02, unmerged)
+
+The owner decided that /testimonials/ is the reviews page, not the testimonial archive. There
+is no Trustindex: the firm has no account and the plugin is not on prod
+(`shortcode_exists('trustindex')` is false), so the old shortcode would have printed as raw
+text. One PR, not merged.
+
+- `inc/custom-post-types.php`: `testimonial` registers `has_archive => false`. The rewrite
+  slug `testimonials` stays, so the 21 singles keep `/testimonials/<slug>/`.
+- `page-testimonials.php`: the Trustindex section is gone. In its place: all 21 published
+  testimonials in full (`ul` > `figure` > `blockquote` + `figcaption`, newest first, no
+  pagination, no links to the singles), the existing testimonials disclaimer string, then
+  `%d+ Verified Google Reviews` (existing string, 170+) with "Read our {office} reviews on
+  Google" links to each office profile that has reviews. There are no stars, no Review or
+  AggregateRating markup, and no new claims. Darien is left out because its `review_count`
+  is 0.
+- `inc/legacy-redirects.php`: `/testimonials/page/N/` and the archive feed forms 301 to
+  `/testimonials/`.
+- `style.css` 1.4.47 → 1.4.48. Two new msgids are in `es_ES.po` and `roden-law.pot`, and
+  `es_ES.mo` was recompiled. The committed .mo matched `msgfmt es_ES.po` before the change.
+  /es/ has no testimonials page (`/es/testimonials/` is 404 now and stays 404).
+
+Verification (read-only, against prod data):
+
+- Routing: `wp eval-file` regenerated the rewrite rules in memory (main mode reproduces the
+  stored `rewrite_rules` option exactly) and replayed 40 paths main vs patched. Exactly 6
+  `testimonials/…` rules are removed and every other rule is byte-identical. `/testimonials/`
+  goes from `archive.php` to `page-testimonials.php` (page 1895). All 21 singles still serve
+  `single.php`. `/testimonials/page/{2,3,9}/`, `/feed/`, `/feed/atom/` and `/rss2/` now
+  301 to `/testimonials/` in one hop. The 3 `redirects.csv` rows (`/testimonial/<slug>/`)
+  are unchanged, and so are the 6 control pages. Side effect: per-single comment feeds
+  (`/testimonials/<slug>/feed/`) now 404. Nothing links them and the singles are noindexed.
+- a11y: `auditHtml` on live /testimonials/ (archive) found 0 issues and 1 warning
+  (LOW_MAIN_TEXT_RATIO 0.30). On the patched page rendered against live data it found
+  0 issues and 0 warnings (ratio 0.67). The headings run h1 → h2 ×3. All 21 quotes match
+  their source text.
+
+| Class | Status | Reason |
+|---|---|---|
+| /testimonials/ served by the CPT archive, page template shadowed | **fixed (unmerged)** | this PR |
+| Singles `/testimonials/<slug>/` still emit a `Review` node with an invented 5/5 rating (`roden_schema_testimonial()`) | **deferred** | outside the approved scope; the same self-serving class removed 2026-10-22. Owner question |
+| Testimonial 2820 is written by a colleague ("working alongside Josh Dorminy"), not a client | **deferred** | content decision for the owner; published as before |
+| Page 1895 intro links "personal injury lawyers" to `https://www.rodenlaw.com/` (a www→apex hop the crawl skips as off-origin) | **deferred** | database content; it was invisible until now because the archive shadowed the page |
+
+After merge: `wp rewrite flush` on prod, then `wp cache flush` and `wp page-cache flush`,
+then re-run `a11y` and `redirects` against https://rodenlaw.com.

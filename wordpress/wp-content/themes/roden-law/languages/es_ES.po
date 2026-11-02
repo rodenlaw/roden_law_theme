@@ -4711,3 +4711,13 @@ msgstr "Cómo funcionan la negligencia, la compensación, los plazos y la culpa:
 #, php-format
 msgid "More %s questions, answered on our main page"
 msgstr "Más preguntas sobre %s, respondidas en nuestra página principal"
+
+#: page-testimonials.php
+msgid "In Their Own Words"
+msgstr "En sus propias palabras"
+
+#: page-testimonials.php
+#. translators: %s: office name, e.g. Savannah.
+#, php-format
+msgid "Read our %s reviews on Google"
+msgstr "Lea nuestras reseñas de %s en Google"
