@@ -3570,3 +3570,7 @@ msgstr ""
 #, php-format
 msgid "Read our %s reviews on Google"
 msgstr ""
+
+#: page-testimonials.php
+msgid "Past results do not guarantee a similar outcome in your case."
+msgstr ""

@@ -114,7 +114,7 @@ foreach ( $firm['offices'] as $office_key => $office ) {
                 <?php endforeach; ?>
             </ul>
 
-            <p class="testimonials-disclaimer"><?php esc_html_e( 'Testimonials reflect individual experiences and do not guarantee similar outcomes. No clients were paid for endorsements unless otherwise disclosed.', 'roden-law' ); ?></p>
+            <p class="testimonials-disclaimer"><?php esc_html_e( 'Testimonials reflect individual experiences and do not guarantee similar outcomes. No clients were paid for endorsements unless otherwise disclosed.', 'roden-law' ); ?> <?php esc_html_e( 'Past results do not guarantee a similar outcome in your case.', 'roden-law' ); ?></p>
         </div>
     </section>
     <?php endif; ?>
