@@ -583,6 +583,10 @@ msgstr ""
 msgid "Read More Client Reviews"
 msgstr ""
 
+#: template-parts/content-card.php:72
+msgid "Read More"
+msgstr ""
+
 #: front-page.php:384
 #: page-about 2.php:138
 msgid "Meet Our Attorneys"
