@@ -594,6 +594,10 @@ msgstr "Nuestros clientes confían en nosotros para luchar por la compensación 
 msgid "Read More Client Reviews"
 msgstr "Leer Más Reseñas de Clientes"
 
+#: template-parts/content-card.php:72
+msgid "Read More"
+msgstr "Leer Más"
+
 #: front-page.php:384
 #: page-about 2.php:138
 msgid "Meet Our Attorneys"

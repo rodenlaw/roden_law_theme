@@ -13,15 +13,26 @@ $cat_name   = ! empty($categories) ? $categories[0]->name : '';
 ?>
 
 <article class="blog-card" id="post-<?php the_ID(); ?>">
+    <?php
+    /*
+     * The image/placeholder link repeats the title link's URL, so it is hidden
+     * from assistive tech and the tab order (aria-hidden + tabindex="-1"): a
+     * screen reader meets each card once, by its title. Without this the
+     * placeholder's only content is an aria-hidden SVG, so on cards with no
+     * featured image and no category (the testimonial archive) the link had
+     * no accessible name; with a category it was named by the tag ("North
+     * Charleston"), which says nothing about the destination.
+     */
+    ?>
     <?php if ( has_post_thumbnail() ) : ?>
-        <a href="<?php the_permalink(); ?>" class="blog-card-image">
+        <a href="<?php the_permalink(); ?>" class="blog-card-image" aria-hidden="true" tabindex="-1">
             <?php the_post_thumbnail( 'card-thumb' ); ?>
             <?php if ( $cat_name ) : ?>
                 <span class="blog-card-tag"><?php echo esc_html($cat_name); ?></span>
             <?php endif; ?>
         </a>
     <?php else : ?>
-        <a href="<?php the_permalink(); ?>" class="blog-card-image blog-card-image-placeholder">
+        <a href="<?php the_permalink(); ?>" class="blog-card-image blog-card-image-placeholder" aria-hidden="true" tabindex="-1">
             <span class="placeholder-icon"><?php echo roden_icon( 'scale' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?></span>
             <?php if ( $cat_name ) : ?>
                 <span class="blog-card-tag"><?php echo esc_html($cat_name); ?></span>
@@ -58,7 +69,7 @@ $cat_name   = ! empty($categories) ? $categories[0]->name : '';
                     </div>
                 </div>
             <?php endif; ?>
-            <a href="<?php the_permalink(); ?>" class="read-more-link">Read More →</a>
+            <a href="<?php the_permalink(); ?>" class="read-more-link"><?php esc_html_e( 'Read More', 'roden-law' ); ?><span class="sr-only">: <?php the_title(); ?></span> <span aria-hidden="true">→</span></a>
         </div>
     </div>
 </article>
