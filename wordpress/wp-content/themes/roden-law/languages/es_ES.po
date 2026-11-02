@@ -4721,3 +4721,7 @@ msgstr "En sus propias palabras"
 #, php-format
 msgid "Read our %s reviews on Google"
 msgstr "Lea nuestras reseñas de %s en Google"
+
+#: page-testimonials.php
+msgid "Past results do not guarantee a similar outcome in your case."
+msgstr "Los resultados pasados no garantizan un resultado similar en su caso."
