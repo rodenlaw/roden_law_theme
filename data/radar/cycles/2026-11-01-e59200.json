@@ -1,0 +1,2570 @@
+{
+  "cycleId": "2026-11-01-e59200",
+  "client": "Roden Law",
+  "startedAt": "2026-11-01T15:41:11.037Z",
+  "radarVersion": "1.0.0",
+  "probeSetVersion": "1.2.0",
+  "markets": [
+    "Savannah",
+    "Darien",
+    "Charleston",
+    "North Charleston",
+    "Columbia",
+    "Myrtle Beach"
+  ],
+  "bands": {
+    "discovery": {
+      "aiVisibility": [
+        {
+          "probeId": "hire-generic-city",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Savannah",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Harris Lowry Manton LLP",
+            "Chattahoochee Injury Law",
+            "T. Madden & Associates, P.C",
+            "The Eichholz Law Firm, P.C",
+            "Arnold & Stafford",
+            "Justin T. Jones, PC"
+          ],
+          "firmsDetected": 6,
+          "competitorsNamed": [
+            "Harris Lowry Manton LLP"
+          ],
+          "unconfiguredFirms": [
+            "Chattahoochee Injury Law",
+            "T. Madden & Associates, P.C",
+            "The Eichholz Law Firm, P.C",
+            "Arnold & Stafford",
+            "Justin T. Jones, PC"
+          ],
+          "sourcesCited": [
+            "chattahoocheeinjurylaw.com",
+            "hlmlawfirm.com",
+            "tmaddenlaw.com",
+            "lawyers.com",
+            "avvo.com",
+            "martindale.com",
+            "lawyers.findlaw.com",
+            "lawinfo.com",
+            "attorneys.superlawyers.com"
+          ],
+          "watchedAggregatorsCited": [
+            "lawyers.com",
+            "avvo.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "hire-incident-specific",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Savannah",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Chattahoochee Injury Law",
+            "Dozier Law",
+            "The Law Offices of Robert F. Pirkle",
+            "Gunn Law Group",
+            "Ted Law Firm",
+            "Jarrett & Price"
+          ],
+          "firmsDetected": 6,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [
+            "Chattahoochee Injury Law",
+            "Dozier Law",
+            "The Law Offices of Robert F. Pirkle",
+            "Gunn Law Group",
+            "Ted Law Firm",
+            "Jarrett & Price"
+          ],
+          "sourcesCited": [
+            "chattahoocheeinjurylaw.com",
+            "thegunnlawgroup.com",
+            "tedlaw.com",
+            "dozierlaw.com",
+            "savannahareaattorney.com",
+            "kainelaw.com",
+            "jarrettfirm.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "hire-family-voice",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Savannah",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Spiva Law Group",
+            "The Pirkle Law Firm",
+            "Franklin Law",
+            "Bowen Painter Injury Lawyers",
+            "Gunn Law Group"
+          ],
+          "firmsDetected": 5,
+          "competitorsNamed": [
+            "Spiva Law Group",
+            "Bowen Painter Injury Lawyers"
+          ],
+          "unconfiguredFirms": [
+            "The Pirkle Law Firm",
+            "Franklin Law",
+            "Gunn Law Group"
+          ],
+          "sourcesCited": [
+            "franklinlawllc.com",
+            "thegunnlawgroup.com",
+            "spivalaw.com",
+            "tedlaw.com",
+            "martindale.com",
+            "justia.com",
+            "avvo.com",
+            "savannahareaattorney.com",
+            "lawinfo.com",
+            "lawyers.findlaw.com"
+          ],
+          "watchedAggregatorsCited": [
+            "justia.com",
+            "avvo.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "should-i-at-all",
+          "band": "demand",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Savannah",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [],
+          "firmsDetected": 0,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "ledger-enquirer.com",
+            "merrittandmerritt.com",
+            "tmaddenlaw.com",
+            "butlerfirm.com",
+            "chattahoocheeinjurylaw.com",
+            "savannahnow.com",
+            "burnsidefirm.com",
+            "vansantlaw.com",
+            "rafilawfirm.com",
+            "spauldinginjurylaw.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "how-to-choose"
+        },
+        {
+          "probeId": "fee-anxiety",
+          "band": "selection",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Savannah",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [],
+          "firmsDetected": 0,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "brodielawgroup.com",
+            "cfcklaw.com",
+            "legalatlanta.com",
+            "mikegingerich.com",
+            "adamsjordan.com",
+            "bbga.com",
+            "parisifirm.com",
+            "legalclarity.org",
+            "wfirm.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "how-to-choose"
+        },
+        {
+          "probeId": "how-to-choose",
+          "band": "selection",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Savannah",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [],
+          "firmsDetected": 0,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "sinklaw.com",
+            "chattahoocheeinjurylaw.com",
+            "lawfirmsquare.com",
+            "cornwelllaw.org",
+            "butlerprather.com",
+            "elitelitigators.com",
+            "gatrialattorney.com"
+          ],
+          "watchedAggregatorsCited": [
+            "lawfirmsquare.com"
+          ],
+          "answerShape": "how-to-choose"
+        },
+        {
+          "probeId": "truck-vertical",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Savannah",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 1,
+          "firmsNamed": [
+            "Roden Law",
+            "Howe.Law Injury & Accident Lawyers",
+            "Ted Law Firm",
+            "Butler Prather LLP",
+            "Hasner Law",
+            "Franklin Law",
+            "Dozier Law Firm",
+            "The Graham Firm",
+            "CEO Lawyer Personal Injury Law Firm",
+            "Lawsuit Legal"
+          ],
+          "firmsDetected": 10,
+          "competitorsNamed": [
+            "Hasner Law"
+          ],
+          "unconfiguredFirms": [
+            "Howe.Law Injury & Accident Lawyers",
+            "Ted Law Firm",
+            "Butler Prather LLP",
+            "Franklin Law",
+            "Dozier Law Firm",
+            "The Graham Firm",
+            "CEO Lawyer Personal Injury Law Firm",
+            "Lawsuit Legal"
+          ],
+          "sourcesCited": [
+            "tedlaw.com",
+            "butlerprather.com",
+            "rodenlaw.com",
+            "howe.law",
+            "grahamlawga.com",
+            "ceolawyer.com",
+            "lawsuitlegal.com",
+            "franklinlawllc.com",
+            "hasnerlaw.com",
+            "dozierlaw.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "spanish-generic",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Savannah",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Hasner Law, PC",
+            "The Eichholz Law Firm, P.C",
+            "Kenneth S. Nugent, P.C",
+            "Justin T. Jones, PC",
+            "Harris Lowry Manton LLP",
+            "Glenda Mitchell Law Firm",
+            "Roden Love LLC",
+            "Zipperer, Lorberbaum, Beauvais & Gotwalt"
+          ],
+          "firmsDetected": 8,
+          "competitorsNamed": [
+            "Hasner Law, PC",
+            "Kenneth S. Nugent, P.C",
+            "Harris Lowry Manton LLP"
+          ],
+          "unconfiguredFirms": [
+            "The Eichholz Law Firm, P.C",
+            "Justin T. Jones, PC",
+            "Glenda Mitchell Law Firm",
+            "Roden Love LLC",
+            "Zipperer, Lorberbaum, Beauvais & Gotwalt"
+          ],
+          "sourcesCited": [
+            "abogado.com",
+            "martindale.com",
+            "lawyers.com",
+            "attorneys.superlawyers.com",
+            "avvo.com",
+            "hasnerlaw.com",
+            "lawyers.findlaw.com",
+            "johnfoy.com"
+          ],
+          "watchedAggregatorsCited": [
+            "lawyers.com",
+            "avvo.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "spanish-fear",
+          "band": "demand",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Savannah",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Hasner Law, oficina de Savannah",
+            "Lasky Justus Law",
+            "Chattahoochee Injury Law"
+          ],
+          "firmsDetected": 3,
+          "competitorsNamed": [
+            "Hasner Law, oficina de Savannah"
+          ],
+          "unconfiguredFirms": [
+            "Lasky Justus Law",
+            "Chattahoochee Injury Law"
+          ],
+          "sourcesCited": [
+            "chattahoocheeinjurylaw.com",
+            "thewilsonpc.com",
+            "thegunnlawgroup.com",
+            "laskyjustuslaw.com",
+            "georgiaautolaw.com",
+            "wfirm.com",
+            "hasnerlaw.com",
+            "jarrettfirm.com",
+            "abogado.sweetjames.com",
+            "rodenlaw.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "firm-named-check",
+          "band": "selection",
+          "selfReferential": true,
+          "engine": "perplexity",
+          "market": "Savannah",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 1,
+          "firmsNamed": [
+            "Roden Law"
+          ],
+          "firmsDetected": 1,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "rodenlaw.com",
+            "birdeye.com",
+            "bestlawyers.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "single-recommendation"
+        },
+        {
+          "probeId": "competitor-compare",
+          "band": "selection",
+          "selfReferential": true,
+          "engine": "perplexity",
+          "market": "Savannah",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 2,
+          "firmsNamed": [
+            "Harris Lowry Manton",
+            "Roden Law"
+          ],
+          "firmsDetected": 2,
+          "competitorsNamed": [
+            "Harris Lowry Manton"
+          ],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "rodenlaw.com",
+            "attorneys.superlawyers.com",
+            "lawyers.com",
+            "avvo.com",
+            "hlmlawfirm.com"
+          ],
+          "watchedAggregatorsCited": [
+            "lawyers.com",
+            "avvo.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "after-hours",
+          "band": "selection",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Savannah",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "George Sink Injury Lawyers",
+            "Kenneth S. Nugent",
+            "Chattahoochee Injury Law",
+            "The Wilson PC",
+            "Farah & Farah"
+          ],
+          "firmsDetected": 5,
+          "competitorsNamed": [
+            "Kenneth S. Nugent",
+            "The Wilson PC",
+            "Farah & Farah"
+          ],
+          "unconfiguredFirms": [
+            "George Sink Injury Lawyers",
+            "Chattahoochee Injury Law"
+          ],
+          "sourcesCited": [
+            "sinklaw.com",
+            "attorneykennugent.com",
+            "chattahoocheeinjurylaw.com",
+            "butlerprather.com",
+            "farahandfarah.com",
+            "tmaddenlaw.com",
+            "kpattorney.com",
+            "justia.com",
+            "thewilsonpc.com"
+          ],
+          "watchedAggregatorsCited": [
+            "justia.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "hire-generic-city",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Darien",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Farah & Farah — Brunswick",
+            "Killian Law Firm, LLC — Brunswick",
+            "Morgan & Morgan — Brunswick",
+            "Brown Readdick, Attorneys at Law — Brunswick"
+          ],
+          "firmsDetected": 4,
+          "competitorsNamed": [
+            "Farah & Farah — Brunswick"
+          ],
+          "unconfiguredFirms": [
+            "Killian Law Firm, LLC — Brunswick",
+            "Morgan & Morgan — Brunswick",
+            "Brown Readdick, Attorneys at Law — Brunswick"
+          ],
+          "sourcesCited": [
+            "lawinfo.com",
+            "avvo.com",
+            "findmyaccidentlawyer.com",
+            "justia.com",
+            "accidentlawyerga.com",
+            "lawyers.com",
+            "elitelitigators.com",
+            "tobininjurylaw.com",
+            "cincinnati.com"
+          ],
+          "watchedAggregatorsCited": [
+            "avvo.com",
+            "justia.com",
+            "lawyers.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "hire-incident-specific",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Darien",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 1,
+          "firmsNamed": [
+            "Roden Law",
+            "John Foy & Associates",
+            "Flack Injury Law",
+            "Pirkle Law Firm",
+            "Jones & Swanson"
+          ],
+          "firmsDetected": 5,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [
+            "John Foy & Associates",
+            "Flack Injury Law",
+            "Pirkle Law Firm",
+            "Jones & Swanson"
+          ],
+          "sourcesCited": [
+            "awjlaw.com",
+            "pirklelawfirm.com",
+            "flackinjurylaw.com",
+            "johnfoy.com",
+            "thesessionslawfirm.com",
+            "rodenlaw.com",
+            "weinsteinwin.com",
+            "legalatlanta.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "hire-family-voice",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Darien",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 1,
+          "firmsNamed": [
+            "Roden Law",
+            "Killian Law Firm, LLC",
+            "Farah & Farah",
+            "Morgan & Morgan",
+            "The Williams Litigation Group, P.C",
+            "Jody D. Peterman, LLC"
+          ],
+          "firmsDetected": 6,
+          "competitorsNamed": [
+            "Farah & Farah"
+          ],
+          "unconfiguredFirms": [
+            "Killian Law Firm, LLC",
+            "Morgan & Morgan",
+            "The Williams Litigation Group, P.C",
+            "Jody D. Peterman, LLC"
+          ],
+          "sourcesCited": [
+            "rodenlaw.com",
+            "lawyers.com",
+            "weinsteinwin.com",
+            "accidentlawyerga.com",
+            "lawinfo.com",
+            "justia.com",
+            "howe.law"
+          ],
+          "watchedAggregatorsCited": [
+            "lawyers.com",
+            "justia.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "should-i-at-all",
+          "band": "demand",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Darien",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [],
+          "firmsDetected": 0,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "ledger-enquirer.com",
+            "merrittandmerritt.com",
+            "tmaddenlaw.com",
+            "butlerfirm.com",
+            "chattahoocheeinjurylaw.com",
+            "savannahnow.com",
+            "burnsidefirm.com",
+            "vansantlaw.com",
+            "rafilawfirm.com",
+            "spauldinginjurylaw.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "how-to-choose"
+        },
+        {
+          "probeId": "fee-anxiety",
+          "band": "selection",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Darien",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [],
+          "firmsDetected": 0,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "brodielawgroup.com",
+            "cfcklaw.com",
+            "legalatlanta.com",
+            "mikegingerich.com",
+            "adamsjordan.com",
+            "bbga.com",
+            "parisifirm.com",
+            "legalclarity.org",
+            "wfirm.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "how-to-choose"
+        },
+        {
+          "probeId": "how-to-choose",
+          "band": "selection",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Darien",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [],
+          "firmsDetected": 0,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "rodenlaw.com",
+            "donthireblind.com",
+            "baderlaw.com",
+            "scottpryorlaw.com",
+            "enjuris.com",
+            "merrittandmerritt.com",
+            "allinjurieslawfirm.com",
+            "mundonow.com",
+            "johnfoy.com"
+          ],
+          "watchedAggregatorsCited": [
+            "enjuris.com"
+          ],
+          "answerShape": "how-to-choose"
+        },
+        {
+          "probeId": "truck-vertical",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Darien",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 1,
+          "firmsNamed": [
+            "Roden Law",
+            "Fried Goldberg LLC",
+            "Ragland Law Firm, LLC",
+            "Gunn Law Group",
+            "The Graham Firm",
+            "Howe.Law Injury & Accident Lawyers"
+          ],
+          "firmsDetected": 6,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [
+            "Fried Goldberg LLC",
+            "Ragland Law Firm, LLC",
+            "Gunn Law Group",
+            "The Graham Firm",
+            "Howe.Law Injury & Accident Lawyers"
+          ],
+          "sourcesCited": [
+            "rodenlaw.com",
+            "friedgoldberg.com",
+            "thegunnlawgroup.com",
+            "raglandjones.com",
+            "brodielawgroup.com",
+            "howe.law",
+            "thedwyerlawgroup.com",
+            "bbga.com",
+            "grahamlawga.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "spanish-generic",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Darien",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 1,
+          "firmsNamed": [
+            "Roden Law",
+            "Killian Law Firm, LLC",
+            "Farah & Farah",
+            "Morgan & Morgan",
+            "Hall Booth Smith, P.C",
+            "Brown Readdick, Attorneys at Law"
+          ],
+          "firmsDetected": 6,
+          "competitorsNamed": [
+            "Farah & Farah"
+          ],
+          "unconfiguredFirms": [
+            "Killian Law Firm, LLC",
+            "Morgan & Morgan",
+            "Hall Booth Smith, P.C",
+            "Brown Readdick, Attorneys at Law"
+          ],
+          "sourcesCited": [
+            "rodenlaw.com",
+            "lawinfo.com",
+            "abogado.com",
+            "avvo.com",
+            "accidentlawyerga.com",
+            "theaaagroup.com",
+            "findmyaccidentlawyer.com",
+            "justia.com",
+            "martindale.com"
+          ],
+          "watchedAggregatorsCited": [
+            "avvo.com",
+            "justia.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "spanish-fear",
+          "band": "demand",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Darien",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 1,
+          "firmsNamed": [
+            "Roden Law",
+            "Farah & Farah"
+          ],
+          "firmsDetected": 2,
+          "competitorsNamed": [
+            "Farah & Farah"
+          ],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "rodenlaw.com",
+            "attorneyadanna.com",
+            "hallandlampros.com",
+            "ceolawyer.com",
+            "conexionlegal.com",
+            "dearlegal.com",
+            "farahandfarah.com",
+            "johnfoy.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "firm-named-check",
+          "band": "selection",
+          "selfReferential": true,
+          "engine": "perplexity",
+          "market": "Darien",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 1,
+          "firmsNamed": [
+            "Roden Law"
+          ],
+          "firmsDetected": 1,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "rodenlaw.com",
+            "birdeye.com",
+            "bestlawyers.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "single-recommendation"
+        },
+        {
+          "probeId": "competitor-compare",
+          "band": "selection",
+          "selfReferential": true,
+          "engine": "perplexity",
+          "market": "Darien",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 1,
+          "firmsNamed": [
+            "Roden Law",
+            "Coppage Law Firm’s"
+          ],
+          "firmsDetected": 2,
+          "competitorsNamed": [
+            "Coppage Law Firm’s"
+          ],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "rodenlaw.com",
+            "lawinfo.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "after-hours",
+          "band": "selection",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Darien",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 1,
+          "firmsNamed": [
+            "Roden Law",
+            "Howe.Law Injury & Accident Lawyers",
+            "Kermani LLP",
+            "Thompson Law"
+          ],
+          "firmsDetected": 4,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [
+            "Howe.Law Injury & Accident Lawyers",
+            "Kermani LLP",
+            "Thompson Law"
+          ],
+          "sourcesCited": [
+            "rodenlaw.com",
+            "thegunnlawgroup.com",
+            "howe.law",
+            "kermanillp.com",
+            "justia.com",
+            "accidentlawyerga.com",
+            "1800lionlaw.com",
+            "weinsteinwin.com"
+          ],
+          "watchedAggregatorsCited": [
+            "justia.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "hire-generic-city",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Joye Law Firm Injury Lawyers",
+            "Cavanaugh & Thickens, LLC",
+            "Hoffman Law Firm",
+            "Salango Law",
+            "Cary Law Office PLLC",
+            "Duffy & Young, LLC",
+            "Steinberg Law Firm",
+            "The Steinberg Law Firm, LLC"
+          ],
+          "firmsDetected": 8,
+          "competitorsNamed": [
+            "Joye Law Firm Injury Lawyers",
+            "Steinberg Law Firm"
+          ],
+          "unconfiguredFirms": [
+            "Cavanaugh & Thickens, LLC",
+            "Hoffman Law Firm",
+            "Salango Law",
+            "Cary Law Office PLLC",
+            "Duffy & Young, LLC",
+            "The Steinberg Law Firm, LLC"
+          ],
+          "sourcesCited": [
+            "ctlawsc.com",
+            "bestinhood.com",
+            "hoffmanlawfirm.com",
+            "joyelawfirm.com",
+            "lawyers.findlaw.com",
+            "attorneys.superlawyers.com",
+            "lawyers.com",
+            "lawinfo.com"
+          ],
+          "watchedAggregatorsCited": [
+            "bestinhood.com",
+            "lawyers.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "hire-incident-specific",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Hughey Law Firm",
+            "Pierce, Sloan, Kennedy & Early LLC",
+            "Derrick Law Firm",
+            "The Derrick Law Firm",
+            "Shelly Leeke Law Firm",
+            "The Thumbs Up Guys / MDSW Legal",
+            "Christmas Injury Lawyers"
+          ],
+          "firmsDetected": 7,
+          "competitorsNamed": [
+            "Pierce, Sloan, Kennedy & Early LLC",
+            "Derrick Law Firm"
+          ],
+          "unconfiguredFirms": [
+            "Hughey Law Firm",
+            "The Derrick Law Firm",
+            "Shelly Leeke Law Firm",
+            "The Thumbs Up Guys / MDSW Legal",
+            "Christmas Injury Lawyers"
+          ],
+          "sourcesCited": [
+            "hugheylawfirm.com",
+            "christmasinjurylawyers.com",
+            "calltynow.com",
+            "piercesloan.com",
+            "derricklawfirm.com",
+            "leekelaw.com",
+            "mdswlegal.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "hire-family-voice",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Joye Law Firm Injury Lawyers",
+            "Steinberg Law Firm",
+            "Klok Law Firm",
+            "Cavanaugh & Thickens, LLC",
+            "Feidler Law Firm"
+          ],
+          "firmsDetected": 5,
+          "competitorsNamed": [
+            "Joye Law Firm Injury Lawyers",
+            "Steinberg Law Firm"
+          ],
+          "unconfiguredFirms": [
+            "Klok Law Firm",
+            "Cavanaugh & Thickens, LLC",
+            "Feidler Law Firm"
+          ],
+          "sourcesCited": [
+            "ctlawsc.com",
+            "hugheylawfirm.com",
+            "feidlerlawfirm.com",
+            "joyelawfirm.com",
+            "steinberglawfirm.com",
+            "bestlawyers.com",
+            "kloklaw.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "should-i-at-all",
+          "band": "demand",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [],
+          "firmsDetected": 0,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "sweetjames.com",
+            "farrin.com",
+            "christmasinjurylawyers.com",
+            "chattahoocheeinjurylaw.com",
+            "wmbfnews.com",
+            "sinklaw.com",
+            "augerlaw.com",
+            "derricklawfirm.com",
+            "farmermorris.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "how-to-choose"
+        },
+        {
+          "probeId": "fee-anxiety",
+          "band": "selection",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [],
+          "firmsDetected": 0,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "farrin.com",
+            "feidlerlawfirm.com",
+            "wilsonlawgroupsc.com",
+            "kloklaw.com",
+            "hammacklawfirm.com",
+            "mcdougalllawfirm.com",
+            "bergerlawsc.com",
+            "rosenhagood.com",
+            "johnpricelawfirm.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "how-to-choose"
+        },
+        {
+          "probeId": "how-to-choose",
+          "band": "selection",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [],
+          "firmsDetected": 0,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "joyelawfirm.com",
+            "charlestonlaw.net",
+            "hoffmanlawfirm.com",
+            "mickleandbass.com",
+            "leekelaw.com",
+            "derricklawfirm.com",
+            "lawyers.com",
+            "elitelitigators.com",
+            "piercesloan.com"
+          ],
+          "watchedAggregatorsCited": [
+            "lawyers.com"
+          ],
+          "answerShape": "how-to-choose"
+        },
+        {
+          "probeId": "truck-vertical",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 5,
+          "firmsNamed": [
+            "Steinberg Law Firm",
+            "Marin & Murphy Law Firm",
+            "Kahn Law Firm, LLP",
+            "The Stanley Law Group",
+            "Roden Law"
+          ],
+          "firmsDetected": 5,
+          "competitorsNamed": [
+            "Steinberg Law Firm",
+            "Kahn Law Firm, LLP"
+          ],
+          "unconfiguredFirms": [
+            "Marin & Murphy Law Firm",
+            "The Stanley Law Group"
+          ],
+          "sourcesCited": [
+            "steinberglawfirm.com",
+            "marinmurphylaw.com",
+            "kahnlawfirm.com",
+            "thestanleylawgroup.com",
+            "rodenlaw.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "spanish-generic",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Steinberg Law Firm, LLC",
+            "Derrick Law Firm Injury Lawyers",
+            "Grooms Law Firm, LLC",
+            "Pierce, Sloan, Kennedy & Early LLC",
+            "Duffy & Young, LLC",
+            "Stoney & Stratos LLC",
+            "Mastantuno Law Firm, LLC",
+            "Salango Law",
+            "Cary Law Office PLLC",
+            "Morgan & Morgan"
+          ],
+          "firmsDetected": 10,
+          "competitorsNamed": [
+            "Steinberg Law Firm, LLC",
+            "Derrick Law Firm Injury Lawyers",
+            "Pierce, Sloan, Kennedy & Early LLC"
+          ],
+          "unconfiguredFirms": [
+            "Grooms Law Firm, LLC",
+            "Duffy & Young, LLC",
+            "Stoney & Stratos LLC",
+            "Mastantuno Law Firm, LLC",
+            "Salango Law",
+            "Cary Law Office PLLC",
+            "Morgan & Morgan"
+          ],
+          "sourcesCited": [
+            "abogado.com",
+            "bestlawyers.com",
+            "bestinhood.com",
+            "lawinfo.com",
+            "martindale.com",
+            "lawyers.com",
+            "avvo.com",
+            "lawyers.findlaw.com",
+            "attorneys.superlawyers.com"
+          ],
+          "watchedAggregatorsCited": [
+            "bestinhood.com",
+            "lawyers.com",
+            "avvo.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "spanish-fear",
+          "band": "demand",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Joye Law Firm",
+            "Clekis Law Firm",
+            "Rogers, Patrick, Westbrook & Brickman"
+          ],
+          "firmsDetected": 3,
+          "competitorsNamed": [
+            "Joye Law Firm"
+          ],
+          "unconfiguredFirms": [
+            "Clekis Law Firm",
+            "Rogers, Patrick, Westbrook & Brickman"
+          ],
+          "sourcesCited": [
+            "clekis.com",
+            "rpwb.com",
+            "leekelaw.com",
+            "hugheylawfirm.com",
+            "treyhelps.com",
+            "kahnlawfirm.com",
+            "joyelawfirm.com",
+            "lawinfo.com",
+            "forthepeople.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "firm-named-check",
+          "band": "selection",
+          "selfReferential": true,
+          "engine": "perplexity",
+          "market": "Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 1,
+          "firmsNamed": [
+            "Roden Law"
+          ],
+          "firmsDetected": 1,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "rodenlaw.com",
+            "birdeye.com",
+            "bestlawyers.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "single-recommendation"
+        },
+        {
+          "probeId": "competitor-compare",
+          "band": "selection",
+          "selfReferential": true,
+          "engine": "perplexity",
+          "market": "Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 2,
+          "firmsNamed": [
+            "Steinberg Law Firm",
+            "Roden Law"
+          ],
+          "firmsDetected": 2,
+          "competitorsNamed": [
+            "Steinberg Law Firm"
+          ],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "steinberglawfirm.com",
+            "rodenlaw.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "after-hours",
+          "band": "selection",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "George Sink Injury Lawyers",
+            "Ty Robinson Personal Injury Law",
+            "Derrick Law Firm",
+            "Bill Green Law"
+          ],
+          "firmsDetected": 4,
+          "competitorsNamed": [
+            "Derrick Law Firm"
+          ],
+          "unconfiguredFirms": [
+            "George Sink Injury Lawyers",
+            "Ty Robinson Personal Injury Law",
+            "Bill Green Law"
+          ],
+          "sourcesCited": [
+            "hugheylawfirm.com",
+            "joyelawfirm.com",
+            "sinklaw.com",
+            "clekis.com",
+            "calltynow.com",
+            "derricklawfirm.com",
+            "feidlerlawfirm.com",
+            "leekelaw.com",
+            "billgreen.law"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "hire-generic-city",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "North Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Joye Law Firm Injury Lawyers",
+            "Anastopoulo Law Firm",
+            "Bluestein Thompson Sullivan, LLC",
+            "George Sink, P.A. Injury Lawyers",
+            "Hoffman Law Firm"
+          ],
+          "firmsDetected": 5,
+          "competitorsNamed": [
+            "Joye Law Firm Injury Lawyers"
+          ],
+          "unconfiguredFirms": [
+            "Anastopoulo Law Firm",
+            "Bluestein Thompson Sullivan, LLC",
+            "George Sink, P.A. Injury Lawyers",
+            "Hoffman Law Firm"
+          ],
+          "sourcesCited": [
+            "joyelawfirm.com",
+            "attorneys.superlawyers.com",
+            "lawyers.findlaw.com",
+            "lawyers.com",
+            "lawinfo.com",
+            "bestlawyers.com",
+            "martindale.com",
+            "forthepeople.com"
+          ],
+          "watchedAggregatorsCited": [
+            "lawyers.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "hire-incident-specific",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "North Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Derrick Law Firm",
+            "Christmas Injury Lawyers",
+            "Hughey Law Firm",
+            "Shelly Leeke Law Firm",
+            "Clekis Law Firm"
+          ],
+          "firmsDetected": 5,
+          "competitorsNamed": [
+            "Derrick Law Firm",
+            "Shelly Leeke Law Firm"
+          ],
+          "unconfiguredFirms": [
+            "Christmas Injury Lawyers",
+            "Hughey Law Firm",
+            "Clekis Law Firm"
+          ],
+          "sourcesCited": [
+            "derricklawfirm.com",
+            "christmasinjurylawyers.com",
+            "hugheylawfirm.com",
+            "leekelaw.com",
+            "calltynow.com",
+            "clekis.com",
+            "mdswlegal.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "hire-family-voice",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "North Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Joye Law Firm Injury Lawyers",
+            "George Sink, P.A. Injury Lawyers",
+            "Steinberg Law Firm"
+          ],
+          "firmsDetected": 3,
+          "competitorsNamed": [
+            "Joye Law Firm Injury Lawyers",
+            "Steinberg Law Firm"
+          ],
+          "unconfiguredFirms": [
+            "George Sink, P.A. Injury Lawyers"
+          ],
+          "sourcesCited": [
+            "joyelawfirm.com",
+            "bestlawyers.com",
+            "avvo.com",
+            "justia.com",
+            "lawyers.com"
+          ],
+          "watchedAggregatorsCited": [
+            "avvo.com",
+            "justia.com",
+            "lawyers.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "should-i-at-all",
+          "band": "demand",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "North Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [],
+          "firmsDetected": 0,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "sweetjames.com",
+            "farrin.com",
+            "christmasinjurylawyers.com",
+            "wmbfnews.com",
+            "jeffchandlerlaw.com",
+            "sinklaw.com",
+            "augerlaw.com",
+            "derricklawfirm.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "how-to-choose"
+        },
+        {
+          "probeId": "fee-anxiety",
+          "band": "selection",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "North Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [],
+          "firmsDetected": 0,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "farrin.com",
+            "feidlerlawfirm.com",
+            "wilsonlawgroupsc.com",
+            "kloklaw.com",
+            "hammacklawfirm.com",
+            "mcdougalllawfirm.com",
+            "bergerlawsc.com",
+            "rosenhagood.com",
+            "johnpricelawfirm.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "how-to-choose"
+        },
+        {
+          "probeId": "how-to-choose",
+          "band": "selection",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "North Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [],
+          "firmsDetected": 0,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "joyelawfirm.com",
+            "lawyers.com",
+            "lawyers.findlaw.com",
+            "justia.com",
+            "lawinfo.com"
+          ],
+          "watchedAggregatorsCited": [
+            "lawyers.com",
+            "justia.com"
+          ],
+          "answerShape": "how-to-choose"
+        },
+        {
+          "probeId": "truck-vertical",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "North Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Marin & Murphy Law Firm",
+            "Steinberg Law Firm",
+            "Shelly Leeke Law Firm",
+            "Kahn Law Firm, LLP",
+            "The Stanley Law Group"
+          ],
+          "firmsDetected": 5,
+          "competitorsNamed": [
+            "Steinberg Law Firm",
+            "Shelly Leeke Law Firm"
+          ],
+          "unconfiguredFirms": [
+            "Marin & Murphy Law Firm",
+            "Kahn Law Firm, LLP",
+            "The Stanley Law Group"
+          ],
+          "sourcesCited": [
+            "marinmurphylaw.com",
+            "steinberglawfirm.com",
+            "leekelaw.com",
+            "thestanleylawgroup.com",
+            "kahnlawfirm.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "spanish-generic",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "North Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Steinberg Law Firm, LLC",
+            "Derrick Law Firm Injury Lawyers",
+            "Joye Law Firm, LLP",
+            "George Sink, P.A. Injury Lawyers",
+            "Grooms Law Firm, LLC",
+            "Law Office of Sean M. Wilson, LLC"
+          ],
+          "firmsDetected": 6,
+          "competitorsNamed": [
+            "Steinberg Law Firm, LLC",
+            "Derrick Law Firm Injury Lawyers",
+            "Joye Law Firm, LLP"
+          ],
+          "unconfiguredFirms": [
+            "George Sink, P.A. Injury Lawyers",
+            "Grooms Law Firm, LLC",
+            "Law Office of Sean M. Wilson, LLC"
+          ],
+          "sourcesCited": [
+            "abogado.com",
+            "attorneys.superlawyers.com",
+            "martindale.com",
+            "avvo.com",
+            "lawinfo.com",
+            "lawyers.findlaw.com",
+            "lawyers.com",
+            "bestlawyers.com"
+          ],
+          "watchedAggregatorsCited": [
+            "avvo.com",
+            "lawyers.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "spanish-fear",
+          "band": "demand",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "North Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Joye Law Firm",
+            "Clekis Law Firm",
+            "Shelly Leeke Law Firm",
+            "Hoffman Law Firm"
+          ],
+          "firmsDetected": 4,
+          "competitorsNamed": [
+            "Joye Law Firm",
+            "Shelly Leeke Law Firm"
+          ],
+          "unconfiguredFirms": [
+            "Clekis Law Firm",
+            "Hoffman Law Firm"
+          ],
+          "sourcesCited": [
+            "leekelaw.com",
+            "clekis.com",
+            "joyelawfirm.com",
+            "hoffmanlawfirm.com",
+            "guslawsc.com",
+            "thehartmanlawfirm.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "firm-named-check",
+          "band": "selection",
+          "selfReferential": true,
+          "engine": "perplexity",
+          "market": "North Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 1,
+          "firmsNamed": [
+            "Roden Law"
+          ],
+          "firmsDetected": 1,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "rodenlaw.com",
+            "birdeye.com",
+            "bestlawyers.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "single-recommendation"
+        },
+        {
+          "probeId": "competitor-compare",
+          "band": "selection",
+          "selfReferential": true,
+          "engine": "perplexity",
+          "market": "North Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 1,
+          "firmsNamed": [
+            "Roden Law",
+            "Steinberg Law Firm"
+          ],
+          "firmsDetected": 2,
+          "competitorsNamed": [
+            "Steinberg Law Firm"
+          ],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "steinberglawfirm.com",
+            "rodenlaw.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "after-hours",
+          "band": "selection",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "North Charleston",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "George Sink Injury Lawyers",
+            "Derrick Law Firm"
+          ],
+          "firmsDetected": 2,
+          "competitorsNamed": [
+            "Derrick Law Firm"
+          ],
+          "unconfiguredFirms": [
+            "George Sink Injury Lawyers"
+          ],
+          "sourcesCited": [
+            "sinklaw.com",
+            "clekis.com",
+            "derricklawfirm.com",
+            "joyelawfirm.com",
+            "justia.com",
+            "scinjurylawfirm.com"
+          ],
+          "watchedAggregatorsCited": [
+            "justia.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "hire-generic-city",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Columbia",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Goings Law Firm, LLC",
+            "Cavanaugh & Thickens, LLC",
+            "Rikard & Protopapas, LLC",
+            "The Louthian Firm",
+            "Jeffcoat Injury and Car Accident Lawyers",
+            "Law Office of Kenneth E. Berger",
+            "The Brown Law Firm"
+          ],
+          "firmsDetected": 7,
+          "competitorsNamed": [
+            "Goings Law Firm, LLC",
+            "Cavanaugh & Thickens, LLC",
+            "Jeffcoat Injury and Car Accident Lawyers"
+          ],
+          "unconfiguredFirms": [
+            "Rikard & Protopapas, LLC",
+            "The Louthian Firm",
+            "Law Office of Kenneth E. Berger",
+            "The Brown Law Firm"
+          ],
+          "sourcesCited": [
+            "rplegalgroup.com",
+            "accidentlawyersc.com",
+            "bergerlawsc.com",
+            "ctlawsc.com",
+            "louthianlaw.com",
+            "bestlawfirms.com",
+            "scinjurylawfirm.com",
+            "joyelawfirm.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "hire-incident-specific",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Columbia",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 4,
+          "firmsNamed": [
+            "The Stanley Law Group, P.A",
+            "Rikard & Protopapas, LLC",
+            "Stewart Law Offices",
+            "Roden Law",
+            "McCravy, Newlon & Clardy Law Firm",
+            "Ted Law Firm"
+          ],
+          "firmsDetected": 6,
+          "competitorsNamed": [
+            "The Stanley Law Group, P.A",
+            "Stewart Law Offices"
+          ],
+          "unconfiguredFirms": [
+            "Rikard & Protopapas, LLC",
+            "McCravy, Newlon & Clardy Law Firm",
+            "Ted Law Firm"
+          ],
+          "sourcesCited": [
+            "hugheylawfirm.com",
+            "hawklawfirm.com",
+            "rplegalgroup.com",
+            "christmasinjurylawyers.com",
+            "stewartlawoffices.net",
+            "tedlaw.com",
+            "mccravylaw.com",
+            "rodenlaw.com",
+            "thestanleylawgroup.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "hire-family-voice",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Columbia",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Joye Law Firm",
+            "Cavanaugh & Thickens, LLC",
+            "Goings Law Firm, LLC",
+            "Proffitt & Cox, LLP",
+            "Peake & Fowler"
+          ],
+          "firmsDetected": 5,
+          "competitorsNamed": [
+            "Joye Law Firm",
+            "Cavanaugh & Thickens, LLC",
+            "Goings Law Firm, LLC"
+          ],
+          "unconfiguredFirms": [
+            "Proffitt & Cox, LLP",
+            "Peake & Fowler"
+          ],
+          "sourcesCited": [
+            "peakefowler.com",
+            "bestlawfirms.com",
+            "goingslawfirm.com",
+            "ctlawsc.com",
+            "joyelawfirm.com",
+            "louthianlaw.com",
+            "mcwhirterlaw.com",
+            "proffittcox.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "should-i-at-all",
+          "band": "demand",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Columbia",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [],
+          "firmsDetected": 0,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "sweetjames.com",
+            "farrin.com",
+            "christmasinjurylawyers.com",
+            "wmbfnews.com",
+            "jeffchandlerlaw.com",
+            "sinklaw.com",
+            "augerlaw.com",
+            "derricklawfirm.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "how-to-choose"
+        },
+        {
+          "probeId": "fee-anxiety",
+          "band": "selection",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Columbia",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [],
+          "firmsDetected": 0,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "farrin.com",
+            "feidlerlawfirm.com",
+            "wilsonlawgroupsc.com",
+            "kloklaw.com",
+            "hammacklawfirm.com",
+            "mcdougalllawfirm.com",
+            "bergerlawsc.com",
+            "rosenhagood.com",
+            "johnpricelawfirm.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "how-to-choose"
+        },
+        {
+          "probeId": "how-to-choose",
+          "band": "selection",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Columbia",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [],
+          "firmsDetected": 0,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "mickleandbass.com",
+            "bestinhood.com",
+            "bergerlawsc.com",
+            "louthianlaw.com",
+            "lawyers.findlaw.com",
+            "goingslawfirm.com",
+            "attorneys.superlawyers.com",
+            "lawyers.com",
+            "leekelaw.com",
+            "justia.com"
+          ],
+          "watchedAggregatorsCited": [
+            "bestinhood.com",
+            "lawyers.com",
+            "justia.com"
+          ],
+          "answerShape": "how-to-choose"
+        },
+        {
+          "probeId": "truck-vertical",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Columbia",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "The Stanley Law Group",
+            "Law Office of Kenneth E. Berger",
+            "Burriss & Ridgeway Injury Lawyers",
+            "Joye Law Firm Injury Lawyers",
+            "Stewart Law Offices",
+            "Hughey Law Firm"
+          ],
+          "firmsDetected": 6,
+          "competitorsNamed": [
+            "The Stanley Law Group",
+            "Joye Law Firm Injury Lawyers",
+            "Stewart Law Offices"
+          ],
+          "unconfiguredFirms": [
+            "Law Office of Kenneth E. Berger",
+            "Burriss & Ridgeway Injury Lawyers",
+            "Hughey Law Firm"
+          ],
+          "sourcesCited": [
+            "bergerlawsc.com",
+            "burrisslaw.com",
+            "thestanleylawgroup.com",
+            "hugheylawfirm.com",
+            "joyelawfirm.com",
+            "stewartlawoffices.net"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "spanish-generic",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Columbia",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Goings Law Firm",
+            "Cavanaugh & Thickens",
+            "Rikard & Protopapas, LLC",
+            "Hewett Diamaduros LLC",
+            "Stewart Law Offices"
+          ],
+          "firmsDetected": 5,
+          "competitorsNamed": [
+            "Goings Law Firm",
+            "Cavanaugh & Thickens",
+            "Stewart Law Offices"
+          ],
+          "unconfiguredFirms": [
+            "Rikard & Protopapas, LLC",
+            "Hewett Diamaduros LLC"
+          ],
+          "sourcesCited": [
+            "bergerlawsc.com",
+            "bestlawyers.com",
+            "bestlawfirms.com",
+            "rplegalgroup.com",
+            "attorneys.superlawyers.com",
+            "avvo.com",
+            "martindale.com",
+            "justia.com"
+          ],
+          "watchedAggregatorsCited": [
+            "avvo.com",
+            "justia.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "spanish-fear",
+          "band": "demand",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Columbia",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 4,
+          "firmsNamed": [
+            "Joye Law Firm",
+            "Cavanaugh & Thickens",
+            "Strom Law Firm",
+            "Roden Law",
+            "Law Office of Kenneth E. Berger"
+          ],
+          "firmsDetected": 5,
+          "competitorsNamed": [
+            "Joye Law Firm",
+            "Cavanaugh & Thickens"
+          ],
+          "unconfiguredFirms": [
+            "Strom Law Firm",
+            "Law Office of Kenneth E. Berger"
+          ],
+          "sourcesCited": [
+            "hugheylawfirm.com",
+            "ctlawsc.com",
+            "stromlaw.com",
+            "joyelawfirm.com",
+            "bergerlawsc.com",
+            "goingslawfirm.com",
+            "rodenlaw.com",
+            "lawinfo.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "firm-named-check",
+          "band": "selection",
+          "selfReferential": true,
+          "engine": "perplexity",
+          "market": "Columbia",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 1,
+          "firmsNamed": [
+            "Roden Law"
+          ],
+          "firmsDetected": 1,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "rodenlaw.com",
+            "birdeye.com",
+            "bestlawyers.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "single-recommendation"
+        },
+        {
+          "probeId": "competitor-compare",
+          "band": "selection",
+          "selfReferential": true,
+          "engine": "perplexity",
+          "market": "Columbia",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 1,
+          "firmsNamed": [
+            "Roden Law",
+            "Jeffcoat Injury and Car Accident Lawyers"
+          ],
+          "firmsDetected": 2,
+          "competitorsNamed": [
+            "Jeffcoat Injury and Car Accident Lawyers"
+          ],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "rodenlaw.com",
+            "findmyaccidentlawyer.com",
+            "scinjurylawfirm.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "after-hours",
+          "band": "selection",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Columbia",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "George Sink Injury Lawyers",
+            "McCravy, Newlon & Clardy",
+            "Woron & Dhillon",
+            "The Louthian Firm",
+            "Auger & Auger"
+          ],
+          "firmsDetected": 5,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [
+            "George Sink Injury Lawyers",
+            "McCravy, Newlon & Clardy",
+            "Woron & Dhillon",
+            "The Louthian Firm",
+            "Auger & Auger"
+          ],
+          "sourcesCited": [
+            "mccravylaw.com",
+            "sinklaw.com",
+            "wdinjurylaw.com",
+            "goingslawfirm.com",
+            "stromlaw.com",
+            "louthianlaw.com",
+            "accidentlawyersc.com",
+            "augerlaw.com",
+            "leekelaw.com",
+            "bergerlawsc.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "hire-generic-city",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Myrtle Beach",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Joye Law Firm Injury Lawyers",
+            "Derrick Law Firm Injury Lawyers",
+            "Morris Law Accident and Injury Lawyers, LLC",
+            "J.R. Battle Law Firm",
+            "Joye, Nappier, Risher, & Hardin LLC"
+          ],
+          "firmsDetected": 5,
+          "competitorsNamed": [
+            "Joye Law Firm Injury Lawyers",
+            "Derrick Law Firm Injury Lawyers"
+          ],
+          "unconfiguredFirms": [
+            "Morris Law Accident and Injury Lawyers, LLC",
+            "J.R. Battle Law Firm",
+            "Joye, Nappier, Risher, & Hardin LLC"
+          ],
+          "sourcesCited": [
+            "joyelawfirm.com",
+            "jeffmorrislawfirm.com",
+            "attorneys.superlawyers.com",
+            "lawyers.com",
+            "jrbattlelawfirm.com",
+            "avvo.com",
+            "inletlaw.com",
+            "lawinfo.com",
+            "martindale.com"
+          ],
+          "watchedAggregatorsCited": [
+            "lawyers.com",
+            "avvo.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "hire-incident-specific",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Myrtle Beach",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Morris Law, LLC",
+            "Chandler Law Firm",
+            "Hughey Law Firm",
+            "Jebaily Law Firm",
+            "Derrick Law Firm Injury Lawyers",
+            "Joye Law Firm Injury Lawyers"
+          ],
+          "firmsDetected": 6,
+          "competitorsNamed": [
+            "Chandler Law Firm",
+            "Derrick Law Firm Injury Lawyers",
+            "Joye Law Firm Injury Lawyers"
+          ],
+          "unconfiguredFirms": [
+            "Morris Law, LLC",
+            "Hughey Law Firm",
+            "Jebaily Law Firm"
+          ],
+          "sourcesCited": [
+            "hugheylawfirm.com",
+            "jeffmorrislawfirm.com",
+            "jeffchandlerlaw.com",
+            "lawyersatthebeach.com",
+            "jebailylaw.com",
+            "derricklawfirm.com",
+            "leekelaw.com",
+            "joyelawfirm.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "hire-family-voice",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Myrtle Beach",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Joye Law Firm Injury Lawyers",
+            "Maguire Law Firm",
+            "McGowan, Hood, Felder & Phillips, LLC",
+            "Jebaily Law Firm",
+            "Derrick Law Firm Injury Lawyers"
+          ],
+          "firmsDetected": 5,
+          "competitorsNamed": [
+            "Joye Law Firm Injury Lawyers",
+            "Maguire Law Firm",
+            "Derrick Law Firm Injury Lawyers"
+          ],
+          "unconfiguredFirms": [
+            "McGowan, Hood, Felder & Phillips, LLC",
+            "Jebaily Law Firm"
+          ],
+          "sourcesCited": [
+            "joyelawfirm.com",
+            "maguirelawfirm.com",
+            "mcgowanhood.com",
+            "jebailylaw.com",
+            "derricklawfirm.com",
+            "justia.com"
+          ],
+          "watchedAggregatorsCited": [
+            "justia.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "should-i-at-all",
+          "band": "demand",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Myrtle Beach",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [],
+          "firmsDetected": 0,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "sweetjames.com",
+            "farrin.com",
+            "christmasinjurylawyers.com",
+            "chattahoocheeinjurylaw.com",
+            "wmbfnews.com",
+            "sinklaw.com",
+            "augerlaw.com",
+            "derricklawfirm.com",
+            "farmermorris.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "how-to-choose"
+        },
+        {
+          "probeId": "fee-anxiety",
+          "band": "selection",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Myrtle Beach",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [],
+          "firmsDetected": 0,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "farrin.com",
+            "feidlerlawfirm.com",
+            "wilsonlawgroupsc.com",
+            "kloklaw.com",
+            "hammacklawfirm.com",
+            "mcdougalllawfirm.com",
+            "bergerlawsc.com",
+            "rosenhagood.com",
+            "johnpricelawfirm.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "how-to-choose"
+        },
+        {
+          "probeId": "how-to-choose",
+          "band": "selection",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Myrtle Beach",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [],
+          "firmsDetected": 0,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "bergerlawsc.com",
+            "joyelawfirm.com",
+            "mickleandbass.com",
+            "jeffchandlerlaw.com",
+            "inletlaw.com",
+            "willcoxlaw.com",
+            "lawyers.com",
+            "stanleylawfirm.com"
+          ],
+          "watchedAggregatorsCited": [
+            "lawyers.com"
+          ],
+          "answerShape": "how-to-choose"
+        },
+        {
+          "probeId": "truck-vertical",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Myrtle Beach",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "The Stanley Law Group",
+            "Joye Law Firm Injury Lawyers",
+            "Hughey Law Firm",
+            "Steinberg Law Firm",
+            "Joye, Nappier, Risher & Hardin LLC",
+            "Shelly Leeke Law Firm",
+            "Derrick Law Firm Injury Lawyers"
+          ],
+          "firmsDetected": 7,
+          "competitorsNamed": [
+            "Joye Law Firm Injury Lawyers",
+            "Derrick Law Firm Injury Lawyers"
+          ],
+          "unconfiguredFirms": [
+            "The Stanley Law Group",
+            "Hughey Law Firm",
+            "Steinberg Law Firm",
+            "Joye, Nappier, Risher & Hardin LLC",
+            "Shelly Leeke Law Firm"
+          ],
+          "sourcesCited": [
+            "steinberglawfirm.com",
+            "hugheylawfirm.com",
+            "thestanleylawgroup.com",
+            "lawinfo.com",
+            "inletlaw.com",
+            "joyelawfirm.com",
+            "leekelaw.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "spanish-generic",
+          "band": "discovery",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Myrtle Beach",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Derrick Law Firm Injury Lawyers",
+            "Jebaily Law Firm",
+            "Joye Law Firm, LLP",
+            "George Sink, P.A. Injury Lawyers",
+            "The Dejeu Law Firm",
+            "Maguire Law Firm",
+            "The Brittain Law Firm, P.A",
+            "Morris Law Accident and Injury Lawyers, LLC"
+          ],
+          "firmsDetected": 8,
+          "competitorsNamed": [
+            "Derrick Law Firm Injury Lawyers",
+            "Joye Law Firm, LLP",
+            "Maguire Law Firm"
+          ],
+          "unconfiguredFirms": [
+            "Jebaily Law Firm",
+            "George Sink, P.A. Injury Lawyers",
+            "The Dejeu Law Firm",
+            "The Brittain Law Firm, P.A",
+            "Morris Law Accident and Injury Lawyers, LLC"
+          ],
+          "sourcesCited": [
+            "abogado.com",
+            "lawinfo.com",
+            "avvo.com",
+            "lawyers.com",
+            "martindale.com",
+            "attorneys.superlawyers.com"
+          ],
+          "watchedAggregatorsCited": [
+            "avvo.com",
+            "lawyers.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "spanish-fear",
+          "band": "demand",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Myrtle Beach",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "Joye Law Firm",
+            "Hughey Law Firm",
+            "J.R. Battle Law Firm",
+            "Shelly Leeke Law Firm"
+          ],
+          "firmsDetected": 4,
+          "competitorsNamed": [
+            "Joye Law Firm"
+          ],
+          "unconfiguredFirms": [
+            "Hughey Law Firm",
+            "J.R. Battle Law Firm",
+            "Shelly Leeke Law Firm"
+          ],
+          "sourcesCited": [
+            "hugheylawfirm.com",
+            "joyelawfirm.com",
+            "leekelaw.com",
+            "jrbattlelawfirm.com",
+            "derricklawfirm.com",
+            "lawinfo.com",
+            "wmbfnews.com",
+            "crlegalteam.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "firm-named-check",
+          "band": "selection",
+          "selfReferential": true,
+          "engine": "perplexity",
+          "market": "Myrtle Beach",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 1,
+          "firmsNamed": [
+            "Roden Law"
+          ],
+          "firmsDetected": 1,
+          "competitorsNamed": [],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "rodenlaw.com",
+            "birdeye.com",
+            "bestlawyers.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "single-recommendation"
+        },
+        {
+          "probeId": "competitor-compare",
+          "band": "selection",
+          "selfReferential": true,
+          "engine": "perplexity",
+          "market": "Myrtle Beach",
+          "runDate": "2026-11-01",
+          "clientNamed": true,
+          "clientPosition": 2,
+          "firmsNamed": [
+            "Maguire Law Firm",
+            "Roden Law"
+          ],
+          "firmsDetected": 2,
+          "competitorsNamed": [
+            "Maguire Law Firm"
+          ],
+          "unconfiguredFirms": [],
+          "sourcesCited": [
+            "rodenlaw.com",
+            "maguirelawfirm.com",
+            "attorneys.superlawyers.com",
+            "justia.com"
+          ],
+          "watchedAggregatorsCited": [
+            "justia.com"
+          ],
+          "answerShape": "list"
+        },
+        {
+          "probeId": "after-hours",
+          "band": "selection",
+          "selfReferential": false,
+          "engine": "perplexity",
+          "market": "Myrtle Beach",
+          "runDate": "2026-11-01",
+          "clientNamed": false,
+          "clientPosition": null,
+          "firmsNamed": [
+            "George Sink Injury Lawyers",
+            "Jebaily Law Firm",
+            "Morris Law",
+            "Law Offices of Kenneth Berger",
+            "Kinon Law"
+          ],
+          "firmsDetected": 5,
+          "competitorsNamed": [
+            "Morris Law"
+          ],
+          "unconfiguredFirms": [
+            "George Sink Injury Lawyers",
+            "Jebaily Law Firm",
+            "Law Offices of Kenneth Berger",
+            "Kinon Law"
+          ],
+          "sourcesCited": [
+            "jebailylaw.com",
+            "sinklaw.com",
+            "joyelawfirm.com",
+            "bergerlawsc.com",
+            "jeffmorrislawfirm.com",
+            "kinonlaw.com",
+            "leekelaw.com"
+          ],
+          "watchedAggregatorsCited": [],
+          "answerShape": "list"
+        }
+      ],
+      "aggregatorsCited": [
+        "avvo.com",
+        "bestinhood.com",
+        "enjuris.com",
+        "justia.com",
+        "lawfirmsquare.com",
+        "lawyers.com"
+      ]
+    },
+    "selection": {
+      "reviewMoat": [
+        {
+          "market": "Savannah",
+          "count": 59,
+          "rating": 4.9,
+          "assessment": "59 reviews at 4.9 — in the trusted band.",
+          "source": "localdominator"
+        },
+        {
+          "market": "Darien",
+          "count": 0,
+          "rating": null,
+          "assessment": "ZERO — no moat at all.",
+          "source": "localdominator"
+        },
+        {
+          "market": "Charleston",
+          "count": 107,
+          "rating": 4.9,
+          "assessment": "107 reviews at 4.9 — in the trusted band.",
+          "source": "localdominator"
+        },
+        {
+          "market": "North Charleston",
+          "count": 2,
+          "rating": 5,
+          "assessment": "BELOW FLOOR — 2 reviews, under the ~20-review credibility threshold.",
+          "source": "localdominator"
+        },
+        {
+          "market": "Columbia",
+          "count": 2,
+          "rating": 5,
+          "assessment": "BELOW FLOOR — 2 reviews, under the ~20-review credibility threshold.",
+          "source": "localdominator"
+        },
+        {
+          "market": "Myrtle Beach",
+          "count": 3,
+          "rating": 4.7,
+          "assessment": "BELOW FLOOR — 3 reviews, under the ~20-review credibility threshold.",
+          "source": "localdominator"
+        }
+      ]
+    }
+  },
+  "spendUsd": 0.36
+}
