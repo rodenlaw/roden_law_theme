@@ -4697,7 +4697,7 @@ function roden_statewide_law_callout( $state_key ) {
    every one of them a .wp-post-image.
 
    A per-template fallback had already been written once, in
-   templates/parts/content-blog-card.php — a part nothing loads. Every
+   templates/parts/content-blog-card.php — a part nothing loaded (deleted 2026-11-02). Every
    archive (home.php, archive.php, category.php, tag.php, search.php,
    index.php) renders template-parts/content-card.php, which had none, so
    /blog/ and /es/blog/ printed alt="" on every card. This fixes it once,
