@@ -106,7 +106,7 @@ check that /testimonials/ has no issues.
   these two warnings; expect 9 on the next run.
 
 
-## /testimonials/ becomes the reviews page (owner decision 2026-11-02, unmerged)
+## /testimonials/ becomes the reviews page (owner decision 2026-11-02; #298, deployed)
 
 The owner decided that /testimonials/ is the reviews page, not the testimonial archive. There
 is no Trustindex: the firm has no account and the plugin is not on prod
@@ -145,10 +145,19 @@ Verification (read-only, against prod data):
 
 | Class | Status | Reason |
 |---|---|---|
-| /testimonials/ served by the CPT archive, page template shadowed | **fixed (unmerged)** | this PR |
-| Singles `/testimonials/<slug>/` still emit a `Review` node with an invented 5/5 rating (`roden_schema_testimonial()`) | **deferred** | outside the approved scope; the same self-serving class removed 2026-10-22. Owner question |
-| Testimonial 2820 is written by a colleague ("working alongside Josh Dorminy"), not a client | **deferred** | content decision for the owner; published as before |
+| /testimonials/ served by the CPT archive, page template shadowed | **fixed** (#298, deployed 2026-11-02) | rewrite rules flushed on prod after deploy |
+| Singles `/testimonials/<slug>/` still emit a `Review` node with an invented 5/5 rating (`roden_schema_testimonial()`) | **fixed** (#299) | owner, 2026-11-02: `roden_schema_testimonial()` and its call removed; singles keep BreadcrumbList |
+| Testimonial 2820 is written by a colleague ("working alongside Josh Dorminy"), not a client | **fixed** 2026-11-02 (owner) | post 2820 set to draft on prod (`wp post update 2820 --post_status=draft`), not deleted; reversible. 20 testimonials published. `/testimonials/rebecca-harris/` now 404s, and nothing linked it (it was noindexed and left out of the sitemap) |
 | Page 1895 intro links "personal injury lawyers" to `https://www.rodenlaw.com/` (a www→apex hop the crawl skips as off-origin) | **deferred** | database content; it was invisible until now because the archive shadowed the page |
 
 After merge: `wp rewrite flush` on prod, then `wp cache flush` and `wp page-cache flush`,
 then re-run `a11y` and `redirects` against https://rodenlaw.com.
+
+### After deploy of #298 (2026-11-02)
+
+Deploy run 41515464613 succeeded. Then on prod: `wp rewrite flush`, `wp cache flush`,
+`wp page-cache flush`. Live: `/testimonials/` 200 with 20 quotes and 5 Google links;
+`/page/2/` and `/feed/` 301 to `/testimonials/`; singles 200. The post-deploy crawl passed all 8 checks:
+a11y 636/636 clean, 0 issues, 8 warnings (all hub LOW_MAIN_TEXT_RATIO plus one thin bio),
+redirects 997/997.
+
