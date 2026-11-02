@@ -4,7 +4,7 @@ Theme URI: https://rodenlaw.com
 Author: Roden Law
 Author URI: https://rodenlaw.com
 Description: Custom AI-SEO optimized WordPress theme for Roden Law personal injury firm serving Georgia and South Carolina across 6 office locations. Built with structured data, E-E-A-T compliance, and local SEO as core architecture principles.
-Version: 1.4.47
+Version: 1.4.48
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 8.0
@@ -796,6 +796,102 @@ input[type="submit"]:focus-visible {
 
 .testimonials-more-link:hover,
 .testimonials-more-link:focus {
+    color: var(--color-orange-text);
+}
+
+/* /testimonials/ page (page-testimonials.php): every testimonial in full, one
+   column for reading, then Google review links per office. New class names, so
+   theme.css's .testimonial-card / .testimonials-grid rules never apply here. */
+.testimonials-page .section-title,
+.google-reviews .section-title {
+    text-align: center;
+}
+
+.testimonials-list {
+    list-style: none;
+    margin: var(--space-xl) auto 0;
+    padding: 0;
+    max-width: 760px;
+    display: grid;
+    gap: var(--space-lg);
+}
+
+.testimonial-item {
+    margin: 0;
+}
+
+.testimonial-figure {
+    margin: 0;
+    padding: var(--space-lg) var(--space-lg) var(--space-lg) 3.25rem;
+    position: relative;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-top: 3px solid var(--color-orange);
+    border-radius: var(--border-radius-lg);
+}
+
+.testimonial-figure::before {
+    content: '\201C';
+    position: absolute;
+    top: var(--space-lg);
+    left: var(--space-md);
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    line-height: 1;
+    color: var(--color-orange);
+}
+
+.testimonial-quote {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    font-style: normal;
+    color: var(--color-gray-dark);
+    line-height: 1.7;
+}
+
+.testimonial-quote p {
+    margin: 0 0 var(--space-md);
+}
+
+.testimonial-quote p:last-child {
+    margin-bottom: 0;
+}
+
+.testimonial-attribution {
+    margin-top: var(--space-md);
+    font-weight: 600;
+    color: var(--color-navy);
+}
+
+.testimonials-disclaimer {
+    max-width: 760px;
+    margin: var(--space-xl) auto 0;
+    font-size: 0.875rem;
+    color: var(--color-gray);
+}
+
+.google-review-links {
+    list-style: none;
+    margin: var(--space-lg) auto 0;
+    padding: 0;
+    max-width: 760px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md) var(--space-xl);
+}
+
+.google-review-links a {
+    font-weight: 600;
+    color: var(--color-navy);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.google-review-links a:hover,
+.google-review-links a:focus {
     color: var(--color-orange-text);
 }
 

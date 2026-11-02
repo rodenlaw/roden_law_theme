@@ -405,6 +405,17 @@ function roden_legacy_content_redirects() {
         exit;
     }
 
+    // Testimonial archive pagination and feeds → /testimonials/ (2026-11-02).
+    // The testimonial CPT no longer has an archive (has_archive false), so
+    // /testimonials/ is page 1895, which lists every testimonial on one page.
+    // The archive's /page/N/ URLs and its feed (advertised in the archive's
+    // <head>) would otherwise 404. No testimonial uses any of these words as a
+    // slug, so no single page is shadowed.
+    if ( preg_match( '#^/testimonials/(?:page/[0-9]+|feed(?:/(?:feed|rdf|rss|rss2|atom))?|rdf|rss|rss2|atom)/$#', $clean_path ) ) {
+        wp_redirect( home_url( '/testimonials/' ), 301 );
+        exit;
+    }
+
     // /staff/[name]/ → /attorneys/ (old staff CPT pages)
     if ( preg_match( '#^/staff/[^/]+/?$#', $clean_path ) ) {
         wp_redirect( home_url( '/attorneys/' ), 301 );

@@ -155,7 +155,13 @@ function roden_register_post_types() {
             'menu_name'          => __( 'Testimonials', 'roden-law' ),
         ),
         'public'             => true,
-        'has_archive'        => true,
+        // No archive: /testimonials/ is page 1895 (page-testimonials.php), which
+        // lists every testimonial in full. With an archive, the CPT's
+        // `testimonials/?$` rule matched first and the page never rendered.
+        // The rewrite slug stays, so singles keep /testimonials/<slug>/.
+        // Old archive pagination and feeds 301 to /testimonials/
+        // (inc/legacy-redirects.php). Changing this needs `wp rewrite flush`.
+        'has_archive'        => false,
         'hierarchical'       => false,
         'rewrite'            => array( 'slug' => 'testimonials', 'with_front' => false ),
         'supports'           => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
