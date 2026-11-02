@@ -3760,3 +3760,49 @@ late November and compare against it. In GSC, `?ref=gmb_chs` impressions should 
 the reset.
 
 Tooling note: `scan.mjs` does not load `.env.local` itself. Run it with `node --env-file=.env.local`.
+
+## 2026-11-02 — False Georgia statements on Love's cards: taken down before attorney review (owner's word)
+
+Owner, 2026-11-02: "take all false sentences down now". Tyler Love has not opened his October review link
+(0/108), and the statute item blocks while known false statements of law are live. Every published sentence on his
+47 `ga-corrections` cards (passes 1-3, 79 passages) was removed from production. The edits are **deletion only**:
+each one removes the false sentence or clause. Where that would leave a fragment, the repair reuses words already
+on the page ("designated", "schools", "Georgia's youth-athlete concussion law"). **No edit states a new rule.** The
+corrected wording on each card still waits for Love, and nothing here is attorney-reviewed. No `_roden_last_reviewed`
+was set.
+
+- **E-scooter** (F24-F29, F32; 4088, 4224, 4227, 4229): the invented § 40-6-320 age, speed, sidewalk and
+  bicyclist-rights rules are gone. 4224 FAQ "same rights as cars" was removed.
+- **Golf cart** (F33-F37; 4090, 4186): the 25/35 mph, daylight and age-16 conditions are gone. "Designated roads"
+  is kept. The class sweep added 4090 `_roden_pillar_negligence_intro` (≤35 mph).
+- **Workers' comp** (E1-E8, E11-E16, E22-E25, E27-E30, F21, F22, G10-G14; 1662, 1666, 1674, 1677, 1682, 1690,
+  1693, 1695, 1702, 1752, 4111, 5354): the § 34-9-17 "anti-retaliation" claim and its FAQ, the drug-free-policy
+  bullets, "the only exceptions", the 10+ farmworker row, the unscheduled-PPD sentence, "lifetime benefits" (body,
+  table, FAQ, takeaways), medical benefits with "no time limit" (body, both table rows, FAQ "ever expire" removed,
+  takeaways, 5354 table row), the § 34-9-200 misquotes, the "first income-benefit check" IME deadline, the GA
+  occupational-disease definition, and hearing loss as a GA "occupational disease".
+- **Malpractice** (E17-E21, E34, E39; 1676, 1696, 4195, 4197, 4363): the tenth/seventh-birthday sentences, the ER
+  "does not lower the duty" sentence, and the "same or similar specialty" gloss.
+- **Traffic** (E45, F23, G15-G19; 4173, 1790, 1780, 4162, 4683, 1799): "may use the full lane", "pay the fine
+  online", the § 40-6-123(c) cite on the brake-slam bullet, and every "doubled" work-zone fine. 4162 FAQ "Are fines
+  doubled" was removed.
+- **Nursing homes / dogs / minors** (E47-E57, G29; 4163-4166, 4168, 4117, 4119, 4120, 4116): the § 31-8-1
+  mis-cites, the ALF "personal care homes" claim, leash/insurance duties and the dog-class definitions, and "any
+  settlement must be approved".
+- **Concussion** (G20-G24; 4207, 4205): scope claims, "direct liability", the negligence-per-se paragraph, and
+  "violations support negligence claims". 4207 FAQ "Can I sue a coach" was removed.
+- **Boating** (G25-G28; 4144, 3616, 4895 ES): the boater-safety-course penalty and the 1998 course rule.
+
+`bin/remove-false-ga-claims-2026-11-02.php` made 74 string edits and 5 FAQ removals on 43 posts. The FAQ removals
+ran last, matched by question text. Backup with every before-state: `docs/backups/remove-false-ga-claims-2026-11-02.json`.
+**Verified:** read-back OK on 43/43; both caches flushed; the card sentences no longer match anywhere in the DB;
+43 live pages fetched with a cache-buster and clean of the removed claims; the JSON-LD guard passes (static and
+live); the fresh sweep has 0 findings (`data/facts/sweep-2026-11-02.json`), and its 6 new warnings are pre-existing
+(SC § 15-3-40 false alarms, and one index shift on 4224); `content/meta.json` regenerated. Spanish twins 4899/4901
+were checked and are clean.
+
+**Gillin's page is affected.** `sc-fu-fulllane` is moot because the phrase was removed. 4207 FAQ 2, whose short
+title was one of his objection cards, no longer exists. **Love's cards** still show the old sentences as "what the
+page says now". They are still the right question (the replacement wording), but the page text has moved.
+**Left as is, for Love:** 1693 "potentially lifetime benefits"; 4162 "automatically considered negligent" and 4227
+"presumed negligent" (negligence per se framing); 4087's § 40-6-294 full-lane line, which matches (b).

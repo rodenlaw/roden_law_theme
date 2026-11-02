@@ -361,7 +361,7 @@
                     },
                     {
                         "question": "What rights do cyclists have at intersections?",
-                        "answer": "Cyclists have the same rights as motor vehicles at intersections. Under Georgia law (O.C.G.A. § 40-6-294) and South Carolina law (S.C. Code § 56-5-3420), cyclists may use the full lane, have the right of way when traveling with a green signal, and must be yielded to by turning vehicles."
+                        "answer": "Cyclists have the same rights as motor vehicles at intersections. Under Georgia law (O.C.G.A. § 40-6-294) and South Carolina law (S.C. Code § 56-5-3420), cyclists have the right of way when traveling with a green signal, and must be yielded to by turning vehicles."
                     },
                     {
                         "question": "What should I do if I am hit by a car at an intersection while cycling?",
@@ -898,7 +898,7 @@
                     },
                     {
                         "question": "Can I get workers' comp if the injury was my fault?",
-                        "answer": "Yes. Workers' compensation is a <strong>no-fault system</strong> — you are eligible even if the injury was caused by your own mistake or carelessness. The only exceptions are injuries caused by <strong>intoxication</strong> (which both Georgia and South Carolina recognize as grounds for denial) or <strong>intentional self-harm</strong>."
+                        "answer": "Yes. Workers' compensation is a <strong>no-fault system</strong> — you are eligible even if the injury was caused by your own mistake or carelessness. The exceptions include injuries caused by <strong>intoxication</strong> (which both Georgia and South Carolina recognize as grounds for denial) or <strong>intentional self-harm</strong>."
                     },
                     {
                         "question": "Are part-time workers and undocumented workers eligible for workers' comp?",
@@ -3746,7 +3746,7 @@
                     },
                     {
                         "question": "What happens if I fail a drug test after a workplace accident in Georgia?",
-                        "answer": "Under Georgia law (O.C.G.A. § 34-9-17), a positive post-accident drug test creates a <strong>rebuttable presumption</strong> that the substance caused the injury. This means the burden shifts to you to prove the substance did not cause the accident. The employer must have a drug-free workplace policy in place, and the test must follow proper protocols. A positive result does not automatically disqualify you — it can be challenged."
+                        "answer": "Under Georgia law (O.C.G.A. § 34-9-17), a positive post-accident drug test creates a <strong>rebuttable presumption</strong> that the substance caused the injury. This means the burden shifts to you to prove the substance did not cause the accident. A positive result does not automatically disqualify you — it can be challenged."
                     },
                     {
                         "question": "Can South Carolina reduce my benefits for violating a safety rule?",
@@ -3774,7 +3774,7 @@
                 "_roden_faqs": [
                     {
                         "question": "Does workers' compensation cover all prescription medications?",
-                        "answer": "Workers' compensation covers prescription medications that are <strong>reasonable, necessary, and related to your work injury</strong>. Both Georgia (O.C.G.A. § 34-9-200) and South Carolina (S.C. Code § 42-15-60) require employers to provide all necessary medical treatment, including prescriptions. However, the insurer can dispute coverage if the medication is not on their formulary, is not related to the accepted injury, or if a cheaper generic alternative is available."
+                        "answer": "Workers' compensation covers prescription medications that are <strong>reasonable, necessary, and related to your work injury</strong>. Both Georgia (O.C.G.A. § 34-9-200) and South Carolina (S.C. Code § 42-15-60) require employers to provide necessary medical treatment, including prescriptions. However, the insurer can dispute coverage if the medication is not on their formulary, is not related to the accepted injury, or if a cheaper generic alternative is available."
                     },
                     {
                         "question": "Do I have to pay a copay for workers' comp prescriptions?",
@@ -7076,7 +7076,7 @@
                     },
                     {
                         "question": "What can I do if the insurer declares MMI prematurely?",
-                        "answer": "You can (1) request a <strong>second opinion</strong> from an independent physician, (2) have your attorney request a hearing — Form WC-14 with Georgia's State Board or Form 50 with South Carolina's Commission, (3) provide additional medical evidence showing you have not yet stabilized, or (4) in Georgia, use your one-time independent examination at the insurer's expense within 120 days of your first income-benefit check (O.C.G.A. § 34-9-202(e)); in South Carolina, ask the Commission to order an examination (S.C. Code § 42-15-80). Do not accept a premature MMI without legal advice."
+                        "answer": "You can (1) request a <strong>second opinion</strong> from an independent physician, (2) have your attorney request a hearing — Form WC-14 with Georgia's State Board or Form 50 with South Carolina's Commission, (3) provide additional medical evidence showing you have not yet stabilized, or (4) in Georgia, use your one-time independent examination at the insurer's expense (O.C.G.A. § 34-9-202(e)); in South Carolina, ask the Commission to order an examination (S.C. Code § 42-15-80). Do not accept a premature MMI without legal advice."
                     }
                 ],
                 "_roden_jurisdiction": "both",
@@ -7174,7 +7174,7 @@
                     },
                     {
                         "question": "What is the statute of repose for medical malpractice in Georgia?",
-                        "answer": "Georgia's five-year statute of repose (O.C.G.A. § 9-3-71(b)) is an absolute deadline — no medical malpractice lawsuit can be filed more than five years after the negligent act, regardless of when the injury was discovered. The main exception is for foreign objects left in the body, which allows one year from discovery (O.C.G.A. § 9-3-72). Children under five at the time of the malpractice have until their tenth birthday (O.C.G.A. § 9-3-73)."
+                        "answer": "Georgia's five-year statute of repose (O.C.G.A. § 9-3-71(b)) is an absolute deadline — no medical malpractice lawsuit can be filed more than five years after the negligent act, regardless of when the injury was discovered. The main exception is for foreign objects left in the body, which allows one year from discovery (O.C.G.A. § 9-3-72)."
                     },
                     {
                         "question": "What types of damages can I recover in a Georgia medical malpractice case?",
@@ -10037,7 +10037,7 @@
                     },
                     {
                         "question": "How does vocational rehabilitation differ between Georgia and South Carolina?",
-                        "answer": "Georgia's system is administered by the State Board of Workers' Compensation with a Rehabilitation Division, and Georgia recognizes a catastrophic injury designation under O.C.G.A. § 34-9-200.1 that provides lifetime benefits. South Carolina's system is administered by the Workers' Compensation Commission under Title 42 of the S.C. Code."
+                        "answer": "Georgia's system is administered by the State Board of Workers' Compensation with a Rehabilitation Division, and Georgia recognizes a catastrophic injury designation under O.C.G.A. § 34-9-200.1. South Carolina's system is administered by the Workers' Compensation Commission under Title 42 of the S.C. Code."
                     },
                     {
                         "question": "What types of vocational rehabilitation services are available?",
@@ -10052,7 +10052,7 @@
                         "answer": "Yes. Injured workers generally continue to receive workers' compensation benefits, including temporary total or temporary partial disability payments, while participating in vocational rehabilitation services."
                     }
                 ],
-                "_roden_key_takeaways": "Vocational rehabilitation helps injured workers who cannot return to their pre-injury jobs through skills training, education, and job placement. Georgia administers benefits through the State Board of Workers' Compensation under O.C.G.A. § 34-9-200.1, while South Carolina uses the Workers' Compensation Commission under Title 42. Workers' comp is no-fault in both states. Claim deadlines are one year in Georgia (O.C.G.A. § 34-9-82) and two years in South Carolina (S.C. Code § 42-15-40)."
+                "_roden_key_takeaways": "Vocational rehabilitation helps injured workers who cannot return to their pre-injury jobs through skills training, education, and job placement. Georgia administers benefits through the State Board of Workers' Compensation, while South Carolina uses the Workers' Compensation Commission under Title 42. Workers' comp is no-fault in both states. Claim deadlines are one year in Georgia (O.C.G.A. § 34-9-82) and two years in South Carolina (S.C. Code § 42-15-40)."
             }
         },
         "/blog/third-party-fault-for-work-injuries/": {
@@ -10774,7 +10774,7 @@
                     },
                     {
                         "question": "How long do I have to file a medical malpractice lawsuit in Georgia?",
-                        "answer": "Georgia imposes a <strong>two-year statute of limitations</strong> (O.C.G.A. § 9-3-71) from the date the injury occurred. There is no general discovery rule: only a foreign object left in the body gets one year from discovery (O.C.G.A. § 9-3-72). A <strong>five-year statute of repose</strong> applies to everything except foreign-object cases and children injured before age five, who have until their tenth birthday (O.C.G.A. § 9-3-73). Georgia also requires an expert affidavit at the time of filing (O.C.G.A. § 9-11-9.1)."
+                        "answer": "Georgia imposes a <strong>two-year statute of limitations</strong> (O.C.G.A. § 9-3-71) from the date the injury occurred. There is no general discovery rule: only a foreign object left in the body gets one year from discovery (O.C.G.A. § 9-3-72). A <strong>five-year statute of repose</strong> applies to everything except foreign-object cases and children injured before age five (O.C.G.A. § 9-3-73). Georgia also requires an expert affidavit at the time of filing (O.C.G.A. § 9-11-9.1)."
                     },
                     {
                         "question": "How long do I have to file a medical malpractice lawsuit in South Carolina?",
@@ -10989,10 +10989,6 @@
                         "answer": "In South Carolina, you have two years from the date of injury or last payment of compensation to file a claim under S.C. Code § 42-15-40. Appeals from a Commissioner's decision must be filed within 14 days. An attorney ensures all deadlines are met."
                     },
                     {
-                        "question": "Can my employer fire me for filing a workers' compensation claim?",
-                        "answer": "No. Both Georgia (O.C.G.A. § 34-9-17) and South Carolina have anti-retaliation protections for workers who file compensation claims. If your employer retaliates against you for filing a claim, you may have additional legal remedies available."
-                    },
-                    {
                         "question": "What types of benefits can I receive through workers' compensation?",
                         "answer": "Workers' compensation covers medical benefits for all reasonable treatment, temporary total disability (wage replacement while unable to work), temporary partial disability, permanent partial disability, permanent total disability, vocational rehabilitation, and death benefits for dependents in fatal workplace accidents."
                     },
@@ -11149,16 +11145,12 @@
                         "answer": "In Georgia, TTD benefits can last up to <strong>400 weeks</strong> (approximately 7.7 years) from the date of injury (O.C.G.A. § 34-9-261). In South Carolina, the maximum is <strong>500 weeks</strong> (approximately 9.6 years) (S.C. Code § 42-9-10). Benefits end earlier if you return to work, your doctor releases you, or you reach maximum medical improvement (MMI)."
                     },
                     {
-                        "question": "Do workers' comp medical benefits ever expire?",
-                        "answer": "In both Georgia and South Carolina, medical benefits have <strong>no specific time limit</strong>. The employer's insurer must continue providing reasonable and necessary medical treatment for the work-related condition even after disability (wage replacement) benefits have ended. This includes surgery, physical therapy, prescriptions, and medical devices."
-                    },
-                    {
                         "question": "What is maximum medical improvement (MMI) and how does it affect my benefits?",
                         "answer": "MMI is the point when your doctor determines your condition has stabilized and is unlikely to improve significantly with further treatment. Reaching MMI typically ends TTD benefits and triggers a transition to permanent disability benefits (PPD or PTD) based on your impairment rating. Insurers often pressure doctors to declare MMI early to cut off benefits."
                     },
                     {
                         "question": "Can workers' comp benefits last for life?",
-                        "answer": "In Georgia, <strong>catastrophic injuries</strong> — spinal cord injuries causing paralysis, amputation of major limbs, severe brain injury, severe burns, or total blindness — qualify for lifetime benefits (O.C.G.A. § 34-9-200.1). In South Carolina, certain catastrophic injuries may qualify for benefits beyond the standard 500-week maximum. Medical benefits have no time limit in either state."
+                        "answer": "In South Carolina, certain catastrophic injuries may qualify for benefits beyond the standard 500-week maximum."
                     },
                     {
                         "question": "What should I do if my workers' comp benefits are cut off?",
@@ -11169,7 +11161,7 @@
                         "answer": "Yes. In both states, there is a <strong>7-day waiting period</strong> before disability benefits begin. In Georgia, the first 7 days are paid retroactively if you miss more than 21 consecutive days (O.C.G.A. § 34-9-220). In South Carolina, the retroactive threshold is 14 days (S.C. Code § 42-9-200)."
                     }
                 ],
-                "_roden_key_takeaways": "Workers' compensation benefit duration depends on the type of disability and your state. Georgia caps TTD at 400 weeks (O.C.G.A. § 34-9-261); South Carolina allows 500 weeks (S.C. Code § 42-9-10). Georgia provides lifetime benefits for catastrophic injuries (O.C.G.A. § 34-9-200.1). Medical benefits have no time limit in either state. Benefits typically end when you return to work, reach MMI, or hit the statutory maximum — but wrongful terminations can be challenged through a hearing."
+                "_roden_key_takeaways": "Workers' compensation benefit duration depends on the type of disability and your state. Georgia caps TTD at 400 weeks (O.C.G.A. § 34-9-261); South Carolina allows 500 weeks (S.C. Code § 42-9-10). Benefits typically end when you return to work, reach MMI, or hit the statutory maximum — but wrongful terminations can be challenged through a hearing."
             }
         },
         "/blog/when-is-the-right-time-to-hire-a-personal-injury-lawyer/": {
@@ -11936,7 +11928,7 @@
                     },
                     {
                         "question": "Is BUI a criminal offense in Georgia?",
-                        "answer": "Yes. Georgia BUI (O.C.G.A. § 52-7-12) is a misdemeanor with penalties including fines up to $1,000, up to 12 months in jail, and mandatory completion of a boater safety course. Repeat offenses carry enhanced penalties."
+                        "answer": "Yes. Georgia BUI (O.C.G.A. § 52-7-12) is a misdemeanor with penalties including fines up to $1,000 and up to 12 months in jail. Repeat offenses carry enhanced penalties."
                     },
                     {
                         "question": "How does a criminal BUI case affect my civil injury claim?",
@@ -12101,10 +12093,6 @@
                         "answer": "SIS is rare but devastating, with a mortality rate of approximately 50%. It most commonly affects young athletes aged 15-25 who are returned to play before their initial concussion has fully resolved. Strict adherence to return-to-play protocols can prevent SIS."
                     },
                     {
-                        "question": "Can I sue a coach for returning my child to play after a concussion?",
-                        "answer": "Yes. Georgia's Return to Play Act (O.C.G.A. § 20-2-324.1) and South Carolina's student-athlete concussion law (S.C. Code § 59-63-75) require immediate removal from play and medical clearance. A coach who violates these laws is negligent."
-                    },
-                    {
                         "question": "What is the statute of limitations for a second impact syndrome claim?",
                         "answer": "Georgia has a 2-year deadline (O.C.G.A. § 9-3-33) and South Carolina has 3 years (S.C. Code § 15-3-530). For minors, the limitations period is tolled until the child turns 18 in both states, but filing promptly preserves critical evidence."
                     },
@@ -12136,7 +12124,7 @@
                     },
                     {
                         "question": "What is Georgia's Return to Play Act?",
-                        "answer": "Georgia's Return to Play Act (O.C.G.A. § 20-2-324.1) requires youth sports organizations to educate athletes and parents about concussions, remove athletes suspected of having a concussion, and require medical clearance before return to play. Violations support negligence claims."
+                        "answer": "Georgia's Return to Play Act (O.C.G.A. § 20-2-324.1) is Georgia's youth-athlete concussion law."
                     },
                     {
                         "question": "Can I sue a helmet manufacturer if the helmet failed to prevent a brain injury?",
@@ -12839,10 +12827,6 @@
                 "_roden_author_attorney": "Eric Roden",
                 "_roden_faqs": [
                     {
-                        "question": "Are fines doubled in Georgia construction zones?",
-                        "answer": "Yes. Georgia law (O.C.G.A. § 40-6-188) doubles fines for speeding in active work zones when construction workers are present. This law also supports negligence claims against speeding motorists in work zone accidents."
-                    },
-                    {
                         "question": "Can a construction worker sue a driver who hit them in a work zone?",
                         "answer": "Yes. Construction workers struck by motorists in work zones can file third-party personal injury claims against the driver in addition to receiving workers' compensation benefits. This allows recovery of pain and suffering and other damages not available through workers' comp."
                     },
@@ -13227,7 +13211,7 @@
                     },
                     {
                         "question": "Do e-scooter riders have the right of way at intersections?",
-                        "answer": "Yes. Under Georgia law (O.C.G.A. § 40-6-320), e-scooter riders have the same right-of-way protections as bicyclists. They must obey traffic signals but are entitled to the same yielding obligations from motorists as any other lawful road user."
+                        "answer": "Yes. E-scooter riders must obey traffic signals but are entitled to the same yielding obligations from motorists as any other lawful road user."
                     },
                     {
                         "question": "Can I sue the city if the intersection was poorly designed?",
@@ -13289,10 +13273,6 @@
             "meta": {
                 "_roden_author_attorney": "Eric Roden",
                 "_roden_faqs": [
-                    {
-                        "question": "Do e-scooter riders have the same rights as cars on Georgia roads?",
-                        "answer": "Under O.C.G.A. § 40-6-320, electric scooter riders have many of the same rights and responsibilities as bicyclists, including the right to use bike lanes and roadways with speed limits of 35 mph or less. Motorists must give them at least three feet of clearance when passing."
-                    },
                     {
                         "question": "What should I do if a car hits me while I am riding an e-scooter?",
                         "answer": "Call 911 immediately, do not move if you suspect a spinal injury, document the scene with photos and video, get the driver's insurance information, obtain witness contact details, seek medical attention even if injuries seem minor, and contact an e-scooter accident attorney before speaking with insurance adjusters."
@@ -14084,7 +14064,7 @@
                     },
                     {
                         "question": "¿Hay reglas especiales para los accidentes en jet ski o moto acuática?",
-                        "answer": "Sí. La ley de Georgia (O.C.G.A. § 52-7-8.2) restringe el uso de motos acuáticas cerca de otras embarcaciones y de nadadores, prohíbe operarlas después de la puesta del sol y exige que los operadores nacidos después del 1 de enero de 1998 completen un curso de seguridad náutica. Carolina del Sur tiene restricciones similares (S.C. Code § 50-21-870). Los accidentes en moto acuática son desproporcionadamente comunes por la alta velocidad, la maniobrabilidad y la falta de barreras de protección. Las empresas de alquiler que no dan instrucción de seguridad adecuada enfrentan responsabilidad adicional."
+                        "answer": "Sí. La ley de Georgia (O.C.G.A. § 52-7-8.2) restringe el uso de motos acuáticas cerca de otras embarcaciones y de nadadores y prohíbe operarlas después de la puesta del sol. Carolina del Sur tiene restricciones similares (S.C. Code § 50-21-870). Los accidentes en moto acuática son desproporcionadamente comunes por la alta velocidad, la maniobrabilidad y la falta de barreras de protección. Las empresas de alquiler que no dan instrucción de seguridad adecuada enfrentan responsabilidad adicional."
                     },
                     {
                         "question": "¿Qué compensación puedo recuperar después de un accidente de navegación?",
@@ -17280,7 +17260,7 @@
                 "_roden_faqs": [
                     {
                         "question": "Can I recover compensation if a car hit my golf cart on a public road?",
-                        "answer": "Yes. If the motor vehicle driver was negligent — speeding, distracted, failing to yield, or driving impaired — they are liable for your injuries. Georgia (O.C.G.A. § 40-6-330) permits golf carts on roads with speed limits of 25 mph or less, and motorists must exercise care around them."
+                        "answer": "Yes. If the motor vehicle driver was negligent — speeding, distracted, failing to yield, or driving impaired — they are liable for your injuries. Georgia (O.C.G.A. § 40-6-330) permits golf carts on designated roads, and motorists must exercise care around them."
                     },
                     {
                         "question": "What if the driver says they could not see my golf cart?",
@@ -17981,7 +17961,7 @@
                 "_roden_faqs": [
                     {
                         "question": "What is the statute of limitations for a birth injury claim?",
-                        "answer": "In Georgia, minors generally have until their seventh birthday to file a medical malpractice claim (O.C.G.A. § 9-3-73), subject to the 5-year statute of repose. In South Carolina, the deadline is extended while the child is a minor, but by no more than seven years and no more than one year after the child turns 18 (S.C. Code § 15-3-545(D)). Early investigation is strongly recommended."
+                        "answer": "In South Carolina, the deadline is extended while the child is a minor, but by no more than seven years and no more than one year after the child turns 18 (S.C. Code § 15-3-545(D)). Early investigation is strongly recommended."
                     },
                     {
                         "question": "How do I know if my child's birth injury was caused by medical negligence?",
@@ -19068,7 +19048,7 @@
                     },
                     {
                         "question": "Are there special rules for jet ski and personal watercraft accidents?",
-                        "answer": "Yes. Georgia law (O.C.G.A. § 52-7-8.2) restricts personal watercraft operation near other vessels and swimmers, prohibits operation after sunset, and requires operators born after January 1, 1998 to complete a boating safety course. South Carolina has similar restrictions (S.C. Code § 50-21-870). Jet ski accidents are disproportionately common due to the high speeds, maneuverability, and lack of protective barriers. Rental operators who fail to provide adequate safety instruction face additional liability."
+                        "answer": "Yes. Georgia law (O.C.G.A. § 52-7-8.2) restricts personal watercraft operation near other vessels and swimmers and prohibits operation after sunset. South Carolina has similar restrictions (S.C. Code § 50-21-870). Jet ski accidents are disproportionately common due to the high speeds, maneuverability, and lack of protective barriers. Rental operators who fail to provide adequate safety instruction face additional liability."
                     },
                     {
                         "question": "What compensation can I recover after a boating accident?",
@@ -19774,7 +19754,7 @@
                 "_roden_faqs": [
                     {
                         "question": "Are electric scooters legal in Georgia?",
-                        "answer": "Yes. Georgia regulates e-scooters under O.C.G.A. § 40-6-320 et seq. Riders must be at least 15 (16 for rentals). Maximum speed is 20 mph. Many cities, including Savannah, have additional local ordinances governing where scooters can operate."
+                        "answer": "Yes. Many cities, including Savannah, have local ordinances governing where scooters can operate."
                     },
                     {
                         "question": "Can I sue the scooter company (Lime, Bird) if the scooter malfunctioned?",
@@ -19804,7 +19784,7 @@
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
                 "_roden_sol_sc": "S.C. Code § 15-3-530",
                 "_roden_translation_es": "/es/practice-areas/electric-scooter-accident-lawyers/",
-                "_roden_why_hire": "<p>Electric scooter accident cases involve unique legal complexities. Liability may fall on the negligent driver who struck the rider, the scooter rental company (Lime, Bird, Spin) for equipment defects or inadequate maintenance, the municipality for dangerous road conditions, or the rider's own insurance for UM/UIM coverage.</p><p>Georgia classifies electric scooters as \"electric personal transporters\" under <a href=\"https://law.justia.com/codes/georgia/title-40/chapter-1/section-40-1-1/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-1-1(15.4)</a> and regulates their use under <a href=\"https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-320/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-6-320 et seq.</a>, limiting riders to 20 mph and requiring use on streets (not sidewalks in many municipalities). South Carolina has addressed e-scooters through local ordinances in cities like Charleston and Columbia.</p><p>Our attorneys understand the intersection of traffic law, product liability, premises liability, and municipal regulation that these cases require. We identify every liable party and every source of insurance coverage to maximize your recovery.</p>"
+                "_roden_why_hire": "<p>Electric scooter accident cases involve unique legal complexities. Liability may fall on the negligent driver who struck the rider, the scooter rental company (Lime, Bird, Spin) for equipment defects or inadequate maintenance, the municipality for dangerous road conditions, or the rider's own insurance for UM/UIM coverage.</p><p>South Carolina has addressed e-scooters through local ordinances in cities like Charleston and Columbia.</p><p>Our attorneys understand the intersection of traffic law, product liability, premises liability, and municipal regulation that these cases require. We identify every liable party and every source of insurance coverage to maximize your recovery.</p>"
             }
         },
         "/practice-areas/golf-cart-accident-lawyers/": {
@@ -19857,7 +19837,7 @@
                 "_roden_faqs": [
                     {
                         "question": "Can I drive a golf cart on public roads in Georgia?",
-                        "answer": "Only on roads specifically designated for golf cart use with speed limits of 25 mph or less, during daylight hours. Operators must be at least 16 with a valid license. The cart must have headlights, taillights, and reflectors. Georgia law (O.C.G.A. § 40-6-330) governs golf cart road use."
+                        "answer": "Only on roads specifically designated for golf cart use. The cart must have headlights, taillights, and reflectors. Georgia law (O.C.G.A. § 40-6-330) governs golf cart road use."
                     },
                     {
                         "question": "Can I get a DUI on a golf cart?",
@@ -19883,11 +19863,11 @@
                 "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Golf cart injury claims carry the ordinary injury deadlines: two years in Georgia (O.C.G.A. § 9-3-33) and three years in South Carolina (S.C. Code § 15-3-530). What sets them apart is the number of possible defendants. A crash in a resort, gated community or beach town can involve the driver, the rental outfit, the association or course that maintains the paths, and the manufacturer when brakes or steering fail. Most carts have no doors, so passengers are thrown easily. Georgia denies recovery at 50% responsibility (O.C.G.A. § 51-12-33), and South Carolina denies it above 50% (Nelson v. Concrete Supply Co.). Roden Law handles golf cart claims on contingency, and the initial consultation at its offices in Georgia and South Carolina costs nothing.",
                 "_roden_pillar_compensation_intro": "Common golf-cart injuries are **ejection-related** — TBI from falls, fractures from rollovers — because golf carts lack seatbelts, doors, and meaningful crash protection. **Insurance coverage is a frequent gap**: standard auto policies often exclude golf carts, while homeowners' policies cover golf-cart use only in limited circumstances (typically on the insured's premises or on a golf course). {{SC}}South Carolina requires **liability insurance on a permitted golf cart**, but compliance is uneven. {{/SC}}Plaintiffs frequently rely on **host-resort, HOA, or short-term-rental property general-liability policies**, especially in Grand Strand and beach-community cases involving rented carts provided to guests.",
-                "_roden_pillar_negligence_intro": "{{GA}}Georgia regulates \"personal transportation vehicles\" (PTVs) under **O.C.G.A. § 40-6-330 to -334** — golf carts may operate on roads with speed limits ≤35 mph in jurisdictions that have authorized them by ordinance. {{/GA}}{{SC}}South Carolina treats golf carts as \"permitted vehicles\" under **S.C. Code § 56-2-100 to -130**, allowing on-road use **within four miles of registered address, during daylight only, on roads ≤35 mph, by a licensed driver.** {{/SC}}A cart driven outside these limits is **operating illegally** in {state_full}, which can support a negligence-per-se argument against the operator. Defendants commonly include the operator, the cart owner, the host community/HOA, the resort, and the manufacturer. Filing deadline: {sol_years} years under {sol_cite}.",
+                "_roden_pillar_negligence_intro": "{{GA}}Georgia regulates \"personal transportation vehicles\" (PTVs) under **O.C.G.A. § 40-6-330 to -334** — golf carts may operate in jurisdictions that have authorized them by ordinance. {{/GA}}{{SC}}South Carolina treats golf carts as \"permitted vehicles\" under **S.C. Code § 56-2-100 to -130**, allowing on-road use **within four miles of registered address, during daylight only, on roads ≤35 mph, by a licensed driver.** {{/SC}}A cart driven outside these limits is **operating illegally** in {state_full}, which can support a negligence-per-se argument against the operator. Defendants commonly include the operator, the cart owner, the host community/HOA, the resort, and the manufacturer. Filing deadline: {sol_years} years under {sol_cite}.",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
                 "_roden_sol_sc": "S.C. Code § 15-3-530",
                 "_roden_translation_es": "/es/practice-areas/golf-cart-accident-lawyers/",
-                "_roden_why_hire": "<p>Golf cart accident cases involve a unique intersection of traffic law, premises liability, and product liability. Many people don't realize that golf cart crashes can produce devastating injuries — ejections, rollovers, collisions with vehicles, and pedestrian strikes all cause traumatic brain injuries, fractures, and spinal cord damage.</p><p>Georgia law (<a href=\"https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-330/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-6-330 et seq.</a>) specifically regulates golf cart operation on public roads, limiting their use to designated streets and communities with speed limits of 25 mph or less. South Carolina has similar regulations that vary by municipality, with communities like Hilton Head Island, Kiawah Island, and Myrtle Beach having specific golf cart ordinances.</p><p>Our attorneys handle golf cart cases involving negligent operators, resort and community property owners, golf courses, rental companies, and golf cart manufacturers. We identify all liable parties and insurance sources to maximize recovery.</p>"
+                "_roden_why_hire": "<p>Golf cart accident cases involve a unique intersection of traffic law, premises liability, and product liability. Many people don't realize that golf cart crashes can produce devastating injuries — ejections, rollovers, collisions with vehicles, and pedestrian strikes all cause traumatic brain injuries, fractures, and spinal cord damage.</p><p>Georgia law (<a href=\"https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-330/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-6-330 et seq.</a>) specifically regulates golf cart operation on public roads, limiting their use to designated streets. South Carolina has similar regulations that vary by municipality, with communities like Hilton Head Island, Kiawah Island, and Myrtle Beach having specific golf cart ordinances.</p><p>Our attorneys handle golf cart cases involving negligent operators, resort and community property owners, golf courses, rental companies, and golf cart manufacturers. We identify all liable parties and insurance sources to maximize recovery.</p>"
             }
         },
         "/practice-areas/maritime-injury-lawyers/": {
@@ -24481,7 +24461,7 @@
                     },
                     {
                         "question": "Can I file a workers' comp claim for hearing loss from workplace noise?",
-                        "answer": "Yes. Occupational hearing loss from prolonged noise exposure is a compensable occupational disease in both Georgia and South Carolina. You will need audiological testing and medical evidence linking the hearing loss to your workplace noise exposure."
+                        "answer": "Yes. Occupational hearing loss from prolonged noise exposure is compensable in both Georgia and South Carolina. You will need audiological testing and medical evidence linking the hearing loss to your workplace noise exposure."
                     },
                     {
                         "question": "What if my occupational disease was caused by a product used at work?",
