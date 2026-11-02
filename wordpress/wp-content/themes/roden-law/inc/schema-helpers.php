@@ -334,9 +334,8 @@ function roden_output_schema() {
         roden_schema_faq_page(); // meta-driven; silent until _roden_faqs is populated
     }
 
-    if ( is_singular( 'testimonial' ) ) {
-        roden_schema_testimonial( $firm );
-    }
+    // Testimonial singles emit no Review (removed 2026-11-02). See the note
+    // where roden_schema_testimonial() used to be.
 
     if ( is_singular( 'resource' ) ) {
         // Most resource posts are informational articles, not step-by-step
@@ -3162,42 +3161,16 @@ function roden_schema_case_result( $firm ) {
 }
 
 /* ==========================================================================
-   TESTIMONIAL — Singular page schema (Review)
-   ========================================================================== */
-
-function roden_schema_testimonial( $firm ) {
-    $post_id = get_the_ID();
-    $content = wp_strip_all_tags( get_the_content( null, false, $post_id ) );
-
-    $schema = array(
-        '@context'     => 'https://schema.org',
-        '@type'        => 'Review',
-        'itemReviewed' => array(
-            '@type' => 'Organization',
-            '@id'   => $firm['url'] . '/#organization',
-            'name'  => $firm['name'],
-        ),
-        'reviewBody'   => $content,
-        'name'         => get_the_title( $post_id ),
-        'url'          => get_permalink( $post_id ),
-        'author'       => array(
-            '@type' => 'Person',
-            'name'  => get_the_title( $post_id ),
-        ),
-        'reviewRating' => array(
-            '@type'       => 'Rating',
-            'ratingValue' => '5',
-            'bestRating'  => '5',
-        ),
-        'publisher'    => array(
-            '@type' => 'Organization',
-            '@id'   => $firm['url'] . '/#organization',
-            'name'  => $firm['name'],
-        ),
-    );
-
-    roden_json_ld( $schema );
-}
+   TESTIMONIAL — no Review markup (removed 2026-11-02)
+   ==========================================================================
+   roden_schema_testimonial() published each testimonial as a schema.org
+   Review of the firm, with publisher = the firm and a reviewRating of 5/5
+   that nobody gave: the testimonials are quotes, not rated reviews. That is
+   the same self-serving class as the AggregateRating removed 2026-10-22.
+   Google shows no review snippets for an organization's markup about itself,
+   and an invented rating is misleading on its face. The singles are noindexed
+   and left out of the sitemap, and /testimonials/ (page-testimonials.php)
+   emits only BreadcrumbList. Do not add a Review or Rating here. */
 
 /* ==========================================================================
    TAXONOMY ARCHIVE — CollectionPage schema
