@@ -3231,6 +3231,24 @@ function roden_filing_deadlines_sidebar( $jurisdiction = '' ) {
         $jurisdiction = 'both';
     }
 
+    /*
+     * Normalise the spelling. `_roden_jurisdiction` holds several spellings for
+     * the same scope (ga, GA, georgia-only; sc, SC, south-carolina,
+     * south-carolina-only; both), and the per-page override check below compares
+     * against 'GA' / 'SC' exactly. Before 2026-11-03 a lower-case 'sc' page
+     * ignored its `_roden_sol_sc` and showed the default, and a 'south-carolina-only'
+     * or 'georgia-only' page rendered an empty box (roden_resolve_statute() knows
+     * no such key). Same mapping as roden_page_jurisdiction_states().
+     */
+    $j_norm = strtolower( trim( (string) $jurisdiction ) );
+    if ( in_array( $j_norm, array( 'ga', 'georgia', 'georgia-only' ), true ) ) {
+        $jurisdiction = 'GA';
+    } elseif ( in_array( $j_norm, array( 'sc', 'south-carolina', 'south-carolina-only' ), true ) ) {
+        $jurisdiction = 'SC';
+    } else {
+        $jurisdiction = 'both';
+    }
+
     $states = array();
     if ( 'both' === $jurisdiction ) {
         $states = array( 'GA', 'SC' );
