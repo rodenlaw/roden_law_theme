@@ -3825,3 +3825,18 @@ owner's sign-off, not an attorney's read. None is in the October attorney review
   routing rule, SC to Gillin). On a real read, record it with `bin/record-attorney-reviews.php`.
 - **Not touched:** 5352/5353 keep 2026-09-19, the review the owner confirmed that day (already queued, 101/133).
   The reviewing attorney is not on record, and 5352 changed on 2026-09-30.
+
+## 2026-11-03 — Study #2 South Carolina report published
+
+`/resources/south-carolina-truck-crash-deaths-2020-2024/` (post 6465), Graeham C. Gillin, `sc`, `truck-accidents`.
+Seeded as a draft with `bin/seed-sc-truck-study.php` (#309, #310; drift check matched, dry run clean), swept
+(`data/facts/remediation-2026-11-03-sc-truck-study-draft.md`: PASS-with-items, no legal finding), then published on the
+owner's go. N1: the page said the analysis code was published but linked only the CSV; "analysis code" and "analysis
+script" now link `bin/truck-study-analysis.py` pinned at `b2c40ee` (public repo). Visible text unchanged, so Gillin's
+2026-10-26 approval of this text still covers it; verifier 321/321. Live: 200, three charts inline, CSV attachment 6466
+(sha256 matches `research/`), sidebar "3 years (S.C. Code § 15-3-530)", no Georgia statute, no `lastReviewed`.
+
+**The review is not recorded, by design.** `bin/record-attorney-reviews.php` refuses a review dated before the post's
+publish date, and WordPress sets that at publish, so a pre-publication approval can never be recorded through it.
+Owner chose to publish without a review date and ask Gillin to confirm the live page; record his confirmation date.
+The GA report waits on Love. The live I-26/I-95 study (5348) has the same unlinked "code is published" claim (N1).
