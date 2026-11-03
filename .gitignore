@@ -66,6 +66,8 @@ content/meta.*.json
 !/data/practice-area-drafts/2026-09/
 /data/practice-area-drafts/2026-09/*
 !/data/practice-area-drafts/2026-09/*-helmet-laws.md
+# November 2026 plan drafts (content-plan/2026-11.md), kept for attorney review and the sweep.
+!/data/practice-area-drafts/2026-11/
 
 # WordPress content export cache used by the toolkit content adapter (regenerable)
 /data/content-cache/
