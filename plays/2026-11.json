@@ -286,11 +286,6 @@
       "blocking": false
     },
     {
-      "item": "The brief's live claims sweep could not be parsed this month. Re-run scripts/facts/sweep-claims.mjs and confirm a clean read before any guide publishes. The sweep's export still does not read _roden_why_hire, _roden_common_injuries, _roden_common_causes or _roden_pillar_negligence_intro (toolkit PR).",
-      "owner": "legal-accuracy-lead; toolkit",
-      "blocking": false
-    },
-    {
       "item": "Study #2: publish the SC report as a statewide /resources/ page (chart SVGs into the theme, _roden_jurisdiction sc, legal sweep first). The GA report follows Love's read. Study #1's GA half still needs Joshua Dorminy's read before its page can claim a review.",
       "owner": "content-director (publish); Tyler Love; Joshua Dorminy",
       "blocking": false
