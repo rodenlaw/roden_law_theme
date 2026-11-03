@@ -96,3 +96,17 @@ Full list, ranked by traffic: `second-state-reviews-2026-10.csv`. The 10 with th
 | [Do Traffic Tickets Determine Fault in a Car Accident?](https://rodenlaw.com/blog/traffic-tickets-and-car-accident-claims/) | 6 | Gillin | GA lawyer, Georgia sections |
 | [What Do Fault and No-Fault Mean in Car Insurance?](https://rodenlaw.com/blog/fault-vs-no-fault-car-insurance/) | 5 | Gillin | GA lawyer, Georgia sections |
 | [How Surgery Impacts Your Personal Injury Claim: What You Need to Know](https://rodenlaw.com/blog/impact-of-surgery-recommendation/) | 5 | Gillin | GA lawyer, Georgia sections |
+
+## Added 2026-11-03: five reference pages whose review date was cleared (ranks 288–292)
+
+These five were left out of the queue on 2026-10-22 because they carried `_roden_last_reviewed` 2026-09-19. That date was set on the owner's word the day each page was built and published; no attorney read is recorded (`_roden_reviewed_by` empty, not in the October attorney review). It was cleared on 2026-11-03 (`bin/clear-self-stamped-review-2026-09-19.php`), so they now need a real review like the rest of the queue. Traffic is from the later GSC window (2026-10-03 to 2026-10-30), so it does not rank against the rows above; by clicks, GA moped (12) belongs in Batch 1.
+
+| Rank | Page | Clicks | Impr. | Jurisdiction | Reviewer | Known issues to settle on the read |
+|---|---|---:|---:|---|---|---|
+| 288 | [Georgia Helmet Laws](https://rodenlaw.com/resources/georgia-helmet-laws/) | 2 | 567 | ga | Eric Roden | — |
+| 289 | [South Carolina Helmet Laws](https://rodenlaw.com/resources/south-carolina-helmet-laws/) | 4 | 1930 | sc | Graeham C. Gillin | helmet comparative-fault section and FAQ[1], "less than 51%" (remediation-2026-09-30-approvals.md) |
+| 290 | [South Carolina Golf Cart Laws](https://rodenlaw.com/resources/south-carolina-golf-cart-laws/) | 1 | 753 | sc | Graeham C. Gillin | — |
+| 291 | [Georgia Moped Laws](https://rodenlaw.com/resources/georgia-moped-laws/) | 12 | 1673 | ga | Eric Roden | DUI citation added 2026-09-21 |
+| 292 | [South Carolina Moped Laws](https://rodenlaw.com/resources/south-carolina-moped-laws/) | 3 | 1294 | sc | Graeham C. Gillin | comparative-fault line, "less than 51%"; DUI citation added 2026-09-21 |
+
+The two two-state guides from the same day, 5352 and 5353, were already queued (ranks 101, 133, Dorminy + Gillin) and keep their date, which records a review the owner confirmed on 2026-09-19. The reviewing attorney is not on record, and 5352 has been edited since (2026-09-30 seat-belt fix).
