@@ -26,8 +26,28 @@
  * be retyped, reordered or hallucinated. "3 years (S.C. Code § 15-3-530)"
  * becomes "3 años (S.C. Code § 15-3-530)".
  *
- * The draft supplies prose only: title, body, meta description, hero intro,
- * why-hire, key takeaways, accident phrase, FAQs.
+ * The draft supplies prose only: title, body, excerpt, meta description, hero
+ * intro, why-hire, key takeaways, accident phrase, FAQs. The excerpt matters:
+ * roden_schema_article() publishes it as the Article description, so it is one
+ * of the four places a claim can live and must come from the swept draft.
+ *
+ * WHAT IT DOES NOT DO (2026-11-03)
+ * --------------------------------
+ * It creates DRAFTS, never published posts. A Spanish page goes live only after
+ * the legal sweep and an attorney read, as a separate deliberate act (publish it
+ * in wp-admin or with wp post update <id> --post_status=publish). Until then the
+ * reciprocal translation link is harmless: roden_get_translation_id() only
+ * follows it to a published post, so no hreflang or language switch points at
+ * the draft.
+ *
+ * It never writes _roden_last_reviewed. That field is a claim that an attorney
+ * reviewed the page; stamping it with the seeding date was the self-stamp error
+ * cleared from 5352/5353 and the I-26/I-95 report. Set it, with _roden_reviewed_by,
+ * on the day of the real review.
+ *
+ * Every meta write goes through wp_slash(): update_post_meta() unslashes what it
+ * is given, exactly like wp_insert_post(), so a backslash in FAQ or body text
+ * would otherwise be silently eaten (CLAUDE.md, 2026-09-09).
  *
  * PAYLOAD
  * -------
@@ -151,8 +171,9 @@ foreach ( $payload as $en_path => $d ) {
 
 	$postarr = array(
 		'post_type'    => $en_post->post_type,
-		'post_status'  => 'publish',
+		'post_status'  => 'draft',
 		'post_title'   => $d['title'],
+		'post_excerpt' => isset( $d['excerpt'] ) ? $d['excerpt'] : '',
 		'post_name'    => $slug,
 		'post_content' => isset( $d['content'] ) ? $d['content'] : '',
 		'post_parent'  => $parent_id,
@@ -161,12 +182,13 @@ foreach ( $payload as $en_path => $d ) {
 	);
 
 	printf(
-		"%s %-52s -> parent %d, slug '%s', %d chars, %d FAQs\n",
+		"%s %-52s -> DRAFT, parent %d, slug '%s', %d chars, excerpt %d chars, %d FAQs\n",
 		( 'apply' === $mode ? 'CREATE' : 'WOULD ' ),
 		$en_path,
 		$parent_id,
 		$slug,
 		strlen( $postarr['post_content'] ),
+		strlen( $postarr['post_excerpt'] ),
 		isset( $d['faqs'] ) ? count( $d['faqs'] ) : 0
 	);
 
@@ -186,20 +208,20 @@ foreach ( $payload as $en_path => $d ) {
 	foreach ( $inherit as $k ) {
 		$v = get_post_meta( $en_id, $k, true );
 		if ( '' !== $v && array() !== $v ) {
-			update_post_meta( $es_id, $k, $v );
+			update_post_meta( $es_id, $k, wp_slash( $v ) );
 		}
 	}
 	foreach ( array( '_roden_sol_ga', '_roden_sol_sc' ) as $k ) {
 		$v = get_post_meta( $en_id, $k, true );
 		if ( '' !== $v ) {
-			update_post_meta( $es_id, $k, $es_statute( $v ) );
+			update_post_meta( $es_id, $k, wp_slash( $es_statute( $v ) ) );
 		}
 	}
 
 	// Prose: authored.
 	foreach ( $authored as $field => $key ) {
 		if ( isset( $d[ $field ] ) && '' !== $d[ $field ] && array() !== $d[ $field ] ) {
-			update_post_meta( $es_id, $key, $d[ $field ] );
+			update_post_meta( $es_id, $key, wp_slash( $d[ $field ] ) );
 		}
 	}
 
@@ -207,10 +229,10 @@ foreach ( $payload as $en_path => $d ) {
 	// sides point at each other and the counterpart is published.
 	update_post_meta( $es_id, '_roden_locale', 'es' );
 	update_post_meta( $es_id, '_roden_translation_of', $en_id );
-	update_post_meta( $es_id, '_roden_last_reviewed', gmdate( 'Y-m-d' ) );
+	// No _roden_last_reviewed: set it on the day an attorney actually reads the Spanish.
 	update_post_meta( $en_id, '_roden_translation_es', $es_id );
 
-	printf( "       created #%d  %s\n", $es_id, wp_make_link_relative( roden_get_canonical_url( $es_id ) ) );
+	printf( "       created DRAFT #%d  %s\n", $es_id, wp_make_link_relative( roden_get_canonical_url( $es_id ) ) );
 	$created++;
 }
 
@@ -223,6 +245,7 @@ printf(
 	$errors
 );
 if ( 'apply' === $mode && $created ) {
+	echo "Created as DRAFTS. Publish each only after its legal sweep and attorney read; set _roden_last_reviewed and _roden_reviewed_by then.\n";
 	echo "Remember: wp rewrite flush, then wp cache flush && wp page-cache flush.\n";
 	echo "Then re-run bin/es-relink-body-links.php — new twins make more body links resolvable.\n";
 }
