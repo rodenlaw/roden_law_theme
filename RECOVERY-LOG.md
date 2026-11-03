@@ -3806,3 +3806,22 @@ title was one of his objection cards, no longer exists. **Love's cards** still s
 page says now". They are still the right question (the replacement wording), but the page text has moved.
 **Left as is, for Love:** 1693 "potentially lifetime benefits"; 4162 "automatically considered negligent" and 4227
 "presumed negligent" (negligence per se framing); 4087's § 40-6-294 full-lane line, which matches (b).
+
+## 2026-11-03 — Five reference pages: the 2026-09-19 review date cleared
+
+Owner: "do 2 and 3". Found while fixing `bin/build-resource-seed.py` (#307), which hard-coded
+`_roden_last_reviewed` 2026-09-19. Seven live resources carried that date with no `_roden_reviewed_by`.
+The record (2026-09-19 entries above; `2992fe2`, `e3ecc0e`) shows each was set on the owner's word, not
+by a silent stamp. But for the five reference pages built that day (helmet GA/SC 6312/6313, golf cart SC 6314,
+moped GA/SC 6315/6316), each commissioned, statute-checked and published within the day, the date records the
+owner's sign-off, not an attorney's read. None is in the October attorney review. Same situation as 5348.
+
+- **Applied:** `bin/clear-self-stamped-review-2026-09-19.php` (per-post exact-match guard: slug, one value
+  '2026-09-19', no reviewer; dry run first). Drift check matched before the write. `post_modified` unchanged.
+  Both caches flushed. Backup: `docs/backups/review-meta-0919-five-2026-11-03.json`.
+- **Verified live** with a cache-buster: no "Last reviewed" line and no `lastReviewed` on the five; FAQPage intact.
+- **`content/meta.json`:** regenerated. The diff is exactly these five lines.
+- **Queued:** ranks 288–292 in `docs/reviews/attorney-review-queue-2026-10.csv` (GA to Eric Roden by the queue's
+  routing rule, SC to Gillin). On a real read, record it with `bin/record-attorney-reviews.php`.
+- **Not touched:** 5352/5353 keep 2026-09-19, the review the owner confirmed that day (already queued, 101/133).
+  The reviewing attorney is not on record, and 5352 changed on 2026-09-30.
