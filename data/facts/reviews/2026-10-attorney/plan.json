@@ -16,7 +16,7 @@
     "love": {
       "name": "Tyler Love",
       "short": "Tyler",
-      "intro": "Everything on rodenlaw.com that needs a Georgia lawyer's read, in one place. Tap a button on each card; your answers save as you go, and you can stop and come back from the same link. When you're done, press Send at the bottom.",
+      "intro": "Everything on rodenlaw.com that needs a Georgia lawyer's read, in one place. You don't need to do it in one sitting. Each answer is saved and reaches us as soon as you tap it, whether approve or a change, so a few cards at a time is fine; come back from the same link whenever you have a few minutes. Press Send at the bottom when you've finished, or whenever you'd like us to know you've stopped for now.",
       "sections": [
         {
           "id": "ga-signoff",
@@ -61,7 +61,7 @@
           "id": "ga-corrections",
           "title": "Corrections that change what a page says the law is",
           "mode": "decide",
-          "intro": "Each card shows what the page says now and the wording we propose. None of these is live. Our Georgia text was read from FindLaw copies current to early 2024 (two sections only to 2021), so please check for any 2024–2026 act, especially on e-scooters, PTVs and golf carts. The work-zone fine cards (§ 40-6-188) rest on a 2021 copy, so a 2024–2026 check matters most there and on the concussion cards.",
+          "intro": "Each card shows the sentence that was on the page (red) and the wording we propose (green). On 11-02 we took the incorrect part of each of these sentences off the page. We only deleted words and added none, so each page now says less rather than something wrong. Nothing in green is live; your answer decides what goes back in. Our Georgia text was read from FindLaw copies current to early 2024 (two sections only to 2021), so please check for any 2024–2026 act, especially on e-scooters, PTVs and golf carts. The work-zone fine cards (§ 40-6-188) rest on a 2021 copy, so a 2024–2026 check matters most there and on the concussion cards.",
           "items": [
             {
               "ref": "p2:F24"
@@ -291,7 +291,8 @@
             {
               "ref": "p3:G29"
             }
-          ]
+          ],
+          "nowStatus": "as it read before 11-02; the incorrect part is now off the page"
         },
         {
           "id": "ga-questions",
@@ -350,7 +351,8 @@
             {
               "ref": "p1:E58"
             }
-          ]
+          ],
+          "nowStatus": "the wording before 10-24; the green text is what the page says now"
         },
         {
           "id": "ga-report",
