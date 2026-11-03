@@ -28,18 +28,6 @@
                 "_roden_jurisdiction": "south-carolina-only"
             }
         },
-        "/?post_type=resource&p=6465": {
-            "type": "resource",
-            "status": "draft",
-            "title": "Truck-Crash Deaths in South Carolina, 2020–2024: What the Federal Crash Data Shows",
-            "excerpt": "Between 2020 and 2024, 669 people died in 601 fatal crashes in South Carolina that involved a large truck, 12.0% of the state's fatal crashes. 86% of those killed were outside the truck, and 64% of the crashes were on rural roads. Analysis of NHTSA FARS data, with the dataset and code published.",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_jurisdiction": "sc",
-                "_roden_meta_description": "669 people died in 601 truck-involved fatal crashes in South Carolina from 2020 to 2024; 64% of the crashes were rural. NHTSA data, with the dataset.",
-                "_roden_meta_title": "South Carolina Truck-Crash Deaths, 2020–2024: Data Study"
-            }
-        },
         "/about/": {
             "type": "page",
             "status": "publish",
@@ -23415,6 +23403,18 @@
                 "_roden_jurisdiction": "sc",
                 "_roden_key_takeaways": "Most South Carolina truck accident settlements range from roughly $50,000 for moderate injuries to several million dollars for catastrophic ones, with no general cap on damages. Value depends on your medical bills, lost income, pain, fault share, and the truck's commercial insurance limits. South Carolina gives you 3 years to file (S.C. Code § 15-3-530). Every case is unique and no result is guaranteed.",
                 "_roden_meta_description": "Most SC truck accident settlements range from tens of thousands to several million dollars, depending on injury severity, fault, and the truck's insurance."
+            }
+        },
+        "/resources/south-carolina-truck-crash-deaths-2020-2024/": {
+            "type": "resource",
+            "status": "publish",
+            "title": "Truck-Crash Deaths in South Carolina, 2020–2024: What the Federal Crash Data Shows",
+            "excerpt": "Between 2020 and 2024, 669 people died in 601 fatal crashes in South Carolina that involved a large truck, 12.0% of the state's fatal crashes. 86% of those killed were outside the truck, and 64% of the crashes were on rural roads. Analysis of NHTSA FARS data, with the dataset and code published.",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_jurisdiction": "sc",
+                "_roden_meta_description": "669 people died in 601 truck-involved fatal crashes in South Carolina from 2020 to 2024; 64% of the crashes were rural. NHTSA data, with the dataset.",
+                "_roden_meta_title": "South Carolina Truck-Crash Deaths, 2020–2024: Data Study"
             }
         },
         "/resources/south-carolina-um-uim-stacking/": {
