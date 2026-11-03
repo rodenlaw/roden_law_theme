@@ -14,7 +14,7 @@ schema_feeds: [FAQPage, LegalService, BreadcrumbList]
 title: "South Carolina Medical Malpractice Law: The Notice of Intent, the Expert Affidavit, the Deadlines and the Damages Cap"
 excerpt: "Before you can sue for medical malpractice in South Carolina you must file a Notice of Intent to File Suit with an expert's affidavit and go to mediation. Here are those steps, the filing deadlines, and the 2026 cap on non-economic damages."
 meta_description: "South Carolina medical malpractice law: the Notice of Intent and expert affidavit, mediation, the three-year deadline, and the 2026 non-economic damages cap."
-draft_status: "Drafted 2026-11-03 by the content director against profiles/writer-profile.md. pi-content-writer pass and QA gate ran 2026-11-03: local-seo qa.mjs 10/11, the one failure is the deliberately blank Last reviewed line (critical, forces DRAFT until Gillin reviews); claims-engine replay 0 findings with planted controls firing; content-quality check no layer failed. Not legally swept by legal-accuracy-lead, not reviewed by Gillin. Three VERIFY tags open (V1-1, V1-2, V1-3); nothing ships with an open tag."
+draft_status: "Drafted 2026-11-03 by the content director against profiles/writer-profile.md. pi-content-writer pass and QA gate ran 2026-11-03: local-seo qa.mjs 10/11, the one failure is the deliberately blank Last reviewed line (critical, forces DRAFT until Gillin reviews); claims-engine replay 0 findings with planted controls firing; content-quality check no layer failed. Not legally swept by legal-accuracy-lead, not reviewed by Gillin. Three VERIFY tags open (V1-1, V1-2, V1-3); nothing ships with an open tag. Legal sweep 2026-11-03 (data/facts/remediation-2026-11-03-sc-medmal-draft.md): PASS-with-items; W1-W4 applied 2026-11-03. Still open for Gillin: V1-1..V1-3, whether § 15-36-100(C) carries into the Notice of Intent affidavit, and whether § 15-3-545 governs nursing-home claims. R1 (_roden_sol_sc) and P1/P2 are seeder fixes."
 ---
 
 # South Carolina Medical Malpractice Law: The Notice of Intent, the Expert Affidavit, the Deadlines and the Damages Cap
@@ -38,9 +38,9 @@ If a doctor, nurse or hospital has hurt you or someone you love, the law that de
 
 South Carolina defines medical malpractice as "doing that which the reasonably prudent health care provider or health care institution would not do or not doing that which the reasonably prudent health care provider or health care institution would do in the same or similar circumstances" (S.C. Code § 15-32-210(8)). [VERIFY — attorney: § 15-32-210(8) quoted from primary text, https://www.scstatehouse.gov/code/t15c032.php, read 2026-11-03; the definition is not a claim in the signed pack.]
 
-In plain terms, a bad outcome is not malpractice on its own. The question is whether the care fell below what a careful provider would have given in the same situation. That is why every case needs an expert, and why South Carolina makes you produce one before you file.
+In plain terms, a bad outcome is not malpractice on its own. The question is whether the care fell below what a careful provider would have given in the same situation. That is why almost every case needs an expert, and why South Carolina generally makes you produce one before you file.
 
-A "health care institution" includes a hospital, an ambulatory surgical facility and a **nursing home** (S.C. Code § 15-32-210(4)), so the rules below apply to nursing-home malpractice claims too. See our page on [nursing home abuse and neglect claims](/practice-areas/nursing-home-abuse-lawyers/).
+A "health care institution" includes a hospital, an ambulatory surgical facility and a **nursing home** (S.C. Code § 15-32-210(4)), so the damages cap below applies to nursing-home malpractice claims too. See our page on [nursing home abuse and neglect claims](/practice-areas/nursing-home-abuse-lawyers/).
 
 ## The steps before a lawsuit
 
@@ -58,7 +58,7 @@ Every South Carolina medical malpractice claim must go through these steps befor
 
 The affidavit must come from a qualified expert and must specify the negligent act or omission (S.C. Code § 15-36-100).
 
-According to the South Carolina Legislature's [text of S.C. Code § 15-36-100](https://www.scstatehouse.gov/code/t15c036.php), the expert must be licensed, and either board certified in the specialty the opinion concerns, or have practised or taught in that specialty for at least three of the last five years immediately before giving the opinion.
+According to the South Carolina Legislature's [text of S.C. Code § 15-36-100](https://www.scstatehouse.gov/code/t15c036.php), the expert is usually a licensed professional who is board certified in the specialty the opinion concerns, or who has practised or taught in that specialty for at least three of the last five years immediately before giving the opinion. Another expert with the right specialized knowledge can qualify, but the affidavit must then explain the expert's credentials and why the expert is qualified.
 
 This is the step that takes time. A lawyer has to get your records, find the right specialist and have that specialist review the care before anything is filed. Graeham C. Gillin, a partner in Roden Law's Charleston office, notes that the expert review is the foundation of the case, not a formality, because the affidavit has to name what went wrong. [VERIFY — attorney: attribution sentence; confirm Mr. Gillin is willing to be quoted in these words.]
 
@@ -106,7 +106,7 @@ For more on how the limits apply, read our article on [medical malpractice damag
 
 **Government hospitals.** A claim against a public hospital or a government-employed doctor follows the South Carolina Tort Claims Act.
 
-According to the South Carolina Legislature's [text of the Tort Claims Act](https://www.scstatehouse.gov/code/t15c078.php), recovery is limited to $300,000 per person and $600,000 per occurrence, or $1,200,000 per occurrence where the harm was caused by a licensed physician or dentist employed by a governmental entity, and punitive damages are not available (S.C. Code § 15-78-120).
+According to the South Carolina Legislature's [text of the Tort Claims Act](https://www.scstatehouse.gov/code/t15c078.php), recovery is limited to $300,000 per person and $600,000 per occurrence, or $1,200,000 per person and per occurrence where the harm was caused by a licensed physician or dentist employed by a governmental entity, and punitive damages are not available (S.C. Code § 15-78-120).
 
 **Charitable hospitals and nursing homes.** A claim against a 501(c)(3) charitable organization for an employee's negligence is limited to actual damages within the Tort Claims Act limits of $300,000 per person and $600,000 per occurrence (S.C. Code § 33-56-180). That reaches nonprofit hospitals and nursing homes.
 
@@ -142,7 +142,7 @@ At Roden Law you pay nothing upfront and no legal fees unless we win your case. 
 
 **Q:** Can I sue a public hospital for malpractice in South Carolina?
 
-**A:** Yes, under the South Carolina Tort Claims Act. The deadline is generally two years (S.C. Code § 15-78-110), recovery is limited to $300,000 per person and $600,000 per occurrence, or $1,200,000 per occurrence for harm caused by a government-employed physician or dentist, and punitive damages are not available (S.C. Code § 15-78-120).
+**A:** Yes, under the South Carolina Tort Claims Act. The deadline is generally two years (S.C. Code § 15-78-110), recovery is limited to $300,000 per person and $600,000 per occurrence, or $1,200,000 per person and per occurrence for harm caused by a government-employed physician or dentist, and punitive damages are not available (S.C. Code § 15-78-120).
 
 **Q:** How much does it cost to hire Roden Law for a malpractice case?
 
