@@ -137,7 +137,14 @@ echo "content:       " . strlen( $p['content'] ) . " bytes, "
 echo "faqs:          " . count( $meta['_roden_faqs'] ) . "\n";
 echo "takeaways:     " . strlen( $meta['_roden_key_takeaways'] ) . " chars (prose)\n";
 echo "see_also:      " . count( $meta['_roden_see_also'] ) . "\n";
-echo "last_reviewed: {$meta['_roden_last_reviewed']}\n";
+echo 'last_reviewed: ' . ( isset( $meta['_roden_last_reviewed'] )
+	? $meta['_roden_last_reviewed'] . ' by ' . ( isset( $meta['_roden_reviewed_by'] ) ? $meta['_roden_reviewed_by'] : '(no reviewer named)' )
+	: 'not set (no attorney review yet; the page shows no Last reviewed date)' ) . "\n";
+echo 'sol override:  GA ' . ( isset( $meta['_roden_sol_ga'] ) ? $meta['_roden_sol_ga'] : '(default)' )
+	. ' | SC ' . ( isset( $meta['_roden_sol_sc'] ) ? $meta['_roden_sol_sc'] : '(default)' ) . "\n";
+if ( 'apply' === $mode && $do_pub && ! isset( $meta['_roden_last_reviewed'] ) ) {
+	echo "WARNING:       publishing with no attorney review date.\n";
+}
 
 /* -- Featured image: find by attached file, not by slug --------------------- */
 $thumb_id = 0;
