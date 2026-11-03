@@ -1,0 +1,336 @@
+{
+  "version": 1,
+  "client": "roden",
+  "month": "2026-11",
+  "author": "client-strategy-director",
+  "generatedAt": "2026-11-03T13:50:38.293Z",
+  "status": "applied",
+  "summary": "Roden stays paused for November. Tyler Love has not signed the GA law pack for Roden (0/33 authorities) or opened his 108 review cards, so the written resume condition is not met: hyperlocal, GBP and freshness stay off and the spend cap stays at $0. The hand-built work continues on statewide pages only. It builds the three guides the owner asked for: SC medical malpractice, the Spanish twin of the two-state comparative-negligence guide, and a GA workers' comp guide that is drafted but not published until Love signs. It also publishes Study #2's SC report, which Gillin approved. One switch: the owner raises recovery.paused to true, so the resume condition becomes a real gate.",
+  "lanes": {
+    "hyperlocal": {
+      "on": false,
+      "reason": "The resume condition in config.overlay.json is not met. The GA pack is unsigned for Roden (0/33). The statute item still blocks: 187 statutes and 211 page-citations are unverified, Love has opened 0 of 108 cards, and the false GA sentences were only deleted on 2026-11-02, with replacement wording still waiting on him. Positions 1-3 is still at the 68 baseline (Semrush, Jul 2026), and the recovery log records no completed core update to judge against. The lane's last output (2026-08-24) was a subdivision-and-street slug.",
+      "evidence": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E9",
+        "E10",
+        "E13"
+      ],
+      "notes": "The pause costs something. Oct GSC is projecting to 1,073 clicks against 1,202 in Sep, and average position went from 17.4 to 21.4. That cost argues for getting Love's signature, not for resuming unchanged. Re-entry still needs: both packs signed, the statute item non-blocking, a sweep PASS on the day of resume, and targeting at the incorporated-municipality floor (the site-wide floor now passes at 19.5% doorway ratio, but the lane's own targeting has not been shown to have changed)."
+    },
+    "referenceLayer": {
+      "on": true,
+      "reason": "The three guides the owner asked for on 2026-10-23 are all statewide /resources/ pages. They fill empty resources blocks without adding a location-targeted URL, so the doorway ratio stays at 19.5%. The SC medical malpractice guide can ship: the SC pack is signed by Gillin, with 0 unverified authorities. The GA-only workers' comp guide can be drafted but not published while the GA pack is unsigned for Roden. GA workers' comp is also the class whose false sentences were deleted on 2026-11-02 pending Love.",
+      "evidence": [
+        "E5",
+        "E7",
+        "E8",
+        "E14",
+        "E15"
+      ],
+      "notes": "Order: (1) SC medical malpractice guide, tagged sc + medical-malpractice. Claims are traced to the signed SC pack or to primary text, and the notice-of-intent, expert-affidavit and § 15-32-220 cap figures are verified before drafting. Legal sweep before publish. (2) GA workers' comp guide, tagged ga + workers-compensation. Draft only, and publish after Love signs the authorities it cites. Keep it distinct from the pillar and from /resources/georgia-vs-south-carolina-workers-compensation, which is waiting until 2026-11-23: do not merge into it or retitle it before then. No guide may restate a sentence removed on 2026-11-02."
+    },
+    "researchAssets": {
+      "on": true,
+      "reason": "Study #2 (GA and SC truck-crash deaths 2020-2024, FARS) is built, verified 321/321 (re-run 2026-10-24) and has no statutory claims. Gillin approved the SC report on 2026-10-26. Publish the SC report as a statewide /resources/ page this month, after a legal sweep. The GA report waits on Love. Roden's AI answers depend on rodenlaw.com being retrieved: it was named in 0 of 60 non-self answers that did not cite it. Citable original data is the content-side lever for that.",
+      "evidence": [
+        "E11",
+        "E12",
+        "E16"
+      ],
+      "notes": "Study #1's GA half still needs Dorminy's read. It is not blocking, but the page cannot claim a review until he reads it."
+    },
+    "spanish": {
+      "on": true,
+      "reason": "On for one page only: the /es/ twin of the GA-vs-SC comparative-negligence guide, which the owner asked for on 2026-10-23. The English original was attorney-reviewed on 2026-09-19, so the twin follows a reviewed original instead of leading it. It adapts already-reviewed claims and makes no new claim on the unsigned GA pack. It is a two-state page, so the doorway ratio is unchanged.",
+      "evidence": [
+        "E5",
+        "E14",
+        "E15",
+        "E21"
+      ],
+      "notes": "The English guide is waiting until 2026-11-23. Adding its translation-pair meta is a minor edit and is allowed. Do not retitle or restructure the English page before that date. Sweep the twin on all four surfaces (body, FAQs, key takeaways, excerpt) before publish: the /es/ twins are where legal errors have outlived the English fix before. Tag _roden_jurisdiction both at publish."
+    },
+    "gbp": {
+      "on": false,
+      "reason": "The autorun schedules GBP posts and it is paused. Hand posting would not fix the GBP problems now on record. Four profiles' website links were moved to utm_campaign tags, which WP Engine strips. Charleston's link was reset only on 2026-10-30. Columbia's profile still needs verification, with 24 posts stuck in PROCESSING. Myrtle Beach has had 8 posts rejected since July. The GBP work this month is profile hygiene and review asks, which are open items for people, not a posting lane.",
+      "evidence": [
+        "E1",
+        "E18",
+        "E19",
+        "E20"
+      ]
+    },
+    "freshness": {
+      "on": false,
+      "reason": "It has never run for this client: there is no freshness.state.json. An automated writer should not go into a corpus where 211 page-citations are still unverified and where the 2026-11-02 deletions left replacement wording waiting on an attorney. The brief's own live sweep also failed to parse this month, so a refresh could not be checked by the instrument meant to catch it.",
+      "evidence": [
+        "E6",
+        "E7",
+        "E17"
+      ],
+      "notes": "First real job: the January CPI adjustment to the S.C. Code § 15-32-220 caps."
+    }
+  },
+  "targets": [
+    {
+      "metric": "Keywords in positions 1-3 (Semrush, US db)",
+      "current": 68,
+      "target": 68,
+      "by": "2026-12",
+      "source": "Semrush US database, recorded in RECOVERY-LOG.md",
+      "note": "Hold-or-climb. The baseline is Jul 2026 and no later Semrush count is in the evidence. Judge nothing until a completed core update is recorded in the update-boundary table."
+    },
+    {
+      "metric": "GSC clicks, monthly",
+      "current": 1202,
+      "target": 1191,
+      "by": "2026-12",
+      "source": "GSC API, sc-domain:rodenlaw.com, monthly block in data/gsc/latest.json",
+      "note": "1,202 is Sep 2026, the last complete month. Oct is partial (1,038 over 30/31 days, naive projection 1,073) and is likely to come in below target. Read it once it is complete."
+    },
+    {
+      "metric": "Radar AI visibility: discovery probes naming Roden (probe set 1.2.0, self-referential excluded)",
+      "current": "7/30",
+      "target": "9/30",
+      "by": "2027-01",
+      "source": "Radar cycle 2026-11-01-e59200, discovery band (data/radar/cycles/)",
+      "note": "Replaces the retired 0/3 target on the 1.0.0 baseline. Set from November alone: the engine's retrieval fell from 23.4 to 7.2 sources per answer between cycles, so a one-cycle move is soft. The levers are directory listings and rodenlaw.com being retrieved. North Charleston and Myrtle Beach are 0/5."
+    },
+    {
+      "metric": "Savannah green-pin share (top-3), Local Dominator",
+      "current": 38.37,
+      "target": 38,
+      "by": "2026-12",
+      "source": "data/local-seo/rank-history.json, scan-2026-11-02-3c3f28 (Local Dominator)",
+      "note": "Restated on the new scanner. The old 41.06% (Local Falcon, 2026-08-17) cannot be compared. A hold target, because hyperlocal is off."
+    }
+  ],
+  "spendCapUsd": {
+    "weekly": 0,
+    "monthly": 0,
+    "reason": "Hyperlocal is off. The autorun reports $0 of a $0 cap and its plist is not loaded. The cap returns to 12 in the same file that turns hyperlocal on. Grid rescans (for example Charleston, about $1.23) are hand-run and outside the autorun cap."
+  },
+  "switches": [
+    {
+      "switch": "recovery.paused",
+      "from": null,
+      "to": true,
+      "reason": "The recovery block in config.overlay.json has been written since 2026-10-24 with since, reason and resumeWhen, but it has no paused key, so the guard reports clear. Today only a pause note and a $0 cap hold the pipeline shut. None of the three resume conditions is met: GA is unsigned for Roden (0/33), the statute item still blocks (Love 0/108), and no resume-day sweep exists. Raising the key makes prepare-handoff and the launchd guard refuse, so the resume needs the same deliberate owner act the condition already names.",
+      "evidence": [
+        "E1",
+        "E2",
+        "E5",
+        "E6",
+        "E7"
+      ],
+      "owner": "owner"
+    }
+  ],
+  "evidence": {
+    "E1": {
+      "source": "autorun-ctl.mjs status (data/local-seo/autorun.state.json)",
+      "observed": "Autorun disabled since 2026-08-28 (pause note: 'content generation resumes on request'). Plist on disk but not loaded. Recovery guard clear. Weekly spend $0 / $0. Next office Myrtle Beach.",
+      "at": "2026-11-03",
+      "path": "data/local-seo/autorun.state.json"
+    },
+    "E2": {
+      "source": "config.overlay.json localSeo.recovery",
+      "observed": "The gate block (since 2026-08-28, reason, resumeWhen) has no paused key. resumeWhen requires both law packs signed, the statute-verification item closed or non-blocking, and a fresh claims sweep PASS on the day of resume; then the owner clears recovery.paused.",
+      "at": "2026-10-24",
+      "path": "config.overlay.json"
+    },
+    "E3": {
+      "source": "RECOVERY-LOG.md KPI baseline table (Semrush US database)",
+      "observed": "Keywords in positions 1-3: 68. Success means positions 1-3 holds or climbs through the next core update.",
+      "at": "2026-07",
+      "value": 68,
+      "path": "RECOVERY-LOG.md"
+    },
+    "E4": {
+      "source": "RECOVERY-LOG.md 'Update boundaries to measure against'",
+      "observed": "The only boundary recorded is the Aug 2026 spam update (began 8/18). The next core update is still a placeholder, so no update boundary exists to judge a resume against.",
+      "at": "2026-08",
+      "path": "RECOVERY-LOG.md"
+    },
+    "E5": {
+      "source": "Law packs via the brief (internal-ai-scripts/law/GA.json, SC.json; law-signoff.json)",
+      "observed": "GA is unsigned for Roden: 0 of 33 authorities signed for this client, because the shared pack's signer does not count. SC is signed by Graeham C. Gillin on 2026-09-26, with 50 authorities and 0 unverified.",
+      "at": "2026-11-03",
+      "path": "law-signoff.json"
+    },
+    "E6": {
+      "source": "docs/statute-verification-tracker.md coverage table",
+      "observed": "209 statutes and 2,409 page-citations are verified (91.9%). 187 statutes and 211 page-citations are not, of 2,620. Pass 3 found 29 live errors on 16 documents. Pass 4 waits on a fresh inventory run.",
+      "at": "2026-10-26",
+      "value": 211,
+      "path": "docs/statute-verification-tracker.md"
+    },
+    "E7": {
+      "source": "RECOVERY-LOG.md 2026-11-02 'False Georgia statements on Love's cards: taken down'",
+      "observed": "Love has opened 0 of 108 cards. 74 string edits and 5 FAQ removals on 43 posts deleted the false GA sentences, but the corrected wording still waits on him. The fresh sweep has 0 findings (sweep-2026-11-02.json). Four phrasings are left for Love.",
+      "at": "2026-11-02",
+      "path": "RECOVERY-LOG.md"
+    },
+    "E8": {
+      "source": "data/site-health/latest.json",
+      "observed": "Overall PASS. Doorway ratio 19.5% (124 location-targeted of 636 indexable URLs, ceiling 25%). Granularity floor passes with 0 errors. Crawl, canonicals and redirects are clean.",
+      "at": "2026-11-02",
+      "value": 19.5,
+      "path": "data/site-health/latest.json"
+    },
+    "E9": {
+      "source": "autorun.state.json last run scan-2026-08-24-abdf97",
+      "observed": "The lane's last output was 'wando-gardens-faber-place-drive-best-car-accident-lawyer-north-charleston' plus an ES twin: a subdivision and a street below the incorporated-municipality floor.",
+      "at": "2026-08-24",
+      "path": "data/local-seo/autorun.state.json"
+    },
+    "E10": {
+      "source": "data/local-seo/rank-history.json, latest scan per office",
+      "observed": "Green pins in the top 3 on Local Dominator: Darien 61.22%, Savannah 38.37%, Myrtle Beach 25.82% and North Charleston 0.82% (2026-11-02); Charleston 14.78% (2026-10-30). Columbia reads 0% on a 2026-07-14 Local Falcon scan. These are the first scans since the scanner changed on 2026-09-29, so they cannot be compared with earlier figures.",
+      "at": "2026-11-02",
+      "path": "data/local-seo/rank-history.json"
+    },
+    "E11": {
+      "source": "Radar cycle 2026-11-01-e59200 (probe set 1.2.0)",
+      "observed": "Roden is named in 7 of 30 discovery probes, 1 of 18 selection and 2 of 12 demand. North Charleston and Myrtle Beach are 0/5. Four locations are below the 20-review floor (Darien 0, North Charleston 2, Columbia 2, Myrtle Beach 3).",
+      "at": "2026-11-01",
+      "value": "7/30",
+      "path": "data/radar/cycles/2026-11-01-e59200.json"
+    },
+    "E12": {
+      "source": "data/radar/visibility-2026-11.md (local-visibility-lead)",
+      "observed": "Roden was never named unless rodenlaw.com was among the retrieved sources (Nov: 10 named with it cited, 0 without). Sources per answer fell from 23.4 to 7.2. Directories carry the other firms, with LawInfo cited in 27% of answers.",
+      "at": "2026-11-01",
+      "path": "data/radar/visibility-2026-11.md"
+    },
+    "E13": {
+      "source": "data/gsc/latest.json, sc-domain:rodenlaw.com",
+      "observed": "Sep 2026: 1,202 clicks (last complete month). Oct partial: 1,038 over 30/31 days, projecting 1,073. 28-day clicks are down 11% (1,098 to 974) and average position went from 17.4 to 21.4.",
+      "at": "2026-10-30",
+      "value": 1202,
+      "path": "data/gsc/latest.json"
+    },
+    "E14": {
+      "source": "data/seo/ledger.json, 90-day window",
+      "observed": "35 pages are waiting. The GA-vs-SC comparative-negligence, filing-deadlines and workers'-comp guides cannot be changed before 2026-11-23. Judged verdicts: 0 up, 0 flat, 0 down, so nothing is readable under sitewide suppression.",
+      "at": "2026-11-02",
+      "path": "data/seo/ledger.json"
+    },
+    "E15": {
+      "source": "plays/2026-10.json openItems (owner requests 2026-10-23)",
+      "observed": "The owner asked for three November reference guides: SC medical malpractice (sc, medical-malpractice), GA-only workers' comp (ga, workers-compensation) and a Spanish two-state guide. All three fill empty resources blocks after the #259/#261 tagging, with no new claim resting on unsigned packs.",
+      "at": "2026-10-23",
+      "path": "plays/2026-10.json"
+    },
+    "E16": {
+      "source": "plays/2026-10.json openItems, Study #2",
+      "observed": "The GA and SC truck-crash-deaths study (FARS 2020-2024) is built and verified 321/321 (re-run 2026-10-24), with no statutory claims and unpublished. Gillin approved the SC report on 2026-10-26. The GA report waits on Love.",
+      "at": "2026-10-26",
+      "path": "plays/2026-10.json"
+    },
+    "E17": {
+      "source": "data/local-seo/freshness.state.json (absent), and the brief's live claims sweep",
+      "observed": "There is no freshness state file, so the Tuesday refresh has never run here. The brief's live sweep returned output that could not be parsed.",
+      "at": "2026-11-03",
+      "path": "strategy/briefs/2026-11.md"
+    },
+    "E18": {
+      "source": "RECOVERY-LOG.md 2026-10-30 entries (GBP link change; Charleston baseline)",
+      "observed": "On 2026-09-18 the Charleston GBP website link was retagged to the bare homepage; it was reset to ?ref=gmb_chs on 2026-10-30. Savannah, Myrtle Beach, Darien and North Charleston were moved to utm_campaign tags, which WP Engine strips. The Charleston November baseline is 14.78% green (181/1,225) on scan-2026-10-30-e33087.",
+      "at": "2026-10-30",
+      "path": "RECOVERY-LOG.md"
+    },
+    "E19": {
+      "source": "data/local-seo/gbp-audit-2026-09-23.md, as read in visibility-2026-11.md",
+      "observed": "The Columbia GBP profile is needs_verification: true, and all 24 of its posts have been in PROCESSING since April. No Roden listing appears in any Columbia top 20.",
+      "at": "2026-09-23",
+      "path": "data/local-seo/gbp-audit-2026-09-23.md"
+    },
+    "E20": {
+      "source": "RECOVERY-LOG.md 2026-10-24 'Myrtle Beach GBP address: closed, no change' and the downtown scan",
+      "observed": "The Myrtle Beach profile has had 8 GBP posts rejected since 2026-07-07, with reviews below the floor. The downtown grid reads 0.62% green (scan-2026-10-24-7895af). The gap is reviews and directories, not the address.",
+      "at": "2026-10-24",
+      "path": "RECOVERY-LOG.md"
+    },
+    "E21": {
+      "source": "strategy/2026-Q4.md open items (two-state guides)",
+      "observed": "The two-state guides (posts 5352, 5353) are live, with the attorney review recorded 2026-09-19. Their 24 legal statements are traced to the SB 68 allowlist or to verified pages, not to the unsigned packs.",
+      "at": "2026-09-19",
+      "path": "strategy/2026-Q4.md"
+    }
+  },
+  "openItems": [
+    {
+      "item": "GA law pack unsigned for Roden: 0 of 33 authorities signed (D6). Tyler Love signs the packet (data/facts/ga-signoff-packet-2026-10-21.md) and it is recorded in law-signoff.json. This blocks hyperlocal, publishing the GA workers' comp guide and Study #2's GA report.",
+      "owner": "Tyler Love (GA)",
+      "due": "2026-11-06",
+      "blocking": true
+    },
+    {
+      "item": "Statute item still blocking. 187 statutes and 211 page-citations are unverified (tracker, 2026-10-26). Love has opened 0 of 108 October cards, and his review response is due 2026-11-06. The false GA sentences were removed on 2026-11-02 (deletion only), so his cards now show stale 'what the page says now' text: refresh them before he opens them. Four phrasings are left for him: 1693 'potentially lifetime benefits', 4162 and 4227 negligence-per-se framing, and 4087 § 40-6-294. Pass 4 needs a fresh bin/inventory-statute-citations.php run first.",
+      "owner": "Tyler Love (GA); legal-accuracy-lead",
+      "due": "2026-11-06",
+      "blocking": true
+    },
+    {
+      "item": "Gillin's review page changed after he submitted. sc-fu-fulllane is moot (phrase removed) and 4207 FAQ 2 no longer exists. Tell him the sc-followups-live cards are there; silence by 2026-11-06 counts as approval.",
+      "owner": "legal-accuracy-lead; Graeham C. Gillin (SC)",
+      "due": "2026-11-06",
+      "blocking": false
+    },
+    {
+      "item": "The brief's live claims sweep could not be parsed this month. Re-run scripts/facts/sweep-claims.mjs and confirm a clean read before any guide publishes. The sweep's export still does not read _roden_why_hire, _roden_common_injuries, _roden_common_causes or _roden_pillar_negligence_intro (toolkit PR).",
+      "owner": "legal-accuracy-lead; toolkit",
+      "blocking": false
+    },
+    {
+      "item": "Study #2: publish the SC report as a statewide /resources/ page (chart SVGs into the theme, _roden_jurisdiction sc, legal sweep first). The GA report follows Love's read. Study #1's GA half still needs Joshua Dorminy's read before its page can claim a review.",
+      "owner": "content-director (publish); Tyler Love; Joshua Dorminy",
+      "blocking": false
+    },
+    {
+      "item": "GBP hygiene. Move the Savannah, Myrtle Beach, Darien and North Charleston website links from utm_campaign back to ?ref=gmb_*, because WP Engine strips utm_*. Ask who retagged the profiles. Columbia needs GBP verification before any Columbia play can register.",
+      "owner": "owner; the firm",
+      "blocking": false
+    },
+    {
+      "item": "Directory and review push (Radar). Check and claim LawInfo, Lawyers.com/Martindale/abogado.com, Avvo and Justia profiles on the exact pages cited in visibility-2026-11.md. Run a review push on Myrtle Beach (3 reviews), North Charleston, Columbia and Darien. Re-run the downtown Myrtle Beach scan monthly. Paid placement is the owner's call.",
+      "owner": "local-visibility-lead; owner (review asks, paid decisions)",
+      "blocking": false
+    },
+    {
+      "item": "Measurement repairs. North Charleston's scan-2026-08-24-abdf97 returned no results and was written to rank history as a real 0%: mark it invalid. 'wrongful death car accident lawyer' has read SoLV 0 in 35 of 35 scans because Google treats it as a name match: drop it from the tracking set. Radar's aggregator watch list matches only the exact host, so it misses attorneys.superlawyers.com, lawyers.findlaw.com and LawInfo.",
+      "owner": "local-visibility-lead; toolkit",
+      "blocking": false
+    },
+    {
+      "item": "Checkpoints. Re-run the Charleston grid in late November against the 14.78% baseline. Read the 2026-10-30 snippet batch (posts 3621, 4878, 3597, 4054) on 2026-11-30, using CTR at matched position. Read Oct GSC once it is complete.",
+      "owner": "local-visibility-lead; client-ops",
+      "due": "2026-11-30",
+      "blocking": false
+    },
+    {
+      "item": "The reason text in config.overlay.json localSeo.recovery still quotes 257 statutes and 396 page-citations unverified. The tracker now reads 187 statutes and 211 page-citations. Refresh it when the owner adds the paused key.",
+      "owner": "owner",
+      "blocking": false
+    }
+  ],
+  "nextOffice": "Myrtle Beach",
+  "risks": [
+    "The pause has a cost: Oct GSC is pacing to 1,073 clicks against the 1,191 target. That is a reason to chase Love's signature, not to resume a lane whose resume condition is unmet.",
+    "Radar retrieval collapsed between cycles (23.4 to 7.2 sources per answer), so December's discovery count may move for reasons no lane controls.",
+    "Every GA lane waits on one attorney who has not opened his review link. If he does not respond by 2026-11-06, the owner needs a second GA signer or an escalation, or Q4 ends with the GA side unchanged."
+  ],
+  "approval": {
+    "by": "Brian Haas",
+    "at": "2026-11-03",
+    "note": "Approved as proposed in the board terminal. recovery.paused stays the owner action it is marked as; apply-plays does not flip it."
+  }
+}
