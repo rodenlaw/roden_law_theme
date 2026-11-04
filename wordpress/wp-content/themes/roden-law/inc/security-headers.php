@@ -6,11 +6,10 @@
  * already send X-Frame-Options from core). WP Engine's page cache stores these
  * with the page, so flush both cache layers after deploying a change here.
  *
- *   Strict-Transport-Security  HTTPS only. Starts at one week, no
- *                              includeSubDomains, no preload: other subdomains
- *                              (mail, vendors) have not been checked for HTTPS,
- *                              and preload is very hard to undo. Raise max-age
- *                              to 31536000 once a week passes cleanly.
+ *   Strict-Transport-Security  HTTPS only. One year, raised from the first
+ *                              week's value. No includeSubDomains, no preload:
+ *                              other subdomains (mail, vendors) have not been
+ *                              checked for HTTPS, and preload is very hard to undo.
  *   X-Frame-Options +          Other sites may not put rodenlaw.com in a frame
  *   CSP frame-ancestors        (clickjacking). Same-origin framing (the
  *                              Customizer preview) still works. This CSP sets
@@ -47,7 +46,7 @@ function roden_security_headers() {
 		'Permissions-Policy'      => 'camera=(), microphone=(), payment=(), usb=()',
 	);
 	if ( is_ssl() ) {
-		$headers['Strict-Transport-Security'] = 'max-age=604800';
+		$headers['Strict-Transport-Security'] = 'max-age=31536000';
 	}
 	return apply_filters( 'roden_security_headers', $headers );
 }
