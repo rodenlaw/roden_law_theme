@@ -3840,3 +3840,22 @@ script" now link `bin/truck-study-analysis.py` pinned at `b2c40ee` (public repo)
 publish date, and WordPress sets that at publish, so a pre-publication approval can never be recorded through it.
 Owner chose to publish without a review date and ask Gillin to confirm the live page; record his confirmation date.
 The GA report waits on Love. The live I-26/I-95 study (5348) has the same unlinked "code is published" claim (N1).
+
+## 2026-11-06 — Recovery gate raised; autorun job disabled in launchd
+
+**Owner set `recovery.paused: true`** in `config.overlay.json` and `local-seo.config.json` was regenerated from it. The
+gate block was written 2026-10-24 without the switch, so `autorun-ctl status` read `recovery guard: clear`, and the
+only stop on publishing was `enabled: false` in `data/local-seo/autorun.state.json`. With the switch on,
+`prepare-handoff.mjs` refuses stage 3 and `guard-paused.sh` skips launchd runs. `since` stays 2026-08-28, the date of
+the pause itself.
+
+**Why now:** `io.blueskystud.roden-autorun` was unloaded on 2026-10-22 but not disabled, so launchd reloaded it at the
+2026-11-05 login, with today's 12:47 fire next. Booted out and disabled today, before that fire; no run since
+2026-10-21. No content was generated or published.
+
+**Verified:** `autorun-ctl status` reads `HALTED by recovery.paused`; `guard_paused` run directly logged `skipping autorun`
+(Slack alert stubbed); `gen-configs --check` matches; `launchctl print-disabled` lists the job.
+
+**To resume**, per `resumeWhen`: both law packs signed, the statute-verification item closed or no longer blocking, and
+a fresh claims sweep PASS that day. Then the owner clears `recovery.paused` and runs `autorun-ctl enable`. The job also
+has to come back: remove its `off` entry from the toolkit registry and run `gen-launchd.mjs roden --install`.
