@@ -3859,3 +3859,10 @@ the pause itself.
 **To resume**, per `resumeWhen`: both law packs signed, the statute-verification item closed or no longer blocking, and
 a fresh claims sweep PASS that day. Then the owner clears `recovery.paused` and runs `autorun-ctl enable`. The job also
 has to come back: remove its `off` entry from the toolkit registry and run `gen-launchd.mjs roden --install`.
+
+## 2026-11-09 — Resume now also waits on a Google core update (owner's word)
+
+The owner put the hyperlocal routines for both firms on hold until the next Google core update. `localSeo.recovery.resumeWhen`
+in `config.overlay.json` now adds a fourth condition: a confirmed core update has rolled out and been read, with a
+positions 1-3 snapshot recorded in this log. The other three conditions (both law packs signed, the statute item closed
+or no longer blocking, a fresh claims sweep PASS that day) still stand. `recovery.paused` was not touched and stays `true`.
