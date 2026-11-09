@@ -310,11 +310,6 @@
       "owner": "local-visibility-lead; client-ops",
       "due": "2026-11-30",
       "blocking": false
-    },
-    {
-      "item": "The reason text in config.overlay.json localSeo.recovery still quotes 257 statutes and 396 page-citations unverified. The tracker now reads 187 statutes and 211 page-citations. Refresh it when the owner adds the paused key.",
-      "owner": "owner",
-      "blocking": false
     }
   ],
   "nextOffice": "Myrtle Beach",
