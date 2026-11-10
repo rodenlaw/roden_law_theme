@@ -361,7 +361,7 @@
                     },
                     {
                         "question": "What rights do cyclists have at intersections?",
-                        "answer": "Cyclists have the same rights as motor vehicles at intersections. Under Georgia law (O.C.G.A. § 40-6-294) and South Carolina law (S.C. Code § 56-5-3420), cyclists have the right of way when traveling with a green signal, and must be yielded to by turning vehicles."
+                        "answer": "Cyclists have the same rights as vehicles at intersections. Under Georgia law and South Carolina law (S.C. Code § 56-5-3420), cyclists have the right of way when traveling with a green signal, and must be yielded to by turning vehicles."
                     },
                     {
                         "question": "What should I do if I am hit by a car at an intersection while cycling?",
@@ -399,7 +399,7 @@
                     },
                     {
                         "question": "Do cyclists have the same rights as cars on the road?",
-                        "answer": "Yes. Both Georgia (O.C.G.A. § 40-6-291) and South Carolina (S.C. Code § 56-5-3420) grant cyclists the same rights and duties as motor vehicle drivers. Cyclists are entitled to use the roadway and have the right of way when traveling straight through an intersection."
+                        "answer": "Yes. Both Georgia (O.C.G.A. § 40-6-291) and South Carolina (S.C. Code § 56-5-3420) grant cyclists the same rights and duties as vehicle drivers. Cyclists are entitled to use the roadway and have the right of way when traveling straight through an intersection."
                     },
                     {
                         "question": "What is the statute of limitations for a bicycle accident claim?",
@@ -1555,7 +1555,7 @@
                     },
                     {
                         "question": "What is the penalty for boating under the influence (BUI) in South Carolina?",
-                        "answer": "Under S.C. Code section 50-21-112, operating a boat with a BAC of 0.08 percent or higher is illegal. For injured victims, the operator's BUI is powerful evidence of negligence and can support a claim for punitive damages in addition to compensatory damages."
+                        "answer": "Under S.C. Code section 50-21-112, operating a boat while materially and appreciably impaired by alcohol or drugs is a crime, and under section 50-21-114 a BAC of 0.08 percent or higher supports the inference that the operator was under the influence. For injured victims, the operator's BUI is powerful evidence of negligence and can support a claim for punitive damages in addition to compensatory damages."
                     },
                     {
                         "question": "How long do I have to file a boating accident claim in South Carolina?",
@@ -3761,7 +3761,7 @@
                         "answer": "Your own OSHA violation does <strong>not</strong> disqualify your workers' comp claim — the system is no-fault. However, your <strong>employer's</strong> OSHA violations can strengthen your case by showing unsafe conditions contributed to the injury. OSHA investigations are independent of workers' comp but their findings can be used as evidence."
                     }
                 ],
-                "_roden_key_takeaways": "Workers' compensation covers injuries regardless of employee negligence — it is a no-fault system in both Georgia and South Carolina. Only narrow exceptions apply: intoxication as proximate cause (O.C.G.A. § 34-9-17; S.C. Code § 42-9-60), intentional self-harm, or willful misconduct. South Carolina's act has no safety-rule defense (S.C. Code § 42-9-60). A positive drug test in Georgia creates a rebuttable presumption, not an automatic denial. Third-party negligence opens additional personal injury claims beyond workers' comp."
+                "_roden_key_takeaways": "Workers' compensation covers injuries regardless of employee negligence — it is a no-fault system in both Georgia and South Carolina. Only narrow exceptions apply: intoxication as proximate cause (O.C.G.A. § 34-9-17; S.C. Code § 42-9-60), intentional self-harm, or willful misconduct. South Carolina's act has no safety-rule defense (S.C. Code § 42-9-60). Third-party negligence opens additional personal injury claims beyond workers' comp."
             }
         },
         "/blog/does-workers-compensation-cover-prescriptions/": {
@@ -6152,7 +6152,7 @@
                     },
                     {
                         "question": "What is BUI?",
-                        "answer": "Boating Under the Influence is illegal in SC at 0.08 percent BAC under S.C. Code section 50-21-112. It is strong evidence of negligence and may support punitive damages."
+                        "answer": "Boating Under the Influence is operating a boat in SC while materially and appreciably impaired by alcohol or drugs (S.C. Code section 50-21-112); a BAC of 0.08 percent or more supports the inference of impairment (section 50-21-114). It is strong evidence of negligence and may support punitive damages."
                     },
                     {
                         "question": "What injuries are common in jet ski accidents?",
@@ -6164,7 +6164,7 @@
                     },
                     {
                         "question": "What SC laws regulate jet skis?",
-                        "answer": "Operators must be 16+, need boater education if born after Jan 1 1988, must wear life jackets, cannot operate sunset to sunrise, must observe no-wake zones, and BUI at 0.08 BAC is illegal."
+                        "answer": "Operators born after July 1, 2007 need a South Carolina boating safety certificate or a qualifying adult 18 or older aboard, everyone on a jet ski must wear a life jacket, jet skis cannot operate sunset to sunrise, operators must observe no-wake zones, and operating while impaired by alcohol or drugs is a crime."
                     }
                 ],
                 "_roden_key_takeaways": "Jet ski and personal watercraft accidents on Charleston Harbor, the Intracoastal Waterway, and surrounding creeks cause severe injuries including drowning, spinal trauma, and propeller lacerations. South Carolina requires PWC operators to follow specific age and safety regulations. Rental companies may be liable for inadequate safety instruction or defective equipment. The filing deadline is 3 years under S.C. Code 15-3-530, and SC comparative fault bars recovery at 51% or more.",
@@ -11916,7 +11916,7 @@
                 "_roden_faqs": [
                     {
                         "question": "What is the legal BAC limit for boating in Georgia and South Carolina?",
-                        "answer": "Both states set the legal limit at 0.08% BAC for boaters 21 and older, the same threshold as driving. Georgia law (O.C.G.A. § 52-7-12) and South Carolina law (S.C. Code § 50-21-112) criminalize operating any vessel at or above this level."
+                        "answer": "Georgia sets the legal limit at 0.08% BAC for boaters 21 and older, the same threshold as driving (O.C.G.A. § 52-7-12). South Carolina sets no fixed limit: S.C. Code § 50-21-112 makes it a crime to operate a moving motorboat or sailboat while materially and appreciably impaired, and under § 50-21-114 a BAC of 0.08% or more allows the inference that the operator was under the influence."
                     },
                     {
                         "question": "Can I get punitive damages if a drunk boater injured me?",
@@ -12116,7 +12116,7 @@
                 "_roden_faqs": [
                     {
                         "question": "Can I sue a coach or school for my child's sports concussion?",
-                        "answer": "Yes, if the coach or school was negligent — for example, by returning a concussed athlete to play without medical clearance, violating Georgia's Return to Play Act (O.C.G.A. § 20-2-324.1) or South Carolina's student-athlete concussion law (S.C. Code § 59-63-75)."
+                        "answer": "Yes, if the coach or school was negligent — for example, by returning a concussed athlete to play without medical clearance."
                     },
                     {
                         "question": "Does the assumption of risk defense bar all sports injury claims?",
@@ -12943,7 +12943,7 @@
                     },
                     {
                         "question": "How are child dog bite settlements handled in court?",
-                        "answer": "In both Georgia and South Carolina, settlements for minor children must be approved by a judge to ensure they are fair and in the child's best interest. Settlement funds are typically held in a protected account until the child reaches 18."
+                        "answer": "Georgia law (O.C.G.A. § 29-3-3) and South Carolina law (S.C. Code § 62-5-433) require judicial approval of minor settlements exceeding certain thresholds. Settlement funds are typically held in a protected account until the child reaches 18."
                     },
                     {
                         "question": "Can I recover damages for my child's future surgeries?",
@@ -13011,7 +13011,7 @@
                     },
                     {
                         "question": "What if the dog that attacked me was running loose without a leash?",
-                        "answer": "A <a href=\"/dog-bite-lawyers/loose-unleashed-dog-attack/\">loose or unleashed dog</a> that attacks a jogger or cyclist is strong evidence of owner negligence. Violation of local leash laws constitutes negligence per se in many jurisdictions, making it easier to establish liability."
+                        "answer": "A <a href=\"/dog-bite-lawyers/loose-unleashed-dog-attack/\">loose or unleashed dog</a> that attacks a jogger or cyclist is strong evidence of owner negligence."
                     },
                     {
                         "question": "Can I recover the cost of my damaged bicycle after a dog attack?",
@@ -18382,7 +18382,7 @@
                     },
                     {
                         "question": "Are assisted living facilities regulated in Georgia?",
-                        "answer": "Yes. Georgia regulates assisted living facilities — called \"personal care homes\" — under O.C.G.A. § 31-7-1 et seq., administered by the Georgia Department of Community Health. Facilities must be licensed and meet staffing, training, and safety standards. However, regulations are generally less stringent than for nursing homes."
+                        "answer": "Yes. Georgia regulates assisted living facilities under O.C.G.A. § 31-7-1 et seq., administered by the Georgia Department of Community Health. Facilities must be licensed and meet staffing, training, and safety standards. However, regulations are generally less stringent than for nursing homes."
                     },
                     {
                         "question": "Can I sue an assisted living facility for a fall injury?",
@@ -18921,7 +18921,7 @@
                 "_roden_faqs": [
                     {
                         "question": "Do bicyclists have the same rights as cars on the road?",
-                        "answer": "Yes. Georgia law (O.C.G.A. § 40-6-291) and South Carolina law grant bicyclists the same rights and duties as motor vehicle operators. Cyclists may use the full lane when necessary for safety and are entitled to right of way at intersections just like any other vehicle."
+                        "answer": "Yes. Georgia law (O.C.G.A. § 40-6-291) and South Carolina law grant bicyclists the same rights and duties as vehicle operators. Cyclists may use the full lane when necessary for safety and are entitled to right of way at intersections just like any other vehicle."
                     },
                     {
                         "question": "What is the safe passing law for bicycles?",
@@ -19032,7 +19032,7 @@
                     },
                     {
                         "question": "What is boating under the influence (BUI)?",
-                        "answer": "In Georgia, it is illegal to operate a vessel with a blood alcohol concentration (BAC) of 0.08% or higher (O.C.G.A. § 52-7-12). South Carolina has the same 0.08% threshold (S.C. Code § 50-21-114). BUI is treated similarly to DUI and carries criminal penalties including fines and imprisonment. In a civil lawsuit, proving that the other operator was intoxicated at the time of the accident significantly strengthens your negligence claim and may support punitive damages."
+                        "answer": "In Georgia, it is illegal to operate a vessel with a blood alcohol concentration (BAC) of 0.08% or higher (O.C.G.A. § 52-7-12). South Carolina's law turns on impairment instead: it is a crime to operate a moving motorboat or sailboat while materially and appreciably impaired (S.C. Code § 50-21-112), and a BAC of 0.08% or more allows the inference that the operator was under the influence (S.C. Code § 50-21-114). BUI is treated similarly to DUI and carries criminal penalties including fines and imprisonment. In a civil lawsuit, proving that the other operator was intoxicated at the time of the accident significantly strengthens your negligence claim and may support punitive damages."
                     },
                     {
                         "question": "Who can be held liable for a boating accident?",
@@ -19062,7 +19062,7 @@
                 "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "When state law governs a boating injury, Georgia allows two years to file (O.C.G.A. § 9-3-33) and South Carolina three (S.C. Code § 15-3-530). Where on the water the accident happened can affect which rules apply, so record the location, the vessels and their registration numbers at once. Responsible parties often include the operator, the owner who lent the boat, a rental or charter company, a marina, or the maker of failed equipment. Impaired operation, excessive wake and no lookout are common grounds. Under state law, Georgia allows no recovery at 50% or greater fault (O.C.G.A. § 51-12-33), and South Carolina none above 50% (Nelson v. Concrete Supply Co.). Roden Law takes boating cases for a contingency fee and offers a free consultation at its Georgia and South Carolina offices.",
                 "_roden_meta_description": "Boating and personal watercraft injury claims in Georgia and South Carolina — distracted or impaired operators, reckless speed, and untrained drivers.",
-                "_roden_pillar_compensation_intro": "On navigable waters in death cases, **DOHSA limits recovery to pecuniary losses** for non-seamen passengers — **barring noneconomic loss-of-society claims** entirely (a major trap for the unwary). State-water cases follow ordinary tort damages with full noneconomic recovery available, including pain and suffering, loss of enjoyment, and disfigurement. {{GA}}In a Georgia state-water boating death, the **\"full value of life\" measure (O.C.G.A. § 51-4-1)** can dramatically increase the recovery vs. an admiralty claim. {{/GA}}Coverage analysis frequently involves the boat's policy, the operator's homeowners' policy (often excluding watercraft over a length threshold), and any commercial liability policy.",
+                "_roden_pillar_compensation_intro": "State-water cases follow ordinary tort damages with full noneconomic recovery available, including pain and suffering, loss of enjoyment, and disfigurement. {{GA}}In a Georgia state-water boating death, the **\"full value of the life of the decedent\" measure (O.C.G.A. § 51-4-1)** can dramatically increase the recovery vs. an admiralty claim. {{/GA}}Coverage analysis frequently involves the boat's policy, the operator's homeowners' policy (often excluding watercraft over a length threshold), and any commercial liability policy.",
                 "_roden_pillar_negligence_intro": "Boating cases sit at the intersection of state recreational-watercraft statutes and **federal admiralty jurisdiction** (when on navigable waters). Operator negligence is commonly built on BUI laws. {{GA}}Georgia prohibits boating under the influence under **O.C.G.A. § 52-7-12** (.08 BAC), plus the 2013 **Kile Glover Boat Safety Act** raising age and education requirements. {{/GA}}{{SC}}South Carolina prohibits boating under the influence under **S.C. Code § 50-21-112 to -114**. {{/SC}}On navigable waters, the **Limitation of Liability Act, 46 U.S.C. § 30501**, lets a vessel owner cap liability to the post-casualty value of the vessel — a frequent defense in fatal recreational-boat cases. Choosing between admiralty and state-court forums materially affects recovery.",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33 (state) / 3 years (admiralty)",
                 "_roden_sol_sc": "S.C. Code § 15-3-530 (state) / 3 years (admiralty)",
@@ -22018,7 +22018,7 @@
                     },
                     {
                         "question": "What happens if I miss the statute of limitations in Georgia?",
-                        "answer": "If you file after the deadline, the defendant moves to dismiss and the court almost always grants it — you recover nothing, however strong the case was. The exceptions are narrow and statutory: minority (O.C.G.A. § 9-3-90), an unrepresented estate (O.C.G.A. § 9-3-92), or a pending criminal prosecution (O.C.G.A. § 9-3-99)."
+                        "answer": "If you file after the deadline, the defendant moves to dismiss and the court almost always grants it — you recover nothing, however strong the case was. The main exceptions are narrow and statutory: minority (O.C.G.A. § 9-3-90), an unrepresented estate (O.C.G.A. § 9-3-92), or a pending criminal prosecution (O.C.G.A. § 9-3-99)."
                     },
                     {
                         "question": "Is the deadline different if I'm suing a city or a government agency?",
@@ -22039,7 +22039,6 @@
                 ],
                 "_roden_jurisdiction": "georgia-only",
                 "_roden_key_takeaways": "In Georgia you generally have two years from the date of injury to file a personal injury lawsuit (O.C.G.A. § 9-3-33). A workers’ compensation claim runs one year, not two, and that clock can reset off the last employer-furnished treatment or benefit payment (O.C.G.A. § 34-9-82). Suing a Georgia city requires written ante litem notice within six months (O.C.G.A. § 36-33-5); counties and the state both require 12 months (O.C.G.A. § 36-11-1, § 50-21-26). Damage to your vehicle is a separate four-year claim (O.C.G.A. § 9-3-32), and someone injured before turning 18 generally gets the full period after age 18 (O.C.G.A. § 9-3-90). Georgia bars recovery entirely if you are 50 percent or more responsible for the injury (O.C.G.A. § 51-12-33).",
-                "_roden_last_reviewed": "2026-08-07",
                 "_roden_meta_description": "Georgia gives you 2 years to file a personal injury lawsuit (O.C.G.A. § 9-3-33) — but workers' comp runs 1 year and a claim against a city runs just 6 months.",
                 "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)"
             }

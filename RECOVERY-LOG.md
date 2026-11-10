@@ -3941,3 +3941,31 @@ back. Backup: `docs/backups/love-followups-2026-11-09.json`.
 
 Fresh claims sweep after apply: PASS. Open, not touched: 1690's "fails to wear a hard hat ... still covered" item
 may be the same § 34-9-17(a) class.
+
+## 2026-11-10 — GA statute-of-limitations resource (5223): exceptions wording, self-stamped review cleared (owner's word)
+
+Owner, 2026-11-10: "do the small fix now, redirect after 12-24". The page was free in the ledger (window ended
+2026-11-05). `bin/fix-5223-exceptions-and-stamp-2026-11-10.php`, exact-match, read back. Backup:
+`docs/backups/fix-5223-2026-11-10.json`.
+- The body ("The exceptions that genuinely exist are statutory and narrow: ...") and FAQ 1 ("The exceptions are
+  narrow and statutory: ...") listed the Georgia limitation exceptions as if the list were complete, but left out
+  fraud tolling (O.C.G.A. § 9-3-96), which blog 1840 does cite. § 9-3-96 is not in the GA pack, so it was not
+  added. Both now say "main". Only the wording changed; there is no new claim. FAQ 1 is also published as FAQPage
+  structured data.
+- `_roden_last_reviewed` = 2026-08-07 deleted. It was the publish day, set at seeding with no
+  `_roden_reviewed_by`, so it is the same self-stamp class as 5348 (cleared 2026-10-23). The page no longer
+  claims a review, and its date now comes from `_roden_content_modified` (2026-11-10). When Eric Roden or Tyler
+  Love actually reads the page, set both keys.
+
+Verified: the live page (cache-busted) shows both new phrasings, no "Last reviewed" line, and its JSON-LD parses.
+`check-unslashed-post-writes.php` PASS. A fresh claims sweep returned 0 findings (`data/facts/sweep-2026-11-10.json`);
+the three § 9-3-33 "one year" warnings on 5223 are the known false alarms and already appeared in the 11-09 run.
+`content/meta.json` was regenerated; it also catches up the 11-09 batches (#319, #320), which had not refreshed it.
+
+**Decided, not done:** 301 `/blog/georgia-statute-of-limitations/` (1840) → this page **after 2026-12-24**,
+when 1840's ledger read of its 09-25 edit ends. The reason is that both pages split the Georgia main search terms
+(GSC 10-10→11-07: "georgia statute of limitations personal injury" blog pos 43.8, resource 33.7), and 1840 got
+0 clicks on 541 impressions. Follow the #68 pattern; 1840 has Gillin's byline and also covers SC, so check its
+inbound links and `_roden_translation_es` first.
+**Pack gap for legal-accuracy-lead:** § 9-3-96 (fraud tolling) and § 9-3-92 (unrepresented estate) are cited
+live (1840, 5223) but are not in GA.json.
