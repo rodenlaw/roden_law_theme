@@ -3866,3 +3866,63 @@ The owner put the hyperlocal routines for both firms on hold until the next Goog
 in `config.overlay.json` now adds a fourth condition: a confirmed core update has rolled out and been read, with a
 positions 1-3 snapshot recorded in this log. The other three conditions (both law packs signed, the statute item closed
 or no longer blocking, a fresh claims sweep PASS that day) still stand. `recovery.paused` was not touched and stays `true`.
+
+## 2026-11-09 — SC boating corrections live; boating rules added to the pack (owner's word)
+
+**Owner, 2026-11-09:** "fix the four boating pages and merge #161".
+
+**Found.** Primary-text check of S.C. Code Title 50, Chapter 21 (scstatehouse.gov, read 2026-11-09;
+`data/facts/remediation-2026-11-09-sc-boating-authorities.md`). Four live pages stated 0.08% as South
+Carolina's boating legal limit. SC has no per-se limit: § 50-21-112 makes impaired operation the crime, and
+under § 50-21-114 a BAC of 0.08% or more only allows an inference of impairment. Page 4352 also gave a
+minimum operating age of 16 (repealed by 2023 Act No. 74) and the wrong certificate birth date.
+
+**Applied.** `bin/apply-sc-boating-2026-11-09.php`, 11 edits on 4 posts, exact-match, read back.
+Backup: `docs/backups/sc-boating-2026-11-09.json`.
+- 3616 (boating pillar): FAQ 4 per-se claim corrected (F1). The DOHSA sentence in the compensation intro,
+  which applied the Act to all navigable waters, is deleted, not rewritten, pending Gillin (F2).
+- 4144 (BUI): body and FAQ 1 corrected (F5, F6). The "adverse inferences in civil proceedings" clause is
+  deleted pending Gillin (F7).
+- 4340 (Charleston harbor): FAQ 4 and the body "legal limit" sentence corrected (F8, F9). The reporting
+  step now gives SC's list, not the federal one (F10).
+- 4352 (jet ski): body list, FAQ 3 and FAQ 6 corrected (F11-F13).
+- Georgia halves unchanged. Left for Gillin: F3 (Limitation of Liability Act cite on 3616).
+
+**Not attorney-reviewed.** The corrections rest on 12 SC boating authorities added to
+`internal-ai-scripts/law/SC.json` as `pendingAuthorities` (unsigned), with three error rules
+(`sc-bui-per-se-bac`, `sc-boater-education-birthdate`, `sc-boat-operator-minimum-age`), toolkit PR #161,
+merged today. They go to Gillin with the questions in Part 3 of the remediation file.
+
+**Verified.** Fresh claims sweep (646 documents) with the #161 pack before merge: PASS, 0 findings
+(it was 9 before the edits).
+
+## 2026-11-09 — Love's queue sorted; 19 deletions and 4 quote corrections live (owner's word)
+
+**Sorted.** Tyler Love's October queue (99 plan items; the "108" was an older card count) was sorted by
+legal-accuracy-lead against current page text: `data/facts/reviews/2026-10-attorney/triage-2026-11-09.md`
+(+ `.json`). Moot 65 (the 11-02 deletions already fixed them), delete 19, literal quote 16, attorney 3 plus
+the 51 GA pack statements. The attorney list: E32/E33 (is § 9-3-33 the cite for the two-year wrongful-death
+deadline running from death, one answer for both), the GA truck report read, and the pack sign-off.
+`plan.json` is unchanged and the review page is not rebuilt.
+
+**Applied (owner, 2026-11-09: "do 1 and 2 now").** `bin/apply-love-deletes-quotes-2026-11-09.php`,
+27 edits on 21 posts, exact-match, read back. Backup: `docs/backups/love-deletes-quotes-2026-11-09.json`.
+- **The 19 delete cards (22 edits)**, including two errors the 11-02 pass missed in FAQ copies:
+  - 4168 FAQ 1: "called 'personal care homes'" deleted.
+  - 4116 FAQ 2: "every minor's settlement must be approved by a judge" replaced with the page's own live body
+    sentence (approval above thresholds, § 29-3-3 / § 62-5-433), so the answer still answers its question.
+  - Also: E8, F21, E40, E42, E43, E45, E46 ("motor" vehicle, § 40-6-291), E50, E58, G21, the four question
+    cards settled by deletion (1840, F31, F38, 1676), and the R1-R3 phrasings left for Love on 11-02.
+- **Quote corrections (5 edits on 4 posts)**, against the 2025 Georgia Code on Justia, read 2026-11-09:
+  - 1752: "reasonable and necessary" → "reasonably required" (§ 34-9-200(a); § 42-15-60 says the same).
+  - 1838: § 51-12-33(g) now quoted verbatim ("50 percent or more responsible ...").
+  - 3616: "full value of the life of the decedent" (§ 51-4-1(1)).
+  - 5354: the § 34-9-200.1(g)(6)(A) quote completed to "for which such employee is otherwise qualified". A
+    minor edit; the page is ledger-WAITING to 2026-11-23.
+  - 1650 was not changed: its live wording is unquoted paraphrase.
+- No disclosure lines added yet. No literal-quote rewrite published (the D6 question is open).
+
+**Verified.** Fresh claims sweep after apply: PASS (`data/facts/sweep-2026-11-09b.json`).
+
+**Still open from the sort:** 1690 (a "bypassed machine guard is covered" list item, same class as E8, and a
+drug-test presumption takeaway) and 4117 FAQ 2 (a leash-law negligence-per-se gloss). Neither was applied.
