@@ -1,0 +1,162 @@
+{
+ "id": "roden-2026-11-sc-boating",
+ "client": "roden",
+ "firm": "Roden Law",
+ "site": "https://rodenlaw.com",
+ "from": "Brian Haas, Blue Sky Studio",
+ "respondBy": "2026-11-23",
+ "sources": {
+  "scb": "data/facts/sc-boating-signoff-packet-2026-11-09.md"
+ },
+ "reviewers": {
+  "gillin": {
+   "name": "Graeham C. Gillin",
+   "short": "Graeham",
+   "intro": "South Carolina's boating statutes, in one place. Twelve statements to sign, a few boating corrections already made on the site for you to look over, and five questions. Each answer is saved as soon as you tap it, so a few cards at a time is fine. Press Send at the bottom when you've finished.",
+   "sections": [
+    {
+     "id": "scb-signoff",
+     "title": "South Carolina boating statements to sign",
+     "mode": "signoff",
+     "intro": "Twelve statements from S.C. Code Title 50, Chapter 21, each read against the official Code of Laws on 2026-11-09. Once signed, new content may rely on them.",
+     "groups": [
+      {
+       "title": "Boating statements",
+       "table": "scb",
+       "rows": "^\\d+$"
+      }
+     ],
+     "items": []
+    },
+    {
+     "id": "scb-live",
+     "title": "Boating corrections already live",
+     "mode": "objection",
+     "intro": "Four pages called 0.08% South Carolina's boating legal limit, and one gave a minimum operating age of 16 and the wrong certificate birth date. We corrected them on 2026-11-09, before you had read them. Nothing to do unless one is wrong: flag it by {respondBy}. After that we record them as approved.",
+     "items": [
+      {
+       "id": "scb-live-3616",
+       "kind": "live",
+       "title": "Boating accident lawyers (practice page)",
+       "url": "/practice-areas/boating-accident-lawyers/",
+       "pairs": [
+        {
+         "label": "FAQ 4",
+         "now": "South Carolina has the same 0.08% threshold (S.C. Code § 50-21-114).",
+         "proposed": "South Carolina's law turns on impairment instead: it is a crime to operate a moving motorboat or sailboat while materially and appreciably impaired (S.C. Code § 50-21-112), and a BAC of 0.08% or more allows the inference that the operator was under the influence (S.C. Code § 50-21-114)."
+        }
+       ]
+      },
+      {
+       "id": "scb-live-4144",
+       "kind": "live",
+       "title": "Boating under the influence",
+       "url": "/boating-accident-lawyers/boating-under-influence/",
+       "pairs": [
+        {
+         "label": "Body, Georgia & South Carolina BUI Laws",
+         "now": "Both Georgia and South Carolina prohibit operating any vessel with a blood alcohol concentration (BAC) of 0.08% or higher, mirroring DUI thresholds for motor vehicles:",
+         "proposed": "Georgia prohibits operating any vessel with a blood alcohol concentration (BAC) of 0.08% or higher, mirroring DUI thresholds for motor vehicles; South Carolina makes impaired operation the crime, and a BAC of 0.08% or more lets the court infer impairment:"
+        },
+        {
+         "label": "FAQ 1",
+         "now": "Both states set the legal limit at 0.08% BAC for boaters 21 and older, the same threshold as driving. Georgia law (O.C.G.A. § 52-7-12) and South Carolina law (S.C. Code § 50-21-112) criminalize operating any vessel at or above this level.",
+         "proposed": "Georgia sets the legal limit at 0.08% BAC for boaters 21 and older, the same threshold as driving (O.C.G.A. § 52-7-12). South Carolina sets no fixed limit: S.C. Code § 50-21-112 makes it a crime to operate a moving motorboat or sailboat while materially and appreciably impaired, and under § 50-21-114 a BAC of 0.08% or more allows the inference that the operator was under the influence."
+        }
+       ]
+      },
+      {
+       "id": "scb-live-4340",
+       "kind": "live",
+       "title": "Boating accidents in Charleston Harbor",
+       "url": "/blog/boating-accidents-charleston-harbor-legal-rights/",
+       "pairs": [
+        {
+         "label": "FAQ 4",
+         "now": "Under S.C. Code section 50-21-112, operating a boat with a BAC of 0.08 percent or higher is illegal.",
+         "proposed": "Under S.C. Code section 50-21-112, operating a boat while materially and appreciably impaired by alcohol or drugs is a crime, and under section 50-21-114 a BAC of 0.08 percent or higher supports the inference that the operator was under the influence."
+        },
+        {
+         "label": "Body, Boating Under the Influence in South Carolina",
+         "now": "The legal limit is a blood alcohol concentration (BAC) of 0.08% — the same as for driving a car.",
+         "proposed": "A blood alcohol concentration (BAC) of 0.08% or more — the same figure used for driving — supports the inference that the operator was under the influence (S.C. Code § 50-21-114)."
+        },
+        {
+         "label": "Body, what to do after an accident",
+         "now": "South Carolina law requires reporting boating accidents involving death, injury requiring medical treatment beyond first aid, disappearance of a person, or property damage exceeding $2,000 to the South Carolina Department of Natural Resources (SCDNR) within 48 hours",
+         "proposed": "South Carolina law requires reporting a boating accident to the South Carolina Department of Natural Resources (SCDNR) within 48 hours if it causes a death, an injury that needs medical treatment or causes loss of consciousness, or property damage above the Coast Guard minimum (now $2,000), and immediately if someone dies, loses consciousness or is seriously injured"
+        }
+       ]
+      },
+      {
+       "id": "scb-live-4352",
+       "kind": "live",
+       "title": "Jet ski and personal watercraft accidents in Charleston",
+       "url": "/blog/jet-ski-personal-watercraft-accidents-charleston/",
+       "pairs": [
+        {
+         "label": "Body, South Carolina jet ski laws",
+         "now": "BUI — operating a personal watercraft with a BAC of 0.08% or higher is illegal (S.C. Code § 50-21-112)",
+         "proposed": "BUI — operating a personal watercraft while materially and appreciably impaired by alcohol or drugs is a crime, and a BAC of 0.08% or higher supports the inference of impairment (S.C. Code § 50-21-112; § 50-21-114)"
+        },
+        {
+         "label": "FAQ 3",
+         "now": "Boating Under the Influence is illegal in SC at 0.08 percent BAC under S.C. Code section 50-21-112.",
+         "proposed": "Boating Under the Influence is operating a boat in SC while materially and appreciably impaired by alcohol or drugs (S.C. Code section 50-21-112); a BAC of 0.08 percent or more supports the inference of impairment (section 50-21-114)."
+        },
+        {
+         "label": "FAQ 6",
+         "now": "Operators must be 16+, need boater education if born after Jan 1 1988, must wear life jackets, cannot operate sunset to sunrise, must observe no-wake zones, and BUI at 0.08 BAC is illegal.",
+         "proposed": "Operators born after July 1, 2007 need a South Carolina boating safety certificate or a qualifying adult 18 or older aboard, everyone on a jet ski must wear a life jacket, jet skis cannot operate sunset to sunrise, operators must observe no-wake zones, and operating while impaired by alcohol or drugs is a crime."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "scb-questions",
+     "title": "Questions",
+     "mode": "decide",
+     "intro": "Two sentences were taken down rather than rewritten until you rule; the other questions shape the new guide.",
+     "items": [
+      {
+       "id": "scb-q-dohsa",
+       "kind": "question",
+       "title": "Boating accident lawyers (practice page): death-case damages",
+       "url": "/practice-areas/boating-accident-lawyers/",
+       "question": "We took down this sentence: \"On navigable waters in death cases, DOHSA limits recovery to pecuniary losses for non-seamen passengers — barring noneconomic loss-of-society claims entirely.\" DOHSA reaches deaths on the high seas beyond 3 nautical miles from shore (46 U.S.C. § 30302). May we restore it as: \"For deaths on the high seas more than three nautical miles from shore, the Death on the High Seas Act limits recovery to pecuniary losses (46 U.S.C. §§ 30302–30303), barring loss-of-society damages.\" Or leave it out?"
+      },
+      {
+       "id": "scb-q-limitation",
+       "kind": "question",
+       "title": "Boating accident lawyers (practice page): Limitation of Liability Act",
+       "url": "/practice-areas/boating-accident-lawyers/",
+       "question": "The page says the Limitation of Liability Act, 46 U.S.C. § 30501, \"lets a vessel owner cap liability to the post-casualty value of the vessel\". Since the 2022 renumbering the cap is § 30523 (\"value of the vessel and pending freight\"), and post-casualty valuation comes from case law. May we change it to: \"the Limitation of Liability Act, 46 U.S.C. § 30501 et seq., lets a vessel owner seek to cap liability at the value of the vessel and pending freight (§ 30523)\"?"
+      },
+      {
+       "id": "scb-q-refusal",
+       "kind": "question",
+       "title": "Boating under the influence: refusing a test",
+       "url": "/boating-accident-lawyers/boating-under-influence/",
+       "question": "We cut \"and adverse inferences in civil proceedings\" from \"Refusal to submit to testing can result in license suspensions and adverse inferences in civil proceedings.\" § 50-21-114 makes a refusal admissible at the criminal trial only. Is there South Carolina authority for a civil adverse inference? If so, which, and may the clause come back with that cite?"
+      },
+      {
+       "id": "scb-q-perse",
+       "kind": "question",
+       "title": "Negligence per se for boating-statute violations",
+       "url": "/practice-areas/boating-accident-lawyers/",
+       "question": "Three pages say a violation of the no-wake or boating statutes \"establishes negligence per se\" (the practice page FAQ 7, its Spanish version, and the jet-ski post, which adds that the operator is \"automatically considered negligent\" if the violation caused the accident). Under South Carolina law, is that the right statement for Chapter 21 violations? § 50-21-710(C) calls marked-area violations \"negligent operation\" but does not speak to civil per se effect. What wording would you accept?"
+      },
+      {
+       "id": "scb-q-admiralty",
+       "kind": "question",
+       "title": "For the new South Carolina boating guide: federal maritime law",
+       "url": null,
+       "question": "For the planned statewide guide: may it say (a) that admiralty applies pure comparative fault rather than South Carolina's modified rule when federal maritime law governs, and (b) that state wrongful-death remedies remain available for deaths in state territorial waters (Yamaha Motor Corp. v. Calhoun)? If you prefer, the guide will only say that federal law may change the rules for accidents on navigable waters."
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
