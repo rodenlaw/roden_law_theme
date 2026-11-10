@@ -110,3 +110,11 @@ These five were left out of the queue on 2026-10-22 because they carried `_roden
 | 292 | [South Carolina Moped Laws](https://rodenlaw.com/resources/south-carolina-moped-laws/) | 3 | 1294 | sc | Graeham C. Gillin | comparative-fault line, "less than 51%"; DUI citation added 2026-09-21 |
 
 The two two-state guides from the same day, 5352 and 5353, were already queued (ranks 101, 133, Dorminy + Gillin) and keep their date, which records a review the owner confirmed on 2026-09-19. The reviewing attorney is not on record, and 5352 has been edited since (2026-09-30 seat-belt fix).
+
+## Added 2026-11-10: the Georgia statute-of-limitations resource (rank 293)
+
+`_roden_last_reviewed` 2026-08-07 was the publish day, set at seeding with no `_roden_reviewed_by`. It was cleared on 2026-11-10 (`bin/fix-5223-exceptions-and-stamp-2026-11-10.php`, #322). Owner, 2026-11-10: Eric Roden still needs to review it. Traffic is from GSC 2026-10-10 to 2026-11-06. On the read, set `_roden_last_reviewed` and `_roden_reviewed_by` together.
+
+| Rank | Page | Clicks | Impr. | Jurisdiction | Reviewer | Known issues to settle on the read |
+|---|---|---:|---:|---|---|---|
+| 293 | [How Long Do I Have to File a Personal Injury Claim in Georgia?](https://rodenlaw.com/resources/georgia-statute-of-limitations/) | 1 | 1041 | ga | Eric Roden | The exceptions list omits fraud tolling (§ 9-3-96), and § 9-3-96 is not yet in the GA pack: decide whether to add it. The 1840 → 5223 redirect is set for after 2026-12-24, so 5223 becomes the site's only Georgia SOL page. |
