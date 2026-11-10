@@ -3926,3 +3926,18 @@ deadline running from death, one answer for both), the GA truck report read, and
 
 **Still open from the sort:** 1690 (a "bypassed machine guard is covered" list item, same class as E8, and a
 drug-test presumption takeaway) and 4117 FAQ 2 (a leash-law negligence-per-se gloss). Neither was applied.
+
+## 2026-11-09 — Triage follow-ups on 1690 and 4117 (owner's word)
+
+Owner, 2026-11-09: "do the 1690 and 4117 fixes". `bin/apply-love-followups-2026-11-09.php`, 3 deletions, read
+back. Backup: `docs/backups/love-followups-2026-11-09.json`.
+- 1690: the "bypasses a machine guard ... is covered" list item, deleted. Georgia bars compensation for a wilful
+  failure or refusal to use a safety appliance (§ 34-9-17(a)), same class as E8.
+- 1690: the key takeaway "A positive drug test in Georgia creates a rebuttable presumption, not an automatic
+  denial", deleted whole. The body and FAQ 2 wording on the presumption is card E5, a literal-quote rewrite that
+  waits on the D6 decision.
+- 4117 FAQ 2: "Violation of local leash laws constitutes negligence per se in many jurisdictions ...", deleted.
+  The answer keeps its first sentence.
+
+Fresh claims sweep after apply: PASS. Open, not touched: 1690's "fails to wear a hard hat ... still covered" item
+may be the same § 34-9-17(a) class.
