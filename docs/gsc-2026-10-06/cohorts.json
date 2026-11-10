@@ -93,7 +93,6 @@
   "/blog/are-accident-lawyers-worth-it/",
   "/blog/atm-attack-liability/",
   "/blog/avoid-dangerous-medication-errors/",
-  "/blog/avoiding-bicycle-accidents/",
   "/blog/avoiding-motorcycle-crash-injuries/",
   "/blog/beginning-motorcycle-biker-risks/",
   "/blog/benefit-of-a-personal-injury-pain-diary/",
@@ -116,7 +115,6 @@
   "/blog/certification-of-permanent-injury/",
   "/blog/changing-workers-comp-doctors-in-georgia/",
   "/blog/charleston-car-crash-brain-injuries/",
-  "/blog/charleston-delivery-truck-pedestrian-cyclist-accidents/",
   "/blog/charleston-historic-sidewalk-slip-fall-city-liable/",
   "/blog/charleston-lyft-driver-ran-red-light-and-hit-my-car/",
   "/blog/charleston-parking-lot-car-accident-liability/",
@@ -262,7 +260,6 @@
   "/blog/risk-of-refusing-medical-care-after-car-crash-charleston/",
   "/blog/road-hazard-car-accident-liability/",
   "/blog/roadway-hazard-auto-accident/",
-  "/blog/safe-bike-riding-georgias-roadways/",
   "/blog/safe-driving-in-construction-zones/",
   "/blog/safest-hospitals-georgia/",
   "/blog/safety-tips-driving-work-zones-georgia/",
@@ -361,6 +358,9 @@
   "/blog/car-accidents-on-coleman-boulevard-in-mount-pleasant/": "retired 2026-10-21 (floor cull)",
   "/blog/filing-an-emotional-distress-claim-after-a-ravenel-bridge-accident/": "retired 2026-10-21 (floor cull)",
   "/blog/fault-vs-no-fault-car-insurance/": "refreshed 2026-09-23; SEO title + meta description changed 2026-11-10 (question-CTR batch, owner) — excluded so the benchmark is not credited with a CTR change",
-  "/blog/myrtle-beach-dangerous-roads-intersections/": "refreshed 2026-10-05; SEO title + meta description changed 2026-11-10 (question-CTR batch, owner) — excluded so the benchmark is not credited with a CTR change"
+  "/blog/myrtle-beach-dangerous-roads-intersections/": "refreshed 2026-10-05; SEO title + meta description changed 2026-11-10 (question-CTR batch, owner) — excluded so the benchmark is not credited with a CTR change",
+  "/blog/avoiding-bicycle-accidents/": "bicycle pillar internal link 2026-11-10 (owner)",
+  "/blog/safe-bike-riding-georgias-roadways/": "bicycle pillar internal link 2026-11-10 (owner)",
+  "/blog/charleston-delivery-truck-pedestrian-cyclist-accidents/": "bicycle pillar internal link 2026-11-10 (owner)"
  }
 }
