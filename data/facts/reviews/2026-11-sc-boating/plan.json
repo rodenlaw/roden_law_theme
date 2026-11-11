@@ -12,18 +12,23 @@
   "gillin": {
    "name": "Graeham C. Gillin",
    "short": "Graeham",
-   "intro": "South Carolina's boating statutes, in one place. Twelve statements to sign, a few boating corrections already made on the site for you to look over, and five questions. Each answer is saved as soon as you tap it, so a few cards at a time is fine. Press Send at the bottom when you've finished.",
+   "intro": "South Carolina's boating statutes, in one place. Twelve boating statements and one bicycle statement to sign, a few boating corrections already made on the site for you to look over, and five questions. Each answer is saved as soon as you tap it, so a few cards at a time is fine. Press Send at the bottom when you've finished.",
    "sections": [
     {
      "id": "scb-signoff",
      "title": "South Carolina boating statements to sign",
      "mode": "signoff",
-     "intro": "Twelve statements from S.C. Code Title 50, Chapter 21, each read against the official Code of Laws on 2026-11-09. Once signed, new content may rely on them.",
+     "intro": "Twelve statements from S.C. Code Title 50, Chapter 21, read against the official Code of Laws on 2026-11-09, and one from Title 56, Chapter 5 (bicycles), read on 2026-11-11. Once signed, new content may rely on them.",
      "groups": [
       {
        "title": "Boating statements",
        "table": "scb",
        "rows": "^\\d+$"
+      },
+      {
+       "title": "Bicycle statement",
+       "table": "scb",
+       "rows": "^B\\d+$"
       }
      ],
      "items": []
