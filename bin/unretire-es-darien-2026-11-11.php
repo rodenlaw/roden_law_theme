@@ -25,6 +25,10 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { fwrite( STDERR, "Run through wp eval-file.\n" ); exit( 1 ); }
 $apply  = isset( $args[0] ) && 'apply' === $args[0];
+// Location freeze (inc/content-guardrails.php) demotes a new location publish to
+// draft. Owner, 2026-11-11 ("do 1."): lift it for this one WP-CLI process only, in
+// apply mode; RODEN_LOCATION_FREEZE in wp-config.php is never set. See RECOVERY-LOG.
+if ( $apply ) { add_filter( 'roden_location_freeze_active', '__return_false' ); }
 $id     = 4869;
 $es_url = '/es/locations/georgia/darien/';
 $fail   = 0;
