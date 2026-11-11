@@ -461,7 +461,7 @@ function roden_pa_common_injuries_meta_box( $post ) {
  * Inherited by all intersection pages under this pillar (replaces boilerplate
  * "To win a personal injury case in [state]…" text). Supports tokens:
  * {city} {market_name} {state_full} {state_short} {office_court}
- * {office_court_address} {sol_years} {sol_cite} {comp_fault_threshold}
+ * {office_court_address} {sol_years} {sol_cite} {comp_fault_bar}
  */
 function roden_pa_negligence_intro_meta_box( $post ) {
     wp_nonce_field( 'roden_pa_negligence_intro_nonce', '_roden_pa_negligence_intro_nonce' );
@@ -473,7 +473,7 @@ function roden_pa_negligence_intro_meta_box( $post ) {
         'teeny'         => true,
     ) );
     ?>
-    <p class="description"><?php esc_html_e( 'PA-specific framing for the negligence/liability section. Renders on every intersection page under this pillar (e.g. car-accident-lawyers/savannah-ga/, /charleston-sc/, etc.) with per-intersection token replacement. Tokens: {city} {market_name} {state_full} {state_short} {office_court} {office_court_address} {sol_years} {sol_cite} {comp_fault_threshold}', 'roden-law' ); ?></p>
+    <p class="description"><?php esc_html_e( 'PA-specific framing for the negligence/liability section. Renders on every intersection page under this pillar (e.g. car-accident-lawyers/savannah-ga/, /charleston-sc/, etc.) with per-intersection token replacement. Tokens: {city} {market_name} {state_full} {state_short} {office_court} {office_court_address} {sol_years} {sol_cite} {comp_fault_bar}', 'roden-law' ); ?></p>
     <?php
 }
 

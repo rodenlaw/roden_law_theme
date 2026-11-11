@@ -4453,14 +4453,15 @@ function roden_jurisdiction_comparison_table( $practice_area_title, $sol_ga = ''
  * Tokens supported:
  *   {city}, {market_name}, {state_full}, {state_short},
  *   {office_court}, {office_court_address},
- *   {sol_years}, {sol_cite}, {comp_fault_threshold}, {comp_fault_bar}
+ *   {sol_years}, {sol_cite}, {comp_fault_bar}
  *
- * {comp_fault_threshold} prints the jurisdiction's comp_fault_bar_pct ("50%" GA,
- * "51%" SC). It used to be scraped off comp_fault_rule with a regex; SC's rule
- * now reads "50% or less", and scraping that would print "bars recovery if you
- * are 50% or more at fault" on SC pages. {comp_fault_bar} is the phrase to
- * migrate the pillar meta to: "50% or more at fault" (GA) / "more than 50% at
- * fault" (SC), for sentences like "bars recovery if you are {comp_fault_bar}".
+ * {comp_fault_bar} prints the jurisdiction's bar as a phrase: "50% or more at
+ * fault" (GA) / "more than 50% at fault" (SC), for sentences like "bars
+ * recovery if you are {comp_fault_bar}". {comp_fault_threshold} (a bare
+ * percentage) was retired 2026-11-11: no stored content uses it (prod scan, all
+ * statuses), and a bare "51%" for SC invited "51% or more" phrasing. Unknown
+ * tokens are left as written, so a stale {comp_fault_threshold} shows up in
+ * review rather than printing wrong law.
  *
  * @param string $text         Source text with {token} placeholders.
  * @param array  $office       Office array from firm-data.
@@ -4474,15 +4475,6 @@ function roden_replace_local_tokens( $text, $office, $jurisdiction = array() ) {
         ? $office['market_name']
         : ( $office['city'] ?? '' );
 
-    $threshold = '';
-    if ( ! empty( $jurisdiction['comp_fault_bar_pct'] ) ) {
-        $threshold = $jurisdiction['comp_fault_bar_pct'];
-    } elseif ( ! empty( $jurisdiction['comp_fault_rule'] ) ) {
-        if ( preg_match( '/(\d{2})%/', $jurisdiction['comp_fault_rule'], $m ) ) {
-            $threshold = $m[1] . '%';
-        }
-    }
-
     $tokens = array(
         '{city}'                 => $office['city'] ?? '',
         '{market_name}'          => $market_name,
@@ -4492,7 +4484,6 @@ function roden_replace_local_tokens( $text, $office, $jurisdiction = array() ) {
         '{office_court_address}' => $office['court_address'] ?? '',
         '{sol_years}'            => isset( $jurisdiction['statute_years'] ) ? (string) $jurisdiction['statute_years'] : '',
         '{sol_cite}'             => $jurisdiction['statute_cite'] ?? '',
-        '{comp_fault_threshold}' => $threshold,
         '{comp_fault_bar}'       => $jurisdiction['comp_fault_bar'] ?? '',
     );
 

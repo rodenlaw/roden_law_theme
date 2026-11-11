@@ -1468,7 +1468,7 @@ msgid "Common injuries for this practice area. Include 1-2 sentence descriptions
 msgstr ""
 
 #: inc/meta-boxes.php:433
-msgid "PA-specific framing for the negligence/liability section. Renders on every intersection page under this pillar (e.g. car-accident-lawyers/savannah-ga/, /charleston-sc/, etc.) with per-intersection token replacement. Tokens: {city} {market_name} {state_full} {state_short} {office_court} {office_court_address} {sol_years} {sol_cite} {comp_fault_threshold}"
+msgid "PA-specific framing for the negligence/liability section. Renders on every intersection page under this pillar (e.g. car-accident-lawyers/savannah-ga/, /charleston-sc/, etc.) with per-intersection token replacement. Tokens: {city} {market_name} {state_full} {state_short} {office_court} {office_court_address} {sol_years} {sol_cite} {comp_fault_bar}"
 msgstr ""
 
 #: inc/meta-boxes.php:453
