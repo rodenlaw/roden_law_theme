@@ -2506,11 +2506,16 @@ function roden_dead_geo_post_urls() {
  * after: 155 / 669 = 23.17%.
  *
  * Set to DRAFT and marked _roden_retired, not trashed.
+ *
+ * North Charleston (4883) un-retired 2026-11-11 (owner: "publish the spanish
+ * pages"), after the legal review in
+ * data/facts/remediation-2026-11-11-es-location-drafts.md; its data step is
+ * bin/unretire-es-north-charleston-2026-11-11.php, which refuses to run while
+ * this map still holds the URL. Darien stays retired pending GA sign-off.
  */
 function roden_dead_es_hub_urls() {
     return array(
         '/es/locations/georgia/darien/'           => '/locations/georgia/darien/',
-        '/es/locations/south-carolina/north-charleston/' => '/locations/south-carolina/north-charleston/',
     );
 }
 
