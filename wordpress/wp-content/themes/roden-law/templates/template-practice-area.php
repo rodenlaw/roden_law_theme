@@ -114,23 +114,10 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
         <h3 class="matrix-title"><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Our %s Offices', 'roden-law' ), esc_html( roden_pa_noun() ) ); ?></h3>
         <div class="location-matrix-grid">
             <?php
-            // Pre-build location page URL cache keyed by office key.
-            $location_urls = array();
-            $location_posts_args = array(
-                'post_type'      => 'location',
-                'posts_per_page' => 10,
-                'post_status'    => 'publish',
-            );
-            if ( function_exists( 'roden_locale_meta_query' ) ) {
-                $location_posts_args['meta_query'] = roden_locale_meta_query();
-            }
-            $location_posts = get_posts( $location_posts_args );
-            foreach ( $location_posts as $lp ) {
-                $lp_key = get_post_meta( $lp->ID, '_roden_office_key', true );
-                if ( $lp_key ) {
-                    $location_urls[ $lp_key ] = get_permalink( $lp );
-                }
-            }
+            // Office key => location page URL, current locale. Includes office
+            // hubs stored as neighbourhood posts (North Charleston), which a
+            // '_roden_office_key'-only lookup missed. See template-tags.php.
+            $location_urls = roden_office_location_urls();
 
             foreach ( $firm['offices'] as $key => $office ) :
                 $matrix_url    = '';
@@ -159,15 +146,14 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                         <?php endif; ?>
                     </h3>
                     <?php
-                    // Print the real path when a page exists. The synthesized
-                    // "/<pillar slug>/<office>/" form printed
-                    // "/es-workers-compensation-lawyers/savannah-ga/" on Spanish
-                    // pillars — a path that does not exist (T-ES12) — so Spanish
-                    // pages drop it; English keeps its existing label.
+                    // Print the real path only when a page exists. Never
+                    // synthesize "/<pillar slug>/<office slug>/": that is the
+                    // retired city-page form, which redirects to the pillar
+                    // (inc/legacy-redirects.php) or does not exist at all
+                    // ("/es-workers-compensation-lawyers/savannah-ga/", T-ES12).
+                    // An office with no page in this locale shows its name only.
                     if ( $matrix_url ) : ?>
                         <span class="matrix-url"><?php echo esc_html( wp_make_link_relative( $matrix_url ) ); ?></span>
-                    <?php elseif ( 0 !== strpos( (string) $post->post_name, 'es-' ) ) : ?>
-                        <span class="matrix-url">/<?php echo esc_html( $post->post_name ); ?>/<?php echo esc_html( $office['slug'] ); ?>/</span>
                     <?php endif; ?>
                 </div>
             <?php endforeach; ?>
