@@ -4208,6 +4208,58 @@ function roden_related_resources( $args = array() ) {
 }
 
 /**
+ * Office key => URL of that office's published location page, in the current
+ * locale (or $lang). Offices with no published page in the locale are absent.
+ *
+ * Two shapes of location post are an office's page:
+ *  - a location post carrying '_roden_office_key' (template-location.php), and
+ *  - an office HUB: a neighbourhood-flagged location post whose slug is its own
+ *    '_roden_parent_office_key'. North Charleston's page is one
+ *    (/locations/south-carolina/north-charleston/, post 3763): it renders
+ *    through single-location-neighborhood.php and has no '_roden_office_key',
+ *    so a lookup keyed only on that meta never found it and the pillar matrix
+ *    left the North Charleston card unlinked on every pillar. The hub test is
+ *    the one single-location-neighborhood.php uses for its resources section.
+ * An explicit '_roden_office_key' wins over a hub for the same office.
+ * Ordinary neighbourhoods (Brunswick under Darien) are not office pages.
+ *
+ * Every published location post is read (no posts_per_page cap): the pillar
+ * matrix used to take the first 10, which held only because there are 9.
+ *
+ * @param string|null $lang 'en' or 'es'; null for the current request.
+ * @return array<string,string>
+ */
+function roden_office_location_urls( $lang = null ) {
+    $args = array(
+        'post_type'      => 'location',
+        'posts_per_page' => -1,
+        'post_status'    => 'publish',
+        'no_found_rows'  => true,
+    );
+    if ( function_exists( 'roden_locale_meta_query' ) ) {
+        $args['meta_query'] = roden_locale_meta_query( $lang );
+    }
+
+    $urls = array();
+    $hubs = array();
+    foreach ( get_posts( $args ) as $lp ) {
+        $key = get_post_meta( $lp->ID, '_roden_office_key', true );
+        if ( $key ) {
+            $urls[ $key ] = get_permalink( $lp );
+            continue;
+        }
+        $parent_key = get_post_meta( $lp->ID, '_roden_parent_office_key', true );
+        if ( $parent_key
+            && get_post_meta( $lp->ID, '_roden_is_neighborhood', true )
+            && roden_strip_es_slug( $lp->post_name ) === $parent_key ) {
+            $hubs[ $parent_key ] = get_permalink( $lp );
+        }
+    }
+
+    return $urls + $hubs;
+}
+
+/**
  * The resources for an office page's "Legal Resources for {market}" section:
  * the published resources in the current locale that belong to this office,
  * newest first, at most $count. An empty array hides the section.
