@@ -1,0 +1,1254 @@
+{
+    "generated": "2026-11-11T16:45:49+00:00",
+    "mode": "dry-run",
+    "rows": [
+        {
+            "post": 3986,
+            "slug": "27000000-settlement-truck-accident",
+            "before": "",
+            "after": "Settlement for the victim of a trucking accident who suffered paralysis.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3987,
+            "slug": "10860000-verdict-product-liability",
+            "before": "",
+            "after": "Verdict against a major electronics manufacturer for a vape battery that exploded causing significant burns.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3988,
+            "slug": "9800000-recovery-premises-liability",
+            "before": "",
+            "after": "Recovery for a client who suffered spinal cord injuries resulting from a construction defect.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3989,
+            "slug": "3350000-verdict-premises-liability",
+            "before": "",
+            "after": "Verdict awarded to client who lost two fingers due to another individual's negligent operation of a forklift.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3990,
+            "slug": "3000000-settlement-auto-accident",
+            "before": "",
+            "after": "$3m for the surviving wife of a man who died in an auto accident.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3991,
+            "slug": "2500000-settlement-auto-accident",
+            "before": "",
+            "after": "Settlement for a commercial vehicle operator that was injured when another commercial vehicle merged into his lane causing his vehicle to roll down an embankment resulting in serious injuries.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3906,
+            "slug": "1700000-settlement-brain-injury",
+            "before": "",
+            "after": "Settlement for a client who suffered a brain injury in a medical transport vehicle.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3992,
+            "slug": "1675000-recovery-auto-accident",
+            "before": "",
+            "after": "Commercial vehicle operator involved in an accident that resulted in a low back surgery and an arthroscopic knee procedure.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3993,
+            "slug": "1550000-settlement-auto-accident",
+            "before": "",
+            "after": "Settlement reached for a client who suffered a severe leg injury requiring internal and external fixations, bone grafts, and multiple blood transfusions.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3994,
+            "slug": "1300000-settlement-auto-accident",
+            "before": "",
+            "after": "Pre-suit settlement obtained on behalf of a family rear ended by a habitual drunk driver.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3895,
+            "slug": "1250000-settlement-wrongful-death",
+            "before": "",
+            "after": "Settlement for the surviving spouse of a man who died loading vehicles onto a shipping container when the vehicle plunged into the water over a barrier that was not to code.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3997,
+            "slug": "1000000-recovery-auto-accident",
+            "before": "",
+            "after": "Single commercial vehicle crash where the passenger sustained serious injuries.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3995,
+            "slug": "1000000-settlement-auto-accident",
+            "before": "",
+            "after": "Settlement for a husband and wife injured in t-bone accident.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3996,
+            "slug": "1000000-settlement-auto-accident-2",
+            "before": "",
+            "after": "Settlement for a woman who was fatally struck walking along I-95.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3998,
+            "slug": "950000-recovery-truck-accident",
+            "before": "",
+            "after": "Recovery for a client injured by an 18 wheeler that required long term care.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4000,
+            "slug": "900000-settlement-truck-accident",
+            "before": "",
+            "after": "Recovery obtained on behalf of scooter driver who sustained facial fractures and hand injury when clipped by a box truck.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3999,
+            "slug": "900000-settlement-workers-compensation",
+            "before": "",
+            "after": "Settlement for an initially denied workers' compensation claim involving a worker who lost multiple fingers and thumb in a wood chipper.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4001,
+            "slug": "780000-resolution-truck-accident",
+            "before": "",
+            "after": "Policy limits tender for a gentleman who underwent a lumbar fusion revision and other surgical procedures after being injured in a tractor trailer accident.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3890,
+            "slug": "750000-recovery-truck-accident-2",
+            "before": "",
+            "after": "Recovery for a client who underwent a knee surgery after a collision with a commercial vehicle.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4002,
+            "slug": "700000-recovery-auto-accident",
+            "before": "",
+            "after": "Recovery for a client who underwent a fusion and subsequent revision after being rear-ended.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4003,
+            "slug": "700000-settlement-product-liability",
+            "before": "",
+            "after": "Settlement for knee injuries resulting from faulty designed gym equipment.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4004,
+            "slug": "650000-recovery-truck-accident",
+            "before": "",
+            "after": "Recovery for a client pushed into a guardrail by an 18 wheeler that suffered serious injuries.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4005,
+            "slug": "650000-recovery-truck-accident-2",
+            "before": "",
+            "after": "An accident between two semi-trucks resulted in a minimally invasive lumbar procedure for our client.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4007,
+            "slug": "600000-recovery-truck-accident",
+            "before": "",
+            "after": "Recovery for client involved in T-bone accident with a commercial vehicle that resulted in a neck surgery.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4008,
+            "slug": "600000-settlement-auto-accident",
+            "before": "",
+            "after": "Settlement for young lady that required a cervical fusion after being t-boned by a driver who ran a red light.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4009,
+            "slug": "600000-settlement-auto-accident-2",
+            "before": "",
+            "after": "Policy limits settlement for a couple who was killed by a drunk driver in a head-on collision.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4006,
+            "slug": "600000-settlement-truck-accident",
+            "before": "",
+            "after": "Recovery obtained for client who had back surgery following an accident with a dump truck.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4012,
+            "slug": "575000-settlement-auto-accident",
+            "before": "",
+            "after": "$575k for an MVA where the client underwent a cervical arthroplasty and lumbar decompression.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4011,
+            "slug": "575000-settlement-truck-accident",
+            "before": "",
+            "after": "Settlement for a gentleman who required a cervical fusion after a commercial street-sweeper collided with is vehicle.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4010,
+            "slug": "575000-settlement-workers-compensation",
+            "before": "",
+            "after": "$575,000 settlement for a restaurant worker with a denied workers' compensation claim who suffered a hand injury and then developed necrotizing fasciitis.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4013,
+            "slug": "565000-settlement-truck-accident",
+            "before": "",
+            "after": "$565k for a client who's overturned semi truck was struck by a distracted second semi truck.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4014,
+            "slug": "525000-recovery-auto-accident",
+            "before": "",
+            "after": "Recovery for a client with pre-existing lumbar injuries and prior surgery who received a spinal cord stimulator after an accident reaggravated pain symptoms.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4015,
+            "slug": "525000-settlement-truck-accident",
+            "before": "",
+            "after": "A settlement with a trucking company for a wreck that caused our client's vehicle to roll over resulting in injuries requiring one of them to have surgery.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4016,
+            "slug": "515000-settlement-auto-accident",
+            "before": "",
+            "after": "Settlement for a client who underwent surgery after a collision with a commercial vehicle.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4017,
+            "slug": "500000-recovery-truck-accident",
+            "before": "",
+            "after": "Recovery for an 18 wheeler driver who was rear-ended by another 18 wheeler and underwent neck surgery.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4018,
+            "slug": "500000-resolution-workers-compensation",
+            "before": "",
+            "after": "Workers comp settlement for cook suffering burns to stomach and legs.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3898,
+            "slug": "500000-settlement-auto-accident",
+            "before": "",
+            "after": "Settlement for a motorist who struck a cow that had been improperly penned and wandered into the roadway.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4019,
+            "slug": "496000-settlement-truck-accident",
+            "before": "",
+            "after": "Pre-suit settlement reached for client who suffered a neck injury after being rear-ended by a semi-truck resulting in minimal property damage.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4020,
+            "slug": "465000-recovery-truck-accident",
+            "before": "",
+            "after": "$465,000 recovered for an injured driver who underwent a back surgery as the result of a collision with a commercial carrier.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4021,
+            "slug": "405000-settlement-auto-accident",
+            "before": "",
+            "after": "Settlement for a car accident victim who underwent a cervical fusion.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4022,
+            "slug": "400000-settlement-auto-accident",
+            "before": "",
+            "after": "Policy limit recovery for minor with head injury sustained in a 4-wheeler accident.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4023,
+            "slug": "400000-settlement-auto-accident-2",
+            "before": "",
+            "after": "Settlement for a commercial truck driver who injured his knee while applying the brakes trying to avoid a vehicle improperly merging into his lane.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3902,
+            "slug": "400000-settlement-premises-liability",
+            "before": "",
+            "after": "Premises liability settlement for a client who had a shelf fall on her at a convenience store.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4024,
+            "slug": "390000-recovery-auto-accident",
+            "before": "",
+            "after": "A worker/pedestrian directing traffic was injured by another passing work vehicle that hit him at low speed. The injury required a lumbar laminectomy.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4025,
+            "slug": "385000-recovery-auto-accident",
+            "before": "",
+            "after": "Rear end collision resulting in a cervical fusion.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3900,
+            "slug": "355000-settlement-auto-accident",
+            "before": "",
+            "after": "MVA settlement for a client involved in an auto accident with a county sheriff's deputy.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4026,
+            "slug": "350000-settlement-auto-accident",
+            "before": "",
+            "after": "Settlement for a gentleman who underwent neck surgery after being side-swiped. The at-fault driver's insurance company paid 2.5-times their policy limit after putting themselves at risk for bad faith.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4027,
+            "slug": "350000-settlement-nursing-home-elder-abuse",
+            "before": "",
+            "after": "Settlement for an elderly lady who sustained multiple injuries due to the negligence of a nursing home facility.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4028,
+            "slug": "325000-resolution-auto-accident",
+            "before": "",
+            "after": "Policy limits tender for a lady who suffered neck injuries after minor rear-end vehicle collision.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4029,
+            "slug": "320000-recovery-workers-compensation",
+            "before": "",
+            "after": "$320,000 for an employee who suffered crush injuries and underwent multiple surgeries over several years.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3899,
+            "slug": "318000-settlement-truck-accident",
+            "before": "",
+            "after": "Settlement for a husband and wife involved in a collision with a USPS truck.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4030,
+            "slug": "305000-settlement-premises-liability",
+            "before": "",
+            "after": "Pre-suit settlement for a client who suffered a fractured hip requiring surgery and resulting in ongoing pain as the result of a poorly maintained seat at a major fast food chain.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4031,
+            "slug": "305000-settlement-premises-liability-2",
+            "before": "",
+            "after": "Settlement for an elderly lady who suffered significant ankle wounds, followed by infection, after being attacked by a small dog.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4036,
+            "slug": "300000-recovery-truck-accident",
+            "before": "",
+            "after": "Client with pre-existing condition requires neck surgery after being side-swiped by logging truck.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4033,
+            "slug": "300000-resolution-auto-accident",
+            "before": "",
+            "after": "Policy limits tender for client who underwent a surgery due to a driver's failure to yield.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4032,
+            "slug": "300000-settlement-auto-accident",
+            "before": "",
+            "after": "$300,000 settlement for an individual who suffered a fractured femur in an automobile accident.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4035,
+            "slug": "300000-settlement-auto-accident-2",
+            "before": "",
+            "after": "Settlement for a lady who suffered a neck injury after a rear end collision.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4037,
+            "slug": "300000-settlement-auto-accident-3",
+            "before": "",
+            "after": "Settlement for elderly lady with pre-existing conditions who underwent a cervical fusion after being rear-ended.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4038,
+            "slug": "300000-settlement-auto-accident-4",
+            "before": "",
+            "after": "Settlement for an elderly lady who suffered an injury to the soft tissue of her foot. The at-fault driver's insurance company paid 5-times their policy limit for putting themselves at risk for bad faith.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4034,
+            "slug": "300000-settlement-premises-liability",
+            "before": "",
+            "after": "Homeowners policy tender for a client who suffered a dog bite resulting in permanent injuries.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4039,
+            "slug": "300000-settlement-workers-compensation",
+            "before": "",
+            "after": "Settlement for a gentleman who was injured after he fell from his tractor-trailer and required neck surgery; liability was contested.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3894,
+            "slug": "300000-recovery-product-liability",
+            "before": "",
+            "after": "Product liability recovery for a hand injury that resulted from a defective leaf vacuum.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4040,
+            "slug": "295000-recovery-auto-accident",
+            "before": "",
+            "after": "Recovery for a t-bone motor vehicle accident that resulted in a cervical operation.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4043,
+            "slug": "275000-recovery-auto-accident",
+            "before": "",
+            "after": "Recovery for a client who underwent a discectomy after being rear-ended.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4044,
+            "slug": "275000-recovery-auto-accident-2",
+            "before": "",
+            "after": "Recovery for a client who underwent back surgery after a vehicle cut off the garbage truck he was riding.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4041,
+            "slug": "275000-settlement-auto-accident",
+            "before": "",
+            "after": "Settlement for a client who suffered a severe shoulder injury while loading a shipping container.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4042,
+            "slug": "275000-settlement-auto-accident-2",
+            "before": "",
+            "after": "Policy limits settlement for an older gentleman who was rear-ended while exiting the highway and had to undergo a cervical fusion.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 4045,
+            "slug": "275000-settlement-auto-accident-3",
+            "before": "",
+            "after": "Settlement for a SCAD student who underwent shoulder surgery after his motorized scooter was struck by a commercial vehicle that failed to stop at a stop sign.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3927,
+            "slug": "250000-settlement-auto-accident",
+            "before": "",
+            "after": "Settlement for a lady who suffered lumbar injuries as a passenger in an auto accident.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3928,
+            "slug": "250000-settlement-auto-accident-2",
+            "before": "",
+            "after": "Settlement for a gentlemen who suffered neck injuries after minor rear-end vehicle collision.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3929,
+            "slug": "250000-settlement-auto-accident-3",
+            "before": "",
+            "after": "Settlement for a woman who sustained a herniated disk and had a recommendation for surgery after being rear-ended.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3930,
+            "slug": "250000-settlement-auto-accident-4",
+            "before": "",
+            "after": "Settlement for a lady who underwent a cervical fusion after a head-on collision.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3897,
+            "slug": "250000-settlement-premises-liability",
+            "before": "",
+            "after": "Settlement reached for client who reinjured a surgically repaired knee due to improperly secured fitness equipment and negligent instruction at a physical therapy/rehab location.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3907,
+            "slug": "250000-recovery-wrongful-death",
+            "before": "",
+            "after": "Disputed liability death claim in Florida.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3903,
+            "slug": "250000-policy-limits-dui-accident",
+            "before": "",
+            "after": "Policy limits tender for a client who suffered a broken nose as the result of a DUI accident.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3901,
+            "slug": "250000-settlement-premises-liability-2",
+            "before": "",
+            "after": "Premises liability settlement for a client who fell through a rotten bathroom floor at their apartment.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3926,
+            "slug": "250000-settlement-premises-liability-3",
+            "before": "",
+            "after": "Settlement for a client who suffered an ankle injury when a pallet was rolled into her leg in a grocery store.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3932,
+            "slug": "225000-recovery-auto-accident",
+            "before": "",
+            "after": "Policy limits recovery for client involved in motor vehicle accident resulting in cervical surgery.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3931,
+            "slug": "225000-resolution-auto-accident",
+            "before": "",
+            "after": "Policy limits tender for a client injured in an auto accident who underwent a cervical fusion.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3933,
+            "slug": "225000-settlement-auto-accident",
+            "before": "",
+            "after": "Policy limits settlement for a lady who required a cervical fusion after being rear-ended.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3934,
+            "slug": "210000-recovery-truck-accident",
+            "before": "",
+            "after": "Client underwent minimally invasive spine surgery after low impact collision with truck.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3935,
+            "slug": "210000-settlement-auto-accident",
+            "before": "",
+            "after": "Policy limits settlement for a gentleman who required a cervical fusion after being rear-ended.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3936,
+            "slug": "205000-resolution-auto-accident",
+            "before": "",
+            "after": "Policy limits tender for the wrongful death of a woman killed in an auto accident.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3937,
+            "slug": "205000-settlement-auto-accident",
+            "before": "",
+            "after": "Policy limits settlement for a father whose daughter was killed after the driver of her vehicle ran a stop sign.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3938,
+            "slug": "200000-recovery-workers-compensation",
+            "before": "",
+            "after": "$200,000 for the wife of a deceased laborer who had a minor child.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3941,
+            "slug": "200000-resolution-auto-accident",
+            "before": "",
+            "after": "Policy limits recovery for client who had to undergo a neck surgery after being t-boned by a distracted driver.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3939,
+            "slug": "200000-settlement-auto-accident",
+            "before": "",
+            "after": "Recovery for client who sustained a foot fracture in an auto accident at a four-way intersection.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3940,
+            "slug": "200000-settlement-auto-accident-2",
+            "before": "",
+            "after": "Policy limit recovery for client who had to undergo a neck surgery after another driver failed to obey a stop sign.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3942,
+            "slug": "200000-settlement-auto-accident-3",
+            "before": "",
+            "after": "Settlement for elderly lady injured in head-on collision.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3943,
+            "slug": "200000-settlement-auto-accident-4",
+            "before": "",
+            "after": "Policy limits settlement for a gentleman who suffered cervical injuries after being side-swiped by another vehicle; he underwent a cervical fusion.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3944,
+            "slug": "200000-settlement-premises-liability",
+            "before": "",
+            "after": "Policy limit settlement for a dog bite resulting in serious injuries.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3891,
+            "slug": "200000-policy-limits-auto-accident",
+            "before": "",
+            "after": "Policy limits settlement for clients in an accident who endured minor physical injuries but developed severe emotional trauma from witnessing a relative die in the wreck.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3945,
+            "slug": "190000-settlement-auto-accident",
+            "before": "",
+            "after": "Pre-suit settlement for a client who sustained a neck injury requiring surgery after being rear-ended resulting in minimal property damage.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3946,
+            "slug": "180000-settlement-truck-accident",
+            "before": "",
+            "after": "Settlement for a young man who suffered soft tissue injuries after a collision with a tractor trailer.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3948,
+            "slug": "175000-recovery-auto-accident",
+            "before": "",
+            "after": "Recovery for a client who underwent a rotator cuff repair after a vehicle cut off the garbage truck he was riding on.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3947,
+            "slug": "175000-settlement-auto-accident",
+            "before": "",
+            "after": "Settlement for a young bicyclist who was hit by a police car. He suffered a broken leg that required an internal fixation and permanent hardware.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3949,
+            "slug": "172000-settlement-workers-compensation",
+            "before": "",
+            "after": "Settlement for a painter with a denied worker's compensation claim injured spine in fall off of a ladder.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3951,
+            "slug": "162500-settlement-premises-liability",
+            "before": "",
+            "after": "Settlement for a lady who suffered injuries to her ankle and shoulder after tripping, as a result of an uneven city sidewalk.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3950,
+            "slug": "162500-settlement-truck-accident",
+            "before": "",
+            "after": "Settlement for a gentleman who sustained a low back injury after being rear-ended by a semi-truck resulting in minimal property damage.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3953,
+            "slug": "160000-recovery-truck-accident",
+            "before": "",
+            "after": "Recovery for a client who underwent injections after a head-on collision with a dump truck",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3952,
+            "slug": "160000-settlement-workers-compensation",
+            "before": "",
+            "after": "$160,000 settlement for a client who suffered a fractured hip as the result of an on the job injury and had ongoing pain and physical limitations.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3954,
+            "slug": "155000-settlement-auto-accident",
+            "before": "",
+            "after": "Disputed liability settlement for a school teacher rear-ended by a tractor-trailer who underwent injections for injuries in her cervical and lumbar spine.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3959,
+            "slug": "150000-recovery-premises-liability",
+            "before": "",
+            "after": "Recovery for a parking lot trip fall with questionable liability but significant injuries.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3958,
+            "slug": "150000-resolution-auto-accident",
+            "before": "",
+            "after": "Policy limits tender for a gentleman injured in an auto accident who underwent a surgery.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3955,
+            "slug": "150000-settlement-auto-accident",
+            "before": "",
+            "after": "$150,000 settlement for an auto accident victim who underwent a surgical repair of a torn meniscus as the result on a rear impact automobile collision.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3956,
+            "slug": "150000-settlement-auto-accident-2",
+            "before": "",
+            "after": "$150,000 settlement for a client involved in a rollover accident who required facet injections and physical therapy.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3957,
+            "slug": "150000-settlement-auto-accident-3",
+            "before": "",
+            "after": "Policy limit recovery for client injured in a head on accident caused by drunk driver",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3960,
+            "slug": "150000-settlement-auto-accident-4",
+            "before": "",
+            "after": "Settlement for a woman who was side-swiped and required multiple cervical injections.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3908,
+            "slug": "150000-recovery-auto-accident",
+            "before": "",
+            "after": "Low impact auto accident that resulted in a surgical recommendation.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3904,
+            "slug": "150000-recovery-truck-accident",
+            "before": "",
+            "after": "Low impact rear end collision with a semi truck for a client who suffered soft tissue injuries.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3905,
+            "slug": "142000-recovery-truck-accident",
+            "before": "",
+            "after": "Low impact rear end collision with a semi truck for a client who suffered soft tissue injuries.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3892,
+            "slug": "140000-settlement-auto-accident",
+            "before": "",
+            "after": "Settlement for a shoulder injury resulting in surgery from a car accident.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3961,
+            "slug": "140000-settlement-auto-accident-2",
+            "before": "",
+            "after": "Presuit settlement for a client who underwent physical therapy and injections after a rear end collision.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3962,
+            "slug": "135000-recovery-auto-accident",
+            "before": "",
+            "after": "$135,000 for a driver who underwent a back surgery following an auto accident.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3964,
+            "slug": "135000-settlement-premises-liability",
+            "before": "",
+            "after": "Settlement for a young woman who was injured walking up a flight of stairs due to the property's failure to provide adequate lighting; liability was contested.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3963,
+            "slug": "135000-resolution-workers-compensation",
+            "before": "",
+            "after": "Successful resolution for a client who sustained 2nd degree steam burns to his chest and arm.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3966,
+            "slug": "130000-settlement-auto-accident",
+            "before": "",
+            "after": "Settlement for a lady who sustained an exacerbation to a pre-existing broken wrist after being side-swiped by a drunk driver. Her husband also received $75,000 for soft-tissue injuries to his neck.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3965,
+            "slug": "130000-settlement-workers-compensation",
+            "before": "",
+            "after": "$130,000 settlement for a housekeeping employee at a major hotel chain who underwent cervical and shoulder surgeries as the result of an on-the-job injury.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3909,
+            "slug": "130000-recovery-animal-attack",
+            "before": "",
+            "after": "Animal attack on an independent contractor at a preserve.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3969,
+            "slug": "125000-recovery-auto-accident",
+            "before": "",
+            "after": "Motorcyclist forced to lay bike down due to failure to yield suffered torn meniscus in knee.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3970,
+            "slug": "125000-settlement-auto-accident",
+            "before": "",
+            "after": "Policy limits tender for a client who sustained a low back injury when her work truck was rear-ended by a sleep deprived driver.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3971,
+            "slug": "125000-settlement-auto-accident-2",
+            "before": "",
+            "after": "Policy limits tender for a client who suffered a neck injury requiring surgery after a rear-end collision.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3972,
+            "slug": "125000-settlement-auto-accident-3",
+            "before": "",
+            "after": "Settlement for an elderly lady with pre-existing conditions who underwent a lumbar micro-decompression surgery after being involved in a minor rear end collision.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3967,
+            "slug": "125000-settlement-workers-compensation",
+            "before": "",
+            "after": "$125,000 third-party settlement for a worker injured by a falling stabilization bar while unloading a delivery truck.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3968,
+            "slug": "125000-resolution-auto-accident",
+            "before": "",
+            "after": "Policy limits tender for a gentleman who suffered neck injuries after a rear-end collision.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3973,
+            "slug": "123000-settlement-auto-accident",
+            "before": "",
+            "after": "Settlement for a passenger who suffered soft-tissue injuries to her back after a moderate rear-end collision.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3976,
+            "slug": "120000-recovery-auto-accident",
+            "before": "",
+            "after": "Recovery for a client who underwent neck surgery after a minor rear-end impact collision.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3974,
+            "slug": "120000-recovery-workers-compensation",
+            "before": "",
+            "after": "$120,000 for an employee who suffered injuries to both legs as the result of a workplace injury.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3975,
+            "slug": "120000-settlement-truck-accident",
+            "before": "",
+            "after": "Pre-suit settlement for a client who underwent a series of injections for a low back injury after being sideswiped by a semi-truck.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3977,
+            "slug": "117500-recovery-truck-accident",
+            "before": "",
+            "after": "Settlement for a client who suffered a shoulder injury when his platform lift truck was side swiped by a wide-turning semi.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3978,
+            "slug": "106000-recovery-workers-compensation",
+            "before": "",
+            "after": "$106,000 for an employee who suffered a hip injury as the result of a serious fall.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3979,
+            "slug": "103000-recovery-workers-compensation",
+            "before": "",
+            "after": "$103,000 for an employee injured in an auto accident who underwent a revision of a previous neck surgery.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3893,
+            "slug": "100000-policy-limits-auto-accident",
+            "before": "",
+            "after": "Policy limits recover for a woman who suffered back injuries after a rear end collision.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3911,
+            "slug": "100000-recovery-auto-accident",
+            "before": "",
+            "after": "Policy limit recovery for a client who sustained multiple injuries after his motorcycle was struck by a driver who failed to obey a stop sign.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3921,
+            "slug": "100000-recovery-auto-accident-2",
+            "before": "",
+            "after": "Policy limit tender for a client who was rear-ended and underwent a minimally invasive back surgery",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3981,
+            "slug": "100000-recovery-workers-compensation",
+            "before": "",
+            "after": "$100,000 for an employee who underwent a neck surgery but had good results.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3982,
+            "slug": "100000-recovery-workers-compensation-2",
+            "before": "",
+            "after": "Policy limit tender for an on-the-job driver involved in a motor vehicle accident.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3912,
+            "slug": "100000-resolution-auto-accident",
+            "before": "",
+            "after": "Policy limits tender for a lady who suffered minor wrist injuries in a DUI auto accident.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3913,
+            "slug": "100000-resolution-auto-accident-2",
+            "before": "",
+            "after": "Policy limits tender for a lady who suffered a brain bleed after an auto collision.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3914,
+            "slug": "100000-resolution-auto-accident-3",
+            "before": "",
+            "after": "Policy limits tender for a young women who sustained a broken toe after being hit by a vehicle in a mall crosswalk.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3983,
+            "slug": "100000-resolution-auto-accident-4",
+            "before": "",
+            "after": "Policy limits tender for a young man in a moderate rear-end collision who suffered soft tissue injuries.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3984,
+            "slug": "100000-resolution-auto-accident-5",
+            "before": "",
+            "after": "Policy limits tender for a lady that sustained a fractured wrist from an auto accident.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3985,
+            "slug": "100000-resolution-auto-accident-6",
+            "before": "",
+            "after": "Policy limit recovery for SCAD student who sustained a shoulder injury after her motorized scooter was struck by a driver who failed to obey a stop sign.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3915,
+            "slug": "100000-settlement-auto-accident",
+            "before": "",
+            "after": "Settlement for gentleman rear-ended while stopped at a stop light.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3916,
+            "slug": "100000-settlement-auto-accident-2",
+            "before": "",
+            "after": "Settlement for young woman who suffered a broken toe after being hit as a pedestrian in a parking lot.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3917,
+            "slug": "100000-settlement-auto-accident-3",
+            "before": "",
+            "after": "Settlement for a young man who required epidural injections after being rear-ended while at a stop.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3918,
+            "slug": "100000-settlement-auto-accident-4",
+            "before": "",
+            "after": "Settlement for a lady who suffered a broken wrist after a vehicle failed to yield while turning left in front of her.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3919,
+            "slug": "100000-settlement-auto-accident-5",
+            "before": "",
+            "after": "Policy limits settlement for a woman who suffered a brain bleed after being in a head-on collision.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3920,
+            "slug": "100000-settlement-auto-accident-6",
+            "before": "",
+            "after": "Policy limits settlement for young man who was in a head-on collision and suffered soft tissue damage to his knee.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3922,
+            "slug": "100000-settlement-auto-accident-7",
+            "before": "",
+            "after": "Policy limits tender for a client who suffered a neck injury requiring surgery after a rear-end collision.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3925,
+            "slug": "100000-settlement-auto-accident-8",
+            "before": "",
+            "after": "Policy limit tender for a man with pre-existing conditions who underwent physical therapy and injections after being rear ended at 45 mph by a driver who fell asleep at the wheel.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3924,
+            "slug": "100000-settlement-workers-compensation",
+            "before": "",
+            "after": "Workers' compensation settlement for a worker injured while driving to an off-site location that was involved in an auto collision.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3980,
+            "slug": "100000-settlement-workers-compensation-2",
+            "before": "",
+            "after": "Settlement for a worker who suffered an injury on the job and had to undergo a back operation.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3923,
+            "slug": "100000-recovery-auto-accident-3",
+            "before": "",
+            "after": "Car accident with minimal property damage and soft tissue injuries.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3910,
+            "slug": "100000-settlement-nursing-home",
+            "before": "",
+            "after": "Nursing home settlement.",
+            "legacy_check": "match",
+            "changed": true
+        },
+        {
+            "post": 3896,
+            "slug": "100000-recovery-work-injury",
+            "before": "",
+            "after": "Recovery for a client who was assaulted at her place of work by a drunk patron from his homeowner's insurance.",
+            "legacy_check": "match",
+            "changed": true
+        }
+    ]
+}
