@@ -992,51 +992,6 @@ function roden_location_cards( $exclude_key = '' ) {
 }
 
 /* ==========================================================================
-   LOCATION MATRIX — 6-office grid with intersection links per practice area
-   ========================================================================== */
-
-/**
- * Render the location matrix showing all 6 offices with links
- * to the intersection page for the current (or specified) practice area.
- *
- * @param int|null $pillar_id Practice area pillar post ID (defaults to current or parent).
- */
-function roden_location_matrix( $pillar_id = null ) {
-    if ( ! $pillar_id ) {
-        $post = get_post();
-        $pillar_id = $post->post_parent ? $post->post_parent : $post->ID;
-    }
-
-    $pillar      = get_post( $pillar_id );
-    $pillar_slug = $pillar ? $pillar->post_name : '';
-    $firm        = roden_firm_data();
-
-    echo '<div class="location-matrix">';
-    echo '<h3 class="matrix-title">' . sprintf(
-        /* translators: %s: practice area title, e.g. "Car Accident Lawyers". */
-        esc_html__( '%s by Location', 'roden-law' ),
-        esc_html( $pillar ? $pillar->post_title : '' )
-    ) . '</h3>';
-    echo '<div class="matrix-grid">';
-
-    foreach ( $firm['offices'] as $key => $office ) {
-        $intersection_url = home_url( '/' . $pillar_slug . '/' . $office['slug'] . '/' );
-        ?>
-        <a href="<?php echo esc_url( $intersection_url ); ?>" class="matrix-card">
-            <span class="matrix-state state-<?php echo esc_attr( strtolower( $office['state'] ) ); ?>">
-                <?php echo esc_html( $office['state'] ); ?>
-            </span>
-            <span class="matrix-city"><?php echo esc_html( $office['market_name'] ); ?></span>
-            <span class="matrix-phone"><?php echo esc_html( $office['phone'] ); ?></span>
-        </a>
-        <?php
-    }
-
-    echo '</div>';
-    echo '</div>';
-}
-
-/* ==========================================================================
    PRACTICE AREAS GRID
    ========================================================================== */
 
