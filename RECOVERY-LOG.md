@@ -4023,3 +4023,20 @@ Same day: ES Myrtle Beach hub (4872) N3 interim wording applied
 
 **Waiting:** Spanish Darien (4869), owner override of the GA sign-off hold, in #343; it needs the same
 one-process freeze lift after #343 deploys. Gillin N3, Love D3–D6 and A1/A3/A15 open.
+
+## 2026-11-11 — South Carolina comparative fault: "50% or less" / "more than 50%" across stored content (owner's word)
+
+Owner, 2026-11-11: "do the 203 database pages" (with the retitles). Theme side: #342. Script by legal-accuracy-lead,
+`bin/apply-sc-comp-fault-50-wording-2026-11-11.php` (commit 67ccc08, branch `content/sc-comp-fault-51-db`; not yet
+pushed, see below). Applied on prod after review of a clean dry run: **523 replacements, 388 fields, 208 published
+posts**, 208/208 read-backs OK, slugs unchanged, re-run reports 523 already applied. Backups:
+`uploads/roden-backups/sc-comp-fault-50-wording-2026-11-11/`. Live JSON-LD check PASS (0 invalid).
+
+- Retitles: 4811 "…the More-Than-50% Bar Explained"; 4930 "…La Regla de Más del 50% Explicada"; 5352 "…Barred at
+  50% vs. More Than 50%" (5352 was in its ledger window to 2026-11-23; owner approved). See-also link text on
+  4810/4812/4813/4814 and 4938 follows. Four FAQ questions reworded; comparison tables on 5352, 4811, 4930, 1707.
+- The six pillar-intro token fields moved to `{comp_fault_bar}`; the `comp_fault_bar_pct` pin from #342 can go.
+- Left on purpose: true worked examples ("51% at fault … $0"), 6313's GHSA statistic, 4367 FAQ[5].
+- **Not fixed:** 2738 carries a GEORGIA error ("51 percent of the fault – or higher – cannot recover"); 167
+  drafts carry the old SC wording and need this pass before any is published; the sweep has no SC "less than 51%"
+  rule yet.
