@@ -1586,7 +1586,7 @@ $in_location  = 'in ' . $city;
                 "name": "What if I was partially at fault for being rear-ended?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "South Carolina uses modified comparative fault. You can recover damages even if you're partially at fault, as long as you're less than 51% responsible. Your award is reduced by your percentage of fault. Insurance companies often exaggerate your fault percentage to minimize payouts — our attorneys fight back aggressively."
+                    "text": "South Carolina uses modified comparative fault. You can recover damages even if you're partially at fault, as long as you're 50% or less responsible. Your award is reduced by your percentage of fault. Insurance companies often exaggerate your fault percentage to minimize payouts — our attorneys fight back aggressively."
                 }
             }
         ]
@@ -1797,8 +1797,8 @@ $in_location  = 'in ' . $city;
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-13h-2v6h2zm0 8h-2v2h2z"/></svg>
                     Comparative Negligence
                 </h3>
-                <div class="law-value">&lt; 51% at Fault</div>
-                <p>South Carolina follows a comparative negligence rule. You can recover damages even if you're partially at fault for the rear-end collision &mdash; as long as you're less than 51% responsible. The rear driver is typically presumed at fault in rear-end collisions unless extraordinary circumstances apply.</p>
+                <div class="law-value">&le; 50% at Fault</div>
+                <p>South Carolina follows a comparative negligence rule. You can recover damages even if you're partially at fault for the rear-end collision &mdash; as long as you're 50% or less responsible. The rear driver is typically presumed at fault in rear-end collisions unless extraordinary circumstances apply.</p>
                 <p class="cite">S.C. Code § 15-38-10</p>
             </div>
         </div>
@@ -2209,7 +2209,7 @@ $in_location  = 'in ' . $city;
                         <span></span>
                     </button>
                     <div class="faq-answer">
-                        <p>South Carolina uses comparative negligence. You can recover damages even if you're partially at fault, as long as you're less than 51% responsible. Insurance companies exaggerate your fault percentage to minimize settlement offers. We aggressively defend against these claims and maximize your recovery.</p>
+                        <p>South Carolina uses comparative negligence. You can recover damages even if you're partially at fault, as long as you're 50% or less responsible. Insurance companies exaggerate your fault percentage to minimize settlement offers. We aggressively defend against these claims and maximize your recovery.</p>
                     </div>
                 </div>
             </div>

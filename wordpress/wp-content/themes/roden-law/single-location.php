@@ -40,7 +40,7 @@ if ( $is_state_page ) :
     $sol  = $state_abbr === 'GA' ? '2 years (O.C.G.A. § 9-3-33)' : '3 years (S.C. Code § 15-3-530)';
     $fault = $state_abbr === 'GA'
         ? 'Modified comparative — recovery if less than 50% at fault (O.C.G.A. § 51-12-33)'
-        : 'Modified comparative — recovery if less than 51% at fault';
+        : 'Modified comparative — recovery if 50% or less at fault';
 ?>
 
 <!-- STATE LANDING HERO -->

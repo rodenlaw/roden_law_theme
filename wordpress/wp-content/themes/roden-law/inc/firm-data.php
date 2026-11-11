@@ -189,7 +189,7 @@ A personal injury case from downtown Charleston is usually filed in the **Charle
 
 Charleston's peninsula geography concentrates risk on a few well-known corridors: the **Crosstown (US-17 / Septima P. Clark Parkway)**, the **Arthur Ravenel Jr. Bridge** to Mount Pleasant, and the dense tourist grid around **King and Market Streets**, where rideshare drop-offs and carriage tours mix with out-of-state drivers. Serious-injury patients from peninsula crashes are typically taken to **MUSC Health University Medical Center (171 Ashley Ave)**, an adult and pediatric Level I trauma center.
 
-Under South Carolina law, you have **3 years to file under S.C. Code § 15-3-530**, and you can recover only if you are **less than 51% at fault**.
+Under South Carolina law, you have **3 years to file under S.C. Code § 15-3-530**, and you can recover only if you are **50% or less at fault**.
 EOT
 ,
                 'local_context_es' => <<<'EOT'
@@ -197,7 +197,7 @@ Un caso de lesiones personales del centro de Charleston normalmente se presenta 
 
 La geografía peninsular de Charleston concentra el riesgo en unos pocos corredores bien conocidos: el **Crosstown (US-17 / Septima P. Clark Parkway)**, el puente **Arthur Ravenel Jr. Bridge** hacia Mount Pleasant y la densa zona turística alrededor de **King Street y Market Street**, donde los descensos de pasajeros de rideshare y los paseos en carruaje se mezclan con conductores de otros estados. Los pacientes con lesiones graves por choques en la península normalmente son trasladados a **MUSC Health University Medical Center (171 Ashley Ave)**, un centro de trauma de Nivel I para adultos y niños.
 
-Conforme a la ley de Carolina del Sur, usted tiene **3 años para presentar la demanda conforme a S.C. Code § 15-3-530**, y solo puede recuperar una indemnización si tiene **menos del 51% de culpa**.
+Conforme a la ley de Carolina del Sur, usted tiene **3 años para presentar la demanda conforme a S.C. Code § 15-3-530**, y solo puede recuperar una indemnización si su culpa es **del 50% o menos**.
 EOT
 ,
                 // Wrongful death variant: the fault that counts is the person who
@@ -207,7 +207,7 @@ A personal injury case from downtown Charleston is usually filed in the **Charle
 
 Charleston's peninsula geography concentrates risk on a few well-known corridors: the **Crosstown (US-17 / Septima P. Clark Parkway)**, the **Arthur Ravenel Jr. Bridge** to Mount Pleasant, and the dense tourist grid around **King and Market Streets**, where rideshare drop-offs and carriage tours mix with out-of-state drivers. Serious-injury patients from peninsula crashes are typically taken to **MUSC Health University Medical Center (171 Ashley Ave)**, an adult and pediatric Level I trauma center.
 
-Under South Carolina law, a wrongful death suit **generally must be filed within 3 years (S.C. Code § 15-3-530)**, and the family can recover only if the person who died was **less than 51% at fault**.
+Under South Carolina law, a wrongful death suit **generally must be filed within 3 years (S.C. Code § 15-3-530)**, and the family can recover only if the person who died was **50% or less at fault**.
 EOT
 ,
                 'local_context_wd_es' => <<<'EOT'
@@ -215,7 +215,7 @@ Un caso de lesiones personales del centro de Charleston normalmente se presenta 
 
 La geografía peninsular de Charleston concentra el riesgo en unos pocos corredores bien conocidos: el **Crosstown (US-17 / Septima P. Clark Parkway)**, el puente **Arthur Ravenel Jr. Bridge** hacia Mount Pleasant y la densa zona turística alrededor de **King Street y Market Street**, donde los descensos de pasajeros de rideshare y los paseos en carruaje se mezclan con conductores de otros estados. Los pacientes con lesiones graves por choques en la península normalmente son trasladados a **MUSC Health University Medical Center (171 Ashley Ave)**, un centro de trauma de Nivel I para adultos y niños.
 
-Conforme a la ley de Carolina del Sur, una demanda por muerte injusta **generalmente debe presentarse dentro de 3 años (S.C. Code § 15-3-530)**, y la familia solo puede recuperar una indemnización si la persona fallecida tenía **menos del 51% de culpa**.
+Conforme a la ley de Carolina del Sur, una demanda por muerte injusta **generalmente debe presentarse dentro de 3 años (S.C. Code § 15-3-530)**, y la familia solo puede recuperar una indemnización si la culpa de la persona fallecida era **del 50% o menos**.
 EOT
 ,
                 // Medical malpractice variant: § 15-3-545, not § 15-3-530 (med mal
@@ -225,7 +225,7 @@ A personal injury case from downtown Charleston is usually filed in the **Charle
 
 Charleston's peninsula geography concentrates risk on a few well-known corridors: the **Crosstown (US-17 / Septima P. Clark Parkway)**, the **Arthur Ravenel Jr. Bridge** to Mount Pleasant, and the dense tourist grid around **King and Market Streets**, where rideshare drop-offs and carriage tours mix with out-of-state drivers. Serious-injury patients from peninsula crashes are typically taken to **MUSC Health University Medical Center (171 Ashley Ave)**, an adult and pediatric Level I trauma center.
 
-Under South Carolina law, a medical malpractice claim **generally must be brought within 3 years of the treatment or of when the injury was or should have been discovered, and no more than 6 years after the treatment (S.C. Code § 15-3-545)**, and you can recover only if you are **less than 51% at fault**.
+Under South Carolina law, a medical malpractice claim **generally must be brought within 3 years of the treatment or of when the injury was or should have been discovered, and no more than 6 years after the treatment (S.C. Code § 15-3-545)**, and you can recover only if you are **50% or less at fault**.
 EOT
 ,
                 'local_context_mm_es' => <<<'EOT'
@@ -233,7 +233,7 @@ Un caso de lesiones personales del centro de Charleston normalmente se presenta 
 
 La geografía peninsular de Charleston concentra el riesgo en unos pocos corredores bien conocidos: el **Crosstown (US-17 / Septima P. Clark Parkway)**, el puente **Arthur Ravenel Jr. Bridge** hacia Mount Pleasant y la densa zona turística alrededor de **King Street y Market Street**, donde los descensos de pasajeros de rideshare y los paseos en carruaje se mezclan con conductores de otros estados. Los pacientes con lesiones graves por choques en la península normalmente son trasladados a **MUSC Health University Medical Center (171 Ashley Ave)**, un centro de trauma de Nivel I para adultos y niños.
 
-Conforme a la ley de Carolina del Sur, un reclamo por negligencia médica **generalmente debe presentarse dentro de 3 años desde el tratamiento o desde que la lesión se descubrió o debió descubrirse, y a más tardar 6 años después del tratamiento (S.C. Code § 15-3-545)**, y solo puede recuperar una indemnización si tiene **menos del 51% de culpa**.
+Conforme a la ley de Carolina del Sur, un reclamo por negligencia médica **generalmente debe presentarse dentro de 3 años desde el tratamiento o desde que la lesión se descubrió o debió descubrirse, y a más tardar 6 años después del tratamiento (S.C. Code § 15-3-545)**, y solo puede recuperar una indemnización si su culpa es **del 50% o menos**.
 EOT
 ,
                 // GBP review count — powers per-office AggregateRating schema.
@@ -275,7 +275,7 @@ North Charleston personal injury cases are usually filed in the **Charleston Cou
 
 North Charleston carries heavy **port and industrial truck traffic** between the **Hugh Leatherman Terminal** and the **I-26 / I-526 / Rivers Avenue** corridor, alongside commuters on Spruill Avenue, North Rhett Avenue, Aviation Avenue and the **Ashley Phosphate Road / I-26 interchange**. **Trident Medical Center** at 9330 Medical Plaza Drive is a Level II trauma center, and **MUSC Health University Medical Center** downtown is the region's Level I trauma center.
 
-South Carolina's **3-year statute of limitations (S.C. Code § 15-3-530)** and **51%-bar comparative fault rule** apply.
+South Carolina's **3-year statute of limitations (S.C. Code § 15-3-530)** and **modified comparative fault rule** (no recovery if you are more than 50% at fault) apply.
 EOT
 ,
                 'local_context_es' => <<<'EOT'
@@ -283,7 +283,7 @@ Los casos de lesiones personales de North Charleston normalmente se presentan an
 
 Por North Charleston circula mucho **tráfico de camiones portuarios e industriales** entre la **Hugh Leatherman Terminal** y el corredor de la **I-26 / I-526 / Rivers Avenue**, junto con el tráfico diario de Spruill Avenue, North Rhett Avenue, Aviation Avenue y el **intercambiador de Ashley Phosphate Road / I-26**. El **Trident Medical Center**, en 9330 Medical Plaza Drive, es un centro de trauma de Nivel II, y el **MUSC Health University Medical Center**, en el centro de Charleston, es el centro de trauma de Nivel I de la región.
 
-Se aplican el **plazo de prescripción de 3 años de Carolina del Sur (S.C. Code § 15-3-530)** y la **regla de culpa comparativa con barrera del 51%**.
+Se aplican el **plazo de prescripción de 3 años de Carolina del Sur (S.C. Code § 15-3-530)** y la **regla de culpa comparativa modificada** (no hay indemnización si su culpa es de más del 50%).
 EOT
 ,
                 // GBP review count — powers per-office AggregateRating schema.
@@ -324,7 +324,7 @@ A personal injury case from Columbia is usually filed in the **Richland County C
 
 Midlands traffic funnels through the **I-20 / I-26 interchange known as Malfunction Junction**, where SCDOT's **Carolina Crossroads** project is rebuilding the I-20, I-26 and I-126 corridors, with shifting work zones expected for years. Other busy corridors include **I-77** toward Blythewood, **Two Notch Road** and **Broad River Road**. Serious-injury patients from Midlands crashes are often taken to **Prisma Health Richland Hospital (5 Richland Medical Park Drive)**, a Level I trauma center.
 
-Under South Carolina law, you have **3 years to file under S.C. Code § 15-3-530**, and you can recover only if you are **less than 51% at fault**.
+Under South Carolina law, you have **3 years to file under S.C. Code § 15-3-530**, and you can recover only if you are **50% or less at fault**.
 EOT
 ,
                 'local_context_es' => <<<'EOT'
@@ -332,7 +332,7 @@ Un caso de lesiones personales de Columbia normalmente se presenta ante el **Ric
 
 El tráfico de los Midlands pasa por el **intercambiador de la I-20 y la I-26 conocido como Malfunction Junction**, donde el proyecto **Carolina Crossroads** del SCDOT está reconstruyendo los corredores de la I-20, la I-26 y la I-126, con zonas de obras cambiantes durante años. Otros corredores con mucho tráfico son la **I-77** hacia Blythewood, **Two Notch Road** y **Broad River Road**. Los pacientes con lesiones graves por choques en los Midlands a menudo son trasladados a **Prisma Health Richland Hospital (5 Richland Medical Park Drive)**, un centro de trauma de Nivel I.
 
-Conforme a la ley de Carolina del Sur, usted tiene **3 años para presentar la demanda conforme a S.C. Code § 15-3-530**, y solo puede recuperar una indemnización si tiene **menos del 51% de culpa**.
+Conforme a la ley de Carolina del Sur, usted tiene **3 años para presentar la demanda conforme a S.C. Code § 15-3-530**, y solo puede recuperar una indemnización si su culpa es **del 50% o menos**.
 EOT
 ,
                 // GBP review count — powers per-office AggregateRating schema.
@@ -372,7 +372,7 @@ Filing a personal injury case in the Myrtle Beach market means filing in **Horry
 
 The Grand Strand draws roughly 17–20 million visitors a year, and that seasonal surge reshapes the local crash picture: **US-17 Business and Ocean Boulevard** see heavy pedestrian and golf-cart traffic, while drivers choose between the slower, congested **US-501** and the faster but higher-severity **SC-22 Conway Bypass** to reach the beach. Golf carts add a wrinkle unique to coastal SC — under **S.C. Code § 56-2-100**, a permitted cart may only operate in daylight, within four miles of the owner's address, on roads posted 35 mph or less, by a licensed driver. Crashes outside those limits open the door to negligence-per-se and rental-property claims. Severe-injury victims are routed to **Grand Strand Medical Center** in Myrtle Beach or stabilized at **Tidelands Waccamaw** in Murrells Inlet.
 
-South Carolina applies a **three-year statute of limitations under S.C. Code § 15-3-530**, a **51% modified-comparative-fault bar**, and lets certain insureds stack UM/UIM coverage, subject to the limits in S.C. Code § 38-77-160 — which can matter when a minimum-limits driver causes the crash.
+South Carolina applies a **three-year statute of limitations under S.C. Code § 15-3-530**, a **modified comparative fault rule that bars recovery if you are more than 50% at fault**, and lets certain insureds stack UM/UIM coverage, subject to the limits in S.C. Code § 38-77-160 — which can matter when a minimum-limits driver causes the crash.
 EOT
 ,
                 'local_context_es' => <<<'EOT'
@@ -380,7 +380,7 @@ Presentar un caso de lesiones personales en el mercado de Myrtle Beach significa
 
 El Grand Strand atrae aproximadamente de 17 a 20 millones de visitantes al año, y ese aumento estacional transforma el panorama local de accidentes: **US-17 Business y Ocean Boulevard** registran un intenso tráfico de peatones y carritos de golf, mientras que los conductores eligen entre la **US-501**, más lenta y congestionada, y la **SC-22 Conway Bypass**, más rápida pero con choques de mayor gravedad, para llegar a la playa. Los carritos de golf añaden una particularidad propia de la costa de Carolina del Sur: conforme a **S.C. Code § 56-2-100**, un carrito con permiso solo puede circular durante el día, dentro de un radio de cuatro millas del domicilio del propietario, en vías con límite de velocidad de 35 mph o menos y conducido por una persona con licencia. Los choques que ocurren fuera de esos límites abren la puerta a reclamos por negligencia per se y contra propiedades de alquiler. Las víctimas con lesiones graves son trasladadas al **Grand Strand Medical Center** en Myrtle Beach o estabilizadas en **Tidelands Waccamaw** en Murrells Inlet.
 
-Carolina del Sur aplica un **plazo de prescripción de tres años conforme a S.C. Code § 15-3-530**, una **barrera de culpa comparativa modificada del 51%** y permite a ciertos asegurados acumular ("stacking") cobertura UM/UIM, sujeto a los límites de S.C. Code § 38-77-160, lo que puede ser importante cuando el accidente lo causa un conductor con límites mínimos de póliza.
+Carolina del Sur aplica un **plazo de prescripción de tres años conforme a S.C. Code § 15-3-530**, una **regla de culpa comparativa modificada que impide la indemnización si su culpa es de más del 50%** y permite a ciertos asegurados acumular ("stacking") cobertura UM/UIM, sujeto a los límites de S.C. Code § 38-77-160, lo que puede ser importante cuando el accidente lo causa un conductor con límites mínimos de póliza.
 EOT
 ,
                 // GBP review count — powers per-office AggregateRating schema.
@@ -969,17 +969,35 @@ EOT
                 'statute_cite'     => 'O.C.G.A. § 9-3-33',
                 'comp_fault_rule'  => 'Modified — recover if less than 50% at fault',
                 'comp_fault_cite'  => 'O.C.G.A. § 51-12-33',
+                // The percentage the {comp_fault_threshold} token prints. See SC.
+                'comp_fault_bar_pct' => '50%',
+                // "bars recovery if you are {comp_fault_bar}" — the {comp_fault_bar} token.
+                'comp_fault_bar'   => '50% or more at fault',
             ),
             'SC' => array(
                 'state_full'       => 'South Carolina',
                 'statute_years'    => 3,
                 'statute_cite'     => 'S.C. Code § 15-3-530',
-                'comp_fault_rule'  => 'Modified — recover if less than 51% at fault',
+                // House wording since 2026-09-29, owner-approved for the theme 2026-11-11:
+                // Nelson bars a plaintiff MORE THAN 50% at fault, so "less than 51%" left
+                // fractional fault between 50 and 51 on the wrong side. The es_ES.po
+                // msgid for this exact string must change with it (template-intersection
+                // translates it at runtime).
+                'comp_fault_rule'  => 'Modified — recover if 50% or less at fault',
                 // South Carolina's comparative-fault rule is judicial, not statutory —
                 // adopted in Nelson for causes of action arising on or after 1991-07-01.
                 // Georgia's cite is a code section; South Carolina's is the case, and
                 // leaving it empty was why the SC rule read as an uncited assertion.
                 'comp_fault_cite'  => 'Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)',
+                // LEGACY. {comp_fault_threshold} used to be regex-scraped off
+                // comp_fault_rule, and six pillar meta fields in the database phrase it
+                // as "{comp_fault_threshold} or more at fault" / "the
+                // {comp_fault_threshold} bar". Scraping "50%" off the new rule would
+                // print "bars recovery if you are 50% or more at fault" on SC pages,
+                // which is wrong law. Pinned to its old output until those fields are
+                // rewritten to {comp_fault_bar}; then delete this key.
+                'comp_fault_bar_pct' => '51%',
+                'comp_fault_bar'   => 'more than 50% at fault',
             ),
         ),
 

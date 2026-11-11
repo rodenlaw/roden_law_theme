@@ -22,7 +22,8 @@
  *   _roden_faqs               array   [ ['question'=>, 'answer'=>], ... ]
  *
  * SC law is pulled from roden_firm_data()['jurisdiction']['SC'] so the SOL cite
- * and 51% comparative-fault rule stay correct and never bleed GA O.C.G.A. law.
+ * and comparative-fault rule (recover if 50% or less at fault, Nelson) stay
+ * correct and never bleed GA O.C.G.A. law.
  *
  * @package Roden_Law
  */

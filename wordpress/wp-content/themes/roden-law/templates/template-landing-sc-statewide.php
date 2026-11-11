@@ -86,7 +86,7 @@ $allowed_types = array(
 			),
 			array(
 				'q' => 'What if I was partially at fault for being rear-ended?',
-				'a' => 'Under South Carolina\'s modified comparative fault rule, you can still recover compensation as long as you were less than 51% at fault. Your award is reduced by your fault percentage. Insurance companies often try to inflate your fault &mdash; our attorneys fight back.',
+				'a' => 'Under South Carolina\'s modified comparative fault rule, you can still recover compensation as long as you were 50% or less at fault. Your award is reduced by your fault percentage. Insurance companies often try to inflate your fault &mdash; our attorneys fight back.',
 			),
 			array(
 				'q' => 'How much does it cost to hire Roden Law for a rear-end collision?',
@@ -190,7 +190,7 @@ $default_faqs = array(
 	),
 	array(
 		'q' => 'What if I was partially at fault for the accident?',
-		'a' => 'Under South Carolina\'s modified comparative fault rule, you can still recover compensation as long as you were less than 51% at fault. Your award is reduced by your percentage of fault. For example, if you were 20% at fault and damages total $100,000, you could recover $80,000. Insurance companies often try to inflate your fault percentage &mdash; our attorneys fight back.',
+		'a' => 'Under South Carolina\'s modified comparative fault rule, you can still recover compensation as long as you were 50% or less at fault. Your award is reduced by your percentage of fault. For example, if you were 20% at fault and damages total $100,000, you could recover $80,000. Insurance companies often try to inflate your fault percentage &mdash; our attorneys fight back.',
 	),
 	array(
 		'q' => sprintf( 'What compensation can I receive after a %s in South Carolina?', $type_lower ),
@@ -2083,8 +2083,8 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     Comparative Fault Rule
                 </h3>
-                <div class="law-value">&lt; 51% at Fault</div>
-                <p>South Carolina follows a modified comparative fault rule. You can recover damages as long as you are less than 51% responsible for the accident. Your compensation is reduced by your percentage of fault.</p>
+                <div class="law-value">&le; 50% at Fault</div>
+                <p>South Carolina follows a modified comparative fault rule. You can recover damages as long as you are 50% or less responsible for the accident. Your compensation is reduced by your percentage of fault.</p>
             </div>
         </div>
     </div>

@@ -172,7 +172,7 @@
                             <li><strong><?php esc_html_e( 'Georgia — Modified Comparative Fault', 'roden-law' ); ?>:</strong> <?php printf( /* translators: %s: the phrase "less than 50% at fault" wrapped in <strong>. */ esc_html__( 'You can recover if %s (O.C.G.A. § 51-12-33). Your award is reduced by your fault percentage.', 'roden-law' ), '<strong>' . esc_html__( 'less than 50% at fault', 'roden-law' ) . '</strong>' ); ?></li>
                         <?php endif; ?>
                         <?php if ( in_array( $jurisdiction, array( 'both', 'sc' ), true ) ) : ?>
-                            <li><strong><?php esc_html_e( 'South Carolina — Modified Comparative Fault', 'roden-law' ); ?>:</strong> <?php printf( /* translators: %s: the phrase "less than 51% at fault" wrapped in <strong>. */ esc_html__( 'You can recover if %s. Your award is reduced by your fault percentage.', 'roden-law' ), '<strong>' . esc_html__( 'less than 51% at fault', 'roden-law' ) . '</strong>' ); ?></li>
+                            <li><strong><?php esc_html_e( 'South Carolina — Modified Comparative Fault', 'roden-law' ); ?>:</strong> <?php printf( /* translators: %s: the phrase "50% or less at fault" wrapped in <strong>. */ esc_html__( 'You can recover if %s. Your award is reduced by your fault percentage.', 'roden-law' ), '<strong>' . esc_html__( '50% or less at fault', 'roden-law' ) . '</strong>' ); ?></li>
                         <?php endif; ?>
                     <?php endif; ?>
                 </ul>

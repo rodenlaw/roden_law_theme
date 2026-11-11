@@ -2983,7 +2983,7 @@ function roden_schema_sc_statewide( $firm ) {
                 'name'           => 'Can I recover compensation if I was partly at fault for the accident in South Carolina?',
                 'acceptedAnswer' => array(
                     '@type' => 'Answer',
-                    'text'  => 'Yes. South Carolina follows a modified comparative fault rule. You can recover damages as long as you are less than 51% at fault for the accident. However, your compensation will be reduced by your percentage of fault. If you are found 51% or more at fault, you cannot recover anything.',
+                    'text'  => 'Yes. South Carolina follows a modified comparative fault rule. You can recover damages as long as you are 50% or less at fault for the accident. However, your compensation will be reduced by your percentage of fault. If you are found more than 50% at fault, you cannot recover anything.',
                 ),
             ),
             array(

@@ -489,7 +489,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                     <?php if ( in_array( $jurisdiction, array( 'both', 'sc' ), true ) ) : ?>
                     <div class="pa-fault__box pa-fault__box--sc">
                         <h3><?php esc_html_e( 'South Carolina — Modified Comparative Fault', 'roden-law' ); ?></h3>
-                        <p><?php printf( /* translators: %s: the phrase "less than 51% at fault" wrapped in <strong>. */ esc_html__( 'You can recover if %s. Your award is reduced by your fault percentage.', 'roden-law' ), '<strong>' . esc_html__( 'less than 51% at fault', 'roden-law' ) . '</strong>' ); ?></p>
+                        <p><?php printf( /* translators: %s: the phrase "50% or less at fault" wrapped in <strong>. */ esc_html__( 'You can recover if %s. Your award is reduced by your fault percentage.', 'roden-law' ), '<strong>' . esc_html__( '50% or less at fault', 'roden-law' ) . '</strong>' ); ?></p>
                     </div>
                     <?php endif; ?>
                 </div>
