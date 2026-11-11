@@ -101,7 +101,7 @@ re-fetch one EN pillar and confirm the North Charleston card links to
    published, the matrix links them without a code change: 4869/4883 carry `_roden_office_key`,
    and the helper reads the locale's posts. Linking English office pages from Spanish pillars
    instead would break the site's convention: `template-location.php` skips offices that have
-   no Spanish page. Why they are drafts is not recorded in the repo. Publishing is an owner
+   no Spanish page. Correction (2026-11-11, later): they are drafts on purpose. Both were retired on 2026-09-26 on the owner's word ("retire (but don't delete)") and 301 through `roden_dead_es_hub_urls()` (#160); see `data/facts/remediation-2026-11-11-es-location-drafts.md`. North Charleston was republished 2026-11-11 (RECOVERY-LOG). Publishing is an owner
    decision, and these posts carry legal content, so it needs review first.
 2. **`roden_location_matrix()` (inc/template-tags.php) and `templates/parts/location-matrix.php`
    are dead code** that synthesizes the same retired `/{pillar}/{office-slug}/` links: 0 callers

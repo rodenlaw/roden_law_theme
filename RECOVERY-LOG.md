@@ -3993,3 +3993,33 @@ when 1840's ledger read of its 09-25 edit ends. The reason is that both pages sp
 inbound links and `_roden_translation_es` first.
 **Pack gap for legal-accuracy-lead:** § 9-3-96 (fraud tolling) and § 9-3-92 (unrepresented estate) are cited
 live (1840, 5223) but are not in GA.json.
+
+## 2026-11-11 — Spanish North Charleston hub (4883) back; location freeze lifted for one process (owner's word)
+
+Owner, 2026-11-11: "publish the spanish pages", then "do 1." (lift the location freeze once, publish, restore).
+Legal review: `data/facts/remediation-2026-11-11-es-location-drafts.md` (#339).
+
+- **Theme (#341, deployed 188f7b1):** `/es/locations/south-carolina/north-charleston/` removed from
+  `roden_dead_es_hub_urls()`. Between that deploy and the publish (about 20 minutes) the URL returned 404; it had
+  0 clicks in 16 months.
+- **Content (4883):** N1 (SCTCA 2-year deadline, § 15-78-110, not "plazos de notificación"), N2 ("50% o menos",
+  Nelson), N3 interim (no legal claim about immigration status; FAQ[1] question reworded), N4 (no "Park Circle"
+  office claim). `_roden_retired` deleted; `_roden_last_reviewed` left at 2026-08-03 on purpose (attorney items
+  open). Relink of 2026-09-26 reversed on 4862 and 4864. Backup:
+  `uploads/roden-backups/unretire-es-north-charleston-2026-11-11/before.json`.
+- **Location freeze:** the first apply was demoted to draft by `roden_guard_location_publish()`. The freeze was
+  lifted **for one WP-CLI process only**, by prepending `add_filter( 'roden_location_freeze_active',
+  '__return_false' )` to `bin/unretire-es-north-charleston-2026-11-11.php`; `RODEN_LOCATION_FREEZE` was never set
+  in `wp-config.php` (a `wp config set` attempt failed on WP Engine's file and left it byte-identical to its
+  backup). A fresh process afterwards reports the freeze ON. Until the publish, the two relinked anchors were
+  reverted to the English hub so nothing linked to a draft.
+- **Verified live:** 200, self-canonical, hreflang en/es/x-default paired with 3763, 4 JSON-LD blocks parse, the
+  FAQPage carries § 15-78-110 and "50% o menos", no "51%", no immigration claim. Linked from `/es/`,
+  `/es/locations/` and the ES bicycle pillar's office matrix.
+- **Doorway:** live 124/637 = 19.5% before (ceiling 25%); 125/638 with this page.
+
+Same day: ES Myrtle Beach hub (4872) N3 interim wording applied
+(`bin/fix-es-myrtle-beach-hub-immigration-2026-11-11.php`); EN hubs 3598/3763 fixes (#340, applied).
+
+**Waiting:** Spanish Darien (4869), owner override of the GA sign-off hold, in #343; it needs the same
+one-process freeze lift after #343 deploys. Gillin N3, Love D3–D6 and A1/A3/A15 open.

@@ -7,7 +7,7 @@
         "post",
         "page"
     ],
-    "_count": 627,
+    "_count": 628,
     "posts": {
         "/": {
             "type": "page",
@@ -13787,8 +13787,8 @@
                         "answer": "No paga nada por adelantado. Trabajamos con honorarios de contingencia: solo cobramos un porcentaje si ganamos su caso. La consulta inicial es gratuita y sin compromiso."
                     },
                     {
-                        "question": "¿Puedo reclamar compensación si no tengo papeles?",
-                        "answer": "Sí. Su estatus migratorio no le impide reclamar una compensación por un accidente o una lesión en el trabajo en Carolina del Sur. Su información se mantiene confidencial."
+                        "question": "¿Puedo consultarles si no tengo papeles?",
+                        "answer": "Sí, puede consultarnos. Atendemos a todas las personas sin importar su estatus migratorio, y lo que nos cuente es confidencial."
                     },
                     {
                         "question": "¿Cuánto tiempo tengo para presentar mi caso en Carolina del Sur?",
@@ -13821,6 +13821,47 @@
                 "_roden_meta_description": "Abogados de lesiones personales en Myrtle Beach, SC. Hablamos español. Consulta gratuita: (843) 612-1980. Sin honorarios a menos que ganemos.",
                 "_roden_sol_sc": "S.C. Code § 15-3-530",
                 "_roden_translation_of": "/locations/south-carolina/myrtle-beach/"
+            }
+        },
+        "/es/locations/south-carolina/north-charleston/": {
+            "type": "location",
+            "status": "publish",
+            "title": "Abogados de Lesiones Personales en North Charleston, SC",
+            "excerpt": "Abogados de lesiones personales en North Charleston, Carolina del Sur que hablan español. Oficina en 2703 Spruill Ave. Consulta gratuita: (843) 612-6561.",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuánto cuesta contratar a un abogado de lesiones personales en North Charleston?",
+                        "answer": "No paga nada por adelantado. Trabajamos con honorarios de contingencia: solo cobramos un porcentaje si ganamos su caso. La consulta inicial es gratuita."
+                    },
+                    {
+                        "question": "¿Puedo consultarles si no tengo papeles?",
+                        "answer": "Sí, puede consultarnos. Atendemos a todas las personas sin importar su estatus migratorio, y lo que nos cuente es confidencial."
+                    },
+                    {
+                        "question": "¿Cuánto tiempo tengo para presentar mi caso en Carolina del Sur?",
+                        "answer": "En general, 3 años desde la fecha del accidente (S.C. Code § 15-3-530). Los reclamos contra entidades del gobierno tienen un plazo más corto, por lo general 2 años (S.C. Code § 15-78-110), así que no espere para llamar."
+                    },
+                    {
+                        "question": "¿Hablan español en su oficina de North Charleston?",
+                        "answer": "Sí. Nuestro equipo atiende consultas en español y le explica cada paso de su caso en su idioma. Llame al (843) 612-6561."
+                    },
+                    {
+                        "question": "¿Qué tipos de casos de lesiones personales maneja la oficina de North Charleston?",
+                        "answer": "Nuestros abogados de North Charleston manejan toda la gama de casos de lesiones personales: accidentes de autos y camionetas, choques con camiones comerciales y tráileres de 18 ruedas, accidentes de motocicleta y de bicicleta, atropellos de peatones, resbalones y caídas y otros casos de responsabilidad del dueño de la propiedad, mordeduras de perro, negligencia médica, abuso en hogares de ancianos, reclamos de compensación laboral, muerte por negligencia y casos de lesiones catastróficas que involucran daño cerebral, lesiones de la médula espinal o quemaduras graves. Atendemos a víctimas en North Charleston, Goose Creek, Summerville, Hanahan, Ladson, Moncks Corner y las comunidades vecinas de los tres condados. Si usted se lesionó por la negligencia de otra persona, llame al (843) 612-6561 para una revisión gratuita de su caso."
+                    },
+                    {
+                        "question": "¿Cómo afecta la regla de culpa comparativa de Carolina del Sur a mi caso?",
+                        "answer": "Carolina del Sur aplica una regla de culpa comparativa modificada (Nelson v. Concrete Supply Co.). Si su culpa en el accidente es del 50% o menos, todavía puede recibir una compensación, pero el monto se reduce según su porcentaje de culpa: por ejemplo, una indemnización de $100,000 reducida en un 20% por culpa parcial paga $80,000. Si su culpa es de más del 50%, no recupera nada. Las aseguradoras rutinariamente tratan de inflar el porcentaje de culpa de la persona lesionada para reducir o eliminar el pago, y por eso importa tanto tener a un abogado de lesiones personales en North Charleston que cuestione esos argumentos. Llame al (843) 612-6561."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_last_reviewed": "2026-08-03",
+                "_roden_locale": "es",
+                "_roden_meta_description": "Abogados de lesiones personales en North Charleston, SC. Hablamos español. Consulta gratuita: (843) 612-6561. Sin honorarios a menos que ganemos.",
+                "_roden_sol_sc": "S.C. Code § 15-3-530",
+                "_roden_translation_of": "/locations/south-carolina/north-charleston/"
             }
         },
         "/es/practice-areas/": {
@@ -17388,7 +17429,7 @@
                     },
                     {
                         "question": "How long do I have to file a personal injury claim in Darien?",
-                        "answer": "Darien is in McIntosh County, Georgia, so the statute of limitations for most personal injury claims is 2 years from the date of the injury under O.C.G.A. § 9-3-33. Workers' compensation claims have shorter deadlines — you must report within 30 days and file a formal claim within 1 year. Medical malpractice cases follow a discovery rule but have a 5-year outer limit. Missing any of these deadlines will likely bar your claim entirely, so contact our Darien office at (912) 303-5850 as soon as possible to protect your rights."
+                        "answer": "Darien is in McIntosh County, Georgia, so the statute of limitations for most personal injury claims is 2 years from the date of the injury under O.C.G.A. § 9-3-33. Workers' compensation claims have shorter deadlines — you must report within 30 days and file a formal claim within 1 year. Medical malpractice cases have their own, different deadlines. Missing any of these deadlines will likely bar your claim entirely, so contact our Darien office at (912) 303-5850 as soon as possible to protect your rights."
                     },
                     {
                         "question": "What is Georgia's comparative fault law and how does it affect my Darien injury case?",
@@ -17694,11 +17735,11 @@
                     },
                     {
                         "question": "How long do I have to file a personal injury lawsuit in South Carolina?",
-                        "answer": "South Carolina sets a 3 years statute of limitations for most personal injury claims (S.C. Code § 15-3-530). The clock generally starts on the date of the injury, and missing the deadline almost always bars recovery — courts dismiss late filings regardless of how strong the case is on the merits. Shorter notice periods apply if a government entity is involved (a city, county, or state agency). Because evidence and witness memories degrade quickly, our North Charleston office recommends contacting an attorney as soon as possible after an accident. Call (843) 612-6561."
+                        "answer": "South Carolina sets a 3 years statute of limitations for most personal injury claims (S.C. Code § 15-3-530). The clock generally starts on the date of the injury, and missing the deadline almost always bars recovery — courts dismiss late filings regardless of how strong the case is on the merits. A claim against a government entity (a city, county, or state agency) has a shorter deadline, generally two years under the South Carolina Tort Claims Act (S.C. Code § 15-78-110). Because evidence and witness memories degrade quickly, our North Charleston office recommends contacting an attorney as soon as possible after an accident. Call (843) 612-6561."
                     },
                     {
                         "question": "How does South Carolina's comparative fault rule affect my case?",
-                        "answer": "South Carolina applies a modified comparative fault rule (Nelson v. Concrete Supply Co.). If you are less than 51% at fault for the accident, you can still recover compensation, but your award is reduced by your percentage of fault — for example, a $100,000 award reduced 20% for partial fault pays $80,000. If you are 51% or more at fault, you recover nothing. Insurers routinely try to inflate the injured person's share of fault to reduce or eliminate the payout, which is why having a North Charleston personal injury attorney challenge those arguments matters so much."
+                        "answer": "South Carolina applies a modified comparative fault rule (Nelson v. Concrete Supply Co.). If you are 50% or less at fault for the accident, you can still recover compensation, but your award is reduced by your percentage of fault — for example, a $100,000 award reduced 20% for partial fault pays $80,000. If you are more than 50% at fault, you recover nothing. Insurers routinely try to inflate the injured person's share of fault to reduce or eliminate the payout, which is why having a North Charleston personal injury attorney challenge those arguments matters so much."
                     },
                     {
                         "question": "What does it cost to hire the North Charleston office?",
