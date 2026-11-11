@@ -229,7 +229,7 @@ const offices: Record<OfficeKey, Office> = {
       "Kiawah Island", "Wadmalaw Island",
     ],
     directions:
-      "Our Charleston office is in the heart of downtown on King Street, Suite 200, near the intersection of King and Calhoun streets. From I-26 East, take Exit 221B onto Meeting Street heading south, then turn right on Calhoun and left on King. From Mount Pleasant, cross the Ravenel Bridge and follow US-17 S to the Meeting Street exit. Street and garage parking available nearby.",
+      "Our Charleston office is at 127 King Street, Suite 200, between Broad and Queen streets, about a block from the Charleston County Judicial Center. From I-26 East, take Exit 221B onto Meeting Street heading south toward Broad Street. From Mount Pleasant, cross the Ravenel Bridge and follow US-17 S to the Meeting Street exit. Street and garage parking available nearby.",
     mapEmbed:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.570788089184!2d-79.9329881!3d32.7771216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fe7bd134041e93%3A0x2c255a08f0b45377!2sRoden%20Law!5e0!3m2!1sen!2sus!4v1773074802432!5m2!1sen!2sus",
     reviewCount: 80,
