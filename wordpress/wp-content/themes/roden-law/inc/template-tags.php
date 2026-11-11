@@ -4453,7 +4453,14 @@ function roden_jurisdiction_comparison_table( $practice_area_title, $sol_ga = ''
  * Tokens supported:
  *   {city}, {market_name}, {state_full}, {state_short},
  *   {office_court}, {office_court_address},
- *   {sol_years}, {sol_cite}, {comp_fault_threshold}
+ *   {sol_years}, {sol_cite}, {comp_fault_threshold}, {comp_fault_bar}
+ *
+ * {comp_fault_threshold} prints the jurisdiction's comp_fault_bar_pct ("50%" GA,
+ * "51%" SC). It used to be scraped off comp_fault_rule with a regex; SC's rule
+ * now reads "50% or less", and scraping that would print "bars recovery if you
+ * are 50% or more at fault" on SC pages. {comp_fault_bar} is the phrase to
+ * migrate the pillar meta to: "50% or more at fault" (GA) / "more than 50% at
+ * fault" (SC), for sentences like "bars recovery if you are {comp_fault_bar}".
  *
  * @param string $text         Source text with {token} placeholders.
  * @param array  $office       Office array from firm-data.
@@ -4468,7 +4475,9 @@ function roden_replace_local_tokens( $text, $office, $jurisdiction = array() ) {
         : ( $office['city'] ?? '' );
 
     $threshold = '';
-    if ( ! empty( $jurisdiction['comp_fault_rule'] ) ) {
+    if ( ! empty( $jurisdiction['comp_fault_bar_pct'] ) ) {
+        $threshold = $jurisdiction['comp_fault_bar_pct'];
+    } elseif ( ! empty( $jurisdiction['comp_fault_rule'] ) ) {
         if ( preg_match( '/(\d{2})%/', $jurisdiction['comp_fault_rule'], $m ) ) {
             $threshold = $m[1] . '%';
         }
@@ -4484,6 +4493,7 @@ function roden_replace_local_tokens( $text, $office, $jurisdiction = array() ) {
         '{sol_years}'            => isset( $jurisdiction['statute_years'] ) ? (string) $jurisdiction['statute_years'] : '',
         '{sol_cite}'             => $jurisdiction['statute_cite'] ?? '',
         '{comp_fault_threshold}' => $threshold,
+        '{comp_fault_bar}'       => $jurisdiction['comp_fault_bar'] ?? '',
     );
 
     return strtr( $text, $tokens );
@@ -4615,7 +4625,7 @@ function roden_office_local_context_block( $office, $jurisdiction = array(), $va
  * Branches on the practice in the page slug, because the tort deadline and the
  * comparative-fault bar are wrong on two of them (2026-09-29): a workers' comp
  * page is a no-fault claim on its own deadline (the SC workers' comp statewide
- * page was showing "3 years … personal injury lawsuit" and the 51% bar), and a
+ * page was showing "3 years … personal injury lawsuit" and the fault bar), and a
  * wrongful-death page turns on the fault of the person who died. Strings are
  * the ones the office pages already use, so their Spanish entries carry over.
  *
@@ -4681,8 +4691,8 @@ function roden_statewide_law_callout( $state_key ) {
                     <p><?php echo esc_html( $is_sc ? __( 'Modified — no recovery if the person who died was more than 50% at fault', 'roden-law' ) : __( 'Modified — no recovery if the person who died was 50% or more at fault', 'roden-law' ) ); ?></p>
                     <?php if ( ! empty( $law['comp_fault_cite'] ) ) : ?><p class="cite"><?php echo esc_html( $law['comp_fault_cite'] ); ?></p><?php endif; ?>
                 <?php elseif ( $is_sc ) : ?>
-                    <p class="law-value"><?php esc_html_e( '51% bar', 'roden-law' ); ?></p>
-                    <p><?php esc_html_e( "Under South Carolina's modified comparative negligence rule, you can still recover compensation as long as you were less than 51% at fault. Your award is reduced by your share of fault — insurers often try to inflate it, and our attorneys push back.", 'roden-law' ); ?></p>
+                    <p class="law-value"><?php esc_html_e( 'More-than-50% bar', 'roden-law' ); ?></p>
+                    <p><?php esc_html_e( "Under South Carolina's modified comparative negligence rule, you can still recover compensation as long as you were 50% or less at fault. Your award is reduced by your share of fault — insurers often try to inflate it, and our attorneys push back.", 'roden-law' ); ?></p>
                 <?php else : ?>
                     <p class="law-value"><?php esc_html_e( '50% bar', 'roden-law' ); ?></p>
                     <p><?php esc_html_e( "Under Georgia's modified comparative negligence rule, you can recover only if you were less than 50% at fault, and your award is reduced by your share of fault — insurers often try to inflate it, and our attorneys push back.", 'roden-law' ); ?></p>

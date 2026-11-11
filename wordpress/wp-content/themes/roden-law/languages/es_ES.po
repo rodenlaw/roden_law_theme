@@ -2423,8 +2423,8 @@ msgid "Modified — recover if less than 50% at fault (O.C.G.A. § 51-12-33)"
 msgstr "Modificada — puede recuperar si tiene menos del 50% de culpa (O.C.G.A. § 51-12-33)"
 
 #: inc/template-tags.php:1694
-msgid "Modified — recover if less than 51% at fault"
-msgstr "Modificada — puede recuperar si tiene menos del 51% de culpa"
+msgid "Modified — recover if 50% or less at fault"
+msgstr "Modificada — puede recuperar si su culpa es del 50% o menos"
 
 #: inc/template-tags.php:1697
 msgid "Damage Cap"
@@ -2728,7 +2728,7 @@ msgstr "Página Actual"
 msgid "accident"
 msgstr "accidente"
 
-#. translators: 1: article "a"/"an"; 2: accident type, e.g. "car accident"; 3: city/market name; 4: state name; 5: statute-of-limitations years; 6: statute citation; 7: fault threshold phrase, e.g. "less than 51% at fault".
+#. translators: 1: article "a"/"an"; 2: accident type, e.g. "car accident"; 3: city/market name; 4: state name; 5: statute-of-limitations years; 6: statute citation; 7: fault threshold phrase, e.g. "50% or less at fault".
 #: templates/template-intersection.php:220
 #, php-format
 msgid "If you were injured in %1$s %2$s in %3$s, %4$s, you generally have %5$s years from the date of injury to file a lawsuit (%6$s). %4$s follows a modified comparative negligence rule — you can still recover as long as you are %7$s, with your award reduced by your percentage of fault. There is no cap on compensatory damages in an ordinary %4$s injury case. Roden Law represents %3$s injury victims on a contingency fee: the consultation is free and there is no fee unless we win."
@@ -3417,18 +3417,18 @@ msgstr "menos del 50% de culpa"
 msgid "South Carolina — Modified Comparative Fault"
 msgstr "Carolina del Sur — Culpa Comparativa Modificada"
 
-#. translators: %s: the phrase "less than 51% at fault" wrapped in <strong>.
+#. translators: %s: the phrase "50% or less at fault" wrapped in <strong>.
 #: templates/template-practice-area.php:375
 #: templates/template-subtype.php:209
 #, php-format
 msgid "You can recover if %s. Your award is reduced by your fault percentage."
-msgstr "Usted puede recuperar compensación si tiene %s. Su indemnización se reduce según su porcentaje de culpa."
+msgstr "Usted puede recuperar compensación si su culpa es %s. Su indemnización se reduce según su porcentaje de culpa."
 
-#. translators: %s: the phrase "less than 51% at fault" wrapped in <strong>.
+#. translators: %s: the phrase "50% or less at fault" wrapped in <strong>.
 #: templates/template-practice-area.php:375
 #: templates/template-subtype.php:209
-msgid "less than 51% at fault"
-msgstr "menos del 51% de culpa"
+msgid "50% or less at fault"
+msgstr "del 50% o menos"
 
 #: templates/template-practice-area.php:378
 msgid "For example, if you filed a $100,000 lawsuit and a court finds you are 30% at fault, your award would be reduced to $70,000. Our attorneys will work to minimize any fault assigned to you."
@@ -3648,12 +3648,12 @@ msgid "Modified Comparative Negligence"
 msgstr "Negligencia Comparativa Modificada"
 
 #: templates/template-pillar-sc-statewide.php
-msgid "51% bar"
-msgstr "límite del 51%"
+msgid "More-than-50% bar"
+msgstr "límite de más del 50%"
 
 #: templates/template-pillar-sc-statewide.php
-msgid "Under South Carolina's modified comparative negligence rule, you can still recover compensation as long as you were less than 51% at fault. Your award is reduced by your share of fault — insurers often try to inflate it, and our attorneys push back."
-msgstr "Bajo la regla de negligencia comparativa modificada de Carolina del Sur, usted todavía puede recuperar compensación siempre que haya tenido menos del 51% de culpa. Su indemnización se reduce según su porcentaje de culpa — las aseguradoras suelen intentar inflarlo, y nuestros abogados lo combaten."
+msgid "Under South Carolina's modified comparative negligence rule, you can still recover compensation as long as you were 50% or less at fault. Your award is reduced by your share of fault — insurers often try to inflate it, and our attorneys push back."
+msgstr "Bajo la regla de negligencia comparativa modificada de Carolina del Sur, usted todavía puede recuperar compensación siempre que su culpa haya sido del 50% o menos. Su indemnización se reduce según su porcentaje de culpa — las aseguradoras suelen intentar inflarlo, y nuestros abogados lo combaten."
 
 #: templates/template-pillar-sc-statewide.php
 msgid "Learn more:"

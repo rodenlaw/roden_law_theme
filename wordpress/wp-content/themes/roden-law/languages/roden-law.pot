@@ -2412,7 +2412,7 @@ msgid "Modified — recover if less than 50% at fault (O.C.G.A. § 51-12-33)"
 msgstr ""
 
 #: inc/template-tags.php:1694
-msgid "Modified — recover if less than 51% at fault"
+msgid "Modified — recover if 50% or less at fault"
 msgstr ""
 
 #: inc/template-tags.php:1697
@@ -2712,7 +2712,7 @@ msgstr ""
 msgid "accident"
 msgstr ""
 
-#. translators: 1: article "a"/"an"; 2: accident type, e.g. "car accident"; 3: city/market name; 4: state name; 5: statute-of-limitations years; 6: statute citation; 7: fault threshold phrase, e.g. "less than 51% at fault".
+#. translators: 1: article "a"/"an"; 2: accident type, e.g. "car accident"; 3: city/market name; 4: state name; 5: statute-of-limitations years; 6: statute citation; 7: fault threshold phrase, e.g. "50% or less at fault".
 #: templates/template-intersection.php:220
 #, php-format
 msgid "If you were injured in %1$s %2$s in %3$s, %4$s, you generally have %5$s years from the date of injury to file a lawsuit (%6$s). %4$s follows a modified comparative negligence rule — you can still recover as long as you are %7$s, with your award reduced by your percentage of fault. There is no cap on compensatory damages in an ordinary %4$s injury case. Roden Law represents %3$s injury victims on a contingency fee: the consultation is free and there is no fee unless we win."
@@ -3402,17 +3402,17 @@ msgstr ""
 msgid "South Carolina — Modified Comparative Fault"
 msgstr ""
 
-#. translators: %s: the phrase "less than 51% at fault" wrapped in <strong>.
+#. translators: %s: the phrase "50% or less at fault" wrapped in <strong>.
 #: templates/template-practice-area.php:375
 #: templates/template-subtype.php:209
 #, php-format
 msgid "You can recover if %s. Your award is reduced by your fault percentage."
 msgstr ""
 
-#. translators: %s: the phrase "less than 51% at fault" wrapped in <strong>.
+#. translators: %s: the phrase "50% or less at fault" wrapped in <strong>.
 #: templates/template-practice-area.php:375
 #: templates/template-subtype.php:209
-msgid "less than 51% at fault"
+msgid "50% or less at fault"
 msgstr ""
 
 #: templates/template-practice-area.php:378
