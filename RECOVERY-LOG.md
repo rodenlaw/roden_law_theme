@@ -4040,3 +4040,24 @@ posts**, 208/208 read-backs OK, slugs unchanged, re-run reports 523 already appl
 - **Not fixed:** 2738 carries a GEORGIA error ("51 percent of the fault – or higher – cannot recover"); 167
   drafts carry the old SC wording and need this pass before any is published; the sweep has no SC "less than 51%"
   rule yet.
+
+## 2026-11-11 — Spanish Darien hub (4869) back, over the GA sign-off hold; 2738 Georgia fault sentence (owner's word)
+
+Owner, 2026-11-11: "override for Darien", "merge 343 … fix 2738".
+
+- **Override, recorded:** the legal review held 4869 on D1/D2. Its 2-year SOL (O.C.G.A. § 9-3-33) and 50% bar
+  (§ 51-12-33) are correct but rest on GA authority unsigned for Roden (`law-signoff.json`, Love's packet A1/A3).
+  The owner published over that hold; the English twin 3598 carries the same two claims. Love's sign-off stays open.
+- **Theme (#343, deployed 7237714):** `roden_dead_es_hub_urls()` is now empty.
+- **Content (4869):** D3 interim (no legal claim about immigration status; FAQ[1] question reworded), D4 ("bien
+  ubicada"), D5 (Spanish-only insurer line cut). `_roden_retired` deleted; `_roden_last_reviewed` left at
+  2026-08-03. Relink reversed on 4862/4864. Published with the location freeze lifted for that one WP-CLI process
+  (filter in `bin/unretire-es-darien-2026-11-11.php`, apply mode only); a fresh process reports the freeze ON.
+  Backup: `uploads/roden-backups/unretire-es-darien-2026-11-11/before.json`.
+- **Verified live:** 200, self-canonical, hreflang paired with 3598, 4 JSON-LD blocks parse, no immigration
+  claim in page or FAQPage. Linked from `/es/`, `/es/locations/`; the ES pillars' office matrix is 6/6 linked, so
+  the standing `cardgrid` warning should clear.
+- **2738** (`/blog/liability-in-head-on-collisions-savannah-ga/`): "51 percent of the fault – or higher" → "50
+  percent of the fault or more" (§ 51-12-33(g)), matching the page's own preceding sentence and FAQ[2]. Applied,
+  read-back OK (#346).
+- The SC 51% batch script is now in #345 (applied earlier today; see the entry above).
