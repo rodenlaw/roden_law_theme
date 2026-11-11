@@ -2950,6 +2950,30 @@ both caches flushed. Verified live, sequentially with cache-busting query string
   adding $1M+ shows 1 ($27M); adding Verdict shows 0 with the empty message; reset shows 156.
 - Live JSON-LD guard PASS. `content/meta.json` regenerated with no diff; no post data changed.
 
+### Case result descriptions restored — 2026-11-11
+
+The "0 of 156 have a description" above was a loss from the theme rebuild, not the
+firm's data. The old site showed a one-sentence description on every result; the
+rebuilt `case_result` posts were created with amount, type and title only, so
+`_roden_description` was empty on all 156 and every card rendered without it.
+
+Recovered from the Wayback Machine: the old per-result `/case-result/{slug}/` pages
+(134, exact slug match, full text from the page body because the meta description
+truncates) and the October 2025 `/case-results/` listing, which carries all 156
+(the remaining 22, by amount + outcome + practice area). The two $250,000
+premises results are indistinguishable there and were resolved on prod against
+the legacy `case-result` twin's body. Table with an archive URL per row:
+`data/case-results/descriptions-from-archive-2026-11-11.json`.
+
+**The legacy `case-result` posts still hold the same text in `post_content`** —
+the dry run matched 156/156 against them, an independent second source. They
+are the place to look first if this field is ever lost again.
+
+**Applied 2026-11-11** with `bin/restore-case-result-descriptions-2026-11-11.php`:
+156 written, none replaced an existing value, read-back OK, both caches flushed.
+Before/after: `docs/backups/case-result-descriptions-2026-11-11{,-apply}.json`.
+`case_result` is outside `content/meta.json`, so there is nothing to regenerate.
+
 ### Batch (f) — the duplicated case-result URLs
 
 156 case results are published twice: as `case_result` at `/case-results/{slug}/`
