@@ -969,8 +969,6 @@ EOT
                 'statute_cite'     => 'O.C.G.A. § 9-3-33',
                 'comp_fault_rule'  => 'Modified — recover if less than 50% at fault',
                 'comp_fault_cite'  => 'O.C.G.A. § 51-12-33',
-                // The percentage the {comp_fault_threshold} token prints. See SC.
-                'comp_fault_bar_pct' => '50%',
                 // "bars recovery if you are {comp_fault_bar}" — the {comp_fault_bar} token.
                 'comp_fault_bar'   => '50% or more at fault',
             ),
@@ -989,14 +987,9 @@ EOT
                 // Georgia's cite is a code section; South Carolina's is the case, and
                 // leaving it empty was why the SC rule read as an uncited assertion.
                 'comp_fault_cite'  => 'Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)',
-                // LEGACY. {comp_fault_threshold} used to be regex-scraped off
-                // comp_fault_rule, and six pillar meta fields in the database phrase it
-                // as "{comp_fault_threshold} or more at fault" / "the
-                // {comp_fault_threshold} bar". Scraping "50%" off the new rule would
-                // print "bars recovery if you are 50% or more at fault" on SC pages,
-                // which is wrong law. Pinned to its old output until those fields are
-                // rewritten to {comp_fault_bar}; then delete this key.
-                'comp_fault_bar_pct' => '51%',
+                // "bars recovery if you are {comp_fault_bar}" — the {comp_fault_bar} token.
+                // ({comp_fault_threshold}, which printed a bare "51%", was retired
+                // 2026-11-11 once the six pillar fields moved to {comp_fault_bar}, #345.)
                 'comp_fault_bar'   => 'more than 50% at fault',
             ),
         ),
