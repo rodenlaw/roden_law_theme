@@ -107,6 +107,9 @@ re-fetch one EN pillar and confirm the North Charleston card links to
    are dead code** that synthesizes the same retired `/{pillar}/{office-slug}/` links: 0 callers
    (grep 2026-11-11). They are harmless while unused, but a trap if someone wires the part in.
    They are left for a separate cleanup PR to keep this one to the finding.
+   **Done 2026-11-11 (owner request):** the function, the part file, and the `.location-matrix`
+   CSS it alone used (block plus three media-query lines) are removed; style.css 1.4.48 → 1.4.49.
+   The `'%s by Location'` msgid is now unused; its `es_ES.po` entry is left in place (harmless).
 3. **Checker blind spot.** site-health has no check for visible text that prints an internal
    path which redirects, and none for a card grid where one card of N is unlinked. This class
    was found by eye. It is recorded here as a candidate check for the package. No change was
