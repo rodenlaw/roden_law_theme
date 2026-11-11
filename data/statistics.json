@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-11-11",
   "notes": "Roden Law statistics registry, seeded from docs/stat-audit-2026-08-25.md, stat-audit-round2 and round4. Every value traces to a primary source with a vintage. The stale[] entries are the claims those audits removed or corrected; their replacements were drafted 2026-09-10 from the audit findings and stay human-reviewed (freshness.allowMergeTierA is false). The law (statutes, caps, deadlines) is NOT here — it lives in internal-ai-scripts/law/<STATE>.json.",
   "facts": [
     {
@@ -59,6 +59,24 @@
       "current": { "value": "924", "asOf": "2022–2024", "qualifier": "second of 222 interstate designations by fatal crashes, behind I-10; 1,020 deaths", "source": { "name": "NHTSA FARS", "url": "https://www-fars.nhtsa.dot.gov/", "retrievedAt": "2026-08-25" } },
       "reviewEveryDays": 365,
       "stale": []
+    },
+    {
+      "id": "us-pedalcyclist-deaths-2024",
+      "label": "US pedalcyclist (cyclist) deaths, 2024 (FARS)",
+      "current": { "value": "1,103", "asOf": "2024", "qualifier": "FARS national table: 2021 976, 2022 1,117, 2023 1,173, 2024 1,103. FARS changed how motorized bicycles are classified in 2022, so make no trend claim across 2021–2022; cite one year with its vintage", "source": { "name": "NHTSA FARS (FARS Encyclopedia, National Statistics)", "url": "https://www-fars.nhtsa.dot.gov/Main/index.aspx", "retrievedAt": "2026-11-11" } },
+      "reviewEveryDays": 365,
+      "stale": [
+        { "value": "nearly 1,000", "match": "[^.]*\\bnearly 1,000 (?:bi)?cyclist[^.]*\\.", "replacement": "NHTSA's Fatality Analysis Reporting System counted 1,103 cyclists killed in US traffic crashes in 2024." }
+      ]
+    },
+    {
+      "id": "us-pedestrian-deaths-2024",
+      "label": "US pedestrian deaths, 2024 (FARS)",
+      "current": { "value": "7,080", "asOf": "2024", "qualifier": "FARS national table: 2022 7,593, 2023 7,367, 2024 7,080 (falling, not rising); us-pedestrian-deaths-2022 keeps NHTSA's published 2022 figure", "source": { "name": "NHTSA FARS (FARS Encyclopedia, National Statistics)", "url": "https://www-fars.nhtsa.dot.gov/Main/index.aspx", "retrievedAt": "2026-11-11" } },
+      "reviewEveryDays": 365,
+      "stale": [
+        { "value": "over 7,500", "match": "[^.]*\\bover 7,500 pedestrians[^.]*\\.", "replacement": "In 2024, NHTSA's Fatality Analysis Reporting System counted 7,080 pedestrians and 1,103 cyclists killed in US traffic crashes." }
+      ]
     }
   ]
 }
