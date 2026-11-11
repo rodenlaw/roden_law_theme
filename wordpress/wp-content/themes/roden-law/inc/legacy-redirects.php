@@ -2511,11 +2511,15 @@ function roden_dead_geo_post_urls() {
  * pages"), after the legal review in
  * data/facts/remediation-2026-11-11-es-location-drafts.md; its data step is
  * bin/unretire-es-north-charleston-2026-11-11.php, which refuses to run while
- * this map still holds the URL. Darien stays retired pending GA sign-off.
+ * this map still holds the URL.
+ *
+ * Darien (4869) un-retired 2026-11-11 (owner: "override for Darien", over the
+ * review's hold on unsigned GA authority); data step
+ * bin/unretire-es-darien-2026-11-11.php. The map is now empty and kept so the
+ * history above stays with the code.
  */
 function roden_dead_es_hub_urls() {
     return array(
-        '/es/locations/georgia/darien/'           => '/locations/georgia/darien/',
     );
 }
 
